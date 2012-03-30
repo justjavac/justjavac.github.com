@@ -26,11 +26,11 @@
   </div>
   
   <div class="span4">
-    <h4>发布日期</h4>
+    <h4>鍙戝竷鏃ユ湡</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
   {% unless page.tags == empty %}
-    <h4>标签</h4>
+    <h4>鏍囩</h4>
     <ul class="tag_box">
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
