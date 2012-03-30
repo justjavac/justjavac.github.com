@@ -5,11 +5,11 @@ keywords: gitmagic, git, 前言
 category : gitmagic
 tags : [Git魔法, git, gitmagic]
 ---
-= Git 魔法 =
+# Git 魔法 #
 Ben Lynn
 2007年8月
 
-== 前言 ==
+## 前言 ##
 
 http://git.or.cz/[Git] 堪称版本控制瑞士军刀。这个可靠、多才多艺、用途多样的校
 订工具异常灵活，以致不易掌握，更别说精通了。
@@ -49,7 +49,7 @@ http://git.or.cz/[Git] 堪称版本控制瑞士军刀。这个可靠、多才多
  - http://www.amazon.com/Git-Magic-Ben-Lynn/dp/1451523343/[纸质书
    [Amazon.com]]: 64 页, 15.24cm x 22.86cm, 黑白。 没有电子设备的时候会方便些。
 
-=== 致谢！ ===
+### 致谢！ ###
 
 那么多人对本文档的翻译让我受宠若惊。他们的付出拓宽了读者群，我非常感激。
 
@@ -75,7 +75,7 @@ François Marier维护Debian包，该Debian包起初由Daniel Baumann创建。
 
 感谢以上站点为本文档提供伺服服务。
 
-=== 许可 ===
+### 许可 ###
 
 本指南在http://www.gnu.org/licenses/gpl-3.0.html[ GNU通用公共许可协议版本3 ]
 之下发布。很自然，源码保存在一个Git仓库里，可以通过以下命令获得源码：
