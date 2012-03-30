@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Git魔法 - 基本技巧
-description: 附录 B: 本指南的翻译
 keywords: gitmagic, git, 基本技巧
 category : gitmagic
 tags : [Git魔法, git, gitmagic]
