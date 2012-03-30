@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 前言
 keywords: gitmagic, git, 前言
-category : Git魔法
+category : gitmagic
 tags : [Git魔法, git, gitmagic]
 ---
 = Git 魔法 =
