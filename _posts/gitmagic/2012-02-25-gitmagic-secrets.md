@@ -5,13 +5,13 @@ keywords: gitmagic, git, 基本技巧
 category : gitmagic
 tags : [Git魔法, git, gitmagic]
 ---
-==揭开面纱==
+## 揭开面纱 ##
 
 我们揭开Git神秘面纱，往里瞧瞧它是如何创造奇迹的。我会跳过细节。更深入的描述参
-见 http://www.kernel.org/pub/software/scm/git/docs/user-manual.html[ 用户手
-册]。
+见 [用户手
+册](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html)。
 
-===大象无形===
+### 大象无形 ###
 
 Git怎么这么谦逊寡言呢？除了偶尔提交和合并外，你可以如常工作，就像不知道版本控
 制系统存在一样。那就是，直到你需要它的时候，而且那是你欢欣的时候，Git一直默默
@@ -27,7 +27,7 @@ Git怎么这么谦逊寡言呢？除了偶尔提交和合并外，你可以如�
 史拷贝，因此你可以保持离线，直到你想和他人沟通为止。你拥有你的文件命运完全的
 控制权，因为Git可以轻易在任何时候从`.git`重建一个保存状态。
 
-===数据完整性===
+### 数据完整性 ###
 
 很多人把加密和保持信息机密关联起来，但一个同等重要的目标是保证信息安全。合理
 使用哈希加密功能可以防止无意或有意的数据损坏行为。
@@ -45,7 +45,7 @@ Git怎么这么谦逊寡言呢？除了偶尔提交和合并外，你可以如�
 看到ID。通过用ID作为文件名，加上一些文件锁和时间戳技巧，Git把任意一个原始的文
 件系统转化为一个高效而稳定的数据库。
 
-===智能===
+### 智能 ###
 
 Git是如何知道你重命名了一个文件，即使你从来没有明确提及这个事实？当然，你或许
 是运行了 *git mv* ，但这个命令和 *git add* 紧接 *git rm* 是完全一样的。
@@ -55,7 +55,7 @@ Git启发式地找出相连版本之间的重命名和拷贝。实际上，它�
 进中。如果它在你那儿不工作的话，可以尝试打开开销更高的拷贝检测选项，并考虑升
 级。
 
-===索引===
+### 索引 ###
 
 为每个加入管理的文件，Git在一个名为“index”的文件里记录统计信息，诸如大小，
 创建时间和最后修改时间。为了确定文件是否更改，Git比较其当前统计信息与那些在索
@@ -68,12 +68,12 @@ Git启发式地找出相连版本之间的重命名和拷贝。实际上，它�
 命令将文件放到Git的数据库并更新它们的统计信息，而无参数的提交命令创建一个提交，
 只基于这些统计信息和已经在数据库里的文件。
 
-===Git的源起===
+### Git的源起 ###
 
-这个 http://lkml.org/lkml/2005/4/6/121[ Linux内核邮件列表帖子] 描述了导致Git
+这个 [Linux内核邮件列表帖子](http://lkml.org/lkml/2005/4/6/121) 描述了导致Git
 的一系列事件。整个讨论线索是一个令人着迷的历史探究过程，对Git史学家而言。
 
-===对象数据库===
+### 对象数据库 ###
 
 你数据的每个版本都保存在“对象数据库”里，其位于子目录`.git/objects`；其他位
 于`.git/`的较少数据：索引，分支名，标签，配置选项，日志，头提交的当前位置等。
@@ -82,25 +82,25 @@ Git启发式地找出相连版本之间的重命名和拷贝。实际上，它�
 `.git/objects`里的每个文件是一个对象。有3中对象跟我们有关：“blob”对象，
 “tree”对象，和“commit”对象。
 
-===Blob对象===
+### Blob对象 ###
 
 首先来一个小把戏。去一个文件名，任意文件名。在一个空目录：
 
- $ echo sweet > YOUR_FILENAME
- $ git init
- $ git add .
- $ find .git/objects -type f
+    $ echo sweet > YOUR_FILENAME
+    $ git init
+    $ git add .
+    $ find .git/objects -type f
 
 你将看到 +.git/objects/aa/823728ea7d592acc69b36875a482cdf3fd5c8d+ 。
 
 我如何在不知道文件名的情况下知道这个？这是因为以下内容的SHA1哈希值：
 
- "blob" SP "6" NUL "sweet" LF
+    "blob" SP "6" NUL "sweet" LF
 
 是 aa823728ea7d592acc69b36875a482cdf3fd5c8d，这里SP是一个空格，NUL是一个0字节，
 LF是一个换行符。你可以验证这一点，键入：
 
-  $ printf "blob 6\000sweet\n" | sha1sum
+    $ printf "blob 6\000sweet\n" | sha1sum
 
 Git基于“内容寻址”：文件并不按它们的文件名存储，而是按它们包含内容的哈希值，
 在一个叫“blob对象”的文件里。我们可以把文件内容的哈希值看作一个唯一ID，这样
@@ -113,37 +113,37 @@ Git基于“内容寻址”：文件并不按它们的文件名存储，而是�
 在 +.git/objects+ 的内容保持不变，不管你加了多少。Git只存储一次数据。
 
 顺便说一句，在 +.git/objects+ 里的文件用zlib压缩，因此你不应该直接查看他们。
-可以通过http://www.zlib.net/zpipe.c[zpipe -d] 管道， 或者键入：
+可以通过 [zpipe -d](http://www.zlib.net/zpipe.c) 管道， 或者键入：
 
- $ git cat-file -p aa823728ea7d592acc69b36875a482cdf3fd5c8d
+    $ git cat-file -p aa823728ea7d592acc69b36875a482cdf3fd5c8d
 
 这漂亮地打印出给定的对象。
 
-===Tree对象===
+### Tree对象 ###
 
 但文件名在哪？它们必定在某个阶段保存在某个地方。Git在提交时得到文件名：
 
- $ git commit  # 输入一些信息。
- $ find .git/objects -type f
+    $ git commit  # 输入一些信息。
+    $ find .git/objects -type f
 
 你应看到3个对象。这次我不能告诉你这两个新文件是什么，因为它部分依赖你选择的文
 件名。我继续进行，假设你选了``rose''。如果你没有，你可以重写历史以让它看起来
 像似你做了：
 
- $ git filter-branch --tree-filter 'mv YOUR_FILENAME rose'
- $ find .git/objects -type f
+    $ git filter-branch --tree-filter 'mv YOUR_FILENAME rose'
+    $ find .git/objects -type f
 
 现在你硬看到文件 +.git/objects/05/b217bb859794d08bb9e4f7f04cbda4b207fbe9+ ，因为这是以下内容的SHA1哈希值：
 
- "tree" SP "32" NUL "100644 rose" NUL 0xaa823728ea7d592acc69b36875a482cdf3fd5c8d
+    "tree" SP "32" NUL "100644 rose" NUL 0xaa823728ea7d592acc69b36875a482cdf3fd5c8d
 
 检查这个文件真的包含上面内容通过键入：
 
- $ echo 05b217bb859794d08bb9e4f7f04cbda4b207fbe9 | git cat-file --batch
+    $ echo 05b217bb859794d08bb9e4f7f04cbda4b207fbe9 | git cat-file --batch
 
 使用zpipe，验证哈希值是容易的：
 
- $ zpipe -d < .git/objects/05/b217bb859794d08bb9e4f7f04cbda4b207fbe9 | sha1sum
+    $ zpipe -d < .git/objects/05/b217bb859794d08bb9e4f7f04cbda4b207fbe9 | sha1sum
 
 与查看文件相比，哈希值验证更技巧一些，因为其输出不止包含原始未压缩文件。
 
@@ -155,45 +155,45 @@ Git基于“内容寻址”：文件并不按它们的文件名存储，而是�
 在一些过渡性的分支，你会有一些你不在需要的老的对象，尽管有宽限过期之后，它们
 会被自动清除，现在我们还是将其删除，以使我们比较容易跟上这个玩具例子。
 
- $ rm -r .git/refs/original
- $ git reflog expire --expire=now --all
- $ git prune
+    $ rm -r .git/refs/original
+    $ git reflog expire --expire=now --all
+    $ git prune
 
 在真实项目里你通常应该避免像这样的命令，因为你在破换备份。如果你期望一个干净
 的仓库，通常最好做一个新的克隆。还有，直接操作 +.git+ 时一定要小心：如果
 Git命令同时也在运行会怎样，或者突然停电？一般，引用应由 *git update-ref -d*
 删除，尽管通常手工删除 +refs/original+ 也是安全的。
 
-===Commit对象===
+### Commit对象 ###
 
 我们已经解释了三个对象中的两个。第三个是“commit”对象。其内容依赖于提交信息
 以及其创建的日期和时间。为满足这里我们所有的，我们不得不调整一下：
 
- $ git commit --amend -m Shakespeare  # 改提交信息
- $ git filter-branch --env-filter 'export
-     GIT_AUTHOR_DATE="Fri 13 Feb 2009 15:31:30 -0800"
-     GIT_AUTHOR_NAME="Alice"
-     GIT_AUTHOR_EMAIL="alice@example.com"
-     GIT_COMMITTER_DATE="Fri, 13 Feb 2009 15:31:30 -0800"
-     GIT_COMMITTER_NAME="Bob"
-     GIT_COMMITTER_EMAIL="bob@example.com"'  # Rig timestamps and authors.
- $ find .git/objects -type f
+    $ git commit --amend -m Shakespeare  # 改提交信息
+    $ git filter-branch --env-filter 'export
+        GIT_AUTHOR_DATE="Fri 13 Feb 2009 15:31:30 -0800"
+        GIT_AUTHOR_NAME="Alice"
+        GIT_AUTHOR_EMAIL="alice@example.com"
+        GIT_COMMITTER_DATE="Fri, 13 Feb 2009 15:31:30 -0800"
+        GIT_COMMITTER_NAME="Bob"
+        GIT_COMMITTER_EMAIL="bob@example.com"'  # Rig timestamps and authors.
+    $ find .git/objects -type f
 
 你现在应看到 +.git/objects/49/993fe130c4b3bf24857a15d7969c396b7bc187+ 是下列
 内容的SHA1哈希值：
 
- "commit 158" NUL
- "tree 05b217bb859794d08bb9e4f7f04cbda4b207fbe9" LF
- "author Alice <alice@example.com> 1234567890 -0800" LF
- "committer Bob <bob@example.com> 1234567890 -0800" LF
- LF
- "Shakespeare" LF
+    "commit 158" NUL
+    "tree 05b217bb859794d08bb9e4f7f04cbda4b207fbe9" LF
+    "author Alice <alice@example.com> 1234567890 -0800" LF
+    "committer Bob <bob@example.com> 1234567890 -0800" LF
+    LF
+    "Shakespeare" LF
 
 和前面一样，你可以运行zpipe或者cat-file来自己看。
 
 这是第一个提交，因此没有父提交，但之后的提交将总有至少一行，指定一个父提交。
 
-===没那么神===
+### 没那么神 ###
 
 Git的秘密似乎太简单。看起来似乎你可以整合几个shell脚本，加几行C代码来弄起来，
 也就几个小时的事：一个基本文件操作和SHA1哈希化的混杂，用锁文件装饰一下，文件

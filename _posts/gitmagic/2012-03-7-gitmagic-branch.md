@@ -5,7 +5,7 @@ keywords: gitmagic, git, 分支
 category : gitmagic
 tags : [Git魔法, git, gitmagic]
 ---
-== 分支巫术 ==
+## 分支巫术 ##
 
 即时分支合并是Git最给力的杀手锏。
 
@@ -27,57 +27,57 @@ tags : [Git魔法, git, gitmagic]
 下窜外，这个转换还可以做更多。你的文件可以从上一个发布版变到实验版本到当前开
 发版本到你朋友的版本等等。
 
-=== 老板键 ===
+### 老板键 ###
 
 曾经玩过那样的游戏吗？按一个键（“老板键”），屏幕立即显示一个电子表格或别的？
 那么如果老板走进办公室，而你正在玩游戏，就可以快速将游戏藏起来。
 
 在某个目录：
 
- $ echo "I'm smarter than my boss" > myfile.txt
- $ git init
- $ git add .
- $ git commit -m "Initial commit"
+    $ echo "I'm smarter than my boss" > myfile.txt
+    $ git init
+    $ git add .
+    $ git commit -m "Initial commit"
 
 我们已经创建了一个Git仓库，该仓库记录一个包含特定信息的文件。现在我们键入：
 
- $ git checkout -b boss  # 之后似乎没啥变化
- $ echo "My boss is smarter than me" > myfile.txt
- $ git commit -a -m "Another commit"
+    $ git checkout -b boss  # 之后似乎没啥变化
+    $ echo "My boss is smarter than me" > myfile.txt
+    $ git commit -a -m "Another commit"
 
 看起来我们刚刚只是覆盖了原来的文件并提交了它。但这是个错觉。键入：
 
- $ git checkout master  # 切到文件的原先版本
+    $ git checkout master  # 切到文件的原先版本
 
 嘿真快！这个文件就恢复了。并且如果老板决定窥视这个目录，键入：
 
- $ git checkout boss  # 切到适合老板看的版本
+    $ git checkout boss  # 切到适合老板看的版本
 
 你可以在两个版本之间相切多少次就切多少次，而且每个版本都可以独立提交。
 
-=== 肮脏的工作 ===
+### 肮脏的工作 ###
 
 [[branch]]
 
 比如你正在开发某个特性，并且由于某种原因，你需要回退三个版本，临时加进几行打
 印语句来，来看看一些东西是如何工作的。那么：
 
- $ git commit -a
- $ git checkout HEAD~3
+    $ git commit -a
+    $ git checkout HEAD~3
 
 现在你可以到处加丑陋的临时代码。你甚至可以提交这些改动。当你做完的时候，
 
- $ git checkout master
+    $ git checkout master
 
 来返回到你原来的工作。看，所有未提交变更都结转了。
 
 如果你后来想保存临时变更怎么办？简单：
 
- $ git checkout -b dirty
+    $ git checkout -b dirty
 
 只要在切换到主分支之前提交就可以了。无论你什么时候想回到脏的变更，只需键入：
 
- $ git checkout dirty
+    $ git checkout dirty
 
 我们在前面章节讨论加载旧状态的时候，曾经接触过这个命令。最终我们把故事说全：
 文件改变成请求的状态，但我们必须离开主分支。从现在开始的任何提交都会将你的文
@@ -86,24 +86,24 @@ tags : [Git魔法, git, gitmagic]
 换一个说法，在checkout一个旧状态之后，Git自动把你放到一个新的，未命名的分支，
 这个分支可以使用 *git checkout -b* 来命名和保存。
 
-=== 快速修订 ===
+### 快速修订 ###
 
 你正在做某件事的当间，被告知先停所有的事情，去修理一个新近发现的臭虫，这个臭
 虫在提交 `1b6d...`：
 
- $ git commit -a
- $ git checkout -b fixes 1b6d
+    $ git commit -a
+    $ git checkout -b fixes 1b6d
 
 那么一旦你修正了这个臭虫：
 
- $ git commit -a -m "Bug fixed"
- $ git checkout master
+    $ git commit -a -m "Bug fixed"
+    $ git checkout master
 
 并可以继续你原来的任务。你甚至可以“合并”到最新修订：
 
- $ git merge fixes
+    $ git merge fixes
 
-=== 合并 ===
+### 合并 ###
 
 一些版本控制系统，创建分支很容易，但把分支合并回来很难。使用Git，合并简直是家
 常便饭，以至于甚至你可能对其发生没有察觉。
@@ -121,19 +121,19 @@ tags : [Git魔法, git, gitmagic]
 
 你可以用插入符号来特别指定父。比如，显示来自第二个父的日志：
 
- $ git log HEAD^2
+    $ git log HEAD^2
 
 你可以忽略数字以指代第一个父。比如，显示与第一个父的差别：
 
- $ git diff HEAD^
+    $ git diff HEAD^
 
 你可以结合其他类型使用这个记号。比如：
 
- $ git checkout 1b6d^^2~10 -b ancient
+    $ git checkout 1b6d^^2~10 -b ancient
 
 开始一个新分支 ``ancient'' ，表示第一个父的第二个父的倒数第十次提交的状态。
 
-=== 不间断工作流 ===
+### 不间断工作流 ###
 
 经常在硬件项目里，计划的第二步必须等第一步完成才能开始。待修的汽车傻等在车库
 里，直到特定的零件从工厂运来。一个原型在其可以构建之前，可能苦等芯片成型。
@@ -146,60 +146,60 @@ tags : [Git魔法, git, gitmagic]
 部分的工作。假设你已经将第一部分提交并发去审批，比如说你现在在主分支。那么分
 岔：
 
- $ git checkout -b part2
+    $ git checkout -b part2
 
 接下来，做第二部分，随时可以提交变更。只要是人就可能犯错误，经常你将回到第一
 部分在修修补补。如果你非常幸运，或者超级棒，你可能不必做这几行：
 
- $ git checkout master  # 回到第一部分
- $ 修复问题
- $ git commit -a        # 提交变更
- $ git checkout part2   # 回到第二部分
- $ git merge master     # 合并这些改动
+    $ git checkout master  # 回到第一部分
+    $ 修复问题
+    $ git commit -a        # 提交变更
+    $ git checkout part2   # 回到第二部分
+    $ git merge master     # 合并这些改动
 
 最终，第一部分获得批准：
 
- $ git checkout master  # 回到第一部分
- $ submit files         # 对世界发布
- $ git merge part2      # 合并第二部分
- $ git branch -d part2  # 删除分支“part2”
+    $ git checkout master  # 回到第一部分
+    $ submit files         # 对世界发布
+    $ git merge part2      # 合并第二部分
+    $ git branch -d part2  # 删除分支“part2”
 
 现在你再次处在主分支，第二部分的代码也在工作目录。
 
 很容易扩展这个技巧，应用到任意数目的部分。它也很容易追溯分支：假如你很晚才意
 识到你本应在7次提交前就创建分支。那么键入：
 
- $ git branch -m master part2  # 重命名“master”分支为“part2”。
- $ git branch master HEAD~7    # 以七次前提交建一个新的“master”。
+    $ git branch -m master part2  # 重命名“master”分支为“part2”。
+    $ git branch master HEAD~7    # 以七次前提交建一个新的“master”。
 
 分支 `master` 只有第一部分内容，其他内容在分支 `part2` 。 我们现在后一个分支；
 我们创建了 `master` 分支还没有切换过去，因为我们想继续工作在 `part2` 。这是不
 寻常的。直到现在，我们已经在创建之后切换到分支，如：
 
- $ git checkout HEAD~7 -b master  # 创建分支，并切换过去。
+    $ git checkout HEAD~7 -b master  # 创建分支，并切换过去。
 
-=== 重组杂乱 ===
+### 重组杂乱 ###
 
 或许你喜欢在同一个分支下完成工作的方方面面。你想为自己保留工作进度并希望其他
 人只能看到你仔细整理过后的提交。开启一对分支：
 
-  $ git branch sanitized    # 为干净提交创建分支
-  $ git checkout -b medley  # 创建并切换分支以进去工作
+    $ git branch sanitized    # 为干净提交创建分支
+    $ git checkout -b medley  # 创建并切换分支以进去工作
 
 接下来，做任何事情：修臭虫，加特性，加临时代码，诸如此类，经常按这种方式提交。
 然后：
 
-  $ git checkout sanitized
-  $ git cherry-pick medley^^
+    $ git checkout sanitized
+    $ git cherry-pick medley^^
 
 应用分支 ``medley'' 的祖父提交到分支 ``sanitized'' 。通过合适的挑选（像选樱桃
 那样）你可以构建一个只包含成熟代码的分支，而且相关的提交也组织在一起。
 
-=== 管理分支 ===
+### 管理分支 ###
 
 列出所有分支：
 
- $ git branch
+    $ git branch
 
 默认你从叫 ``master'' 的分支开始。一些人主张别碰“master”分支，而是创建你自
 己版本的新分支。
@@ -210,7 +210,7 @@ tags : [Git魔法, git, gitmagic]
 支，并且该分支包含你项目的官方版本。尽管你可以重命名或抹杀 ``master'' 分支，
 你最好还是尊重这个约定。
 
-=== 临时分支 ===
+### 临时分支 ###
 
 很快你会发现你经常会因为一些相似的原因创建短期的分支：每个其它分支只是为了保
 存当前状态，那样你就可以直接跳到较老状态以修复高优先级的臭虫之类。
@@ -219,18 +219,18 @@ tags : [Git魔法, git, gitmagic]
 单地按几个按钮，你不得不创建，检出，合并，以及删除临时分支。幸运的是，Git已经
 有了和电视机遥控器一样方便的快捷方式：
 
- $ git stash
+    $ git stash
 
 这个命令保存当前状态到一个临时的地方（一个隐藏的地方）并且恢复之前状态。你的
 工作目录看起来和你开始编辑之前一样，并且你可以修复臭虫，引入之前变更等。当你
 想回到隐藏状态的时候，键入：
 
- $ git stash apply  # 你可能需要解决一些冲突
+    $ git stash apply  # 你可能需要解决一些冲突
 
 你可以有多个隐藏，并用不同的方式来操作他们。参见 *git help slash* 。也许你已
 经猜到，Git维护在这个场景之后的分支以执行魔法技巧.
 
-=== 按你希望的方式工作 ===
+### 按你希望的方式工作 ###
 
 你可能犹疑于分支是否值得一试。毕竟，克隆也几乎一样快，并且你可以用 *cd* 来在
 彼此之间切换，而不是用Git深奥的命令。

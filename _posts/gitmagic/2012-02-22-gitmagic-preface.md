@@ -11,7 +11,7 @@ Ben Lynn
 
 ## 前言 ##
 
-http://git.or.cz/[Git] 堪称版本控制瑞士军刀。这个可靠、多才多艺、用途多样的校
+[Git](http://git.or.cz/) 堪称版本控制瑞士军刀。这个可靠、多才多艺、用途多样的校
 订工具异常灵活，以致不易掌握，更别说精通了。
 
 正如Arthur C. Clarke所说，足够先进的技术与魔法无二。这是学习Git的好办法：新手
@@ -22,32 +22,32 @@ http://git.or.cz/[Git] 堪称版本控制瑞士军刀。这个可靠、多才多
 
 .翻译
 
- - link:/\~blynn/gitmagic/intl/zh_cn/[简体中文]: 俊杰，萌和江薇。
-   link:/~blynn/gitmagic/intl/zh_tw/[正体中文] 由 + cconv -f UTF8-CN -t
+- [简体中文]link:/\~blynn/gitmagic/intl/zh_cn/: 俊杰，萌和江薇。
+   [正体中文]link:/~blynn/gitmagic/intl/zh_tw/ 由 + cconv -f UTF8-CN -t
    UTF8-TW + 转换。
- - link:/~blynn/gitmagic/intl/fr/[法文]: Alexandre Garel。也在
-   http://tutoriels.itaapy.com/[itaapy]。
- - link:/~blynn/gitmagic/intl/de/[德文]: Benjamin Bellee和Armin Stebich；也在
-   http://gitmagic.lordofbikes.de/[Armin的网站]。
- - http://www.slideshare.net/slide_user/magia-git[葡萄牙文]: Leonardo
+- link:/~blynn/gitmagic/intl/fr/[法文]: Alexandre Garel。也在
+   [itaapy](http://tutoriels.itaapy.com/)。
+- link:/~blynn/gitmagic/intl/de/[德文]: Benjamin Bellee和Armin Stebich；也在
+   [Armin的网站](http://gitmagic.lordofbikes.de/)。
+- [葡萄牙文](http://www.slideshare.net/slide_user/magia-git): Leonardo
    Siqueira Rodrigues
-   [http://www.slideshare.net/slide_user/magia-git-verso-odt[ODT版]]。
- - link:/~blynn/gitmagic/intl/ru/[俄文]: Tikhon Tarnavsky, Mikhail Dymskov,
+   [[ODT版])http://www.slideshare.net/slide_user/magia-git-verso-odt)]。
+- link:/~blynn/gitmagic/intl/ru/[俄文]: Tikhon Tarnavsky, Mikhail Dymskov,
    和其他人。
- - link:/~blynn/gitmagic/intl/es/[西班牙]: Rodrigo Toledo和Ariset Llerena
+- link:/~blynn/gitmagic/intl/es/[西班牙]: Rodrigo Toledo和Ariset Llerena
    Tapia。
- - link:/~blynn/gitmagic/intl/vi/[越南文]: Trần Ngọc Quân; 也在
-   http://vnwildman.users.sourceforge.net/gitmagic.html[他的网站].
+- link:/~blynn/gitmagic/intl/vi/[越南文]: Trần Ngọc Quân; 也在
+   [他的网站](http://vnwildman.users.sourceforge.net/gitmagic.html).
 
 .其它版本
 
- - link:book.html[单一文件]: 纯HTML，无CSS。
- - link:book.pdf[PDF文件]: 打印效果好.
- - http://packages.debian.org/gitmagic[Debian包]，
-   http:://packages.ubuntu.com/gitmagic[Ubuntu包]: 本站快速本地拷贝。如果
-   http://csdcf.stanford.edu/status/[下线了]会方便些。
- - http://www.amazon.com/Git-Magic-Ben-Lynn/dp/1451523343/[纸质书
-   [Amazon.com]]: 64 页, 15.24cm x 22.86cm, 黑白。 没有电子设备的时候会方便些。
+- link:book.html[单一文件]: 纯HTML，无CSS。
+- link:book.pdf[PDF文件]: 打印效果好.
+- [Debian包](http://packages.debian.org/gitmagic)，
+   [Ubuntu包](http:://packages.ubuntu.com/gitmagic): 本站快速本地拷贝。如果
+   [下线了](http://csdcf.stanford.edu/status/)会方便些。
+- [纸质书
+   [Amazon.com]](http://www.amazon.com/Git-Magic-Ben-Lynn/dp/1451523343/): 64 页, 15.24cm x 22.86cm, 黑白。 没有电子设备的时候会方便些。
 
 ### 致谢！ ###
 
@@ -67,23 +67,23 @@ François Marier维护Debian包，该Debian包起初由Daniel Baumann创建。
 
 .免费Git伺服
 
- - http://repo.or.cz/[http://repo.or.cz/] 为自由项目提供服务。第一个Git服务器。
+- <http://repo.or.cz/> 为自由项目提供服务。第一个Git服务器。
    由最早的Git开发人员创建和维护。
- - http://gitorious.org/[http://gitorious.org/] 是另一个Git服务站点，为开源项
+- <http://gitorious.org/> 是另一个Git服务站点，为开源项
    目提供服务。
- - http://github.com/[http://github.com/] 开源项目免费，私有项目收钱。
+- <http://github.com/> 开源项目免费，私有项目收钱。
 
 感谢以上站点为本文档提供伺服服务。
 
 ### 许可 ###
 
-本指南在http://www.gnu.org/licenses/gpl-3.0.html[ GNU通用公共许可协议版本3 ]
+本指南在 [GNU通用公共许可协议版本3](http://www.gnu.org/licenses/gpl-3.0.html) 
 之下发布。很自然，源码保存在一个Git仓库里，可以通过以下命令获得源码：
 
- $ git clone git://repo.or.cz/gitmagic.git  # 创建“gitmagic”目录.
+    $ git clone git://repo.or.cz/gitmagic.git  # 创建“gitmagic”目录.
 
 或从以下镜像得到：
 
- $ git clone git://github.com/blynn/gitmagic.git
- $ git clone git://gitorious.org/gitmagic/mainline.git
+    $ git clone git://github.com/justjavac/gitmagic.git
+    $ git clone git://gitorious.org/gitmagic/mainline.git
 

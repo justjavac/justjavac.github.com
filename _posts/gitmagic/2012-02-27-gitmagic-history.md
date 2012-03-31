@@ -5,7 +5,7 @@ keywords: gitmagic, git, 历史
 category : gitmagic
 tags : [Git魔法, git, gitmagic]
 ---
-== 关于历史 ==
+## 关于历史 ##
 
 Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需要小心：只重写你独自拥有
 的那部分。正如民族间会无休止的争论谁犯下了什么暴行一样，如果在另一个人的克隆
@@ -16,25 +16,25 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 支和合并一样，重写历史只是Git给你的另一强大功能，至于如何明智地使用它，那是你
 的事了。
 
-=== 我认错 ===
+### 我认错 ###
 
 刚提交，但你期望你输入的是一条不同的信息？那么键入：
 
- $ git commit --amend
+    $ git commit --amend
 
 来改变上一条信息。意识到你还忘记了加一个文件？运行git add来加，然后运行上面的
 命令。
 
 希望在上次提交里包括多一点的改动？那么就做这些改动并运行：
 
- $ git commit --amend -a
+    $ git commit --amend -a
 
-=== 更复杂情况 ===
+### 更复杂情况 ###
 
 假设前面的问题还要糟糕十倍。在漫长的时间里我们提交了一堆。但你不太喜欢他们的
 组织方式，而且一些提交信息需要重写。那么键入：
 
- $ git rebase -i HEAD~10
+    $ git rebase -i HEAD~10
 
 并且后10个提交会出现在你喜爱的$EDITOR。一个例子：
 
@@ -54,15 +54,15 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 
 保存退出。如果你把一个提交标记为可编辑，那么运行
 
- $ git commit --amend
+    $ git commit --amend
 
 否则，运行：
 
- $ git rebase --continue
+    $ git rebase --continue
 
 这样尽早提交，经常提交：你之后还可以用rebase来规整。
 
-=== 本地变更之后 ===
+### 本地变更之后 ###
 
 你正在一个活跃的项目上工作。随着时间推移，你做了几个本地提交，然后你使用合并
 与官方版本同步。在你准备好提交到中心分支之前，这个循环会重复几次。
@@ -76,7 +76,7 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 另外参见 *git help rebase* 以获取这个让人惊奇的命令更详细的例子。你可以拆分提
 交。你甚至可以重新组织一棵树的分支。
 
-=== 重写历史 ===
+### 重写历史 ###
 
 偶尔，你需要做一些代码控制，好比从正式的照片中去除一些人一样，需要从历史记录
 里面彻底的抹掉他们。例如，假设我们要发布一个项目，但由于一些原因，项目中的某
@@ -84,7 +84,7 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 加入到了这个项目中。仅仅删除这个文件是不够的，因为从别的提交记录中还是可以访
 问到这个文件。因此我们必须从所有的提交记录中彻底删除这个文件。
 
- $ git filter-branch --tree-filter 'rm top/secret/file' HEAD
+    $ git filter-branch --tree-filter 'rm top/secret/file' HEAD
 
 参见 *git help filter-branch* ，那里讨论了这个例子并给出一个更快的方法。一般
 地， *filter-branch* 允许你使用一个单一命令来大范围地更改历史。
@@ -94,7 +94,7 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 
 最后，用你修订过的版本替换你的项目克隆，如果你想之后和它们交互的话。
 
-=== 制造历史 ===
+### 制造历史 ###
 
 [[makinghistory]]
 想把一个项目迁移到Git吗？如果这个项目是在用比较有名气的系统，那可以使用一些其
@@ -105,81 +105,78 @@ Git分布式本性使得历史可以轻易编辑。但你若篡改过去，需�
 
 作为一个例子，粘贴以下所列到临时文件，比如/tmp/history：
 
-----------------------------------
-commit refs/heads/master
-committer Alice <alice@example.com> Thu, 01 Jan 1970 00:00:00 +0000
-data <<EOT
-Initial commit.
-EOT
+    commit refs/heads/master
+    committer Alice <alice@example.com> Thu, 01 Jan 1970 00:00:00 +0000
+    data <<EOT
+    Initial commit.
+    EOT
 
-M 100644 inline hello.c
-data <<EOT
-#include <stdio.h>
+    M 100644 inline hello.c
+    data <<EOT
+    #include <stdio.h>
 
-int main() {
-  printf("Hello, world!\n");
-  return 0;
-}
-EOT
+    int main() {
+      printf("Hello, world!\n");
+      return 0;
+    }
+    EOT
 
 
-commit refs/heads/master
-committer Bob <bob@example.com> Tue, 14 Mar 2000 01:59:26 -0800
-data <<EOT
-Replace printf() with write().
-EOT
+    commit refs/heads/master
+    committer Bob <bob@example.com> Tue, 14 Mar 2000 01:59:26 -0800
+    data <<EOT
+    Replace printf() with write().
+    EOT
 
-M 100644 inline hello.c
-data <<EOT
-#include <unistd.h>
+    M 100644 inline hello.c
+    data <<EOT
+    #include <unistd.h>
 
-int main() {
-  write(1, "Hello, world!\n", 14);
-  return 0;
-}
-EOT
-
-----------------------------------
+    int main() {
+      write(1, "Hello, world!\n", 14);
+      return 0;
+    }
+    EOT
 
 之后从这个临时文件创建一个Git仓库，键入：
 
- $ mkdir project; cd project; git init
- $ git fast-import --date-format=rfc2822 < /tmp/history
+    $ mkdir project; cd project; git init
+    $ git fast-import --date-format=rfc2822 < /tmp/history
 
 你可以从这个项目checkout出最新的版本，使用：
 
- $ git checkout master .
+    $ git checkout master .
 
 命令*git fast-export* 转换任意仓库到 *git fast-import* 格式，你可以研究其输
 出来写导出程序， 也以可读格式传送仓库。的确，这些命令可以发送仓库文本文件
 通过只接受文本的渠道。
 
 
-=== 哪儿错了？ ===
+### 哪儿错了？ ###
 
 你刚刚发现程序里有一个功能出错了，而你十分确定几个月以前它运行的很正常。天啊！
 这个臭虫是从哪里冒出来的？要是那时候能按照开发的内容进行过测试该多好啊。
 
 现在说这个已经太晚了。然而，即使你过去经常提交变更，Git还是可以精确的找出问题所在：
 
- $ git bisect start
- $ git bisect bad HEAD
- $ git bisect good 1b6d
+    $ git bisect start
+    $ git bisect bad HEAD
+    $ git bisect good 1b6d
 
 Git从历史记录中检出一个中间的状态。在这个状态上测试功能，如果还是有问题：
 
- $ git bisect bad
+    $ git bisect bad
 
 如果可以工作了，则把"bad"替换成"good"。Git会再次帮你找到一个以确定的好版本和
 坏版本之间的状态，通过这种方式缩小范围。经过一系列的迭代，这种二分搜索会帮你
 找到导致这个错误的那次提交。一旦完成了问题定位的调查，你可以返回到原始状态，
 键入：
 
- $ git bisect reset
+    $ git bisect reset
 
 不需要手工测试每一次改动，执行如下命令可以自动的完成上面的搜索：
 
- $ git bisect run my_script
+    $ git bisect run my_script
 
 Git使用指定命令（通常是一个一次性的脚本）的返回值来决定一次改动是否是正确的：
 命令退出时的代码0代表改动是正确的，125代表要跳过对这次改动的检查，1到127之间
@@ -188,16 +185,16 @@ Git使用指定命令（通常是一个一次性的脚本）的返回值来决�
 你还能做更多的事情: 帮助文档解释了如何展示bisects, 检查或重放bisect的日志,并
 可以通过排除对已知正确改动的检查，得到更好的搜索速度。
 
-=== 谁让事情变糟了？ ===
+### 谁让事情变糟了？ ###
 
 和其他许多版本控制系统一样，Git也有一个"blame"命令：
 
- $ git blame bug.c
+    $ git blame bug.c
 
 这个命令可以标注出一个指定的文件里每一行内容的最后修改者，和最后修改时间。但
 不像其他版本控制系统，Git的这个操作是在线下完成的，它只需要从本地磁盘读取信息。
 
-=== 个人经验 ===
+### 个人经验 ###
 
 在一个中心版本控制系统里，历史的更改是一个困难的操作，并且只有管理员才有权这
 么做。没有网络，克隆，分支和合并都没法做。像一些基本的操作如浏览历史，或提交
