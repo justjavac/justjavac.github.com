@@ -10,7 +10,7 @@ tags : [git, github, mac]
 
 ###首先，需要在 mac 下安装 git.
 
-mac git 的地址: http://code.google.com/p/git-osx-installer/ 由于可能这个网址访问
+mac git 的地址: <http://code.google.com/p/git-osx-installer/> 由于可能这个网址访问
 不了，所以需要使用源码安装。
 
 ###安装好了 Git 之后，就开始设置 GitHub 连接了。
