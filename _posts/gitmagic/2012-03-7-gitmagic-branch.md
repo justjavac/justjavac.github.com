@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 分支巫术
 keywords: gitmagic, git, 分支
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 分支巫术 ##

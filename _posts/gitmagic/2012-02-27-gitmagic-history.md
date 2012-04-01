@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 关于历史
 keywords: gitmagic, git, 历史
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 关于历史 ##

@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 揭开面纱
 keywords: gitmagic, git, 基本技巧
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 揭开面纱 ##

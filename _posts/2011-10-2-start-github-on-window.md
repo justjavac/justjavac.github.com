@@ -3,8 +3,8 @@ layout:       post
 title:        window 下建立 github 连接
 description:    在 window 下如何使用 GitHub 呢？这篇文章一步一步教你。
 keywords: GitHub, windows
-category : Markdown
-tags : [github, Windows]
+category : git
+tags : [github, Windows, git]
 ---
 在 window 下搭建 github 连接。
 ###前提
@@ -71,7 +71,7 @@ tags : [github, Windows]
 4.  把 SSH key 加到你的 GitHub
 嘿嘿，登录 GitHub，然后点击 "Account Setting" > "SSH Public Keys" > "Add another public key"
 然后打开 id_rsa.pub 文件（用 txt 打开就好，或者 vim ）。这就是你的公钥。
-注：id_rsa.pub 的路径是 C:\Documents and Settings\Administrator\.ssh\ ，如果你刚
+注：id_rsa.pub 的路径是 `C:\Documents and Settings\Administrator\.ssh\` ，如果你刚
 刚按上面的做的话。
 
 5.  测试啦

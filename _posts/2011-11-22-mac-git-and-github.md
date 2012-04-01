@@ -10,7 +10,7 @@ tags : [git, github, mac]
 
 ###首先，需要在 mac 下安装 git.
 
-mac git 的地址: <http://code.google.com/p/git-osx-installer/> 由于可能这个网址访问
+mac git 的地址: http://code.google.com/p/git-osx-installer/ 由于可能这个网址访问
 不了，所以需要使用源码安装。
 
 ###安装好了 Git 之后，就开始设置 GitHub 连接了。
@@ -30,17 +30,22 @@ $ mr id_rsa*
 </pre>
 
 #####3, 创建一个新的 ssh key
-
-    $ ssh-keygen -t rsa -C "your_email@youremail.com" //记得输入你的github账号的邮箱
-    //会输出下面语句
-    Generating public/private rsa key pair.
-    Enter file in which to save the keys 
-    (/Users/your_user_directory/.ssh/id_rsa): <press enter> //这里需要按下 enter 键就好
+<pre class="js" name="colorcode">
+$ ssh-keygen -t rsa -C "your_email@youremail.com" //记得输入你的github账号的
+邮箱
+//会输出下面语句
+Generating public/private rsa key pair.
+Enter file in which to save the keys 
+(/Users/your_user_directory/.ssh/id_rsa): <press enter> //这里需要按下 enter
+键就好
+</pre>
 
 按下 enter 之后，又会出现下面的提示：
-
-    Enter passphrase(empty for no passphrase): <enter a passphrase> //输入一个密码
-    Enter same passphrase again: <enter passphrase again>
+<pre class="js" name="colorcode">
+Enter passphrase(empty for no passphrase): <enter a passphrase> //输入一个密
+码
+Enter same passphrase again: <enter passphrase again>
+</pre>
 
 随后，你会收到一大串的提示，大概的意思是告诉你创建好了 id_rsa 和 id_rsa.pub 文件。
 

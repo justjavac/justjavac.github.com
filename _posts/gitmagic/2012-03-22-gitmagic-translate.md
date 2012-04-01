@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 附录 B 本指南的翻译
 keywords: gitmagic, git, 本指南的翻译
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 附录 B: 本指南的翻译 ##

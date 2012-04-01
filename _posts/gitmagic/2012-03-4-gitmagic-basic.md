@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 基本技巧
 keywords: gitmagic, git, 基本技巧
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 基本技巧 ##

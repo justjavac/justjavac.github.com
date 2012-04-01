@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 多人Git
 keywords: gitmagic, git, 多人Git
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 多人Git ##

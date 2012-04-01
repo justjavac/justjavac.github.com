@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 附录 A Git的缺点
 keywords: gitmagic, git, 缺点
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 附录 A: Git的缺点 ##

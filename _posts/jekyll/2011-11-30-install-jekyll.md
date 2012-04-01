@@ -1,12 +1,12 @@
 ---
 layout:         post
 title:          mac 本地按安装 jekyll
-description:    安装 Jekyll 的方法。
-keywords: Jekyll, ruby
-category : Jekyll
+description:    安装 jekyll 的方法。
+keywords: jekyll, ruby
+category : jekyll
 tags : [iruby, jekyll]
 ---
-本地安装 Jekyll 其实很简单的，继续做笔记。
+本地安装 jekyll 其实很简单的，继续做笔记。
 
 如果你的本地已经安装了 gem ，那么你可以通过下面的方法来安装 jekyll , 在终端输入
 ：

@@ -2,7 +2,7 @@
 layout: post
 title: Git魔法 - 入门
 keywords: gitmagic, git, 入门
-category : gitmagic
+category : git
 tags : [Git魔法, git, gitmagic]
 ---
 ## 入门 ##
