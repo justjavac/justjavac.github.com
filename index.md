@@ -5,6 +5,18 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5061364613986259";
+/* justjavac 页首横幅 */
+google_ad_slot = "7571220937";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
