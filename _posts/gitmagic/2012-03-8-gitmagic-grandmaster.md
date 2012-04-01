@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Git魔法 - Git大师技
+title: Git魔法 - Git大师技巧
 keywords: gitmagic, git, 技巧, 高级技巧
 category : git
 tags : [Git魔法, git, gitmagic]
 ---
-## Git大师技 ##
+## Git大师技巧 ##
 
 到现在，你应该有能力查阅 *git help* 页，并理解几乎所有东西。然而，查明解决特
 定问题需要的确切命令可能是乏味的。或许我可以省你点功夫：以下是我过去曾经需要
@@ -26,8 +26,7 @@ tags : [Git魔法, git, gitmagic]
     $ git add -u
 
 Git将查找当前目录的文件并自己算出具体的情况。除了用第二个add命令，如果你也打
-算这时提交，可以运行`git commit -a`。关于如何指定应被忽略的文件，参见 *git
-help ignore* 。
+算这时提交，可以运行`git commit -a`。关于如何指定应被忽略的文件，参见 *git help ignore* 。
 
 你也可以用一行命令完成以上任务：
 
