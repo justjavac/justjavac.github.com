@@ -28,7 +28,7 @@ tags : [pages, github]
 ##创建页面-pages
 进入 test 库，点击 Admin 菜单进入设置。这时候你就可以创建一个 page 了。创建的
 page 是一个页面，其路径为  http://yourname.github.com/test
-pages是怎么样的一个概念，你可以参考 <pages.github.com>
+pages是怎么样的一个概念，你可以参考 <https://pages.github.com>
 接着在本地创建相应的 pages 分支
     cd /path/to/fancypants
     git symbolic-ref HEAD refs/heads/gh-pages
