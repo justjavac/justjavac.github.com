@@ -31,19 +31,16 @@ $ mr id_rsa*
 
 #####3, 创建一个新的 ssh key
 <pre class="js" name="colorcode">
-$ ssh-keygen -t rsa -C "your_email@youremail.com" //记得输入你的github账号的
-邮箱
+$ ssh-keygen -t rsa -C "your_email@youremail.com" //记得输入你的github账号的邮箱
 //会输出下面语句
 Generating public/private rsa key pair.
 Enter file in which to save the keys 
-(/Users/your_user_directory/.ssh/id_rsa): <press enter> //这里需要按下 enter
-键就好
+(/Users/your_user_directory/.ssh/id_rsa): <press enter> //这里需要按下 enter 键就好
 </pre>
 
 按下 enter 之后，又会出现下面的提示：
 <pre class="js" name="colorcode">
-Enter passphrase(empty for no passphrase): <enter a passphrase> //输入一个密
-码
+Enter passphrase(empty for no passphrase): <enter a passphrase> //输入一个密码
 Enter same passphrase again: <enter passphrase again>
 </pre>
 
