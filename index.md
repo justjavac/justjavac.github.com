@@ -1,7 +1,9 @@
 ---
 layout: page
 title: justjavac
-tagline: Supporting tagline
+keywords: justjavac
+description: justjavac的个人博客， 探讨目前最时髦的web开发技术。
+tagline: 专注最时髦的web开发技术
 ---
 {% include JB/setup %}
 
