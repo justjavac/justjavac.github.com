@@ -7,11 +7,10 @@ category : nodejs
 tags : [nodejs, javascript]
 ---
 
-
-<div id="author">作者： <a href="http://twitter.com/manuelkiessling">Manuel Kiessling</a><br />
+作者： <a href="http://twitter.com/manuelkiessling">Manuel Kiessling</a><br />
 翻译： <a href="http://weibo.com/goddyzhao">goddyzhao</a> & 
 <a href="http://www.otakustay.com">GrayZhang</a> & 
-<a href="http://weibo.com/cmonday">MondayChen</a></div>
+<a href="http://weibo.com/cmonday">MondayChen</a>
 
 <a name="about"></a>
 
