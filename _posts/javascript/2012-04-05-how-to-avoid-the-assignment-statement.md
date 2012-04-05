@@ -5,7 +5,6 @@ description: 如何避免产生赋值语句
 category : javascript
 tags : [javascript, 赋值]
 ---
-# 如何避免产生赋值语句
 
 我在之前的文章里谈论过 [赋值语句的危害性][1]。 
 使用赋值语句会使程序变的冗长，更难理解。
