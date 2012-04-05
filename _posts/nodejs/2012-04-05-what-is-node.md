@@ -23,10 +23,11 @@ tags : [nodejs, javascript]
 7. 基于事件的Web应用
 8. Node的用武之地
 
-“你够酷吗？来用我吧！” 
+>“你够酷吗？来用我吧！” 
 
 Node.js 为最新潮的编程语言提供了一系列很酷的API和工具箱，它可以直接应用于传统
 的Rails、Ajax、Hadoop、甚至可以某种程度上用于iPhone开发和HTML5。
+
 如果你参加过一些大型技术会议，你总是会听到一些关于Node.js的主题演讲，
 尽管这些话题对普通的开发者来说依然有些难以企及。
 
@@ -38,6 +39,7 @@ Node.js 为最新潮的编程语言提供了一系列很酷的API和工具箱，
 
 好消息是，你所听到的（所想到的）关于Node的一切都是正确的。
 Node的的确确是属于网络编程的范畴，用以处理服务器端的请求和响应。
+
 坏消息是和之前的Rails、Ajax和Hadoop一样，真正实用的技术资料实在太少。
 等到基于Node的“优秀的”框架成熟之后，技术资料一定会跟得上的，
 但何必要等到技术书籍和教程都出来之后再去尝试使用Node呢？
@@ -118,7 +120,7 @@ Node的的确确是属于网络编程的范畴，用以处理服务器端的请�
 
 可以通过ls来查看Node/src目录中的文件，可以看到Node的源码：
 
-![/assets/images/node-source.png 'Node源代码']
+![Node源代码](/assets/images/node-source.png)
 
 大多数人会以为，JavaScript是一门糟糕的语言，更不用说用它来实现服务器端的功能了，其实你只对了一半。
 不错，对于操作系统级别的Socket和网络编程来说，JavaScript可能并不能胜任。
@@ -154,7 +156,7 @@ Node的基本用法进一步反映出了Node是如何和JavaScript一起工作�
 
 刚才我们在Node上运行了NodeFileServer.js。这时你可以访问你本机的1337端口，可以看到正常的输出。
 
-![/assets/images/node-file-server-output.png]
+![](/assets/images/node-file-server-output.png]
 
 没错，输出结果不足为奇。
 但应当意识到我们只用短短20行代码就实现了一个文件服务器。
