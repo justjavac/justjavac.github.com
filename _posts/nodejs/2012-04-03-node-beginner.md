@@ -2447,7 +2447,6 @@ class="pln"> show</span><span class="pun">;</span></pre>
 其中<a href="https://github.com/joyent/node/wiki">Node.js社区的wiki</a>以及
 <a href="http://www.nodecloud.org/">NodeCloud</a>就是最好的资源。
 </p>
-</div>
 
 
 <div id="footer">
