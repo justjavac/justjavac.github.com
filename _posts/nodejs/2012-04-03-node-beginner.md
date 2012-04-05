@@ -12,17 +12,13 @@ tags : [nodejs, javascript]
 <a href="http://www.otakustay.com">GrayZhang</a> & 
 <a href="http://weibo.com/cmonday">MondayChen</a>
 
-<a name="about"></a>
-
-<h2>关于</h2>
+<h2 id="about">关于</h2>
 
 <p>
 本书致力于教会你如何用Node.js来开发应用，过程中会传授你所有所需的“高级”JavaScript知识。本书绝不是一本“Hello World”的教程。
 </p>
 
-<a name="status"></a>
-
-<h3>状态</h3>
+<h3 id="status">状态</h3>
 
 <p>
 你正在阅读的已经是本书的最终版。因此，只有当进行错误更正以及针对新版本Node.js的改动进行对应的修正时，才会进行更新。
