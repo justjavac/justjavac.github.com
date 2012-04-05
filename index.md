@@ -19,12 +19,9 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-本网站托管在 [github][1] 上， 使用 [Jekyll Bootstrap](http://jekyllbootstrap.com)框架建构。
+本网站托管在 [github][http://github.com] 上， 使用 [Jekyll Bootstrap](http://jekyllbootstrap.com)框架建构。
 
-您也可以在 github 上创建自己的网站，[在 github 上建立 pages 的过程][2]。 
-
-    [1]: http://github.com
-    [2]: http://justjavac.com/git/2011/09/22/create-github-page/
+您也可以在 github 上创建自己的网站，[在 github 上建立 pages 的过程][http://justjavac.com/git/2011/09/22/create-github-page]。 
 
 ## Update Author Attributes
 
