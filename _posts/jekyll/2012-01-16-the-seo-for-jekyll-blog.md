@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 优化 Jekyll 站点的 SEO 技巧
-description: 在使用 Jekyll 搭建个人博客的时候，将 SEO 优化的细节融入到博客主题中，有利于搜索引擎的对站点内容的抓取，为您的网站带来有价值的流量。本文将为你分享一些 Jekyll SEO 技巧。
-keywords: Jekyll, SEO, title, blog, site, google, violet, GitHub, 搜索引擎, 标题, 关键字, 描述, description, keywords
-category : seo
+title: 优化 jekyll 站点的 SEO 技巧
+description: 在使用 jekyll 搭建个人博客的时候，将 SEO 优化的细节融入到博客主题中，有利于搜索引擎的对站点内容的抓取，为您的网站带来有价值的流量。本文将为你分享一些 jekyll SEO 技巧。
+keywords: jekyll, SEO, title, blog, site, google, violet, GitHub, 搜索引擎, 标题, 关键字, 描述, description, keywords
+category : jekyll
 tags : [seo, jekyll]
 ---
-很多时候，我们搭建了一个博客，但很少有人来访问。一方面可能是因为我们没有做好推广，另外一方面可能是我们没做好 <strong>SEO</strong> 。在使用 <strong>Jekyll</strong> 搭建这个博客的时候，我将 <strong>SEO</strong> 的一些优化点融入到 <strong>Violet</strong> 主题中来。经过一段时间的测试和观察，期望的效果已经达到。
+很多时候，我们搭建了一个博客，但很少有人来访问。一方面可能是因为我们没有做好推广，另外一方面可能是我们没做好 <strong>SEO</strong> 。在使用 <strong>jekyll</strong> 搭建这个博客的时候，我将 <strong>SEO</strong> 的一些优化点融入到 <strong>Violet</strong> 主题中来。经过一段时间的测试和观察，期望的效果已经达到。
 
-虽然我不是 SEO 高手，但喜欢折腾。通过对 SEO 的学习和实践，我希望能将好的文章让更多人知道，并通过 Jekyll 实现。本文将为你分享一些 <strong>Jekyll SEO</strong> 技巧。
+虽然我不是 SEO 高手，但喜欢折腾。通过对 SEO 的学习和实践，我希望能将好的文章让更多人知道，并通过 jekyll 实现。本文将为你分享一些 <strong>jekyll SEO</strong> 技巧。
 
 ###优化博客标题及副标题
 
@@ -64,9 +64,9 @@ tags : [seo, jekyll]
 
 ###简单总结
 
-以上内容是我在使用 <strong>Jekyll</strong> 搭建自己的博客的过程中实践和总结过来的，如有不对，请尽快联系我。我们互相学习，共同交流。
+以上内容是我在使用 <strong>jekyll</strong> 搭建自己的博客的过程中实践和总结过来的，如有不对，请尽快联系我。我们互相学习，共同交流。
 
-在使用 <strong>Wordpress</strong> 的时候，就注意到 <strong>SEO</strong> 的重要性了。此次<strong>Violet</strong> 的实践，应该算是一种学习和尝试，在使用<strong>Jekyll</strong> 搭建站点的过程中，具体应该注意的一些细节，下面列个表格作最后总结。
+在使用 <strong>Wordpress</strong> 的时候，就注意到 <strong>SEO</strong> 的重要性了。此次<strong>Violet</strong> 的实践，应该算是一种学习和尝试，在使用<strong>jekyll</strong> 搭建站点的过程中，具体应该注意的一些细节，下面列个表格作最后总结。
 
 <table>
     <tbody>
