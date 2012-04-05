@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 在线文档 justjavac
+title: justjavac
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
