@@ -20,18 +20,16 @@ jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板�
   
 新建一个 `index.html` 文件，像下面这样:
 
-<pre class="html" name="colorcode">
-<!doctype html>
-<html>
-  <head>
-    <title>Hello</title>
-  </head>
+    <!doctype html>
+    <html>
+      <head>
+        <title>Hello</title>
+      </head>
 
-  <body>
-    <h1>Hello!</h1>
-  </body>
-</html>
-</pre>
+      <body>
+        <h1>Hello!</h1>
+      </body>
+    </html>
 
 初始化仓库、提交并push到Github:
 
