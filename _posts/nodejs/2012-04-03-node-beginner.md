@@ -28,9 +28,7 @@ tags : [nodejs, javascript]
 本书中的代码案例都在Node.js 0.6.11版本中测试过，可以正确工作。
 </p>
 
-<a name="intended-audience"></a>
-
-<h3>读者对象</h3>
+<h3 id="intended-audience">读者对象</h3>
 
 <p>
 本书最适合与我有相似技术背景的读者： 至少对一门诸如Ruby、Python、PHP或者Java这样面向对象的语言有一定的经验；对JavaScript处于初学阶段，并且完全是一个Node.js的新手。
@@ -44,9 +42,7 @@ tags : [nodejs, javascript]
 然而，本书还是会对JavaScript中的函数和对象作详细介绍，因为它们与其他同类编程语言中的函数和对象有很大的不同。
 </p>
 
-<a name="structure"></a>
-
-<h3>本书结构</h3>
+<h3 id="structure">本书结构</h3>
 
 <p>
 读完本书之后，你将完成一个完整的web应用，该应用允许用户浏览页面以及上传文件。
@@ -142,13 +138,10 @@ tags : [nodejs, javascript]
 </ul>
 </div>
 
-<a name="javascript-and-nodejs"></a>
 
-<h2>JavaScript与Node.js</h2>
+<h2 name="javascript-and-nodejs">JavaScript与Node.js</h2>
 
-<a name="javascript-and-you"></a>
-
-<h3>JavaScript与你</h3>
+<h3 name="javascript-and-you">JavaScript与你</h3>
 
 <p>
 抛开技术，我们先来聊聊你以及你和JavaScript的关系。本章的主要目的是想让你看看，对你而言是否有必要继续阅读后续章节的内容。
@@ -194,9 +187,7 @@ tags : [nodejs, javascript]
 本书的目标就是给你提供指导。
 </p>
 
-<a name="a-word-of-warning"></a>
-
-<h3>简短申明</h3>
+<h3 name="a-word-of-warning">简短申明</h3>
 
 <p>
 业界有非常优秀的JavaScript程序员。而我并非其中一员。
@@ -214,9 +205,7 @@ tags : [nodejs, javascript]
 如果成功的话，那么本书就是我当初开始学习Node.js最希望拥有的教程。
 </p>
 
-<a name="server-side-javascript"></a>
-
-<h3>服务端JavaScript</h3>
+<h3 name="server-side-javascript">服务端JavaScript</h3>
 
 <p>
 JavaScript最早是运行在浏览器中，然而浏览器只是提供了一个上下文，它定义了使用JavaScript可以做什么，但并没有“说”太多关于JavaScript语言本身可以做什么。事实上，JavaScript是一门“完整”的语言： 它可以使用在不同的上下文中，其能力与其他同类语言相比有过之而无不及。
@@ -242,9 +231,7 @@ Node.js事实上就是另外一种上下文，它允许在后端（脱离浏览�
 要使用Node.js,首先需要进行安装。关于如何安装Node.js，这里就不赘述了，可以直接参考<a href="https://github.com/joyent/node/wiki/Installation" title="Building and Installing Node.js">官方的安装指南</a>。安装完成后，继续回来阅读本书下面的内容。
 </p>
 
-<a name="hello-world"></a>
-
-<h3>“Hello World”</h3>
+<h3 name="hello-world">“Hello World”</h3>
 
 <p>
 好了，“废话”不多说了，马上开始我们第一个Node.js应用：“Hello World”。
@@ -269,14 +256,9 @@ class="pln">log</span><span class="pun">(</span><span class="str">"Hello World"<
 好吧，我承认这个应用是有点无趣，那么下面我们就来点“干货”。
 </p>
 
+<h2 name="a-full-blown-web-application-with-nodejs">一个完整的基于Node.js的web应用</h2>
 
-<a name="a-full-blown-web-application-with-nodejs"></a>
-
-<h2>一个完整的基于Node.js的web应用</h2>
-
-<a name="the-use-cases"></a> 
-
-<h3>用例</h3> 
+<h3 name="the-use-cases">用例</h3> 
 
 <p>我们来把目标设定得简单点，不过也要够实际才行：</p>
 
@@ -311,13 +293,9 @@ class="pln">log</span><span class="pun">(</span><span class="str">"Hello World"<
 
 <p>现在我们就来开始实现之路，先从第一个部分--HTTP服务器着手。</p>
 
-<a name="building-the-application-stack"></a>
+<h2 name="building-the-application-stack">构建应用的模块</h2>
 
-<h2>构建应用的模块</h2>
-
-<a name="a-basic-http-server"></a>
-
-<h3>一个基础的HTTP服务器</h3>
+<h3 name="a-basic-http-server">一个基础的HTTP服务器</h3>
 
 <p>
 当我准备开始写我的第一个“真正的”Node.js应用的时候，我不但不知道怎么写Node.js代码，也不知道怎么组织这些代码。
@@ -375,9 +353,7 @@ class="pun">);</span></pre>
 这很有趣，不是吗？让我们先来谈谈HTTP服务器的问题，把如何组织项目的事情先放一边吧，你觉得如何？我保证之后我们会解决那个问题的。
 </p>
 
-<a name="analyzing-our-http-server"></a>
-
-<h3>分析HTTP服务器</h3>
+<h3 name="analyzing-our-http-server">分析HTTP服务器</h3>
 
 <p>
 那么接下来，让我们分析一下这个HTTP服务器的构成。
@@ -419,9 +395,7 @@ class="lit">8888</span><span class="pun">);</span></pre>
 实际上，这个函数定义是 <em>createServer()</em> 的第一个也是唯一一个参数。因为在JavaScript中，函数和其他变量一样都是可以被传递的。
 </p>
 
-<a name="passing-functions-around"></a>
-
-<h3>进行函数传递</h3>
+<h3 name="passing-functions-around">进行函数传递</h3>
 
 <p>
 举例来说，你可以这样做：
@@ -478,9 +452,7 @@ class="pun">);</span></pre>
 这是我们和我所认为的“进阶”JavaScript的第一次亲密接触，不过我们还是得循序渐进。现在，我们先接受这一点：在JavaScript中，一个函数可以作为另一个函数接收一个参数。我们可以先定义一个函数，然后传递，也可以在传递参数的地方直接定义函数。
 </p>
 
-<a name="how-function-passing-makes-our-http-server-work"></a>
-
-<h3>函数传递是如何让HTTP服务器工作的</h3>
+<h3 name="how-function-passing-makes-our-http-server-work">函数传递是如何让HTTP服务器工作的</h3>
 
 <p>带着这些知识，我们再来看看我们简约而不简单的HTTP服务器：</p>
 <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
@@ -523,9 +495,7 @@ class="lit">8888</span><span class="pun">);</span></pre>
 
 <p>也许现在我们该问这个问题了：我们为什么要用这种方式呢？  </p>
 
-<a name="event-driven-callbacks"></a>
-
-<h3>基于事件驱动的回调</h3>
+<h3 name="event-driven-callbacks">基于事件驱动的回调</h3>
 
 <p>这个问题可不好回答（至少对我来说），不过这是Node.js原生的工作方式。它是事件驱动的，这也是它为什么这么快的原因。  </p>
 
@@ -584,9 +554,7 @@ class="pun">);</span></pre>
 
 <p>（请注意，当我们在服务器访问网页时，我们的服务器可能会输出两次“Request received.”。那是因为大部分服务器都会在你访问 http://localhost:8888 /时尝试读取 http://localhost:8888/favicon.ico )</p>
 
-<a name="how-our-server-handles-requests"></a>
-
-<h3>服务器是如何处理请求的</h3>
+<h3 name="how-our-server-handles-requests">服务器是如何处理请求的</h3>
 
 <p>好的，接下来我们简单分析一下我们服务器代码中剩下的部分，也就是我们的回调函数 <em>onRequest()</em> 的主体部分。  </p>
 
@@ -600,9 +568,7 @@ class="pun">);</span></pre>
 
 <p>目前来说，我们对请求的细节并不在意，所以我们没有使用 <em>request</em> 对象。  </p>
 
-<a name="finding-a-place-for-our-server-module"></a>
-
-<h3>服务端的模块放在哪里</h3>
+<h3 name="finding-a-place-for-our-server-module">服务端的模块放在哪里</h3>
 
 <p>OK，就像我保证过的那样，我们现在可以回到我们如何组织应用这个问题上了。我们现在在 <em>server.js</em> 文件中有一个非常基础的HTTP服务器代码，而且我提到通常我们会有一个叫 <em>index.js</em> 的文件去调用应用的其他模块（比如 <em>server.js</em> 中的HTTP服务器模块）来引导和启动应用。  </p>
 
@@ -681,9 +647,7 @@ class="pun">();</span></pre>
 
 <p>处理不同的HTTP请求在我们的代码中是一个不同的部分，叫做“路由选择”——那么，我们接下来就创造一个叫做 <em>路由</em> 的模块吧。  </p>
 
-<a name="whats-needed-to-route-requests"></a>
-
-<h3>如何来进行请求的“路由”</h3> 
+<h3 name="whats-needed-to-route-requests">如何来进行请求的“路由”</h3> 
 
 <p>我们要为路由提供请求的URL和其他需要的GET及POST参数，随后路由需要根据这些数据来执行相应的代码（这里“代码”对应整个应用的第三部分：一系列在接收到请求时真正工作的处理程序）。</p>
 
@@ -818,9 +782,7 @@ About to route a request for /foo</pre>
 
 <p>（以上输出已经去掉了比较烦人的/favicon.ico请求相关的部分）。</p>
 
-<a name="execution-in-the-kongdom-of-verbs"></a> 
-
-<h3>行为驱动执行</h3> 
+<h3 name="execution-in-the-kongdom-of-verbs">行为驱动执行</h3> 
 
 <p>请允许我再次脱离主题，在这里谈一谈函数式编程。</p>
 
@@ -834,9 +796,7 @@ About to route a request for /foo</pre>
 
 <p>我是在读了Steve Yegge的大作<a href="http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html">名词王国中的死刑</a>之后理解函数编程。你也去读一读这本书吧，真的。这是曾给予我阅读的快乐的关于软件的书籍之一。</p>
 
-<a name="routing-to-real-request-handlers"></a> 
-
-<h3>路由给真正的请求处理程序</h3> 
+<h3 name="routing-to-real-request-handlers">路由给真正的请求处理程序</h3> 
 
 <p>回到正题，现在我们的HTTP服务器和请求路由模块已经如我们的期望，可以相互交流了，就像一对亲密无间的兄弟。</p>
 
@@ -988,9 +948,7 @@ Request handler 'start' was called.</pre>
 About to route a request for /
 Request handler 'start' was called.</pre>
 
-<a name="making-the-request-handlers-respond"></a>
-
-<h3>让请求处理程序作出响应</h3>
+<h3 name="making-the-request-handlers-respond">让请求处理程序作出响应</h3>
 
 <p>
 很好。不过现在要是请求处理程序能够向浏览器返回一些有意义的信息而并非全是“Hello World”，那就更好了。
@@ -1004,9 +962,7 @@ Request handler 'start' was called.</pre>
 其实“处理请求”说白了就是“对请求作出响应”，因此，我们需要让请求处理程序能够像<em>onRequest</em>函数那样可以和浏览器进行“对话”。
 </p>
 
-<a name="how-to-not-do-it"></a>
-
-<h4>不好的实现方式</h4>
+<h4 name="how-to-not-do-it">不好的实现方式</h4>
 
 <p>
 对于我们这样拥有PHP或者Ruby技术背景的开发者来说，最直截了当的实现方式事实上并不是非常靠谱： 看似有效，实则未必如此。
@@ -1124,9 +1080,7 @@ class="pln"> start</span><span class="pun">;</span></pre>
 没理解？没关系，下面就来详细解释下。
 </p>
 
-<a name="blocking-and-non-blocking"></a>
-
-<h4>阻塞与非阻塞</h4>
+<h4 name="blocking-and-non-blocking">阻塞与非阻塞</h4>
 
 <p>
 正如此前所提到的，当在请求处理程序中包括非阻塞操作时就会出问题。但是，在说这之前，我们先来看看什么是阻塞操作。
@@ -1334,9 +1288,7 @@ class="pln"><br></span><span class="pun">}</span></pre>
 好，了解了这种不好的实现方式之后，我们接下来来介绍如何以正确的方式让请求处理程序对浏览器请求作出响应。
 </p>
 
-<a name="responding-request-handlers-with-non-blocking-operations"></a>
-
-<h4>以非阻塞操作进行请求响应</h4>
+<h4 name="responding-request-handlers-with-non-blocking-operations">以非阻塞操作进行请求响应</h4>
 
 <p>
 我刚刚提到了这样一个短语 —— “正确的方式”。而事实上通常“正确的方式”一般都不简单。
@@ -1538,9 +1490,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 这样一来，当请求<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>的时候，会花10秒钟的时间才载入，而当请求<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>的时候，会立即响应，纵然这个时候/start响应还在处理中。
 </p>
 
-<a name="serving-something-useful"></a>
-
-<h3>更有用的场景</h3>
+<h3 name="serving-something-useful">更有用的场景</h3>
 
 <p>
 到目前为止，我们做的已经很好了，但是，我们的应用没有实际用途。
@@ -1564,9 +1514,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 第二，用Node.js来处理文件上传（multipart POST请求）是比较复杂的，它<em>不</em>在本书的范畴，但，如何使用外部模块却是在本书涉猎内容之内。
 </p>
 
-<a name="handling-post-requests"></a>
-
-<h4>处理POST请求</h4>
+<h4 name="handling-post-requests">处理POST请求</h4>
 
 <p>
 考虑这样一个简单的例子：我们显示一个文本区（textarea）供用户输入内容，然后通过POST请求提交给服务器。最后，服务器接受到请求，通过处理程序将输入的内容展示到浏览器中。
@@ -1895,9 +1843,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 好了，以上就是关于处理POST数据的全部内容。
 </p>
 
-<a name="handling-file-uploads"></a>
-
-<h4>处理文件上传</h4>
+<h4 name="handling-file-uploads">处理文件上传</h4>
 
 <p>
 最后，我们来实现我们最终的用例：允许用户上传图片，并将该图片在浏览器中显示出来。
@@ -2481,9 +2427,7 @@ class="pln"> show</span><span class="pun">;</span></pre>
 好了，重启服务器，我们应用所有的功能就可以用了。选择一张本地图片，将其上传到服务器，然后浏览器就会显示该图片。
 </p>
 
-<a name="conclusion-and-outlook"></a>
-
-<h2>总结与展望</h2>
+<h2 name="conclusion-and-outlook">总结与展望</h2>
 
 <p>
 恭喜，我们的任务已经完成了！我们开发完了一个Node.js的web应用，应用虽小，但却“五脏俱全”。 期间，我们介绍了很多技术点：服务端JavaScript、函数式编程、阻塞与非阻塞、回调、事件、内部和外部模块等等。
