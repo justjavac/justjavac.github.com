@@ -1,79 +1,79 @@
 ---
 layout: post
-title: ¿ª·¢Õß×îÈİÒ×·¸µÄ13¸öJavaScript´íÎó
-description: ¿ª·¢Õß×îÈİÒ×·¸µÄ13¸öJavaScript´íÎó
+title: å¼€å‘è€…æœ€å®¹æ˜“çŠ¯çš„13ä¸ªJavaScripté”™è¯¯
+description: å¼€å‘è€…æœ€å®¹æ˜“çŠ¯çš„13ä¸ªJavaScripté”™è¯¯
 keywords: javascript
 category : javascript
 tags : [javascript]
 ---
 
-# ¿ª·¢Õß×îÈİÒ×·¸µÄ13¸öJavaScript´íÎó
+# å¼€å‘è€…æœ€å®¹æ˜“çŠ¯çš„13ä¸ªJavaScripté”™è¯¯
 
-¿ª·¢Õß×îÈİÒ×·¸µÄJavaScript´íÎó£¬×Ü½á³ö13¸ö¡£
-ÕâĞ©µ±ÖĞ¿ÉÄÜÉÙ²»ÁËÄã·¸µÄ´íÎó¡£
-ÎÒÃÇÃèÊöÁËÕâĞ©ÂªÏ°£¬²¢ÁĞ³öÀ´½â¾ö°ì·¨£¬Ï£Íû¶Ô¿ª·¢ÕßÓĞ°ïÖú¡£
+å¼€å‘è€…æœ€å®¹æ˜“çŠ¯çš„JavaScripté”™è¯¯ï¼Œæ€»ç»“å‡º13ä¸ªã€‚
+è¿™äº›å½“ä¸­å¯èƒ½å°‘ä¸äº†ä½ çŠ¯çš„é”™è¯¯ã€‚
+æˆ‘ä»¬æè¿°äº†è¿™äº›é™‹ä¹ ï¼Œå¹¶åˆ—å‡ºæ¥è§£å†³åŠæ³•ï¼Œå¸Œæœ›å¯¹å¼€å‘è€…æœ‰å¸®åŠ©ã€‚
 
-## 1.for¡­Êı×éµü´úµÄÓÃ·¨ Usage of for..in to iterate Arrays
+## 1.forâ€¦æ•°ç»„è¿­ä»£çš„ç”¨æ³• Usage of for..in to iterate Arrays
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
-    var myArray = [ ¡°a¡±, ¡°b¡±, ¡°c¡± ];
+    var myArray = [ â€œaâ€, â€œbâ€, â€œcâ€ ];
     var totalElements = myArray.length;
     for (var i = 0; i < totalElements; i++) {
         console.log(myArray[i]);
     }
 
-ÕâÀïÖ÷ÒªµÄÎÊÌâÊÇÓï¾äÖĞµÄ¡°for¡­¡±²»ÄÜ±£Ö¤Ë³Ğò£¬ÕâÒâÎ¶×ÅÄã½«»ñµÃ²»Í¬µÄÖ´ĞĞ½á¹û¡£
-´ËÍâ£¬Èç¹ûÓĞÈËÔö¼ÓÒ»Ğ©ÆäËû×Ô¶¨Òå¹¦ÄÜµÄº¯ÊıArray.prototype£¬ÄãµÄÑ­»·½«ÖØ¸´±éÀúÕâĞ©º¯Êı£¬¾ÍÏñÔ­Êı×éÏî¡£
+è¿™é‡Œä¸»è¦çš„é—®é¢˜æ˜¯è¯­å¥ä¸­çš„â€œforâ€¦â€ä¸èƒ½ä¿è¯é¡ºåºï¼Œè¿™æ„å‘³ç€ä½ å°†è·å¾—ä¸åŒçš„æ‰§è¡Œç»“æœã€‚
+æ­¤å¤–ï¼Œå¦‚æœæœ‰äººå¢åŠ ä¸€äº›å…¶ä»–è‡ªå®šä¹‰åŠŸèƒ½çš„å‡½æ•°Array.prototypeï¼Œä½ çš„å¾ªç¯å°†é‡å¤éå†è¿™äº›å‡½æ•°ï¼Œå°±åƒåŸæ•°ç»„é¡¹ã€‚
 
-½â¾ö°ì·¨£ºÒ»Ö±Ê¹ÓÃ¹æÔòµÄforÑ­»·À´±éÀúÊı×é¡£
+è§£å†³åŠæ³•ï¼šä¸€ç›´ä½¿ç”¨è§„åˆ™çš„forå¾ªç¯æ¥éå†æ•°ç»„ã€‚
 
-    var myArray = [ ¡°a¡±, ¡°b¡±, ¡°c¡± ];
+    var myArray = [ â€œaâ€, â€œbâ€, â€œcâ€ ];
     for (var i=0; i<myArray.length; i++) {
         console.log(myArray[i]);
     }
 
-## 2.Êı×éÎ¬¶ÈArray dimensions
+## 2.æ•°ç»„ç»´åº¦Array dimensions
 
-¾ÙÀı
+ä¸¾ä¾‹
 
     var myArray = new Array(10);
 
-µÚ¶ş¸öÎÊÌâÊÇ¿ª·¢ÕßÊ¹ÓÃÊı×é¹¹³ÉÆ÷À´´´½¨Êı×é£¬¼¼ÊõÉÏÊÇÕıÈ·µÄ£¬
-È»¶ø»á±ÈÎÄ×Ö·ûºÅ£¨literal notation£©Âı½â¾ö°ì·¨£ºÊ¹ÓÃÎÄ×Ö·ûºÅÀ´³õÊ¼»¯Êı×é£¬
-²»ÒªÔ¤¶¨ÒåÊı×é³¤¶È¡£
+ç¬¬äºŒä¸ªé—®é¢˜æ˜¯å¼€å‘è€…ä½¿ç”¨æ•°ç»„æ„æˆå™¨æ¥åˆ›å»ºæ•°ç»„ï¼ŒæŠ€æœ¯ä¸Šæ˜¯æ­£ç¡®çš„ï¼Œ
+ç„¶è€Œä¼šæ¯”æ–‡å­—ç¬¦å·ï¼ˆliteral notationï¼‰æ…¢è§£å†³åŠæ³•ï¼šä½¿ç”¨æ–‡å­—ç¬¦å·æ¥åˆå§‹åŒ–æ•°ç»„ï¼Œ
+ä¸è¦é¢„å®šä¹‰æ•°ç»„é•¿åº¦ã€‚
 
     var myArray = [];
 
-## 3.Î´¶¨ÒåÊôĞÔ Undefined properties
+## 3.æœªå®šä¹‰å±æ€§ Undefined properties
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     var myObject = {
-        someProperty: ¡°value¡±,
+        someProperty: â€œvalueâ€,
         someOtherProperty: undefined
     }
 
-Î´¶¨ÒåÊôĞÔ£¬½«ÔÚ¶ÔÏóÖĞ´´½¨ÔªËØ£¨¼ü¡®someOtherProperty¡¯ºÍÖµ¡®undefined¡¯.£©¡£
-Èç¹ûÄã±éÀúÊı×é£¬¼ì²âÒÑ´æÔÚµÄÔªËØ£¬ÄÇÃ´ÏÂÃæµÄÓï¾ä½«¶¼·µ»Ø¡°Î´¶¨Òå/undefined¡±
+æœªå®šä¹‰å±æ€§ï¼Œå°†åœ¨å¯¹è±¡ä¸­åˆ›å»ºå…ƒç´ ï¼ˆé”®â€˜someOtherPropertyâ€™å’Œå€¼â€˜undefinedâ€™.ï¼‰ã€‚
+å¦‚æœä½ éå†æ•°ç»„ï¼Œæ£€æµ‹å·²å­˜åœ¨çš„å…ƒç´ ï¼Œé‚£ä¹ˆä¸‹é¢çš„è¯­å¥å°†éƒ½è¿”å›â€œæœªå®šä¹‰/undefinedâ€
 
     typeof myObject['someOtherProperty'] // undefined
     typeof myObject['unknownProperty'] // undefined
 
-½â¾ö°ì·¨£ºÈç¹ûÄãÏëÃ÷È·ÉùÃ÷¶ÔÏóÖĞµÄÎ´³õÊ¼»¯µÄÊôĞÔ£¬±ê¼ÇËüÃÇÎªNull£¨¿Õ£©¡£
+è§£å†³åŠæ³•ï¼šå¦‚æœä½ æƒ³æ˜ç¡®å£°æ˜å¯¹è±¡ä¸­çš„æœªåˆå§‹åŒ–çš„å±æ€§ï¼Œæ ‡è®°å®ƒä»¬ä¸ºNullï¼ˆç©ºï¼‰ã€‚
 
     var myObject = {
-        someProperty: ¡°value¡±,
+        someProperty: â€œvalueâ€,
         someOtherProperty: null
     }
 
-## 4.±Õ°üµÄÀÄÓÃMisuse of Closures
+## 4.é—­åŒ…çš„æ»¥ç”¨Misuse of Closures
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     function(a, b, c) {
     var d = 10;
-    var element = document.getElementById(¡®myID¡¯);
+    var element = document.getElementById(â€˜myIDâ€™);
     element.onclick = (function(a, b, c, d) {
             return function() {
                 alert (a + b + c + d);
@@ -81,20 +81,20 @@ tags : [javascript]
         })(a, b, c, d);
     }
 
-ÕâÀï¿ª·¢ÕßÊ¹ÓÃÁ½¸öº¯ÊıÀ´´«µİ²ÎÊıa¡¢b¡¢cµ½onclick handler¡£
-Ë«º¯Êı¸ù±¾²»ĞèÒª£¬Í½Ôö´úÂëµÄ¸´ÔÓĞÔ¡£
+è¿™é‡Œå¼€å‘è€…ä½¿ç”¨ä¸¤ä¸ªå‡½æ•°æ¥ä¼ é€’å‚æ•°aã€bã€cåˆ°onclick handlerã€‚
+åŒå‡½æ•°æ ¹æœ¬ä¸éœ€è¦ï¼Œå¾’å¢ä»£ç çš„å¤æ‚æ€§ã€‚
 
-±äÁ¿abcÒÑ¾­ÔÚ¾Ö²¿º¯ÊıÖĞ±»¶¨Òå£¬ÒòÎªËûÃÇÒÑ¾­ÔÚÖ÷º¯ÊıÖĞ×÷Îª²ÎÊı±»ÉùÃ÷¡£
-¾Ö²¿º¯ÊıÖĞµÄÈÎºÎº¯Êı¶¼¿É´´½¨Ö÷º¯ÊıÖĞ¶¨ÒåµÄËùÓĞ±äÁ¿µÄ±Õ°ü¡£
-Òò´Ë²»ĞèÒªÔÙ´Î´«µİËüÃÇ¡£
+å˜é‡abcå·²ç»åœ¨å±€éƒ¨å‡½æ•°ä¸­è¢«å®šä¹‰ï¼Œå› ä¸ºä»–ä»¬å·²ç»åœ¨ä¸»å‡½æ•°ä¸­ä½œä¸ºå‚æ•°è¢«å£°æ˜ã€‚
+å±€éƒ¨å‡½æ•°ä¸­çš„ä»»ä½•å‡½æ•°éƒ½å¯åˆ›å»ºä¸»å‡½æ•°ä¸­å®šä¹‰çš„æ‰€æœ‰å˜é‡çš„é—­åŒ…ã€‚
+å› æ­¤ä¸éœ€è¦å†æ¬¡ä¼ é€’å®ƒä»¬ã€‚
 
-¿´¿´ÕâÀïJavaScript Closures FAQÁË½â¸ü¶à¡£
+çœ‹çœ‹è¿™é‡ŒJavaScript Closures FAQäº†è§£æ›´å¤šã€‚
 
-½â¾ö°ì·¨£ºÊ¹ÓÃ±Õ»·À´¼ò»¯ÄãµÄ´úÂë¡£
+è§£å†³åŠæ³•ï¼šä½¿ç”¨é—­ç¯æ¥ç®€åŒ–ä½ çš„ä»£ç ã€‚
 
     function (a, b, c) {
     var d = 10;
-    var element = document.getElementById(¡®myID¡¯);
+    var element = document.getElementById(â€˜myIDâ€™);
     element.onclick = function() {
             //a, b, and c come from the outer function arguments.
             //d come from the outer function variable declarations.
@@ -103,145 +103,145 @@ tags : [javascript]
         };
     }
 
-## 5.Ñ­»·ÖĞµÄ±Õ°üClosures in loops
+## 5.å¾ªç¯ä¸­çš„é—­åŒ…Closures in loops
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
-    var elements = document.getElementByTagName(¡®div¡¯);
+    var elements = document.getElementByTagName(â€˜divâ€™);
     for (var i = 0; i<elements.length; i++) {
         elements[i].onclick = function() {
-            alert(¡°Div number ¡° + i);
+            alert(â€œDiv number â€œ + i);
         }
     }
 
-ÔÚÕâÀïÀı×ÓÀïÃæ£¬µ±ÓÃ»§µã»÷²»Í¬µÄdivsÊ±£¬ÎÒÃÇÏë´¥·¢Ò»¸ö¶¯×÷(ÏÔÊ¾¡°Div number 1¡±, ¡°Div number 2¡±¡­ µÈ) ¡£
-È»¶ø£¬Èç¹ûÄãÔÚÒ³ÃæÓĞ10¸ödivs£¬ËûÃÇÈ«²¿¶¼»áÏÔÊ¾¡°Div number 10¡±¡£
+åœ¨è¿™é‡Œä¾‹å­é‡Œé¢ï¼Œå½“ç”¨æˆ·ç‚¹å‡»ä¸åŒçš„divsæ—¶ï¼Œæˆ‘ä»¬æƒ³è§¦å‘ä¸€ä¸ªåŠ¨ä½œ(æ˜¾ç¤ºâ€œDiv number 1â€, â€œDiv number 2â€â€¦ ç­‰) ã€‚
+ç„¶è€Œï¼Œå¦‚æœä½ åœ¨é¡µé¢æœ‰10ä¸ªdivsï¼Œä»–ä»¬å…¨éƒ¨éƒ½ä¼šæ˜¾ç¤ºâ€œDiv number 10â€ã€‚
 
-ÎÊÌâÊÇµ±ÎÒÃÇÊ¹ÓÃ¾Ö²¿º¯Êı´´½¨Ò»¸ö±Õ°üÊ±£¬º¯ÊıÖĞµÄ´úÂë¿ÉÒÔ·ÃÎÊ±äÁ¿i¡£
-¹Ø¼üÊÇº¯ÊıÄÚ²¿iºÍº¯ÊıÍâ²¿iÉæ¼°Í¬ÑùµÄ±äÁ¿¡£
-µ±ÎÒÃÇµÄÑ­»·½áÊø£¬iÖ¸ÏòÁËÖµ10£¬ËùÒÔ¾Ö²¿º¯ÊıÖĞµÄiµÄÖµ½«ÊÇ10¡£
+é—®é¢˜æ˜¯å½“æˆ‘ä»¬ä½¿ç”¨å±€éƒ¨å‡½æ•°åˆ›å»ºä¸€ä¸ªé—­åŒ…æ—¶ï¼Œå‡½æ•°ä¸­çš„ä»£ç å¯ä»¥è®¿é—®å˜é‡iã€‚
+å…³é”®æ˜¯å‡½æ•°å†…éƒ¨iå’Œå‡½æ•°å¤–éƒ¨iæ¶‰åŠåŒæ ·çš„å˜é‡ã€‚
+å½“æˆ‘ä»¬çš„å¾ªç¯ç»“æŸï¼ŒiæŒ‡å‘äº†å€¼10ï¼Œæ‰€ä»¥å±€éƒ¨å‡½æ•°ä¸­çš„içš„å€¼å°†æ˜¯10ã€‚
 
-½â¾ö°ì·¨£ºÊ¹ÓÃµÚ¶şº¯ÊıÀ´´«µİÕıÈ·µÄÖµ¡£
+è§£å†³åŠæ³•ï¼šä½¿ç”¨ç¬¬äºŒå‡½æ•°æ¥ä¼ é€’æ­£ç¡®çš„å€¼ã€‚
 
-    var elements = document.getElementsByTagName(¡®div¡¯);
+    var elements = document.getElementsByTagName(â€˜divâ€™);
     for (var i = 0; i<elements.length; i++) {
         elements[i].onclick = (function(idx) { //Outer function
             return function() { //Inner function
-                alert(¡°Div number ¡° + idx);
+                alert(â€œDiv number â€œ + idx);
             }
         })(i);
     }
 
-## 6.DOM¶ÔÏóµÄÄÚ²âĞ¹Â©Memory leaks with DOM objects
+## 6.DOMå¯¹è±¡çš„å†…æµ‹æ³„æ¼Memory leaks with DOM objects
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     function attachEvents() {
-        var element = document.getElementById(¡®myID¡¯);
+        var element = document.getElementById(â€˜myIDâ€™);
         element.onclick = function() {
-            alert(¡°Element clicked¡±);
+            alert(â€œElement clickedâ€);
         }
     };
     attachEvents();
 
-¸Ã´úÂë´´½¨ÁËÒ»¸öÒıÓÃÑ­»·¡£
-±äÁ¿ÔªËØ°üº¬º¯ÊıµÄÒıÓÃ£¨¹éÓÚonclickÊôĞÔ£©¡£
-Í¬Ê±£¬º¯Êı±£³ÖÒ»¸öDOMÔªËØµÄÒıÓÃ£¨ÌáÊ¾º¯ÊıÄÚ²¿¿ÉÒÔ·ÃÎÊÔªËØ£¬ ÒòÎª±Õ°ü¡££©¡£
+è¯¥ä»£ç åˆ›å»ºäº†ä¸€ä¸ªå¼•ç”¨å¾ªç¯ã€‚
+å˜é‡å…ƒç´ åŒ…å«å‡½æ•°çš„å¼•ç”¨ï¼ˆå½’äºonclickå±æ€§ï¼‰ã€‚
+åŒæ—¶ï¼Œå‡½æ•°ä¿æŒä¸€ä¸ªDOMå…ƒç´ çš„å¼•ç”¨ï¼ˆæç¤ºå‡½æ•°å†…éƒ¨å¯ä»¥è®¿é—®å…ƒç´ ï¼Œ å› ä¸ºé—­åŒ…ã€‚ï¼‰ã€‚
 
-ËùÒÔJavaScriptÀ¬»øÊÕ¼¯Æ÷²»ÄÜÇå³ıÔªËØ»òÊÇº¯Êı£¬ÒòÎªËûÃÇ±»Ïà»¥ÒıÓÃ¡£
-´ó²¿·ÖµÄJavaScriptÒıÇæ¶ÔÓÚÇå³ıÑ­»·Ó¦ÓÃ¶¼²»¹» ´ÏÃ÷¡£
+æ‰€ä»¥JavaScriptåƒåœ¾æ”¶é›†å™¨ä¸èƒ½æ¸…é™¤å…ƒç´ æˆ–æ˜¯å‡½æ•°ï¼Œå› ä¸ºä»–ä»¬è¢«ç›¸äº’å¼•ç”¨ã€‚
+å¤§éƒ¨åˆ†çš„JavaScriptå¼•æ“å¯¹äºæ¸…é™¤å¾ªç¯åº”ç”¨éƒ½ä¸å¤Ÿ èªæ˜ã€‚
 
-½â¾ö°ì·¨£º±ÜÃâÄÇĞ©±Õ°ü£¬»òÕß²»È¥×öº¯ÊıÄÚµÄÑ­»·ÒıÓÃ¡£
+è§£å†³åŠæ³•ï¼šé¿å…é‚£äº›é—­åŒ…ï¼Œæˆ–è€…ä¸å»åšå‡½æ•°å†…çš„å¾ªç¯å¼•ç”¨ã€‚
 
     function attachEvents() {
-        var element = document.getElementById(¡®myID¡¯);
+        var element = document.getElementById(â€˜myIDâ€™);
         element.onclick = function() {
             //Remove element, so function can be collected by GC
             delete element;
-            alert(¡°Element clicked¡±);
+            alert(â€œElement clickedâ€);
         }
     };
     attachEvents();
 
-## 7.Çø±ğÕûÊıÊı×ÖºÍ¸¡µãÊı×ÖDifferentiate float numbers from integer numbers
+## 7.åŒºåˆ«æ•´æ•°æ•°å­—å’Œæµ®ç‚¹æ•°å­—Differentiate float numbers from integer numbers
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     var myNumber = 3.5;
     var myResult = 3.5 + 1.0; //We use .0 to keep the result as float
 
-ÔÚJavaScriptÖĞ£¬¸¡µãÓëÕûÊı¼äÃ»ÓĞÇø±ğ¡£
-ÊÂÊµÉÏ£¬JavaScriptÖĞµÄÃ¿¸öÊı×Ö¶¼±íÊ¾Ê¹ÓÃË«¾«¶È64Î»¸ñÊ½IEEE 754¡£
-¼òµ¥Àí½â£¬ËùÓĞÊı×Ö¶¼ÊÇ¸¡µã¡£
+åœ¨JavaScriptä¸­ï¼Œæµ®ç‚¹ä¸æ•´æ•°é—´æ²¡æœ‰åŒºåˆ«ã€‚
+äº‹å®ä¸Šï¼ŒJavaScriptä¸­çš„æ¯ä¸ªæ•°å­—éƒ½è¡¨ç¤ºä½¿ç”¨åŒç²¾åº¦64ä½æ ¼å¼IEEE 754ã€‚
+ç®€å•ç†è§£ï¼Œæ‰€æœ‰æ•°å­—éƒ½æ˜¯æµ®ç‚¹ã€‚
 
-½â¾ö°ì·¨£º²»ÒªÊ¹ÓÃĞ¡Êı£¨decimals£©£¬×ª»»Êı×Ö£¨numbers£©µ½¸¡µã£¨floats£©¡£
+è§£å†³åŠæ³•ï¼šä¸è¦ä½¿ç”¨å°æ•°ï¼ˆdecimalsï¼‰ï¼Œè½¬æ¢æ•°å­—ï¼ˆnumbersï¼‰åˆ°æµ®ç‚¹ï¼ˆfloatsï¼‰ã€‚
 
     var myNumber = 3.5;
     var myResult = 3.5 + 1; //Result is 4.5, as expected
 
-## 8.with()×÷Îª¿ì½İ·½Ê½µÄÓÃ·¨Usage of with() as a shortcut
+## 8.with()ä½œä¸ºå¿«æ·æ–¹å¼çš„ç”¨æ³•Usage of with() as a shortcut
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     team.attackers.myWarrior = { attack: 1, speed: 3, magic: 5};
     with (team.attackers.myWarrior){
-        console.log ( ¡°Your warrior power is ¡± + (attack * speed));
+        console.log ( â€œYour warrior power is â€ + (attack * speed));
     }
 
-ÌÖÂÛ`with()` Ö®Ç°£¬ÒªÃ÷°×JavaScript contextsÈçºÎ¹¤×÷µÄ¡£
-Ã¿¸öº¯Êı¶¼ÓĞÒ»¸öÖ´ĞĞcontext£¨Óï¾ä£©£¬¼òµ¥À´Ëµ£¬°üÀ¨º¯Êı¿ÉÒÔ·ÃÎÊµÄËùÓĞµÄ±äÁ¿¡£
-Òò´Ëcontext°üº¬argumentsºÍ¶¨Òå±äÁ¿¡£
+è®¨è®º`with()` ä¹‹å‰ï¼Œè¦æ˜ç™½JavaScript contextså¦‚ä½•å·¥ä½œçš„ã€‚
+æ¯ä¸ªå‡½æ•°éƒ½æœ‰ä¸€ä¸ªæ‰§è¡Œcontextï¼ˆè¯­å¥ï¼‰ï¼Œç®€å•æ¥è¯´ï¼ŒåŒ…æ‹¬å‡½æ•°å¯ä»¥è®¿é—®çš„æ‰€æœ‰çš„å˜é‡ã€‚
+å› æ­¤contextåŒ…å«argumentså’Œå®šä¹‰å˜é‡ã€‚
 
-`with()` ÕæÕıÊÇ×öÊ²Ã´£¿ÊÇ²åÈë¶ÔÏóµ½contextÁ´£¬ËüÔÚµ±Ç°contextºÍ¸¸¼¶context¼äÖ²Èë¡£
-¾ÍÏñÄã¿´µ½µÄ `with()` µÄ¿ì½İ·½Ê½»á·Ç³£Âı¡£
+`with()` çœŸæ­£æ˜¯åšä»€ä¹ˆï¼Ÿæ˜¯æ’å…¥å¯¹è±¡åˆ°contexté“¾ï¼Œå®ƒåœ¨å½“å‰contextå’Œçˆ¶çº§contexté—´æ¤å…¥ã€‚
+å°±åƒä½ çœ‹åˆ°çš„ `with()` çš„å¿«æ·æ–¹å¼ä¼šéå¸¸æ…¢ã€‚
 
-½â¾ö°ì·¨£º²»ÒªÊ¹ÓÃwith() for shortcuts£¬½öfor context injection£¬Èç¹ûÄãÈ·ÊµĞèÒªÊ±¡£
+è§£å†³åŠæ³•ï¼šä¸è¦ä½¿ç”¨with() for shortcutsï¼Œä»…for context injectionï¼Œå¦‚æœä½ ç¡®å®éœ€è¦æ—¶ã€‚
 
     team.attackers.myWarrior = { attack: 1, speed: 3, magic: 5};
     var sc = team.attackers.myWarrior;
-    console.log(¡°Your warrior power is ¡± + (sc.attack * sc.speed));
+    console.log(â€œYour warrior power is â€ + (sc.attack * sc.speed));
 
-## 9.setTimeout/setInterval ×Ö·û´®µÄÓÃ·¨ Usage of strings with setTimeout/setInterval
+## 9.setTimeout/setInterval å­—ç¬¦ä¸²çš„ç”¨æ³• Usage of strings with setTimeout/setInterval
 
-¾ÙÀı£º
-
-    function log1() { console.log(document.location); }
-    function log2(arg) { console.log(arg); }
-    var myValue = ¡°test¡±;
-    setTimeout(¡°log1()¡±, 100);
-    setTimeout(¡°log2(¡± + myValue + ¡°)¡±, 200);
-
-`setTimeout()` ºÍ `setInterval()` ¿É±»»òÒ»¸öº¯Êı»òÒ»¸ö×Ö·û´®×÷ÎªÊ×¸ö²ÎÊı¡£
-Èç¹ûÄã´«µİÒ»¸ö×Ö·û´®£¬ÒıÇæ½«´´½¨Ò»¸öĞÂº¯Êı£¨Ê¹ÓÃº¯Êı¹¹ÔìÆ÷£©£¬ÕâÔÚÒ»Ğ©ä¯ÀÀÆ÷ÖĞ»á·Ç³£Âı¡£
-
-Ïà·´£¬´«µİº¯Êı±¾Éí×÷ÎªÊ×¸ö²ÎÊı£¬¸ü¿ì¡¢¸üÇ¿´ó¡¢¸ü¸É¾»¡£
-
-½â¾ö°ì·¨£ºÒ»¶¨²»ÒªÊ¹ÓÃstrings for setTimeout()»òsetInterval()¡£
+ä¸¾ä¾‹ï¼š
 
     function log1() { console.log(document.location); }
     function log2(arg) { console.log(arg); }
-    var myValue = ¡°test¡±;
+    var myValue = â€œtestâ€;
+    setTimeout(â€œlog1()â€, 100);
+    setTimeout(â€œlog2(â€ + myValue + â€œ)â€, 200);
+
+`setTimeout()` å’Œ `setInterval()` å¯è¢«æˆ–ä¸€ä¸ªå‡½æ•°æˆ–ä¸€ä¸ªå­—ç¬¦ä¸²ä½œä¸ºé¦–ä¸ªå‚æ•°ã€‚
+å¦‚æœä½ ä¼ é€’ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œå¼•æ“å°†åˆ›å»ºä¸€ä¸ªæ–°å‡½æ•°ï¼ˆä½¿ç”¨å‡½æ•°æ„é€ å™¨ï¼‰ï¼Œè¿™åœ¨ä¸€äº›æµè§ˆå™¨ä¸­ä¼šéå¸¸æ…¢ã€‚
+
+ç›¸åï¼Œä¼ é€’å‡½æ•°æœ¬èº«ä½œä¸ºé¦–ä¸ªå‚æ•°ï¼Œæ›´å¿«ã€æ›´å¼ºå¤§ã€æ›´å¹²å‡€ã€‚
+
+è§£å†³åŠæ³•ï¼šä¸€å®šä¸è¦ä½¿ç”¨strings for setTimeout()æˆ–setInterval()ã€‚
+
+    function log1() { console.log(document.location); }
+    function log2(arg) { console.log(arg); }
+    var myValue = â€œtestâ€;
     setTimeout(log1, 100); //Reference to a function
     setTimeout(function(){ //Get arg value using closures
             log2(arg);
         }, 200);
 
-## 10.setInterval()µÄÓÃ·¨Usage of setInterval() for heavy functions
+## 10.setInterval()çš„ç”¨æ³•Usage of setInterval() for heavy functions
 
-¾ÙÀı£º
+ä¸¾ä¾‹ï¼š
 
     function domOperations() {
         //Heavy DOM operations, takes about 300ms
     }
     setInterval(domOperations, 200);
 
-`setInterval()` ½«Ò»º¯ÊıÁĞÈë¼Æ»®±»Ö´ĞĞ£¬½öÊÇÔÚÃ»ÓĞÁíÍâÒ»¸öÖ´ĞĞÔÚÖ÷Ö´ĞĞ¶ÓÁĞÖĞµÈ´ı¡£
-JavaScriptÒıÇæÖ»Ôö¼ÓÏÂÒ»¸öÖ´ĞĞµ½¶ÓÁĞÈç¹ûÃ»ÓĞÁíÍâÒ»¸öÖ´ĞĞÒÑÔÚ¶ÓÁĞ¡£
-Õâ¿ÉÄÜµ¼ÖÂÌø¹ıÖ´ĞĞ»òÕßÔËĞĞ2¸ö²»Í¬µÄÖ´ĞĞ£¬Ã»ÓĞÔÚËüÃÇÖ®¼äµÈ´ı200msµÄÇé¿öÏÂ¡£
+`setInterval()` å°†ä¸€å‡½æ•°åˆ—å…¥è®¡åˆ’è¢«æ‰§è¡Œï¼Œä»…æ˜¯åœ¨æ²¡æœ‰å¦å¤–ä¸€ä¸ªæ‰§è¡Œåœ¨ä¸»æ‰§è¡Œé˜Ÿåˆ—ä¸­ç­‰å¾…ã€‚
+JavaScriptå¼•æ“åªå¢åŠ ä¸‹ä¸€ä¸ªæ‰§è¡Œåˆ°é˜Ÿåˆ—å¦‚æœæ²¡æœ‰å¦å¤–ä¸€ä¸ªæ‰§è¡Œå·²åœ¨é˜Ÿåˆ—ã€‚
+è¿™å¯èƒ½å¯¼è‡´è·³è¿‡æ‰§è¡Œæˆ–è€…è¿è¡Œ2ä¸ªä¸åŒçš„æ‰§è¡Œï¼Œæ²¡æœ‰åœ¨å®ƒä»¬ä¹‹é—´ç­‰å¾…200msçš„æƒ…å†µä¸‹ã€‚
 
-Ò»¶¨Òª¸ãÇå£¬`setInterval()` Ã»ÓĞ¿¼ÂÇ½ø¶à³¤Ê±¼ä `domOperations()` À´Íê³ÉÈÎÎñ¡£
+ä¸€å®šè¦ææ¸…ï¼Œ`setInterval()` æ²¡æœ‰è€ƒè™‘è¿›å¤šé•¿æ—¶é—´ `domOperations()` æ¥å®Œæˆä»»åŠ¡ã€‚
 
-½â¾ö°ì·¨£º±ÜÃâ `setInterval()`£¬Ê¹ÓÃ `setTimeout()`
+è§£å†³åŠæ³•ï¼šé¿å… `setInterval()`ï¼Œä½¿ç”¨ `setTimeout()`
 
     function domOperations() {
         //Heavy DOM operations, takes about 300ms
@@ -250,61 +250,61 @@ JavaScriptÒıÇæÖ»Ôö¼ÓÏÂÒ»¸öÖ´ĞĞµ½¶ÓÁĞÈç¹ûÃ»ÓĞÁíÍâÒ»¸öÖ´ĞĞÒÑÔÚ¶ÓÁĞ¡£
     }
     setTimeout(domOperations, 200);
 
-## 11.¡°this¡±µÄÀÄÓÃMisuse of ¡®this¡¯
+## 11.â€œthisâ€çš„æ»¥ç”¨Misuse of â€˜thisâ€™
 
-Õâ¸ö³£ÓÃ´íÎó£¬Ã»ÓĞÀı×Ó£¬ÒòÎª·Ç³£ÄÑ´´½¨À´ÑİÊ¾¡£
-thisµÄÖµÔÚJavaScriptÖĞÓëÆäËûÓïÑÔÓĞºÜ´óµÄ²»Í¬¡£
-º¯ÊıÖĞµÄthisÖµ±»¶¨ÒåÊÇÔÚµ±º¯Êı±»µ÷ÓÃÊ±£¬¶ø·ÇÉùÃ÷µÄÊ±¼ä£¬ÕâÒ»µã·Ç³£ÖØÒª¡£
+è¿™ä¸ªå¸¸ç”¨é”™è¯¯ï¼Œæ²¡æœ‰ä¾‹å­ï¼Œå› ä¸ºéå¸¸éš¾åˆ›å»ºæ¥æ¼”ç¤ºã€‚
+thisçš„å€¼åœ¨JavaScriptä¸­ä¸å…¶ä»–è¯­è¨€æœ‰å¾ˆå¤§çš„ä¸åŒã€‚
+å‡½æ•°ä¸­çš„thiså€¼è¢«å®šä¹‰æ˜¯åœ¨å½“å‡½æ•°è¢«è°ƒç”¨æ—¶ï¼Œè€Œéå£°æ˜çš„æ—¶é—´ï¼Œè¿™ä¸€ç‚¹éå¸¸é‡è¦ã€‚
 
-ÏÂÃæµÄ°¸ÀıÖĞ£¬º¯ÊıÄÚthisÓĞ²»Í¬µÄº¬Òå¡£
+ä¸‹é¢çš„æ¡ˆä¾‹ä¸­ï¼Œå‡½æ•°å†…thisæœ‰ä¸åŒçš„å«ä¹‰ã€‚
 
-* Regular function: myFunction(¡®arg1¡¯);
+* Regular function: myFunction(â€˜arg1â€™);
 
 this points to the global object, wich is window for all browers.
 
-* Method: someObject.myFunction(¡®arg1¡¯);
+* Method: someObject.myFunction(â€˜arg1â€™);
 
 this points to object before the dot, someObject in this case.
 
-* Constructor: var something = new myFunction(¡®arg1¡¯);
+* Constructor: var something = new myFunction(â€˜arg1â€™);
 
 this points to an empty Object.
 
-* Using call()/apply(): myFunction.call(someObject, ¡®arg1¡¯);
+* Using call()/apply(): myFunction.call(someObject, â€˜arg1â€™);
 
 this points to the object passed as first argument.
 
-## 12.eval()·ÃÎÊ¶¯Ì¬ÊôĞÔµÄÓÃ·¨Usage of eval() to access dynamic properties
+## 12.eval()è®¿é—®åŠ¨æ€å±æ€§çš„ç”¨æ³•Usage of eval() to access dynamic properties
 
-¾ÙÀı£º
-
-    var myObject = { p1: 1, p2: 2, p3: 3};
-    var i = 2;
-    var myResult = eval(¡®myObject.p¡¯+i);
-
-Ö÷ÒªÎÊÌâÔÚÓÚÊ¹ÓÃ `eval()` ¿ªÊ¼Ò»¸öĞÂµÄÖ´ĞĞÓï¾ä£¬»á·Ç³£µÄÂı¡£
-
-½â¾ö°ì·¨£ºÊ¹ÓÃ·½À¨ºÅ±íÊ¾·¨£¨square bracket notation£©´úÌæ `eval()`¡£
+ä¸¾ä¾‹ï¼š
 
     var myObject = { p1: 1, p2: 2, p3: 3};
     var i = 2;
-    var myResult = myObject[¡°p¡±+i];
+    var myResult = eval(â€˜myObject.pâ€™+i);
 
-## 13.Î´¶¨Òå(undefined)×÷Îª±äÁ¿µÄÓÃ·¨Usage of undefined as a variable
+ä¸»è¦é—®é¢˜åœ¨äºä½¿ç”¨ `eval()` å¼€å§‹ä¸€ä¸ªæ–°çš„æ‰§è¡Œè¯­å¥ï¼Œä¼šéå¸¸çš„æ…¢ã€‚
 
-¾ÙÀı£º
+è§£å†³åŠæ³•ï¼šä½¿ç”¨æ–¹æ‹¬å·è¡¨ç¤ºæ³•ï¼ˆsquare bracket notationï¼‰ä»£æ›¿ `eval()`ã€‚
+
+    var myObject = { p1: 1, p2: 2, p3: 3};
+    var i = 2;
+    var myResult = myObject[â€œpâ€+i];
+
+## 13.æœªå®šä¹‰(undefined)ä½œä¸ºå˜é‡çš„ç”¨æ³•Usage of undefined as a variable
+
+ä¸¾ä¾‹ï¼š
 
     if ( myVar === undefined ) {
         //Do something
     }
 
-ÔÚÉÏÃæµÄÀı×ÓÖĞ£¬Î´¶¨ÒåÊµ¼ÊÉÏÊÇÒ»±äÁ¿¡£
-ËùÓĞµÄJavaScriptÒıÇæ»á´´½¨³õÊ¼»¯µÄ±äÁ¿window.undefined¸øÎ´¶¨Òå×÷ÎªÖµ¡£
-È»¶ø ×¢ÒâµÄÊÇ±äÁ¿²»½öÊÇ¿É¶Á£¬ÈÎºÎÆäËûµÄ´úÂë¿ÉÒÔ¸Õ¸ÄËüµÄÖµ¡£
-ºÜÆæ¹ÖÄÜÕÒµ½window.undefinedÓĞÀ´×ÔÎ´¶¨ÒåµÄ²»Í¬µÄÖµµÄ³¡¾°£¬µ«ÊÇÎªÊ²Ã´Ã°ÏÕÄØ£¿
+åœ¨ä¸Šé¢çš„ä¾‹å­ä¸­ï¼Œæœªå®šä¹‰å®é™…ä¸Šæ˜¯ä¸€å˜é‡ã€‚
+æ‰€æœ‰çš„JavaScriptå¼•æ“ä¼šåˆ›å»ºåˆå§‹åŒ–çš„å˜é‡window.undefinedç»™æœªå®šä¹‰ä½œä¸ºå€¼ã€‚
+ç„¶è€Œ æ³¨æ„çš„æ˜¯å˜é‡ä¸ä»…æ˜¯å¯è¯»ï¼Œä»»ä½•å…¶ä»–çš„ä»£ç å¯ä»¥åˆšæ”¹å®ƒçš„å€¼ã€‚
+å¾ˆå¥‡æ€ªèƒ½æ‰¾åˆ°window.undefinedæœ‰æ¥è‡ªæœªå®šä¹‰çš„ä¸åŒçš„å€¼çš„åœºæ™¯ï¼Œä½†æ˜¯ä¸ºä»€ä¹ˆå†’é™©å‘¢ï¼Ÿ
 
-½â¾ö°ì·¨£º¼ì²éÎ´¶¨ÒåÊ±£¬Ê¹ÓÃtypeof¡£
+è§£å†³åŠæ³•ï¼šæ£€æŸ¥æœªå®šä¹‰æ—¶ï¼Œä½¿ç”¨typeofã€‚
 
-    if ( typeof myVar === ¡°undefined¡± ) {
+    if ( typeof myVar === â€œundefinedâ€ ) {
         //Do something
     }

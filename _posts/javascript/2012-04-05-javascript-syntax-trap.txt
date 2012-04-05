@@ -1,99 +1,99 @@
 ---
 layout: post
-title: Ï¸ÊýjavascriptÈÝÒ×±»ºöÂÔµÄÓï·¨ÏÝÚå
-description: Ï¸ÊýjavascriptÈÝÒ×±»ºöÂÔµÄÓï·¨ÏÝÚå
+title: ç»†æ•°javascriptå®¹æ˜“è¢«å¿½ç•¥çš„è¯­æ³•é™·é˜±
+description: ç»†æ•°javascriptå®¹æ˜“è¢«å¿½ç•¥çš„è¯­æ³•é™·é˜±
 keywords: javascript
 category : javascript
-tags : [javascript, Óï·¨, Óï·¨ÏÝÚå]
+tags : [javascript, è¯­æ³•, è¯­æ³•é™·é˜±]
 ---
 
-# Ï¸ÊýjavascriptÈÝÒ×±»ºöÂÔµÄÓï·¨ÏÝÚå
+# ç»†æ•°javascriptå®¹æ˜“è¢«å¿½ç•¥çš„è¯­æ³•é™·é˜±
 
-JavaScript ¿ÉËãÊÇÊÀ½çÉÏ×îÁ÷ÐÐµÄ±à³ÌÓïÑÔ£¬ËüÔø±» Web ¿ª·¢Éè¼ÆÊ¦ÌùÉÏØ¬ÃÎµÄ±êÇ©£¬
-ËäÈ»ÕæÕýµÄØ¬ÃÎÆäÊµÊÇ DOM API£¬Õâ¸ö±»´óÁ¿µÄ¿ª·¢ÓëÉè¼ÆÊ¦ËæÊÖÄéÀ´ÔöÇ¿ËûÃÇµÄ Web Ç°¶ËµÄ½Å±¾ÓïÑÔ£¬
-Èç½ñÔ½À´Ô½±»ÖØÊÓ£¬ËäÔòÈç´Ë£¬JavaScript ÈÔÈ»ÓµÓÐºÜ¶àÈÃÈË·Ñ½âµÄ¶«Î÷¡£
+JavaScript å¯ç®—æ˜¯ä¸–ç•Œä¸Šæœ€æµè¡Œçš„ç¼–ç¨‹è¯­è¨€ï¼Œå®ƒæ›¾è¢« Web å¼€å‘è®¾è®¡å¸ˆè´´ä¸Šå™©æ¢¦çš„æ ‡ç­¾ï¼Œ
+è™½ç„¶çœŸæ­£çš„å™©æ¢¦å…¶å®žæ˜¯ DOM APIï¼Œè¿™ä¸ªè¢«å¤§é‡çš„å¼€å‘ä¸Žè®¾è®¡å¸ˆéšæ‰‹æ‹ˆæ¥å¢žå¼ºä»–ä»¬çš„ Web å‰ç«¯çš„è„šæœ¬è¯­è¨€ï¼Œ
+å¦‚ä»Šè¶Šæ¥è¶Šè¢«é‡è§†ï¼Œè™½åˆ™å¦‚æ­¤ï¼ŒJavaScript ä»ç„¶æ‹¥æœ‰å¾ˆå¤šè®©äººè´¹è§£çš„ä¸œè¥¿ã€‚
 
- ## 1. ËüÒÔ Java ÃüÃû£¬µ«²¢²»ÊÇ Java
+ ## 1. å®ƒä»¥ Java å‘½åï¼Œä½†å¹¶ä¸æ˜¯ Java
  
- Ëü×î³õ½Ð Mocha£¬ ½Ó×Å¸ÄÃûÎª LiveScript£¬×îºó²ÅÈ·¶¨ÃüÃûÎª JavaScript£¬
- ¸ù¾ÝÀúÊ·¼ÇÂ¼£¬Java µÄÃüÃûÓë Netscape ºÍ Sun Ö®¼äµÄºÏ×÷ÓÐ¹Ø£¬
- ×÷Îª½»»»Ìõ¼þ£¬Netscape ÔÚËûÃÇ±¸ÊÜ»¶Ó­µÄä¯ÀÀÆ÷ÖÐ´´½¨ÁË Java ÔËÐÐÊ±¡£
+ å®ƒæœ€åˆå« Mochaï¼Œ æŽ¥ç€æ”¹åä¸º LiveScriptï¼Œæœ€åŽæ‰ç¡®å®šå‘½åä¸º JavaScriptï¼Œ
+ æ ¹æ®åŽ†å²è®°å½•ï¼ŒJava çš„å‘½åä¸Ž Netscape å’Œ Sun ä¹‹é—´çš„åˆä½œæœ‰å…³ï¼Œ
+ ä½œä¸ºäº¤æ¢æ¡ä»¶ï¼ŒNetscape åœ¨ä»–ä»¬å¤‡å—æ¬¢è¿Žçš„æµè§ˆå™¨ä¸­åˆ›å»ºäº† Java è¿è¡Œæ—¶ã€‚
  
- ÖµµÃÒ»ÌáµÄÊÇ£¬Õâ¸öÃû×ÖµÄ³öÌ¨¼¸½üÒ»¸öÍæÐ¦£¬
- ÒªÖªµÀ£¬LiveScript ºÍ Java ÔÚ¿Í»§¶Ë½Å±¾·½Ãæ´æÔÚµÐ¶Ô¹ØÏµ¡£
+ å€¼å¾—ä¸€æçš„æ˜¯ï¼Œè¿™ä¸ªåå­—çš„å‡ºå°å‡ è¿‘ä¸€ä¸ªçŽ©ç¬‘ï¼Œ
+ è¦çŸ¥é“ï¼ŒLiveScript å’Œ Java åœ¨å®¢æˆ·ç«¯è„šæœ¬æ–¹é¢å­˜åœ¨æ•Œå¯¹å…³ç³»ã€‚
  
-²»¹ÜÔõÃ´Ëµ£¬ÈËÃÇºóÀ´²»µÃ²»Ò»ÔÙ³ÎÇåµÄÒ»¼þÊÂ¾ÍÊÇ£¬JavaScript ºÍ Java ºÁÎÞ¹ØÏµ¡£
+ä¸ç®¡æ€Žä¹ˆè¯´ï¼Œäººä»¬åŽæ¥ä¸å¾—ä¸ä¸€å†æ¾„æ¸…çš„ä¸€ä»¶äº‹å°±æ˜¯ï¼ŒJavaScript å’Œ Java æ¯«æ— å…³ç³»ã€‚
 
-> PS£ºÎÒ×îÏ²»¶µÄ»Ø´ðÊÇ£ºjavaºÍjavascript¾ÍÊÇ¡°À×·æºÍÀ×·æËþµÄ¹ØÏµ¡±¡£
+> PSï¼šæˆ‘æœ€å–œæ¬¢çš„å›žç­”æ˜¯ï¼šjavaå’Œjavascriptå°±æ˜¯â€œé›·é”‹å’Œé›·é”‹å¡”çš„å…³ç³»â€ã€‚
 
-## 2. Null ÊÇ¸ö¶ÔÏó£¿
+## 2. Null æ˜¯ä¸ªå¯¹è±¡ï¼Ÿ
 
-¿´¿´Õâ¶Î´úÂë£¬Ëü·µ»ØµÄÊÇ object¡£
+çœ‹çœ‹è¿™æ®µä»£ç ï¼Œå®ƒè¿”å›žçš„æ˜¯ objectã€‚
 
     console.log(typeof null); // object    
   
-ÕâÊµÔÚÁîÈË·Ñ½â£¬¼ÙÈç null ±íÊ¾¿ÕÖµ£¬ËüÔõÃ´¿ÉÒÔÊÇ¶ÔÏó£¿
-¼òµ¥Ëµ£¬ËüÊÇ JavaScript ×î³õ°æ±¾µÄ´íÎó£¬Õâ¸ö´íÎóÉõÖÁ±»Î¢ÈíµÄ JScript Ö±½Ó½èÓÃ¡£
+è¿™å®žåœ¨ä»¤äººè´¹è§£ï¼Œå‡å¦‚ null è¡¨ç¤ºç©ºå€¼ï¼Œå®ƒæ€Žä¹ˆå¯ä»¥æ˜¯å¯¹è±¡ï¼Ÿ
+ç®€å•è¯´ï¼Œå®ƒæ˜¯ JavaScript æœ€åˆç‰ˆæœ¬çš„é”™è¯¯ï¼Œè¿™ä¸ªé”™è¯¯ç”šè‡³è¢«å¾®è½¯çš„ JScript ç›´æŽ¥å€Ÿç”¨ã€‚
 
 ## 3. NaN !== NaN
 
-NaN£¬±íÊ¾Ò»¸ö·ÇÊý×ÖµÄÖµ£¬È»¶øÎÊÌâÊÇ£¬NaN²»µÈÓÚÈÎºÎ¶«Î÷£¬ÉõÖÁ²»µÈÓÚËü×Ô¼º¡£
+NaNï¼Œè¡¨ç¤ºä¸€ä¸ªéžæ•°å­—çš„å€¼ï¼Œç„¶è€Œé—®é¢˜æ˜¯ï¼ŒNaNä¸ç­‰äºŽä»»ä½•ä¸œè¥¿ï¼Œç”šè‡³ä¸ç­‰äºŽå®ƒè‡ªå·±ã€‚
 
     console.log(NaN === NaN); // false    
   
-ÕâÏÔÈ»²»¶Ô£¬ÊÂÊµÉÏ£¬Èç¹ûÒªÅÐ¶ÏÒ»¸öÖµÈ·ÊµÊÇ NaN£¬ÄãÐèÒªÓÃ `isNaN()` º¯Êý¡£
+è¿™æ˜¾ç„¶ä¸å¯¹ï¼Œäº‹å®žä¸Šï¼Œå¦‚æžœè¦åˆ¤æ–­ä¸€ä¸ªå€¼ç¡®å®žæ˜¯ NaNï¼Œä½ éœ€è¦ç”¨ `isNaN()` å‡½æ•°ã€‚
 
-## 4. È«¾Ö±äÁ¿
+## 4. å…¨å±€å˜é‡
 
-¶ÔÈ«¾Ö±äÁ¿µÄÒÀÀµÒ»Ö±±»ÊÓÎª JavaScript ×î»µµÄ²¿·Ö£¨ECMA µÄ JavaScript 5 ÒÑ¾­È¥µôÁËÈ«¾Ö±äÁ¿£¬
-Çë²ÎÔÄ ECMA ÍÆ³ö JavaScript 5 - ÒëÕß×¢£©¡£
+å¯¹å…¨å±€å˜é‡çš„ä¾èµ–ä¸€ç›´è¢«è§†ä¸º JavaScript æœ€åçš„éƒ¨åˆ†ï¼ˆECMA çš„ JavaScript 5 å·²ç»åŽ»æŽ‰äº†å…¨å±€å˜é‡ï¼Œ
+è¯·å‚é˜… ECMA æŽ¨å‡º JavaScript 5 - è¯‘è€…æ³¨ï¼‰ã€‚
 
-¶Ô¼òµ¥µÄÒ³Ãæ£¬ÕâÎÞËùÎ½£¬µ«¸´ÔÓµÄÒ³Ãæ£¬Èç¹û°üº¬´óÁ¿ JavaScript ½Å±¾£¬
-ÄãºÜÄÑÖªµÀÄ³¸öÈ«¾Ö±äÁ¿ÊÇÔÚÄÄÀïÉùÃ÷µÄ£¬Èç¹û¼¸¸öÈ«¾Ö±äÁ¿²»Ð¡ÐÄÖØÃû£¬¾Í»áÒý·¢´íÎó¡£
+å¯¹ç®€å•çš„é¡µé¢ï¼Œè¿™æ— æ‰€è°“ï¼Œä½†å¤æ‚çš„é¡µé¢ï¼Œå¦‚æžœåŒ…å«å¤§é‡ JavaScript è„šæœ¬ï¼Œ
+ä½ å¾ˆéš¾çŸ¥é“æŸä¸ªå…¨å±€å˜é‡æ˜¯åœ¨å“ªé‡Œå£°æ˜Žçš„ï¼Œå¦‚æžœå‡ ä¸ªå…¨å±€å˜é‡ä¸å°å¿ƒé‡åï¼Œå°±ä¼šå¼•å‘é”™è¯¯ã€‚
 
-## 5. ÄÇÐ©Í³Í³±»Ì½²âÎª Mozilla User-Agent µÄä¯ÀÀÆ÷
+## 5. é‚£äº›ç»Ÿç»Ÿè¢«æŽ¢æµ‹ä¸º Mozilla User-Agent çš„æµè§ˆå™¨
 
-±ØÐë³ÐÈÏ£¬ÊÂÊµÉÏ£¬Õâ²»ÊÇ JavaScript  µÄ´í£¬ÊÇ¸÷¸öä¯ÀÀÆ÷ÓÐÒâÎªÖ®¡£
+å¿…é¡»æ‰¿è®¤ï¼Œäº‹å®žä¸Šï¼Œè¿™ä¸æ˜¯ JavaScript  çš„é”™ï¼Œæ˜¯å„ä¸ªæµè§ˆå™¨æœ‰æ„ä¸ºä¹‹ã€‚
 
-±ÈÈç£¬ÒÔÏÂÊÇÓÃ JavaScript Ì½²â Safari Ê±µÃµ½µÄ½á¹û£º
+æ¯”å¦‚ï¼Œä»¥ä¸‹æ˜¯ç”¨ JavaScript æŽ¢æµ‹ Safari æ—¶å¾—åˆ°çš„ç»“æžœï¼š
 
     console.log(navigator.userAgent);     
     // Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10    
 
-ÊÇ·ñ×¢Òâµ½ÆäÖÐµÄµÚÒ»¸öµ¥´Ê Mozilla/5.0£¬ÎªÊ²Ã´ Safari »á±»Ì½²âÎª Mozilla£¬
-¾¡¹Ü Safari ºóÀ´ÒÑ¾­¾ÀÕýÕâÒ»ÎÊÌâ£¬µ«ÈÔÈ»²»ÄÜ½âÊÍÎªÊ²Ã´ËüÃÇÒªÕâÑùÎóµ¼¿ª·¢Õß¡£
+æ˜¯å¦æ³¨æ„åˆ°å…¶ä¸­çš„ç¬¬ä¸€ä¸ªå•è¯ Mozilla/5.0ï¼Œä¸ºä»€ä¹ˆ Safari ä¼šè¢«æŽ¢æµ‹ä¸º Mozillaï¼Œ
+å°½ç®¡ Safari åŽæ¥å·²ç»çº æ­£è¿™ä¸€é—®é¢˜ï¼Œä½†ä»ç„¶ä¸èƒ½è§£é‡Šä¸ºä»€ä¹ˆå®ƒä»¬è¦è¿™æ ·è¯¯å¯¼å¼€å‘è€…ã€‚
 
-ÊÂÊµÉÏ£¬Äã»á·¢ÏÖ£¬¾ø´ó¶àÊýä¯ÀÀÆ÷°ÑËûÃÇµÄ User Agent ÉèÖÃÎª Mozilla£¬
-´ð°¸Òª»Øµ½10ÄêÇ°£¬Õâ¸ü¶àÊÇÒ»ÖÖ²ßÂÔ¡£
+äº‹å®žä¸Šï¼Œä½ ä¼šå‘çŽ°ï¼Œç»å¤§å¤šæ•°æµè§ˆå™¨æŠŠä»–ä»¬çš„ User Agent è®¾ç½®ä¸º Mozillaï¼Œ
+ç­”æ¡ˆè¦å›žåˆ°10å¹´å‰ï¼Œè¿™æ›´å¤šæ˜¯ä¸€ç§ç­–ç•¥ã€‚
  
-User Agent ÊÇÒ»¶ÎÓÃÀ´±êÊ¶µ±Ç°ä¯ÀÀÆ÷Éí·ÝµÄ×Ö·û´®£¬ÊÀ½çÉÏµÚÒ»¸öä¯ÀÀÆ÷ Mosaic£¬ ÔøÕâÑù±êÖ¾×Ô¼º£º
+User Agent æ˜¯ä¸€æ®µç”¨æ¥æ ‡è¯†å½“å‰æµè§ˆå™¨èº«ä»½çš„å­—ç¬¦ä¸²ï¼Œä¸–ç•Œä¸Šç¬¬ä¸€ä¸ªæµè§ˆå™¨ Mosaicï¼Œ æ›¾è¿™æ ·æ ‡å¿—è‡ªå·±ï¼š
 
     Mosaic/0.9     // browser name / version number   
   
-ÕâºÜºÏÀí£¬Òò´Ëµ± Netscape ³öÀ´µÄÊ±ºò£¬Ëü±£ÁôÁË Mosaic Õâ¸ö´«Í³£¬
-»¹ÔÚºóÃæÌí¼ÓÁËÒ»¸ö¼ÓÃÜ·½Ê½²¿·Ö¡£
+è¿™å¾ˆåˆç†ï¼Œå› æ­¤å½“ Netscape å‡ºæ¥çš„æ—¶å€™ï¼Œå®ƒä¿ç•™äº† Mosaic è¿™ä¸ªä¼ ç»Ÿï¼Œ
+è¿˜åœ¨åŽé¢æ·»åŠ äº†ä¸€ä¸ªåŠ å¯†æ–¹å¼éƒ¨åˆ†ã€‚
  
     Mozilla/2.02 [en] (Win95; I)     // browser name / version / encryption   
  
-µ½Ä¿Ç°ÎªÖ¹£¬Ò»ÇÐ°²ºÃ£¬Ö±µ½ IE3 ·¢²¼£¬µ± IE3 ·¢²¼µÄÊ±ºò£¬Netscape ÕýÈçÈÕÖÐÌì£¬
-ÄÇÊ±£¬ºÜ¶à·þÎñÆ÷ºÍ³ÌÐòÒÑ¾­²¿ÊðÁË¿Í»§¶ËÌ½²â»úÖÆ£¬ÒÔ±ãÈÏ³ö Netscape£¬
-ËäÈ»ÏÖÔÚ¿´À´£¬ÕâºÜÖµµÃÕùÒé£¬µ«µ±Ê±²¢Ã»Ê²Ã´¡£
+åˆ°ç›®å‰ä¸ºæ­¢ï¼Œä¸€åˆ‡å®‰å¥½ï¼Œç›´åˆ° IE3 å‘å¸ƒï¼Œå½“ IE3 å‘å¸ƒçš„æ—¶å€™ï¼ŒNetscape æ­£å¦‚æ—¥ä¸­å¤©ï¼Œ
+é‚£æ—¶ï¼Œå¾ˆå¤šæœåŠ¡å™¨å’Œç¨‹åºå·²ç»éƒ¨ç½²äº†å®¢æˆ·ç«¯æŽ¢æµ‹æœºåˆ¶ï¼Œä»¥ä¾¿è®¤å‡º Netscapeï¼Œ
+è™½ç„¶çŽ°åœ¨çœ‹æ¥ï¼Œè¿™å¾ˆå€¼å¾—äº‰è®®ï¼Œä½†å½“æ—¶å¹¶æ²¡ä»€ä¹ˆã€‚
 
-µ± IE ³õ´ÎÍÆ³öËüÃÇµÄ User Agent ±êÖ¾µÄÊ±ºò£¬ÊÇÕâ¸öÑù×Ó£º
+å½“ IE åˆæ¬¡æŽ¨å‡ºå®ƒä»¬çš„ User Agent æ ‡å¿—çš„æ—¶å€™ï¼Œæ˜¯è¿™ä¸ªæ ·å­ï¼š
 
     MSIE/3.0 (Win95; U)    
  
-ÕâÈÃ IE ºÜ±»¶¯£¬ÒòÎª Netscape ÒÑ¾­ÄÜ±»ºÜ¶à·þÎñÆ÷Ê¶±ð£¬
-Òò´Ë£¬¿ª·¢ÕßÃÇ¸É´àÏ£Íû IE ±»ÎóÈÏÎª Mozilla£¬
-È»ºó£¬ÔÙµ¥¶À¼ÓÒ»¸ö IE µÄ±êÇ©¡£
+è¿™è®© IE å¾ˆè¢«åŠ¨ï¼Œå› ä¸º Netscape å·²ç»èƒ½è¢«å¾ˆå¤šæœåŠ¡å™¨è¯†åˆ«ï¼Œ
+å› æ­¤ï¼Œå¼€å‘è€…ä»¬å¹²è„†å¸Œæœ› IE è¢«è¯¯è®¤ä¸º Mozillaï¼Œ
+ç„¶åŽï¼Œå†å•ç‹¬åŠ ä¸€ä¸ª IE çš„æ ‡ç­¾ã€‚
 
     Mozilla/2.0 (compatible; MSIE 3.0; Windows 95)    
   
-Èç½ñ£¬¼¸ºõËùÓÐä¯ÀÀÆ÷¶¼²½ IE ºó³¾£¬½«×Ô¼º±êÊ¶Îª Mozilla£¬Õâ´ó¸ÅÊÇÒ»ÖÖÁ¬Ëø·´Ó¦¡£
+å¦‚ä»Šï¼Œå‡ ä¹Žæ‰€æœ‰æµè§ˆå™¨éƒ½æ­¥ IE åŽå°˜ï¼Œå°†è‡ªå·±æ ‡è¯†ä¸º Mozillaï¼Œè¿™å¤§æ¦‚æ˜¯ä¸€ç§è¿žé”ååº”ã€‚
 
-## 6. ²»Ò»ÖÂµÄº¯Êý·¶Î§
+## 6. ä¸ä¸€è‡´çš„å‡½æ•°èŒƒå›´
 
-²Î¿´ÒÔÏÂ´úÂë£º 
+å‚çœ‹ä»¥ä¸‹ä»£ç ï¼š 
  
     function that will call a function with the name equal to parameter fn.     
     function foo(fn) {     
@@ -115,14 +115,14 @@ User Agent ÊÇÒ»¶ÎÓÃÀ´±êÊ¶µ±Ç°ä¯ÀÀÆ÷Éí·ÝµÄ×Ö·û´®£¬ÊÀ½çÉÏµÚÒ»¸öä¯ÀÀÆ÷ Mosaic£¬ ÔøÕ
      foo(function() { bar.method(); }); // alerts Hello, World, after    
 
  
-foo(bar.method) ·µ»Ø½á¹û²»Í¬Ô­ÒòÊÇ£¬method º¯ÊýÊÇ±»µ±×÷ windows ¶ÔÏó£¬
-¶ø²»ÊÇ bar ÏÂµÄ¶ÔÏóµ÷ÓÃµÄ¡£
+foo(bar.method) è¿”å›žç»“æžœä¸åŒåŽŸå› æ˜¯ï¼Œmethod å‡½æ•°æ˜¯è¢«å½“ä½œ windows å¯¹è±¡ï¼Œ
+è€Œä¸æ˜¯ bar ä¸‹çš„å¯¹è±¡è°ƒç”¨çš„ã€‚
 
-Òª½â¾öÕâ¸öÎÊÌâ£¬ÎÒÃÇ±ØÐë´Ó´«µÝµÄÄäÃûº¯ÊýÖÐµ÷ÓÃ bar.method() ¡£
+è¦è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œæˆ‘ä»¬å¿…é¡»ä»Žä¼ é€’çš„åŒ¿åå‡½æ•°ä¸­è°ƒç”¨ bar.method() ã€‚
 
-## 7. Î»²Ù×÷·û
+## 7. ä½æ“ä½œç¬¦
 
-JavaScript ºÍ Java ÓÐ²»ÉÙ¹²Í¬Ö®´¦£¬ÈçÎ»²Ù×÷¡£
+JavaScript å’Œ Java æœ‰ä¸å°‘å…±åŒä¹‹å¤„ï¼Œå¦‚ä½æ“ä½œã€‚
 
 * & - and
 * | - or
@@ -132,30 +132,30 @@ JavaScript ºÍ Java ÓÐ²»ÉÙ¹²Í¬Ö®´¦£¬ÈçÎ»²Ù×÷¡£
 * ??? - unsigned right shift
 * << - left shift
 
-¿´¿´µÚÒ»¸ö & ²Ù×÷·û£¬Ê¹ÓÃ && Ó¦¸Ã¸üÓÐÐ§£¬ÒòÎª JavaScript ºÍ Java ²»Ò»Ñù£¬
-JavaScript Ã»ÓÐÕûÊý£¬ÐèÒªÀ´»Ø×ª»»£¬Òò´Ë£¬×ª»»²Ù×÷»¨µÄÊ±¼ä¸ü³¤¡£
+çœ‹çœ‹ç¬¬ä¸€ä¸ª & æ“ä½œç¬¦ï¼Œä½¿ç”¨ && åº”è¯¥æ›´æœ‰æ•ˆï¼Œå› ä¸º JavaScript å’Œ Java ä¸ä¸€æ ·ï¼Œ
+JavaScript æ²¡æœ‰æ•´æ•°ï¼Œéœ€è¦æ¥å›žè½¬æ¢ï¼Œå› æ­¤ï¼Œè½¬æ¢æ“ä½œèŠ±çš„æ—¶é—´æ›´é•¿ã€‚
 
-## 8. Ì«¶àµÄ¿ÕÖµÀàÐÍ
+## 8. å¤ªå¤šçš„ç©ºå€¼ç±»åž‹
 
-ÖîÈç null, false, undefined Ò»ÀàµÄÖµ¼¸ºõ±íÊ¾Í¬ÑùµÄÒâË¼£¬ËüÃÇÖ®¼äµÄ²»Í¬ÓÖÈÃÈËºÜÃÔ»ó¡£
+è¯¸å¦‚ null, false, undefined ä¸€ç±»çš„å€¼å‡ ä¹Žè¡¨ç¤ºåŒæ ·çš„æ„æ€ï¼Œå®ƒä»¬ä¹‹é—´çš„ä¸åŒåˆè®©äººå¾ˆè¿·æƒ‘ã€‚
 
-## 9. ËãÊõÎÊÌâ
+## 9. ç®—æœ¯é—®é¢˜
 
-ËäÈ» JavaScript °üº¬ºÜ¶àËãÊõ²Ù×÷£¬µ«Äã²»·ÁÔËÐÐÒ»ÏÂÏÂÃæµÄËãÊ½£¬
-".2+.4" Ó¦¸ÃµÈÓÚ ".6" ÊÇ²»ÊÇ£¬È»¶ø·µ»ØµÄÈ·ÊÇ "0.6000000000000001"¡£
+è™½ç„¶ JavaScript åŒ…å«å¾ˆå¤šç®—æœ¯æ“ä½œï¼Œä½†ä½ ä¸å¦¨è¿è¡Œä¸€ä¸‹ä¸‹é¢çš„ç®—å¼ï¼Œ
+".2+.4" åº”è¯¥ç­‰äºŽ ".6" æ˜¯ä¸æ˜¯ï¼Œç„¶è€Œè¿”å›žçš„ç¡®æ˜¯ "0.6000000000000001"ã€‚
 
-JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
+JavaScript åœ¨å°æ•°è®¡ç®—è®¿é—®å­˜åœ¨ä¸€äº›å°é—®é¢˜ã€‚
 
     console.log(.2 + .4); // 0.6000000000000001    
  
-ÎªÊ²Ã´»áÕâÑù£¿
+ä¸ºä»€ä¹ˆä¼šè¿™æ ·ï¼Ÿ
 
-¼òµ¥Ëµ£¬ÒòÎª JavaScript Ê¹ÓÃ IEEE ±ê×¼½øÐÐ¶þ½øÖÆ¸¡µãÔËËã£¬
-²»¹ý£¬¶ÔÕûÊý¼ÆËãÊÇÃ»ÎÊÌâµÄ¡£
+ç®€å•è¯´ï¼Œå› ä¸º JavaScript ä½¿ç”¨ IEEE æ ‡å‡†è¿›è¡ŒäºŒè¿›åˆ¶æµ®ç‚¹è¿ç®—ï¼Œ
+ä¸è¿‡ï¼Œå¯¹æ•´æ•°è®¡ç®—æ˜¯æ²¡é—®é¢˜çš„ã€‚
 
-10. ÄªÃûÆäÃîµÄ´úÂë´íÎó
+10. èŽ«åå…¶å¦™çš„ä»£ç é”™è¯¯
 
-¿´¿´ÒÔÏÂÁ½¶Î´úÂë£º
+çœ‹çœ‹ä»¥ä¸‹ä¸¤æ®µä»£ç ï¼š
 
     // braces on the right     
     return {     
@@ -168,9 +168,9 @@ JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
       foo : bar     
      };    
   
-ËüÃÇÓ¦¸ÃÊÇÒ»ÑùµÄ£¬Ö»ÊÇ { Î»ÖÃ²»Í¬¶øÒÑ£¬ÊÇ°É¡£
+å®ƒä»¬åº”è¯¥æ˜¯ä¸€æ ·çš„ï¼Œåªæ˜¯ { ä½ç½®ä¸åŒè€Œå·²ï¼Œæ˜¯å§ã€‚
 
-È»¶øÎÒÃÇÔÙ¿´ÏÂÃæµÄ´úÂë£º
+ç„¶è€Œæˆ‘ä»¬å†çœ‹ä¸‹é¢çš„ä»£ç ï¼š
 
     var foo = function() {     
           return {     
@@ -181,29 +181,29 @@ JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
         
     alert(foo.a); // b     
  
-Èç¹ûÎÒÃÇ°ÑÆäÖÐµÄ
+å¦‚æžœæˆ‘ä»¬æŠŠå…¶ä¸­çš„
  
     return  {     
         a : 'b'    
     };    
    
-»»³É
+æ¢æˆ
  
     return    
     {     
         a : 'b'    
     };     
  
-¾Í»áÒý·¢´íÎó£¬ÕâÊÇÒòÎª JavaScript ÓÐÒ»¸ö¹¦ÄÜ£¬
-»á¾ÀÕýËüÈÏÎª´íÎóµÄ´úÂëÊéÐ´£¬Ëü»á×Ô×÷´ÏÃ÷µØÔÚ return Õâ¸ö´ÊºóÃæ²åÈëÒ»¸ö ";" £¬
-´íÎóÒò´Ë¶øÉú¡£
+å°±ä¼šå¼•å‘é”™è¯¯ï¼Œè¿™æ˜¯å› ä¸º JavaScript æœ‰ä¸€ä¸ªåŠŸèƒ½ï¼Œ
+ä¼šçº æ­£å®ƒè®¤ä¸ºé”™è¯¯çš„ä»£ç ä¹¦å†™ï¼Œå®ƒä¼šè‡ªä½œèªæ˜Žåœ°åœ¨ return è¿™ä¸ªè¯åŽé¢æ’å…¥ä¸€ä¸ª ";" ï¼Œ
+é”™è¯¯å› æ­¤è€Œç”Ÿã€‚
  
     return; // JS incorrectly adds this semicolon.     
     {     
         a : 'b'; // It'll add a semicolon here as well, because it doesn't realize that this is an object.     
     };    
 
-## ¸½£º
+## é™„ï¼š
 1. 
 
         parseInt('06') -> 6   
@@ -212,7 +212,7 @@ JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
         parseInt('09') -> 0   
         parseInt('10') -> 10  
 
-ÕâÊÇºÜ¶àÓïÑÔ¶¼»áÓÐµÄÎÊÌâ£¬¾ÍÊÇ0¿ªÊ¼µÄÊý×Ö¶¼ÊÇ°Ë½øÖÆ¡£
+è¿™æ˜¯å¾ˆå¤šè¯­è¨€éƒ½ä¼šæœ‰çš„é—®é¢˜ï¼Œå°±æ˜¯0å¼€å§‹çš„æ•°å­—éƒ½æ˜¯å…«è¿›åˆ¶ã€‚
 
 2. 
 
@@ -236,7 +236,7 @@ JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
         var a = { "abc" : 1 };   
         a[[[["abc"]]]] === a["abc"]; // this is also true  
 
- ¹é¸ù½áµ×£¬Ô­Òò»¹ÊÇÒ»Ñù¡ª¡ªjavascriptÊÇÈôÀàÐÍÓïÑÔ¡£
+ å½’æ ¹ç»“åº•ï¼ŒåŽŸå› è¿˜æ˜¯ä¸€æ ·â€”â€”javascriptæ˜¯è‹¥ç±»åž‹è¯­è¨€ã€‚
  
 4. 
 
@@ -248,17 +248,17 @@ JavaScript ÔÚÐ¡Êý¼ÆËã·ÃÎÊ´æÔÚÒ»Ð©Ð¡ÎÊÌâ¡£
     var a = {};   
     typeof a.b == "undefined"; // always true  
 
-ÔÚjavascriptÖÐ£¬Äã¿ÉÒÔ¸Ä±äundefinedµÄÖµ¡£
+åœ¨javascriptä¸­ï¼Œä½ å¯ä»¥æ”¹å˜undefinedçš„å€¼ã€‚
 
-5. ×î²»¿ÉË¼Òé£¬µ«ÓÖºÏºõµÀÀíµÄ¡£
+5. æœ€ä¸å¯æ€è®®ï¼Œä½†åˆåˆä¹Žé“ç†çš„ã€‚
 
-        alert(111111111111111111111)     // Êä³ö111111111111111110000  
+        alert(111111111111111111111)     // è¾“å‡º111111111111111110000  
 
-ÆäÊµÕâ²»ÄÜ¹Öjavascript£¬Ö»ÄÜ¹ÖIEEE¡£
+å…¶å®žè¿™ä¸èƒ½æ€ªjavascriptï¼Œåªèƒ½æ€ªIEEEã€‚
 
-¼ÈÈ»Ìáµ½ÁËIEEE£¬ÄÇÔÙÀ´Ò»¸ö¡£
+æ—¢ç„¶æåˆ°äº†IEEEï¼Œé‚£å†æ¥ä¸€ä¸ªã€‚
  
-ºÜÆæ¹ÖµÄÊÇ£¬Õâ¸ö±¾¸ÃÊä³ö1»ò1.0µÄÊ½×Ó£¬Êä³öµÄ¾ÓÈ»ÊÇ0.9999999999999999
+å¾ˆå¥‡æ€ªçš„æ˜¯ï¼Œè¿™ä¸ªæœ¬è¯¥è¾“å‡º1æˆ–1.0çš„å¼å­ï¼Œè¾“å‡ºçš„å±…ç„¶æ˜¯0.9999999999999999
  
 6. 
 
