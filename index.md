@@ -19,32 +19,27 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-本网站托管在 [github][http://github.com] 上， 使用 [Jekyll Bootstrap](http://jekyllbootstrap.com)框架建构。
+本网站托管在 [github](http://github.com) 上， 使用 [Jekyll Bootstrap](http://jekyllbootstrap.com)框架建构。
 
-您也可以在 github 上创建自己的网站，[在 github 上建立 pages 的过程][http://justjavac.com/git/2011/09/22/create-github-page]。 
+您也可以在 github 上创建自己的网站，[在 github 上建立 pages 的过程](http://justjavac.com/git/2011/09/22/create-github-page)。 
 
-## Update Author Attributes
+## 配置站点
 
-In `_config.yml` remember to specify your own data:
+在 `_config.yml` 文件中修改网站配置信息: 
     
     title : My Blog =)
     
     author :
       name : Name Lastname
-      email : blah@email.test
+      email : blah@email.com
       github : username
       twitter : username
 
-The theme should reference these variables whenever needed.
+配置完成后，网站就可以使用这些配置信息，并把它们显示在应该出现的地方。
     
-## Sample Posts
+## 文档
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+下面是网站发布的文档：
 
 <ul class="posts">
   {% for post in site.posts %}
@@ -52,3 +47,6 @@ Here's a sample "posts list".
   {% endfor %}
 </ul>
 
+## 其他
+
+    ……
