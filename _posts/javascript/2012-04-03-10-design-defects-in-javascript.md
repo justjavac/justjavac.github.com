@@ -1,196 +1,196 @@
 ---
 layout: post
-title: Javascript��10�����ȱ��
-description: Javascript��10�����ȱ��
+title: Javascript的10个设计缺陷
+description: Javascript的10个设计缺陷
 keywords: javascript
 category : javascript
 tags : [javascript]
 ---
 
-## һ��ΪʲôJavascript�����ȱ�ݣ�
+## 一、为什么Javascript有设计缺陷？
 
-�����������͹�ԭ�򣬵���Javascript����Ʋ������ơ�
+这里有三个客观原因，导致Javascript的设计不够完善。
 
-### 1. ��ƽ׶ι��ڲִ�
+### 1. 设计阶段过于仓促
 
-Javascript����ƣ���ʵֻ����ʮ�졣
-���ң����ʦ��Ϊ����˾������˲���Ը��������ƣ��μ���Javascript�����ǡ�����
+Javascript的设计，其实只用了十天。
+而且，设计师是为了向公司交差，本人并不愿意这样设计（参见《Javascript诞生记》）。
 
-��һ���棬�������Ե���Ƴ��ԣ���Ϊ�˽��һЩ�򵥵���ҳ���������磬���"�û���"�Ƿ���д����
-��û�п��Ǹ���Ӧ�õ���Ҫ�����������Ҳ�벻����Javascript��������д����Gmail���ּ����Ӵ��ӵ���ҳ��
+另一方面，这种语言的设计初衷，是为了解决一些简单的网页互动（比如，检查"用户名"是否填写），
+并没有考虑复杂应用的需要。设计者做梦也想不到，Javascript将来可以写出像Gmail这种极其庞大复杂的网页。
 
-### 2. û������
+### 2. 没有先例
 
-Javascriptͬʱ����˺���ʽ��̺���������̵��ص㣬��ܿ�������ʷ�ϵĵ�һ����
-����ֱ������Ϊֹ��Javascript��Ȼ��������Ψһʹ��Prototype�̳�ģ�͵���Ҫ���ԡ�
-��ʹ����û������������Բο���
+Javascript同时结合了函数式编程和面向对象编程的特点，这很可能是历史上的第一例。
+而且直到今天为止，Javascript仍然是世界上唯一使用Prototype继承模型的主要语言。
+这使得它没有设计先例可以参考。
 
-### 3. ����ı�׼��
+### 3. 过早的标准化
 
-Javascript�ķ�չ�ǳ��죬����û��ʱ�������ơ�
+Javascript的发展非常快，根本没有时间调整设计。
 
-1995��5�£���Ʒ������壻10�£������������ɹ���12�£����г��Ƴ������̱��㷺���ܣ�ȫ������û�����ʹ�á�
-Javascriptȱ��һ����С�������������û��Ĺ��̣����������ı�ըʽ��ɢ������
-�����ļȳ���ҳ��ҵ����ҳ����ߵĲ��룬ʹ�õ������Թ���������ء�
+1995年5月，设计方案定稿；10月，解释器开发成功；12月，向市场推出，立刻被广泛接受，全世界的用户大量使用。
+Javascript缺乏一个从小到大、慢慢积累用户的过程，而是连续的爆炸式扩散增长。
+大量的既成网页和业余网页设计者的参与，使得调整语言规格困难重重。
 
-������ǣ�Javascript�Ĺ��û�����������͹̻��ˡ�
+更糟的是，Javascript的规格还没来及调整，就固化了。
 
-1996��8�£�΢����˾ǿ�ƽ��룬�����Ƴ��Լ��Ľű�����Jscript��
-11�£�Ϊ��ѹ��΢����������˾��������Javascript�Ĺ��ʱ�׼��
-1997��6�£���һ�����ʱ�׼ECMA-262��ʽ�䲼��
+1996年8月，微软公司强势介入，宣布推出自己的脚本语言Jscript；
+11月，为了压制微软，网景公司决定申请Javascript的国际标准；
+1997年6月，第一个国际标准ECMA-262正式颁布。
 
-Ҳ����˵��Javascript�Ƴ�һ���֮�󣬹��ʱ�׼�������ˡ�
-���ȱ�ݻ�û�г�ֱ�¶�ͳ��˱�׼��
-���֮�£�C������������20��֮�󣬹��ʱ�׼�Ű䲼��
+也就是说，Javascript推出一年半之后，国际标准就问世了。
+设计缺陷还没有充分暴露就成了标准。
+相比之下，C语言问世将近20年之后，国际标准才颁布。
 
-## ����Javascript��10�����ȱ��
+## 二、Javascript的10个设计缺陷
 
-### 1. ���ʺϿ������ͳ���
+### 1. 不适合开发大型程序
 
-Javascriptû�����ƿռ䣨namespace��������ģ�黯��
-û����ν�����ֲ��ڶ���ļ��Ĺ淶��
-����ͬ���������ظ����壬����Ķ�����Ը���ǰ��Ķ��壬�ܲ�����ģ�黯���ء�
+Javascript没有名称空间（namespace），很难模块化；
+没有如何将代码分布在多个文件的规范；
+允许同名函数的重复定义，后面的定义可以覆盖前面的定义，很不利于模块化加载。
 
-### 2. �ǳ�С�ı�׼��
+### 2. 非常小的标准库
 
-Javascript�ṩ�ı�׼������ǳ�С��ֻ�����һЩ�����������ܶ๦�ܶ����߱���
+Javascript提供的标准函数库非常小，只能完成一些基本操作，很多功能都不具备。
 
-### 3. null��undefined
+### 3. null和undefined
 
-null���ڶ���object����һ�֣���˼�Ǹö���Ϊ�գ�
-undefined����һ���������ͣ���ʾδ���塣
+null属于对象（object）的一种，意思是该对象为空；
+undefined则是一种数据类型，表示未定义。
 
-����typeof null; // object
-����typeof undefined; // undefined
+　　typeof null; // object
+　　typeof undefined; // undefined
 
-���߷ǳ����׻��������Ǻ�����ȫ��ͬ��
+两者非常容易混淆，但是含义完全不同。
 
-����var foo;
-����alert(foo == null); // true
-����alert(foo == undefined); // true
-����alert(foo === null); // false
-����alert(foo === undefined); // true
+　　var foo;
+　　alert(foo == null); // true
+　　alert(foo == undefined); // true
+　　alert(foo === null); // false
+　　alert(foo === undefined); // true
 
-�ڱ��ʵ���У�null����û�ã�������Ӧ���������
+在编程实践中，null几乎没用，根本不应该设计它。
 
-### 4. ȫ�ֱ������Կ���
+### 4. 全局变量难以控制
 
-Javascript��ȫ�ֱ�����������ģ���ж��ǿɼ��ģ�
-�κ�һ�������ڲ�����������ȫ�ֱ���������Ӿ��˳���ĸ����ԡ�
+Javascript的全局变量，在所有模块中都是可见的；
+任何一个函数内部都可以生成全局变量，这大大加剧了程序的复杂性。
 
-����a = 1;
-����(function(){
-��������b=2;
-��������alert(a);
-����})(); // 1
-����alert(b); //2
+　　a = 1;
+　　(function(){
+　　　　b=2;
+　　　　alert(a);
+　　})(); // 1
+　　alert(b); //2
     
-### 5. �Զ�������β�ֺ�
+### 5. 自动插入行尾分号
 
-Javascript��������䣬�������ԷֺŽ�β��
-���ǣ���������Ǽӷֺţ���������������������Ϊ���Զ����Ϸֺš�
-��ʱ����ᵼ��һЩ���Է��ֵĴ���
+Javascript的所有语句，都必须以分号结尾。
+但是，如果你忘记加分号，解释器并不报错，而是为你自动加上分号。
+有时候，这会导致一些难以发现的错误。
 
-���磬����������������޷��ﵽԤ�ڵĽ��������ֵ����һ�����󣬶���undefined��
+比如，下面这个函数根本无法达到预期的结果，返回值不是一个对象，而是undefined。
 
-����function(){
-��������return
-������������{
-����������������i=1
-������������};
-����}
+　　function(){
+　　　　return
+　　　　　　{
+　　　　　　　　i=1
+　　　　　　};
+　　}
 
-ԭ���ǽ������Զ���return����������˷ֺš�
+原因是解释器自动在return语句后面加上了分号。
 
-����function(){
-��������return;
-������������{
-����������������i=1
-������������};
-����}
+　　function(){
+　　　　return;
+　　　　　　{
+　　　　　　　　i=1
+　　　　　　};
+　　}
 
-### 6. �Ӻ������
+### 6. 加号运算符
 
-+����Ϊ����������������壬���Ա�ʾ���������ֵĺͣ�Ҳ���Ա�ʾ�ַ����ַ������ӡ�
++号作为运算符，有两个含义，可以表示数字与数字的和，也可以表示字符与字符的连接。
 
-����alert(1+10); // 11
-����alert("1"+"10"); // 110
+　　alert(1+10); // 11
+　　alert("1"+"10"); // 110
 
-���һ�����������ַ�����һ�������������֣��������Զ�ת��Ϊ�ַ���
+如果一个操作项是字符，另一个操作项是数字，则数字自动转化为字符。
 
-����alert(1+"10"); // 110
-����alert("10"+1); // 101
+　　alert(1+"10"); // 110
+　　alert("10"+1); // 101
 
-��������ƣ�����Ҫ�ؼӾ�������ĸ����ԣ���ȫ������������һ���ַ����ӵ��������
+这样的设计，不必要地加剧了运算的复杂性，完全可以另行设置一个字符连接的运算符。
 
 ### 7. NaN
 
-NaN��һ�����֣���ʾ�����˽������ļ��ޡ�
-����һЩ����ֵ����ԣ�
+NaN是一种数字，表示超出了解释器的极限。
+它有一些很奇怪的特性：
 
-����NaN === NaN; //false
-����NaN !== NaN; //true
-����alert( 1 + NaN ); // NaN
+　　NaN === NaN; //false
+　　NaN !== NaN; //true
+　　alert( 1 + NaN ); // NaN
 
-�������`NaN`�����������ֱ�ӱ��������������ڼ򻯳���
+与其设计`NaN`，不如解释器直接报错，反而有利于简化程序。
 
-### 8. ����Ͷ��������
+### 8. 数组和对象的区分
 
-����Javascript������Ҳ���ڶ���object��������Ҫ����һ�����󵽵��ǲ������飬
-�൱�鷳��Douglas Crockford�Ĵ����������ģ�
+由于Javascript的数组也属于对象（object），所以要区分一个对象到底是不是数组，
+相当麻烦。Douglas Crockford的代码是这样的：
 
-����if ( arr && 
-��������typeof arr === 'object' &&
-��������typeof arr.length === 'number' &&
-��������!arr.propertyIsEnumerable('length')){
-��������alert("arr is an array");
-����}
+　　if ( arr && 
+　　　　typeof arr === 'object' &&
+　　　　typeof arr.length === 'number' &&
+　　　　!arr.propertyIsEnumerable('length')){
+　　　　alert("arr is an array");
+　　}
 
-### 9. == �� ===
+### 9. == 和 ===
 
-==�����ж�����ֵ�Ƿ���ȡ�
-������ֵ���Ͳ�ͬʱ���ᷢ���Զ�ת�����õ��Ľ���ǳ�������ֱ����
+==用来判断两个值是否相等。
+当两个值类型不同时，会发生自动转换，得到的结果非常不符合直觉。
 
-����"" == "0" // false
-����0 == "" // true
-����0 == "0" // true
-����false == "false" // false
-����false == "0" // true
-����false == undefined // false
-����false == null // false
-����null == undefined // true
-����" \t\r\n" == 0 // true
+　　"" == "0" // false
+　　0 == "" // true
+　　0 == "0" // true
+　　false == "false" // false
+　　false == "0" // true
+　　false == undefined // false
+　　false == null // false
+　　null == undefined // true
+　　" \t\r\n" == 0 // true
 
-��ˣ��Ƽ��κ�ʱ��ʹ��"==="����ȷ�жϣ��ȽϷ���
+因此，推荐任何时候都使用"==="（精确判断）比较符。
 
-### 10. �������͵İ�װ����
+### 10. 基本类型的包装对象
 
-Javascript�����ֻ����������ͣ��ַ��������ֺͲ���ֵ��
-���Ƕ�����Ӧ�Ľ������������������ַ����������ֶ���Ͳ���ֵ����
+Javascript有三种基本数据类型：字符串、数字和布尔值。
+它们都有相应的建构函数，可以生成字符串对象、数字对象和布尔值对象。
 
-����new Boolean(false);
-����new Number(1234);
-����new String("Hello World");
+　　new Boolean(false);
+　　new Number(1234);
+　　new String("Hello World");
 
-������������Ͷ�Ӧ�Ķ������ͣ����ú�С����ɵĻ���ȴ�ܴ�
+与基本数据类型对应的对象类型，作用很小，造成的混淆却很大。
 
-����alert( typeof 1234); // number
-����alert( typeof new Number(1234)); // object
+　　alert( typeof 1234); // number
+　　alert( typeof new Number(1234)); // object
 
-����Javascript�ĸ��������Ϊ����μ�[Javascript Garden](http://bonsaiden.github.com/JavaScript-Garden/zh/)�� <http://wtfjs.com/>��
+关于Javascript的更多怪异行为，请参见[Javascript Garden](http://bonsaiden.github.com/JavaScript-Garden/zh/)和 <http://wtfjs.com/>。
 
-## ������ο���Javascript�����ȱ�ݣ�
+## 三、如何看待Javascript的设计缺陷？
 
-��ȻJavascript��ȱ�ݣ����������٣���ô���ǲ���һ�ֺ��������ԣ���û��ǰ;��
+既然Javascript有缺陷，数量还不少，那么它是不是一种很糟糕的语言？有没有前途？
 
-�ش���Javascript��������⣬�෴���ı��������ǿ��ǰ;�ܹ�����
+回答是Javascript并不算糟糕，相反它的编程能力很强大，前途很光明。
 
-���ȣ�����������õı�̹淶�����ϵ�����������İ�����Javascript����Щȱ�ݴ󲿷ֿ��Իرܡ�
+首先，如果遵守良好的编程规范，加上第三方函数库的帮助，Javascript的这些缺陷大部分可以回避。
 
-��Σ�JavascriptĿǰ����ҳ��̵�Ψһ���ԣ�ֻҪ������������չ�����ͱ�Ȼһ��չ��
-Ŀǰ����������Ŀ�����չ��������;��
-[node.js](http://nodejs.org/) ʹ��Javascript�������ں�˵ķ�������̣�
-[coffeeScript](http://jashkenas.github.com/coffee-script/) ʹ�������python��ruby���﷨��׫дJavascript��
+其次，Javascript目前是网页编程的唯一语言，只要互联网继续发展，它就必然一起发展。
+目前，许多新项目大大扩展了它的用途，
+[node.js](http://nodejs.org/) 使得Javascript可以用于后端的服务器编程，
+[coffeeScript](http://jashkenas.github.com/coffee-script/) 使你可以用python和ruby的语法，撰写Javascript。
 
-���ֻҪ�����°汾�����Ա�׼������ [ECMAscript 5](http://www.ecma-international.org/publications/standards/Ecma-262.htm)�����Ϳ����ֲ���Щ���ȱ�ݡ�
-��Ȼ����׼�ķ����ͱ�׼��ʵ���������£������ĺܶ�ȱ��Ҳ����һֱ���浽Javascript���ڵ����һ�졣
+最后，只要发布新版本的语言标准（比如 [ECMAscript 5](http://www.ecma-international.org/publications/standards/Ecma-262.htm)），就可以弥补这些设计缺陷。
+当然，标准的发布和标准的实现是两回事，上述的很多缺陷也许会一直伴随到Javascript存在的最后一天。
