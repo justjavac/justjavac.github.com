@@ -1,24 +1,24 @@
 ---
 layout: post
-title: ʹ��jekyll��Github�ϴ����
-description: ʹ��jekyll��Github�ϴ����
+title: 使用jekyll在Github上搭建博客
+description: 使用jekyll在Github上搭建博客
 keywords: jekyll, github
 category : jekyll
 tags : [github, jekyll]
 ---
 
-jekyll��һ��ʹ��Ruby��д�ľ�̬վ�����ɹ��ߣ�ʹ��Liquidģ����Ⱦ���棬֧��Markdown��Textile������ԣ����ҿ���Ϊ������ .html��.markdown��.textile��չ����β���ļ�ʹ��YAML���ã������﷨�������ܡ�
+jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板渲染引擎，支持Markdown和Textile标记语言，并且可以为所有以 .html、.markdown、.textile扩展名结尾的文件使用YAML配置，内置语法高亮功能。
 
-��Github��Pages�������Ϊÿ��Github�����ϵĲֿ��ṩ��̬ҳ����񣬲���Pages����֧��jekyll����ΪGithub Pages������Pages���ֱ����û�ҳ�����Ŀҳ�棬�������ǿ���ʹ���û�ҳ���������Լ���Blog��
+而Github的Pages服务可以为每个Github主机上的仓库提供静态页面服务，并且Pages服务支持jekyll。因为Github Pages有两种Pages，分别是用户页面和项目页面，所以我们可以使用用户页面来创建自己的Blog。
 
-�ڿ�ʼǰ����ȷ�����Ѿ�����Github�˺�һö��Git����ȷ���á�û�е����ѿ������Ʋ�Githubע�Ტ��װ����Git��
+在开始前，请确保你已经有了Github账号一枚和Git的正确配置。没有的朋友可以先移步Github注册并安装配置Git。
 
-���ȣ�������� Blog �ֿ� `username.github.com`:
+首先，创建你的 Blog 仓库 `username.github.com`:
 
     $ mkdir username.github.com
     $ cd username.github.com
   
-�½�һ�� `index.html` �ļ�������������:
+新建一个 `index.html` 文件，像下面这样:
 
 <pre class="html" name="colorcode">
 <!doctype html>
@@ -33,7 +33,7 @@ jekyll��һ��ʹ��Ruby��д�ľ�̬վ�����ɹ��ߣ�ʹ��Liquidģ����Ⱦ���棬֧��Markdown
 </html>
 </pre>
 
-��ʼ���ֿ⡢�ύ��push��Github:
+初始化仓库、提交并push到Github:
 
     $ git init
     $ git add .
@@ -41,14 +41,14 @@ jekyll��һ��ʹ��Ruby��д�ľ�̬վ�����ɹ��ߣ�ʹ��Liquidģ����Ⱦ���棬֧��Markdown
     $ git remote add origin
     $ git push origin master
   
-������� `username.github.com` �Ϳ��Կ����ղ��½���ҳ���ˣ�������ô�򵥡���ȻҲ����Ϊ���Blog�ֿ�󶨶��������������������ǣ�
+现在你打开 `username.github.com` 就可以看到刚才新建的页面了，就是这么简单。当然也可以为你的Blog仓库绑定独立域名，具体做法就是：
 
-1. ����Ĳֿ����½�����Ϊ www.youdomain.com �� CNAME �ļ���
-2. �������������ҳ������DNS�����ĵط�������һ����¼����¼���ΪCNAME(Alias)����.
+1. 在你的仓库中新建内容为 www.youdomain.com 的 CNAME 文件；
+2. 在你的域名管理页或者是DNS解析的地方，增加一个记录，记录类别为CNAME(Alias)类型.
 
-*Note��* �������CNAME����д���Ƕ����������͵�����DNS�ļ�¼���ΪA(Host)�ͣ�����������Ϊ `207.97.227.245`����ϸ�������Ʋ�Github��Pagesҳ�档
+*Note：* 如果你在CNAME中填写的是顶级域名，就得设置DNS的记录类别为A(Host)型，并设置主机为 `207.97.227.245`。详细介绍请移步Github的Pages页面。
 
-����������ֻ��Ҫ�����Լ���ϲ�����ҳ�档������ʶ��jekyll���ļ���Ŀ¼����:
+接下来我们只需要按照自己的喜好设计页面。首先认识下jekyll的文件及目录配置:
 
       .
       |-- _includes
@@ -63,51 +63,51 @@ jekyll��һ��ʹ��Ruby��д�ľ�̬վ�����ɹ��ߣ�ʹ��Liquidģ����Ⱦ���棬֧��Markdown
       |-- _config.yml
       `-- index.html
 
-*_includes*�������Ҫ��ģ���ļ��а������ļ��������ʹ��Liquid��ǩ `{�� include file.ext ��} `��������Ӧ���ļ���
+*_includes*存放你需要在模板文件中包含的文件，你可以使用Liquid标签 `{‰ include file.ext ‰} `来引用相应的文件。
 
-*_plugins*�����������Լ��Ĳ��
+*_plugins*可以增加你自己的插件
 
-*_layout*��Ų���ģ�壬��ο�<https://github.com/taberhuang/taberhuang.github.com/tree/master/_layouts>
+*_layout*存放布局模板，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_layouts>
 
-*_post*��������б����ļ�����һ��Ҫ��ѭ yyyy-mm-dd-title.html|markdown|textile ������ο�<https://github.com/taberhuang/taberhuang.github.com/tree/master/_posts>
+*_post*存放文章列表，文件命名一定要遵循 yyyy-mm-dd-title.html|markdown|textile 规则，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_posts>
 
-*_sitejekyll*�Զ����ɵģ����Կ��Ժ��ԣ���������ڱ��ذ�װjekyll��Ԥ���˵Ļ�������ʹ��.gitignore����Gitֹͣ�Ա�Ŀ¼�ĸ��١�
+*_sitejekyll*自动生成的，所以可以忽略，如果你有在本地安装jekyll并预览了的话，可以使用.gitignore设置Git停止对本目录的跟踪。
 
-*_config.yml*���þ���ʹ�õ�����ѡ������ڱ�������Ԥ��ʱ�Ͳ���ÿ�ζ��ֶ������ˡ�
+*_config.yml*设置经常使用的配置选项，这样在本地启动预览时就不用每次都手动输入了。
 
-*index.html �����е� HTML/Markdown/Textile �ļ�* ���е�HTML/Markdown/Textile�ļ������԰��� YAML ���ã������ļ����ᱻjekyll������
+*index.html 和所有的 HTML/Markdown/Textile 文件* 所有的HTML/Markdown/Textile文件都可以包含 YAML 配置，这类文件都会被jekyll解析。
 
-������������Լ��Ĳֿ������ú����Լ���Ŀ¼���ļ���Ҳ����`clone`�ҵĲֿ⣬Ȼ���޸ġ�
+现在你可以在自己的仓库中配置好你自己的目录及文件，也可以`clone`我的仓库，然后修改。
 
     $ git clone https://github.com/taberhuang/taberhuang.github.com.git
 
-�޸����Ϳ���`push`��Ĵ��뵽Github�ϣ���������ˡ��ղ���˵������Ԥ������������ڱ���Ԥ����ȷ��û������`push`�Ļ�������Ҫ�ڱ��ذ�װjekyll�����������jekyll�İ�װ������
+修改完后就可以`push`你的代码到Github上，看到结果了。刚才有说到本地预览，如果你想在本地预览后，确保没错误再`push`的话，就需要在本地安装jekyll，下面介绍下jekyll的安装方法。
 
-һ����װRuby���л�����RubyGem:Windows�û�ֻҪ���� RubyInstaller�����ذ�װ�����ֶ�����gem.
+一、安装Ruby运行环境和RubyGem:Windows用户只要下载 RubyInstaller。下载安装后请手动升级gem.
 
     $ gem update --system
     
-������װDevKit��DevKit��windowsƽ̨�����ʹ�ñ���C/C++��չ�����ߡ�����ģ��Linuxƽ̨�µ� make,gcc,sh ���б��롣�����ļ��󣬽�ѹ�� `C:\DevKit'����ͨ�������а�װ:
+二、安装DevKit。DevKit是windows平台编译和使用本地C/C++扩展包工具。用来模拟Linux平台下的 make,gcc,sh 进行编译。下载文件后，解压到 `C:\DevKit'，再通过命令行安装:
 
     $ cd C:\DevKit
     $ ruby dk.rb init
     $ ruby dk.rb install
     
-������װ�����ղŵ�DevKit��װ�Ƿ�ɹ�������ɹ���װ����DevKitҲ�Ͱ�װ�ɹ���������ɹ��������°�װDevKit��
+三、安装并检查刚才的DevKit安装是否成功。如果成功安装，则DevKit也就安装成功，如果不成功，请重新安装DevKit。
 
     $ gem install jekyll
     
-�ġ���װRdiscount���������������Markdown��ǵĽ������������ʹ��Textile�Ļ������ǰ�װKramdown��
+四、安装Rdiscount，这个是用来解析Markdown标记的解析包。如果你使用Textile的话，就是安装Kramdown。
 
   $ gem install rdiscount
   
-���еĻ���������������װ�ɹ��󣬽�����Ĳֿ�Ŀ¼�������������������jekyll�����ڱ���Ԥ���ˣ�Ԥ����ַĬ��Ϊ `127.0.0.1:4000`����Ȼ��Ҳ����ͨ�� _config.yml ����:
+所有的环境和依赖包都安装成功后，进入你的仓库目录，用下面的命令便可启动jekyll，并在本地预览了，预览地址默认为 `127.0.0.1:4000`，当然你也可以通过 _config.yml 配置:
 
     jekyll --server
   
-�ǲ��Ǻ�ˬ?
+是不是很爽?
 
-�ο���������ϣ�
+参考及相关资料：
 
 * <http://pages.github.com/>
 * <https://github.com/mojombo/jekyll/wiki>
