@@ -1,148 +1,148 @@
 ---
 layout: post
-title: NodeÈëÃÅ
-description: NodeÈëÃÅ
+title: Nodeå…¥é—¨
+description: Nodeå…¥é—¨
 keywords: node.js,javascript
 category : nodejs
 tags : [nodejs, javascript]
 ---
 
-<h1>NodeÈëÃÅ</h1>
+<h1>Nodeå…¥é—¨</h1>
 
-        <div id="author">×÷Õß£º <a href="http://twitter.com/manuelkiessling">Manuel Kiessling</a><br />
-                         ·­Òë£º <a href="http://weibo.com/goddyzhao">goddyzhao</a> & 
+        <div id="author">ä½œè€…ï¼š <a href="http://twitter.com/manuelkiessling">Manuel Kiessling</a><br />
+                         ç¿»è¯‘ï¼š <a href="http://weibo.com/goddyzhao">goddyzhao</a> & 
                                <a href="http://www.otakustay.com">GrayZhang</a> & 
                                <a href="http://weibo.com/cmonday">MondayChen</a></div>
 
         <a name="about"></a>
 
-        <h2>¹ØÓÚ</h2>
+        <h2>å…³äºŽ</h2>
 
         <p>
-            ±¾ÊéÖÂÁ¦ÓÚ½Ì»áÄãÈçºÎÓÃNode.jsÀ´¿ª·¢Ó¦ÓÃ£¬¹ý³ÌÖÐ»á´«ÊÚÄãËùÓÐËùÐèµÄ¡°¸ß¼¶¡±JavaScriptÖªÊ¶¡£±¾Êé¾ø²»ÊÇÒ»±¾¡°Hello World¡±µÄ½Ì³Ì¡£
+            æœ¬ä¹¦è‡´åŠ›äºŽæ•™ä¼šä½ å¦‚ä½•ç”¨Node.jsæ¥å¼€å‘åº”ç”¨ï¼Œè¿‡ç¨‹ä¸­ä¼šä¼ æŽˆä½ æ‰€æœ‰æ‰€éœ€çš„â€œé«˜çº§â€JavaScriptçŸ¥è¯†ã€‚æœ¬ä¹¦ç»ä¸æ˜¯ä¸€æœ¬â€œHello Worldâ€çš„æ•™ç¨‹ã€‚
         </p>
 
         <a name="status"></a>
 
-        <h3>×´Ì¬</h3>
+        <h3>çŠ¶æ€</h3>
 
         <p>
-            ÄãÕýÔÚÔÄ¶ÁµÄÒÑ¾­ÊÇ±¾ÊéµÄ×îÖÕ°æ¡£Òò´Ë£¬Ö»ÓÐµ±½øÐÐ´íÎó¸üÕýÒÔ¼°Õë¶ÔÐÂ°æ±¾Node.jsµÄ¸Ä¶¯½øÐÐ¶ÔÓ¦µÄÐÞÕýÊ±£¬²Å»á½øÐÐ¸üÐÂ¡£
+            ä½ æ­£åœ¨é˜…è¯»çš„å·²ç»æ˜¯æœ¬ä¹¦çš„æœ€ç»ˆç‰ˆã€‚å› æ­¤ï¼Œåªæœ‰å½“è¿›è¡Œé”™è¯¯æ›´æ­£ä»¥åŠé’ˆå¯¹æ–°ç‰ˆæœ¬Node.jsçš„æ”¹åŠ¨è¿›è¡Œå¯¹åº”çš„ä¿®æ­£æ—¶ï¼Œæ‰ä¼šè¿›è¡Œæ›´æ–°ã€‚
         </p>
 
         <p>
-            ±¾ÊéÖÐµÄ´úÂë°¸Àý¶¼ÔÚNode.js 0.6.11°æ±¾ÖÐ²âÊÔ¹ý£¬¿ÉÒÔÕýÈ·¹¤×÷¡£
+            æœ¬ä¹¦ä¸­çš„ä»£ç æ¡ˆä¾‹éƒ½åœ¨Node.js 0.6.11ç‰ˆæœ¬ä¸­æµ‹è¯•è¿‡ï¼Œå¯ä»¥æ­£ç¡®å·¥ä½œã€‚
         </p>
 
         <a name="intended-audience"></a>
 
-        <h3>¶ÁÕß¶ÔÏó</h3>
+        <h3>è¯»è€…å¯¹è±¡</h3>
 
         <p>
-            ±¾Êé×îÊÊºÏÓëÎÒÓÐÏàËÆ¼¼Êõ±³¾°µÄ¶ÁÕß£º ÖÁÉÙ¶ÔÒ»ÃÅÖîÈçRuby¡¢Python¡¢PHP»òÕßJavaÕâÑùÃæÏò¶ÔÏóµÄÓïÑÔÓÐÒ»¶¨µÄ¾­Ñé£»¶ÔJavaScript´¦ÓÚ³õÑ§½×¶Î£¬²¢ÇÒÍêÈ«ÊÇÒ»¸öNode.jsµÄÐÂÊÖ¡£
+            æœ¬ä¹¦æœ€é€‚åˆä¸Žæˆ‘æœ‰ç›¸ä¼¼æŠ€æœ¯èƒŒæ™¯çš„è¯»è€…ï¼š è‡³å°‘å¯¹ä¸€é—¨è¯¸å¦‚Rubyã€Pythonã€PHPæˆ–è€…Javaè¿™æ ·é¢å‘å¯¹è±¡çš„è¯­è¨€æœ‰ä¸€å®šçš„ç»éªŒï¼›å¯¹JavaScriptå¤„äºŽåˆå­¦é˜¶æ®µï¼Œå¹¶ä¸”å®Œå…¨æ˜¯ä¸€ä¸ªNode.jsçš„æ–°æ‰‹ã€‚
         </p>
 
         <p>
-            ÕâÀïÖ¸µÄÊÊºÏ¶ÔÆäËû±à³ÌÓïÑÔÓÐÒ»¶¨¾­ÑéµÄ¿ª·¢Õß£¬ÒâË¼ÊÇËµ£¬±¾Êé²»»á¶ÔÖîÈçÊý¾ÝÀàÐÍ¡¢±äÁ¿¡¢¿ØÖÆ½á¹¹µÈµÈÖ®Àà·Ç³£»ù´¡µÄ¸ÅÄî×÷½éÉÜ¡£Òª¶Á¶®±¾Êé£¬ÕâÐ©»ù´¡µÄ¸ÅÄîÎÒ¶¼Ä¬ÈÏÄãÒÑ¾­»áÁË¡£
+            è¿™é‡ŒæŒ‡çš„é€‚åˆå¯¹å…¶ä»–ç¼–ç¨‹è¯­è¨€æœ‰ä¸€å®šç»éªŒçš„å¼€å‘è€…ï¼Œæ„æ€æ˜¯è¯´ï¼Œæœ¬ä¹¦ä¸ä¼šå¯¹è¯¸å¦‚æ•°æ®ç±»åž‹ã€å˜é‡ã€æŽ§åˆ¶ç»“æž„ç­‰ç­‰ä¹‹ç±»éžå¸¸åŸºç¡€çš„æ¦‚å¿µä½œä»‹ç»ã€‚è¦è¯»æ‡‚æœ¬ä¹¦ï¼Œè¿™äº›åŸºç¡€çš„æ¦‚å¿µæˆ‘éƒ½é»˜è®¤ä½ å·²ç»ä¼šäº†ã€‚
         </p>
 
         <p>
-            È»¶ø£¬±¾Êé»¹ÊÇ»á¶ÔJavaScriptÖÐµÄº¯ÊýºÍ¶ÔÏó×÷ÏêÏ¸½éÉÜ£¬ÒòÎªËüÃÇÓëÆäËûÍ¬Àà±à³ÌÓïÑÔÖÐµÄº¯ÊýºÍ¶ÔÏóÓÐºÜ´óµÄ²»Í¬¡£
+            ç„¶è€Œï¼Œæœ¬ä¹¦è¿˜æ˜¯ä¼šå¯¹JavaScriptä¸­çš„å‡½æ•°å’Œå¯¹è±¡ä½œè¯¦ç»†ä»‹ç»ï¼Œå› ä¸ºå®ƒä»¬ä¸Žå…¶ä»–åŒç±»ç¼–ç¨‹è¯­è¨€ä¸­çš„å‡½æ•°å’Œå¯¹è±¡æœ‰å¾ˆå¤§çš„ä¸åŒã€‚
         </p>
 
         <a name="structure"></a>
 
-        <h3>±¾Êé½á¹¹</h3>
+        <h3>æœ¬ä¹¦ç»“æž„</h3>
 
         <p>
-            ¶ÁÍê±¾ÊéÖ®ºó£¬Äã½«Íê³ÉÒ»¸öÍêÕûµÄwebÓ¦ÓÃ£¬¸ÃÓ¦ÓÃÔÊÐíÓÃ»§ä¯ÀÀÒ³ÃæÒÔ¼°ÉÏ´«ÎÄ¼þ¡£
+            è¯»å®Œæœ¬ä¹¦ä¹‹åŽï¼Œä½ å°†å®Œæˆä¸€ä¸ªå®Œæ•´çš„webåº”ç”¨ï¼Œè¯¥åº”ç”¨å…è®¸ç”¨æˆ·æµè§ˆé¡µé¢ä»¥åŠä¸Šä¼ æ–‡ä»¶ã€‚
         </p>
 
         <p>
-            µ±È»ÁË£¬Ó¦ÓÃ±¾Éí²¢Ã»ÓÐÊ²Ã´ÁË²»ÆðµÄ£¬Ïà±ÈÎªÁËÊµÏÖ¸Ã¹¦ÄÜÊéÐ´µÄ´úÂë±¾Éí£¬ÎÒÃÇ¸ü¹Ø×¢µÄÊÇÈçºÎ´´½¨Ò»¸ö¿ò¼ÜÀ´¶ÔÎÒÃÇÓ¦ÓÃµÄ²»Í¬Ä£¿é½øÐÐ¸É¾»µØ°þÀë¡£ ÊÇ²»ÊÇºÜÐþºõ£¿ÉÔºóÄã¾ÍÃ÷°×ÁË¡£
+            å½“ç„¶äº†ï¼Œåº”ç”¨æœ¬èº«å¹¶æ²¡æœ‰ä»€ä¹ˆäº†ä¸èµ·çš„ï¼Œç›¸æ¯”ä¸ºäº†å®žçŽ°è¯¥åŠŸèƒ½ä¹¦å†™çš„ä»£ç æœ¬èº«ï¼Œæˆ‘ä»¬æ›´å…³æ³¨çš„æ˜¯å¦‚ä½•åˆ›å»ºä¸€ä¸ªæ¡†æž¶æ¥å¯¹æˆ‘ä»¬åº”ç”¨çš„ä¸åŒæ¨¡å—è¿›è¡Œå¹²å‡€åœ°å‰¥ç¦»ã€‚ æ˜¯ä¸æ˜¯å¾ˆçŽ„ä¹Žï¼Ÿç¨åŽä½ å°±æ˜Žç™½äº†ã€‚
         </p>
 
         <p>
-            ±¾ÊéÏÈ´Ó½éÉÜÔÚNode.js»·¾³ÖÐ½øÐÐJavaScript¿ª·¢ºÍÔÚä¯ÀÀÆ÷»·¾³ÖÐ½øÐÐJavaScript¿ª·¢µÄ²îÒì¿ªÊ¼¡£
+            æœ¬ä¹¦å…ˆä»Žä»‹ç»åœ¨Node.jsçŽ¯å¢ƒä¸­è¿›è¡ŒJavaScriptå¼€å‘å’Œåœ¨æµè§ˆå™¨çŽ¯å¢ƒä¸­è¿›è¡ŒJavaScriptå¼€å‘çš„å·®å¼‚å¼€å§‹ã€‚
         </p>
 
         <p>
-            ½ô½Ó×Å£¬»á´øÁì´ó¼ÒÍê³ÉÒ»¸ö×î´«Í³µÄ¡°Hello World¡±Ó¦ÓÃ£¬ÕâÒ²ÊÇ×î»ù´¡µÄNode.jsÓ¦ÓÃ¡£
+            ç´§æŽ¥ç€ï¼Œä¼šå¸¦é¢†å¤§å®¶å®Œæˆä¸€ä¸ªæœ€ä¼ ç»Ÿçš„â€œHello Worldâ€åº”ç”¨ï¼Œè¿™ä¹Ÿæ˜¯æœ€åŸºç¡€çš„Node.jsåº”ç”¨ã€‚
         </p>
 
         <p>
-            ×îºó£¬»áºÍ´ó¼ÒÌÖÂÛÈçºÎÉè¼ÆÒ»¸ö¡°ÕæÕý¡±ÍêÕûµÄÓ¦ÓÃ£¬ÆÊÎöÒªÍê³É¸ÃÓ¦ÓÃÐèÒªÊµÏÖµÄ²»Í¬Ä£¿é£¬²¢Ò»²½Ò»²½½éÉÜÈçºÎÀ´ÊµÏÖÕâÐ©Ä£¿é¡£
+            æœ€åŽï¼Œä¼šå’Œå¤§å®¶è®¨è®ºå¦‚ä½•è®¾è®¡ä¸€ä¸ªâ€œçœŸæ­£â€å®Œæ•´çš„åº”ç”¨ï¼Œå‰–æžè¦å®Œæˆè¯¥åº”ç”¨éœ€è¦å®žçŽ°çš„ä¸åŒæ¨¡å—ï¼Œå¹¶ä¸€æ­¥ä¸€æ­¥ä»‹ç»å¦‚ä½•æ¥å®žçŽ°è¿™äº›æ¨¡å—ã€‚
         </p>
 
         <p>
-            ¿ÉÒÔÈ·±£µÄÊÇ£¬ÔÚÕâ¹ý³ÌÖÐ£¬´ó¼Ò»áÑ§µ½JavaScriptÖÐÒ»Ð©¸ß¼¶µÄ¸ÅÄî¡¢ÈçºÎÊ¹ÓÃËüÃÇÒÔ¼°ÎªÊ²Ã´Ê¹ÓÃÕâÐ©¸ÅÄî¾Í¿ÉÒÔÊµÏÖ¶øÆäËû±à³ÌÓïÑÔÖÐÍ¬ÀàµÄ¸ÅÄî¾ÍÎÞ·¨ÊµÏÖ¡£
+            å¯ä»¥ç¡®ä¿çš„æ˜¯ï¼Œåœ¨è¿™è¿‡ç¨‹ä¸­ï¼Œå¤§å®¶ä¼šå­¦åˆ°JavaScriptä¸­ä¸€äº›é«˜çº§çš„æ¦‚å¿µã€å¦‚ä½•ä½¿ç”¨å®ƒä»¬ä»¥åŠä¸ºä»€ä¹ˆä½¿ç”¨è¿™äº›æ¦‚å¿µå°±å¯ä»¥å®žçŽ°è€Œå…¶ä»–ç¼–ç¨‹è¯­è¨€ä¸­åŒç±»çš„æ¦‚å¿µå°±æ— æ³•å®žçŽ°ã€‚
         </p>
 
         <p>
-            ¸ÃÓ¦ÓÃËùÓÐµÄÔ´´úÂë¶¼¿ÉÒÔÍ¨¹ý
-            <a href="https://github.com/ManuelKiessling/NodeBeginnerBook/tree/master/code/application">±¾ÊéGithub´úÂë²Ö¿â</a>.
+            è¯¥åº”ç”¨æ‰€æœ‰çš„æºä»£ç éƒ½å¯ä»¥é€šè¿‡
+            <a href="https://github.com/ManuelKiessling/NodeBeginnerBook/tree/master/code/application">æœ¬ä¹¦Githubä»£ç ä»“åº“</a>.
         </p>
 
-        <div id="table-of-contents-headline">Ä¿Â¼</div>
+        <div id="table-of-contents-headline">ç›®å½•</div>
         <div id="table-of-contents">
             <ul>
 
-                <li><a href="#about">¹ØÓÚ</a>
+                <li><a href="#about">å…³äºŽ</a>
                     <ul>
-                        <li><a href="#status">×´Ì¬</a></li>
-                        <li><a href="#intended-audience">¶ÁÕß¶ÔÏó</a></li>
-                        <li><a href="#structure">±¾Êé½á¹¹</a></li>
+                        <li><a href="#status">çŠ¶æ€</a></li>
+                        <li><a href="#intended-audience">è¯»è€…å¯¹è±¡</a></li>
+                        <li><a href="#structure">æœ¬ä¹¦ç»“æž„</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#javascript-and-nodejs">JavaScriptÓëNode.js</a>
+                <li><a href="#javascript-and-nodejs">JavaScriptä¸ŽNode.js</a>
                     <ul>
-                        <li><a href="#javascript-and-you">JavaScriptÓëÄã</a></li>
-                        <li><a href="#a-word-of-warning">¼ò¶ÌÉêÃ÷</a></li>
-                        <li><a href="#server-side-javascript">·þÎñÆ÷¶ËJavaScript</a></li>
-                        <li><a href="#hello-world">¡°Hello World¡±</a></li>
+                        <li><a href="#javascript-and-you">JavaScriptä¸Žä½ </a></li>
+                        <li><a href="#a-word-of-warning">ç®€çŸ­ç”³æ˜Ž</a></li>
+                        <li><a href="#server-side-javascript">æœåŠ¡å™¨ç«¯JavaScript</a></li>
+                        <li><a href="#hello-world">â€œHello Worldâ€</a></li>
 
                     </ul>
                 </li>
-                <li><a href="#a-full-blown-web-application-with-nodejs">Ò»¸öÍêÕûµÄ»ùÓÚNode.jsµÄwebÓ¦ÓÃ</a>
+                <li><a href="#a-full-blown-web-application-with-nodejs">ä¸€ä¸ªå®Œæ•´çš„åŸºäºŽNode.jsçš„webåº”ç”¨</a>
                     <ul>
-                        <li><a href="#the-use-cases">ÓÃÀý</a></li>
-                        <li><a href="#the-application-stack">Ó¦ÓÃ²»Í¬Ä£¿é·ÖÎö</a></li>
+                        <li><a href="#the-use-cases">ç”¨ä¾‹</a></li>
+                        <li><a href="#the-application-stack">åº”ç”¨ä¸åŒæ¨¡å—åˆ†æž</a></li>
                     </ul>
 
                 </li>
-                <li><a href="#building-the-application-stack">¹¹½¨Ó¦ÓÃµÄÄ£¿é</a>
+                <li><a href="#building-the-application-stack">æž„å»ºåº”ç”¨çš„æ¨¡å—</a>
                     <ul>
-                        <li><a href="#a-basic-http-server">Ò»¸ö»ù´¡µÄHTTP·þÎñÆ÷</a></li>
-                        <li><a href="#analyzing-our-http-server">·ÖÎöHTTP·þÎñÆ÷</a></li>
-                        <li><a href="#passing-functions-around">½øÐÐº¯Êý´«µÝ</a></li>
-                        <li><a href="#how-function-passing-makes-our-http-server-work">º¯Êý´«µÝÊÇÈçºÎÈÃHTTP·þÎñÆ÷¹¤×÷µÄ</a></li>
+                        <li><a href="#a-basic-http-server">ä¸€ä¸ªåŸºç¡€çš„HTTPæœåŠ¡å™¨</a></li>
+                        <li><a href="#analyzing-our-http-server">åˆ†æžHTTPæœåŠ¡å™¨</a></li>
+                        <li><a href="#passing-functions-around">è¿›è¡Œå‡½æ•°ä¼ é€’</a></li>
+                        <li><a href="#how-function-passing-makes-our-http-server-work">å‡½æ•°ä¼ é€’æ˜¯å¦‚ä½•è®©HTTPæœåŠ¡å™¨å·¥ä½œçš„</a></li>
 
-                        <li><a href="#event-driven-callbacks">»ùÓÚÊÂ¼þÇý¶¯µÄ»Øµ÷</a></li>
-                        <li><a href="#how-our-server-handles-requests">·þÎñÆ÷ÊÇÈçºÎ´¦ÀíÇëÇóµÄ</a></li>
-                        <li><a href="#finding-a-place-for-our-server-module">·þÎñ¶ËµÄÄ£¿é·ÅÔÚÄÄÀï</a>
+                        <li><a href="#event-driven-callbacks">åŸºäºŽäº‹ä»¶é©±åŠ¨çš„å›žè°ƒ</a></li>
+                        <li><a href="#how-our-server-handles-requests">æœåŠ¡å™¨æ˜¯å¦‚ä½•å¤„ç†è¯·æ±‚çš„</a></li>
+                        <li><a href="#finding-a-place-for-our-server-module">æœåŠ¡ç«¯çš„æ¨¡å—æ”¾åœ¨å“ªé‡Œ</a>
                         </li>
-                        <li><a href="#whats-needed-to-route-requests">ÈçºÎÀ´½øÐÐÇëÇóµÄ¡°Â·ÓÉ¡±</a></li>
-                        <li><a href="#execution-in-the-kongdom-of-verbs">ÐÐÎªÇý¶¯Ö´ÐÐ</a></li>
-                        <li><a href="#routing-to-real-request-handlers">Â·ÓÉ¸øÕæÕýµÄÇëÇó´¦Àí³ÌÐò</a></li>
+                        <li><a href="#whats-needed-to-route-requests">å¦‚ä½•æ¥è¿›è¡Œè¯·æ±‚çš„â€œè·¯ç”±â€</a></li>
+                        <li><a href="#execution-in-the-kongdom-of-verbs">è¡Œä¸ºé©±åŠ¨æ‰§è¡Œ</a></li>
+                        <li><a href="#routing-to-real-request-handlers">è·¯ç”±ç»™çœŸæ­£çš„è¯·æ±‚å¤„ç†ç¨‹åº</a></li>
 
-                        <li><a href="#making-the-request-handlers-respond">ÈÃÇëÇó´¦Àí³ÌÐò×÷³öÏìÓ¦</a>
+                        <li><a href="#making-the-request-handlers-respond">è®©è¯·æ±‚å¤„ç†ç¨‹åºä½œå‡ºå“åº”</a>
                             <ul>
-                                <li><a href="#how-to-not-do-it">²»ºÃµÄÊµÏÖ·½Ê½</a></li>
-                                <li><a href="#blocking-and-non-blocking">×èÈûÓë·Ç×èÈû</a></li>
-                                <li><a href="#responding-request-handlers-with-non-blocking-operations">ÒÔ·Ç×èÈû²Ù×÷½øÐÐÇëÇóÏìÓ¦</a>
+                                <li><a href="#how-to-not-do-it">ä¸å¥½çš„å®žçŽ°æ–¹å¼</a></li>
+                                <li><a href="#blocking-and-non-blocking">é˜»å¡žä¸Žéžé˜»å¡ž</a></li>
+                                <li><a href="#responding-request-handlers-with-non-blocking-operations">ä»¥éžé˜»å¡žæ“ä½œè¿›è¡Œè¯·æ±‚å“åº”</a>
                                 </li>
                             </ul>
 
                         </li>
-                        <li><a href="#serving-something-useful">¸üÓÐÓÃµÄ³¡¾°</a>
+                        <li><a href="#serving-something-useful">æ›´æœ‰ç”¨çš„åœºæ™¯</a>
                             <ul>
-                                <li><a href="#handling-post-requests">´¦ÀíPOSTÇëÇó</a></li>
-                                <li><a href="#handling-file-uploads">´¦ÀíÎÄ¼þÉÏ´«</a></li>
+                                <li><a href="#handling-post-requests">å¤„ç†POSTè¯·æ±‚</a></li>
+                                <li><a href="#handling-file-uploads">å¤„ç†æ–‡ä»¶ä¸Šä¼ </a></li>
                             </ul>
                         </li>
 
-                        <li><a href="#conclusion-and-outlook">×Ü½áÓëÕ¹Íû</a></li>
+                        <li><a href="#conclusion-and-outlook">æ€»ç»“ä¸Žå±•æœ›</a></li>
                     </ul>
                 </li>
             </ul>
@@ -150,207 +150,207 @@ tags : [nodejs, javascript]
 
         <a name="javascript-and-nodejs"></a>
 
-        <h2>JavaScriptÓëNode.js</h2>
+        <h2>JavaScriptä¸ŽNode.js</h2>
 
         <a name="javascript-and-you"></a>
 
-        <h3>JavaScriptÓëÄã</h3>
+        <h3>JavaScriptä¸Žä½ </h3>
 
         <p>
-            Å×¿ª¼¼Êõ£¬ÎÒÃÇÏÈÀ´ÁÄÁÄÄãÒÔ¼°ÄãºÍJavaScriptµÄ¹ØÏµ¡£±¾ÕÂµÄÖ÷ÒªÄ¿µÄÊÇÏëÈÃÄã¿´¿´£¬¶ÔÄã¶øÑÔÊÇ·ñÓÐ±ØÒª¼ÌÐøÔÄ¶ÁºóÐøÕÂ½ÚµÄÄÚÈÝ¡£
+            æŠ›å¼€æŠ€æœ¯ï¼Œæˆ‘ä»¬å…ˆæ¥èŠèŠä½ ä»¥åŠä½ å’ŒJavaScriptçš„å…³ç³»ã€‚æœ¬ç« çš„ä¸»è¦ç›®çš„æ˜¯æƒ³è®©ä½ çœ‹çœ‹ï¼Œå¯¹ä½ è€Œè¨€æ˜¯å¦æœ‰å¿…è¦ç»§ç»­é˜…è¯»åŽç»­ç« èŠ‚çš„å†…å®¹ã€‚
         </p>
 
         <p>
-            Èç¹ûÄãºÍÎÒÒ»Ñù£¬ÄÇÃ´ÄãºÜÔç¾Í¿ªÊ¼ÀûÓÃHTML½øÐÐ¡°¿ª·¢¡±£¬ÕýÒòÈç´Ë£¬Äã½Ó´¥µ½ÁËÕâ¸ö½ÐJavaScriptÓÐÈ¤µÄ¶«Î÷£¬¶ø¶ÔÓÚJavaScript£¬ÄãÖ»»á»ù±¾µÄ²Ù×÷¡ª¡ªÎªwebÒ³ÃæÌí¼Ó½»»¥¡£
+            å¦‚æžœä½ å’Œæˆ‘ä¸€æ ·ï¼Œé‚£ä¹ˆä½ å¾ˆæ—©å°±å¼€å§‹åˆ©ç”¨HTMLè¿›è¡Œâ€œå¼€å‘â€ï¼Œæ­£å› å¦‚æ­¤ï¼Œä½ æŽ¥è§¦åˆ°äº†è¿™ä¸ªå«JavaScriptæœ‰è¶£çš„ä¸œè¥¿ï¼Œè€Œå¯¹äºŽJavaScriptï¼Œä½ åªä¼šåŸºæœ¬çš„æ“ä½œâ€”â€”ä¸ºwebé¡µé¢æ·»åŠ äº¤äº’ã€‚
         </p>
 
         <p>
-            ¶øÄãÕæÕýÏëÒªµÄÊÇ¡°¸É»õ¡±£¬ÄãÏëÒªÖªµÀÈçºÎ¹¹½¨¸´ÔÓµÄwebÕ¾µã ¡ª¡ª ÓÚÊÇ£¬ÄãÑ§Ï°ÁËÒ»ÖÖÖîÈçPHP¡¢Ruby¡¢JavaÕâÑùµÄ±à³ÌÓïÑÔ£¬²¢¿ªÊ¼ÊéÐ´¡°ºó¶Ë¡±´úÂë¡£
+            è€Œä½ çœŸæ­£æƒ³è¦çš„æ˜¯â€œå¹²è´§â€ï¼Œä½ æƒ³è¦çŸ¥é“å¦‚ä½•æž„å»ºå¤æ‚çš„webç«™ç‚¹ â€”â€” äºŽæ˜¯ï¼Œä½ å­¦ä¹ äº†ä¸€ç§è¯¸å¦‚PHPã€Rubyã€Javaè¿™æ ·çš„ç¼–ç¨‹è¯­è¨€ï¼Œå¹¶å¼€å§‹ä¹¦å†™â€œåŽç«¯â€ä»£ç ã€‚
         </p>
 
         <p>
-            Óë´ËÍ¬Ê±£¬Äã»¹Ê¼ÖÕ¹Ø×¢×ÅJavaScript£¬Ëæ×ÅÍ¨¹ýÒ»Ð©¶ÔjQuery£¬PrototypeÖ®Àà¼¼ÊõµÄ½éÉÜ£¬ÄãÂýÂýÁË½âµ½ÁËºÜ¶àJavaScriptÖÐµÄ½ø½×¼¼ÄÜ£¬Í¬Ê±Ò²¸ÐÊÜµ½ÁËJavaScript¾ø·Ç½ö½öÊÇ<em>window.open() </em>ÄÇÃ´¼òµ¥¡£ .
+            ä¸Žæ­¤åŒæ—¶ï¼Œä½ è¿˜å§‹ç»ˆå…³æ³¨ç€JavaScriptï¼Œéšç€é€šè¿‡ä¸€äº›å¯¹jQueryï¼ŒPrototypeä¹‹ç±»æŠ€æœ¯çš„ä»‹ç»ï¼Œä½ æ…¢æ…¢äº†è§£åˆ°äº†å¾ˆå¤šJavaScriptä¸­çš„è¿›é˜¶æŠ€èƒ½ï¼ŒåŒæ—¶ä¹Ÿæ„Ÿå—åˆ°äº†JavaScriptç»éžä»…ä»…æ˜¯<em>window.open() </em>é‚£ä¹ˆç®€å•ã€‚ .
         </p>
 
         <p>
-            ²»¹ý£¬ÕâÐ©±Ï¾¹¶¼ÊÇÇ°¶Ë¼¼Êõ£¬¾¡¹Üµ±ÏëÒªÔöÇ¿Ò³ÃæµÄÊ±ºò£¬Ê¹ÓÃjQuery×ÜÈÃÄã¾õµÃºÜË¬£¬µ«µ½×îºó£¬Äã¶¥¶àÊÇ¸öJavaScript<em>ÓÃ»§</em>£¬¶ø·ÇJavaScript<em>¿ª·¢Õß</em>¡£
+            ä¸è¿‡ï¼Œè¿™äº›æ¯•ç«Ÿéƒ½æ˜¯å‰ç«¯æŠ€æœ¯ï¼Œå°½ç®¡å½“æƒ³è¦å¢žå¼ºé¡µé¢çš„æ—¶å€™ï¼Œä½¿ç”¨jQueryæ€»è®©ä½ è§‰å¾—å¾ˆçˆ½ï¼Œä½†åˆ°æœ€åŽï¼Œä½ é¡¶å¤šæ˜¯ä¸ªJavaScript<em>ç”¨æˆ·</em>ï¼Œè€ŒéžJavaScript<em>å¼€å‘è€…</em>ã€‚
         </p>
 
         <p>
-            È»ºó£¬³öÏÖÁËNode.js£¬·þÎñ¶ËµÄJavaScript£¬ÕâÓÐ¶à¿á°¡£¿
+            ç„¶åŽï¼Œå‡ºçŽ°äº†Node.jsï¼ŒæœåŠ¡ç«¯çš„JavaScriptï¼Œè¿™æœ‰å¤šé…·å•Šï¼Ÿ
         </p>
 
         <p>
-            ÓÚÊÇ£¬Äã¾õµÃÊÇÊ±ºò¸ÃÖØÐÂÊ°Æð¼ÈÊìÏ¤ÓÖÄ°ÉúµÄJavaScriptÁË¡£µ«ÊÇ±ð¼±£¬Ð´Node.jsÓ¦ÓÃÊÇÒ»¼þÊÂÇé£»Àí½âÎªÊ²Ã´ËüÃÇÒªÒÔËüÃÇÊéÐ´µÄÕâÖÖ·½Ê½À´ÊéÐ´ÔòÒâÎ¶×Å¡ª¡ªÄãÒª¶®JavaScript¡£Õâ´ÎÊÇÍæÕæµÄÁË¡£
+            äºŽæ˜¯ï¼Œä½ è§‰å¾—æ˜¯æ—¶å€™è¯¥é‡æ–°æ‹¾èµ·æ—¢ç†Ÿæ‚‰åˆé™Œç”Ÿçš„JavaScriptäº†ã€‚ä½†æ˜¯åˆ«æ€¥ï¼Œå†™Node.jsåº”ç”¨æ˜¯ä¸€ä»¶äº‹æƒ…ï¼›ç†è§£ä¸ºä»€ä¹ˆå®ƒä»¬è¦ä»¥å®ƒä»¬ä¹¦å†™çš„è¿™ç§æ–¹å¼æ¥ä¹¦å†™åˆ™æ„å‘³ç€â€”â€”ä½ è¦æ‡‚JavaScriptã€‚è¿™æ¬¡æ˜¯çŽ©çœŸçš„äº†ã€‚
         </p>
 
         <p>
-            ÎÊÌâÀ´ÁË£º ÓÉÓÚJavaScriptÕæÕýÒâÒåÉÏÒÔÁ½ÖÖ£¬ÉõÖÁ¿ÉÒÔËµÊÇÈýÖÖÐÎÌ¬´æÔÚ£¨´ÓÖÐÊÀ¼Í90Äê´úµÄ×÷Îª¶ÔDHTML½øÐÐÔöÇ¿µÄÐ¡Íæ¾ß£¬µ½ÏñjQueryÄÇÑùÑÏ¸ñÒâÒåÉÏµÄÇ°¶Ë¼¼Êõ£¬Ò»Ö±µ½ÏÖÔÚµÄ·þÎñ¶Ë¼¼Êõ£©£¬Òò´Ë£¬ºÜÄÑÕÒµ½Ò»¸ö¡°ÕýÈ·¡±µÄ·½Ê½À´Ñ§Ï°JavaScript£¬Ê¹µÃÈÃÄãÊéÐ´Node.jsÓ¦ÓÃµÄÊ±ºò¸Ð¾õ×Ô¼ºÊÇÔÚÕæÕý¿ª·¢Ëü¶ø²»½ö½öÊÇÊ¹ÓÃËü¡£
+            é—®é¢˜æ¥äº†ï¼š ç”±äºŽJavaScriptçœŸæ­£æ„ä¹‰ä¸Šä»¥ä¸¤ç§ï¼Œç”šè‡³å¯ä»¥è¯´æ˜¯ä¸‰ç§å½¢æ€å­˜åœ¨ï¼ˆä»Žä¸­ä¸–çºª90å¹´ä»£çš„ä½œä¸ºå¯¹DHTMLè¿›è¡Œå¢žå¼ºçš„å°çŽ©å…·ï¼Œåˆ°åƒjQueryé‚£æ ·ä¸¥æ ¼æ„ä¹‰ä¸Šçš„å‰ç«¯æŠ€æœ¯ï¼Œä¸€ç›´åˆ°çŽ°åœ¨çš„æœåŠ¡ç«¯æŠ€æœ¯ï¼‰ï¼Œå› æ­¤ï¼Œå¾ˆéš¾æ‰¾åˆ°ä¸€ä¸ªâ€œæ­£ç¡®â€çš„æ–¹å¼æ¥å­¦ä¹ JavaScriptï¼Œä½¿å¾—è®©ä½ ä¹¦å†™Node.jsåº”ç”¨çš„æ—¶å€™æ„Ÿè§‰è‡ªå·±æ˜¯åœ¨çœŸæ­£å¼€å‘å®ƒè€Œä¸ä»…ä»…æ˜¯ä½¿ç”¨å®ƒã€‚
         </p>
 
         <p>
-            ÒòÎªÕâ¾ÍÊÇ¹Ø¼ü£º Äã±¾ÉíÒÑ¾­ÊÇ¸öÓÐ¾­ÑéµÄ¿ª·¢Õß£¬Äã²»ÏëÍ¨¹ýµ½´¦Ñ°ÕÒ¸÷ÖÖ½â¾ö·½°¸£¨ÆäÖÐ¿ÉÄÜ»¹ÓÐ²»ÕýÈ·µÄ£©À´Ñ§Ï°ÐÂµÄ¼¼Êõ£¬ÄãÒªÈ·±£×Ô¼ºÊÇÍ¨¹ýÕýÈ·µÄ·½Ê½À´Ñ§Ï°ÕâÏî¼¼Êõ¡£
+            å› ä¸ºè¿™å°±æ˜¯å…³é”®ï¼š ä½ æœ¬èº«å·²ç»æ˜¯ä¸ªæœ‰ç»éªŒçš„å¼€å‘è€…ï¼Œä½ ä¸æƒ³é€šè¿‡åˆ°å¤„å¯»æ‰¾å„ç§è§£å†³æ–¹æ¡ˆï¼ˆå…¶ä¸­å¯èƒ½è¿˜æœ‰ä¸æ­£ç¡®çš„ï¼‰æ¥å­¦ä¹ æ–°çš„æŠ€æœ¯ï¼Œä½ è¦ç¡®ä¿è‡ªå·±æ˜¯é€šè¿‡æ­£ç¡®çš„æ–¹å¼æ¥å­¦ä¹ è¿™é¡¹æŠ€æœ¯ã€‚
         </p>
 
         <p>
-            µ±È»ÁË£¬ÍâÃæ²»·¦ºÜÓÅÐãµÄÑ§Ï°JavaScriptµÄÎÄÕÂ¡£µ«ÊÇ£¬ÓÐµÄÊ±ºò¹â¿¿ÄÇÐ©ÎÄÕÂÊÇÔ¶Ô¶²»¹»µÄ¡£ÄãÐèÒªµÄÊÇÖ¸µ¼¡£
+            å½“ç„¶äº†ï¼Œå¤–é¢ä¸ä¹å¾ˆä¼˜ç§€çš„å­¦ä¹ JavaScriptçš„æ–‡ç« ã€‚ä½†æ˜¯ï¼Œæœ‰çš„æ—¶å€™å…‰é é‚£äº›æ–‡ç« æ˜¯è¿œè¿œä¸å¤Ÿçš„ã€‚ä½ éœ€è¦çš„æ˜¯æŒ‡å¯¼ã€‚
         </p>
 
         <p>
-            ±¾ÊéµÄÄ¿±ê¾ÍÊÇ¸øÄãÌá¹©Ö¸µ¼¡£
+            æœ¬ä¹¦çš„ç›®æ ‡å°±æ˜¯ç»™ä½ æä¾›æŒ‡å¯¼ã€‚
         </p>
 
         <a name="a-word-of-warning"></a>
 
-        <h3>¼ò¶ÌÉêÃ÷</h3>
+        <h3>ç®€çŸ­ç”³æ˜Ž</h3>
 
         <p>
-            Òµ½çÓÐ·Ç³£ÓÅÐãµÄJavaScript³ÌÐòÔ±¡£¶øÎÒ²¢·ÇÆäÖÐÒ»Ô±¡£
+            ä¸šç•Œæœ‰éžå¸¸ä¼˜ç§€çš„JavaScriptç¨‹åºå‘˜ã€‚è€Œæˆ‘å¹¶éžå…¶ä¸­ä¸€å‘˜ã€‚
         </p>
 
         <p>
-            ÎÒ¾ÍÊÇÉÏÒ»½ÚÖÐÃèÊöµÄÄÇ¸öÎÒ¡£ÎÒÊìÏ¤ÈçºÎ¿ª·¢ºó¶ËwebÓ¦ÓÃ£¬µ«ÊÇ¶Ô¡°ÕæÕý¡±µÄJavaScriptÒÔ¼°Node.js£¬ÎÒ¶¼Ö»ÊÇÐÂÊÖ¡£ÎÒÒ²Ö»ÊÇ×î½üÑ§Ï°ÁËÒ»Ð©JavaScriptµÄ¸ß¼¶¸ÅÄî£¬²¢Ã»ÓÐÊµ¼ù¾­Ñé¡£
+            æˆ‘å°±æ˜¯ä¸Šä¸€èŠ‚ä¸­æè¿°çš„é‚£ä¸ªæˆ‘ã€‚æˆ‘ç†Ÿæ‚‰å¦‚ä½•å¼€å‘åŽç«¯webåº”ç”¨ï¼Œä½†æ˜¯å¯¹â€œçœŸæ­£â€çš„JavaScriptä»¥åŠNode.jsï¼Œæˆ‘éƒ½åªæ˜¯æ–°æ‰‹ã€‚æˆ‘ä¹Ÿåªæ˜¯æœ€è¿‘å­¦ä¹ äº†ä¸€äº›JavaScriptçš„é«˜çº§æ¦‚å¿µï¼Œå¹¶æ²¡æœ‰å®žè·µç»éªŒã€‚
         </p>
 
         <p>
-            Òò´Ë£¬±¾Êé²¢²»ÊÇÒ»±¾¡°´ÓÈëÃÅµ½¾«Í¨¡±µÄÊé£¬¸üÏñÊÇÒ»±¾¡°´Ó³õ¼¶ÈëÃÅµ½¸ß¼¶ÈëÃÅ¡±µÄÊé¡£
+            å› æ­¤ï¼Œæœ¬ä¹¦å¹¶ä¸æ˜¯ä¸€æœ¬â€œä»Žå…¥é—¨åˆ°ç²¾é€šâ€çš„ä¹¦ï¼Œæ›´åƒæ˜¯ä¸€æœ¬â€œä»Žåˆçº§å…¥é—¨åˆ°é«˜çº§å…¥é—¨â€çš„ä¹¦ã€‚
         </p>
 
         <p>
-            Èç¹û³É¹¦µÄ»°£¬ÄÇÃ´±¾Êé¾ÍÊÇÎÒµ±³õ¿ªÊ¼Ñ§Ï°Node.js×îÏ£ÍûÓµÓÐµÄ½Ì³Ì¡£
+            å¦‚æžœæˆåŠŸçš„è¯ï¼Œé‚£ä¹ˆæœ¬ä¹¦å°±æ˜¯æˆ‘å½“åˆå¼€å§‹å­¦ä¹ Node.jsæœ€å¸Œæœ›æ‹¥æœ‰çš„æ•™ç¨‹ã€‚
         </p>
 
         <a name="server-side-javascript"></a>
 
-        <h3>·þÎñ¶ËJavaScript</h3>
+        <h3>æœåŠ¡ç«¯JavaScript</h3>
 
         <p>
-            JavaScript×îÔçÊÇÔËÐÐÔÚä¯ÀÀÆ÷ÖÐ£¬È»¶øä¯ÀÀÆ÷Ö»ÊÇÌá¹©ÁËÒ»¸öÉÏÏÂÎÄ£¬Ëü¶¨ÒåÁËÊ¹ÓÃJavaScript¿ÉÒÔ×öÊ²Ã´£¬µ«²¢Ã»ÓÐ¡°Ëµ¡±Ì«¶à¹ØÓÚJavaScriptÓïÑÔ±¾Éí¿ÉÒÔ×öÊ²Ã´¡£ÊÂÊµÉÏ£¬JavaScriptÊÇÒ»ÃÅ¡°ÍêÕû¡±µÄÓïÑÔ£º Ëü¿ÉÒÔÊ¹ÓÃÔÚ²»Í¬µÄÉÏÏÂÎÄÖÐ£¬ÆäÄÜÁ¦ÓëÆäËûÍ¬ÀàÓïÑÔÏà±ÈÓÐ¹ýÖ®¶øÎÞ²»¼°¡£
+            JavaScriptæœ€æ—©æ˜¯è¿è¡Œåœ¨æµè§ˆå™¨ä¸­ï¼Œç„¶è€Œæµè§ˆå™¨åªæ˜¯æä¾›äº†ä¸€ä¸ªä¸Šä¸‹æ–‡ï¼Œå®ƒå®šä¹‰äº†ä½¿ç”¨JavaScriptå¯ä»¥åšä»€ä¹ˆï¼Œä½†å¹¶æ²¡æœ‰â€œè¯´â€å¤ªå¤šå…³äºŽJavaScriptè¯­è¨€æœ¬èº«å¯ä»¥åšä»€ä¹ˆã€‚äº‹å®žä¸Šï¼ŒJavaScriptæ˜¯ä¸€é—¨â€œå®Œæ•´â€çš„è¯­è¨€ï¼š å®ƒå¯ä»¥ä½¿ç”¨åœ¨ä¸åŒçš„ä¸Šä¸‹æ–‡ä¸­ï¼Œå…¶èƒ½åŠ›ä¸Žå…¶ä»–åŒç±»è¯­è¨€ç›¸æ¯”æœ‰è¿‡ä¹‹è€Œæ— ä¸åŠã€‚
         </p>
 
         <p>
-            Node.jsÊÂÊµÉÏ¾ÍÊÇÁíÍâÒ»ÖÖÉÏÏÂÎÄ£¬ËüÔÊÐíÔÚºó¶Ë£¨ÍÑÀëä¯ÀÀÆ÷»·¾³£©ÔËÐÐJavaScript´úÂë¡£
+            Node.jsäº‹å®žä¸Šå°±æ˜¯å¦å¤–ä¸€ç§ä¸Šä¸‹æ–‡ï¼Œå®ƒå…è®¸åœ¨åŽç«¯ï¼ˆè„±ç¦»æµè§ˆå™¨çŽ¯å¢ƒï¼‰è¿è¡ŒJavaScriptä»£ç ã€‚
         </p>
 
         <p>
-            ÒªÊµÏÖÔÚºóÌ¨ÔËÐÐJavaScript´úÂë£¬´úÂëÐèÒªÏÈ±»½âÊÍÈ»ºóÕýÈ·µÄÖ´ÐÐ¡£Node.jsµÄÔ­ÀíÕýÊÇÈç´Ë£¬ËüÊ¹ÓÃÁËGoogleµÄV8ÐéÄâ»ú£¨GoogleµÄChromeä¯ÀÀÆ÷Ê¹ÓÃµÄJavaScriptÖ´ÐÐ»·¾³£©£¬À´½âÊÍºÍÖ´ÐÐJavaScript´úÂë¡£
+            è¦å®žçŽ°åœ¨åŽå°è¿è¡ŒJavaScriptä»£ç ï¼Œä»£ç éœ€è¦å…ˆè¢«è§£é‡Šç„¶åŽæ­£ç¡®çš„æ‰§è¡Œã€‚Node.jsçš„åŽŸç†æ­£æ˜¯å¦‚æ­¤ï¼Œå®ƒä½¿ç”¨äº†Googleçš„V8è™šæ‹Ÿæœºï¼ˆGoogleçš„Chromeæµè§ˆå™¨ä½¿ç”¨çš„JavaScriptæ‰§è¡ŒçŽ¯å¢ƒï¼‰ï¼Œæ¥è§£é‡Šå’Œæ‰§è¡ŒJavaScriptä»£ç ã€‚
         </p>
 
         <p>
-            ³ý´ËÖ®Íâ£¬°éËæ×ÅNode.jsµÄ»¹ÓÐÐí¶àÓÐÓÃµÄÄ£¿é£¬ËüÃÇ¿ÉÒÔ¼ò»¯ºÜ¶àÖØ¸´µÄÀÍ×÷£¬±ÈÈçÏòÖÕ¶ËÊä³ö×Ö·û´®¡£
+            é™¤æ­¤ä¹‹å¤–ï¼Œä¼´éšç€Node.jsçš„è¿˜æœ‰è®¸å¤šæœ‰ç”¨çš„æ¨¡å—ï¼Œå®ƒä»¬å¯ä»¥ç®€åŒ–å¾ˆå¤šé‡å¤çš„åŠ³ä½œï¼Œæ¯”å¦‚å‘ç»ˆç«¯è¾“å‡ºå­—ç¬¦ä¸²ã€‚
         </p>
 
         <p>
-            Òò´Ë£¬Node.jsÊÂÊµÉÏ¼ÈÊÇÒ»¸öÔËÐÐÊ±»·¾³£¬Í¬Ê±ÓÖÊÇÒ»¸ö¿â¡£
+            å› æ­¤ï¼ŒNode.jsäº‹å®žä¸Šæ—¢æ˜¯ä¸€ä¸ªè¿è¡Œæ—¶çŽ¯å¢ƒï¼ŒåŒæ—¶åˆæ˜¯ä¸€ä¸ªåº“ã€‚
         </p>
 
         <p>
-            ÒªÊ¹ÓÃNode.js,Ê×ÏÈÐèÒª½øÐÐ°²×°¡£¹ØÓÚÈçºÎ°²×°Node.js£¬ÕâÀï¾Í²»×¸ÊöÁË£¬¿ÉÒÔÖ±½Ó²Î¿¼<a href="https://github.com/joyent/node/wiki/Installation" title="Building and Installing Node.js">¹Ù·½µÄ°²×°Ö¸ÄÏ</a>¡£°²×°Íê³Éºó£¬¼ÌÐø»ØÀ´ÔÄ¶Á±¾ÊéÏÂÃæµÄÄÚÈÝ¡£
+            è¦ä½¿ç”¨Node.js,é¦–å…ˆéœ€è¦è¿›è¡Œå®‰è£…ã€‚å…³äºŽå¦‚ä½•å®‰è£…Node.jsï¼Œè¿™é‡Œå°±ä¸èµ˜è¿°äº†ï¼Œå¯ä»¥ç›´æŽ¥å‚è€ƒ<a href="https://github.com/joyent/node/wiki/Installation" title="Building and Installing Node.js">å®˜æ–¹çš„å®‰è£…æŒ‡å—</a>ã€‚å®‰è£…å®ŒæˆåŽï¼Œç»§ç»­å›žæ¥é˜…è¯»æœ¬ä¹¦ä¸‹é¢çš„å†…å®¹ã€‚
         </p>
 
         <a name="hello-world"></a>
 
-        <h3>¡°Hello World¡±</h3>
+        <h3>â€œHello Worldâ€</h3>
 
         <p>
-            ºÃÁË£¬¡°·Ï»°¡±²»¶àËµÁË£¬ÂíÉÏ¿ªÊ¼ÎÒÃÇµÚÒ»¸öNode.jsÓ¦ÓÃ£º¡°Hello World¡±¡£
+            å¥½äº†ï¼Œâ€œåºŸè¯â€ä¸å¤šè¯´äº†ï¼Œé©¬ä¸Šå¼€å§‹æˆ‘ä»¬ç¬¬ä¸€ä¸ªNode.jsåº”ç”¨ï¼šâ€œHello Worldâ€ã€‚
         </p>
 
         <p>
-            ´ò¿ªÄã×îÏ²»¶µÄ±à¼­Æ÷£¬´´½¨Ò»¸ö<em>helloworld.js</em>ÎÄ¼þ¡£ÎÒÃÇÒª×ö¾ÍÊÇÏòSTDOUTÊä³ö¡°Hello World¡±£¬ÈçÏÂÊÇÊµÏÖ¸Ã¹¦ÄÜµÄ´úÂë£º
+            æ‰“å¼€ä½ æœ€å–œæ¬¢çš„ç¼–è¾‘å™¨ï¼Œåˆ›å»ºä¸€ä¸ª<em>helloworld.js</em>æ–‡ä»¶ã€‚æˆ‘ä»¬è¦åšå°±æ˜¯å‘STDOUTè¾“å‡ºâ€œHello Worldâ€ï¼Œå¦‚ä¸‹æ˜¯å®žçŽ°è¯¥åŠŸèƒ½çš„ä»£ç ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="pln">console</span><span class="pun">.</span><span
                 class="pln">log</span><span class="pun">(</span><span class="str">"Hello World"</span><span class="pun">);</span></pre>
         
         <p>
-            ±£´æ¸ÃÎÄ¼þ£¬²¢Í¨¹ýNode.jsÀ´Ö´ÐÐ£º
+            ä¿å­˜è¯¥æ–‡ä»¶ï¼Œå¹¶é€šè¿‡Node.jsæ¥æ‰§è¡Œï¼š
         </p>
 
         <pre>node helloworld.js</pre>
         <p>
-            Õý³£µÄ»°£¬¾Í»áÔÚÖÕ¶ËÊä³ö<em>Hello World</em> ¡£
+            æ­£å¸¸çš„è¯ï¼Œå°±ä¼šåœ¨ç»ˆç«¯è¾“å‡º<em>Hello World</em> ã€‚
         </p>
 
         <p>
-            ºÃ°É£¬ÎÒ³ÐÈÏÕâ¸öÓ¦ÓÃÊÇÓÐµãÎÞÈ¤£¬ÄÇÃ´ÏÂÃæÎÒÃÇ¾ÍÀ´µã¡°¸É»õ¡±¡£
+            å¥½å§ï¼Œæˆ‘æ‰¿è®¤è¿™ä¸ªåº”ç”¨æ˜¯æœ‰ç‚¹æ— è¶£ï¼Œé‚£ä¹ˆä¸‹é¢æˆ‘ä»¬å°±æ¥ç‚¹â€œå¹²è´§â€ã€‚
         </p>
 
 
         <a name="a-full-blown-web-application-with-nodejs"></a>
 
-        <h2>Ò»¸öÍêÕûµÄ»ùÓÚNode.jsµÄwebÓ¦ÓÃ</h2>
+        <h2>ä¸€ä¸ªå®Œæ•´çš„åŸºäºŽNode.jsçš„webåº”ç”¨</h2>
  
         <a name="the-use-cases"></a> 
  
-        <h3>ÓÃÀý</h3> 
+        <h3>ç”¨ä¾‹</h3> 
  
-        <p>ÎÒÃÇÀ´°ÑÄ¿±êÉè¶¨µÃ¼òµ¥µã£¬²»¹ýÒ²Òª¹»Êµ¼Ê²ÅÐÐ£º</p>
+        <p>æˆ‘ä»¬æ¥æŠŠç›®æ ‡è®¾å®šå¾—ç®€å•ç‚¹ï¼Œä¸è¿‡ä¹Ÿè¦å¤Ÿå®žé™…æ‰è¡Œï¼š</p>
 
         <ul>
-        <li>ÓÃ»§¿ÉÒÔÍ¨¹ýä¯ÀÀÆ÷Ê¹ÓÃÎÒÃÇµÄÓ¦ÓÃ¡£</li>
-        <li>µ±ÓÃ»§ÇëÇó<em>http://domain/start</em>Ê±£¬¿ÉÒÔ¿´µ½Ò»¸ö»¶Ó­Ò³Ãæ£¬Ò³ÃæÉÏÓÐÒ»¸öÎÄ¼þÉÏ´«µÄ±íµ¥¡£</li>
-        <li>ÓÃ»§¿ÉÒÔÑ¡ÔñÒ»¸öÍ¼Æ¬²¢Ìá½»±íµ¥£¬ËæºóÎÄ¼þ½«±»ÉÏ´«µ½<em>http://domain/upload</em>£¬¸ÃÒ³ÃæÍê³ÉÉÏ´«ºó»á°ÑÍ¼Æ¬ÏÔÊ¾ÔÚÒ³ÃæÉÏ¡£</li>
+        <li>ç”¨æˆ·å¯ä»¥é€šè¿‡æµè§ˆå™¨ä½¿ç”¨æˆ‘ä»¬çš„åº”ç”¨ã€‚</li>
+        <li>å½“ç”¨æˆ·è¯·æ±‚<em>http://domain/start</em>æ—¶ï¼Œå¯ä»¥çœ‹åˆ°ä¸€ä¸ªæ¬¢è¿Žé¡µé¢ï¼Œé¡µé¢ä¸Šæœ‰ä¸€ä¸ªæ–‡ä»¶ä¸Šä¼ çš„è¡¨å•ã€‚</li>
+        <li>ç”¨æˆ·å¯ä»¥é€‰æ‹©ä¸€ä¸ªå›¾ç‰‡å¹¶æäº¤è¡¨å•ï¼ŒéšåŽæ–‡ä»¶å°†è¢«ä¸Šä¼ åˆ°<em>http://domain/upload</em>ï¼Œè¯¥é¡µé¢å®Œæˆä¸Šä¼ åŽä¼šæŠŠå›¾ç‰‡æ˜¾ç¤ºåœ¨é¡µé¢ä¸Šã€‚</li>
         </ul>
 
-        <p>²î²»¶àÁË£¬ÄãÏÖÔÚÒ²¿ÉÒÔÈ¥GoogleÒ»ÏÂ£¬ÕÒµã¶«Î÷ÂÒ¸ãÒ»ÏÂÀ´Íê³É¹¦ÄÜ¡£µ«ÊÇÎÒÃÇÏÖÔÚÏÈ²»×öÕâ¸ö¡£</p>
+        <p>å·®ä¸å¤šäº†ï¼Œä½ çŽ°åœ¨ä¹Ÿå¯ä»¥åŽ»Googleä¸€ä¸‹ï¼Œæ‰¾ç‚¹ä¸œè¥¿ä¹±æžä¸€ä¸‹æ¥å®ŒæˆåŠŸèƒ½ã€‚ä½†æ˜¯æˆ‘ä»¬çŽ°åœ¨å…ˆä¸åšè¿™ä¸ªã€‚</p>
 
-        <p>¸ü½øÒ»²½µØËµ£¬ÔÚÍê³ÉÕâÒ»Ä¿±êµÄ¹ý³ÌÖÐ£¬ÎÒÃÇ²»½ö½öÐèÒª»ù´¡µÄ´úÂë¶ø²»¹Ü´úÂëÊÇ·ñÓÅÑÅ¡£ÎÒÃÇ»¹Òª¶Ô´Ë½øÐÐ³éÏó£¬À´Ñ°ÕÒÒ»ÖÖÊÊºÏ¹¹½¨¸üÎª¸´ÔÓµÄNode.jsÓ¦ÓÃµÄ·½Ê½¡£</p>
+        <p>æ›´è¿›ä¸€æ­¥åœ°è¯´ï¼Œåœ¨å®Œæˆè¿™ä¸€ç›®æ ‡çš„è¿‡ç¨‹ä¸­ï¼Œæˆ‘ä»¬ä¸ä»…ä»…éœ€è¦åŸºç¡€çš„ä»£ç è€Œä¸ç®¡ä»£ç æ˜¯å¦ä¼˜é›…ã€‚æˆ‘ä»¬è¿˜è¦å¯¹æ­¤è¿›è¡ŒæŠ½è±¡ï¼Œæ¥å¯»æ‰¾ä¸€ç§é€‚åˆæž„å»ºæ›´ä¸ºå¤æ‚çš„Node.jsåº”ç”¨çš„æ–¹å¼ã€‚</p>
 
-        <h3>Ó¦ÓÃ²»Í¬Ä£¿é·ÖÎö</h3>
+        <h3>åº”ç”¨ä¸åŒæ¨¡å—åˆ†æž</h3>
 
-        <p>ÎÒÃÇÀ´·Ö½âÒ»ÏÂÕâ¸öÓ¦ÓÃ£¬ÎªÁËÊµÏÖÉÏÎÄµÄÓÃÀý£¬ÎÒÃÇÐèÒªÊµÏÖÄÄÐ©²¿·ÖÄØ£¿</p>
+        <p>æˆ‘ä»¬æ¥åˆ†è§£ä¸€ä¸‹è¿™ä¸ªåº”ç”¨ï¼Œä¸ºäº†å®žçŽ°ä¸Šæ–‡çš„ç”¨ä¾‹ï¼Œæˆ‘ä»¬éœ€è¦å®žçŽ°å“ªäº›éƒ¨åˆ†å‘¢ï¼Ÿ</p>
 
         <ul>
-        <li>ÎÒÃÇÐèÒªÌá¹©WebÒ³Ãæ£¬Òò´ËÐèÒªÒ»¸ö<em>HTTP·þÎñÆ÷</em></li>
-        <li>¶ÔÓÚ²»Í¬µÄÇëÇó£¬¸ù¾ÝÇëÇóµÄURL£¬ÎÒÃÇµÄ·þÎñÆ÷ÐèÒª¸øÓè²»Í¬µÄÏìÓ¦£¬Òò´ËÎÒÃÇÐèÒªÒ»¸ö<em>Â·ÓÉ</em>£¬ÓÃÓÚ°ÑÇëÇó¶ÔÓ¦µ½ÇëÇó´¦Àí³ÌÐò£¨request handler£©</li>
-        <li>µ±ÇëÇó±»·þÎñÆ÷½ÓÊÕ²¢Í¨¹ýÂ·ÓÉ´«µÝÖ®ºó£¬ÐèÒª¿ÉÒÔ¶ÔÆä½øÐÐ´¦Àí£¬Òò´ËÎÒÃÇÐèÒª×îÖÕµÄ<em>ÇëÇó´¦Àí³ÌÐò</em></li>
-        <li>Â·ÓÉ»¹Ó¦¸ÃÄÜ´¦ÀíPOSTÊý¾Ý£¬²¢ÇÒ°ÑÊý¾Ý·â×°³É¸üÓÑºÃµÄ¸ñÊ½´«µÝ¸øÇëÇó´¦ÀíÈë³ÌÐò£¬Òò´ËÐèÒª<em>ÇëÇóÊý¾Ý´¦Àí¹¦ÄÜ</em></li>
-        <li>ÎÒÃÇ²»½ö½öÒª´¦ÀíURL¶ÔÓ¦µÄÇëÇó£¬»¹Òª°ÑÄÚÈÝÏÔÊ¾³öÀ´£¬ÕâÒâÎ¶×ÅÎÒÃÇÐèÒªÒ»Ð©<em>ÊÓÍ¼Âß¼­</em>¹©ÇëÇó´¦Àí³ÌÐòÊ¹ÓÃ£¬ÒÔ±ã½«ÄÚÈÝ·¢ËÍ¸øÓÃ»§µÄä¯ÀÀÆ÷</li>
-        <li>×îºó£¬ÓÃ»§ÐèÒªÉÏ´«Í¼Æ¬£¬ËùÒÔÎÒÃÇÐèÒª<em>ÉÏ´«´¦Àí¹¦ÄÜ</em>À´´¦ÀíÕâ·½ÃæµÄÏ¸½Ú</li>
+        <li>æˆ‘ä»¬éœ€è¦æä¾›Webé¡µé¢ï¼Œå› æ­¤éœ€è¦ä¸€ä¸ª<em>HTTPæœåŠ¡å™¨</em></li>
+        <li>å¯¹äºŽä¸åŒçš„è¯·æ±‚ï¼Œæ ¹æ®è¯·æ±‚çš„URLï¼Œæˆ‘ä»¬çš„æœåŠ¡å™¨éœ€è¦ç»™äºˆä¸åŒçš„å“åº”ï¼Œå› æ­¤æˆ‘ä»¬éœ€è¦ä¸€ä¸ª<em>è·¯ç”±</em>ï¼Œç”¨äºŽæŠŠè¯·æ±‚å¯¹åº”åˆ°è¯·æ±‚å¤„ç†ç¨‹åºï¼ˆrequest handlerï¼‰</li>
+        <li>å½“è¯·æ±‚è¢«æœåŠ¡å™¨æŽ¥æ”¶å¹¶é€šè¿‡è·¯ç”±ä¼ é€’ä¹‹åŽï¼Œéœ€è¦å¯ä»¥å¯¹å…¶è¿›è¡Œå¤„ç†ï¼Œå› æ­¤æˆ‘ä»¬éœ€è¦æœ€ç»ˆçš„<em>è¯·æ±‚å¤„ç†ç¨‹åº</em></li>
+        <li>è·¯ç”±è¿˜åº”è¯¥èƒ½å¤„ç†POSTæ•°æ®ï¼Œå¹¶ä¸”æŠŠæ•°æ®å°è£…æˆæ›´å‹å¥½çš„æ ¼å¼ä¼ é€’ç»™è¯·æ±‚å¤„ç†å…¥ç¨‹åºï¼Œå› æ­¤éœ€è¦<em>è¯·æ±‚æ•°æ®å¤„ç†åŠŸèƒ½</em></li>
+        <li>æˆ‘ä»¬ä¸ä»…ä»…è¦å¤„ç†URLå¯¹åº”çš„è¯·æ±‚ï¼Œè¿˜è¦æŠŠå†…å®¹æ˜¾ç¤ºå‡ºæ¥ï¼Œè¿™æ„å‘³ç€æˆ‘ä»¬éœ€è¦ä¸€äº›<em>è§†å›¾é€»è¾‘</em>ä¾›è¯·æ±‚å¤„ç†ç¨‹åºä½¿ç”¨ï¼Œä»¥ä¾¿å°†å†…å®¹å‘é€ç»™ç”¨æˆ·çš„æµè§ˆå™¨</li>
+        <li>æœ€åŽï¼Œç”¨æˆ·éœ€è¦ä¸Šä¼ å›¾ç‰‡ï¼Œæ‰€ä»¥æˆ‘ä»¬éœ€è¦<em>ä¸Šä¼ å¤„ç†åŠŸèƒ½</em>æ¥å¤„ç†è¿™æ–¹é¢çš„ç»†èŠ‚</li>
         </ul>
 
-        <p>ÎÒÃÇÏÈÀ´ÏëÏë£¬Ê¹ÓÃPHPµÄ»°ÎÒÃÇ»áÔõÃ´¹¹½¨Õâ¸ö½á¹¹¡£Ò»°ãÀ´ËµÎÒÃÇ»áÓÃÒ»¸öApache HTTP·þÎñÆ÷²¢ÅäÉÏmod_php5Ä£¿é¡£<br />´ÓÕâ¸ö½Ç¶È¿´£¬Õû¸ö¡°½ÓÊÕHTTPÇëÇó²¢Ìá¹©WebÒ³Ãæ¡±µÄÐèÇó¸ù±¾²»ÐèÒªPHPÀ´´¦Àí¡£</p>
+        <p>æˆ‘ä»¬å…ˆæ¥æƒ³æƒ³ï¼Œä½¿ç”¨PHPçš„è¯æˆ‘ä»¬ä¼šæ€Žä¹ˆæž„å»ºè¿™ä¸ªç»“æž„ã€‚ä¸€èˆ¬æ¥è¯´æˆ‘ä»¬ä¼šç”¨ä¸€ä¸ªApache HTTPæœåŠ¡å™¨å¹¶é…ä¸Šmod_php5æ¨¡å—ã€‚<br />ä»Žè¿™ä¸ªè§’åº¦çœ‹ï¼Œæ•´ä¸ªâ€œæŽ¥æ”¶HTTPè¯·æ±‚å¹¶æä¾›Webé¡µé¢â€çš„éœ€æ±‚æ ¹æœ¬ä¸éœ€è¦PHPæ¥å¤„ç†ã€‚</p>
 
-        <p>²»¹ý¶ÔNode.jsÀ´Ëµ£¬¸ÅÄîÍêÈ«²»Ò»ÑùÁË¡£Ê¹ÓÃNode.jsÊ±£¬ÎÒÃÇ²»½ö½öÔÚÊµÏÖÒ»¸öÓ¦ÓÃ£¬Í¬Ê±»¹ÊµÏÖÁËÕû¸öHTTP·þÎñÆ÷¡£ÊÂÊµÉÏ£¬ÎÒÃÇµÄWebÓ¦ÓÃÒÔ¼°¶ÔÓ¦µÄWeb·þÎñÆ÷»ù±¾ÉÏÊÇÒ»ÑùµÄ¡£</p>
+        <p>ä¸è¿‡å¯¹Node.jsæ¥è¯´ï¼Œæ¦‚å¿µå®Œå…¨ä¸ä¸€æ ·äº†ã€‚ä½¿ç”¨Node.jsæ—¶ï¼Œæˆ‘ä»¬ä¸ä»…ä»…åœ¨å®žçŽ°ä¸€ä¸ªåº”ç”¨ï¼ŒåŒæ—¶è¿˜å®žçŽ°äº†æ•´ä¸ªHTTPæœåŠ¡å™¨ã€‚äº‹å®žä¸Šï¼Œæˆ‘ä»¬çš„Webåº”ç”¨ä»¥åŠå¯¹åº”çš„WebæœåŠ¡å™¨åŸºæœ¬ä¸Šæ˜¯ä¸€æ ·çš„ã€‚</p>
 
-        <p>ÌýÆðÀ´ºÃÏñÓÐÒ»´ó¶Ñ»îÒª×ö£¬µ«ËæºóÎÒÃÇ»áÖð½¥ÒâÊ¶µ½£¬¶ÔNode.jsÀ´ËµÕâ²¢²»ÊÇÊ²Ã´Âé·³µÄÊÂ¡£</p>
+        <p>å¬èµ·æ¥å¥½åƒæœ‰ä¸€å¤§å †æ´»è¦åšï¼Œä½†éšåŽæˆ‘ä»¬ä¼šé€æ¸æ„è¯†åˆ°ï¼Œå¯¹Node.jsæ¥è¯´è¿™å¹¶ä¸æ˜¯ä»€ä¹ˆéº»çƒ¦çš„äº‹ã€‚</p>
 
-        <p>ÏÖÔÚÎÒÃÇ¾ÍÀ´¿ªÊ¼ÊµÏÖÖ®Â·£¬ÏÈ´ÓµÚÒ»¸ö²¿·Ö--HTTP·þÎñÆ÷×ÅÊÖ¡£</p>
+        <p>çŽ°åœ¨æˆ‘ä»¬å°±æ¥å¼€å§‹å®žçŽ°ä¹‹è·¯ï¼Œå…ˆä»Žç¬¬ä¸€ä¸ªéƒ¨åˆ†--HTTPæœåŠ¡å™¨ç€æ‰‹ã€‚</p>
 
         <a name="building-the-application-stack"></a>
 
-        <h2>¹¹½¨Ó¦ÓÃµÄÄ£¿é</h2>
+        <h2>æž„å»ºåº”ç”¨çš„æ¨¡å—</h2>
 
         <a name="a-basic-http-server"></a>
 
-        <h3>Ò»¸ö»ù´¡µÄHTTP·þÎñÆ÷</h3>
+        <h3>ä¸€ä¸ªåŸºç¡€çš„HTTPæœåŠ¡å™¨</h3>
 
         <p>
-            µ±ÎÒ×¼±¸¿ªÊ¼Ð´ÎÒµÄµÚÒ»¸ö¡°ÕæÕýµÄ¡±Node.jsÓ¦ÓÃµÄÊ±ºò£¬ÎÒ²»µ«²»ÖªµÀÔõÃ´Ð´Node.js´úÂë£¬Ò²²»ÖªµÀÔõÃ´×éÖ¯ÕâÐ©´úÂë¡£
+            å½“æˆ‘å‡†å¤‡å¼€å§‹å†™æˆ‘çš„ç¬¬ä¸€ä¸ªâ€œçœŸæ­£çš„â€Node.jsåº”ç”¨çš„æ—¶å€™ï¼Œæˆ‘ä¸ä½†ä¸çŸ¥é“æ€Žä¹ˆå†™Node.jsä»£ç ï¼Œä¹Ÿä¸çŸ¥é“æ€Žä¹ˆç»„ç»‡è¿™äº›ä»£ç ã€‚
             <br>
-            ÎÒÓ¦¸Ã°ÑËùÓÐ¶«Î÷¶¼·Å½øÒ»¸öÎÄ¼þÀïÂð£¿ÍøÉÏÓÐºÜ¶à½Ì³Ì¶¼»á½ÌÄã°ÑËùÓÐµÄÂß¼­¶¼·Å½øÒ»¸öÓÃNode.jsÐ´µÄ»ù´¡HTTP·þÎñÆ÷Àï¡£µ«ÊÇÈç¹ûÎÒÏë¼ÓÈë¸ü¶àµÄÄÚÈÝ£¬Í¬Ê±»¹Ïë±£³Ö´úÂëµÄ¿É¶ÁÐÔÄØ£¿
+            æˆ‘åº”è¯¥æŠŠæ‰€æœ‰ä¸œè¥¿éƒ½æ”¾è¿›ä¸€ä¸ªæ–‡ä»¶é‡Œå—ï¼Ÿç½‘ä¸Šæœ‰å¾ˆå¤šæ•™ç¨‹éƒ½ä¼šæ•™ä½ æŠŠæ‰€æœ‰çš„é€»è¾‘éƒ½æ”¾è¿›ä¸€ä¸ªç”¨Node.jså†™çš„åŸºç¡€HTTPæœåŠ¡å™¨é‡Œã€‚ä½†æ˜¯å¦‚æžœæˆ‘æƒ³åŠ å…¥æ›´å¤šçš„å†…å®¹ï¼ŒåŒæ—¶è¿˜æƒ³ä¿æŒä»£ç çš„å¯è¯»æ€§å‘¢ï¼Ÿ
         </p>
 
         <p>
 
-            Êµ¼ÊÉÏ£¬Ö»Òª°Ñ²»Í¬¹¦ÄÜµÄ´úÂë·ÅÈë²»Í¬µÄÄ£¿éÖÐ£¬±£³Ö´úÂë·ÖÀë»¹ÊÇÏàµ±¼òµ¥µÄ¡£
+            å®žé™…ä¸Šï¼Œåªè¦æŠŠä¸åŒåŠŸèƒ½çš„ä»£ç æ”¾å…¥ä¸åŒçš„æ¨¡å—ä¸­ï¼Œä¿æŒä»£ç åˆ†ç¦»è¿˜æ˜¯ç›¸å½“ç®€å•çš„ã€‚
         </p>
 
         <p>
-            ÕâÖÖ·½·¨ÔÊÐíÄãÓµÓÐÒ»¸ö¸É¾»µÄÖ÷ÎÄ¼þ£¨main file£©£¬Äã¿ÉÒÔÓÃNode.jsÖ´ÐÐËü£»Í¬Ê±Äã¿ÉÒÔÓµÓÐ¸É¾»µÄÄ£¿é£¬ËüÃÇ¿ÉÒÔ±»Ö÷ÎÄ¼þºÍÆäËûµÄÄ£¿éµ÷ÓÃ¡£  
+            è¿™ç§æ–¹æ³•å…è®¸ä½ æ‹¥æœ‰ä¸€ä¸ªå¹²å‡€çš„ä¸»æ–‡ä»¶ï¼ˆmain fileï¼‰ï¼Œä½ å¯ä»¥ç”¨Node.jsæ‰§è¡Œå®ƒï¼›åŒæ—¶ä½ å¯ä»¥æ‹¥æœ‰å¹²å‡€çš„æ¨¡å—ï¼Œå®ƒä»¬å¯ä»¥è¢«ä¸»æ–‡ä»¶å’Œå…¶ä»–çš„æ¨¡å—è°ƒç”¨ã€‚  
         </p>
 
         <p>
-            ÄÇÃ´£¬ÏÖÔÚÎÒÃÇÀ´´´½¨Ò»¸öÓÃÓÚÆô¶¯ÎÒÃÇµÄÓ¦ÓÃµÄÖ÷ÎÄ¼þ£¬ºÍÒ»¸ö±£´æ×ÅÎÒÃÇµÄHTTP·þÎñÆ÷´úÂëµÄÄ£¿é¡£
+            é‚£ä¹ˆï¼ŒçŽ°åœ¨æˆ‘ä»¬æ¥åˆ›å»ºä¸€ä¸ªç”¨äºŽå¯åŠ¨æˆ‘ä»¬çš„åº”ç”¨çš„ä¸»æ–‡ä»¶ï¼Œå’Œä¸€ä¸ªä¿å­˜ç€æˆ‘ä»¬çš„HTTPæœåŠ¡å™¨ä»£ç çš„æ¨¡å—ã€‚
         </p>
 
         <p>
 
-            ÔÚÎÒµÄÓ¡ÏóÀï£¬°ÑÖ÷ÎÄ¼þ½Ð×ö<em>index.js</em>»ò¶à»òÉÙÊÇ¸ö±ê×¼¸ñÊ½¡£°Ñ·þÎñÆ÷Ä£¿é·Å½ø½Ð<em>server.js</em>µÄÎÄ¼þÀïÔòºÜºÃÀí½â¡£
+            åœ¨æˆ‘çš„å°è±¡é‡Œï¼ŒæŠŠä¸»æ–‡ä»¶å«åš<em>index.js</em>æˆ–å¤šæˆ–å°‘æ˜¯ä¸ªæ ‡å‡†æ ¼å¼ã€‚æŠŠæœåŠ¡å™¨æ¨¡å—æ”¾è¿›å«<em>server.js</em>çš„æ–‡ä»¶é‡Œåˆ™å¾ˆå¥½ç†è§£ã€‚
         </p>
 
         <p>
-            ÈÃÎÒÃÇÏÈ´Ó·þÎñÆ÷Ä£¿é¿ªÊ¼¡£ÔÚÄãµÄÏîÄ¿µÄ¸ùÄ¿Â¼ÏÂ´´½¨Ò»¸ö½Ð<em>server.js</em>µÄÎÄ¼þ£¬²¢Ð´ÈëÒÔÏÂ´úÂë£º
+            è®©æˆ‘ä»¬å…ˆä»ŽæœåŠ¡å™¨æ¨¡å—å¼€å§‹ã€‚åœ¨ä½ çš„é¡¹ç›®çš„æ ¹ç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªå«<em>server.js</em>çš„æ–‡ä»¶ï¼Œå¹¶å†™å…¥ä»¥ä¸‹ä»£ç ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -370,40 +370,40 @@ tags : [nodejs, javascript]
                 class="pun">);</span></pre>
 
         <p>
-            ¸ã¶¨£¡Äã¸Õ¸ÕÍê³ÉÁËÒ»¸ö¿ÉÒÔ¹¤×÷µÄHTTP·þÎñÆ÷¡£ÎªÁËÖ¤Ã÷ÕâÒ»µã£¬ÎÒÃÇÀ´ÔËÐÐ²¢ÇÒ²âÊÔÕâ¶Î´úÂë¡£Ê×ÏÈ£¬ÓÃNode.jsÖ´ÐÐÄãµÄ½Å±¾£º
+            æžå®šï¼ä½ åˆšåˆšå®Œæˆäº†ä¸€ä¸ªå¯ä»¥å·¥ä½œçš„HTTPæœåŠ¡å™¨ã€‚ä¸ºäº†è¯æ˜Žè¿™ä¸€ç‚¹ï¼Œæˆ‘ä»¬æ¥è¿è¡Œå¹¶ä¸”æµ‹è¯•è¿™æ®µä»£ç ã€‚é¦–å…ˆï¼Œç”¨Node.jsæ‰§è¡Œä½ çš„è„šæœ¬ï¼š
         </p>
         <pre>node server.js</pre>
         <p>
-            ½ÓÏÂÀ´£¬´ò¿ªä¯ÀÀÆ÷·ÃÎÊ<a href="http://localhost:8888/" rel="nofollow">http://localhost:8888/</a>£¬Äã»á¿´µ½Ò»¸öÐ´×Å¡°Hello World¡±µÄÍøÒ³¡£ 
+            æŽ¥ä¸‹æ¥ï¼Œæ‰“å¼€æµè§ˆå™¨è®¿é—®<a href="http://localhost:8888/" rel="nofollow">http://localhost:8888/</a>ï¼Œä½ ä¼šçœ‹åˆ°ä¸€ä¸ªå†™ç€â€œHello Worldâ€çš„ç½‘é¡µã€‚ 
         </p>
 
         <p>
-            ÕâºÜÓÐÈ¤£¬²»ÊÇÂð£¿ÈÃÎÒÃÇÏÈÀ´Ì¸Ì¸HTTP·þÎñÆ÷µÄÎÊÌâ£¬°ÑÈçºÎ×éÖ¯ÏîÄ¿µÄÊÂÇéÏÈ·ÅÒ»±ß°É£¬Äã¾õµÃÈçºÎ£¿ÎÒ±£Ö¤Ö®ºóÎÒÃÇ»á½â¾öÄÇ¸öÎÊÌâµÄ¡£
+            è¿™å¾ˆæœ‰è¶£ï¼Œä¸æ˜¯å—ï¼Ÿè®©æˆ‘ä»¬å…ˆæ¥è°ˆè°ˆHTTPæœåŠ¡å™¨çš„é—®é¢˜ï¼ŒæŠŠå¦‚ä½•ç»„ç»‡é¡¹ç›®çš„äº‹æƒ…å…ˆæ”¾ä¸€è¾¹å§ï¼Œä½ è§‰å¾—å¦‚ä½•ï¼Ÿæˆ‘ä¿è¯ä¹‹åŽæˆ‘ä»¬ä¼šè§£å†³é‚£ä¸ªé—®é¢˜çš„ã€‚
         </p>
 
         <a name="analyzing-our-http-server"></a>
 
-        <h3>·ÖÎöHTTP·þÎñÆ÷</h3>
+        <h3>åˆ†æžHTTPæœåŠ¡å™¨</h3>
 
         <p>
-            ÄÇÃ´½ÓÏÂÀ´£¬ÈÃÎÒÃÇ·ÖÎöÒ»ÏÂÕâ¸öHTTP·þÎñÆ÷µÄ¹¹³É¡£
+            é‚£ä¹ˆæŽ¥ä¸‹æ¥ï¼Œè®©æˆ‘ä»¬åˆ†æžä¸€ä¸‹è¿™ä¸ªHTTPæœåŠ¡å™¨çš„æž„æˆã€‚
         </p>
 
         <p>
-            µÚÒ»ÐÐ<em>ÇëÇó£¨require£©</em>Node.js×Ô´øµÄ <em>http</em> Ä£¿é£¬²¢ÇÒ°ÑËü¸³Öµ¸ø <em>http</em> ±äÁ¿¡£
+            ç¬¬ä¸€è¡Œ<em>è¯·æ±‚ï¼ˆrequireï¼‰</em>Node.jsè‡ªå¸¦çš„ <em>http</em> æ¨¡å—ï¼Œå¹¶ä¸”æŠŠå®ƒèµ‹å€¼ç»™ <em>http</em> å˜é‡ã€‚
         </p>
 
 
         <p>
-            ½ÓÏÂÀ´ÎÒÃÇµ÷ÓÃhttpÄ£¿éÌá¹©µÄº¯Êý£º <em>createServer</em> ¡£Õâ¸öº¯Êý»á·µ»ØÒ»¸ö¶ÔÏó£¬Õâ¸ö¶ÔÏóÓÐÒ»¸ö½Ð×ö <em>listen</em> µÄ·½·¨£¬Õâ¸ö·½·¨ÓÐÒ»¸öÊýÖµ²ÎÊý£¬Ö¸¶¨Õâ¸öHTTP·þÎñÆ÷¼àÌýµÄ¶Ë¿ÚºÅ¡£
+            æŽ¥ä¸‹æ¥æˆ‘ä»¬è°ƒç”¨httpæ¨¡å—æä¾›çš„å‡½æ•°ï¼š <em>createServer</em> ã€‚è¿™ä¸ªå‡½æ•°ä¼šè¿”å›žä¸€ä¸ªå¯¹è±¡ï¼Œè¿™ä¸ªå¯¹è±¡æœ‰ä¸€ä¸ªå«åš <em>listen</em> çš„æ–¹æ³•ï¼Œè¿™ä¸ªæ–¹æ³•æœ‰ä¸€ä¸ªæ•°å€¼å‚æ•°ï¼ŒæŒ‡å®šè¿™ä¸ªHTTPæœåŠ¡å™¨ç›‘å¬çš„ç«¯å£å·ã€‚
         </p>
 
         <p>
-            ÔÛÃÇÔÝÊ±ÏÈ²»¹Ü <em>http.createServer</em> µÄÀ¨ºÅÀïµÄÄÇ¸öº¯Êý¶¨Òå¡£
+            å’±ä»¬æš‚æ—¶å…ˆä¸ç®¡ <em>http.createServer</em> çš„æ‹¬å·é‡Œçš„é‚£ä¸ªå‡½æ•°å®šä¹‰ã€‚
         </p>
 
         <p>
-            ÎÒÃÇ±¾À´¿ÉÒÔÓÃÕâÑùµÄ´úÂëÀ´Æô¶¯·þÎñÆ÷²¢ÕìÌý8888¶Ë¿Ú£º
+            æˆ‘ä»¬æœ¬æ¥å¯ä»¥ç”¨è¿™æ ·çš„ä»£ç æ¥å¯åŠ¨æœåŠ¡å™¨å¹¶ä¾¦å¬8888ç«¯å£ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -414,23 +414,23 @@ tags : [nodejs, javascript]
                 class="lit">8888</span><span class="pun">);</span></pre>
 
         <p>
-            Õâ¶Î´úÂëÖ»»áÆô¶¯Ò»¸öÕìÌý8888¶Ë¿ÚµÄ·þÎñÆ÷£¬Ëü²»×öÈÎºÎ±ðµÄÊÂÇé£¬ÉõÖÁÁ¬ÇëÇó¶¼²»»áÓ¦´ð¡£
+            è¿™æ®µä»£ç åªä¼šå¯åŠ¨ä¸€ä¸ªä¾¦å¬8888ç«¯å£çš„æœåŠ¡å™¨ï¼Œå®ƒä¸åšä»»ä½•åˆ«çš„äº‹æƒ…ï¼Œç”šè‡³è¿žè¯·æ±‚éƒ½ä¸ä¼šåº”ç­”ã€‚
         </p>
 
         <p>
-            ×îÓÐÈ¤£¨¶øÇÒ£¬Èç¹ûÄãÖ®Ç°Ï°¹ßÊ¹ÓÃÒ»¸ö¸ü¼Ó±£ÊØµÄÓïÑÔ£¬±ÈÈçPHP£¬Ëü»¹ºÜÆæ¹Ö£©µÄ²¿·ÖÊÇ <em>createSever()</em> µÄµÚÒ»¸ö²ÎÊý£¬Ò»¸öº¯Êý¶¨Òå¡£
+            æœ€æœ‰è¶£ï¼ˆè€Œä¸”ï¼Œå¦‚æžœä½ ä¹‹å‰ä¹ æƒ¯ä½¿ç”¨ä¸€ä¸ªæ›´åŠ ä¿å®ˆçš„è¯­è¨€ï¼Œæ¯”å¦‚PHPï¼Œå®ƒè¿˜å¾ˆå¥‡æ€ªï¼‰çš„éƒ¨åˆ†æ˜¯ <em>createSever()</em> çš„ç¬¬ä¸€ä¸ªå‚æ•°ï¼Œä¸€ä¸ªå‡½æ•°å®šä¹‰ã€‚
         </p>
 
         <p>
-            Êµ¼ÊÉÏ£¬Õâ¸öº¯Êý¶¨ÒåÊÇ <em>createServer()</em> µÄµÚÒ»¸öÒ²ÊÇÎ¨Ò»Ò»¸ö²ÎÊý¡£ÒòÎªÔÚJavaScriptÖÐ£¬º¯ÊýºÍÆäËû±äÁ¿Ò»Ñù¶¼ÊÇ¿ÉÒÔ±»´«µÝµÄ¡£
+            å®žé™…ä¸Šï¼Œè¿™ä¸ªå‡½æ•°å®šä¹‰æ˜¯ <em>createServer()</em> çš„ç¬¬ä¸€ä¸ªä¹Ÿæ˜¯å”¯ä¸€ä¸€ä¸ªå‚æ•°ã€‚å› ä¸ºåœ¨JavaScriptä¸­ï¼Œå‡½æ•°å’Œå…¶ä»–å˜é‡ä¸€æ ·éƒ½æ˜¯å¯ä»¥è¢«ä¼ é€’çš„ã€‚
         </p>
 
         <a name="passing-functions-around"></a>
 
-        <h3>½øÐÐº¯Êý´«µÝ</h3>
+        <h3>è¿›è¡Œå‡½æ•°ä¼ é€’</h3>
 
         <p>
-            ¾ÙÀýÀ´Ëµ£¬Äã¿ÉÒÔÕâÑù×ö£º
+            ä¸¾ä¾‹æ¥è¯´ï¼Œä½ å¯ä»¥è¿™æ ·åšï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> say</span><span
                 class="pun">(</span><span class="pln">word</span><span class="pun">)</span><span
@@ -446,19 +446,19 @@ tags : [nodejs, javascript]
                 class="pln"> </span><span class="str">"Hello"</span><span class="pun">);</span></pre>
 
         <p>
-            Çë×ÐÏ¸ÔÄ¶ÁÕâ¶Î´úÂë£¡ÔÚÕâÀï£¬ÎÒÃÇ°Ñ <em>say</em> º¯Êý×÷Îª<em>execute</em>º¯ÊýµÄµÚÒ»¸ö±äÁ¿½øÐÐÁË´«µÝ¡£ÕâÀï·µ»ØµÄ²»ÊÇ <em>say</em> µÄ·µ»ØÖµ£¬¶øÊÇ <em>say</em> ±¾Éí£¡
+            è¯·ä»”ç»†é˜…è¯»è¿™æ®µä»£ç ï¼åœ¨è¿™é‡Œï¼Œæˆ‘ä»¬æŠŠ <em>say</em> å‡½æ•°ä½œä¸º<em>execute</em>å‡½æ•°çš„ç¬¬ä¸€ä¸ªå˜é‡è¿›è¡Œäº†ä¼ é€’ã€‚è¿™é‡Œè¿”å›žçš„ä¸æ˜¯ <em>say</em> çš„è¿”å›žå€¼ï¼Œè€Œæ˜¯ <em>say</em> æœ¬èº«ï¼
         </p>
 
         <p>
-            ÕâÑùÒ»À´£¬ <em>say</em> ¾Í±ä³ÉÁË<em>execute</em> ÖÐµÄ±¾µØ±äÁ¿ <em>someFunction</em> £¬execute¿ÉÒÔÍ¨¹ýµ÷ÓÃ <em>someFunction()</em> £¨´øÀ¨ºÅµÄÐÎÊ½£©À´Ê¹ÓÃ <em>say</em> º¯Êý¡£
+            è¿™æ ·ä¸€æ¥ï¼Œ <em>say</em> å°±å˜æˆäº†<em>execute</em> ä¸­çš„æœ¬åœ°å˜é‡ <em>someFunction</em> ï¼Œexecuteå¯ä»¥é€šè¿‡è°ƒç”¨ <em>someFunction()</em> ï¼ˆå¸¦æ‹¬å·çš„å½¢å¼ï¼‰æ¥ä½¿ç”¨ <em>say</em> å‡½æ•°ã€‚
         </p>
 
         <p>
-            µ±È»£¬ÒòÎª <em>say</em> ÓÐÒ»¸ö±äÁ¿£¬ <em>execute</em> ÔÚµ÷ÓÃ <em>someFunction</em> Ê±¿ÉÒÔ´«µÝÕâÑùÒ»¸ö±äÁ¿¡£
+            å½“ç„¶ï¼Œå› ä¸º <em>say</em> æœ‰ä¸€ä¸ªå˜é‡ï¼Œ <em>execute</em> åœ¨è°ƒç”¨ <em>someFunction</em> æ—¶å¯ä»¥ä¼ é€’è¿™æ ·ä¸€ä¸ªå˜é‡ã€‚
         </p>
 
         <p>
-            ÎÒÃÇ¿ÉÒÔ£¬¾ÍÏñ¸Õ²ÅÄÇÑù£¬ÓÃËüµÄÃû×Ö°ÑÒ»¸öº¯Êý×÷Îª±äÁ¿´«µÝ¡£µ«ÊÇÎÒÃÇ²»Ò»¶¨ÒªÈÆÕâ¸ö¡°ÏÈ¶¨Òå£¬ÔÙ´«µÝ¡±µÄÈ¦×Ó£¬ÎÒÃÇ¿ÉÒÔÖ±½ÓÔÚÁíÒ»¸öº¯ÊýµÄÀ¨ºÅÖÐ¶¨ÒåºÍ´«µÝÕâ¸öº¯Êý£º
+            æˆ‘ä»¬å¯ä»¥ï¼Œå°±åƒåˆšæ‰é‚£æ ·ï¼Œç”¨å®ƒçš„åå­—æŠŠä¸€ä¸ªå‡½æ•°ä½œä¸ºå˜é‡ä¼ é€’ã€‚ä½†æ˜¯æˆ‘ä»¬ä¸ä¸€å®šè¦ç»•è¿™ä¸ªâ€œå…ˆå®šä¹‰ï¼Œå†ä¼ é€’â€çš„åœˆå­ï¼Œæˆ‘ä»¬å¯ä»¥ç›´æŽ¥åœ¨å¦ä¸€ä¸ªå‡½æ•°çš„æ‹¬å·ä¸­å®šä¹‰å’Œä¼ é€’è¿™ä¸ªå‡½æ•°ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> execute</span><span
                 class="pun">(</span><span class="pln">someFunction</span><span class="pun">,</span><span class="pln"> value</span><span
@@ -473,22 +473,22 @@ tags : [nodejs, javascript]
                 class="pun">);</span></pre>
 
         <p>
-            ÎÒÃÇÔÚ <em>execute</em> ½ÓÊÜµÚÒ»¸ö²ÎÊýµÄµØ·½Ö±½Ó¶¨ÒåÁËÎÒÃÇ×¼±¸´«µÝ¸ø <em>execute</em> µÄº¯Êý¡£
+            æˆ‘ä»¬åœ¨ <em>execute</em> æŽ¥å—ç¬¬ä¸€ä¸ªå‚æ•°çš„åœ°æ–¹ç›´æŽ¥å®šä¹‰äº†æˆ‘ä»¬å‡†å¤‡ä¼ é€’ç»™ <em>execute</em> çš„å‡½æ•°ã€‚
         </p>
 
         <p>
-            ÓÃÕâÖÖ·½Ê½£¬ÎÒÃÇÉõÖÁ²»ÓÃ¸øÕâ¸öº¯ÊýÆðÃû×Ö£¬ÕâÒ²ÊÇÎªÊ²Ã´Ëü±»½Ð×ö <em>ÄäÃûº¯Êý</em> ¡£
+            ç”¨è¿™ç§æ–¹å¼ï¼Œæˆ‘ä»¬ç”šè‡³ä¸ç”¨ç»™è¿™ä¸ªå‡½æ•°èµ·åå­—ï¼Œè¿™ä¹Ÿæ˜¯ä¸ºä»€ä¹ˆå®ƒè¢«å«åš <em>åŒ¿åå‡½æ•°</em> ã€‚
         </p>
 
         <p>
-            ÕâÊÇÎÒÃÇºÍÎÒËùÈÏÎªµÄ¡°½ø½×¡±JavaScriptµÄµÚÒ»´ÎÇ×ÃÜ½Ó´¥£¬²»¹ýÎÒÃÇ»¹ÊÇµÃÑ­Ðò½¥½ø¡£ÏÖÔÚ£¬ÎÒÃÇÏÈ½ÓÊÜÕâÒ»µã£ºÔÚJavaScriptÖÐ£¬Ò»¸öº¯Êý¿ÉÒÔ×÷ÎªÁíÒ»¸öº¯Êý½ÓÊÕÒ»¸ö²ÎÊý¡£ÎÒÃÇ¿ÉÒÔÏÈ¶¨ÒåÒ»¸öº¯Êý£¬È»ºó´«µÝ£¬Ò²¿ÉÒÔÔÚ´«µÝ²ÎÊýµÄµØ·½Ö±½Ó¶¨Òåº¯Êý¡£
+            è¿™æ˜¯æˆ‘ä»¬å’Œæˆ‘æ‰€è®¤ä¸ºçš„â€œè¿›é˜¶â€JavaScriptçš„ç¬¬ä¸€æ¬¡äº²å¯†æŽ¥è§¦ï¼Œä¸è¿‡æˆ‘ä»¬è¿˜æ˜¯å¾—å¾ªåºæ¸è¿›ã€‚çŽ°åœ¨ï¼Œæˆ‘ä»¬å…ˆæŽ¥å—è¿™ä¸€ç‚¹ï¼šåœ¨JavaScriptä¸­ï¼Œä¸€ä¸ªå‡½æ•°å¯ä»¥ä½œä¸ºå¦ä¸€ä¸ªå‡½æ•°æŽ¥æ”¶ä¸€ä¸ªå‚æ•°ã€‚æˆ‘ä»¬å¯ä»¥å…ˆå®šä¹‰ä¸€ä¸ªå‡½æ•°ï¼Œç„¶åŽä¼ é€’ï¼Œä¹Ÿå¯ä»¥åœ¨ä¼ é€’å‚æ•°çš„åœ°æ–¹ç›´æŽ¥å®šä¹‰å‡½æ•°ã€‚
         </p>
 
         <a name="how-function-passing-makes-our-http-server-work"></a>
 
-        <h3>º¯Êý´«µÝÊÇÈçºÎÈÃHTTP·þÎñÆ÷¹¤×÷µÄ</h3>
+        <h3>å‡½æ•°ä¼ é€’æ˜¯å¦‚ä½•è®©HTTPæœåŠ¡å™¨å·¥ä½œçš„</h3>
 
-        <p>´ø×ÅÕâÐ©ÖªÊ¶£¬ÎÒÃÇÔÙÀ´¿´¿´ÎÒÃÇ¼òÔ¼¶ø²»¼òµ¥µÄHTTP·þÎñÆ÷£º</p>
+        <p>å¸¦ç€è¿™äº›çŸ¥è¯†ï¼Œæˆ‘ä»¬å†æ¥çœ‹çœ‹æˆ‘ä»¬ç®€çº¦è€Œä¸ç®€å•çš„HTTPæœåŠ¡å™¨ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br><br>http</span><span
@@ -506,9 +506,9 @@ tags : [nodejs, javascript]
                 class="pln">listen</span><span class="pun">(</span><span class="lit">8888</span><span
                 class="pun">);</span></pre>
 
-        <p>ÏÖÔÚËü¿´ÉÏÈ¥Ó¦¸ÃÇåÎúÁËºÜ¶à£ºÎÒÃÇÏò <em>createServer</em> º¯Êý´«µÝÁËÒ»¸öÄäÃûº¯Êý¡£  </p>
+        <p>çŽ°åœ¨å®ƒçœ‹ä¸ŠåŽ»åº”è¯¥æ¸…æ™°äº†å¾ˆå¤šï¼šæˆ‘ä»¬å‘ <em>createServer</em> å‡½æ•°ä¼ é€’äº†ä¸€ä¸ªåŒ¿åå‡½æ•°ã€‚  </p>
 
-        <p>ÓÃÕâÑùµÄ´úÂëÒ²¿ÉÒÔ´ïµ½Í¬ÑùµÄÄ¿µÄ£º  </p>
+        <p>ç”¨è¿™æ ·çš„ä»£ç ä¹Ÿå¯ä»¥è¾¾åˆ°åŒæ ·çš„ç›®çš„ï¼š  </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br><br></span><span class="kwd">function</span><span
@@ -527,37 +527,37 @@ tags : [nodejs, javascript]
                 class="pun">).</span><span class="pln">listen</span><span class="pun">(</span><span
                 class="lit">8888</span><span class="pun">);</span></pre>
 
-        <p>Ò²ÐíÏÖÔÚÎÒÃÇ¸ÃÎÊÕâ¸öÎÊÌâÁË£ºÎÒÃÇÎªÊ²Ã´ÒªÓÃÕâÖÖ·½Ê½ÄØ£¿  </p>
+        <p>ä¹Ÿè®¸çŽ°åœ¨æˆ‘ä»¬è¯¥é—®è¿™ä¸ªé—®é¢˜äº†ï¼šæˆ‘ä»¬ä¸ºä»€ä¹ˆè¦ç”¨è¿™ç§æ–¹å¼å‘¢ï¼Ÿ  </p>
 
         <a name="event-driven-callbacks"></a>
 
-        <h3>»ùÓÚÊÂ¼þÇý¶¯µÄ»Øµ÷</h3>
+        <h3>åŸºäºŽäº‹ä»¶é©±åŠ¨çš„å›žè°ƒ</h3>
 
-        <p>Õâ¸öÎÊÌâ¿É²»ºÃ»Ø´ð£¨ÖÁÉÙ¶ÔÎÒÀ´Ëµ£©£¬²»¹ýÕâÊÇNode.jsÔ­ÉúµÄ¹¤×÷·½Ê½¡£ËüÊÇÊÂ¼þÇý¶¯µÄ£¬ÕâÒ²ÊÇËüÎªÊ²Ã´ÕâÃ´¿ìµÄÔ­Òò¡£  </p>
+        <p>è¿™ä¸ªé—®é¢˜å¯ä¸å¥½å›žç­”ï¼ˆè‡³å°‘å¯¹æˆ‘æ¥è¯´ï¼‰ï¼Œä¸è¿‡è¿™æ˜¯Node.jsåŽŸç”Ÿçš„å·¥ä½œæ–¹å¼ã€‚å®ƒæ˜¯äº‹ä»¶é©±åŠ¨çš„ï¼Œè¿™ä¹Ÿæ˜¯å®ƒä¸ºä»€ä¹ˆè¿™ä¹ˆå¿«çš„åŽŸå› ã€‚  </p>
 
-        <p>ÄãÒ²Ðí»áÏë»¨µãÊ±¼ä¶ÁÒ»ÏÂFelix Geisend?rferµÄ´ó×÷<a href="http://debuggable.com/posts/understanding-node-js:4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb">Understanding node.js</a>£¬Ëü½éÉÜÁËÒ»Ð©±³¾°ÖªÊ¶¡£  </p>
+        <p>ä½ ä¹Ÿè®¸ä¼šæƒ³èŠ±ç‚¹æ—¶é—´è¯»ä¸€ä¸‹Felix Geisend?rferçš„å¤§ä½œ<a href="http://debuggable.com/posts/understanding-node-js:4bd98440-45e4-4a9a-8ef7-0f7ecbdd56cb">Understanding node.js</a>ï¼Œå®ƒä»‹ç»äº†ä¸€äº›èƒŒæ™¯çŸ¥è¯†ã€‚  </p>
 
-        <p>ÕâÒ»ÇÐ¶¼¹é½áÓÚ¡°Node.jsÊÇÊÂ¼þÇý¶¯µÄ¡±ÕâÒ»ÊÂÊµ¡£ºÃ°É£¬ÆäÊµÎÒÒ²²»ÊÇÌØ±ðÈ·ÇÐµÄÁË½âÕâ¾ä»°µÄÒâË¼¡£²»¹ýÎÒ»áÊÔ×Å½âÊÍ£¬ÎªÊ²Ã´Ëü¶ÔÎÒÃÇÓÃNode.jsÐ´ÍøÂçÓ¦ÓÃ£¨Web based application£©ÊÇÓÐÒâÒåµÄ¡£  </p>
+        <p>è¿™ä¸€åˆ‡éƒ½å½’ç»“äºŽâ€œNode.jsæ˜¯äº‹ä»¶é©±åŠ¨çš„â€è¿™ä¸€äº‹å®žã€‚å¥½å§ï¼Œå…¶å®žæˆ‘ä¹Ÿä¸æ˜¯ç‰¹åˆ«ç¡®åˆ‡çš„äº†è§£è¿™å¥è¯çš„æ„æ€ã€‚ä¸è¿‡æˆ‘ä¼šè¯•ç€è§£é‡Šï¼Œä¸ºä»€ä¹ˆå®ƒå¯¹æˆ‘ä»¬ç”¨Node.jså†™ç½‘ç»œåº”ç”¨ï¼ˆWeb based applicationï¼‰æ˜¯æœ‰æ„ä¹‰çš„ã€‚  </p>
 
-        <p>µ±ÎÒÃÇÊ¹ÓÃ <em>http.createServer</em> ·½·¨µÄÊ±ºò£¬ÎÒÃÇµ±È»²»Ö»ÊÇÏëÒªÒ»¸öÕìÌýÄ³¸ö¶Ë¿ÚµÄ·þÎñÆ÷£¬ÎÒÃÇ»¹ÏëÒªËüÔÚ·þÎñÆ÷ÊÕµ½Ò»¸öHTTPÇëÇóµÄÊ±ºò×öµãÊ²Ã´¡£  </p>
+        <p>å½“æˆ‘ä»¬ä½¿ç”¨ <em>http.createServer</em> æ–¹æ³•çš„æ—¶å€™ï¼Œæˆ‘ä»¬å½“ç„¶ä¸åªæ˜¯æƒ³è¦ä¸€ä¸ªä¾¦å¬æŸä¸ªç«¯å£çš„æœåŠ¡å™¨ï¼Œæˆ‘ä»¬è¿˜æƒ³è¦å®ƒåœ¨æœåŠ¡å™¨æ”¶åˆ°ä¸€ä¸ªHTTPè¯·æ±‚çš„æ—¶å€™åšç‚¹ä»€ä¹ˆã€‚  </p>
 
-        <p>ÎÊÌâÊÇ£¬ÕâÊÇÒì²½µÄ£ºÇëÇóÈÎºÎÊ±ºò¶¼¿ÉÄÜµ½´ï£¬µ«ÊÇÎÒÃÇµÄ·þÎñÆ÷È´ÅÜÔÚÒ»¸öµ¥½ø³ÌÖÐ¡£  </p>
+        <p>é—®é¢˜æ˜¯ï¼Œè¿™æ˜¯å¼‚æ­¥çš„ï¼šè¯·æ±‚ä»»ä½•æ—¶å€™éƒ½å¯èƒ½åˆ°è¾¾ï¼Œä½†æ˜¯æˆ‘ä»¬çš„æœåŠ¡å™¨å´è·‘åœ¨ä¸€ä¸ªå•è¿›ç¨‹ä¸­ã€‚  </p>
 
-        <p>Ð´PHPÓ¦ÓÃµÄÊ±ºò£¬ÎÒÃÇÒ»µãÒ²²»Îª´Ëµ£ÐÄ£ºÈÎºÎÊ±ºòµ±ÓÐÇëÇó½øÈëµÄÊ±ºò£¬ÍøÒ³·þÎñÆ÷£¨Í¨³£ÊÇApache£©¾ÍÎªÕâÒ»ÇëÇóÐÂ½¨Ò»¸ö½ø³Ì£¬²¢ÇÒ¿ªÊ¼´ÓÍ·µ½Î²Ö´ÐÐÏàÓ¦µÄPHP½Å±¾¡£  </p>
+        <p>å†™PHPåº”ç”¨çš„æ—¶å€™ï¼Œæˆ‘ä»¬ä¸€ç‚¹ä¹Ÿä¸ä¸ºæ­¤æ‹…å¿ƒï¼šä»»ä½•æ—¶å€™å½“æœ‰è¯·æ±‚è¿›å…¥çš„æ—¶å€™ï¼Œç½‘é¡µæœåŠ¡å™¨ï¼ˆé€šå¸¸æ˜¯Apacheï¼‰å°±ä¸ºè¿™ä¸€è¯·æ±‚æ–°å»ºä¸€ä¸ªè¿›ç¨‹ï¼Œå¹¶ä¸”å¼€å§‹ä»Žå¤´åˆ°å°¾æ‰§è¡Œç›¸åº”çš„PHPè„šæœ¬ã€‚  </p>
 
-        <p>ÄÇÃ´ÔÚÎÒÃÇµÄNode.js³ÌÐòÖÐ£¬µ±Ò»¸öÐÂµÄÇëÇóµ½´ï8888¶Ë¿ÚµÄÊ±ºò£¬ÎÒÃÇÔõÃ´¿ØÖÆÁ÷³ÌÄØ£¿  </p>
+        <p>é‚£ä¹ˆåœ¨æˆ‘ä»¬çš„Node.jsç¨‹åºä¸­ï¼Œå½“ä¸€ä¸ªæ–°çš„è¯·æ±‚åˆ°è¾¾8888ç«¯å£çš„æ—¶å€™ï¼Œæˆ‘ä»¬æ€Žä¹ˆæŽ§åˆ¶æµç¨‹å‘¢ï¼Ÿ  </p>
 
-        <p>àÅ£¬Õâ¾ÍÊÇNode.js/JavaScriptµÄÊÂ¼þÇý¶¯Éè¼ÆÄÜ¹»ÕæÕý°ïÉÏÃ¦µÄµØ·½ÁË¡ª¡ªËäÈ»ÎÒÃÇ»¹µÃÑ§Ò»Ð©ÐÂ¸ÅÄî²ÅÄÜÕÆÎÕËü¡£ÈÃÎÒÃÇÀ´¿´¿´ÕâÐ©¸ÅÄîÊÇÔõÃ´Ó¦ÓÃÔÚÎÒÃÇµÄ·þÎñÆ÷´úÂëÀïµÄ¡£  </p>
+        <p>å—¯ï¼Œè¿™å°±æ˜¯Node.js/JavaScriptçš„äº‹ä»¶é©±åŠ¨è®¾è®¡èƒ½å¤ŸçœŸæ­£å¸®ä¸Šå¿™çš„åœ°æ–¹äº†â€”â€”è™½ç„¶æˆ‘ä»¬è¿˜å¾—å­¦ä¸€äº›æ–°æ¦‚å¿µæ‰èƒ½æŽŒæ¡å®ƒã€‚è®©æˆ‘ä»¬æ¥çœ‹çœ‹è¿™äº›æ¦‚å¿µæ˜¯æ€Žä¹ˆåº”ç”¨åœ¨æˆ‘ä»¬çš„æœåŠ¡å™¨ä»£ç é‡Œçš„ã€‚  </p>
 
-        <p>ÎÒÃÇ´´½¨ÁË·þÎñÆ÷£¬²¢ÇÒÏò´´½¨ËüµÄ·½·¨´«µÝÁËÒ»¸öº¯Êý¡£ÎÞÂÛºÎÊ±ÎÒÃÇµÄ·þÎñÆ÷ÊÕµ½Ò»¸öÇëÇó£¬Õâ¸öº¯Êý¾Í»á±»µ÷ÓÃ¡£  </p>
+        <p>æˆ‘ä»¬åˆ›å»ºäº†æœåŠ¡å™¨ï¼Œå¹¶ä¸”å‘åˆ›å»ºå®ƒçš„æ–¹æ³•ä¼ é€’äº†ä¸€ä¸ªå‡½æ•°ã€‚æ— è®ºä½•æ—¶æˆ‘ä»¬çš„æœåŠ¡å™¨æ”¶åˆ°ä¸€ä¸ªè¯·æ±‚ï¼Œè¿™ä¸ªå‡½æ•°å°±ä¼šè¢«è°ƒç”¨ã€‚  </p>
 
-        <p>ÎÒÃÇ²»ÖªµÀÕâ¼þÊÂÇéÊ²Ã´Ê±ºò»á·¢Éú£¬µ«ÊÇÎÒÃÇÏÖÔÚÓÐÁËÒ»¸ö´¦ÀíÇëÇóµÄµØ·½£ºËü¾ÍÊÇÎÒÃÇ´«µÝ¹ýÈ¥µÄÄÇ¸öº¯Êý¡£ÖÁÓÚËüÊÇ±»Ô¤ÏÈ¶¨ÒåµÄº¯Êý»¹ÊÇÄäÃûº¯Êý£¬¾ÍÎÞ¹Ø½ôÒªÁË¡£  </p>
+        <p>æˆ‘ä»¬ä¸çŸ¥é“è¿™ä»¶äº‹æƒ…ä»€ä¹ˆæ—¶å€™ä¼šå‘ç”Ÿï¼Œä½†æ˜¯æˆ‘ä»¬çŽ°åœ¨æœ‰äº†ä¸€ä¸ªå¤„ç†è¯·æ±‚çš„åœ°æ–¹ï¼šå®ƒå°±æ˜¯æˆ‘ä»¬ä¼ é€’è¿‡åŽ»çš„é‚£ä¸ªå‡½æ•°ã€‚è‡³äºŽå®ƒæ˜¯è¢«é¢„å…ˆå®šä¹‰çš„å‡½æ•°è¿˜æ˜¯åŒ¿åå‡½æ•°ï¼Œå°±æ— å…³ç´§è¦äº†ã€‚  </p>
 
-        <p>Õâ¸ö¾ÍÊÇ´«ËµÖÐµÄ <em>»Øµ÷</em> ¡£ÎÒÃÇ¸øÄ³¸ö·½·¨´«µÝÁËÒ»¸öº¯Êý£¬Õâ¸ö·½·¨ÔÚÓÐÏàÓ¦ÊÂ¼þ·¢ÉúÊ±µ÷ÓÃÕâ¸öº¯ÊýÀ´½øÐÐ <em>»Øµ÷</em> ¡£  </p>
+        <p>è¿™ä¸ªå°±æ˜¯ä¼ è¯´ä¸­çš„ <em>å›žè°ƒ</em> ã€‚æˆ‘ä»¬ç»™æŸä¸ªæ–¹æ³•ä¼ é€’äº†ä¸€ä¸ªå‡½æ•°ï¼Œè¿™ä¸ªæ–¹æ³•åœ¨æœ‰ç›¸åº”äº‹ä»¶å‘ç”Ÿæ—¶è°ƒç”¨è¿™ä¸ªå‡½æ•°æ¥è¿›è¡Œ <em>å›žè°ƒ</em> ã€‚  </p>
 
-        <p>ÖÁÉÙ¶ÔÎÒÀ´Ëµ£¬ÐèÒªÒ»Ð©¹¦·ò²ÅÄÜÅª¶®Ëü¡£ÄãÈç¹û»¹ÊÇ²»Ì«È·¶¨µÄ»°¾ÍÔÙÈ¥¶Á¶ÁFelixµÄ²©¿ÍÎÄÕÂ¡£  </p>
+        <p>è‡³å°‘å¯¹æˆ‘æ¥è¯´ï¼Œéœ€è¦ä¸€äº›åŠŸå¤«æ‰èƒ½å¼„æ‡‚å®ƒã€‚ä½ å¦‚æžœè¿˜æ˜¯ä¸å¤ªç¡®å®šçš„è¯å°±å†åŽ»è¯»è¯»Felixçš„åšå®¢æ–‡ç« ã€‚  </p>
 
-        <p>ÈÃÎÒÃÇÔÙÀ´×ÁÄ¥×ÁÄ¥Õâ¸öÐÂ¸ÅÄî¡£ÎÒÃÇÔõÃ´Ö¤Ã÷£¬ÔÚ´´½¨Íê·þÎñÆ÷Ö®ºó£¬¼´Ê¹Ã»ÓÐHTTPÇëÇó½øÀ´¡¢ÎÒÃÇµÄ»Øµ÷º¯ÊýÒ²Ã»ÓÐ±»µ÷ÓÃµÄÇé¿öÏÂ£¬ÎÒÃÇµÄ´úÂë»¹¼ÌÐøÓÐÐ§ÄØ£¿ÎÒÃÇÊÔÊÔÕâ¸ö£º  </p>
+        <p>è®©æˆ‘ä»¬å†æ¥ç¢ç£¨ç¢ç£¨è¿™ä¸ªæ–°æ¦‚å¿µã€‚æˆ‘ä»¬æ€Žä¹ˆè¯æ˜Žï¼Œåœ¨åˆ›å»ºå®ŒæœåŠ¡å™¨ä¹‹åŽï¼Œå³ä½¿æ²¡æœ‰HTTPè¯·æ±‚è¿›æ¥ã€æˆ‘ä»¬çš„å›žè°ƒå‡½æ•°ä¹Ÿæ²¡æœ‰è¢«è°ƒç”¨çš„æƒ…å†µä¸‹ï¼Œæˆ‘ä»¬çš„ä»£ç è¿˜ç»§ç»­æœ‰æ•ˆå‘¢ï¼Ÿæˆ‘ä»¬è¯•è¯•è¿™ä¸ªï¼š  </p>
 
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -580,67 +580,67 @@ tags : [nodejs, javascript]
                 class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Server has started."</span><span
                 class="pun">);</span></pre>
 
-        <p>×¢Òâ£ºÔÚ <em>onRequest</em> £¨ÎÒÃÇµÄ»Øµ÷º¯Êý£©´¥·¢µÄµØ·½£¬ÎÒÓÃ <em>console.log</em> Êä³öÁËÒ»¶ÎÎÄ±¾¡£ÔÚHTTP·þÎñÆ÷¿ªÊ¼¹¤×÷<em>Ö®ºó</em>£¬Ò²Êä³öÒ»¶ÎÎÄ±¾¡£  </p>
+        <p>æ³¨æ„ï¼šåœ¨ <em>onRequest</em> ï¼ˆæˆ‘ä»¬çš„å›žè°ƒå‡½æ•°ï¼‰è§¦å‘çš„åœ°æ–¹ï¼Œæˆ‘ç”¨ <em>console.log</em> è¾“å‡ºäº†ä¸€æ®µæ–‡æœ¬ã€‚åœ¨HTTPæœåŠ¡å™¨å¼€å§‹å·¥ä½œ<em>ä¹‹åŽ</em>ï¼Œä¹Ÿè¾“å‡ºä¸€æ®µæ–‡æœ¬ã€‚  </p>
 
         <p>
-            µ±ÎÒÃÇÓëÍù³£Ò»Ñù£¬ÔËÐÐËü<em>node server.js</em>Ê±£¬Ëü»áÂíÉÏÔÚÃüÁîÐÐÉÏÊä³ö¡°Server has started.¡±¡£µ±ÎÒÃÇÏò·þÎñÆ÷·¢³öÇëÇó£¨ÔÚä¯ÀÀÆ÷·ÃÎÊ<a href="http://localhost:8888/" rel="nofollow">http://localhost:8888/</a> £©£¬¡°Request received.¡±ÕâÌõÏûÏ¢¾Í»áÔÚÃüÁîÐÐÖÐ³öÏÖ¡£
+            å½“æˆ‘ä»¬ä¸Žå¾€å¸¸ä¸€æ ·ï¼Œè¿è¡Œå®ƒ<em>node server.js</em>æ—¶ï¼Œå®ƒä¼šé©¬ä¸Šåœ¨å‘½ä»¤è¡Œä¸Šè¾“å‡ºâ€œServer has started.â€ã€‚å½“æˆ‘ä»¬å‘æœåŠ¡å™¨å‘å‡ºè¯·æ±‚ï¼ˆåœ¨æµè§ˆå™¨è®¿é—®<a href="http://localhost:8888/" rel="nofollow">http://localhost:8888/</a> ï¼‰ï¼Œâ€œRequest received.â€è¿™æ¡æ¶ˆæ¯å°±ä¼šåœ¨å‘½ä»¤è¡Œä¸­å‡ºçŽ°ã€‚
         </p>
 
-        <p>Õâ¾ÍÊÇÊÂ¼þÇý¶¯µÄÒì²½·þÎñÆ÷¶ËJavaScriptºÍËüµÄ»Øµ÷À²£¡</p>
+        <p>è¿™å°±æ˜¯äº‹ä»¶é©±åŠ¨çš„å¼‚æ­¥æœåŠ¡å™¨ç«¯JavaScriptå’Œå®ƒçš„å›žè°ƒå•¦ï¼</p>
 
-        <p>£¨Çë×¢Òâ£¬µ±ÎÒÃÇÔÚ·þÎñÆ÷·ÃÎÊÍøÒ³Ê±£¬ÎÒÃÇµÄ·þÎñÆ÷¿ÉÄÜ»áÊä³öÁ½´Î¡°Request received.¡±¡£ÄÇÊÇÒòÎª´ó²¿·Ö·þÎñÆ÷¶¼»áÔÚÄã·ÃÎÊ http://localhost:8888 /Ê±³¢ÊÔ¶ÁÈ¡ http://localhost:8888/favicon.ico )</p>
+        <p>ï¼ˆè¯·æ³¨æ„ï¼Œå½“æˆ‘ä»¬åœ¨æœåŠ¡å™¨è®¿é—®ç½‘é¡µæ—¶ï¼Œæˆ‘ä»¬çš„æœåŠ¡å™¨å¯èƒ½ä¼šè¾“å‡ºä¸¤æ¬¡â€œRequest received.â€ã€‚é‚£æ˜¯å› ä¸ºå¤§éƒ¨åˆ†æœåŠ¡å™¨éƒ½ä¼šåœ¨ä½ è®¿é—® http://localhost:8888 /æ—¶å°è¯•è¯»å– http://localhost:8888/favicon.ico )</p>
 
         <a name="how-our-server-handles-requests"></a>
 
-        <h3>·þÎñÆ÷ÊÇÈçºÎ´¦ÀíÇëÇóµÄ</h3>
+        <h3>æœåŠ¡å™¨æ˜¯å¦‚ä½•å¤„ç†è¯·æ±‚çš„</h3>
 
-        <p>ºÃµÄ£¬½ÓÏÂÀ´ÎÒÃÇ¼òµ¥·ÖÎöÒ»ÏÂÎÒÃÇ·þÎñÆ÷´úÂëÖÐÊ£ÏÂµÄ²¿·Ö£¬Ò²¾ÍÊÇÎÒÃÇµÄ»Øµ÷º¯Êý <em>onRequest()</em> µÄÖ÷Ìå²¿·Ö¡£  </p>
+        <p>å¥½çš„ï¼ŒæŽ¥ä¸‹æ¥æˆ‘ä»¬ç®€å•åˆ†æžä¸€ä¸‹æˆ‘ä»¬æœåŠ¡å™¨ä»£ç ä¸­å‰©ä¸‹çš„éƒ¨åˆ†ï¼Œä¹Ÿå°±æ˜¯æˆ‘ä»¬çš„å›žè°ƒå‡½æ•° <em>onRequest()</em> çš„ä¸»ä½“éƒ¨åˆ†ã€‚  </p>
 
-        <p>µ±»Øµ÷Æô¶¯£¬ÎÒÃÇµÄ <em>onRequest()</em> º¯Êý±»´¥·¢µÄÊ±ºò£¬ÓÐÁ½¸ö²ÎÊý±»´«Èë£º <em>request</em> ºÍ <em>response</em> ¡£  </p>
+        <p>å½“å›žè°ƒå¯åŠ¨ï¼Œæˆ‘ä»¬çš„ <em>onRequest()</em> å‡½æ•°è¢«è§¦å‘çš„æ—¶å€™ï¼Œæœ‰ä¸¤ä¸ªå‚æ•°è¢«ä¼ å…¥ï¼š <em>request</em> å’Œ <em>response</em> ã€‚  </p>
 
-        <p>ËüÃÇÊÇ¶ÔÏó£¬Äã¿ÉÒÔÊ¹ÓÃËüÃÇµÄ·½·¨À´´¦ÀíHTTPÇëÇóµÄÏ¸½Ú£¬²¢ÇÒÏìÓ¦ÇëÇó£¨±ÈÈçÏò·¢³öÇëÇóµÄä¯ÀÀÆ÷·¢»ØÒ»Ð©¶«Î÷£©¡£  </p>
+        <p>å®ƒä»¬æ˜¯å¯¹è±¡ï¼Œä½ å¯ä»¥ä½¿ç”¨å®ƒä»¬çš„æ–¹æ³•æ¥å¤„ç†HTTPè¯·æ±‚çš„ç»†èŠ‚ï¼Œå¹¶ä¸”å“åº”è¯·æ±‚ï¼ˆæ¯”å¦‚å‘å‘å‡ºè¯·æ±‚çš„æµè§ˆå™¨å‘å›žä¸€äº›ä¸œè¥¿ï¼‰ã€‚  </p>
 
-        <p>ËùÒÔÎÒÃÇµÄ´úÂë¾ÍÊÇ£ºµ±ÊÕµ½ÇëÇóÊ±£¬Ê¹ÓÃ <em>response.writeHead()</em> º¯Êý·¢ËÍÒ»¸öHTTP×´Ì¬200ºÍHTTPÍ·µÄÄÚÈÝÀàÐÍ£¨content-type£©£¬Ê¹ÓÃ <em>response.write()</em> º¯ÊýÔÚHTTPÏàÓ¦Ö÷ÌåÖÐ·¢ËÍÎÄ±¾¡°Hello World"¡£  </p>
+        <p>æ‰€ä»¥æˆ‘ä»¬çš„ä»£ç å°±æ˜¯ï¼šå½“æ”¶åˆ°è¯·æ±‚æ—¶ï¼Œä½¿ç”¨ <em>response.writeHead()</em> å‡½æ•°å‘é€ä¸€ä¸ªHTTPçŠ¶æ€200å’ŒHTTPå¤´çš„å†…å®¹ç±»åž‹ï¼ˆcontent-typeï¼‰ï¼Œä½¿ç”¨ <em>response.write()</em> å‡½æ•°åœ¨HTTPç›¸åº”ä¸»ä½“ä¸­å‘é€æ–‡æœ¬â€œHello World"ã€‚  </p>
 
-        <p>×îºó£¬ÎÒÃÇµ÷ÓÃ <em>response.end()</em> Íê³ÉÏìÓ¦¡£  </p>
+        <p>æœ€åŽï¼Œæˆ‘ä»¬è°ƒç”¨ <em>response.end()</em> å®Œæˆå“åº”ã€‚  </p>
 
-        <p>Ä¿Ç°À´Ëµ£¬ÎÒÃÇ¶ÔÇëÇóµÄÏ¸½Ú²¢²»ÔÚÒâ£¬ËùÒÔÎÒÃÇÃ»ÓÐÊ¹ÓÃ <em>request</em> ¶ÔÏó¡£  </p>
+        <p>ç›®å‰æ¥è¯´ï¼Œæˆ‘ä»¬å¯¹è¯·æ±‚çš„ç»†èŠ‚å¹¶ä¸åœ¨æ„ï¼Œæ‰€ä»¥æˆ‘ä»¬æ²¡æœ‰ä½¿ç”¨ <em>request</em> å¯¹è±¡ã€‚  </p>
 
         <a name="finding-a-place-for-our-server-module"></a>
 
-        <h3>·þÎñ¶ËµÄÄ£¿é·ÅÔÚÄÄÀï</h3>
+        <h3>æœåŠ¡ç«¯çš„æ¨¡å—æ”¾åœ¨å“ªé‡Œ</h3>
 
-        <p>OK£¬¾ÍÏñÎÒ±£Ö¤¹ýµÄÄÇÑù£¬ÎÒÃÇÏÖÔÚ¿ÉÒÔ»Øµ½ÎÒÃÇÈçºÎ×éÖ¯Ó¦ÓÃÕâ¸öÎÊÌâÉÏÁË¡£ÎÒÃÇÏÖÔÚÔÚ <em>server.js</em> ÎÄ¼þÖÐÓÐÒ»¸ö·Ç³£»ù´¡µÄHTTP·þÎñÆ÷´úÂë£¬¶øÇÒÎÒÌáµ½Í¨³£ÎÒÃÇ»áÓÐÒ»¸ö½Ð <em>index.js</em> µÄÎÄ¼þÈ¥µ÷ÓÃÓ¦ÓÃµÄÆäËûÄ£¿é£¨±ÈÈç <em>server.js</em> ÖÐµÄHTTP·þÎñÆ÷Ä£¿é£©À´Òýµ¼ºÍÆô¶¯Ó¦ÓÃ¡£  </p>
+        <p>OKï¼Œå°±åƒæˆ‘ä¿è¯è¿‡çš„é‚£æ ·ï¼Œæˆ‘ä»¬çŽ°åœ¨å¯ä»¥å›žåˆ°æˆ‘ä»¬å¦‚ä½•ç»„ç»‡åº”ç”¨è¿™ä¸ªé—®é¢˜ä¸Šäº†ã€‚æˆ‘ä»¬çŽ°åœ¨åœ¨ <em>server.js</em> æ–‡ä»¶ä¸­æœ‰ä¸€ä¸ªéžå¸¸åŸºç¡€çš„HTTPæœåŠ¡å™¨ä»£ç ï¼Œè€Œä¸”æˆ‘æåˆ°é€šå¸¸æˆ‘ä»¬ä¼šæœ‰ä¸€ä¸ªå« <em>index.js</em> çš„æ–‡ä»¶åŽ»è°ƒç”¨åº”ç”¨çš„å…¶ä»–æ¨¡å—ï¼ˆæ¯”å¦‚ <em>server.js</em> ä¸­çš„HTTPæœåŠ¡å™¨æ¨¡å—ï¼‰æ¥å¼•å¯¼å’Œå¯åŠ¨åº”ç”¨ã€‚  </p>
 
-        <p>ÎÒÃÇÏÖÔÚ¾ÍÀ´Ì¸Ì¸ÔõÃ´°Ñserver.js±ä³ÉÒ»¸öÕæÕýµÄNode.jsÄ£¿é£¬Ê¹Ëü¿ÉÒÔ±»ÎÒÃÇ£¨»¹Ã»¶¯¹¤£©µÄ <em>index.js</em> Ö÷ÎÄ¼þÊ¹ÓÃ¡£</p>
+        <p>æˆ‘ä»¬çŽ°åœ¨å°±æ¥è°ˆè°ˆæ€Žä¹ˆæŠŠserver.jså˜æˆä¸€ä¸ªçœŸæ­£çš„Node.jsæ¨¡å—ï¼Œä½¿å®ƒå¯ä»¥è¢«æˆ‘ä»¬ï¼ˆè¿˜æ²¡åŠ¨å·¥ï¼‰çš„ <em>index.js</em> ä¸»æ–‡ä»¶ä½¿ç”¨ã€‚</p>
 
-        <p>Ò²ÐíÄãÒÑ¾­×¢Òâµ½£¬ÎÒÃÇÒÑ¾­ÔÚ´úÂëÖÐÊ¹ÓÃÁËÄ£¿éÁË¡£ÏñÕâÑù£º  </p>
+        <p>ä¹Ÿè®¸ä½ å·²ç»æ³¨æ„åˆ°ï¼Œæˆ‘ä»¬å·²ç»åœ¨ä»£ç ä¸­ä½¿ç”¨äº†æ¨¡å—äº†ã€‚åƒè¿™æ ·ï¼š  </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br><br></span><span class="pun">...</span><span
                 class="pln"><br><br>http</span><span class="pun">.</span><span class="pln">createServer</span><span
                 class="pun">(...);</span></pre>
 
-        <p>Node.jsÖÐ×Ô´øÁËÒ»¸ö½Ð×ö¡°http¡±µÄÄ£¿é£¬ÎÒÃÇÔÚÎÒÃÇµÄ´úÂëÖÐÇëÇóËü²¢°Ñ·µ»ØÖµ¸³¸øÒ»¸ö±¾µØ±äÁ¿¡£  </p>
+        <p>Node.jsä¸­è‡ªå¸¦äº†ä¸€ä¸ªå«åšâ€œhttpâ€çš„æ¨¡å—ï¼Œæˆ‘ä»¬åœ¨æˆ‘ä»¬çš„ä»£ç ä¸­è¯·æ±‚å®ƒå¹¶æŠŠè¿”å›žå€¼èµ‹ç»™ä¸€ä¸ªæœ¬åœ°å˜é‡ã€‚  </p>
 
-        <p>Õâ°ÑÎÒÃÇµÄ±¾µØ±äÁ¿±ä³ÉÁËÒ»¸öÓµÓÐËùÓÐ <em>http</em> Ä£¿éËùÌá¹©µÄ¹«¹²·½·¨µÄ¶ÔÏó¡£</p>
+        <p>è¿™æŠŠæˆ‘ä»¬çš„æœ¬åœ°å˜é‡å˜æˆäº†ä¸€ä¸ªæ‹¥æœ‰æ‰€æœ‰ <em>http</em> æ¨¡å—æ‰€æä¾›çš„å…¬å…±æ–¹æ³•çš„å¯¹è±¡ã€‚</p>
 
-        <p>¸øÕâÖÖ±¾µØ±äÁ¿ÆðÒ»¸öºÍÄ£¿éÃû³ÆÒ»ÑùµÄÃû×ÖÊÇÒ»ÖÖ¹ßÀý£¬µ«ÊÇÄãÒ²¿ÉÒÔ°´ÕÕ×Ô¼ºµÄÏ²ºÃÀ´£º  </p>
+        <p>ç»™è¿™ç§æœ¬åœ°å˜é‡èµ·ä¸€ä¸ªå’Œæ¨¡å—åç§°ä¸€æ ·çš„åå­—æ˜¯ä¸€ç§æƒ¯ä¾‹ï¼Œä½†æ˜¯ä½ ä¹Ÿå¯ä»¥æŒ‰ç…§è‡ªå·±çš„å–œå¥½æ¥ï¼š  </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> foo </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br><br></span><span class="pun">...</span><span
                 class="pln"><br><br>foo</span><span class="pun">.</span><span class="pln">createServer</span><span
                 class="pun">(...);</span></pre>
 
-        <p>ºÜºÃ£¬ÔõÃ´Ê¹ÓÃNode.jsÄÚ²¿Ä£¿éÒÑ¾­ºÜÇå³þÁË¡£ÎÒÃÇÔõÃ´´´½¨×Ô¼ºµÄÄ£¿é£¬ÓÖÔõÃ´Ê¹ÓÃËüÄØ£¿  </p>
+        <p>å¾ˆå¥½ï¼Œæ€Žä¹ˆä½¿ç”¨Node.jså†…éƒ¨æ¨¡å—å·²ç»å¾ˆæ¸…æ¥šäº†ã€‚æˆ‘ä»¬æ€Žä¹ˆåˆ›å»ºè‡ªå·±çš„æ¨¡å—ï¼Œåˆæ€Žä¹ˆä½¿ç”¨å®ƒå‘¢ï¼Ÿ  </p>
 
-        <p>µÈÎÒÃÇ°Ñ <em>server.js</em> ±ä³ÉÒ»¸öÕæÕýµÄÄ£¿é£¬Äã¾ÍÄÜ¸ãÃ÷°×ÁË¡£  </p>
+        <p>ç­‰æˆ‘ä»¬æŠŠ <em>server.js</em> å˜æˆä¸€ä¸ªçœŸæ­£çš„æ¨¡å—ï¼Œä½ å°±èƒ½æžæ˜Žç™½äº†ã€‚  </p>
 
-        <p>ÊÂÊµÉÏ£¬ÎÒÃÇ²»ÓÃ×öÌ«¶àµÄÐÞ¸Ä¡£°ÑÄ³¶Î´úÂë±ä³ÉÄ£¿éÒâÎ¶×ÅÎÒÃÇÐèÒª°ÑÎÒÃÇÏ£ÍûÌá¹©Æä¹¦ÄÜµÄ²¿·Ö <em>µ¼³ö</em> µ½ÇëÇóÕâ¸öÄ£¿éµÄ½Å±¾¡£  </p>
+        <p>äº‹å®žä¸Šï¼Œæˆ‘ä»¬ä¸ç”¨åšå¤ªå¤šçš„ä¿®æ”¹ã€‚æŠŠæŸæ®µä»£ç å˜æˆæ¨¡å—æ„å‘³ç€æˆ‘ä»¬éœ€è¦æŠŠæˆ‘ä»¬å¸Œæœ›æä¾›å…¶åŠŸèƒ½çš„éƒ¨åˆ† <em>å¯¼å‡º</em> åˆ°è¯·æ±‚è¿™ä¸ªæ¨¡å—çš„è„šæœ¬ã€‚  </p>
 
-        <p>Ä¿Ç°£¬ÎÒÃÇµÄHTTP·þÎñÆ÷ÐèÒªµ¼³öµÄ¹¦ÄÜ·Ç³£¼òµ¥£¬ÒòÎªÇëÇó·þÎñÆ÷Ä£¿éµÄ½Å±¾½ö½öÊÇÐèÒªÆô¶¯·þÎñÆ÷¶øÒÑ¡£  </p>
+        <p>ç›®å‰ï¼Œæˆ‘ä»¬çš„HTTPæœåŠ¡å™¨éœ€è¦å¯¼å‡ºçš„åŠŸèƒ½éžå¸¸ç®€å•ï¼Œå› ä¸ºè¯·æ±‚æœåŠ¡å™¨æ¨¡å—çš„è„šæœ¬ä»…ä»…æ˜¯éœ€è¦å¯åŠ¨æœåŠ¡å™¨è€Œå·²ã€‚  </p>
 
-        <p>ÎÒÃÇ°ÑÎÒÃÇµÄ·þÎñÆ÷½Å±¾·Åµ½Ò»¸ö½Ð×ö <em>start</em> µÄº¯ÊýÀï£¬È»ºóÎÒÃÇ»áµ¼³öÕâ¸öº¯Êý¡£  </p>
+        <p>æˆ‘ä»¬æŠŠæˆ‘ä»¬çš„æœåŠ¡å™¨è„šæœ¬æ”¾åˆ°ä¸€ä¸ªå«åš <em>start</em> çš„å‡½æ•°é‡Œï¼Œç„¶åŽæˆ‘ä»¬ä¼šå¯¼å‡ºè¿™ä¸ªå‡½æ•°ã€‚  </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br><br></span><span class="kwd">function</span><span
@@ -666,36 +666,36 @@ tags : [nodejs, javascript]
                 class="pun">.</span><span class="pln">start </span><span class="pun">=</span><span
                 class="pln"> start</span><span class="pun">;</span></pre>
 
-        <p>ÕâÑù£¬ÎÒÃÇÏÖÔÚ¾Í¿ÉÒÔ´´½¨ÎÒÃÇµÄÖ÷ÎÄ¼þ <em>index.js</em> ²¢ÔÚÆäÖÐÆô¶¯ÎÒÃÇµÄHTTPÁË£¬ËäÈ»·þÎñÆ÷µÄ´úÂë»¹ÔÚ <em>server.js</em> ÖÐ¡£  </p>
+        <p>è¿™æ ·ï¼Œæˆ‘ä»¬çŽ°åœ¨å°±å¯ä»¥åˆ›å»ºæˆ‘ä»¬çš„ä¸»æ–‡ä»¶ <em>index.js</em> å¹¶åœ¨å…¶ä¸­å¯åŠ¨æˆ‘ä»¬çš„HTTPäº†ï¼Œè™½ç„¶æœåŠ¡å™¨çš„ä»£ç è¿˜åœ¨ <em>server.js</em> ä¸­ã€‚  </p>
 
-        <p>´´½¨ <em>index.js</em> ÎÄ¼þ²¢Ð´ÈëÒÔÏÂÄÚÈÝ£º  </p>
+        <p>åˆ›å»º <em>index.js</em> æ–‡ä»¶å¹¶å†™å…¥ä»¥ä¸‹å†…å®¹ï¼š  </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> server </span><span class="pun">=</span><span
                 class="pln"> require</span><span class="pun">(</span><span class="str">"./server"</span><span
                 class="pun">);</span><span class="pln"><br><br>server</span><span class="pun">.</span><span class="pln">start</span><span
                 class="pun">();</span></pre>
 
-        <p>ÕýÈçÄãËù¿´µ½µÄ£¬ÎÒÃÇ¿ÉÒÔÏñÊ¹ÓÃÈÎºÎÆäËûµÄÄÚÖÃÄ£¿éÒ»ÑùÊ¹ÓÃserverÄ£¿é£ºÇëÇóÕâ¸öÎÄ¼þ²¢°ÑËüÖ¸ÏòÒ»¸ö±äÁ¿£¬ÆäÖÐÒÑµ¼³öµÄº¯Êý¾Í¿ÉÒÔ±»ÎÒÃÇÊ¹ÓÃÁË¡£</p>
+        <p>æ­£å¦‚ä½ æ‰€çœ‹åˆ°çš„ï¼Œæˆ‘ä»¬å¯ä»¥åƒä½¿ç”¨ä»»ä½•å…¶ä»–çš„å†…ç½®æ¨¡å—ä¸€æ ·ä½¿ç”¨serveræ¨¡å—ï¼šè¯·æ±‚è¿™ä¸ªæ–‡ä»¶å¹¶æŠŠå®ƒæŒ‡å‘ä¸€ä¸ªå˜é‡ï¼Œå…¶ä¸­å·²å¯¼å‡ºçš„å‡½æ•°å°±å¯ä»¥è¢«æˆ‘ä»¬ä½¿ç”¨äº†ã€‚</p>
 
-        <p>ºÃÁË¡£ÎÒÃÇÏÖÔÚ¾Í¿ÉÒÔ´ÓÎÒÃÇµÄÖ÷Òª½Å±¾Æô¶¯ÎÒÃÇµÄµÄÓ¦ÓÃÁË£¬¶øËü»¹ÊÇÀÏÑù×Ó£º</p>
+        <p>å¥½äº†ã€‚æˆ‘ä»¬çŽ°åœ¨å°±å¯ä»¥ä»Žæˆ‘ä»¬çš„ä¸»è¦è„šæœ¬å¯åŠ¨æˆ‘ä»¬çš„çš„åº”ç”¨äº†ï¼Œè€Œå®ƒè¿˜æ˜¯è€æ ·å­ï¼š</p>
         <pre>node index.js</pre>
 
-        <p>·Ç³£ºÃ£¬ÎÒÃÇÏÖÔÚ¿ÉÒÔ°ÑÎÒÃÇµÄÓ¦ÓÃµÄ²»Í¬²¿·Ö·ÅÈë²»Í¬µÄÎÄ¼þÀï£¬²¢ÇÒÍ¨¹ýÉú³ÉÄ£¿éµÄ·½Ê½°ÑËüÃÇÁ¬½Óµ½Ò»ÆðÁË¡£  </p>
+        <p>éžå¸¸å¥½ï¼Œæˆ‘ä»¬çŽ°åœ¨å¯ä»¥æŠŠæˆ‘ä»¬çš„åº”ç”¨çš„ä¸åŒéƒ¨åˆ†æ”¾å…¥ä¸åŒçš„æ–‡ä»¶é‡Œï¼Œå¹¶ä¸”é€šè¿‡ç”Ÿæˆæ¨¡å—çš„æ–¹å¼æŠŠå®ƒä»¬è¿žæŽ¥åˆ°ä¸€èµ·äº†ã€‚  </p>
 
-        <p>ÎÒÃÇÈÔÈ»Ö»ÓµÓÐÕû¸öÓ¦ÓÃµÄ×î³õ²¿·Ö£ºÎÒÃÇ¿ÉÒÔ½ÓÊÕHTTPÇëÇó¡£µ«ÊÇÎÒÃÇµÃ×öµãÊ²Ã´¡ª¡ª¶ÔÓÚ²»Í¬µÄURLÇëÇó£¬·þÎñÆ÷Ó¦¸ÃÓÐ²»Í¬µÄ·´Ó¦¡£  </p>
+        <p>æˆ‘ä»¬ä»ç„¶åªæ‹¥æœ‰æ•´ä¸ªåº”ç”¨çš„æœ€åˆéƒ¨åˆ†ï¼šæˆ‘ä»¬å¯ä»¥æŽ¥æ”¶HTTPè¯·æ±‚ã€‚ä½†æ˜¯æˆ‘ä»¬å¾—åšç‚¹ä»€ä¹ˆâ€”â€”å¯¹äºŽä¸åŒçš„URLè¯·æ±‚ï¼ŒæœåŠ¡å™¨åº”è¯¥æœ‰ä¸åŒçš„ååº”ã€‚  </p>
 
-        <p>¶ÔÓÚÒ»¸ö·Ç³£¼òµ¥µÄÓ¦ÓÃÀ´Ëµ£¬Äã¿ÉÒÔÖ±½ÓÔÚ»Øµ÷º¯Êý <em>onRequest()</em> ÖÐ×öÕâ¼þÊÂÇé¡£²»¹ý¾ÍÏñÎÒËµ¹ýµÄ£¬ÎÒÃÇÓ¦¸Ã¼ÓÈëÒ»Ð©³éÏóµÄÔªËØ£¬ÈÃÎÒÃÇµÄÀý×Ó±äµÃ¸üÓÐÈ¤Ò»µã¶ù¡£  </p>
+        <p>å¯¹äºŽä¸€ä¸ªéžå¸¸ç®€å•çš„åº”ç”¨æ¥è¯´ï¼Œä½ å¯ä»¥ç›´æŽ¥åœ¨å›žè°ƒå‡½æ•° <em>onRequest()</em> ä¸­åšè¿™ä»¶äº‹æƒ…ã€‚ä¸è¿‡å°±åƒæˆ‘è¯´è¿‡çš„ï¼Œæˆ‘ä»¬åº”è¯¥åŠ å…¥ä¸€äº›æŠ½è±¡çš„å…ƒç´ ï¼Œè®©æˆ‘ä»¬çš„ä¾‹å­å˜å¾—æ›´æœ‰è¶£ä¸€ç‚¹å„¿ã€‚  </p>
 
-        <p>´¦Àí²»Í¬µÄHTTPÇëÇóÔÚÎÒÃÇµÄ´úÂëÖÐÊÇÒ»¸ö²»Í¬µÄ²¿·Ö£¬½Ð×ö¡°Â·ÓÉÑ¡Ôñ¡±¡ª¡ªÄÇÃ´£¬ÎÒÃÇ½ÓÏÂÀ´¾Í´´ÔìÒ»¸ö½Ð×ö <em>Â·ÓÉ</em> µÄÄ£¿é°É¡£  </p>
+        <p>å¤„ç†ä¸åŒçš„HTTPè¯·æ±‚åœ¨æˆ‘ä»¬çš„ä»£ç ä¸­æ˜¯ä¸€ä¸ªä¸åŒçš„éƒ¨åˆ†ï¼Œå«åšâ€œè·¯ç”±é€‰æ‹©â€â€”â€”é‚£ä¹ˆï¼Œæˆ‘ä»¬æŽ¥ä¸‹æ¥å°±åˆ›é€ ä¸€ä¸ªå«åš <em>è·¯ç”±</em> çš„æ¨¡å—å§ã€‚  </p>
 
         <a name="whats-needed-to-route-requests"></a>
 
-        <h3>ÈçºÎÀ´½øÐÐÇëÇóµÄ¡°Â·ÓÉ¡±</h3> 
+        <h3>å¦‚ä½•æ¥è¿›è¡Œè¯·æ±‚çš„â€œè·¯ç”±â€</h3> 
 
-         <p>ÎÒÃÇÒªÎªÂ·ÓÉÌá¹©ÇëÇóµÄURLºÍÆäËûÐèÒªµÄGET¼°POST²ÎÊý£¬ËæºóÂ·ÓÉÐèÒª¸ù¾ÝÕâÐ©Êý¾ÝÀ´Ö´ÐÐÏàÓ¦µÄ´úÂë£¨ÕâÀï¡°´úÂë¡±¶ÔÓ¦Õû¸öÓ¦ÓÃµÄµÚÈý²¿·Ö£ºÒ»ÏµÁÐÔÚ½ÓÊÕµ½ÇëÇóÊ±ÕæÕý¹¤×÷µÄ´¦Àí³ÌÐò£©¡£</p>
+         <p>æˆ‘ä»¬è¦ä¸ºè·¯ç”±æä¾›è¯·æ±‚çš„URLå’Œå…¶ä»–éœ€è¦çš„GETåŠPOSTå‚æ•°ï¼ŒéšåŽè·¯ç”±éœ€è¦æ ¹æ®è¿™äº›æ•°æ®æ¥æ‰§è¡Œç›¸åº”çš„ä»£ç ï¼ˆè¿™é‡Œâ€œä»£ç â€å¯¹åº”æ•´ä¸ªåº”ç”¨çš„ç¬¬ä¸‰éƒ¨åˆ†ï¼šä¸€ç³»åˆ—åœ¨æŽ¥æ”¶åˆ°è¯·æ±‚æ—¶çœŸæ­£å·¥ä½œçš„å¤„ç†ç¨‹åºï¼‰ã€‚</p>
 
-        <p>Òò´Ë£¬ÎÒÃÇÐèÒª²é¿´HTTPÇëÇó£¬´ÓÖÐÌáÈ¡³öÇëÇóµÄURLÒÔ¼°GET/POST²ÎÊý¡£ÕâÒ»¹¦ÄÜÓ¦µ±ÊôÓÚÂ·ÓÉ»¹ÊÇ·þÎñÆ÷£¨ÉõÖÁ×÷ÎªÒ»¸öÄ£¿é×ÔÉíµÄ¹¦ÄÜ£©È·ÊµÖµµÃÌ½ÌÖ£¬µ«ÕâÀïÔÝ¶¨ÆäÎªÎÒÃÇµÄHTTP·þÎñÆ÷µÄ¹¦ÄÜ¡£</p>
+        <p>å› æ­¤ï¼Œæˆ‘ä»¬éœ€è¦æŸ¥çœ‹HTTPè¯·æ±‚ï¼Œä»Žä¸­æå–å‡ºè¯·æ±‚çš„URLä»¥åŠGET/POSTå‚æ•°ã€‚è¿™ä¸€åŠŸèƒ½åº”å½“å±žäºŽè·¯ç”±è¿˜æ˜¯æœåŠ¡å™¨ï¼ˆç”šè‡³ä½œä¸ºä¸€ä¸ªæ¨¡å—è‡ªèº«çš„åŠŸèƒ½ï¼‰ç¡®å®žå€¼å¾—æŽ¢è®¨ï¼Œä½†è¿™é‡Œæš‚å®šå…¶ä¸ºæˆ‘ä»¬çš„HTTPæœåŠ¡å™¨çš„åŠŸèƒ½ã€‚</p>
 
-        <p>ÎÒÃÇÐèÒªµÄËùÓÐÊý¾Ý¶¼»á°üº¬ÔÚrequest¶ÔÏóÖÐ£¬¸Ã¶ÔÏó×÷Îª<em>onRequest()</em>»Øµ÷º¯ÊýµÄµÚÒ»¸ö²ÎÊý´«µÝ¡£µ«ÊÇÎªÁË½âÎöÕâÐ©Êý¾Ý£¬ÎÒÃÇÐèÒª¶îÍâµÄNode.JSÄ£¿é£¬ËüÃÇ·Ö±ðÊÇ<em>url</em>ºÍ<em>querystring</em>Ä£¿é¡£</p>
+        <p>æˆ‘ä»¬éœ€è¦çš„æ‰€æœ‰æ•°æ®éƒ½ä¼šåŒ…å«åœ¨requestå¯¹è±¡ä¸­ï¼Œè¯¥å¯¹è±¡ä½œä¸º<em>onRequest()</em>å›žè°ƒå‡½æ•°çš„ç¬¬ä¸€ä¸ªå‚æ•°ä¼ é€’ã€‚ä½†æ˜¯ä¸ºäº†è§£æžè¿™äº›æ•°æ®ï¼Œæˆ‘ä»¬éœ€è¦é¢å¤–çš„Node.JSæ¨¡å—ï¼Œå®ƒä»¬åˆ†åˆ«æ˜¯<em>url</em>å’Œ<em>querystring</em>æ¨¡å—ã€‚</p>
 <pre>                               url.parse(string).query
                                            |
            url.parse(string).pathname      |
@@ -711,9 +711,9 @@ http://localhost:8888/start?foo=bar&amp;hello=world
                          querystring(string)["hello"]
 </pre>
 
-        <p>µ±È»ÎÒÃÇÒ²¿ÉÒÔÓÃ<em>querystring</em>Ä£¿éÀ´½âÎöPOSTÇëÇóÌåÖÐµÄ²ÎÊý£¬ÉÔºó»áÓÐÑÝÊ¾¡£</p>
+        <p>å½“ç„¶æˆ‘ä»¬ä¹Ÿå¯ä»¥ç”¨<em>querystring</em>æ¨¡å—æ¥è§£æžPOSTè¯·æ±‚ä½“ä¸­çš„å‚æ•°ï¼Œç¨åŽä¼šæœ‰æ¼”ç¤ºã€‚</p>
 
-        <p>ÏÖÔÚÎÒÃÇÀ´¸ø<em>onRequest()</em>º¯Êý¼ÓÉÏÒ»Ð©Âß¼­£¬ÓÃÀ´ÕÒ³öä¯ÀÀÆ÷ÇëÇóµÄURLÂ·¾¶£º</p>
+        <p>çŽ°åœ¨æˆ‘ä»¬æ¥ç»™<em>onRequest()</em>å‡½æ•°åŠ ä¸Šä¸€äº›é€»è¾‘ï¼Œç”¨æ¥æ‰¾å‡ºæµè§ˆå™¨è¯·æ±‚çš„URLè·¯å¾„ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br></span><span
@@ -748,11 +748,11 @@ http://localhost:8888/start?foo=bar&amp;hello=world
                 class="pun">.</span><span class="pln">start </span><span class="pun">=</span><span
                 class="pln"> start</span><span class="pun">;</span></pre>
 
-        <p>ºÃÁË£¬ÎÒÃÇµÄÓ¦ÓÃÏÖÔÚ¿ÉÒÔÍ¨¹ýÇëÇóµÄURLÂ·¾¶À´Çø±ð²»Í¬ÇëÇóÁË--ÕâÊ¹ÎÒÃÇµÃÒÔÊ¹ÓÃÂ·ÓÉ£¨»¹Î´Íê³É£©À´½«ÇëÇóÒÔURLÂ·¾¶Îª»ù×¼Ó³Éäµ½´¦Àí³ÌÐòÉÏ¡£</p>
+        <p>å¥½äº†ï¼Œæˆ‘ä»¬çš„åº”ç”¨çŽ°åœ¨å¯ä»¥é€šè¿‡è¯·æ±‚çš„URLè·¯å¾„æ¥åŒºåˆ«ä¸åŒè¯·æ±‚äº†--è¿™ä½¿æˆ‘ä»¬å¾—ä»¥ä½¿ç”¨è·¯ç”±ï¼ˆè¿˜æœªå®Œæˆï¼‰æ¥å°†è¯·æ±‚ä»¥URLè·¯å¾„ä¸ºåŸºå‡†æ˜ å°„åˆ°å¤„ç†ç¨‹åºä¸Šã€‚</p>
 
-        <p>ÔÚÎÒÃÇËùÒª¹¹½¨µÄÓ¦ÓÃÖÐ£¬ÕâÒâÎ¶×ÅÀ´×Ô<em>/start</em>ºÍ<em>/upload</em>µÄÇëÇó¿ÉÒÔÊ¹ÓÃ²»Í¬µÄ´úÂëÀ´´¦Àí¡£ÉÔºóÎÒÃÇ½«¿´µ½ÕâÐ©ÄÚÈÝÊÇÈçºÎÕûºÏµ½Ò»ÆðµÄ¡£</p>
+        <p>åœ¨æˆ‘ä»¬æ‰€è¦æž„å»ºçš„åº”ç”¨ä¸­ï¼Œè¿™æ„å‘³ç€æ¥è‡ª<em>/start</em>å’Œ<em>/upload</em>çš„è¯·æ±‚å¯ä»¥ä½¿ç”¨ä¸åŒçš„ä»£ç æ¥å¤„ç†ã€‚ç¨åŽæˆ‘ä»¬å°†çœ‹åˆ°è¿™äº›å†…å®¹æ˜¯å¦‚ä½•æ•´åˆåˆ°ä¸€èµ·çš„ã€‚</p>
 
-        <p>ÏÖÔÚÎÒÃÇ¿ÉÒÔÀ´±àÐ´Â·ÓÉÁË£¬½¨Á¢Ò»¸öÃûÎª<em>router.js</em>µÄÎÄ¼þ£¬Ìí¼ÓÒÔÏÂÄÚÈÝ£º</p>
+        <p>çŽ°åœ¨æˆ‘ä»¬å¯ä»¥æ¥ç¼–å†™è·¯ç”±äº†ï¼Œå»ºç«‹ä¸€ä¸ªåä¸º<em>router.js</em>çš„æ–‡ä»¶ï¼Œæ·»åŠ ä»¥ä¸‹å†…å®¹ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
                 class="pun">(</span><span class="pln">pathname</span><span class="pun">)</span><span
                 class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; console</span><span
@@ -762,11 +762,11 @@ http://localhost:8888/start?foo=bar&amp;hello=world
                 class="pun">.</span><span class="pln">route </span><span class="pun">=</span><span
                 class="pln"> route</span><span class="pun">;</span></pre>
 
-        <p>ÈçÄãËù¼û£¬Õâ¶Î´úÂëÊ²Ã´Ò²Ã»¸É£¬²»¹ý¶ÔÓÚÏÖÔÚÀ´ËµÕâÊÇÓ¦¸ÃµÄ¡£ÔÚÌí¼Ó¸ü¶àµÄÂß¼­ÒÔÇ°£¬ÎÒÃÇÏÈÀ´¿´¿´ÈçºÎ°ÑÂ·ÓÉºÍ·þÎñÆ÷ÕûºÏÆðÀ´¡£</p>
+        <p>å¦‚ä½ æ‰€è§ï¼Œè¿™æ®µä»£ç ä»€ä¹ˆä¹Ÿæ²¡å¹²ï¼Œä¸è¿‡å¯¹äºŽçŽ°åœ¨æ¥è¯´è¿™æ˜¯åº”è¯¥çš„ã€‚åœ¨æ·»åŠ æ›´å¤šçš„é€»è¾‘ä»¥å‰ï¼Œæˆ‘ä»¬å…ˆæ¥çœ‹çœ‹å¦‚ä½•æŠŠè·¯ç”±å’ŒæœåŠ¡å™¨æ•´åˆèµ·æ¥ã€‚</p>
 
-        <p>ÎÒÃÇµÄ·þÎñÆ÷Ó¦µ±ÖªµÀÂ·ÓÉµÄ´æÔÚ²¢¼ÓÒÔÓÐÐ§ÀûÓÃ¡£ÎÒÃÇµ±È»¿ÉÒÔÍ¨¹ýÓ²±àÂëµÄ·½Ê½½«ÕâÒ»ÒÀÀµÏî°ó¶¨µ½·þÎñÆ÷ÉÏ£¬µ«ÊÇÆäËüÓïÑÔµÄ±à³Ì¾­Ñé¸æËßÎÒÃÇÕâ»áÊÇÒ»¼þ·Ç³£Í´¿àµÄÊÂ£¬Òò´ËÎÒÃÇ½«Ê¹ÓÃÒÀÀµ×¢ÈëµÄ·½Ê½½ÏËÉÉ¢µØÌí¼ÓÂ·ÓÉÄ£¿é£¨Äã¿ÉÒÔ¶Á¶Á<a href="http://martinfowler.com/articles/injection.html">Martin Fowlers¹ØÓÚÒÀÀµ×¢ÈëµÄ´ó×÷</a>À´×÷Îª±³¾°ÖªÊ¶£©¡£</p>
+        <p>æˆ‘ä»¬çš„æœåŠ¡å™¨åº”å½“çŸ¥é“è·¯ç”±çš„å­˜åœ¨å¹¶åŠ ä»¥æœ‰æ•ˆåˆ©ç”¨ã€‚æˆ‘ä»¬å½“ç„¶å¯ä»¥é€šè¿‡ç¡¬ç¼–ç çš„æ–¹å¼å°†è¿™ä¸€ä¾èµ–é¡¹ç»‘å®šåˆ°æœåŠ¡å™¨ä¸Šï¼Œä½†æ˜¯å…¶å®ƒè¯­è¨€çš„ç¼–ç¨‹ç»éªŒå‘Šè¯‰æˆ‘ä»¬è¿™ä¼šæ˜¯ä¸€ä»¶éžå¸¸ç—›è‹¦çš„äº‹ï¼Œå› æ­¤æˆ‘ä»¬å°†ä½¿ç”¨ä¾èµ–æ³¨å…¥çš„æ–¹å¼è¾ƒæ¾æ•£åœ°æ·»åŠ è·¯ç”±æ¨¡å—ï¼ˆä½ å¯ä»¥è¯»è¯»<a href="http://martinfowler.com/articles/injection.html">Martin Fowlerså…³äºŽä¾èµ–æ³¨å…¥çš„å¤§ä½œ</a>æ¥ä½œä¸ºèƒŒæ™¯çŸ¥è¯†ï¼‰ã€‚</p>
 
-        <p>Ê×ÏÈ£¬ÎÒÃÇÀ´À©Õ¹Ò»ÏÂ·þÎñÆ÷µÄ<em>start()</em>º¯Êý£¬ÒÔ±ã½«Â·ÓÉº¯Êý×÷Îª²ÎÊý´«µÝ¹ýÈ¥£º</p>
+        <p>é¦–å…ˆï¼Œæˆ‘ä»¬æ¥æ‰©å±•ä¸€ä¸‹æœåŠ¡å™¨çš„<em>start()</em>å‡½æ•°ï¼Œä»¥ä¾¿å°†è·¯ç”±å‡½æ•°ä½œä¸ºå‚æ•°ä¼ é€’è¿‡åŽ»ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br></span><span
@@ -804,7 +804,7 @@ http://localhost:8888/start?foo=bar&amp;hello=world
                 class="pun">.</span><span class="pln">start </span><span class="pun">=</span><span
                 class="pln"> start</span><span class="pun">;</span></pre>
 
-        <p>Í¬Ê±£¬ÎÒÃÇ»áÏàÓ¦À©Õ¹<em>index.js</em>£¬Ê¹µÃÂ·ÓÉº¯Êý¿ÉÒÔ±»×¢Èëµ½·þÎñÆ÷ÖÐ£º</p>
+        <p>åŒæ—¶ï¼Œæˆ‘ä»¬ä¼šç›¸åº”æ‰©å±•<em>index.js</em>ï¼Œä½¿å¾—è·¯ç”±å‡½æ•°å¯ä»¥è¢«æ³¨å…¥åˆ°æœåŠ¡å™¨ä¸­ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> server </span><span class="pun">=</span><span
                 class="pln"> require</span><span class="pun">(</span><span class="str">"./server"</span><span
                 class="pun">);</span><span class="pln"><br></span><span class="kwd">var</span><span
@@ -814,45 +814,45 @@ http://localhost:8888/start?foo=bar&amp;hello=world
                 class="pln">router</span><span class="pun">.</span><span class="pln">route</span><span
                 class="pun">);</span><span class="pln"><br></span></pre>
 
-        <p>ÔÚÕâÀï£¬ÎÒÃÇ´«µÝµÄº¯ÊýÒÀ¾ÉÊ²Ã´Ò²Ã»×ö¡£</p>
+        <p>åœ¨è¿™é‡Œï¼Œæˆ‘ä»¬ä¼ é€’çš„å‡½æ•°ä¾æ—§ä»€ä¹ˆä¹Ÿæ²¡åšã€‚</p>
 
-        <p>Èç¹ûÏÖÔÚÆô¶¯Ó¦ÓÃ£¨<em>node index.js£¬Ê¼ÖÕ¼ÇµÃÕâ¸öÃüÁîÐÐ</em>£©£¬ËæºóÇëÇóÒ»¸öURL£¬Äã½«»á¿´µ½Ó¦ÓÃÊä³öÏàÓ¦µÄÐÅÏ¢£¬Õâ±íÃ÷ÎÒÃÇµÄHTTP·þÎñÆ÷ÒÑ¾­ÔÚÊ¹ÓÃÂ·ÓÉÄ£¿éÁË£¬²¢»á½«ÇëÇóµÄÂ·¾¶´«µÝ¸øÂ·ÓÉ£º</p>
+        <p>å¦‚æžœçŽ°åœ¨å¯åŠ¨åº”ç”¨ï¼ˆ<em>node index.jsï¼Œå§‹ç»ˆè®°å¾—è¿™ä¸ªå‘½ä»¤è¡Œ</em>ï¼‰ï¼ŒéšåŽè¯·æ±‚ä¸€ä¸ªURLï¼Œä½ å°†ä¼šçœ‹åˆ°åº”ç”¨è¾“å‡ºç›¸åº”çš„ä¿¡æ¯ï¼Œè¿™è¡¨æ˜Žæˆ‘ä»¬çš„HTTPæœåŠ¡å™¨å·²ç»åœ¨ä½¿ç”¨è·¯ç”±æ¨¡å—äº†ï¼Œå¹¶ä¼šå°†è¯·æ±‚çš„è·¯å¾„ä¼ é€’ç»™è·¯ç”±ï¼š</p>
 
         <pre>bash$ node index.js
 Request for /foo received.
 About to route a request for /foo</pre>
 
-        <p>£¨ÒÔÉÏÊä³öÒÑ¾­È¥µôÁË±È½Ï·³ÈËµÄ/favicon.icoÇëÇóÏà¹ØµÄ²¿·Ö£©¡£</p>
+        <p>ï¼ˆä»¥ä¸Šè¾“å‡ºå·²ç»åŽ»æŽ‰äº†æ¯”è¾ƒçƒ¦äººçš„/favicon.icoè¯·æ±‚ç›¸å…³çš„éƒ¨åˆ†ï¼‰ã€‚</p>
  
         <a name="execution-in-the-kongdom-of-verbs"></a> 
  
-        <h3>ÐÐÎªÇý¶¯Ö´ÐÐ</h3> 
+        <h3>è¡Œä¸ºé©±åŠ¨æ‰§è¡Œ</h3> 
 
-        <p>ÇëÔÊÐíÎÒÔÙ´ÎÍÑÀëÖ÷Ìâ£¬ÔÚÕâÀïÌ¸Ò»Ì¸º¯ÊýÊ½±à³Ì¡£</p>
+        <p>è¯·å…è®¸æˆ‘å†æ¬¡è„±ç¦»ä¸»é¢˜ï¼Œåœ¨è¿™é‡Œè°ˆä¸€è°ˆå‡½æ•°å¼ç¼–ç¨‹ã€‚</p>
 
-        <p>½«º¯Êý×÷Îª²ÎÊý´«µÝ²¢²»½ö½ö³öÓÚ¼¼ÊõÉÏµÄ¿¼Á¿¡£¶ÔÈí¼þÉè¼ÆÀ´Ëµ£¬ÕâÆäÊµÊÇ¸öÕÜÑ§ÎÊÌâ¡£ÏëÏëÕâÑùµÄ³¡¾°£ºÔÚindexÎÄ¼þÖÐ£¬ÎÒÃÇ¿ÉÒÔ½«<em>router</em>¶ÔÏó´«µÝ½øÈ¥£¬·þÎñÆ÷Ëæºó¿ÉÒÔµ÷ÓÃÕâ¸ö¶ÔÏóµÄ<em>route</em>º¯Êý¡£</p>
+        <p>å°†å‡½æ•°ä½œä¸ºå‚æ•°ä¼ é€’å¹¶ä¸ä»…ä»…å‡ºäºŽæŠ€æœ¯ä¸Šçš„è€ƒé‡ã€‚å¯¹è½¯ä»¶è®¾è®¡æ¥è¯´ï¼Œè¿™å…¶å®žæ˜¯ä¸ªå“²å­¦é—®é¢˜ã€‚æƒ³æƒ³è¿™æ ·çš„åœºæ™¯ï¼šåœ¨indexæ–‡ä»¶ä¸­ï¼Œæˆ‘ä»¬å¯ä»¥å°†<em>router</em>å¯¹è±¡ä¼ é€’è¿›åŽ»ï¼ŒæœåŠ¡å™¨éšåŽå¯ä»¥è°ƒç”¨è¿™ä¸ªå¯¹è±¡çš„<em>route</em>å‡½æ•°ã€‚</p>
 
-        <p>¾ÍÏñÕâÑù£¬ÎÒÃÇ´«µÝÒ»¸ö¶«Î÷£¬È»ºó·þÎñÆ÷ÀûÓÃÕâ¸ö¶«Î÷À´Íê³ÉÒ»Ð©ÊÂ¡£àËÄÇ¸ö½ÐÂ·ÓÉµÄ¶«Î÷£¬ÄÜ°ïÎÒ°ÑÕâ¸öÂ·ÓÉÒ»ÏÂÂð£¿</p>
+        <p>å°±åƒè¿™æ ·ï¼Œæˆ‘ä»¬ä¼ é€’ä¸€ä¸ªä¸œè¥¿ï¼Œç„¶åŽæœåŠ¡å™¨åˆ©ç”¨è¿™ä¸ªä¸œè¥¿æ¥å®Œæˆä¸€äº›äº‹ã€‚å—¨é‚£ä¸ªå«è·¯ç”±çš„ä¸œè¥¿ï¼Œèƒ½å¸®æˆ‘æŠŠè¿™ä¸ªè·¯ç”±ä¸€ä¸‹å—ï¼Ÿ</p>
 
-        <p>µ«ÊÇ·þÎñÆ÷ÆäÊµ²»ÐèÒªÕâÑùµÄ¶«Î÷¡£ËüÖ»ÐèÒª°ÑÊÂÇé×öÍê¾ÍÐÐ£¬ÆäÊµÎªÁË°ÑÊÂÇé×öÍê£¬Äã¸ù±¾²»ÐèÒª¶«Î÷£¬ÄãÐèÒªµÄÊÇ¶¯×÷¡£Ò²¾ÍÊÇËµ£¬Äã²»ÐèÒª<em>Ãû´Ê</em>£¬ÄãÐèÒª<em>¶¯´Ê</em>¡£</p>
+        <p>ä½†æ˜¯æœåŠ¡å™¨å…¶å®žä¸éœ€è¦è¿™æ ·çš„ä¸œè¥¿ã€‚å®ƒåªéœ€è¦æŠŠäº‹æƒ…åšå®Œå°±è¡Œï¼Œå…¶å®žä¸ºäº†æŠŠäº‹æƒ…åšå®Œï¼Œä½ æ ¹æœ¬ä¸éœ€è¦ä¸œè¥¿ï¼Œä½ éœ€è¦çš„æ˜¯åŠ¨ä½œã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œä½ ä¸éœ€è¦<em>åè¯</em>ï¼Œä½ éœ€è¦<em>åŠ¨è¯</em>ã€‚</p>
 
-        <p>Àí½âÁËÕâ¸ö¸ÅÄîÀï×îºËÐÄ¡¢×î»ù±¾µÄË¼Ïë×ª»»ºó£¬ÎÒ×ÔÈ»¶øÈ»µØÀí½âÁËº¯Êý±à³Ì¡£</p>
+        <p>ç†è§£äº†è¿™ä¸ªæ¦‚å¿µé‡Œæœ€æ ¸å¿ƒã€æœ€åŸºæœ¬çš„æ€æƒ³è½¬æ¢åŽï¼Œæˆ‘è‡ªç„¶è€Œç„¶åœ°ç†è§£äº†å‡½æ•°ç¼–ç¨‹ã€‚</p>
 
-        <p>ÎÒÊÇÔÚ¶ÁÁËSteve YeggeµÄ´ó×÷<a href="http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html">Ãû´ÊÍõ¹úÖÐµÄËÀÐÌ</a>Ö®ºóÀí½âº¯Êý±à³Ì¡£ÄãÒ²È¥¶ÁÒ»¶ÁÕâ±¾Êé°É£¬ÕæµÄ¡£ÕâÊÇÔø¸øÓèÎÒÔÄ¶ÁµÄ¿ìÀÖµÄ¹ØÓÚÈí¼þµÄÊé¼®Ö®Ò»¡£</p>
+        <p>æˆ‘æ˜¯åœ¨è¯»äº†Steve Yeggeçš„å¤§ä½œ<a href="http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html">åè¯çŽ‹å›½ä¸­çš„æ­»åˆ‘</a>ä¹‹åŽç†è§£å‡½æ•°ç¼–ç¨‹ã€‚ä½ ä¹ŸåŽ»è¯»ä¸€è¯»è¿™æœ¬ä¹¦å§ï¼ŒçœŸçš„ã€‚è¿™æ˜¯æ›¾ç»™äºˆæˆ‘é˜…è¯»çš„å¿«ä¹çš„å…³äºŽè½¯ä»¶çš„ä¹¦ç±ä¹‹ä¸€ã€‚</p>
 
         <a name="routing-to-real-request-handlers"></a> 
  
-        <h3>Â·ÓÉ¸øÕæÕýµÄÇëÇó´¦Àí³ÌÐò</h3> 
+        <h3>è·¯ç”±ç»™çœŸæ­£çš„è¯·æ±‚å¤„ç†ç¨‹åº</h3> 
 
-         <p>»Øµ½ÕýÌâ£¬ÏÖÔÚÎÒÃÇµÄHTTP·þÎñÆ÷ºÍÇëÇóÂ·ÓÉÄ£¿éÒÑ¾­ÈçÎÒÃÇµÄÆÚÍû£¬¿ÉÒÔÏà»¥½»Á÷ÁË£¬¾ÍÏñÒ»¶ÔÇ×ÃÜÎÞ¼äµÄÐÖµÜ¡£</p>
+         <p>å›žåˆ°æ­£é¢˜ï¼ŒçŽ°åœ¨æˆ‘ä»¬çš„HTTPæœåŠ¡å™¨å’Œè¯·æ±‚è·¯ç”±æ¨¡å—å·²ç»å¦‚æˆ‘ä»¬çš„æœŸæœ›ï¼Œå¯ä»¥ç›¸äº’äº¤æµäº†ï¼Œå°±åƒä¸€å¯¹äº²å¯†æ— é—´çš„å…„å¼Ÿã€‚</p>
 
-        <p>µ±È»Õâ»¹Ô¶Ô¶²»¹»£¬Â·ÓÉ£¬¹ËÃûË¼Òå£¬ÊÇÖ¸ÎÒÃÇÒªÕë¶Ô²»Í¬µÄURLÓÐ²»Í¬µÄ´¦Àí·½Ê½¡£ÀýÈç´¦Àí<em>/start</em>µÄ¡°ÒµÎñÂß¼­¡±¾ÍÓ¦¸ÃºÍ´¦Àí<em>/upload</em>µÄ²»Í¬¡£</p>
+        <p>å½“ç„¶è¿™è¿˜è¿œè¿œä¸å¤Ÿï¼Œè·¯ç”±ï¼Œé¡¾åæ€ä¹‰ï¼Œæ˜¯æŒ‡æˆ‘ä»¬è¦é’ˆå¯¹ä¸åŒçš„URLæœ‰ä¸åŒçš„å¤„ç†æ–¹å¼ã€‚ä¾‹å¦‚å¤„ç†<em>/start</em>çš„â€œä¸šåŠ¡é€»è¾‘â€å°±åº”è¯¥å’Œå¤„ç†<em>/upload</em>çš„ä¸åŒã€‚</p>
 
-        <p>ÔÚÏÖÔÚµÄÊµÏÖÏÂ£¬Â·ÓÉ¹ý³Ì»áÔÚÂ·ÓÉÄ£¿éÖÐ¡°½áÊø¡±£¬²¢ÇÒÂ·ÓÉÄ£¿é²¢²»ÊÇÕæÕýÕë¶ÔÇëÇó¡°²ÉÈ¡ÐÐ¶¯¡±µÄÄ£¿é£¬·ñÔòµ±ÎÒÃÇµÄÓ¦ÓÃ³ÌÐò±äµÃ¸üÎª¸´ÔÓÊ±£¬½«ÎÞ·¨ºÜºÃµØÀ©Õ¹¡£</p>
+        <p>åœ¨çŽ°åœ¨çš„å®žçŽ°ä¸‹ï¼Œè·¯ç”±è¿‡ç¨‹ä¼šåœ¨è·¯ç”±æ¨¡å—ä¸­â€œç»“æŸâ€ï¼Œå¹¶ä¸”è·¯ç”±æ¨¡å—å¹¶ä¸æ˜¯çœŸæ­£é’ˆå¯¹è¯·æ±‚â€œé‡‡å–è¡ŒåŠ¨â€çš„æ¨¡å—ï¼Œå¦åˆ™å½“æˆ‘ä»¬çš„åº”ç”¨ç¨‹åºå˜å¾—æ›´ä¸ºå¤æ‚æ—¶ï¼Œå°†æ— æ³•å¾ˆå¥½åœ°æ‰©å±•ã€‚</p>
 
-        <p>ÎÒÃÇÔÝÊ±°Ñ×÷ÎªÂ·ÓÉÄ¿±êµÄº¯Êý³ÆÎªÇëÇó´¦Àí³ÌÐò¡£ÏÖÔÚÎÒÃÇ²»Òª¼±×ÅÀ´¿ª·¢Â·ÓÉÄ£¿é£¬ÒòÎªÈç¹ûÇëÇó´¦Àí³ÌÐòÃ»ÓÐ¾ÍÐ÷µÄ»°£¬ÔÙÔõÃ´ÍêÉÆÂ·ÓÉÄ£¿éÒ²Ã»ÓÐ¶à´óÒâÒå¡£</p>
+        <p>æˆ‘ä»¬æš‚æ—¶æŠŠä½œä¸ºè·¯ç”±ç›®æ ‡çš„å‡½æ•°ç§°ä¸ºè¯·æ±‚å¤„ç†ç¨‹åºã€‚çŽ°åœ¨æˆ‘ä»¬ä¸è¦æ€¥ç€æ¥å¼€å‘è·¯ç”±æ¨¡å—ï¼Œå› ä¸ºå¦‚æžœè¯·æ±‚å¤„ç†ç¨‹åºæ²¡æœ‰å°±ç»ªçš„è¯ï¼Œå†æ€Žä¹ˆå®Œå–„è·¯ç”±æ¨¡å—ä¹Ÿæ²¡æœ‰å¤šå¤§æ„ä¹‰ã€‚</p>
 
-        <p>Ó¦ÓÃ³ÌÐòÐèÒªÐÂµÄ²¿¼þ£¬Òò´Ë¼ÓÈëÐÂµÄÄ£¿é -- ÒÑ¾­ÎÞÐèÎª´Ë¸Ðµ½ÐÂÆæÁË¡£ÎÒÃÇÀ´´´½¨Ò»¸ö½Ð×örequestHandlersµÄÄ£¿é£¬²¢¶ÔÓÚÃ¿Ò»¸öÇëÇó´¦Àí³ÌÐò£¬Ìí¼ÓÒ»¸öÕ¼Î»ÓÃº¯Êý£¬Ëæºó½«ÕâÐ©º¯Êý×÷ÎªÄ£¿éµÄ·½·¨µ¼³ö£º</p>
+        <p>åº”ç”¨ç¨‹åºéœ€è¦æ–°çš„éƒ¨ä»¶ï¼Œå› æ­¤åŠ å…¥æ–°çš„æ¨¡å— -- å·²ç»æ— éœ€ä¸ºæ­¤æ„Ÿåˆ°æ–°å¥‡äº†ã€‚æˆ‘ä»¬æ¥åˆ›å»ºä¸€ä¸ªå«åšrequestHandlersçš„æ¨¡å—ï¼Œå¹¶å¯¹äºŽæ¯ä¸€ä¸ªè¯·æ±‚å¤„ç†ç¨‹åºï¼Œæ·»åŠ ä¸€ä¸ªå ä½ç”¨å‡½æ•°ï¼ŒéšåŽå°†è¿™äº›å‡½æ•°ä½œä¸ºæ¨¡å—çš„æ–¹æ³•å¯¼å‡ºï¼š</p>
 
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> start</span><span
                 class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; console</span><span
@@ -867,29 +867,29 @@ About to route a request for /foo</pre>
                 class="pun">.</span><span class="pln">upload </span><span class="pun">=</span><span
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
-        <p>ÕâÑùÎÒÃÇ¾Í¿ÉÒÔ°ÑÇëÇó´¦Àí³ÌÐòºÍÂ·ÓÉÄ£¿éÁ¬½ÓÆðÀ´£¬ÈÃÂ·ÓÉ¡°ÓÐÂ·¿ÉÑ°¡±¡£</p>
+        <p>è¿™æ ·æˆ‘ä»¬å°±å¯ä»¥æŠŠè¯·æ±‚å¤„ç†ç¨‹åºå’Œè·¯ç”±æ¨¡å—è¿žæŽ¥èµ·æ¥ï¼Œè®©è·¯ç”±â€œæœ‰è·¯å¯å¯»â€ã€‚</p>
 
-        <p>ÔÚÕâÀïÎÒÃÇµÃ×ö¸ö¾ö¶¨£ºÊÇ½«requestHandlersÄ£¿éÓ²±àÂëµ½Â·ÓÉÀïÀ´Ê¹ÓÃ£¬»¹ÊÇÔÙÌí¼ÓÒ»µãÒÀÀµ×¢Èë£¿ËäÈ»ºÍÆäËûÄ£Ê½Ò»Ñù£¬ÒÀÀµ×¢Èë²»Ó¦¸Ã½ö½öÎªÊ¹ÓÃ¶øÊ¹ÓÃ£¬µ«ÔÚÏÖÔÚÕâ¸öÇé¿öÏÂ£¬Ê¹ÓÃÒÀÀµ×¢Èë¿ÉÒÔÈÃÂ·ÓÉºÍÇëÇó´¦Àí³ÌÐòÖ®¼äµÄñîºÏ¸ü¼ÓËÉÉ¢£¬Ò²Òò´ËÄÜÈÃÂ·ÓÉµÄÖØÓÃÐÔ¸ü¸ß¡£</p>
+        <p>åœ¨è¿™é‡Œæˆ‘ä»¬å¾—åšä¸ªå†³å®šï¼šæ˜¯å°†requestHandlersæ¨¡å—ç¡¬ç¼–ç åˆ°è·¯ç”±é‡Œæ¥ä½¿ç”¨ï¼Œè¿˜æ˜¯å†æ·»åŠ ä¸€ç‚¹ä¾èµ–æ³¨å…¥ï¼Ÿè™½ç„¶å’Œå…¶ä»–æ¨¡å¼ä¸€æ ·ï¼Œä¾èµ–æ³¨å…¥ä¸åº”è¯¥ä»…ä»…ä¸ºä½¿ç”¨è€Œä½¿ç”¨ï¼Œä½†åœ¨çŽ°åœ¨è¿™ä¸ªæƒ…å†µä¸‹ï¼Œä½¿ç”¨ä¾èµ–æ³¨å…¥å¯ä»¥è®©è·¯ç”±å’Œè¯·æ±‚å¤„ç†ç¨‹åºä¹‹é—´çš„è€¦åˆæ›´åŠ æ¾æ•£ï¼Œä¹Ÿå› æ­¤èƒ½è®©è·¯ç”±çš„é‡ç”¨æ€§æ›´é«˜ã€‚</p>
 
-        <p>ÕâÒâÎ¶×ÅÎÒÃÇµÃ½«ÇëÇó´¦Àí³ÌÐò´Ó·þÎñÆ÷´«µÝµ½Â·ÓÉÖÐ£¬µ«¸Ð¾õÉÏÕâÃ´×ö¸üÀëÆ×ÁË£¬ÎÒÃÇµÃÒ»Â·°ÑÕâ¶ÑÇëÇó´¦Àí³ÌÐò´ÓÎÒÃÇµÄÖ÷ÎÄ¼þ´«µÝµ½·þÎñÆ÷ÖÐ£¬ÔÙ½«Ö®´Ó·þÎñÆ÷´«µÝµ½Â·ÓÉ¡£</p>
+        <p>è¿™æ„å‘³ç€æˆ‘ä»¬å¾—å°†è¯·æ±‚å¤„ç†ç¨‹åºä»ŽæœåŠ¡å™¨ä¼ é€’åˆ°è·¯ç”±ä¸­ï¼Œä½†æ„Ÿè§‰ä¸Šè¿™ä¹ˆåšæ›´ç¦»è°±äº†ï¼Œæˆ‘ä»¬å¾—ä¸€è·¯æŠŠè¿™å †è¯·æ±‚å¤„ç†ç¨‹åºä»Žæˆ‘ä»¬çš„ä¸»æ–‡ä»¶ä¼ é€’åˆ°æœåŠ¡å™¨ä¸­ï¼Œå†å°†ä¹‹ä»ŽæœåŠ¡å™¨ä¼ é€’åˆ°è·¯ç”±ã€‚</p>
 
-        <p>ÄÇÃ´ÎÒÃÇÒªÔõÃ´´«µÝÕâÐ©ÇëÇó´¦Àí³ÌÐòÄØ£¿±ð¿´ÏÖÔÚÎÒÃÇÖ»ÓÐ2¸ö´¦Àí³ÌÐò£¬ÔÚÒ»¸öÕæÊµµÄÓ¦ÓÃÖÐ£¬ÇëÇó´¦Àí³ÌÐòµÄÊýÁ¿»á²»¶ÏÔö¼Ó£¬ÎÒÃÇµ±È»²»ÏëÃ¿´ÎÓÐÒ»¸öÐÂµÄURL»òÇëÇó´¦Àí³ÌÐòÊ±£¬¶¼ÒªÎªÁËÔÚÂ·ÓÉÀïÍê³ÉÇëÇóµ½´¦Àí³ÌÐòµÄÓ³Éä¶ø·´¸´ÕÛÌÚ¡£³ý´ËÖ®Íâ£¬ÔÚÂ·ÓÉÀïÓÐÒ»´ó¶Ñ<em>if request == x then call handler y</em>Ò²Ê¹µÃÏµÍ³³óÂª²»¿°¡£</p>
+        <p>é‚£ä¹ˆæˆ‘ä»¬è¦æ€Žä¹ˆä¼ é€’è¿™äº›è¯·æ±‚å¤„ç†ç¨‹åºå‘¢ï¼Ÿåˆ«çœ‹çŽ°åœ¨æˆ‘ä»¬åªæœ‰2ä¸ªå¤„ç†ç¨‹åºï¼Œåœ¨ä¸€ä¸ªçœŸå®žçš„åº”ç”¨ä¸­ï¼Œè¯·æ±‚å¤„ç†ç¨‹åºçš„æ•°é‡ä¼šä¸æ–­å¢žåŠ ï¼Œæˆ‘ä»¬å½“ç„¶ä¸æƒ³æ¯æ¬¡æœ‰ä¸€ä¸ªæ–°çš„URLæˆ–è¯·æ±‚å¤„ç†ç¨‹åºæ—¶ï¼Œéƒ½è¦ä¸ºäº†åœ¨è·¯ç”±é‡Œå®Œæˆè¯·æ±‚åˆ°å¤„ç†ç¨‹åºçš„æ˜ å°„è€Œåå¤æŠ˜è…¾ã€‚é™¤æ­¤ä¹‹å¤–ï¼Œåœ¨è·¯ç”±é‡Œæœ‰ä¸€å¤§å †<em>if request == x then call handler y</em>ä¹Ÿä½¿å¾—ç³»ç»Ÿä¸‘é™‹ä¸å ªã€‚</p>
 
-        <p>×ÐÏ¸ÏëÏë£¬ÓÐÒ»´ó¶Ñ¶«Î÷£¬Ã¿¸ö¶¼ÒªÓ³Éäµ½Ò»¸ö×Ö·û´®£¨¾ÍÊÇÇëÇóµÄURL£©ÉÏ£¿ËÆºõ¹ØÁªÊý×é£¨associative array£©ÄÜÍêÃÀÊ¤ÈÎ¡£</p>
+        <p>ä»”ç»†æƒ³æƒ³ï¼Œæœ‰ä¸€å¤§å †ä¸œè¥¿ï¼Œæ¯ä¸ªéƒ½è¦æ˜ å°„åˆ°ä¸€ä¸ªå­—ç¬¦ä¸²ï¼ˆå°±æ˜¯è¯·æ±‚çš„URLï¼‰ä¸Šï¼Ÿä¼¼ä¹Žå…³è”æ•°ç»„ï¼ˆassociative arrayï¼‰èƒ½å®Œç¾Žèƒœä»»ã€‚</p>
 
-        <p>²»¹ý½á¹ûÓÐµãÁîÈËÊ§Íû£¬JavaScriptÃ»Ìá¹©¹ØÁªÊý×é -- Ò²¿ÉÒÔËµËüÌá¹©ÁË£¿ÊÂÊµÉÏ£¬ÔÚJavaScriptÖÐ£¬ÕæÕýÄÜÌá¹©´ËÀà¹¦ÄÜµÄÊÇËüµÄ¶ÔÏó¡£</p>
+        <p>ä¸è¿‡ç»“æžœæœ‰ç‚¹ä»¤äººå¤±æœ›ï¼ŒJavaScriptæ²¡æä¾›å…³è”æ•°ç»„ -- ä¹Ÿå¯ä»¥è¯´å®ƒæä¾›äº†ï¼Ÿäº‹å®žä¸Šï¼Œåœ¨JavaScriptä¸­ï¼ŒçœŸæ­£èƒ½æä¾›æ­¤ç±»åŠŸèƒ½çš„æ˜¯å®ƒçš„å¯¹è±¡ã€‚</p>
 
-        <p>ÔÚÕâ·½Ãæ£¬<a href="http://msdn.microsoft.com/en-us/magazine/cc163419.aspx">http://msdn.microsoft.com/en-us/magazine/cc163419.aspx</a>ÓÐÒ»¸ö²»´íµÄ½éÉÜ£¬ÎÒÔÚ´ËÕªÂ¼Ò»¶Î£º</p>
+        <p>åœ¨è¿™æ–¹é¢ï¼Œ<a href="http://msdn.microsoft.com/en-us/magazine/cc163419.aspx">http://msdn.microsoft.com/en-us/magazine/cc163419.aspx</a>æœ‰ä¸€ä¸ªä¸é”™çš„ä»‹ç»ï¼Œæˆ‘åœ¨æ­¤æ‘˜å½•ä¸€æ®µï¼š</p>
 
          <blockquote>
-            <p>ÔÚC++»òC#ÖÐ£¬µ±ÎÒÃÇÌ¸µ½¶ÔÏó£¬Ö¸µÄÊÇÀà»òÕß½á¹¹ÌåµÄÊµÀý¡£¶ÔÏó¸ù¾ÝËûÃÇÊµÀý»¯µÄÄ£°å£¨¾ÍÊÇËùÎ½µÄÀà£©£¬»áÓµÓÐ²»Í¬µÄÊôÐÔºÍ·½·¨¡£µ«ÔÚJavaScriptÀï¶ÔÏó²»ÊÇÕâ¸ö¸ÅÄî¡£ÔÚJavaScriptÖÐ£¬¶ÔÏó¾ÍÊÇÒ»¸ö¼ü/Öµ¶ÔµÄ¼¯ºÏ -- Äã¿ÉÒÔ°ÑJavaScriptµÄ¶ÔÏóÏëÏó³ÉÒ»¸ö¼üÎª×Ö·û´®ÀàÐÍµÄ×Öµä¡£</p>
+            <p>åœ¨C++æˆ–C#ä¸­ï¼Œå½“æˆ‘ä»¬è°ˆåˆ°å¯¹è±¡ï¼ŒæŒ‡çš„æ˜¯ç±»æˆ–è€…ç»“æž„ä½“çš„å®žä¾‹ã€‚å¯¹è±¡æ ¹æ®ä»–ä»¬å®žä¾‹åŒ–çš„æ¨¡æ¿ï¼ˆå°±æ˜¯æ‰€è°“çš„ç±»ï¼‰ï¼Œä¼šæ‹¥æœ‰ä¸åŒçš„å±žæ€§å’Œæ–¹æ³•ã€‚ä½†åœ¨JavaScripté‡Œå¯¹è±¡ä¸æ˜¯è¿™ä¸ªæ¦‚å¿µã€‚åœ¨JavaScriptä¸­ï¼Œå¯¹è±¡å°±æ˜¯ä¸€ä¸ªé”®/å€¼å¯¹çš„é›†åˆ -- ä½ å¯ä»¥æŠŠJavaScriptçš„å¯¹è±¡æƒ³è±¡æˆä¸€ä¸ªé”®ä¸ºå­—ç¬¦ä¸²ç±»åž‹çš„å­—å…¸ã€‚</p>
         </blockquote>
 
-        <p>µ«Èç¹ûJavaScriptµÄ¶ÔÏó½ö½öÊÇ¼ü/Öµ¶ÔµÄ¼¯ºÏ£¬ËüÓÖÔõÃ´»áÓµÓÐ·½·¨ÄØ£¿ºÃ°É£¬ÕâÀïµÄÖµ¿ÉÒÔÊÇ×Ö·û´®¡¢Êý×Ö»òÕß¡­¡­º¯Êý£¡</p>
+        <p>ä½†å¦‚æžœJavaScriptçš„å¯¹è±¡ä»…ä»…æ˜¯é”®/å€¼å¯¹çš„é›†åˆï¼Œå®ƒåˆæ€Žä¹ˆä¼šæ‹¥æœ‰æ–¹æ³•å‘¢ï¼Ÿå¥½å§ï¼Œè¿™é‡Œçš„å€¼å¯ä»¥æ˜¯å­—ç¬¦ä¸²ã€æ•°å­—æˆ–è€…â€¦â€¦å‡½æ•°ï¼</p>
 
-        <p>ºÃÁË£¬×îºóÔÙ»Øµ½´úÂëÉÏÀ´¡£ÏÖÔÚÎÒÃÇÒÑ¾­È·¶¨½«Ò»ÏµÁÐÇëÇó´¦Àí³ÌÐòÍ¨¹ýÒ»¸ö¶ÔÏóÀ´´«µÝ£¬²¢ÇÒÐèÒªÊ¹ÓÃËÉñîºÏµÄ·½Ê½½«Õâ¸ö¶ÔÏó×¢Èëµ½<em>route()</em>º¯ÊýÖÐ¡£</p>
+        <p>å¥½äº†ï¼Œæœ€åŽå†å›žåˆ°ä»£ç ä¸Šæ¥ã€‚çŽ°åœ¨æˆ‘ä»¬å·²ç»ç¡®å®šå°†ä¸€ç³»åˆ—è¯·æ±‚å¤„ç†ç¨‹åºé€šè¿‡ä¸€ä¸ªå¯¹è±¡æ¥ä¼ é€’ï¼Œå¹¶ä¸”éœ€è¦ä½¿ç”¨æ¾è€¦åˆçš„æ–¹å¼å°†è¿™ä¸ªå¯¹è±¡æ³¨å…¥åˆ°<em>route()</em>å‡½æ•°ä¸­ã€‚</p>
 
-        <p>ÎÒÃÇÏÈ½«Õâ¸ö¶ÔÏóÒýÈëµ½Ö÷ÎÄ¼þ<em>index.js</em>ÖÐ£º</p>
+        <p>æˆ‘ä»¬å…ˆå°†è¿™ä¸ªå¯¹è±¡å¼•å…¥åˆ°ä¸»æ–‡ä»¶<em>index.js</em>ä¸­ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> server </span><span class="pun">=</span><span
                 class="pln"> require</span><span class="pun">(</span><span class="str">"./server"</span><span
                 class="pun">);</span><span class="pln"><br></span><span class="kwd">var</span><span
@@ -912,11 +912,11 @@ About to route a request for /foo</pre>
                 class="pln">router</span><span class="pun">.</span><span class="pln">route</span><span
                 class="pun">,</span><span class="pln"> handle</span><span class="pun">);</span></pre>
 
-        <p>ËäÈ»<em>handle</em>²¢²»½ö½öÊÇÒ»¸ö¡°¶«Î÷¡±£¨Ò»Ð©ÇëÇó´¦Àí³ÌÐòµÄ¼¯ºÏ£©£¬ÎÒ»¹ÊÇ½¨ÒéÒÔÒ»¸ö¶¯´Ê×÷ÎªÆäÃüÃû£¬ÕâÑù×ö¿ÉÒÔÈÃÎÒÃÇÔÚÂ·ÓÉÖÐÊ¹ÓÃ¸üÁ÷³©µÄ±í´ïÊ½£¬ÉÔºó»áÓÐËµÃ÷¡£</p>
+        <p>è™½ç„¶<em>handle</em>å¹¶ä¸ä»…ä»…æ˜¯ä¸€ä¸ªâ€œä¸œè¥¿â€ï¼ˆä¸€äº›è¯·æ±‚å¤„ç†ç¨‹åºçš„é›†åˆï¼‰ï¼Œæˆ‘è¿˜æ˜¯å»ºè®®ä»¥ä¸€ä¸ªåŠ¨è¯ä½œä¸ºå…¶å‘½åï¼Œè¿™æ ·åšå¯ä»¥è®©æˆ‘ä»¬åœ¨è·¯ç”±ä¸­ä½¿ç”¨æ›´æµç•…çš„è¡¨è¾¾å¼ï¼Œç¨åŽä¼šæœ‰è¯´æ˜Žã€‚</p>
 
-        <p>ÕýÈçËù¼û£¬½«²»Í¬µÄURLÓ³Éäµ½ÏàÍ¬µÄÇëÇó´¦Àí³ÌÐòÉÏÊÇºÜÈÝÒ×µÄ£ºÖ»ÒªÔÚ¶ÔÏóÖÐÌí¼ÓÒ»¸ö¼üÎª<em>"/"</em>µÄÊôÐÔ£¬¶ÔÓ¦<em>requestHandlers.start</em>¼´¿É£¬ÕâÑùÎÒÃÇ¾Í¿ÉÒÔ¸É¾»¼ò½àµØÅäÖÃ<em>/start</em>ºÍ<em>/</em>µÄÇëÇó¶¼½»ÓÉ<em>start</em>ÕâÒ»´¦Àí³ÌÐò´¦Àí¡£</p>
+        <p>æ­£å¦‚æ‰€è§ï¼Œå°†ä¸åŒçš„URLæ˜ å°„åˆ°ç›¸åŒçš„è¯·æ±‚å¤„ç†ç¨‹åºä¸Šæ˜¯å¾ˆå®¹æ˜“çš„ï¼šåªè¦åœ¨å¯¹è±¡ä¸­æ·»åŠ ä¸€ä¸ªé”®ä¸º<em>"/"</em>çš„å±žæ€§ï¼Œå¯¹åº”<em>requestHandlers.start</em>å³å¯ï¼Œè¿™æ ·æˆ‘ä»¬å°±å¯ä»¥å¹²å‡€ç®€æ´åœ°é…ç½®<em>/start</em>å’Œ<em>/</em>çš„è¯·æ±‚éƒ½äº¤ç”±<em>start</em>è¿™ä¸€å¤„ç†ç¨‹åºå¤„ç†ã€‚</p>
 
-        <p>ÔÚÍê³ÉÁË¶ÔÏóµÄ¶¨Òåºó£¬ÎÒÃÇ°ÑËü×÷Îª¶îÍâµÄ²ÎÊý´«µÝ¸ø·þÎñÆ÷£¬Îª´Ë½«<em>server.js</em>ÐÞ¸ÄÈçÏÂ£º</p>
+        <p>åœ¨å®Œæˆäº†å¯¹è±¡çš„å®šä¹‰åŽï¼Œæˆ‘ä»¬æŠŠå®ƒä½œä¸ºé¢å¤–çš„å‚æ•°ä¼ é€’ç»™æœåŠ¡å™¨ï¼Œä¸ºæ­¤å°†<em>server.js</em>ä¿®æ”¹å¦‚ä¸‹ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
                 class="str">"http"</span><span class="pun">);</span><span class="pln"><br></span><span
@@ -955,9 +955,9 @@ About to route a request for /foo</pre>
                 class="pun">.</span><span class="pln">start </span><span class="pun">=</span><span
                 class="pln"> start</span><span class="pun">;</span></pre>
 
-        <p>ÕâÑùÎÒÃÇ¾ÍÔÚ<em>start()</em>º¯ÊýÀïÌí¼ÓÁË<em>handle</em>²ÎÊý£¬²¢ÇÒ°Ñhandle¶ÔÏó×÷ÎªµÚÒ»¸ö²ÎÊý´«µÝ¸øÁË<em>route()</em>»Øµ÷º¯Êý¡£</p>
+        <p>è¿™æ ·æˆ‘ä»¬å°±åœ¨<em>start()</em>å‡½æ•°é‡Œæ·»åŠ äº†<em>handle</em>å‚æ•°ï¼Œå¹¶ä¸”æŠŠhandleå¯¹è±¡ä½œä¸ºç¬¬ä¸€ä¸ªå‚æ•°ä¼ é€’ç»™äº†<em>route()</em>å›žè°ƒå‡½æ•°ã€‚</p>
 
-        <p>È»ºóÎÒÃÇÏàÓ¦µØÔÚ<em>route.js</em>ÎÄ¼þÖÐÐÞ¸Ä<em>route()</em>º¯Êý£º</p>
+        <p>ç„¶åŽæˆ‘ä»¬ç›¸åº”åœ°åœ¨<em>route.js</em>æ–‡ä»¶ä¸­ä¿®æ”¹<em>route()</em>å‡½æ•°ï¼š</p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
                 class="pun">(</span><span class="pln">handle</span><span class="pun">,</span><span
                 class="pln"> pathname</span><span class="pun">)</span><span class="pln"> </span><span
@@ -980,54 +980,54 @@ About to route a request for /foo</pre>
                 class="pun">.</span><span class="pln">route </span><span class="pun">=</span><span
                 class="pln"> route</span><span class="pun">;</span></pre>
 
-       <p>Í¨¹ýÒÔÉÏ´úÂë£¬ÎÒÃÇÊ×ÏÈ¼ì²é¸ø¶¨µÄÂ·¾¶¶ÔÓ¦µÄÇëÇó´¦Àí³ÌÐòÊÇ·ñ´æÔÚ£¬Èç¹û´æÔÚµÄ»°Ö±½Óµ÷ÓÃÏàÓ¦µÄº¯Êý¡£ÎÒÃÇ¿ÉÒÔÓÃ´Ó¹ØÁªÊý×éÖÐ»ñÈ¡ÔªËØÒ»ÑùµÄ·½Ê½´Ó´«µÝµÄ¶ÔÏóÖÐ»ñÈ¡ÇëÇó´¦Àíº¯Êý£¬Òò´Ë¾ÍÓÐÁË¼ò½àÁ÷³©µÄÐÎÈç<em>handle&#91;pathname&#93;();</em>µÄ±í´ïÊ½£¬Õâ¸ö¸Ð¾õ¾ÍÏñÔÚÇ°·½ÖÐÌáµ½µÄÄÇÑù£º¡°àË£¬Çë°ïÎÒ´¦ÀíÁËÕâ¸öÂ·¾¶¡±¡£</p>
+       <p>é€šè¿‡ä»¥ä¸Šä»£ç ï¼Œæˆ‘ä»¬é¦–å…ˆæ£€æŸ¥ç»™å®šçš„è·¯å¾„å¯¹åº”çš„è¯·æ±‚å¤„ç†ç¨‹åºæ˜¯å¦å­˜åœ¨ï¼Œå¦‚æžœå­˜åœ¨çš„è¯ç›´æŽ¥è°ƒç”¨ç›¸åº”çš„å‡½æ•°ã€‚æˆ‘ä»¬å¯ä»¥ç”¨ä»Žå…³è”æ•°ç»„ä¸­èŽ·å–å…ƒç´ ä¸€æ ·çš„æ–¹å¼ä»Žä¼ é€’çš„å¯¹è±¡ä¸­èŽ·å–è¯·æ±‚å¤„ç†å‡½æ•°ï¼Œå› æ­¤å°±æœ‰äº†ç®€æ´æµç•…çš„å½¢å¦‚<em>handle&#91;pathname&#93;();</em>çš„è¡¨è¾¾å¼ï¼Œè¿™ä¸ªæ„Ÿè§‰å°±åƒåœ¨å‰æ–¹ä¸­æåˆ°çš„é‚£æ ·ï¼šâ€œå—¨ï¼Œè¯·å¸®æˆ‘å¤„ç†äº†è¿™ä¸ªè·¯å¾„â€ã€‚</p>
 
-        <p>ÓÐÁËÕâÐ©£¬ÎÒÃÇ¾Í°Ñ·þÎñÆ÷¡¢Â·ÓÉºÍÇëÇó´¦Àí³ÌÐòÔÚÒ»ÆðÁË¡£ÏÖÔÚÎÒÃÇÆô¶¯Ó¦ÓÃ³ÌÐò²¢ÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ<em>http://localhost:8888/start</em>£¬ÒÔÏÂÈÕÖ¾¿ÉÒÔËµÃ÷ÏµÍ³µ÷ÓÃÁËÕýÈ·µÄÇëÇó´¦Àí³ÌÐò£º</p>
+        <p>æœ‰äº†è¿™äº›ï¼Œæˆ‘ä»¬å°±æŠŠæœåŠ¡å™¨ã€è·¯ç”±å’Œè¯·æ±‚å¤„ç†ç¨‹åºåœ¨ä¸€èµ·äº†ã€‚çŽ°åœ¨æˆ‘ä»¬å¯åŠ¨åº”ç”¨ç¨‹åºå¹¶åœ¨æµè§ˆå™¨ä¸­è®¿é—®<em>http://localhost:8888/start</em>ï¼Œä»¥ä¸‹æ—¥å¿—å¯ä»¥è¯´æ˜Žç³»ç»Ÿè°ƒç”¨äº†æ­£ç¡®çš„è¯·æ±‚å¤„ç†ç¨‹åºï¼š</p>
 
         <pre>Server has started.
 Request for /start received.
 About to route a request for /start
 Request handler 'start' was called.</pre>
 
-         <p>²¢ÇÒÔÚä¯ÀÀÆ÷ÖÐ´ò¿ª<em>http://localhost:8888/</em>¿ÉÒÔ¿´µ½Õâ¸öÇëÇóÍ¬Ñù±»<em>start</em>ÇëÇó´¦Àí³ÌÐò´¦ÀíÁË£º</p>
+         <p>å¹¶ä¸”åœ¨æµè§ˆå™¨ä¸­æ‰“å¼€<em>http://localhost:8888/</em>å¯ä»¥çœ‹åˆ°è¿™ä¸ªè¯·æ±‚åŒæ ·è¢«<em>start</em>è¯·æ±‚å¤„ç†ç¨‹åºå¤„ç†äº†ï¼š</p>
         <pre>Request for / received.
 About to route a request for /
 Request handler 'start' was called.</pre>
 
         <a name="making-the-request-handlers-respond"></a>
 
-        <h3>ÈÃÇëÇó´¦Àí³ÌÐò×÷³öÏìÓ¦</h3>
+        <h3>è®©è¯·æ±‚å¤„ç†ç¨‹åºä½œå‡ºå“åº”</h3>
 
         <p>
-            ºÜºÃ¡£²»¹ýÏÖÔÚÒªÊÇÇëÇó´¦Àí³ÌÐòÄÜ¹»Ïòä¯ÀÀÆ÷·µ»ØÒ»Ð©ÓÐÒâÒåµÄÐÅÏ¢¶ø²¢·ÇÈ«ÊÇ¡°Hello World¡±£¬ÄÇ¾Í¸üºÃÁË¡£
+            å¾ˆå¥½ã€‚ä¸è¿‡çŽ°åœ¨è¦æ˜¯è¯·æ±‚å¤„ç†ç¨‹åºèƒ½å¤Ÿå‘æµè§ˆå™¨è¿”å›žä¸€äº›æœ‰æ„ä¹‰çš„ä¿¡æ¯è€Œå¹¶éžå…¨æ˜¯â€œHello Worldâ€ï¼Œé‚£å°±æ›´å¥½äº†ã€‚
         </p>
 
         <p>
-            ÕâÀïÒª¼Ç×¡µÄÊÇ£¬ä¯ÀÀÆ÷·¢³öÇëÇóºó»ñµÃ²¢ÏÔÊ¾µÄ¡°Hello World¡±ÐÅÏ¢ÈÔÊÇÀ´×ÔÓÚÎÒÃÇ<em>server.js</em>ÎÄ¼þÖÐµÄ<em>onRequest</em>º¯Êý¡£
+            è¿™é‡Œè¦è®°ä½çš„æ˜¯ï¼Œæµè§ˆå™¨å‘å‡ºè¯·æ±‚åŽèŽ·å¾—å¹¶æ˜¾ç¤ºçš„â€œHello Worldâ€ä¿¡æ¯ä»æ˜¯æ¥è‡ªäºŽæˆ‘ä»¬<em>server.js</em>æ–‡ä»¶ä¸­çš„<em>onRequest</em>å‡½æ•°ã€‚
         </p>
 
         <p>
-            ÆäÊµ¡°´¦ÀíÇëÇó¡±Ëµ°×ÁË¾ÍÊÇ¡°¶ÔÇëÇó×÷³öÏìÓ¦¡±£¬Òò´Ë£¬ÎÒÃÇÐèÒªÈÃÇëÇó´¦Àí³ÌÐòÄÜ¹»Ïñ<em>onRequest</em>º¯ÊýÄÇÑù¿ÉÒÔºÍä¯ÀÀÆ÷½øÐÐ¡°¶Ô»°¡±¡£
+            å…¶å®žâ€œå¤„ç†è¯·æ±‚â€è¯´ç™½äº†å°±æ˜¯â€œå¯¹è¯·æ±‚ä½œå‡ºå“åº”â€ï¼Œå› æ­¤ï¼Œæˆ‘ä»¬éœ€è¦è®©è¯·æ±‚å¤„ç†ç¨‹åºèƒ½å¤Ÿåƒ<em>onRequest</em>å‡½æ•°é‚£æ ·å¯ä»¥å’Œæµè§ˆå™¨è¿›è¡Œâ€œå¯¹è¯â€ã€‚
         </p>
 
         <a name="how-to-not-do-it"></a>
 
-        <h4>²»ºÃµÄÊµÏÖ·½Ê½</h4>
+        <h4>ä¸å¥½çš„å®žçŽ°æ–¹å¼</h4>
 
         <p>
-            ¶ÔÓÚÎÒÃÇÕâÑùÓµÓÐPHP»òÕßRuby¼¼Êõ±³¾°µÄ¿ª·¢ÕßÀ´Ëµ£¬×îÖ±½ØÁËµ±µÄÊµÏÖ·½Ê½ÊÂÊµÉÏ²¢²»ÊÇ·Ç³£¿¿Æ×£º ¿´ËÆÓÐÐ§£¬ÊµÔòÎ´±ØÈç´Ë¡£
+            å¯¹äºŽæˆ‘ä»¬è¿™æ ·æ‹¥æœ‰PHPæˆ–è€…RubyæŠ€æœ¯èƒŒæ™¯çš„å¼€å‘è€…æ¥è¯´ï¼Œæœ€ç›´æˆªäº†å½“çš„å®žçŽ°æ–¹å¼äº‹å®žä¸Šå¹¶ä¸æ˜¯éžå¸¸é è°±ï¼š çœ‹ä¼¼æœ‰æ•ˆï¼Œå®žåˆ™æœªå¿…å¦‚æ­¤ã€‚
         </p>
 
         <p>
-            ÕâÀïÎÒÖ¸µÄ¡°Ö±½ØÁËµ±µÄÊµÏÖ·½Ê½¡±ÒâË¼ÊÇ£ºÈÃÇëÇó´¦Àí³ÌÐòÍ¨¹ý<em>onRequest</em>º¯ÊýÖ±½Ó·µ»Ø£¨<em>return()</em>£©ËûÃÇÒªÕ¹Ê¾¸øÓÃ»§µÄÐÅÏ¢¡£
+            è¿™é‡Œæˆ‘æŒ‡çš„â€œç›´æˆªäº†å½“çš„å®žçŽ°æ–¹å¼â€æ„æ€æ˜¯ï¼šè®©è¯·æ±‚å¤„ç†ç¨‹åºé€šè¿‡<em>onRequest</em>å‡½æ•°ç›´æŽ¥è¿”å›žï¼ˆ<em>return()</em>ï¼‰ä»–ä»¬è¦å±•ç¤ºç»™ç”¨æˆ·çš„ä¿¡æ¯ã€‚
         </p>
 
         <p>
-            ÎÒÃÇÏÈ¾ÍÕâÑùÈ¥ÊµÏÖ£¬È»ºóÔÙÀ´¿´ÎªÊ²Ã´Õâ²»ÊÇÒ»ÖÖºÜºÃµÄÊµÏÖ·½Ê½¡£
+            æˆ‘ä»¬å…ˆå°±è¿™æ ·åŽ»å®žçŽ°ï¼Œç„¶åŽå†æ¥çœ‹ä¸ºä»€ä¹ˆè¿™ä¸æ˜¯ä¸€ç§å¾ˆå¥½çš„å®žçŽ°æ–¹å¼ã€‚
         </p>
 
         <p>
-            ÈÃÎÒÃÇ´ÓÈÃÇëÇó´¦Àí³ÌÐò·µ»ØÐèÒªÔÚä¯ÀÀÆ÷ÖÐÏÔÊ¾µÄÐÅÏ¢¿ªÊ¼¡£ÎÒÃÇÐèÒª½«<em>requestHandler.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            è®©æˆ‘ä»¬ä»Žè®©è¯·æ±‚å¤„ç†ç¨‹åºè¿”å›žéœ€è¦åœ¨æµè§ˆå™¨ä¸­æ˜¾ç¤ºçš„ä¿¡æ¯å¼€å§‹ã€‚æˆ‘ä»¬éœ€è¦å°†<em>requestHandler.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> start</span><span
                 class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; console</span><span
@@ -1047,7 +1047,7 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ºÃµÄ¡£Í¬ÑùµÄ£¬ÇëÇóÂ·ÓÉÐèÒª½«ÇëÇó´¦Àí³ÌÐò·µ»Ø¸øËüµÄÐÅÏ¢·µ»Ø¸ø·þÎñÆ÷¡£Òò´Ë£¬ÎÒÃÇÐèÒª½«<em>router.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            å¥½çš„ã€‚åŒæ ·çš„ï¼Œè¯·æ±‚è·¯ç”±éœ€è¦å°†è¯·æ±‚å¤„ç†ç¨‹åºè¿”å›žç»™å®ƒçš„ä¿¡æ¯è¿”å›žç»™æœåŠ¡å™¨ã€‚å› æ­¤ï¼Œæˆ‘ä»¬éœ€è¦å°†<em>router.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
                 class="pun">(</span><span class="pln">handle</span><span class="pun">,</span><span
@@ -1073,11 +1073,11 @@ Request handler 'start' was called.</pre>
                 class="pun">.</span><span class="pln">route </span><span class="pun">=</span><span
                 class="pln"> route</span><span class="pun">;</span></pre>
         <p>
-            ÕýÈçÉÏÊö´úÂëËùÊ¾£¬µ±ÇëÇóÎÞ·¨Â·ÓÉµÄÊ±ºò£¬ÎÒÃÇÒ²·µ»ØÁËÒ»Ð©Ïà¹ØµÄ´íÎóÐÅÏ¢¡£
+            æ­£å¦‚ä¸Šè¿°ä»£ç æ‰€ç¤ºï¼Œå½“è¯·æ±‚æ— æ³•è·¯ç”±çš„æ—¶å€™ï¼Œæˆ‘ä»¬ä¹Ÿè¿”å›žäº†ä¸€äº›ç›¸å…³çš„é”™è¯¯ä¿¡æ¯ã€‚
         </p>
 
         <p>
-            ×îºó£¬ÎÒÃÇÐèÒª¶ÔÎÒÃÇµÄ<em>server.js</em>½øÐÐÖØ¹¹ÒÔÊ¹µÃËüÄÜ¹»½«ÇëÇó´¦Àí³ÌÐòÍ¨¹ýÇëÇóÂ·ÓÉ·µ»ØµÄÄÚÈÝÏìÓ¦¸øä¯ÀÀÆ÷£¬ÈçÏÂËùÊ¾£º
+            æœ€åŽï¼Œæˆ‘ä»¬éœ€è¦å¯¹æˆ‘ä»¬çš„<em>server.js</em>è¿›è¡Œé‡æž„ä»¥ä½¿å¾—å®ƒèƒ½å¤Ÿå°†è¯·æ±‚å¤„ç†ç¨‹åºé€šè¿‡è¯·æ±‚è·¯ç”±è¿”å›žçš„å†…å®¹å“åº”ç»™æµè§ˆå™¨ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -1119,35 +1119,35 @@ Request handler 'start' was called.</pre>
                 class="pun">.</span><span class="pln">start </span><span class="pun">=</span><span
                 class="pln"> start</span><span class="pun">;</span></pre>
         <p>
-            Èç¹ûÎÒÃÇÔËÐÐÖØ¹¹ºóµÄÓ¦ÓÃ£¬Ò»ÇÐ¶¼»á¹¤×÷µÄºÜºÃ£ºÇëÇó<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>,ä¯ÀÀÆ÷»áÊä³ö¡°Hello Start¡±£¬ÇëÇó<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>»áÊä³ö¡°Hello Upload¡±,¶øÇëÇó<a href="http://localhost:8888/foo" rel="nofollow">http://localhost:8888/foo</a> »áÊä³ö¡°404 Not found¡±¡£
+            å¦‚æžœæˆ‘ä»¬è¿è¡Œé‡æž„åŽçš„åº”ç”¨ï¼Œä¸€åˆ‡éƒ½ä¼šå·¥ä½œçš„å¾ˆå¥½ï¼šè¯·æ±‚<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>,æµè§ˆå™¨ä¼šè¾“å‡ºâ€œHello Startâ€ï¼Œè¯·æ±‚<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>ä¼šè¾“å‡ºâ€œHello Uploadâ€,è€Œè¯·æ±‚<a href="http://localhost:8888/foo" rel="nofollow">http://localhost:8888/foo</a> ä¼šè¾“å‡ºâ€œ404 Not foundâ€ã€‚
         </p>
 
         <p>
-            ºÃ£¬ÄÇÃ´ÎÊÌâÔÚÄÄÀïÄØ£¿¼òµ¥µÄËµ¾ÍÊÇ£º µ±Î´À´ÓÐÇëÇó´¦Àí³ÌÐòÐèÒª½øÐÐ·Ç×èÈûµÄ²Ù×÷µÄÊ±ºò£¬ÎÒÃÇµÄÓ¦ÓÃ¾Í¡°¹Ò¡±ÁË¡£
+            å¥½ï¼Œé‚£ä¹ˆé—®é¢˜åœ¨å“ªé‡Œå‘¢ï¼Ÿç®€å•çš„è¯´å°±æ˜¯ï¼š å½“æœªæ¥æœ‰è¯·æ±‚å¤„ç†ç¨‹åºéœ€è¦è¿›è¡Œéžé˜»å¡žçš„æ“ä½œçš„æ—¶å€™ï¼Œæˆ‘ä»¬çš„åº”ç”¨å°±â€œæŒ‚â€äº†ã€‚
         </p>
 
         <p>
-            Ã»Àí½â£¿Ã»¹ØÏµ£¬ÏÂÃæ¾ÍÀ´ÏêÏ¸½âÊÍÏÂ¡£
+            æ²¡ç†è§£ï¼Ÿæ²¡å…³ç³»ï¼Œä¸‹é¢å°±æ¥è¯¦ç»†è§£é‡Šä¸‹ã€‚
         </p>
 
         <a name="blocking-and-non-blocking"></a>
 
-        <h4>×èÈûÓë·Ç×èÈû</h4>
+        <h4>é˜»å¡žä¸Žéžé˜»å¡ž</h4>
 
         <p>
-            ÕýÈç´ËÇ°ËùÌáµ½µÄ£¬µ±ÔÚÇëÇó´¦Àí³ÌÐòÖÐ°üÀ¨·Ç×èÈû²Ù×÷Ê±¾Í»á³öÎÊÌâ¡£µ«ÊÇ£¬ÔÚËµÕâÖ®Ç°£¬ÎÒÃÇÏÈÀ´¿´¿´Ê²Ã´ÊÇ×èÈû²Ù×÷¡£
+            æ­£å¦‚æ­¤å‰æ‰€æåˆ°çš„ï¼Œå½“åœ¨è¯·æ±‚å¤„ç†ç¨‹åºä¸­åŒ…æ‹¬éžé˜»å¡žæ“ä½œæ—¶å°±ä¼šå‡ºé—®é¢˜ã€‚ä½†æ˜¯ï¼Œåœ¨è¯´è¿™ä¹‹å‰ï¼Œæˆ‘ä»¬å…ˆæ¥çœ‹çœ‹ä»€ä¹ˆæ˜¯é˜»å¡žæ“ä½œã€‚
         </p>
 
         <p>
-            ÎÒ²»ÏëÈ¥½âÊÍ¡°×èÈû¡±ºÍ¡°·Ç×èÈû¡±µÄ¾ßÌåº¬Òå£¬ÎÒÃÇÖ±½ÓÀ´¿´£¬µ±ÔÚÇëÇó´¦Àí³ÌÐòÖÐ¼ÓÈë×èÈû²Ù×÷Ê±»á·¢ÉúÊ²Ã´¡£
+            æˆ‘ä¸æƒ³åŽ»è§£é‡Šâ€œé˜»å¡žâ€å’Œâ€œéžé˜»å¡žâ€çš„å…·ä½“å«ä¹‰ï¼Œæˆ‘ä»¬ç›´æŽ¥æ¥çœ‹ï¼Œå½“åœ¨è¯·æ±‚å¤„ç†ç¨‹åºä¸­åŠ å…¥é˜»å¡žæ“ä½œæ—¶ä¼šå‘ç”Ÿä»€ä¹ˆã€‚
         </p>
 
         <p>
-            ÕâÀï£¬ÎÒÃÇÀ´ÐÞ¸ÄÏÂ<em>start</em>ÇëÇó´¦Àí³ÌÐò£¬ÎÒÃÇÈÃËüµÈ´ý10ÃëÒÔºóÔÙ·µ»Ø¡°Hello Start¡±¡£ÒòÎª£¬JavaScriptÖÐÃ»ÓÐÀàËÆ<em>sleep()</em>ÕâÑùµÄ²Ù×÷£¬ËùÒÔÕâÀïÖ»ÄÜ¹»À´µãÐ¡HackÀ´Ä£ÄâÊµÏÖ¡£
+            è¿™é‡Œï¼Œæˆ‘ä»¬æ¥ä¿®æ”¹ä¸‹<em>start</em>è¯·æ±‚å¤„ç†ç¨‹åºï¼Œæˆ‘ä»¬è®©å®ƒç­‰å¾…10ç§’ä»¥åŽå†è¿”å›žâ€œHello Startâ€ã€‚å› ä¸ºï¼ŒJavaScriptä¸­æ²¡æœ‰ç±»ä¼¼<em>sleep()</em>è¿™æ ·çš„æ“ä½œï¼Œæ‰€ä»¥è¿™é‡Œåªèƒ½å¤Ÿæ¥ç‚¹å°Hackæ¥æ¨¡æ‹Ÿå®žçŽ°ã€‚
         </p>
 
         <p>
-            ÈÃÎÒÃÇ½«<em>requestHandlers.js</em>ÐÞ¸Ä³ÉÈçÏÂÐÎÊ½£º
+            è®©æˆ‘ä»¬å°†<em>requestHandlers.js</em>ä¿®æ”¹æˆå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> start</span><span
                 class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; console</span><span
@@ -1180,67 +1180,67 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ÉÏÊö´úÂëÖÐ£¬µ±º¯Êý<em>start()</em>±»µ÷ÓÃµÄÊ±ºò£¬Node.js»áÏÈµÈ´ý10Ãë£¬Ö®ºó²Å»á·µ»Ø¡°Hello Start¡±¡£µ±µ÷ÓÃ<em>upload()</em>µÄÊ±ºò£¬»áºÍ´ËÇ°Ò»ÑùÁ¢¼´·µ»Ø¡£
+            ä¸Šè¿°ä»£ç ä¸­ï¼Œå½“å‡½æ•°<em>start()</em>è¢«è°ƒç”¨çš„æ—¶å€™ï¼ŒNode.jsä¼šå…ˆç­‰å¾…10ç§’ï¼Œä¹‹åŽæ‰ä¼šè¿”å›žâ€œHello Startâ€ã€‚å½“è°ƒç”¨<em>upload()</em>çš„æ—¶å€™ï¼Œä¼šå’Œæ­¤å‰ä¸€æ ·ç«‹å³è¿”å›žã€‚
         </p>
 
         <p>
-            £¨µ±È»ÁË£¬ÕâÀïÖ»ÊÇÄ£ÄâÐÝÃß10Ãë£¬Êµ¼Ê³¡¾°ÖÐ£¬ÕâÑùµÄ×èÈû²Ù×÷ÓÐºÜ¶à£¬±È·½ËµÒ»Ð©³¤Ê±¼äµÄ¼ÆËã²Ù×÷µÈ¡££©
+            ï¼ˆå½“ç„¶äº†ï¼Œè¿™é‡Œåªæ˜¯æ¨¡æ‹Ÿä¼‘çœ 10ç§’ï¼Œå®žé™…åœºæ™¯ä¸­ï¼Œè¿™æ ·çš„é˜»å¡žæ“ä½œæœ‰å¾ˆå¤šï¼Œæ¯”æ–¹è¯´ä¸€äº›é•¿æ—¶é—´çš„è®¡ç®—æ“ä½œç­‰ã€‚ï¼‰
         </p>
 
         <p>
-            ½ÓÏÂÀ´¾ÍÈÃÎÒÃÇÀ´¿´¿´£¬ÎÒÃÇµÄ¸Ä¶¯´øÀ´ÁËÄÄÐ©±ä»¯¡£
+            æŽ¥ä¸‹æ¥å°±è®©æˆ‘ä»¬æ¥çœ‹çœ‹ï¼Œæˆ‘ä»¬çš„æ”¹åŠ¨å¸¦æ¥äº†å“ªäº›å˜åŒ–ã€‚
         </p>
 
         <p>
-            ÈçÍù³£Ò»Ñù£¬ÎÒÃÇÏÈÒªÖØÆôÏÂ·þÎñÆ÷¡£ÎªÁË¿´µ½Ð§¹û£¬ÎÒÃÇÒª½øÐÐÒ»Ð©Ïà¶Ô¸´ÔÓµÄ²Ù×÷£¨¸ú×ÅÎÒÒ»Æð×ö£©£º Ê×ÏÈ£¬´ò¿ªÁ½¸öä¯ÀÀÆ÷´°¿Ú»òÕß±êÇ©Ò³¡£ÔÚµÚÒ»¸öä¯ÀÀÆ÷´°¿ÚµÄµØÖ·À¸ÖÐÊäÈë<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>£¬ µ«ÊÇÏÈ²»Òª´ò¿ªËü£¡
+            å¦‚å¾€å¸¸ä¸€æ ·ï¼Œæˆ‘ä»¬å…ˆè¦é‡å¯ä¸‹æœåŠ¡å™¨ã€‚ä¸ºäº†çœ‹åˆ°æ•ˆæžœï¼Œæˆ‘ä»¬è¦è¿›è¡Œä¸€äº›ç›¸å¯¹å¤æ‚çš„æ“ä½œï¼ˆè·Ÿç€æˆ‘ä¸€èµ·åšï¼‰ï¼š é¦–å…ˆï¼Œæ‰“å¼€ä¸¤ä¸ªæµè§ˆå™¨çª—å£æˆ–è€…æ ‡ç­¾é¡µã€‚åœ¨ç¬¬ä¸€ä¸ªæµè§ˆå™¨çª—å£çš„åœ°å€æ ä¸­è¾“å…¥<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>ï¼Œ ä½†æ˜¯å…ˆä¸è¦æ‰“å¼€å®ƒï¼
         </p>
 
         <p>
-            ÔÚµÚ¶þ¸öä¯ÀÀÆ÷´°¿ÚµÄµØÖ·À¸ÖÐÊäÈë<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>£¬ Í¬ÑùµÄ£¬ÏÈ²»Òª´ò¿ªËü£¡
+            åœ¨ç¬¬äºŒä¸ªæµè§ˆå™¨çª—å£çš„åœ°å€æ ä¸­è¾“å…¥<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>ï¼Œ åŒæ ·çš„ï¼Œå…ˆä¸è¦æ‰“å¼€å®ƒï¼
         </p>
 
         <p>
-           ½ÓÏÂÀ´£¬×öÈçÏÂ²Ù×÷£ºÔÚµÚÒ»¸ö´°¿ÚÖÐ£¨¡°/start¡±£©°´ÏÂ»Ø³µ£¬È»ºó¿ìËÙÇÐ»»µ½µÚ¶þ¸ö´°¿ÚÖÐ£¨¡°/upload¡±£©°´ÏÂ»Ø³µ¡£
+           æŽ¥ä¸‹æ¥ï¼Œåšå¦‚ä¸‹æ“ä½œï¼šåœ¨ç¬¬ä¸€ä¸ªçª—å£ä¸­ï¼ˆâ€œ/startâ€ï¼‰æŒ‰ä¸‹å›žè½¦ï¼Œç„¶åŽå¿«é€Ÿåˆ‡æ¢åˆ°ç¬¬äºŒä¸ªçª—å£ä¸­ï¼ˆâ€œ/uploadâ€ï¼‰æŒ‰ä¸‹å›žè½¦ã€‚
         </p>
 
         <p>
-            ×¢Òâ£¬·¢ÉúÁËÊ²Ã´£º /start URL¼ÓÔØ»¨ÁË10Ãë£¬ÕâºÍÎÒÃÇÔ¤ÆÚµÄÒ»Ñù¡£µ«ÊÇ£¬/upload URL¾ÓÈ»<em>Ò²</em>»¨ÁË10Ãë£¬¶øËüÔÚ¶ÔÓ¦µÄÇëÇó´¦Àí³ÌÐòÖÐ²¢Ã»ÓÐÀàËÆÓÚ<em>sleep()</em>ÕâÑùµÄ²Ù×÷£¡
+            æ³¨æ„ï¼Œå‘ç”Ÿäº†ä»€ä¹ˆï¼š /start URLåŠ è½½èŠ±äº†10ç§’ï¼Œè¿™å’Œæˆ‘ä»¬é¢„æœŸçš„ä¸€æ ·ã€‚ä½†æ˜¯ï¼Œ/upload URLå±…ç„¶<em>ä¹Ÿ</em>èŠ±äº†10ç§’ï¼Œè€Œå®ƒåœ¨å¯¹åº”çš„è¯·æ±‚å¤„ç†ç¨‹åºä¸­å¹¶æ²¡æœ‰ç±»ä¼¼äºŽ<em>sleep()</em>è¿™æ ·çš„æ“ä½œï¼
         </p>
 
         <p>
-            Õâµ½µ×ÊÇÎªÊ²Ã´ÄØ£¿Ô­Òò¾ÍÊÇ<em>start()</em>°üº¬ÁË×èÈû²Ù×÷¡£ÐÎÏóµÄËµ¾ÍÊÇ¡°Ëü×èÈûÁËËùÓÐÆäËûµÄ´¦Àí¹¤×÷¡±¡£
+            è¿™åˆ°åº•æ˜¯ä¸ºä»€ä¹ˆå‘¢ï¼ŸåŽŸå› å°±æ˜¯<em>start()</em>åŒ…å«äº†é˜»å¡žæ“ä½œã€‚å½¢è±¡çš„è¯´å°±æ˜¯â€œå®ƒé˜»å¡žäº†æ‰€æœ‰å…¶ä»–çš„å¤„ç†å·¥ä½œâ€ã€‚
         </p>
 
         <p>
-            ÕâÏÔÈ»ÊÇ¸öÎÊÌâ£¬ÒòÎªNodeÒ»ÏòÊÇÕâÑùÀ´±ê°ñ×Ô¼ºµÄ£º<em>¡°ÔÚnodeÖÐ³ýÁË´úÂë£¬ËùÓÐÒ»ÇÐ¶¼ÊÇ²¢ÐÐÖ´ÐÐµÄ¡±</em>¡£
+            è¿™æ˜¾ç„¶æ˜¯ä¸ªé—®é¢˜ï¼Œå› ä¸ºNodeä¸€å‘æ˜¯è¿™æ ·æ¥æ ‡æ¦œè‡ªå·±çš„ï¼š<em>â€œåœ¨nodeä¸­é™¤äº†ä»£ç ï¼Œæ‰€æœ‰ä¸€åˆ‡éƒ½æ˜¯å¹¶è¡Œæ‰§è¡Œçš„â€</em>ã€‚
         </p>
 
         <p>
-            Õâ¾ä»°µÄÒâË¼ÊÇËµ£¬Node.js¿ÉÒÔÔÚ²»ÐÂÔö¶îÍâÏß³ÌµÄÇé¿öÏÂ£¬ÒÀÈ»¿ÉÒÔ¶ÔÈÎÎñ½øÐÐ²¢ÐÐ´¦Àí ¡ª¡ª Node.jsÊÇµ¥Ïß³ÌµÄ¡£ËüÍ¨¹ýÊÂ¼þÂÖÑ¯£¨event loop£©À´ÊµÏÖ²¢ÐÐ²Ù×÷£¬¶Ô´Ë£¬ÎÒÃÇÓ¦¸ÃÒª³ä·ÖÀûÓÃÕâÒ»µã ¡ª¡ª ¾¡¿ÉÄÜµÄ±ÜÃâ×èÈû²Ù×÷£¬È¡¶ø´úÖ®£¬¶àÊ¹ÓÃ·Ç×èÈû²Ù×÷¡£
+            è¿™å¥è¯çš„æ„æ€æ˜¯è¯´ï¼ŒNode.jså¯ä»¥åœ¨ä¸æ–°å¢žé¢å¤–çº¿ç¨‹çš„æƒ…å†µä¸‹ï¼Œä¾ç„¶å¯ä»¥å¯¹ä»»åŠ¡è¿›è¡Œå¹¶è¡Œå¤„ç† â€”â€” Node.jsæ˜¯å•çº¿ç¨‹çš„ã€‚å®ƒé€šè¿‡äº‹ä»¶è½®è¯¢ï¼ˆevent loopï¼‰æ¥å®žçŽ°å¹¶è¡Œæ“ä½œï¼Œå¯¹æ­¤ï¼Œæˆ‘ä»¬åº”è¯¥è¦å……åˆ†åˆ©ç”¨è¿™ä¸€ç‚¹ â€”â€” å°½å¯èƒ½çš„é¿å…é˜»å¡žæ“ä½œï¼Œå–è€Œä»£ä¹‹ï¼Œå¤šä½¿ç”¨éžé˜»å¡žæ“ä½œã€‚
         </p>
 
         <p>
-            È»¶ø£¬ÒªÓÃ·Ç×èÈû²Ù×÷£¬ÎÒÃÇÐèÒªÊ¹ÓÃ»Øµ÷£¬Í¨¹ý½«º¯Êý×÷Îª²ÎÊý´«µÝ¸øÆäËûÐèÒª»¨Ê±¼ä×ö´¦ÀíµÄº¯Êý£¨±È·½Ëµ£¬ÐÝÃß10Ãë£¬»òÕß²éÑ¯Êý¾Ý¿â£¬ÓÖ»òÕßÊÇ½øÐÐ´óÁ¿µÄ¼ÆËã£©¡£
+            ç„¶è€Œï¼Œè¦ç”¨éžé˜»å¡žæ“ä½œï¼Œæˆ‘ä»¬éœ€è¦ä½¿ç”¨å›žè°ƒï¼Œé€šè¿‡å°†å‡½æ•°ä½œä¸ºå‚æ•°ä¼ é€’ç»™å…¶ä»–éœ€è¦èŠ±æ—¶é—´åšå¤„ç†çš„å‡½æ•°ï¼ˆæ¯”æ–¹è¯´ï¼Œä¼‘çœ 10ç§’ï¼Œæˆ–è€…æŸ¥è¯¢æ•°æ®åº“ï¼Œåˆæˆ–è€…æ˜¯è¿›è¡Œå¤§é‡çš„è®¡ç®—ï¼‰ã€‚
         </p>
 
         <p>
-            ¶ÔÓÚNode.jsÀ´Ëµ£¬ËüÊÇÕâÑù´¦ÀíµÄ£º<em>¡°ºÙ£¬probablyExpensiveFunction()£¨ÒëÕß×¢£ºÕâÀïÖ¸µÄ¾ÍÊÇÐèÒª»¨Ê±¼ä´¦ÀíµÄº¯Êý£©£¬Äã¼ÌÐø´¦ÀíÄãµÄÊÂÇé£¬ÎÒ£¨Node.jsÏß³Ì£©ÏÈ²»µÈÄãÁË£¬ÎÒ¼ÌÐøÈ¥´¦ÀíÄãºóÃæµÄ´úÂë£¬ÇëÄãÌá¹©Ò»¸öcallbackFunction()£¬µÈÄã´¦ÀíÍêÖ®ºóÎÒ»áÈ¥µ÷ÓÃ¸Ã»Øµ÷º¯ÊýµÄ£¬Ð»Ð»£¡¡±</em>
+            å¯¹äºŽNode.jsæ¥è¯´ï¼Œå®ƒæ˜¯è¿™æ ·å¤„ç†çš„ï¼š<em>â€œå˜¿ï¼ŒprobablyExpensiveFunction()ï¼ˆè¯‘è€…æ³¨ï¼šè¿™é‡ŒæŒ‡çš„å°±æ˜¯éœ€è¦èŠ±æ—¶é—´å¤„ç†çš„å‡½æ•°ï¼‰ï¼Œä½ ç»§ç»­å¤„ç†ä½ çš„äº‹æƒ…ï¼Œæˆ‘ï¼ˆNode.jsçº¿ç¨‹ï¼‰å…ˆä¸ç­‰ä½ äº†ï¼Œæˆ‘ç»§ç»­åŽ»å¤„ç†ä½ åŽé¢çš„ä»£ç ï¼Œè¯·ä½ æä¾›ä¸€ä¸ªcallbackFunction()ï¼Œç­‰ä½ å¤„ç†å®Œä¹‹åŽæˆ‘ä¼šåŽ»è°ƒç”¨è¯¥å›žè°ƒå‡½æ•°çš„ï¼Œè°¢è°¢ï¼â€</em>
         </p>
 
         <p>
-            £¨Èç¹ûÏëÒªÁË½â¸ü¶à¹ØÓÚÊÂ¼þÂÖÑ¯Ï¸½Ú£¬¿ÉÒÔÔÄ¶ÁMixuµÄ²©ÎÄ¡ª¡ª<a href="http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/">Àí½ânode.jsµÄÊÂ¼þÂÖÑ¯</a>¡££©
+            ï¼ˆå¦‚æžœæƒ³è¦äº†è§£æ›´å¤šå…³äºŽäº‹ä»¶è½®è¯¢ç»†èŠ‚ï¼Œå¯ä»¥é˜…è¯»Mixuçš„åšæ–‡â€”â€”<a href="http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/">ç†è§£node.jsçš„äº‹ä»¶è½®è¯¢</a>ã€‚ï¼‰
         </p>
 
         <p>
-            ½ÓÏÂÀ´£¬ÎÒÃÇ»á½éÉÜÒ»ÖÖ´íÎóµÄÊ¹ÓÃ·Ç×èÈû²Ù×÷µÄ·½Ê½¡£
+            æŽ¥ä¸‹æ¥ï¼Œæˆ‘ä»¬ä¼šä»‹ç»ä¸€ç§é”™è¯¯çš„ä½¿ç”¨éžé˜»å¡žæ“ä½œçš„æ–¹å¼ã€‚
         </p>
 
         <p>
-            ºÍÉÏ´ÎÒ»Ñù£¬ÎÒÃÇÍ¨¹ýÐÞ¸ÄÎÒÃÇµÄÓ¦ÓÃÀ´±©Â¶ÎÊÌâ¡£
+            å’Œä¸Šæ¬¡ä¸€æ ·ï¼Œæˆ‘ä»¬é€šè¿‡ä¿®æ”¹æˆ‘ä»¬çš„åº”ç”¨æ¥æš´éœ²é—®é¢˜ã€‚
         </p>
 
         <p>
-            Õâ´ÎÎÒÃÇ»¹ÊÇÄÃ<em>start</em>ÇëÇó´¦Àí³ÌÐòÀ´¡°¿ªµ¶¡±¡£½«ÆäÐÞ¸Ä³ÉÈçÏÂÐÎÊ½£º
+            è¿™æ¬¡æˆ‘ä»¬è¿˜æ˜¯æ‹¿<em>start</em>è¯·æ±‚å¤„ç†ç¨‹åºæ¥â€œå¼€åˆ€â€ã€‚å°†å…¶ä¿®æ”¹æˆå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> exec </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"child_process"</span><span
@@ -1271,47 +1271,47 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ÉÏÊö´úÂëÖÐ£¬ÎÒÃÇÒýÈëÁËÒ»¸öÐÂµÄNode.jsÄ£¿é£¬<em>child_process</em>¡£Ö®ËùÒÔÓÃËü£¬ÊÇÎªÁËÊµÏÖÒ»¸ö¼È¼òµ¥ÓÖÊµÓÃµÄ·Ç×èÈû²Ù×÷£º<em>exec()</em>¡£
+            ä¸Šè¿°ä»£ç ä¸­ï¼Œæˆ‘ä»¬å¼•å…¥äº†ä¸€ä¸ªæ–°çš„Node.jsæ¨¡å—ï¼Œ<em>child_process</em>ã€‚ä¹‹æ‰€ä»¥ç”¨å®ƒï¼Œæ˜¯ä¸ºäº†å®žçŽ°ä¸€ä¸ªæ—¢ç®€å•åˆå®žç”¨çš„éžé˜»å¡žæ“ä½œï¼š<em>exec()</em>ã€‚
         </p>
 
         <p>
-            <em>exec()</em>×öÁËÊ²Ã´ÄØ£¿Ëü´ÓNode.jsÀ´Ö´ÐÐÒ»¸öshellÃüÁî¡£ÔÚÉÏÊöÀý×ÓÖÐ£¬ÎÒÃÇÓÃËüÀ´»ñÈ¡µ±Ç°Ä¿Â¼ÏÂËùÓÐµÄÎÄ¼þ£¨¡°ls -lah¡±£©,È»ºó£¬µ±<em>/start</em>URLÇëÇóµÄÊ±ºò½«ÎÄ¼þÐÅÏ¢Êä³öµ½ä¯ÀÀÆ÷ÖÐ¡£
+            <em>exec()</em>åšäº†ä»€ä¹ˆå‘¢ï¼Ÿå®ƒä»ŽNode.jsæ¥æ‰§è¡Œä¸€ä¸ªshellå‘½ä»¤ã€‚åœ¨ä¸Šè¿°ä¾‹å­ä¸­ï¼Œæˆ‘ä»¬ç”¨å®ƒæ¥èŽ·å–å½“å‰ç›®å½•ä¸‹æ‰€æœ‰çš„æ–‡ä»¶ï¼ˆâ€œls -lahâ€ï¼‰,ç„¶åŽï¼Œå½“<em>/start</em>URLè¯·æ±‚çš„æ—¶å€™å°†æ–‡ä»¶ä¿¡æ¯è¾“å‡ºåˆ°æµè§ˆå™¨ä¸­ã€‚
         </p>
 
         <p>
-            ÉÏÊö´úÂëÊÇ·Ç³£Ö±¹ÛµÄ£º ´´½¨ÁËÒ»¸öÐÂµÄ±äÁ¿<em>content</em>£¨³õÊ¼ÖµÎª¡°empty¡±£©£¬Ö´ÐÐ¡°ls -lah¡±ÃüÁî£¬½«½á¹û¸³Öµ¸øcontent£¬×îºó½«content·µ»Ø¡£
+            ä¸Šè¿°ä»£ç æ˜¯éžå¸¸ç›´è§‚çš„ï¼š åˆ›å»ºäº†ä¸€ä¸ªæ–°çš„å˜é‡<em>content</em>ï¼ˆåˆå§‹å€¼ä¸ºâ€œemptyâ€ï¼‰ï¼Œæ‰§è¡Œâ€œls -lahâ€å‘½ä»¤ï¼Œå°†ç»“æžœèµ‹å€¼ç»™contentï¼Œæœ€åŽå°†contentè¿”å›žã€‚
         </p>
 
         <p>
-            ºÍÍù³£Ò»Ñù£¬ÎÒÃÇÆô¶¯·þÎñÆ÷£¬È»ºó·ÃÎÊ¡°<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>¡± ¡£
+            å’Œå¾€å¸¸ä¸€æ ·ï¼Œæˆ‘ä»¬å¯åŠ¨æœåŠ¡å™¨ï¼Œç„¶åŽè®¿é—®â€œ<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>â€ ã€‚
         </p>
 
         <p>
-            Ö®ºó»áÔØÈëÒ»¸öÆ¯ÁÁµÄwebÒ³Ãæ£¬ÆäÄÚÈÝÎª¡°empty¡±¡£ÔõÃ´»ØÊÂ£¿
+            ä¹‹åŽä¼šè½½å…¥ä¸€ä¸ªæ¼‚äº®çš„webé¡µé¢ï¼Œå…¶å†…å®¹ä¸ºâ€œemptyâ€ã€‚æ€Žä¹ˆå›žäº‹ï¼Ÿ
         </p>
 
         <p>
-            Õâ¸öÊ±ºò£¬Äã¿ÉÄÜ´óÖÂÒÑ¾­²Âµ½ÁË£¬<em>exec()</em>ÔÚ·Ç×èÈûÕâ¿é·¢»ÓÁËÉñÆæµÄ¹¦Ð§¡£ËüÆäÊµÊÇ¸öºÜºÃµÄ¶«Î÷£¬ÓÐÁËËü£¬ÎÒÃÇ¿ÉÒÔÖ´ÐÐ·Ç³£ºÄÊ±µÄshell²Ù×÷¶øÎÞÐèÆÈÊ¹ÎÒÃÇµÄÓ¦ÓÃÍ£ÏÂÀ´µÈ´ý¸Ã²Ù×÷¡£
+            è¿™ä¸ªæ—¶å€™ï¼Œä½ å¯èƒ½å¤§è‡´å·²ç»çŒœåˆ°äº†ï¼Œ<em>exec()</em>åœ¨éžé˜»å¡žè¿™å—å‘æŒ¥äº†ç¥žå¥‡çš„åŠŸæ•ˆã€‚å®ƒå…¶å®žæ˜¯ä¸ªå¾ˆå¥½çš„ä¸œè¥¿ï¼Œæœ‰äº†å®ƒï¼Œæˆ‘ä»¬å¯ä»¥æ‰§è¡Œéžå¸¸è€—æ—¶çš„shellæ“ä½œè€Œæ— éœ€è¿«ä½¿æˆ‘ä»¬çš„åº”ç”¨åœä¸‹æ¥ç­‰å¾…è¯¥æ“ä½œã€‚
         </p>
 
         <p>
-            £¨Èç¹ûÏëÒªÖ¤Ã÷ÕâÒ»µã£¬¿ÉÒÔ½«¡°ls -lah¡±»»³É±ÈÈç¡°find /¡±ÕâÑù¸üºÄÊ±µÄ²Ù×÷À´Ð§¹û£©¡£
+            ï¼ˆå¦‚æžœæƒ³è¦è¯æ˜Žè¿™ä¸€ç‚¹ï¼Œå¯ä»¥å°†â€œls -lahâ€æ¢æˆæ¯”å¦‚â€œfind /â€è¿™æ ·æ›´è€—æ—¶çš„æ“ä½œæ¥æ•ˆæžœï¼‰ã€‚
         </p>
 
         <p>
-            È»¶ø£¬Õë¶Ôä¯ÀÀÆ÷ÏÔÊ¾µÄ½á¹ûÀ´¿´£¬ÎÒÃÇ²¢²»ÂúÒâÎÒÃÇµÄ·Ç×èÈû²Ù×÷£¬¶Ô°É£¿
+            ç„¶è€Œï¼Œé’ˆå¯¹æµè§ˆå™¨æ˜¾ç¤ºçš„ç»“æžœæ¥çœ‹ï¼Œæˆ‘ä»¬å¹¶ä¸æ»¡æ„æˆ‘ä»¬çš„éžé˜»å¡žæ“ä½œï¼Œå¯¹å§ï¼Ÿ
         </p>
 
         <p>
-            ºÃ£¬½ÓÏÂÀ´£¬ÎÒÃÇÀ´ÐÞÕýÕâ¸öÎÊÌâ¡£ÔÚÕâ¹ý³ÌÖÐ£¬ÈÃÎÒÃÇÏÈÀ´¿´¿´ÎªÊ²Ã´µ±Ç°µÄÕâÖÖ·½Ê½²»Æð×÷ÓÃ¡£
+            å¥½ï¼ŒæŽ¥ä¸‹æ¥ï¼Œæˆ‘ä»¬æ¥ä¿®æ­£è¿™ä¸ªé—®é¢˜ã€‚åœ¨è¿™è¿‡ç¨‹ä¸­ï¼Œè®©æˆ‘ä»¬å…ˆæ¥çœ‹çœ‹ä¸ºä»€ä¹ˆå½“å‰çš„è¿™ç§æ–¹å¼ä¸èµ·ä½œç”¨ã€‚
         </p>
 
         <p>
-            ÎÊÌâ¾ÍÔÚÓÚ£¬ÎªÁË½øÐÐ·Ç×èÈû¹¤×÷£¬<em>exec()</em>Ê¹ÓÃÁË»Øµ÷º¯Êý¡£
+            é—®é¢˜å°±åœ¨äºŽï¼Œä¸ºäº†è¿›è¡Œéžé˜»å¡žå·¥ä½œï¼Œ<em>exec()</em>ä½¿ç”¨äº†å›žè°ƒå‡½æ•°ã€‚
         </p>
 
         <p>
-            ÔÚÎÒÃÇµÄÀý×ÓÖÐ£¬¸Ã»Øµ÷º¯Êý¾ÍÊÇ×÷ÎªµÚ¶þ¸ö²ÎÊý´«µÝ¸ø<em>exec()</em>µÄÄäÃûº¯Êý£º
+            åœ¨æˆ‘ä»¬çš„ä¾‹å­ä¸­ï¼Œè¯¥å›žè°ƒå‡½æ•°å°±æ˜¯ä½œä¸ºç¬¬äºŒä¸ªå‚æ•°ä¼ é€’ç»™<em>exec()</em>çš„åŒ¿åå‡½æ•°ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> </span><span
                 class="pun">(</span><span class="pln">error</span><span class="pun">,</span><span
@@ -1321,51 +1321,51 @@ Request handler 'start' was called.</pre>
                 class="pln"><br></span><span class="pun">}</span></pre>
 
         <p>
-            ÏÖÔÚ¾Íµ½ÁËÎÊÌâ¸ùÔ´ËùÔÚÁË£ºÎÒÃÇµÄ´úÂëÊÇÍ¬²½Ö´ÐÐµÄ£¬Õâ¾ÍÒâÎ¶×ÅÔÚµ÷ÓÃ<em>exec()</em>Ö®ºó£¬Node.js»áÁ¢¼´Ö´ÐÐ <em>return content</em> £»ÔÚÕâ¸öÊ±ºò£¬<em>content</em>ÈÔÈ»ÊÇ¡°empty¡±£¬ÒòÎª´«µÝ¸ø<em>exec()</em>µÄ»Øµ÷º¯Êý»¹Î´Ö´ÐÐµ½¡ª¡ªÒòÎª<em>exec()</em>µÄ²Ù×÷ÊÇÒì²½µÄ¡£
+            çŽ°åœ¨å°±åˆ°äº†é—®é¢˜æ ¹æºæ‰€åœ¨äº†ï¼šæˆ‘ä»¬çš„ä»£ç æ˜¯åŒæ­¥æ‰§è¡Œçš„ï¼Œè¿™å°±æ„å‘³ç€åœ¨è°ƒç”¨<em>exec()</em>ä¹‹åŽï¼ŒNode.jsä¼šç«‹å³æ‰§è¡Œ <em>return content</em> ï¼›åœ¨è¿™ä¸ªæ—¶å€™ï¼Œ<em>content</em>ä»ç„¶æ˜¯â€œemptyâ€ï¼Œå› ä¸ºä¼ é€’ç»™<em>exec()</em>çš„å›žè°ƒå‡½æ•°è¿˜æœªæ‰§è¡Œåˆ°â€”â€”å› ä¸º<em>exec()</em>çš„æ“ä½œæ˜¯å¼‚æ­¥çš„ã€‚
         </p>
 
         <p>
-            ÎÒÃÇÕâÀï¡°ls -lah¡±µÄ²Ù×÷ÆäÊµÊÇ·Ç³£¿ìµÄ£¨³ý·Çµ±Ç°Ä¿Â¼ÏÂÓÐÉÏ°ÙÍò¸öÎÄ¼þ£©¡£ÕâÒ²ÊÇÎªÊ²Ã´»Øµ÷º¯ÊýÒ²»áºÜ¿ìµÄÖ´ÐÐµ½ ¡ª¡ª ²»¹ý£¬²»¹ÜÔõÃ´ËµËü»¹ÊÇÒì²½µÄ¡£
+            æˆ‘ä»¬è¿™é‡Œâ€œls -lahâ€çš„æ“ä½œå…¶å®žæ˜¯éžå¸¸å¿«çš„ï¼ˆé™¤éžå½“å‰ç›®å½•ä¸‹æœ‰ä¸Šç™¾ä¸‡ä¸ªæ–‡ä»¶ï¼‰ã€‚è¿™ä¹Ÿæ˜¯ä¸ºä»€ä¹ˆå›žè°ƒå‡½æ•°ä¹Ÿä¼šå¾ˆå¿«çš„æ‰§è¡Œåˆ° â€”â€” ä¸è¿‡ï¼Œä¸ç®¡æ€Žä¹ˆè¯´å®ƒè¿˜æ˜¯å¼‚æ­¥çš„ã€‚
         </p>
 
         <p>
-            ÎªÁËÈÃÐ§¹û¸ü¼ÓÃ÷ÏÔ£¬ÎÒÃÇÏëÏóÒ»¸ö¸üºÄÊ±µÄÃüÁî£º ¡°find /¡±£¬ËüÔÚÎÒ»úÆ÷ÉÏÐèÒªÖ´ÐÐ1·ÖÖÓ×óÓÒµÄÊ±¼ä£¬È»¶ø£¬¾¡¹ÜÔÚÇëÇó´¦Àí³ÌÐòÖÐ£¬ÎÒ°Ñ¡°ls -lah¡±»»³É¡°find /¡±£¬µ±´ò¿ª/start URLµÄÊ±ºò£¬ÒÀÈ»ÄÜ¹»Á¢¼´»ñµÃHTTPÏìÓ¦ ¡ª¡ª ºÜÃ÷ÏÔ£¬µ±<em>exec()</em>ÔÚºóÌ¨Ö´ÐÐµÄÊ±ºò£¬Node.js×ÔÉí»á¼ÌÐøÖ´ÐÐºóÃæµÄ´úÂë¡£²¢ÇÒÎÒÃÇÕâÀï¼ÙÉè´«µÝ¸ø<em>exec()</em>µÄ»Øµ÷º¯Êý£¬Ö»»áÔÚ¡°find /¡±ÃüÁîÖ´ÐÐÍê³ÉÖ®ºó²Å»á±»µ÷ÓÃ¡£
+            ä¸ºäº†è®©æ•ˆæžœæ›´åŠ æ˜Žæ˜¾ï¼Œæˆ‘ä»¬æƒ³è±¡ä¸€ä¸ªæ›´è€—æ—¶çš„å‘½ä»¤ï¼š â€œfind /â€ï¼Œå®ƒåœ¨æˆ‘æœºå™¨ä¸Šéœ€è¦æ‰§è¡Œ1åˆ†é’Ÿå·¦å³çš„æ—¶é—´ï¼Œç„¶è€Œï¼Œå°½ç®¡åœ¨è¯·æ±‚å¤„ç†ç¨‹åºä¸­ï¼Œæˆ‘æŠŠâ€œls -lahâ€æ¢æˆâ€œfind /â€ï¼Œå½“æ‰“å¼€/start URLçš„æ—¶å€™ï¼Œä¾ç„¶èƒ½å¤Ÿç«‹å³èŽ·å¾—HTTPå“åº” â€”â€” å¾ˆæ˜Žæ˜¾ï¼Œå½“<em>exec()</em>åœ¨åŽå°æ‰§è¡Œçš„æ—¶å€™ï¼ŒNode.jsè‡ªèº«ä¼šç»§ç»­æ‰§è¡ŒåŽé¢çš„ä»£ç ã€‚å¹¶ä¸”æˆ‘ä»¬è¿™é‡Œå‡è®¾ä¼ é€’ç»™<em>exec()</em>çš„å›žè°ƒå‡½æ•°ï¼Œåªä¼šåœ¨â€œfind /â€å‘½ä»¤æ‰§è¡Œå®Œæˆä¹‹åŽæ‰ä¼šè¢«è°ƒç”¨ã€‚
         </p>
 
         <p>
-            ÄÇ¾¿¾¹ÎÒÃÇÒªÈçºÎ²ÅÄÜÊµÏÖ½«µ±Ç°Ä¿Â¼ÏÂµÄÎÄ¼þÁÐ±íÏÔÊ¾¸øÓÃ»§ÄØ£¿
+            é‚£ç©¶ç«Ÿæˆ‘ä»¬è¦å¦‚ä½•æ‰èƒ½å®žçŽ°å°†å½“å‰ç›®å½•ä¸‹çš„æ–‡ä»¶åˆ—è¡¨æ˜¾ç¤ºç»™ç”¨æˆ·å‘¢ï¼Ÿ
         </p>
 
         <p>
-            ºÃ£¬ÁË½âÁËÕâÖÖ²»ºÃµÄÊµÏÖ·½Ê½Ö®ºó£¬ÎÒÃÇ½ÓÏÂÀ´À´½éÉÜÈçºÎÒÔÕýÈ·µÄ·½Ê½ÈÃÇëÇó´¦Àí³ÌÐò¶Ôä¯ÀÀÆ÷ÇëÇó×÷³öÏìÓ¦¡£
+            å¥½ï¼Œäº†è§£äº†è¿™ç§ä¸å¥½çš„å®žçŽ°æ–¹å¼ä¹‹åŽï¼Œæˆ‘ä»¬æŽ¥ä¸‹æ¥æ¥ä»‹ç»å¦‚ä½•ä»¥æ­£ç¡®çš„æ–¹å¼è®©è¯·æ±‚å¤„ç†ç¨‹åºå¯¹æµè§ˆå™¨è¯·æ±‚ä½œå‡ºå“åº”ã€‚
         </p>
 
         <a name="responding-request-handlers-with-non-blocking-operations"></a>
 
-        <h4>ÒÔ·Ç×èÈû²Ù×÷½øÐÐÇëÇóÏìÓ¦</h4>
+        <h4>ä»¥éžé˜»å¡žæ“ä½œè¿›è¡Œè¯·æ±‚å“åº”</h4>
 
         <p>
-            ÎÒ¸Õ¸ÕÌáµ½ÁËÕâÑùÒ»¸ö¶ÌÓï ¡ª¡ª ¡°ÕýÈ·µÄ·½Ê½¡±¡£¶øÊÂÊµÉÏÍ¨³£¡°ÕýÈ·µÄ·½Ê½¡±Ò»°ã¶¼²»¼òµ¥¡£
+            æˆ‘åˆšåˆšæåˆ°äº†è¿™æ ·ä¸€ä¸ªçŸ­è¯­ â€”â€” â€œæ­£ç¡®çš„æ–¹å¼â€ã€‚è€Œäº‹å®žä¸Šé€šå¸¸â€œæ­£ç¡®çš„æ–¹å¼â€ä¸€èˆ¬éƒ½ä¸ç®€å•ã€‚
         </p>
 
         <p>
-            ²»¹ý£¬ÓÃNode.js¾ÍÓÐÕâÑùÒ»ÖÖÊµÏÖ·½°¸£º º¯Êý´«µÝ¡£ÏÂÃæ¾ÍÈÃÎÒÃÇÀ´¾ßÌå¿´¿´ÈçºÎÊµÏÖ¡£
+            ä¸è¿‡ï¼Œç”¨Node.jså°±æœ‰è¿™æ ·ä¸€ç§å®žçŽ°æ–¹æ¡ˆï¼š å‡½æ•°ä¼ é€’ã€‚ä¸‹é¢å°±è®©æˆ‘ä»¬æ¥å…·ä½“çœ‹çœ‹å¦‚ä½•å®žçŽ°ã€‚
         </p>
 
         <p>
-            µ½Ä¿Ç°ÎªÖ¹£¬ÎÒÃÇµÄÓ¦ÓÃÒÑ¾­¿ÉÒÔÍ¨¹ýÓ¦ÓÃ¸÷²ãÖ®¼ä´«µÝÖµµÄ·½Ê½£¨ÇëÇó´¦Àí³ÌÐò -&gt ÇëÇóÂ·ÓÉ -&gt ·þÎñÆ÷£©½«ÇëÇó´¦Àí³ÌÐò·µ»ØµÄÄÚÈÝ£¨ÇëÇó´¦Àí³ÌÐò×îÖÕÒªÏÔÊ¾¸øÓÃ»§µÄÄÚÈÝ£©´«µÝ¸øHTTP·þÎñÆ÷¡£
+            åˆ°ç›®å‰ä¸ºæ­¢ï¼Œæˆ‘ä»¬çš„åº”ç”¨å·²ç»å¯ä»¥é€šè¿‡åº”ç”¨å„å±‚ä¹‹é—´ä¼ é€’å€¼çš„æ–¹å¼ï¼ˆè¯·æ±‚å¤„ç†ç¨‹åº -&gt è¯·æ±‚è·¯ç”± -&gt æœåŠ¡å™¨ï¼‰å°†è¯·æ±‚å¤„ç†ç¨‹åºè¿”å›žçš„å†…å®¹ï¼ˆè¯·æ±‚å¤„ç†ç¨‹åºæœ€ç»ˆè¦æ˜¾ç¤ºç»™ç”¨æˆ·çš„å†…å®¹ï¼‰ä¼ é€’ç»™HTTPæœåŠ¡å™¨ã€‚
         </p>
 
         <p>
-            ÏÖÔÚÎÒÃÇ²ÉÓÃÈçÏÂÕâÖÖÐÂµÄÊµÏÖ·½Ê½£ºÏà¶Ô²ÉÓÃ½«ÄÚÈÝ´«µÝ¸ø·þÎñÆ÷µÄ·½Ê½£¬ÎÒÃÇÕâ´Î²ÉÓÃ½«·þÎñÆ÷¡°´«µÝ¡±¸øÄÚÈÝµÄ·½Ê½¡£ ´ÓÊµ¼ù½Ç¶ÈÀ´Ëµ£¬¾ÍÊÇ½«<em>response</em>¶ÔÏó£¨´Ó·þÎñÆ÷µÄ»Øµ÷º¯Êý<em>onRequest()</em>»ñÈ¡£©Í¨¹ýÇëÇóÂ·ÓÉ´«µÝ¸øÇëÇó´¦Àí³ÌÐò¡£ Ëæºó£¬´¦Àí³ÌÐò¾Í¿ÉÒÔ²ÉÓÃ¸Ã¶ÔÏóÉÏµÄº¯ÊýÀ´¶ÔÇëÇó×÷³öÏìÓ¦¡£
+            çŽ°åœ¨æˆ‘ä»¬é‡‡ç”¨å¦‚ä¸‹è¿™ç§æ–°çš„å®žçŽ°æ–¹å¼ï¼šç›¸å¯¹é‡‡ç”¨å°†å†…å®¹ä¼ é€’ç»™æœåŠ¡å™¨çš„æ–¹å¼ï¼Œæˆ‘ä»¬è¿™æ¬¡é‡‡ç”¨å°†æœåŠ¡å™¨â€œä¼ é€’â€ç»™å†…å®¹çš„æ–¹å¼ã€‚ ä»Žå®žè·µè§’åº¦æ¥è¯´ï¼Œå°±æ˜¯å°†<em>response</em>å¯¹è±¡ï¼ˆä»ŽæœåŠ¡å™¨çš„å›žè°ƒå‡½æ•°<em>onRequest()</em>èŽ·å–ï¼‰é€šè¿‡è¯·æ±‚è·¯ç”±ä¼ é€’ç»™è¯·æ±‚å¤„ç†ç¨‹åºã€‚ éšåŽï¼Œå¤„ç†ç¨‹åºå°±å¯ä»¥é‡‡ç”¨è¯¥å¯¹è±¡ä¸Šçš„å‡½æ•°æ¥å¯¹è¯·æ±‚ä½œå‡ºå“åº”ã€‚
         </p>
 
         <p>
-            Ô­Àí¾ÍÊÇÈç´Ë£¬½ÓÏÂÀ´ÈÃÎÒÃÇÀ´Ò»²½²½ÊµÏÖÕâÖÖ·½°¸¡£
+            åŽŸç†å°±æ˜¯å¦‚æ­¤ï¼ŒæŽ¥ä¸‹æ¥è®©æˆ‘ä»¬æ¥ä¸€æ­¥æ­¥å®žçŽ°è¿™ç§æ–¹æ¡ˆã€‚
         </p>
 
         <p>
-            ÏÈ´Ó<em>server.js</em>¿ªÊ¼£º
+            å…ˆä»Ž<em>server.js</em>å¼€å§‹ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -1399,11 +1399,11 @@ Request handler 'start' was called.</pre>
                 class="pln"> start</span><span class="pun">;</span></pre>
 
         <p>
-            Ïà¶Ô´ËÇ°´Ó<em>route()</em>º¯Êý»ñÈ¡·µ»ØÖµµÄ×ö·¨£¬Õâ´ÎÎÒÃÇ½«response¶ÔÏó×÷ÎªµÚÈý¸ö²ÎÊý´«µÝ¸ø<em>route()</em>º¯Êý£¬²¢ÇÒ£¬ÎÒÃÇ½«<em>onRequest()</em>´¦Àí³ÌÐòÖÐËùÓÐÓÐ¹Ø<em>response</em>µÄº¯Êýµ÷¶¼ÒÆ³ý£¬ÒòÎªÎÒÃÇÏ£ÍûÕâ²¿·Ö¹¤×÷ÈÃ<em>route()</em>º¯ÊýÀ´Íê³É¡£
+            ç›¸å¯¹æ­¤å‰ä»Ž<em>route()</em>å‡½æ•°èŽ·å–è¿”å›žå€¼çš„åšæ³•ï¼Œè¿™æ¬¡æˆ‘ä»¬å°†responseå¯¹è±¡ä½œä¸ºç¬¬ä¸‰ä¸ªå‚æ•°ä¼ é€’ç»™<em>route()</em>å‡½æ•°ï¼Œå¹¶ä¸”ï¼Œæˆ‘ä»¬å°†<em>onRequest()</em>å¤„ç†ç¨‹åºä¸­æ‰€æœ‰æœ‰å…³<em>response</em>çš„å‡½æ•°è°ƒéƒ½ç§»é™¤ï¼Œå› ä¸ºæˆ‘ä»¬å¸Œæœ›è¿™éƒ¨åˆ†å·¥ä½œè®©<em>route()</em>å‡½æ•°æ¥å®Œæˆã€‚
         </p>
 
         <p>
-            ÏÂÃæ¾ÍÀ´¿´¿´ÎÒÃÇµÄ<em>router.js</em>:
+            ä¸‹é¢å°±æ¥çœ‹çœ‹æˆ‘ä»¬çš„<em>router.js</em>:
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
                 class="pun">(</span><span class="pln">handle</span><span class="pun">,</span><span
@@ -1436,15 +1436,15 @@ Request handler 'start' was called.</pre>
                 class="pln"> route</span><span class="pun">;</span></pre>
 
         <p>
-            Í¬ÑùµÄÄ£Ê½£ºÏà¶Ô´ËÇ°´ÓÇëÇó´¦Àí³ÌÐòÖÐ»ñÈ¡·µ»ØÖµ£¬Õâ´ÎÈ¡¶ø´úÖ®µÄÊÇÖ±½Ó´«µÝ<em>response</em>¶ÔÏó¡£
+            åŒæ ·çš„æ¨¡å¼ï¼šç›¸å¯¹æ­¤å‰ä»Žè¯·æ±‚å¤„ç†ç¨‹åºä¸­èŽ·å–è¿”å›žå€¼ï¼Œè¿™æ¬¡å–è€Œä»£ä¹‹çš„æ˜¯ç›´æŽ¥ä¼ é€’<em>response</em>å¯¹è±¡ã€‚
         </p>
 
         <p>
-            Èç¹ûÃ»ÓÐ¶ÔÓ¦µÄÇëÇó´¦ÀíÆ÷´¦Àí£¬ÎÒÃÇ¾ÍÖ±½Ó·µ»Ø¡°404¡±´íÎó¡£
+            å¦‚æžœæ²¡æœ‰å¯¹åº”çš„è¯·æ±‚å¤„ç†å™¨å¤„ç†ï¼Œæˆ‘ä»¬å°±ç›´æŽ¥è¿”å›žâ€œ404â€é”™è¯¯ã€‚
         </p>
 
         <p>
-            ×îºó£¬ÎÒÃÇ½«<em>requestHandler.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            æœ€åŽï¼Œæˆ‘ä»¬å°†<em>requestHandler.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> exec </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"child_process"</span><span
@@ -1484,19 +1484,19 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ÎÒÃÇµÄ´¦Àí³ÌÐòº¯ÊýÐèÒª½ÓÊÕresponse²ÎÊý£¬ÎªÁË¶ÔÇëÇó×÷³öÖ±½ÓµÄÏìÓ¦¡£
+            æˆ‘ä»¬çš„å¤„ç†ç¨‹åºå‡½æ•°éœ€è¦æŽ¥æ”¶responseå‚æ•°ï¼Œä¸ºäº†å¯¹è¯·æ±‚ä½œå‡ºç›´æŽ¥çš„å“åº”ã€‚
         </p>
 
         <p>
-            <em>start</em>´¦Àí³ÌÐòÔÚ<em>exec()</em>µÄÄäÃû»Øµ÷º¯ÊýÖÐ×öÇëÇóÏìÓ¦µÄ²Ù×÷£¬¶ø<em>upload</em>´¦Àí³ÌÐòÈÔÈ»ÊÇ¼òµ¥µÄ»Ø¸´¡°Hello World¡±£¬Ö»ÊÇÕâ´ÎÊÇÊ¹ÓÃ<em>response</em>¶ÔÏó¶øÒÑ¡£
+            <em>start</em>å¤„ç†ç¨‹åºåœ¨<em>exec()</em>çš„åŒ¿åå›žè°ƒå‡½æ•°ä¸­åšè¯·æ±‚å“åº”çš„æ“ä½œï¼Œè€Œ<em>upload</em>å¤„ç†ç¨‹åºä»ç„¶æ˜¯ç®€å•çš„å›žå¤â€œHello Worldâ€ï¼Œåªæ˜¯è¿™æ¬¡æ˜¯ä½¿ç”¨<em>response</em>å¯¹è±¡è€Œå·²ã€‚
         </p>
 
         <p>
-            ÕâÊ±ÔÙ´ÎÎÒÃÇÆô¶¯Ó¦ÓÃ£¨<em>node index.js</em>£©£¬Ò»ÇÐ¶¼»á¹¤×÷µÄºÜºÃ¡£
+            è¿™æ—¶å†æ¬¡æˆ‘ä»¬å¯åŠ¨åº”ç”¨ï¼ˆ<em>node index.js</em>ï¼‰ï¼Œä¸€åˆ‡éƒ½ä¼šå·¥ä½œçš„å¾ˆå¥½ã€‚
         </p>
 
         <p>
-            Èç¹ûÏëÒªÖ¤Ã÷<em>/start</em>´¦Àí³ÌÐòÖÐºÄÊ±µÄ²Ù×÷²»»á×èÈû¶Ô<em>/upload</em>ÇëÇó×÷³öÁ¢¼´ÏìÓ¦µÄ»°£¬¿ÉÒÔ½«<em>requestHandlers.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            å¦‚æžœæƒ³è¦è¯æ˜Ž<em>/start</em>å¤„ç†ç¨‹åºä¸­è€—æ—¶çš„æ“ä½œä¸ä¼šé˜»å¡žå¯¹<em>/upload</em>è¯·æ±‚ä½œå‡ºç«‹å³å“åº”çš„è¯ï¼Œå¯ä»¥å°†<em>requestHandlers.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> exec </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"child_process"</span><span
@@ -1541,45 +1541,45 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ÕâÑùÒ»À´£¬µ±ÇëÇó<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>µÄÊ±ºò£¬»á»¨10ÃëÖÓµÄÊ±¼ä²ÅÔØÈë£¬¶øµ±ÇëÇó<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>µÄÊ±ºò£¬»áÁ¢¼´ÏìÓ¦£¬×ÝÈ»Õâ¸öÊ±ºò/startÏìÓ¦»¹ÔÚ´¦ÀíÖÐ¡£
+            è¿™æ ·ä¸€æ¥ï¼Œå½“è¯·æ±‚<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>çš„æ—¶å€™ï¼Œä¼šèŠ±10ç§’é’Ÿçš„æ—¶é—´æ‰è½½å…¥ï¼Œè€Œå½“è¯·æ±‚<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>çš„æ—¶å€™ï¼Œä¼šç«‹å³å“åº”ï¼Œçºµç„¶è¿™ä¸ªæ—¶å€™/startå“åº”è¿˜åœ¨å¤„ç†ä¸­ã€‚
         </p>
 
         <a name="serving-something-useful"></a>
 
-        <h3>¸üÓÐÓÃµÄ³¡¾°</h3>
+        <h3>æ›´æœ‰ç”¨çš„åœºæ™¯</h3>
 
         <p>
-            µ½Ä¿Ç°ÎªÖ¹£¬ÎÒÃÇ×öµÄÒÑ¾­ºÜºÃÁË£¬µ«ÊÇ£¬ÎÒÃÇµÄÓ¦ÓÃÃ»ÓÐÊµ¼ÊÓÃÍ¾¡£
+            åˆ°ç›®å‰ä¸ºæ­¢ï¼Œæˆ‘ä»¬åšçš„å·²ç»å¾ˆå¥½äº†ï¼Œä½†æ˜¯ï¼Œæˆ‘ä»¬çš„åº”ç”¨æ²¡æœ‰å®žé™…ç”¨é€”ã€‚
         </p>
 
         <p>
-            ·þÎñÆ÷£¬ÇëÇóÂ·ÓÉÒÔ¼°ÇëÇó´¦Àí³ÌÐò¶¼ÒÑ¾­Íê³ÉÁË£¬ÏÂÃæÈÃÎÒÃÇ°´ÕÕ´ËÇ°µÄÓÃÀý¸øÍøÕ¾Ìí¼Ó½»»¥£ºÓÃ»§Ñ¡ÔñÒ»¸öÎÄ¼þ£¬ÉÏ´«¸ÃÎÄ¼þ£¬È»ºóÔÚä¯ÀÀÆ÷ÖÐ¿´µ½ÉÏ´«µÄÎÄ¼þ¡£ ÎªÁË±£³Ö¼òµ¥£¬ÎÒÃÇ¼ÙÉèÓÃ»§Ö»»áÉÏ´«Í¼Æ¬£¬È»ºóÎÒÃÇÓ¦ÓÃ½«¸ÃÍ¼Æ¬ÏÔÊ¾µ½ä¯ÀÀÆ÷ÖÐ¡£
+            æœåŠ¡å™¨ï¼Œè¯·æ±‚è·¯ç”±ä»¥åŠè¯·æ±‚å¤„ç†ç¨‹åºéƒ½å·²ç»å®Œæˆäº†ï¼Œä¸‹é¢è®©æˆ‘ä»¬æŒ‰ç…§æ­¤å‰çš„ç”¨ä¾‹ç»™ç½‘ç«™æ·»åŠ äº¤äº’ï¼šç”¨æˆ·é€‰æ‹©ä¸€ä¸ªæ–‡ä»¶ï¼Œä¸Šä¼ è¯¥æ–‡ä»¶ï¼Œç„¶åŽåœ¨æµè§ˆå™¨ä¸­çœ‹åˆ°ä¸Šä¼ çš„æ–‡ä»¶ã€‚ ä¸ºäº†ä¿æŒç®€å•ï¼Œæˆ‘ä»¬å‡è®¾ç”¨æˆ·åªä¼šä¸Šä¼ å›¾ç‰‡ï¼Œç„¶åŽæˆ‘ä»¬åº”ç”¨å°†è¯¥å›¾ç‰‡æ˜¾ç¤ºåˆ°æµè§ˆå™¨ä¸­ã€‚
         </p>
 
         <p>
-            ºÃ£¬ÏÂÃæ¾ÍÒ»²½²½À´ÊµÏÖ£¬¼øÓÚ´ËÇ°ÒÑ¾­¶ÔJavaScriptÔ­ÀíÐÔ¼¼ÊõÐÔµÄÄÚÈÝ×ö¹ý´óÁ¿½éÉÜÁË£¬Õâ´ÎÎÒÃÇ¼Ó¿ìµãËÙ¶È¡£
+            å¥½ï¼Œä¸‹é¢å°±ä¸€æ­¥æ­¥æ¥å®žçŽ°ï¼Œé‰´äºŽæ­¤å‰å·²ç»å¯¹JavaScriptåŽŸç†æ€§æŠ€æœ¯æ€§çš„å†…å®¹åšè¿‡å¤§é‡ä»‹ç»äº†ï¼Œè¿™æ¬¡æˆ‘ä»¬åŠ å¿«ç‚¹é€Ÿåº¦ã€‚
         </p>
 
         <p>
-            ÒªÊµÏÖ¸Ã¹¦ÄÜ£¬·ÖÎªÈçÏÂÁ½²½£º Ê×ÏÈ£¬ÈÃÎÒÃÇÀ´¿´¿´ÈçºÎ´¦ÀíPOSTÇëÇó£¨·ÇÎÄ¼þÉÏ´«£©£¬Ö®ºó£¬ÎÒÃÇÊ¹ÓÃNode.jsµÄÒ»¸öÓÃÓÚÎÄ¼þÉÏ´«µÄÍâ²¿Ä£¿é¡£Ö®ËùÒÔ²ÉÓÃÕâÖÖÊµÏÖ·½Ê½ÓÐÁ½¸öÀíÓÉ¡£
+            è¦å®žçŽ°è¯¥åŠŸèƒ½ï¼Œåˆ†ä¸ºå¦‚ä¸‹ä¸¤æ­¥ï¼š é¦–å…ˆï¼Œè®©æˆ‘ä»¬æ¥çœ‹çœ‹å¦‚ä½•å¤„ç†POSTè¯·æ±‚ï¼ˆéžæ–‡ä»¶ä¸Šä¼ ï¼‰ï¼Œä¹‹åŽï¼Œæˆ‘ä»¬ä½¿ç”¨Node.jsçš„ä¸€ä¸ªç”¨äºŽæ–‡ä»¶ä¸Šä¼ çš„å¤–éƒ¨æ¨¡å—ã€‚ä¹‹æ‰€ä»¥é‡‡ç”¨è¿™ç§å®žçŽ°æ–¹å¼æœ‰ä¸¤ä¸ªç†ç”±ã€‚
         </p>
 
         <p>
-            µÚÒ»£¬¾¡¹ÜÔÚNode.jsÖÐ´¦Àí»ù´¡µÄPOSTÇëÇóÏà¶Ô±È½Ï¼òµ¥£¬µ«ÔÚÕâ¹ý³ÌÖÐ»¹ÊÇÄÜÑ§µ½ºÜ¶à¡£
+            ç¬¬ä¸€ï¼Œå°½ç®¡åœ¨Node.jsä¸­å¤„ç†åŸºç¡€çš„POSTè¯·æ±‚ç›¸å¯¹æ¯”è¾ƒç®€å•ï¼Œä½†åœ¨è¿™è¿‡ç¨‹ä¸­è¿˜æ˜¯èƒ½å­¦åˆ°å¾ˆå¤šã€‚
             <br>
-            µÚ¶þ£¬ÓÃNode.jsÀ´´¦ÀíÎÄ¼þÉÏ´«£¨multipart POSTÇëÇó£©ÊÇ±È½Ï¸´ÔÓµÄ£¬Ëü<em>²»</em>ÔÚ±¾ÊéµÄ·¶³ë£¬µ«£¬ÈçºÎÊ¹ÓÃÍâ²¿Ä£¿éÈ´ÊÇÔÚ±¾ÊéÉæÁÔÄÚÈÝÖ®ÄÚ¡£
+            ç¬¬äºŒï¼Œç”¨Node.jsæ¥å¤„ç†æ–‡ä»¶ä¸Šä¼ ï¼ˆmultipart POSTè¯·æ±‚ï¼‰æ˜¯æ¯”è¾ƒå¤æ‚çš„ï¼Œå®ƒ<em>ä¸</em>åœ¨æœ¬ä¹¦çš„èŒƒç•´ï¼Œä½†ï¼Œå¦‚ä½•ä½¿ç”¨å¤–éƒ¨æ¨¡å—å´æ˜¯åœ¨æœ¬ä¹¦æ¶‰çŒŽå†…å®¹ä¹‹å†…ã€‚
         </p>
 
         <a name="handling-post-requests"></a>
 
-        <h4>´¦ÀíPOSTÇëÇó</h4>
+        <h4>å¤„ç†POSTè¯·æ±‚</h4>
 
         <p>
-            ¿¼ÂÇÕâÑùÒ»¸ö¼òµ¥µÄÀý×Ó£ºÎÒÃÇÏÔÊ¾Ò»¸öÎÄ±¾Çø£¨textarea£©¹©ÓÃ»§ÊäÈëÄÚÈÝ£¬È»ºóÍ¨¹ýPOSTÇëÇóÌá½»¸ø·þÎñÆ÷¡£×îºó£¬·þÎñÆ÷½ÓÊÜµ½ÇëÇó£¬Í¨¹ý´¦Àí³ÌÐò½«ÊäÈëµÄÄÚÈÝÕ¹Ê¾µ½ä¯ÀÀÆ÷ÖÐ¡£
+            è€ƒè™‘è¿™æ ·ä¸€ä¸ªç®€å•çš„ä¾‹å­ï¼šæˆ‘ä»¬æ˜¾ç¤ºä¸€ä¸ªæ–‡æœ¬åŒºï¼ˆtextareaï¼‰ä¾›ç”¨æˆ·è¾“å…¥å†…å®¹ï¼Œç„¶åŽé€šè¿‡POSTè¯·æ±‚æäº¤ç»™æœåŠ¡å™¨ã€‚æœ€åŽï¼ŒæœåŠ¡å™¨æŽ¥å—åˆ°è¯·æ±‚ï¼Œé€šè¿‡å¤„ç†ç¨‹åºå°†è¾“å…¥çš„å†…å®¹å±•ç¤ºåˆ°æµè§ˆå™¨ä¸­ã€‚
         </p>
         
         <p>
-            <em>/start</em>ÇëÇó´¦Àí³ÌÐòÓÃÓÚÉú³É´øÎÄ±¾ÇøµÄ±íµ¥£¬Òò´Ë£¬ÎÒÃÇ½«<em>requestHandlers.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            <em>/start</em>è¯·æ±‚å¤„ç†ç¨‹åºç”¨äºŽç”Ÿæˆå¸¦æ–‡æœ¬åŒºçš„è¡¨å•ï¼Œå› æ­¤ï¼Œæˆ‘ä»¬å°†<em>requestHandlers.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> start</span><span
                 class="pun">(</span><span class="pln">response</span><span class="pun">)</span><span
@@ -1628,35 +1628,35 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ºÃÁË£¬ÏÖÔÚÎÒÃÇµÄÓ¦ÓÃÒÑ¾­ºÜÍêÉÆÁË£¬¶¼¿ÉÒÔ»ñµÃÍþ±È½±£¨Webby Awards£©ÁË£¬¹þ¹þ¡££¨ÒëÕß×¢£ºÍþ±È½±ÊÇÓÉ¹ú¼ÊÊý×ÖÒÕÊõÓë¿ÆÑ§Ñ§ÔºÖ÷°ìµÄÆÀÑ¡È«Çò×î¼ÑÍøÕ¾µÄ½±Ïî£¬¾ßÌå²Î¼ûÏêÏ¸ËµÃ÷£©Í¨¹ýÔÚä¯ÀÀÆ÷ÖÐ·ÃÎÊ<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>¾Í¿ÉÒÔ¿´µ½¼òµ¥µÄ±íµ¥ÁË£¬Òª¼ÇµÃÖØÆô·þÎñÆ÷Å¶£¡
+            å¥½äº†ï¼ŒçŽ°åœ¨æˆ‘ä»¬çš„åº”ç”¨å·²ç»å¾ˆå®Œå–„äº†ï¼Œéƒ½å¯ä»¥èŽ·å¾—å¨æ¯”å¥–ï¼ˆWebby Awardsï¼‰äº†ï¼Œå“ˆå“ˆã€‚ï¼ˆè¯‘è€…æ³¨ï¼šå¨æ¯”å¥–æ˜¯ç”±å›½é™…æ•°å­—è‰ºæœ¯ä¸Žç§‘å­¦å­¦é™¢ä¸»åŠžçš„è¯„é€‰å…¨çƒæœ€ä½³ç½‘ç«™çš„å¥–é¡¹ï¼Œå…·ä½“å‚è§è¯¦ç»†è¯´æ˜Žï¼‰é€šè¿‡åœ¨æµè§ˆå™¨ä¸­è®¿é—®<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>å°±å¯ä»¥çœ‹åˆ°ç®€å•çš„è¡¨å•äº†ï¼Œè¦è®°å¾—é‡å¯æœåŠ¡å™¨å“¦ï¼
         </p>
 
         <p>
-            Äã¿ÉÄÜ»áËµ£ºÕâÖÖÖ±½Ó½«ÊÓ¾õÔªËØ·ÅÔÚÇëÇó´¦Àí³ÌÐòÖÐµÄ·½Ê½Ì«³óÂªÁË¡£ËµµÄÃ»´í£¬µ«ÊÇ£¬ÎÒ²¢²»ÏëÔÚ±¾ÊéÖÐ½éÉÜÖîÈçMVCÖ®ÀàµÄÄ£Ê½£¬ÒòÎªÕâ¶ÔÓÚÄãÁË½âJavaScript»òÕßNode.js»·¾³À´ËµÃ»¶à´ó¹ØÏµ¡£
+            ä½ å¯èƒ½ä¼šè¯´ï¼šè¿™ç§ç›´æŽ¥å°†è§†è§‰å…ƒç´ æ”¾åœ¨è¯·æ±‚å¤„ç†ç¨‹åºä¸­çš„æ–¹å¼å¤ªä¸‘é™‹äº†ã€‚è¯´çš„æ²¡é”™ï¼Œä½†æ˜¯ï¼Œæˆ‘å¹¶ä¸æƒ³åœ¨æœ¬ä¹¦ä¸­ä»‹ç»è¯¸å¦‚MVCä¹‹ç±»çš„æ¨¡å¼ï¼Œå› ä¸ºè¿™å¯¹äºŽä½ äº†è§£JavaScriptæˆ–è€…Node.jsçŽ¯å¢ƒæ¥è¯´æ²¡å¤šå¤§å…³ç³»ã€‚
         </p>
 
         <p>
-            ÓàÏÂµÄÆª·ù£¬ÎÒÃÇÀ´Ì½ÌÖÒ»¸ö¸üÓÐÈ¤µÄÎÊÌâ£º µ±ÓÃ»§Ìá½»±íµ¥Ê±£¬´¥·¢<em>/upload</em>ÇëÇó´¦Àí³ÌÐò´¦ÀíPOSTÇëÇóµÄÎÊÌâ¡£
+            ä½™ä¸‹çš„ç¯‡å¹…ï¼Œæˆ‘ä»¬æ¥æŽ¢è®¨ä¸€ä¸ªæ›´æœ‰è¶£çš„é—®é¢˜ï¼š å½“ç”¨æˆ·æäº¤è¡¨å•æ—¶ï¼Œè§¦å‘<em>/upload</em>è¯·æ±‚å¤„ç†ç¨‹åºå¤„ç†POSTè¯·æ±‚çš„é—®é¢˜ã€‚
         </p>
 
         <p>
-            ÏÖÔÚ£¬ÎÒÃÇÒÑ¾­ÊÇÐÂÊÖÖÐµÄ×¨¼ÒÁË£¬ºÜ×ÔÈ»»áÏëµ½²ÉÓÃÒì²½»Øµ÷À´ÊµÏÖ·Ç×èÈûµØ´¦ÀíPOSTÇëÇóµÄÊý¾Ý¡£
+            çŽ°åœ¨ï¼Œæˆ‘ä»¬å·²ç»æ˜¯æ–°æ‰‹ä¸­çš„ä¸“å®¶äº†ï¼Œå¾ˆè‡ªç„¶ä¼šæƒ³åˆ°é‡‡ç”¨å¼‚æ­¥å›žè°ƒæ¥å®žçŽ°éžé˜»å¡žåœ°å¤„ç†POSTè¯·æ±‚çš„æ•°æ®ã€‚
         </p>
 
         <p>
-            ÕâÀï²ÉÓÃ·Ç×èÈû·½Ê½´¦ÀíÊÇÃ÷ÖÇµÄ£¬ÒòÎªPOSTÇëÇóÒ»°ã¶¼±È½Ï¡°ÖØ¡± ¡ª¡ª ÓÃ»§¿ÉÄÜ»áÊäÈë´óÁ¿µÄÄÚÈÝ¡£ÓÃ×èÈûµÄ·½Ê½´¦Àí´óÊý¾ÝÁ¿µÄÇëÇó±ØÈ»»áµ¼ÖÂÓÃ»§²Ù×÷µÄ×èÈû¡£
+            è¿™é‡Œé‡‡ç”¨éžé˜»å¡žæ–¹å¼å¤„ç†æ˜¯æ˜Žæ™ºçš„ï¼Œå› ä¸ºPOSTè¯·æ±‚ä¸€èˆ¬éƒ½æ¯”è¾ƒâ€œé‡â€ â€”â€” ç”¨æˆ·å¯èƒ½ä¼šè¾“å…¥å¤§é‡çš„å†…å®¹ã€‚ç”¨é˜»å¡žçš„æ–¹å¼å¤„ç†å¤§æ•°æ®é‡çš„è¯·æ±‚å¿…ç„¶ä¼šå¯¼è‡´ç”¨æˆ·æ“ä½œçš„é˜»å¡žã€‚
         </p>
 
         <p>
-            ÎªÁËÊ¹Õû¸ö¹ý³Ì·Ç×èÈû£¬Node.js»á½«POSTÊý¾Ý²ð·Ö³ÉºÜ¶àÐ¡µÄÊý¾Ý¿é£¬È»ºóÍ¨¹ý´¥·¢ÌØ¶¨µÄÊÂ¼þ£¬½«ÕâÐ©Ð¡Êý¾Ý¿é´«µÝ¸ø»Øµ÷º¯Êý¡£ÕâÀïµÄÌØ¶¨µÄÊÂ¼þÓÐ<em>data</em>ÊÂ¼þ£¨±íÊ¾ÐÂµÄÐ¡Êý¾Ý¿éµ½´ïÁË£©ÒÔ¼°<em>end</em>ÊÂ¼þ£¨±íÊ¾ËùÓÐµÄÊý¾Ý¶¼ÒÑ¾­½ÓÊÕÍê±Ï£©¡£
+            ä¸ºäº†ä½¿æ•´ä¸ªè¿‡ç¨‹éžé˜»å¡žï¼ŒNode.jsä¼šå°†POSTæ•°æ®æ‹†åˆ†æˆå¾ˆå¤šå°çš„æ•°æ®å—ï¼Œç„¶åŽé€šè¿‡è§¦å‘ç‰¹å®šçš„äº‹ä»¶ï¼Œå°†è¿™äº›å°æ•°æ®å—ä¼ é€’ç»™å›žè°ƒå‡½æ•°ã€‚è¿™é‡Œçš„ç‰¹å®šçš„äº‹ä»¶æœ‰<em>data</em>äº‹ä»¶ï¼ˆè¡¨ç¤ºæ–°çš„å°æ•°æ®å—åˆ°è¾¾äº†ï¼‰ä»¥åŠ<em>end</em>äº‹ä»¶ï¼ˆè¡¨ç¤ºæ‰€æœ‰çš„æ•°æ®éƒ½å·²ç»æŽ¥æ”¶å®Œæ¯•ï¼‰ã€‚
         </p>
 
         <p>
-            ÎÒÃÇÐèÒª¸æËßNode.jsµ±ÕâÐ©ÊÂ¼þ´¥·¢µÄÊ±ºò£¬»Øµ÷ÄÄÐ©º¯Êý¡£ÔõÃ´¸æËßÄØ£¿ ÎÒÃÇÍ¨¹ýÔÚ<em>request</em>¶ÔÏóÉÏ×¢²á<em>¼àÌýÆ÷</em>£¨listener£© À´ÊµÏÖ¡£ÕâÀïµÄrequest¶ÔÏóÊÇÃ¿´Î½ÓÊÕµ½HTTPÇëÇóÊ±ºò£¬¶¼»á°Ñ¸Ã¶ÔÏó´«µÝ¸ø<em>onRequest</em>»Øµ÷º¯Êý¡£
+            æˆ‘ä»¬éœ€è¦å‘Šè¯‰Node.jså½“è¿™äº›äº‹ä»¶è§¦å‘çš„æ—¶å€™ï¼Œå›žè°ƒå“ªäº›å‡½æ•°ã€‚æ€Žä¹ˆå‘Šè¯‰å‘¢ï¼Ÿ æˆ‘ä»¬é€šè¿‡åœ¨<em>request</em>å¯¹è±¡ä¸Šæ³¨å†Œ<em>ç›‘å¬å™¨</em>ï¼ˆlistenerï¼‰ æ¥å®žçŽ°ã€‚è¿™é‡Œçš„requestå¯¹è±¡æ˜¯æ¯æ¬¡æŽ¥æ”¶åˆ°HTTPè¯·æ±‚æ—¶å€™ï¼Œéƒ½ä¼šæŠŠè¯¥å¯¹è±¡ä¼ é€’ç»™<em>onRequest</em>å›žè°ƒå‡½æ•°ã€‚
         </p>
 
         <p>
-            ÈçÏÂËùÊ¾£º
+            å¦‚ä¸‹æ‰€ç¤ºï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="pln">request</span><span class="pun">.</span><span class="pln">addListener</span><span
                 class="pun">(</span><span class="str">"data"</span><span class="pun">,</span><span
@@ -1672,19 +1672,19 @@ Request handler 'start' was called.</pre>
                 class="pln"><br></span><span class="pun">});</span></pre>
 
         <p>
-            ÎÊÌâÀ´ÁË£¬Õâ²¿·ÖÂß¼­Ð´ÔÚÄÄÀïÄØ£¿ ÎÒÃÇÏÖÔÚÖ»ÊÇÔÚ·þÎñÆ÷ÖÐ»ñÈ¡µ½ÁË<em>request</em>¶ÔÏó ¡ª¡ª ÎÒÃÇ²¢Ã»ÓÐÏñÖ®Ç°<em>response</em>¶ÔÏóÄÇÑù£¬°Ñ request ¶ÔÏó´«µÝ¸øÇëÇóÂ·ÓÉºÍÇëÇó´¦Àí³ÌÐò¡£
+            é—®é¢˜æ¥äº†ï¼Œè¿™éƒ¨åˆ†é€»è¾‘å†™åœ¨å“ªé‡Œå‘¢ï¼Ÿ æˆ‘ä»¬çŽ°åœ¨åªæ˜¯åœ¨æœåŠ¡å™¨ä¸­èŽ·å–åˆ°äº†<em>request</em>å¯¹è±¡ â€”â€” æˆ‘ä»¬å¹¶æ²¡æœ‰åƒä¹‹å‰<em>response</em>å¯¹è±¡é‚£æ ·ï¼ŒæŠŠ request å¯¹è±¡ä¼ é€’ç»™è¯·æ±‚è·¯ç”±å’Œè¯·æ±‚å¤„ç†ç¨‹åºã€‚
         </p>
 
         <p>
-            ÔÚÎÒ¿´À´£¬»ñÈ¡ËùÓÐÀ´×ÔÇëÇóµÄÊý¾Ý£¬È»ºó½«ÕâÐ©Êý¾Ý¸øÓ¦ÓÃ²ã´¦Àí£¬Ó¦¸ÃÊÇHTTP·þÎñÆ÷Òª×öµÄÊÂÇé¡£Òò´Ë£¬ÎÒ½¨Òé£¬ÎÒÃÇÖ±½ÓÔÚ·þÎñÆ÷ÖÐ´¦ÀíPOSTÊý¾Ý£¬È»ºó½«×îÖÕµÄÊý¾Ý´«µÝ¸øÇëÇóÂ·ÓÉºÍÇëÇó´¦ÀíÆ÷£¬ÈÃËûÃÇÀ´½øÐÐ½øÒ»²½µÄ´¦Àí¡£
+            åœ¨æˆ‘çœ‹æ¥ï¼ŒèŽ·å–æ‰€æœ‰æ¥è‡ªè¯·æ±‚çš„æ•°æ®ï¼Œç„¶åŽå°†è¿™äº›æ•°æ®ç»™åº”ç”¨å±‚å¤„ç†ï¼Œåº”è¯¥æ˜¯HTTPæœåŠ¡å™¨è¦åšçš„äº‹æƒ…ã€‚å› æ­¤ï¼Œæˆ‘å»ºè®®ï¼Œæˆ‘ä»¬ç›´æŽ¥åœ¨æœåŠ¡å™¨ä¸­å¤„ç†POSTæ•°æ®ï¼Œç„¶åŽå°†æœ€ç»ˆçš„æ•°æ®ä¼ é€’ç»™è¯·æ±‚è·¯ç”±å’Œè¯·æ±‚å¤„ç†å™¨ï¼Œè®©ä»–ä»¬æ¥è¿›è¡Œè¿›ä¸€æ­¥çš„å¤„ç†ã€‚
         </p>
 
         <p>
-            Òò´Ë£¬ÊµÏÖË¼Â·¾ÍÊÇ£º ½«<em>data</em>ºÍ<em>end</em>ÊÂ¼þµÄ»Øµ÷º¯ÊýÖ±½Ó·ÅÔÚ·þÎñÆ÷ÖÐ£¬ÔÚ<em>data</em>ÊÂ¼þ»Øµ÷ÖÐÊÕ¼¯ËùÓÐµÄPOSTÊý¾Ý£¬µ±½ÓÊÕµ½ËùÓÐÊý¾Ý£¬´¥·¢<em>end</em>ÊÂ¼þºó£¬Æä»Øµ÷º¯Êýµ÷ÓÃÇëÇóÂ·ÓÉ£¬²¢½«Êý¾Ý´«µÝ¸øËü£¬È»ºó£¬ÇëÇóÂ·ÓÉÔÙ½«¸ÃÊý¾Ý´«µÝ¸øÇëÇó´¦Àí³ÌÐò¡£
+            å› æ­¤ï¼Œå®žçŽ°æ€è·¯å°±æ˜¯ï¼š å°†<em>data</em>å’Œ<em>end</em>äº‹ä»¶çš„å›žè°ƒå‡½æ•°ç›´æŽ¥æ”¾åœ¨æœåŠ¡å™¨ä¸­ï¼Œåœ¨<em>data</em>äº‹ä»¶å›žè°ƒä¸­æ”¶é›†æ‰€æœ‰çš„POSTæ•°æ®ï¼Œå½“æŽ¥æ”¶åˆ°æ‰€æœ‰æ•°æ®ï¼Œè§¦å‘<em>end</em>äº‹ä»¶åŽï¼Œå…¶å›žè°ƒå‡½æ•°è°ƒç”¨è¯·æ±‚è·¯ç”±ï¼Œå¹¶å°†æ•°æ®ä¼ é€’ç»™å®ƒï¼Œç„¶åŽï¼Œè¯·æ±‚è·¯ç”±å†å°†è¯¥æ•°æ®ä¼ é€’ç»™è¯·æ±‚å¤„ç†ç¨‹åºã€‚
         </p>
 
         <p>
-            »¹µÈÊ²Ã´£¬ÂíÉÏÀ´ÊµÏÖ¡£ÏÈ´Ó<em>server.js</em>¿ªÊ¼£º
+            è¿˜ç­‰ä»€ä¹ˆï¼Œé©¬ä¸Šæ¥å®žçŽ°ã€‚å…ˆä»Ž<em>server.js</em>å¼€å§‹ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -1738,19 +1738,19 @@ Request handler 'start' was called.</pre>
                 class="pln"> start</span><span class="pun">;</span></pre>
 
         <p>
-            ÉÏÊö´úÂë×öÁËÈý¼þÊÂÇé£º Ê×ÏÈ£¬ÎÒÃÇÉèÖÃÁË½ÓÊÕÊý¾ÝµÄ±àÂë¸ñÊ½ÎªUTF-8£¬È»ºó×¢²áÁË¡°data¡±ÊÂ¼þµÄ¼àÌýÆ÷£¬ÓÃÓÚÊÕ¼¯Ã¿´Î½ÓÊÕµ½µÄÐÂÊý¾Ý¿é£¬²¢½«Æä¸³Öµ¸ø<em>postData</em> ±äÁ¿£¬×îºó£¬ÎÒÃÇ½«ÇëÇóÂ·ÓÉµÄµ÷ÓÃÒÆµ½<em>end</em>ÊÂ¼þ´¦Àí³ÌÐòÖÐ£¬ÒÔÈ·±£ËüÖ»»áµ±ËùÓÐÊý¾Ý½ÓÊÕÍê±Ïºó²Å´¥·¢£¬²¢ÇÒÖ»´¥·¢Ò»´Î¡£ÎÒÃÇÍ¬Ê±»¹°ÑPOSTÊý¾Ý´«µÝ¸øÇëÇóÂ·ÓÉ£¬ÒòÎªÕâÐ©Êý¾Ý£¬ÇëÇó´¦Àí³ÌÐò»áÓÃµ½¡£
+            ä¸Šè¿°ä»£ç åšäº†ä¸‰ä»¶äº‹æƒ…ï¼š é¦–å…ˆï¼Œæˆ‘ä»¬è®¾ç½®äº†æŽ¥æ”¶æ•°æ®çš„ç¼–ç æ ¼å¼ä¸ºUTF-8ï¼Œç„¶åŽæ³¨å†Œäº†â€œdataâ€äº‹ä»¶çš„ç›‘å¬å™¨ï¼Œç”¨äºŽæ”¶é›†æ¯æ¬¡æŽ¥æ”¶åˆ°çš„æ–°æ•°æ®å—ï¼Œå¹¶å°†å…¶èµ‹å€¼ç»™<em>postData</em> å˜é‡ï¼Œæœ€åŽï¼Œæˆ‘ä»¬å°†è¯·æ±‚è·¯ç”±çš„è°ƒç”¨ç§»åˆ°<em>end</em>äº‹ä»¶å¤„ç†ç¨‹åºä¸­ï¼Œä»¥ç¡®ä¿å®ƒåªä¼šå½“æ‰€æœ‰æ•°æ®æŽ¥æ”¶å®Œæ¯•åŽæ‰è§¦å‘ï¼Œå¹¶ä¸”åªè§¦å‘ä¸€æ¬¡ã€‚æˆ‘ä»¬åŒæ—¶è¿˜æŠŠPOSTæ•°æ®ä¼ é€’ç»™è¯·æ±‚è·¯ç”±ï¼Œå› ä¸ºè¿™äº›æ•°æ®ï¼Œè¯·æ±‚å¤„ç†ç¨‹åºä¼šç”¨åˆ°ã€‚
         </p>
 
         <p>
-            ÉÏÊö´úÂëÔÚÃ¿¸öÊý¾Ý¿éµ½´ïµÄÊ±ºòÊä³öÁËÈÕÖ¾£¬Õâ¶ÔÓÚ×îÖÕÉú²ú»·¾³À´Ëµ£¬ÊÇºÜ²»ºÃµÄ£¨Êý¾ÝÁ¿¿ÉÄÜ»áºÜ´ó£¬»¹¼ÇµÃ°É£¿£©£¬µ«ÊÇ£¬ÔÚ¿ª·¢½×¶ÎÊÇºÜÓÐÓÃµÄ£¬ÓÐÖúÓÚÈÃÎÒÃÇ¿´µ½·¢ÉúÁËÊ²Ã´¡£
+            ä¸Šè¿°ä»£ç åœ¨æ¯ä¸ªæ•°æ®å—åˆ°è¾¾çš„æ—¶å€™è¾“å‡ºäº†æ—¥å¿—ï¼Œè¿™å¯¹äºŽæœ€ç»ˆç”Ÿäº§çŽ¯å¢ƒæ¥è¯´ï¼Œæ˜¯å¾ˆä¸å¥½çš„ï¼ˆæ•°æ®é‡å¯èƒ½ä¼šå¾ˆå¤§ï¼Œè¿˜è®°å¾—å§ï¼Ÿï¼‰ï¼Œä½†æ˜¯ï¼Œåœ¨å¼€å‘é˜¶æ®µæ˜¯å¾ˆæœ‰ç”¨çš„ï¼Œæœ‰åŠ©äºŽè®©æˆ‘ä»¬çœ‹åˆ°å‘ç”Ÿäº†ä»€ä¹ˆã€‚
         </p>
 
         <p>
-            ÎÒ½¨Òé¿ÉÒÔ³¢ÊÔÏÂ£¬³¢ÊÔ×ÅÈ¥ÊäÈëÒ»Ð¡¶ÎÎÄ±¾£¬ÒÔ¼°´ó¶ÎÄÚÈÝ£¬µ±´ó¶ÎÄÚÈÝµÄÊ±ºò£¬¾Í»á·¢ÏÖ<em>data</em>ÊÂ¼þ»á´¥·¢¶à´Î¡£
+            æˆ‘å»ºè®®å¯ä»¥å°è¯•ä¸‹ï¼Œå°è¯•ç€åŽ»è¾“å…¥ä¸€å°æ®µæ–‡æœ¬ï¼Œä»¥åŠå¤§æ®µå†…å®¹ï¼Œå½“å¤§æ®µå†…å®¹çš„æ—¶å€™ï¼Œå°±ä¼šå‘çŽ°<em>data</em>äº‹ä»¶ä¼šè§¦å‘å¤šæ¬¡ã€‚
         </p>
 
         <p>
-            ÔÙÀ´µã¿áµÄ¡£ÎÒÃÇ½ÓÏÂÀ´ÔÚ/uploadÒ³Ãæ£¬Õ¹Ê¾ÓÃ»§ÊäÈëµÄÄÚÈÝ¡£ÒªÊµÏÖ¸Ã¹¦ÄÜ£¬ÎÒÃÇÐèÒª½«<em>postData</em>´«µÝ¸øÇëÇó´¦Àí³ÌÐò£¬ÐÞ¸Ä<em>router.js</em>ÎªÈçÏÂÐÎÊ½£º
+            å†æ¥ç‚¹é…·çš„ã€‚æˆ‘ä»¬æŽ¥ä¸‹æ¥åœ¨/uploadé¡µé¢ï¼Œå±•ç¤ºç”¨æˆ·è¾“å…¥çš„å†…å®¹ã€‚è¦å®žçŽ°è¯¥åŠŸèƒ½ï¼Œæˆ‘ä»¬éœ€è¦å°†<em>postData</em>ä¼ é€’ç»™è¯·æ±‚å¤„ç†ç¨‹åºï¼Œä¿®æ”¹<em>router.js</em>ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
 
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
@@ -1785,7 +1785,7 @@ Request handler 'start' was called.</pre>
                 class="pln"> route</span><span class="pun">;</span></pre>
 
         <p>
-            È»ºó£¬ÔÚ<em>requestHandlers.js</em>ÖÐ£¬ÎÒÃÇ½«Êý¾Ý°üº¬ÔÚ¶Ô<em>upload</em>ÇëÇóµÄÏìÓ¦ÖÐ£º
+            ç„¶åŽï¼Œåœ¨<em>requestHandlers.js</em>ä¸­ï¼Œæˆ‘ä»¬å°†æ•°æ®åŒ…å«åœ¨å¯¹<em>upload</em>è¯·æ±‚çš„å“åº”ä¸­ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> start</span><span
                 class="pun">(</span><span class="pln">response</span><span class="pun">,</span><span class="pln"> postData</span><span
@@ -1835,15 +1835,15 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ºÃÁË£¬ÎÒÃÇÏÖÔÚ¿ÉÒÔ½ÓÊÕPOSTÊý¾Ý²¢ÔÚÇëÇó´¦Àí³ÌÐòÖÐ´¦Àí¸ÃÊý¾ÝÁË¡£
+            å¥½äº†ï¼Œæˆ‘ä»¬çŽ°åœ¨å¯ä»¥æŽ¥æ”¶POSTæ•°æ®å¹¶åœ¨è¯·æ±‚å¤„ç†ç¨‹åºä¸­å¤„ç†è¯¥æ•°æ®äº†ã€‚
         </p>
 
         <p>
-            ÎÒÃÇ×îºóÒª×öµÄÊÇ£º µ±Ç°ÎÒÃÇÊÇ°ÑÇëÇóµÄÕû¸öÏûÏ¢Ìå´«µÝ¸øÁËÇëÇóÂ·ÓÉºÍÇëÇó´¦Àí³ÌÐò¡£ÎÒÃÇÓ¦¸ÃÖ»°ÑPOSTÊý¾ÝÖÐ£¬ÎÒÃÇ¸ÐÐËÈ¤µÄ²¿·Ö´«µÝ¸øÇëÇóÂ·ÓÉºÍÇëÇó´¦Àí³ÌÐò¡£ÔÚÎÒÃÇÕâ¸öÀý×ÓÖÐ£¬ÎÒÃÇ¸ÐÐËÈ¤µÄÆäÊµÖ»ÊÇ<em>text</em>×Ö¶Î¡£
+            æˆ‘ä»¬æœ€åŽè¦åšçš„æ˜¯ï¼š å½“å‰æˆ‘ä»¬æ˜¯æŠŠè¯·æ±‚çš„æ•´ä¸ªæ¶ˆæ¯ä½“ä¼ é€’ç»™äº†è¯·æ±‚è·¯ç”±å’Œè¯·æ±‚å¤„ç†ç¨‹åºã€‚æˆ‘ä»¬åº”è¯¥åªæŠŠPOSTæ•°æ®ä¸­ï¼Œæˆ‘ä»¬æ„Ÿå…´è¶£çš„éƒ¨åˆ†ä¼ é€’ç»™è¯·æ±‚è·¯ç”±å’Œè¯·æ±‚å¤„ç†ç¨‹åºã€‚åœ¨æˆ‘ä»¬è¿™ä¸ªä¾‹å­ä¸­ï¼Œæˆ‘ä»¬æ„Ÿå…´è¶£çš„å…¶å®žåªæ˜¯<em>text</em>å­—æ®µã€‚
         </p>
 
         <p>
-            ÎÒÃÇ¿ÉÒÔÊ¹ÓÃ´ËÇ°½éÉÜ¹ýµÄ<em>querystring</em>Ä£¿éÀ´ÊµÏÖ£º
+            æˆ‘ä»¬å¯ä»¥ä½¿ç”¨æ­¤å‰ä»‹ç»è¿‡çš„<em>querystring</em>æ¨¡å—æ¥å®žçŽ°ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> querystring </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"querystring"</span><span
@@ -1898,54 +1898,54 @@ Request handler 'start' was called.</pre>
                 class="pln"> upload</span><span class="pun">;</span></pre>
 
         <p>
-            ºÃÁË£¬ÒÔÉÏ¾ÍÊÇ¹ØÓÚ´¦ÀíPOSTÊý¾ÝµÄÈ«²¿ÄÚÈÝ¡£
+            å¥½äº†ï¼Œä»¥ä¸Šå°±æ˜¯å…³äºŽå¤„ç†POSTæ•°æ®çš„å…¨éƒ¨å†…å®¹ã€‚
         </p>
 
         <a name="handling-file-uploads"></a>
 
-        <h4>´¦ÀíÎÄ¼þÉÏ´«</h4>
+        <h4>å¤„ç†æ–‡ä»¶ä¸Šä¼ </h4>
 
         <p>
-            ×îºó£¬ÎÒÃÇÀ´ÊµÏÖÎÒÃÇ×îÖÕµÄÓÃÀý£ºÔÊÐíÓÃ»§ÉÏ´«Í¼Æ¬£¬²¢½«¸ÃÍ¼Æ¬ÔÚä¯ÀÀÆ÷ÖÐÏÔÊ¾³öÀ´¡£
+            æœ€åŽï¼Œæˆ‘ä»¬æ¥å®žçŽ°æˆ‘ä»¬æœ€ç»ˆçš„ç”¨ä¾‹ï¼šå…è®¸ç”¨æˆ·ä¸Šä¼ å›¾ç‰‡ï¼Œå¹¶å°†è¯¥å›¾ç‰‡åœ¨æµè§ˆå™¨ä¸­æ˜¾ç¤ºå‡ºæ¥ã€‚
         </p>
 
         <p>
-            »Øµ½90Äê´ú£¬Õâ¸öÓÃÀýÍêÈ«¿ÉÒÔÂú×ãÓÃÓÚIPOµÄÉÌÒµÄ£ÐÍÁË£¬Èç½ñ£¬ÎÒÃÇÍ¨¹ýËüÄÜÑ§µ½ÕâÑùÁ½¼þÊÂÇé£º ÈçºÎ°²×°Íâ²¿Node.jsÄ£¿é£¬ÒÔ¼°ÈçºÎ½«ËüÃÇÓ¦ÓÃµ½ÎÒÃÇµÄÓ¦ÓÃÖÐ¡£
+            å›žåˆ°90å¹´ä»£ï¼Œè¿™ä¸ªç”¨ä¾‹å®Œå…¨å¯ä»¥æ»¡è¶³ç”¨äºŽIPOçš„å•†ä¸šæ¨¡åž‹äº†ï¼Œå¦‚ä»Šï¼Œæˆ‘ä»¬é€šè¿‡å®ƒèƒ½å­¦åˆ°è¿™æ ·ä¸¤ä»¶äº‹æƒ…ï¼š å¦‚ä½•å®‰è£…å¤–éƒ¨Node.jsæ¨¡å—ï¼Œä»¥åŠå¦‚ä½•å°†å®ƒä»¬åº”ç”¨åˆ°æˆ‘ä»¬çš„åº”ç”¨ä¸­ã€‚
         </p>
 
         <p>
-            ÕâÀïÎÒÃÇÒªÓÃµ½µÄÍâ²¿Ä£¿éÊÇFelix Geisend?rfer¿ª·¢µÄ<em>node-formidable</em>Ä£¿é¡£Ëü¶Ô½âÎöÉÏ´«µÄÎÄ¼þÊý¾Ý×öÁËºÜºÃµÄ³éÏó¡£ ÆäÊµËµ°×ÁË£¬´¦ÀíÎÄ¼þÉÏ´«<em>¡°¾ÍÊÇ¡±</em>´¦ÀíPOSTÊý¾Ý ¡ª¡ª µ«ÊÇ£¬Âé·³µÄÊÇÔÚ¾ßÌåµÄ´¦ÀíÏ¸½Ú£¬ËùÒÔ£¬ÕâÀï²ÉÓÃÏÖ³ÉµÄ·½°¸¸üºÏÊÊµã¡£
+            è¿™é‡Œæˆ‘ä»¬è¦ç”¨åˆ°çš„å¤–éƒ¨æ¨¡å—æ˜¯Felix Geisend?rferå¼€å‘çš„<em>node-formidable</em>æ¨¡å—ã€‚å®ƒå¯¹è§£æžä¸Šä¼ çš„æ–‡ä»¶æ•°æ®åšäº†å¾ˆå¥½çš„æŠ½è±¡ã€‚ å…¶å®žè¯´ç™½äº†ï¼Œå¤„ç†æ–‡ä»¶ä¸Šä¼ <em>â€œå°±æ˜¯â€</em>å¤„ç†POSTæ•°æ® â€”â€” ä½†æ˜¯ï¼Œéº»çƒ¦çš„æ˜¯åœ¨å…·ä½“çš„å¤„ç†ç»†èŠ‚ï¼Œæ‰€ä»¥ï¼Œè¿™é‡Œé‡‡ç”¨çŽ°æˆçš„æ–¹æ¡ˆæ›´åˆé€‚ç‚¹ã€‚
         </p>
 
         <p>
-            Ê¹ÓÃ¸ÃÄ£¿é£¬Ê×ÏÈÐèÒª°²×°¸ÃÄ£¿é¡£Node.jsÓÐËü×Ô¼ºµÄ°ü¹ÜÀíÆ÷£¬½Ð<em>NPM</em>¡£Ëü¿ÉÒÔÈÃ°²×°Node.jsµÄÍâ²¿Ä£¿é±äµÃ·Ç³£·½±ã¡£Í¨¹ýÈçÏÂÒ»ÌõÃüÁî¾Í¿ÉÒÔÍê³É¸ÃÄ£¿éµÄ°²×°£º
+            ä½¿ç”¨è¯¥æ¨¡å—ï¼Œé¦–å…ˆéœ€è¦å®‰è£…è¯¥æ¨¡å—ã€‚Node.jsæœ‰å®ƒè‡ªå·±çš„åŒ…ç®¡ç†å™¨ï¼Œå«<em>NPM</em>ã€‚å®ƒå¯ä»¥è®©å®‰è£…Node.jsçš„å¤–éƒ¨æ¨¡å—å˜å¾—éžå¸¸æ–¹ä¾¿ã€‚é€šè¿‡å¦‚ä¸‹ä¸€æ¡å‘½ä»¤å°±å¯ä»¥å®Œæˆè¯¥æ¨¡å—çš„å®‰è£…ï¼š
         </p>
         <pre class="prettyprint lang-bash"><span class="pln">npm install formidable</span></pre>
 
         <p>
-            Èç¹ûÖÕ¶ËÊä³öÈçÏÂÄÚÈÝ£º
+            å¦‚æžœç»ˆç«¯è¾“å‡ºå¦‚ä¸‹å†…å®¹ï¼š
         </p>
         <pre class="prettyprint lang-bash"><span class="pln">npm info build </span><span class="typ">Success</span><span
                 class="pun">:</span><span class="pln"> formidable@1</span><span class="pun">.</span><span class="lit">0.9</span><span
                 class="pln"><br>npm ok</span></pre>
 
         <p>
-            ¾ÍËµÃ÷Ä£¿éÒÑ¾­°²×°³É¹¦ÁË¡£
+            å°±è¯´æ˜Žæ¨¡å—å·²ç»å®‰è£…æˆåŠŸäº†ã€‚
         </p>
 
         <p>
-            ÏÖÔÚÎÒÃÇ¾Í¿ÉÒÔÓÃ<em>formidable</em>Ä£¿éÁË¡ª¡ªÊ¹ÓÃÍâ²¿Ä£¿éÓëÄÚ²¿Ä£¿éÀàËÆ£¬ÓÃrequireÓï¾ä½«ÆäÒýÈë¼´¿É£º
+            çŽ°åœ¨æˆ‘ä»¬å°±å¯ä»¥ç”¨<em>formidable</em>æ¨¡å—äº†â€”â€”ä½¿ç”¨å¤–éƒ¨æ¨¡å—ä¸Žå†…éƒ¨æ¨¡å—ç±»ä¼¼ï¼Œç”¨requireè¯­å¥å°†å…¶å¼•å…¥å³å¯ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> formidable </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"formidable"</span><span
                 class="pun">);</span></pre>
 
         <p>
-            ÕâÀï¸ÃÄ£¿é×öµÄ¾ÍÊÇ½«Í¨¹ýHTTP POSTÇëÇóÌá½»µÄ±íµ¥£¬ÔÚNode.jsÖÐ¿ÉÒÔ±»½âÎö¡£ÎÒÃÇÒª×öµÄ¾ÍÊÇ´´½¨Ò»¸öÐÂµÄ<em>IncomingForm</em>£¬ËüÊÇ¶ÔÌá½»±íµ¥µÄ³éÏó±íÊ¾£¬Ö®ºó£¬¾Í¿ÉÒÔÓÃËü½âÎörequest¶ÔÏó£¬»ñÈ¡±íµ¥ÖÐÐèÒªµÄÊý¾Ý×Ö¶Î¡£
+            è¿™é‡Œè¯¥æ¨¡å—åšçš„å°±æ˜¯å°†é€šè¿‡HTTP POSTè¯·æ±‚æäº¤çš„è¡¨å•ï¼Œåœ¨Node.jsä¸­å¯ä»¥è¢«è§£æžã€‚æˆ‘ä»¬è¦åšçš„å°±æ˜¯åˆ›å»ºä¸€ä¸ªæ–°çš„<em>IncomingForm</em>ï¼Œå®ƒæ˜¯å¯¹æäº¤è¡¨å•çš„æŠ½è±¡è¡¨ç¤ºï¼Œä¹‹åŽï¼Œå°±å¯ä»¥ç”¨å®ƒè§£æžrequestå¯¹è±¡ï¼ŒèŽ·å–è¡¨å•ä¸­éœ€è¦çš„æ•°æ®å­—æ®µã€‚
         </p>
 
         <p>
-            node-formidable¹Ù·½µÄÀý×ÓÕ¹Ê¾ÁËÕâÁ½²¿·ÖÊÇÈçºÎÈÚºÏÔÚÒ»Æð¹¤×÷µÄ£º
+            node-formidableå®˜æ–¹çš„ä¾‹å­å±•ç¤ºäº†è¿™ä¸¤éƒ¨åˆ†æ˜¯å¦‚ä½•èžåˆåœ¨ä¸€èµ·å·¥ä½œçš„ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> formidable </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">'formidable'</span><span
@@ -2006,7 +2006,7 @@ Request handler 'start' was called.</pre>
                 class="pun">(</span><span class="lit">8888</span><span class="pun">);</span></pre>
 
         <p>
-            Èç¹ûÎÒÃÇ½«ÉÏÊö´úÂë£¬±£´æµ½Ò»¸öÎÄ¼þÖÐ£¬²¢Í¨¹ý<em>node</em>À´Ö´ÐÐ£¬¾Í¿ÉÒÔ½øÐÐ¼òµ¥µÄ±íµ¥Ìá½»ÁË£¬°üÀ¨ÎÄ¼þÉÏ´«¡£È»ºó£¬¿ÉÒÔ¿´µ½Í¨¹ýµ÷ÓÃ<em>form.parse</em>´«µÝ¸ø»Øµ÷º¯ÊýµÄ<em>files</em>¶ÔÏóµÄÄÚÈÝ£¬ÈçÏÂËùÊ¾£º
+            å¦‚æžœæˆ‘ä»¬å°†ä¸Šè¿°ä»£ç ï¼Œä¿å­˜åˆ°ä¸€ä¸ªæ–‡ä»¶ä¸­ï¼Œå¹¶é€šè¿‡<em>node</em>æ¥æ‰§è¡Œï¼Œå°±å¯ä»¥è¿›è¡Œç®€å•çš„è¡¨å•æäº¤äº†ï¼ŒåŒ…æ‹¬æ–‡ä»¶ä¸Šä¼ ã€‚ç„¶åŽï¼Œå¯ä»¥çœ‹åˆ°é€šè¿‡è°ƒç”¨<em>form.parse</em>ä¼ é€’ç»™å›žè°ƒå‡½æ•°çš„<em>files</em>å¯¹è±¡çš„å†…å®¹ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
         </p>
         <pre class="lang-js">received upload:
 
@@ -2024,23 +2024,23 @@ Request handler 'start' was called.</pre>
         mime: [Getter] } } }</pre>
 
         <p>
-            ÎªÁËÊµÏÖÎÒÃÇµÄ¹¦ÄÜ£¬ÎÒÃÇÐèÒª½«ÉÏÊö´úÂëÓ¦ÓÃµ½ÎÒÃÇµÄÓ¦ÓÃÖÐ£¬ÁíÍâ£¬ÎÒÃÇ»¹Òª¿¼ÂÇÈçºÎ½«ÉÏ´«ÎÄ¼þµÄÄÚÈÝ£¨±£´æÔÚ<em>/tmp</em>Ä¿Â¼ÖÐ£©ÏÔÊ¾µ½ä¯ÀÀÆ÷ÖÐ¡£
+            ä¸ºäº†å®žçŽ°æˆ‘ä»¬çš„åŠŸèƒ½ï¼Œæˆ‘ä»¬éœ€è¦å°†ä¸Šè¿°ä»£ç åº”ç”¨åˆ°æˆ‘ä»¬çš„åº”ç”¨ä¸­ï¼Œå¦å¤–ï¼Œæˆ‘ä»¬è¿˜è¦è€ƒè™‘å¦‚ä½•å°†ä¸Šä¼ æ–‡ä»¶çš„å†…å®¹ï¼ˆä¿å­˜åœ¨<em>/tmp</em>ç›®å½•ä¸­ï¼‰æ˜¾ç¤ºåˆ°æµè§ˆå™¨ä¸­ã€‚
         </p>
 
         <p>
-            ÎÒÃÇÏÈÀ´½â¾öºóÃæÄÇ¸öÎÊÌâ£º ¶ÔÓÚ±£´æÔÚ±¾µØÓ²ÅÌÖÐµÄÎÄ¼þ£¬ÈçºÎ²ÅÄÜÔÚä¯ÀÀÆ÷ÖÐ¿´µ½ÄØ£¿
+            æˆ‘ä»¬å…ˆæ¥è§£å†³åŽé¢é‚£ä¸ªé—®é¢˜ï¼š å¯¹äºŽä¿å­˜åœ¨æœ¬åœ°ç¡¬ç›˜ä¸­çš„æ–‡ä»¶ï¼Œå¦‚ä½•æ‰èƒ½åœ¨æµè§ˆå™¨ä¸­çœ‹åˆ°å‘¢ï¼Ÿ
         </p>
 
         <p>
-            ÏÔÈ»£¬ÎÒÃÇÐèÒª½«¸ÃÎÄ¼þ¶ÁÈ¡µ½ÎÒÃÇµÄ·þÎñÆ÷ÖÐ£¬Ê¹ÓÃÒ»¸ö½Ð<em>fs</em>µÄÄ£¿é¡£
+            æ˜¾ç„¶ï¼Œæˆ‘ä»¬éœ€è¦å°†è¯¥æ–‡ä»¶è¯»å–åˆ°æˆ‘ä»¬çš„æœåŠ¡å™¨ä¸­ï¼Œä½¿ç”¨ä¸€ä¸ªå«<em>fs</em>çš„æ¨¡å—ã€‚
         </p>
 
         <p>
-            ÎÒÃÇÀ´Ìí¼Ó<em>/show</em>URLµÄÇëÇó´¦Àí³ÌÐò£¬¸Ã´¦Àí³ÌÐòÖ±½ÓÓ²±àÂë½«ÎÄ¼þ<em>/tmp/test.png</em>ÄÚÈÝÕ¹Ê¾µ½ä¯ÀÀÆ÷ÖÐ¡£µ±È»ÁË£¬Ê×ÏÈÐèÒª½«¸ÃÍ¼Æ¬±£´æµ½Õâ¸öÎ»ÖÃ²ÅÐÐ¡£
+            æˆ‘ä»¬æ¥æ·»åŠ <em>/show</em>URLçš„è¯·æ±‚å¤„ç†ç¨‹åºï¼Œè¯¥å¤„ç†ç¨‹åºç›´æŽ¥ç¡¬ç¼–ç å°†æ–‡ä»¶<em>/tmp/test.png</em>å†…å®¹å±•ç¤ºåˆ°æµè§ˆå™¨ä¸­ã€‚å½“ç„¶äº†ï¼Œé¦–å…ˆéœ€è¦å°†è¯¥å›¾ç‰‡ä¿å­˜åˆ°è¿™ä¸ªä½ç½®æ‰è¡Œã€‚
         </p>
 
         <p>
-            ½«<em>requestHandlers.js</em>ÐÞ¸ÄÎªÈçÏÂÐÎÊ½£º
+            å°†<em>requestHandlers.js</em>ä¿®æ”¹ä¸ºå¦‚ä¸‹å½¢å¼ï¼š
         </p>
 
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> querystring </span><span
@@ -2134,7 +2134,7 @@ Request handler 'start' was called.</pre>
                 class="pln"> show</span><span class="pun">;</span></pre>
 
         <p>
-            ÎÒÃÇ»¹ÐèÒª½«ÕâÐÂµÄÇëÇó´¦Àí³ÌÐò£¬Ìí¼Óµ½<em>index.js</em>ÖÐµÄÂ·ÓÉÓ³Éä±íÖÐ£º
+            æˆ‘ä»¬è¿˜éœ€è¦å°†è¿™æ–°çš„è¯·æ±‚å¤„ç†ç¨‹åºï¼Œæ·»åŠ åˆ°<em>index.js</em>ä¸­çš„è·¯ç”±æ˜ å°„è¡¨ä¸­ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> server </span><span class="pun">=</span><span
                 class="pln"> require</span><span class="pun">(</span><span class="str">"./server"</span><span
@@ -2162,30 +2162,30 @@ Request handler 'start' was called.</pre>
                 class="pun">,</span><span class="pln"> handle</span><span class="pun">);</span></pre>
 
         <p>
-            ÖØÆô·þÎñÆ÷Ö®ºó£¬Í¨¹ý·ÃÎÊ<a href="http://localhost:8888/show" rel="nofollow">http://localhost:8888/show</a>£¬¾Í¿ÉÒÔ¿´µ½±£´æÔÚ<em>/tmp/test.png</em>µÄÍ¼Æ¬ÁË¡£
+            é‡å¯æœåŠ¡å™¨ä¹‹åŽï¼Œé€šè¿‡è®¿é—®<a href="http://localhost:8888/show" rel="nofollow">http://localhost:8888/show</a>ï¼Œå°±å¯ä»¥çœ‹åˆ°ä¿å­˜åœ¨<em>/tmp/test.png</em>çš„å›¾ç‰‡äº†ã€‚
         </p>
 
         <p>
-            ºÃ£¬×îºóÎÒÃÇÒªµÄ¾ÍÊÇ£º
+            å¥½ï¼Œæœ€åŽæˆ‘ä»¬è¦çš„å°±æ˜¯ï¼š
         </p>
         
         <p>
             <ul>
                 <li>
-                    ÔÚ<em>/start</em>±íµ¥ÖÐÌí¼ÓÒ»¸öÎÄ¼þÉÏ´«ÔªËØ
+                    åœ¨<em>/start</em>è¡¨å•ä¸­æ·»åŠ ä¸€ä¸ªæ–‡ä»¶ä¸Šä¼ å…ƒç´ 
                 </li>
                 <li>
-                    ½«node-formidableÕûºÏµ½ÎÒÃÇµÄ<em>upload</em>ÇëÇó´¦Àí³ÌÐòÖÐ£¬ÓÃÓÚ½«ÉÏ´«µÄÍ¼Æ¬±£´æµ½<em>/tmp/test.png</em>
+                    å°†node-formidableæ•´åˆåˆ°æˆ‘ä»¬çš„<em>upload</em>è¯·æ±‚å¤„ç†ç¨‹åºä¸­ï¼Œç”¨äºŽå°†ä¸Šä¼ çš„å›¾ç‰‡ä¿å­˜åˆ°<em>/tmp/test.png</em>
                 </li>
         
                 <li>
-                    ½«ÉÏ´«µÄÍ¼Æ¬ÄÚÇ¶µ½<em>/upload</em>URLÊä³öµÄHTMLÖÐ
+                    å°†ä¸Šä¼ çš„å›¾ç‰‡å†…åµŒåˆ°<em>/upload</em>URLè¾“å‡ºçš„HTMLä¸­
                 </li>
             </ul>
         </p>
 
         <p>
-            µÚÒ»ÏîºÜ¼òµ¥¡£Ö»ÐèÒªÔÚHTML±íµ¥ÖÐ£¬Ìí¼ÓÒ»¸ö<em>multipart/form-data</em>µÄ±àÂëÀàÐÍ£¬ÒÆ³ý´ËÇ°µÄÎÄ±¾Çø£¬Ìí¼ÓÒ»¸öÎÄ¼þÉÏ´«×é¼þ£¬²¢½«Ìá½»°´Å¥µÄÎÄ°¸¸ÄÎª¡°Upload file¡±¼´¿É¡£ ÈçÏÂ<em>requestHandler.js</em>ËùÊ¾£º
+            ç¬¬ä¸€é¡¹å¾ˆç®€å•ã€‚åªéœ€è¦åœ¨HTMLè¡¨å•ä¸­ï¼Œæ·»åŠ ä¸€ä¸ª<em>multipart/form-data</em>çš„ç¼–ç ç±»åž‹ï¼Œç§»é™¤æ­¤å‰çš„æ–‡æœ¬åŒºï¼Œæ·»åŠ ä¸€ä¸ªæ–‡ä»¶ä¸Šä¼ ç»„ä»¶ï¼Œå¹¶å°†æäº¤æŒ‰é’®çš„æ–‡æ¡ˆæ”¹ä¸ºâ€œUpload fileâ€å³å¯ã€‚ å¦‚ä¸‹<em>requestHandler.js</em>æ‰€ç¤ºï¼š
         </p>
 
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> querystring </span><span
@@ -2282,20 +2282,20 @@ Request handler 'start' was called.</pre>
                 class="pln"> show</span><span class="pun">;</span></pre>
 
         <p>
-            ºÜºÃ¡£ÏÂÒ»²½Ïà¶Ô±È½Ï¸´ÔÓ¡£ÕâÀïÓÐÕâÑùÒ»¸öÎÊÌâ£º ÎÒÃÇÐèÒªÔÚ<em>upload</em>´¦Àí³ÌÐòÖÐ¶ÔÉÏ´«µÄÎÄ¼þ½øÐÐ´¦Àí£¬ÕâÑùµÄ»°£¬ÎÒÃÇ¾ÍÐèÒª½«<em>request</em>¶ÔÏó´«µÝ¸ønode-formidableµÄ<em>form.parse</em>º¯Êý¡£
+            å¾ˆå¥½ã€‚ä¸‹ä¸€æ­¥ç›¸å¯¹æ¯”è¾ƒå¤æ‚ã€‚è¿™é‡Œæœ‰è¿™æ ·ä¸€ä¸ªé—®é¢˜ï¼š æˆ‘ä»¬éœ€è¦åœ¨<em>upload</em>å¤„ç†ç¨‹åºä¸­å¯¹ä¸Šä¼ çš„æ–‡ä»¶è¿›è¡Œå¤„ç†ï¼Œè¿™æ ·çš„è¯ï¼Œæˆ‘ä»¬å°±éœ€è¦å°†<em>request</em>å¯¹è±¡ä¼ é€’ç»™node-formidableçš„<em>form.parse</em>å‡½æ•°ã€‚
         </p>
 
         <p>
-            µ«ÊÇ£¬ÎÒÃÇÓÐµÄÖ»ÊÇ<em>response</em>¶ÔÏóºÍ<em>postData</em>Êý×é¡£¿´Ñù×Ó£¬ÎÒÃÇÖ»ÄÜ²»µÃ²»½«<em>request</em>¶ÔÏó´Ó·þÎñÆ÷¿ªÊ¼Ò»Â·Í¨¹ýÇëÇóÂ·ÓÉ£¬ÔÙ´«µÝ¸øÇëÇó´¦Àí³ÌÐò¡£ »òÐí»¹ÓÐ¸üºÃµÄ·½°¸£¬µ«ÊÇ£¬²»¹ÜÔõÃ´Ëµ£¬Ä¿Ç°ÕâÑù×ö¿ÉÒÔÂú×ãÎÒÃÇµÄÐèÇó¡£
+            ä½†æ˜¯ï¼Œæˆ‘ä»¬æœ‰çš„åªæ˜¯<em>response</em>å¯¹è±¡å’Œ<em>postData</em>æ•°ç»„ã€‚çœ‹æ ·å­ï¼Œæˆ‘ä»¬åªèƒ½ä¸å¾—ä¸å°†<em>request</em>å¯¹è±¡ä»ŽæœåŠ¡å™¨å¼€å§‹ä¸€è·¯é€šè¿‡è¯·æ±‚è·¯ç”±ï¼Œå†ä¼ é€’ç»™è¯·æ±‚å¤„ç†ç¨‹åºã€‚ æˆ–è®¸è¿˜æœ‰æ›´å¥½çš„æ–¹æ¡ˆï¼Œä½†æ˜¯ï¼Œä¸ç®¡æ€Žä¹ˆè¯´ï¼Œç›®å‰è¿™æ ·åšå¯ä»¥æ»¡è¶³æˆ‘ä»¬çš„éœ€æ±‚ã€‚
         </p>
 
         <p>
-            µ½ÕâÀï£¬ÎÒÃÇ¿ÉÒÔ½«<em>postData</em>´Ó·þÎñÆ÷ÒÔ¼°ÇëÇó´¦Àí³ÌÐòÖÐÒÆ³ýÁË ¡ª¡ª Ò»·½Ãæ£¬¶ÔÓÚÎÒÃÇ´¦ÀíÎÄ¼þÉÏ´«À´ËµÒÑ¾­²»ÐèÒªÁË£¬ÁíÍâÒ»·½Ãæ£¬ËüÉõÖÁ¿ÉÄÜ»áÒý·¢ÕâÑùÒ»¸öÎÊÌâ£º ÎÒÃÇÒÑ¾­¡°ÏûºÄ¡±ÁË<em>request</em>¶ÔÏóÖÐµÄÊý¾Ý£¬ÕâÒâÎ¶×Å£¬¶ÔÓÚ<em>form.parse</em>À´Ëµ£¬µ±ËüÏëÒª»ñÈ¡Êý¾ÝµÄÊ±ºò¾ÍÊ²Ã´Ò²»ñÈ¡²»µ½ÁË¡££¨ÒòÎªNode.js²»»á¶ÔÊý¾Ý×ö»º´æ£©
+            åˆ°è¿™é‡Œï¼Œæˆ‘ä»¬å¯ä»¥å°†<em>postData</em>ä»ŽæœåŠ¡å™¨ä»¥åŠè¯·æ±‚å¤„ç†ç¨‹åºä¸­ç§»é™¤äº† â€”â€” ä¸€æ–¹é¢ï¼Œå¯¹äºŽæˆ‘ä»¬å¤„ç†æ–‡ä»¶ä¸Šä¼ æ¥è¯´å·²ç»ä¸éœ€è¦äº†ï¼Œå¦å¤–ä¸€æ–¹é¢ï¼Œå®ƒç”šè‡³å¯èƒ½ä¼šå¼•å‘è¿™æ ·ä¸€ä¸ªé—®é¢˜ï¼š æˆ‘ä»¬å·²ç»â€œæ¶ˆè€—â€äº†<em>request</em>å¯¹è±¡ä¸­çš„æ•°æ®ï¼Œè¿™æ„å‘³ç€ï¼Œå¯¹äºŽ<em>form.parse</em>æ¥è¯´ï¼Œå½“å®ƒæƒ³è¦èŽ·å–æ•°æ®çš„æ—¶å€™å°±ä»€ä¹ˆä¹ŸèŽ·å–ä¸åˆ°äº†ã€‚ï¼ˆå› ä¸ºNode.jsä¸ä¼šå¯¹æ•°æ®åšç¼“å­˜ï¼‰
         </p>
 
         <p>
-            ÎÒÃÇ´Ó<em>server.js</em>¿ªÊ¼ ¡ª¡ª ÒÆ³ý¶ÔpostDataµÄ´¦ÀíÒÔ¼°<em>request.setEncoding</em>
-            £¨Õâ²¿·Önode-formidable×ÔÉí»á´¦Àí£©£¬×ª¶ø²ÉÓÃ½«<em>request</em>¶ÔÏó´«µÝ¸øÇëÇóÂ·ÓÉµÄ·½Ê½£º
+            æˆ‘ä»¬ä»Ž<em>server.js</em>å¼€å§‹ â€”â€” ç§»é™¤å¯¹postDataçš„å¤„ç†ä»¥åŠ<em>request.setEncoding</em>
+            ï¼ˆè¿™éƒ¨åˆ†node-formidableè‡ªèº«ä¼šå¤„ç†ï¼‰ï¼Œè½¬è€Œé‡‡ç”¨å°†<em>request</em>å¯¹è±¡ä¼ é€’ç»™è¯·æ±‚è·¯ç”±çš„æ–¹å¼ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -2330,7 +2330,7 @@ Request handler 'start' was called.</pre>
                 class="pln"> start</span><span class="pun">;</span></pre>
 
         <p>
-            ½ÓÏÂÀ´ÊÇ router.js ¡ª¡ª ÎÒÃÇ²»ÔÙÐèÒª´«µÝ<em>postData</em>ÁË£¬Õâ´ÎÒª´«µÝ<em>request</em>¶ÔÏó£º
+            æŽ¥ä¸‹æ¥æ˜¯ router.js â€”â€” æˆ‘ä»¬ä¸å†éœ€è¦ä¼ é€’<em>postData</em>äº†ï¼Œè¿™æ¬¡è¦ä¼ é€’<em>request</em>å¯¹è±¡ï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">function</span><span class="pln"> route</span><span
                 class="pun">(</span><span class="pln">handle</span><span class="pun">,</span><span
@@ -2364,16 +2364,16 @@ Request handler 'start' was called.</pre>
                 class="pln"> route</span><span class="pun">;</span></pre>
 
         <p>
-            ÏÖÔÚ£¬<em>request</em>¶ÔÏó¾Í¿ÉÒÔÔÚÎÒÃÇµÄ<em>upload</em>ÇëÇó´¦Àí³ÌÐòÖÐÊ¹ÓÃÁË¡£node-formidable»á´¦Àí½«ÉÏ´«µÄÎÄ¼þ±£´æµ½±¾µØ<em>/tmp</em>Ä¿Â¼ÖÐ£¬¶øÎÒÃÇÐèÒª×öµÄÊÇÈ·±£¸ÃÎÄ¼þ±£´æ³É<em>/tmp/test.png</em>¡£ Ã»´í£¬ÎÒÃÇ±£³Ö¼òµ¥£¬²¢¼ÙÉèÖ»ÔÊÐíÉÏ´«PNGÍ¼Æ¬¡£
+            çŽ°åœ¨ï¼Œ<em>request</em>å¯¹è±¡å°±å¯ä»¥åœ¨æˆ‘ä»¬çš„<em>upload</em>è¯·æ±‚å¤„ç†ç¨‹åºä¸­ä½¿ç”¨äº†ã€‚node-formidableä¼šå¤„ç†å°†ä¸Šä¼ çš„æ–‡ä»¶ä¿å­˜åˆ°æœ¬åœ°<em>/tmp</em>ç›®å½•ä¸­ï¼Œè€Œæˆ‘ä»¬éœ€è¦åšçš„æ˜¯ç¡®ä¿è¯¥æ–‡ä»¶ä¿å­˜æˆ<em>/tmp/test.png</em>ã€‚ æ²¡é”™ï¼Œæˆ‘ä»¬ä¿æŒç®€å•ï¼Œå¹¶å‡è®¾åªå…è®¸ä¸Šä¼ PNGå›¾ç‰‡ã€‚
         </p>
 
         <p>
-            ÕâÀï²ÉÓÃ<em>fs.renameSync(path1,path2)</em>À´ÊµÏÖ¡£Òª×¢ÒâµÄÊÇ£¬ÕýÈçÆäÃû£¬¸Ã·½·¨ÊÇÍ¬²½Ö´ÐÐµÄ£¬
-            Ò²¾ÍÊÇËµ£¬Èç¹û¸ÃÖØÃüÃûµÄ²Ù×÷ºÜºÄÊ±µÄ»°»á×èÈû¡£ Õâ¿éÎÒÃÇÏÈ²»¿¼ÂÇ¡£
+            è¿™é‡Œé‡‡ç”¨<em>fs.renameSync(path1,path2)</em>æ¥å®žçŽ°ã€‚è¦æ³¨æ„çš„æ˜¯ï¼Œæ­£å¦‚å…¶åï¼Œè¯¥æ–¹æ³•æ˜¯åŒæ­¥æ‰§è¡Œçš„ï¼Œ
+            ä¹Ÿå°±æ˜¯è¯´ï¼Œå¦‚æžœè¯¥é‡å‘½åçš„æ“ä½œå¾ˆè€—æ—¶çš„è¯ä¼šé˜»å¡žã€‚ è¿™å—æˆ‘ä»¬å…ˆä¸è€ƒè™‘ã€‚
         </p>
 
         <p>
-            ½ÓÏÂÀ´£¬ÎÒÃÇ°Ñ´¦ÀíÎÄ¼þÉÏ´«ÒÔ¼°ÖØÃüÃûµÄ²Ù×÷·Åµ½Ò»Æð£¬ÈçÏÂ<em>requestHandlers.js</em>ËùÊ¾£º
+            æŽ¥ä¸‹æ¥ï¼Œæˆ‘ä»¬æŠŠå¤„ç†æ–‡ä»¶ä¸Šä¼ ä»¥åŠé‡å‘½åçš„æ“ä½œæ”¾åˆ°ä¸€èµ·ï¼Œå¦‚ä¸‹<em>requestHandlers.js</em>æ‰€ç¤ºï¼š
         </p>
         <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> querystring </span><span
                 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span class="str">"querystring"</span><span
@@ -2484,30 +2484,30 @@ Request handler 'start' was called.</pre>
                 class="pln"> show</span><span class="pun">;</span></pre>
 
         <p>
-            ºÃÁË£¬ÖØÆô·þÎñÆ÷£¬ÎÒÃÇÓ¦ÓÃËùÓÐµÄ¹¦ÄÜ¾Í¿ÉÒÔÓÃÁË¡£Ñ¡ÔñÒ»ÕÅ±¾µØÍ¼Æ¬£¬½«ÆäÉÏ´«µ½·þÎñÆ÷£¬È»ºóä¯ÀÀÆ÷¾Í»áÏÔÊ¾¸ÃÍ¼Æ¬¡£
+            å¥½äº†ï¼Œé‡å¯æœåŠ¡å™¨ï¼Œæˆ‘ä»¬åº”ç”¨æ‰€æœ‰çš„åŠŸèƒ½å°±å¯ä»¥ç”¨äº†ã€‚é€‰æ‹©ä¸€å¼ æœ¬åœ°å›¾ç‰‡ï¼Œå°†å…¶ä¸Šä¼ åˆ°æœåŠ¡å™¨ï¼Œç„¶åŽæµè§ˆå™¨å°±ä¼šæ˜¾ç¤ºè¯¥å›¾ç‰‡ã€‚
         </p>
 
         <a name="conclusion-and-outlook"></a>
 
-        <h2>×Ü½áÓëÕ¹Íû</h2>
+        <h2>æ€»ç»“ä¸Žå±•æœ›</h2>
 
         <p>
-            ¹§Ï²£¬ÎÒÃÇµÄÈÎÎñÒÑ¾­Íê³ÉÁË£¡ÎÒÃÇ¿ª·¢ÍêÁËÒ»¸öNode.jsµÄwebÓ¦ÓÃ£¬Ó¦ÓÃËäÐ¡£¬µ«È´¡°ÎåÔà¾ãÈ«¡±¡£ ÆÚ¼ä£¬ÎÒÃÇ½éÉÜÁËºÜ¶à¼¼Êõµã£º·þÎñ¶ËJavaScript¡¢º¯ÊýÊ½±à³Ì¡¢×èÈûÓë·Ç×èÈû¡¢»Øµ÷¡¢ÊÂ¼þ¡¢ÄÚ²¿ºÍÍâ²¿Ä£¿éµÈµÈ¡£
+            æ­å–œï¼Œæˆ‘ä»¬çš„ä»»åŠ¡å·²ç»å®Œæˆäº†ï¼æˆ‘ä»¬å¼€å‘å®Œäº†ä¸€ä¸ªNode.jsçš„webåº”ç”¨ï¼Œåº”ç”¨è™½å°ï¼Œä½†å´â€œäº”è„ä¿±å…¨â€ã€‚ æœŸé—´ï¼Œæˆ‘ä»¬ä»‹ç»äº†å¾ˆå¤šæŠ€æœ¯ç‚¹ï¼šæœåŠ¡ç«¯JavaScriptã€å‡½æ•°å¼ç¼–ç¨‹ã€é˜»å¡žä¸Žéžé˜»å¡žã€å›žè°ƒã€äº‹ä»¶ã€å†…éƒ¨å’Œå¤–éƒ¨æ¨¡å—ç­‰ç­‰ã€‚
         </p>
 
         <p>
-            µ±È»ÁË£¬»¹ÓÐÐí¶à±¾ÊéÃ»ÓÐ½éÉÜµ½µÄ£º ÈçºÎ²Ù×÷Êý¾Ý¿â¡¢ÈçºÎ½øÐÐµ¥Ôª²âÊÔ¡¢ÈçºÎ¿ª·¢Node.jsµÄÍâ²¿Ä£¿éÒÔ¼°Ò»Ð©¼òµ¥µÄÖîÈçÈçºÎ»ñÈ¡GETÇëÇóÖ®ÀàµÄ·½·¨¡£
+            å½“ç„¶äº†ï¼Œè¿˜æœ‰è®¸å¤šæœ¬ä¹¦æ²¡æœ‰ä»‹ç»åˆ°çš„ï¼š å¦‚ä½•æ“ä½œæ•°æ®åº“ã€å¦‚ä½•è¿›è¡Œå•å…ƒæµ‹è¯•ã€å¦‚ä½•å¼€å‘Node.jsçš„å¤–éƒ¨æ¨¡å—ä»¥åŠä¸€äº›ç®€å•çš„è¯¸å¦‚å¦‚ä½•èŽ·å–GETè¯·æ±‚ä¹‹ç±»çš„æ–¹æ³•ã€‚
         </p>
 
         <p>
-            µ«±¾Êé±Ï¾¹Ö»ÊÇÒ»±¾¸ø³õÑ§ÕßµÄ½Ì³Ì ¡ª¡ª ²»¿ÉÄÜ¸²¸Çµ½ËùÓÐµÄÄÚÈÝ¡£
+            ä½†æœ¬ä¹¦æ¯•ç«Ÿåªæ˜¯ä¸€æœ¬ç»™åˆå­¦è€…çš„æ•™ç¨‹ â€”â€” ä¸å¯èƒ½è¦†ç›–åˆ°æ‰€æœ‰çš„å†…å®¹ã€‚
         </p>
 
         <p>
-            ÐÒÔËµÄÊÇ£¬Node.jsÉçÇø·Ç³£»îÔ¾£¨×÷¸ö²»Ç¡µ±µÄ±ÈÓ÷¾ÍÊÇÓÌÈçÒ»ÈºÓÐ¶à¶¯Ö¢Ð¡º¢×ÓÔÚÒ»Æð£¬ÄÜ²»»îÔ¾Âð£¿£©£¬
-            ÕâÒâÎ¶×Å£¬ÓÐÐí¶à¹ØÓÚNode.jsµÄ×ÊÔ´£¬ÓÐÊ²Ã´ÎÊÌâ¶¼¿ÉÒÔÏòÉçÇøÑ°Çó½â´ð¡£
-            ÆäÖÐ<a href="https://github.com/joyent/node/wiki">Node.jsÉçÇøµÄwiki</a>ÒÔ¼°
-            <a href="http://www.nodecloud.org/">NodeCloud</a>¾ÍÊÇ×îºÃµÄ×ÊÔ´¡£
+            å¹¸è¿çš„æ˜¯ï¼ŒNode.jsç¤¾åŒºéžå¸¸æ´»è·ƒï¼ˆä½œä¸ªä¸æ°å½“çš„æ¯”å–»å°±æ˜¯çŠ¹å¦‚ä¸€ç¾¤æœ‰å¤šåŠ¨ç—‡å°å­©å­åœ¨ä¸€èµ·ï¼Œèƒ½ä¸æ´»è·ƒå—ï¼Ÿï¼‰ï¼Œ
+            è¿™æ„å‘³ç€ï¼Œæœ‰è®¸å¤šå…³äºŽNode.jsçš„èµ„æºï¼Œæœ‰ä»€ä¹ˆé—®é¢˜éƒ½å¯ä»¥å‘ç¤¾åŒºå¯»æ±‚è§£ç­”ã€‚
+            å…¶ä¸­<a href="https://github.com/joyent/node/wiki">Node.jsç¤¾åŒºçš„wiki</a>ä»¥åŠ
+            <a href="http://www.nodecloud.org/">NodeCloud</a>å°±æ˜¯æœ€å¥½çš„èµ„æºã€‚
         </p>
         </div>
 
