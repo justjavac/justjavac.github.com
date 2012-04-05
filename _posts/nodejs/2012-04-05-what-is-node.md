@@ -120,7 +120,7 @@ Node的的确确是属于网络编程的范畴，用以处理服务器端的请�
 
 可以通过ls来查看Node/src目录中的文件，可以看到Node的源码：
 
-![Node源代码](/assets/images/node-source.png)
+<img src="/assets/images/node-source.png" alt='Node源代码' />
 
 大多数人会以为，JavaScript是一门糟糕的语言，更不用说用它来实现服务器端的功能了，其实你只对了一半。
 不错，对于操作系统级别的Socket和网络编程来说，JavaScript可能并不能胜任。
@@ -154,15 +154,15 @@ Node的基本用法进一步反映出了Node是如何和JavaScript一起工作�
 
 ## 和Node服务器的交互
 
-刚才我们在Node上运行了NodeFileServer.js。这时你可以访问你本机的1337端口，可以看到正常的输出。
+刚才我们在Node上运行了 `NodeFileServer.js`。这时你可以访问你本机的1337端口，可以看到正常的输出。
 
-![](/assets/images/node-file-server-output.png]
+<img src="/assets/images/node-file-server-output.png" alt='' />
 
 没错，输出结果不足为奇。
 但应当意识到我们只用短短20行代码就实现了一个文件服务器。
 输出结果是你刚刚保存的脚本源文件的文本，并没有以二进制的形式输出。
 这个文件服务器可以输出它上面的任何文件。
-如果在同样目录下放入一张图片，在URL后缀中写上图片文件名，就像这样：http://localhost:8080/my_image.png。
+如果在同样目录下放入一张图片，在URL后缀中写上图片文件名，就像这样：`http://localhost:8080/my_image.png`。
 
 Node也可以展示出二进制的图片文件。
 当你回头再看这段短小的程序时，一定觉得这太不可思议了。
