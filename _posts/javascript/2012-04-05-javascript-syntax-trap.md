@@ -7,8 +7,6 @@ category : javascript
 tags : [javascript, 语法, 语法陷阱]
 ---
 
-# 细数javascript容易被忽略的语法陷阱
-
 JavaScript 可算是世界上最流行的编程语言，它曾被 Web 开发设计师贴上噩梦的标签，
 虽然真正的噩梦其实是 DOM API，这个被大量的开发与设计师随手拈来增强他们的 Web 前端的脚本语言，
 如今越来越被重视，虽则如此，JavaScript 仍然拥有很多让人费解的东西。

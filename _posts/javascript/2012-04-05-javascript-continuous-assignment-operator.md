@@ -7,8 +7,6 @@ category : javascript
 tags : [javascript, 赋值]
 ---
 
-# 写了10年Javascript未必全了解的连续赋值运算
-
 ## 一、引子
 
     var a = {n:1};  

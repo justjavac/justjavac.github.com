@@ -7,8 +7,6 @@ category : javascript
 tags : [javascript]
 ---
 
-# 开发者最容易犯的13个JavaScript错误
-
 开发者最容易犯的JavaScript错误，总结出13个。
 这些当中可能少不了你犯的错误。
 我们描述了这些陋习，并列出来解决办法，希望对开发者有帮助。
