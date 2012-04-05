@@ -19,9 +19,12 @@ google_ad_height = 90;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+本网站托管在 [github][1] 上， 使用 [Jekyll Bootstrap](http://jekyllbootstrap.com)框架建构。
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+您也可以在 github 上创建自己的网站，[在 github 上建立 pages 的过程][2]。 
+
+    [1]: http://github.com
+    [2]: http://justjavac.com/git/2011/09/22/create-github-page/
 
 ## Update Author Attributes
 
@@ -51,10 +54,4 @@ Here's a sample "posts list".
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
 
