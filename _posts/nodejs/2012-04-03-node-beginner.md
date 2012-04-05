@@ -2451,7 +2451,7 @@ class="pln"> show</span><span class="pun">;</span></pre>
 
 <div id="footer">
 <p id="ccimage">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" border="0" src="creative_commons.png" width="88" height="31"/></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" border="0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" width="88" height="31"/></a>
 </p>
 <p>
 <span xmlns:dct="http://purl.org/dc/terms/">The Node Beginner Book</span>
