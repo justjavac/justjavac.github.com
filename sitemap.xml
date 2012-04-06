@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.posts %}
+	<url>
+		<loc>{{site.production_url}}{{ post.url }}</loc>
+		<lastmod>2012-04-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+{% endfor %}
+</urlset>
