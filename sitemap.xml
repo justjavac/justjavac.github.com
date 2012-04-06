@@ -6,7 +6,7 @@ title : Sitemap
 {% for post in site.posts %}
 	<url>
 		<loc>{{site.production_url}}{{ post.url }}</loc>
-		<lastmod>{{ post.date | date_to_string }}</lastmod>
+		<lastmod>{{ post.date }}</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
