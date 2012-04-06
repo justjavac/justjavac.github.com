@@ -6,15 +6,15 @@ keywords: jekyll, SEO, title, blog, site, google, violet, GitHub, 搜索引擎, 
 category : jekyll
 tags : [seo, jekyll]
 ---
-很多时候，我们搭建了一个博客，但很少有人来访问。一方面可能是因为我们没有做好推广，另外一方面可能是我们没做好 <strong>SEO</strong> 。在使用 <strong>jekyll</strong> 搭建这个博客的时候，我将 <strong>SEO</strong> 的一些优化点融入到 <strong>Violet</strong> 主题中来。经过一段时间的测试和观察，期望的效果已经达到。
+很多时候，我们搭建了一个博客，但很少有人来访问。一方面可能是因为我们没有做好推广，另外一方面可能是我们没做好 **SEO** 。在使用 **jekyll** 搭建这个博客的时候，我将 **SEO** 的一些优化点融入到 **Violet** 主题中来。经过一段时间的测试和观察，期望的效果已经达到。
 
 虽然我不是 SEO 高手，但喜欢折腾。通过对 SEO 的学习和实践，我希望能将好的文章让更多人知道，并通过 jekyll 实现。本文将为你分享一些 **jekyll SEO** 技巧。
 
-###优化博客标题及副标题
+## 优化博客标题及副标题
 
 **博客标题**，即站点的名称。它能够使访问者在第一时间知道所在的是什么网站，是站点的重要标识。副标题，它与博客主题并不一样，它能为博客标题做一些描述，一些优化性。通常，我都会为站点的主标题设置 `h1` 标签，为副主题设置 `h2` 标签。
 
-###优化页面标题
+## 优化页面标题
 
 在之前一直使用这样的标题方式 "xxx | justjavac.com", 本来还觉得挺好的，既有博客名称，又有页面标题。但后来查看搜索引擎的显示结果，基本上每个链接的标题里面，也就有了多余的 "| justjavac.com" 了。
 
@@ -32,7 +32,7 @@ tags : [seo, jekyll]
 &lt;/title&gt;
 </pre>
 
-###Description 和 Keywords
+## Description 和 Keywords
 
 **Description** 是为搜索引擎提供网页的描述信息，**Keywords** 为搜索引擎提供网页包含的核心内容。
 
@@ -44,25 +44,25 @@ tags : [seo, jekyll]
 
 如果你查看我的页面源码，你就可以发现，在所有文档的头部都会多了 2 个标识。而在文章页面，我会在文章输出 Description , 同时将其作为文章的摘要在首页输出。
 
-###使用 hground, strong 标签
+## 使用 hground, strong 标签
 
 一篇好的文章，条例同顺，层次分明。同时，为文章加上语义化的标签，更有利于搜索引擎抓取。
 
-<strong>hground</strong> 标签指的是 <code class="v-code">h1</code>, <code class="v-code">h2</code>, <code class="v-code">h3</code>, <code class="v-code">h4</code>, <code class="v-code">h5</code>, <code class="v-code">h6</code> 等标签, <code class="v-code">strong</code> 标签则是标识该文章的关键字。
+**hground** 标签指的是 <code class="v-code">h1</code>, <code class="v-code">h2</code>, <code class="v-code">h3</code>, <code class="v-code">h4</code>, <code class="v-code">h5</code>, <code class="v-code">h6</code> 等标签, <code class="v-code">strong</code> 标签则是标识该文章的关键字。
 
-###处理链接的 rel 标签
+## 处理链接的 rel 标签
 
 页面的菜单，为 Home 设置 <code class="v-code">nofollow</code> ，为 Archives ，Plugins ，Works，Contact 页面添加 <code class="v-code">bookmark</code> 。在首页的文章 Read More 中，为其添加的也是 nofollow ，这样写的好处是同个链接在搜索爬虫抓取的时候，不会抓取两次，避免权重下降。
 
-###文章列表页显示文章摘要
+## 文章列表页显示文章摘要
 
 在 Archives 页面，我将 <strong>Description</strong> 输出到摘要信息里面。这里有个好处，就是在查看这个页面的时候，很方便地看到页面的基本内容，搜索爬虫也能抓取到页面的摘要。坏处就是所有的文章在这里都输出，表示页面会很长！
 
-###添加 Atom.xml 和 Sitemap.xml
+## 添加 Atom.xml 和 Sitemap.xml
 
 为网站添加订阅功能，主要将最新的 10 篇文章输出到 **Atom.xml** 中。网站地图 **Sitemap.xml** 则是将全站的文章，页面都输出。最后将其提交到 **Google** 。
 
-###简单总结
+## 简单总结
 
 以上内容是我在使用 **jekyll** 搭建自己的博客的过程中实践和总结过来的，如有不对，请尽快联系我。我们互相学习，共同交流。
 
@@ -101,7 +101,7 @@ tags : [seo, jekyll]
     </tbody>
 </table>
 
-###一个半月之后的成果
+## 一个半月之后的成果
 
 这篇文章是在 2012年1月16日 发布的，那个时候我查了一下，google 的 PR 值为 0 。现在是 2012月2月24日，我再查一下，如今的 PR 值为 3 。小小欣慰一下，但仍然还有很多问题。
 
