@@ -8,11 +8,11 @@ tags : [seo, jekyll]
 ---
 很多时候，我们搭建了一个博客，但很少有人来访问。一方面可能是因为我们没有做好推广，另外一方面可能是我们没做好 <strong>SEO</strong> 。在使用 <strong>jekyll</strong> 搭建这个博客的时候，我将 <strong>SEO</strong> 的一些优化点融入到 <strong>Violet</strong> 主题中来。经过一段时间的测试和观察，期望的效果已经达到。
 
-虽然我不是 SEO 高手，但喜欢折腾。通过对 SEO 的学习和实践，我希望能将好的文章让更多人知道，并通过 jekyll 实现。本文将为你分享一些 <strong>jekyll SEO</strong> 技巧。
+虽然我不是 SEO 高手，但喜欢折腾。通过对 SEO 的学习和实践，我希望能将好的文章让更多人知道，并通过 jekyll 实现。本文将为你分享一些 **jekyll SEO** 技巧。
 
 ###优化博客标题及副标题
 
-<strong>博客标题</strong>，即站点的名称。它能够使访问者在第一时间知道所在的是什么网站，是站点的重要标识。副标题，它与博客主题并不一样，它能为博客标题做一些描述，一些优化性。通常，我都会为站点的主标题设置 <code class="v-code">h1</code> 标签，为副主题设置 <code class="v-code">h2</code> 标签。
+**博客标题**，即站点的名称。它能够使访问者在第一时间知道所在的是什么网站，是站点的重要标识。副标题，它与博客主题并不一样，它能为博客标题做一些描述，一些优化性。通常，我都会为站点的主标题设置 `h1` 标签，为副主题设置 `h2` 标签。
 
 ###优化页面标题
 
@@ -34,13 +34,13 @@ tags : [seo, jekyll]
 
 ###Description 和 Keywords
 
-<strong>Description</strong> 是为搜索引擎提供网页的描述信息，<strong>Keywords</strong> 为搜索引擎提供网页包含的核心内容。
+**Description** 是为搜索引擎提供网页的描述信息，**Keywords** 为搜索引擎提供网页包含的核心内容。
 
 为 jekyll 站点创建这Description 和 Keywords 有很多种方法。一种可以通过全局定义，
-把预定好的内容写在配置文件 <code class="v-code">_config.yml</code> 中，一种是在
-每个页面添加 <code class="v-code">YAML</code> ， 还有一种是写个插件，自动配置。写在配置文件中的比较统一，可以作为全局使用。写在页面的比较灵活，但是每次编写文章的时候都要自己手动加上去。写个插件，难度较大。
+把预定好的内容写在配置文件 `_config.yml` 中，一种是在
+每个页面添加 `YAML` ， 还有一种是写个插件，自动配置。写在配置文件中的比较统一，可以作为全局使用。写在页面的比较灵活，但是每次编写文章的时候都要自己手动加上去。写个插件，难度较大。
 
-经过对 <strong>Wordpress</strong> 的 SEO 的一些借鉴方法，在这次改版过程中，我采用了手动配置的方法。基本为所有页面都添加了 Description 和 Keywords 。
+经过对 **Wordpress** 的 SEO 的一些借鉴方法，在这次改版过程中，我采用了手动配置的方法。基本为所有页面都添加了 Description 和 Keywords 。
 
 如果你查看我的页面源码，你就可以发现，在所有文档的头部都会多了 2 个标识。而在文章页面，我会在文章输出 Description , 同时将其作为文章的摘要在首页输出。
 
@@ -60,13 +60,13 @@ tags : [seo, jekyll]
 
 ###添加 Atom.xml 和 Sitemap.xml
 
-为网站添加订阅功能，主要将最新的 10 篇文章输出到 Atom.xml 中。网站地图 <strong>Sitemap.xml</strong> 则是将全站的文章，页面都输出。最后将其提交到 <strong>Google</strong> 。
+为网站添加订阅功能，主要将最新的 10 篇文章输出到 **Atom.xml** 中。网站地图 **Sitemap.xml** 则是将全站的文章，页面都输出。最后将其提交到 **Google** 。
 
 ###简单总结
 
-以上内容是我在使用 <strong>jekyll</strong> 搭建自己的博客的过程中实践和总结过来的，如有不对，请尽快联系我。我们互相学习，共同交流。
+以上内容是我在使用 **jekyll** 搭建自己的博客的过程中实践和总结过来的，如有不对，请尽快联系我。我们互相学习，共同交流。
 
-在使用 <strong>Wordpress</strong> 的时候，就注意到 <strong>SEO</strong> 的重要性了。此次<strong>Violet</strong> 的实践，应该算是一种学习和尝试，在使用<strong>jekyll</strong> 搭建站点的过程中，具体应该注意的一些细节，下面列个表格作最后总结。
+在使用 **Wordpress** 的时候，就注意到 **SEO** 的重要性了。此次<strong>Violet</strong> 的实践，应该算是一种学习和尝试，在使用 **jekyll** 搭建站点的过程中，具体应该注意的一些细节，下面列个表格作最后总结。
 
 <table>
     <tbody>
