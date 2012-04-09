@@ -28,6 +28,14 @@
   <div class="span4">
     <h4>发布日期</h4>
     <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+
+  {% unless page.tags == empty %}
+    <h4>标签</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
     
     <section>
     <h4>最近发表</h4>
@@ -39,13 +47,5 @@
     {% endfor %}
     </ul>
     </section>
-
-  {% unless page.tags == empty %}
-    <h4>标签</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
   </div>
 </div>
