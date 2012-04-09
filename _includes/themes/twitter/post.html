@@ -11,13 +11,13 @@
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
       {% else %}
-        <li class="prev disabled"><a>没有了</a></li>
+        <li class="prev disabled"><a>上一篇: 没有了</a></li>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">归档</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a></li>
       {% else %}
-        <li class="next disabled"><a>没有了</a>
+        <li class="next disabled"><a>下一篇: 没有了</a>
       {% endif %}
       </ul>
     </div>
@@ -27,7 +27,7 @@
   
   <div class="span4">
     <h4>发布日期</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
 
   {% unless page.tags == empty %}
     <h4>标签</h4>

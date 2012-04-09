@@ -6,7 +6,7 @@ title : Sitemap
 {% for page in site.pages %}
 	<url>
 		<loc>{{site.production_url}}{{ page.url }}</loc>
-		<lastmod>{{ page.date | date:"%Y-%m-%d"}}</lastmod>
+		<lastmod>{{ page.date | date:"%Y-%m-%d" }}</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
@@ -14,7 +14,7 @@ title : Sitemap
 {% for post in site.posts %}
 	<url>
 		<loc>{{site.production_url}}{{ post.url }}</loc>
-		<lastmod>{{ post.date | date:"%Y-%m-%d"}}</lastmod>
+		<lastmod>{{ post.date | date:"%Y-%m-%d" }}</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
