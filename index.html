@@ -26,7 +26,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <article>
       <header>
       <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+      <div class="date"><span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
     </header>
     <div class="content">{{ content }}</div>
     </article>
