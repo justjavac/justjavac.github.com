@@ -34,11 +34,11 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   <div class="pagination">
       <ul>
       {% if paginator.next_page %}
-        <li class="prev"><a href="{{ paginator.next_page }}">&larr; Older</a></li>
+        <li class="prev"><a href="{{ BASE_PATH }}{{ paginator.next_page }}">&larr; Older</a></li>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">归档</a></li>
       {% if paginator.previous_page %}
-        <li class="next"><a href="{{paginator.previous_page}}">Newer &rarr;</a></li>
+        <li class="next"><a href="{{ BASE_PATH }}{{paginator.previous_page}}">Newer &rarr;</a></li>
       {% endif %}
       </ul>
   </div>
