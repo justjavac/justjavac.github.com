@@ -46,14 +46,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   
   <aside class="span4">
 
-  {% unless site.tags == empty %}
-    <h4>标签</h4>
-    <ul class="tag_box">
-    {% assign tags_list = site.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
-    
     <section>
     <h4>最近发表</h4>
     <ul id="recent_posts">
@@ -64,5 +56,14 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     {% endfor %}
     </ul>
     </section>
+    
+  {% unless site.categories == empty %}
+    <h4>分类</h4>
+    <ul class="tag_box">
+      {% assign categories_list = site.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}  
+    
   </aside>
 </div>
