@@ -28,6 +28,17 @@
   <div class="span4">
     <h4>发布日期</h4>
     <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
+    
+    <section>
+    <h4>最近发表</h4>
+    <ul id="recent_posts">
+    {% for rpost in site.posts limit: 6 %}
+      <li class="post">
+        <a href="{{ BASE_PATH }}{{ rpost.url }}">{{ rpost.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+    </section>
 
   {% unless page.tags == empty %}
     <h4>标签</h4>
