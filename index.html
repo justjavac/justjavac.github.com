@@ -28,7 +28,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="date">{{ site.author.name }} 发表于 <span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
     </header>
-    <div class="content">{{ content | truncatewords:100 }}</div>
+    <div class="content">{{ content | truncatewords:70 }}</div>
     </article>
   {% endfor %}
   <div class="pagination">
