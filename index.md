@@ -1,6 +1,6 @@
 ---
 layout: page
-title: justjavac
+title: justjavac的博客
 keywords: justjavac
 description: justjavac的个人博客， 探讨目前最时髦的web开发技术。
 tagline: 专注最时髦的web开发技术
