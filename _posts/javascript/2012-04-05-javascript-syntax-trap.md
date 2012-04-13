@@ -128,7 +128,7 @@ JavaScript 和 Java 有不少共同之处，如位操作。
 * ~ - not
 * &gt;&gt; - signed right shift
 * &gt;&gt;&gt; - unsigned right shift
-* << - left shift
+* &lt;&lt; - left shift
 
 看看第一个 & 操作符，使用 && 应该更有效，因为 JavaScript 和 Java 不一样，
 JavaScript 没有整数，需要来回转换，因此，转换操作花的时间更长。
