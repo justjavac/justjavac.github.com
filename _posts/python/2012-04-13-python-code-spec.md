@@ -55,44 +55,45 @@ Python 依赖缩进来确定代码块的层次，行首空白符主要有两种�
 尽管现在的宽屏显示器已经可以单屏显示超过 256 列字符，但本规范仍然坚持行的最大长度不得超过 78 个字符的标准。
 折叠长行的方法有以下几种方法：
 
-1. variable 为长变量名换一个短名，如：
+1) 为长变量名换一个短名，如：
 
-        this.is.a.very.long.variable_name = this.is.another.long.variable_name
+    this.is.a.very.long.variable_name = this.is.another.long.variable_name
 
-    应改为：
+应改为：
+
+    variable_name1 = this.is.a.very.long.variable_name
+    variable_name2 = this.is.another.variable_name
+    variable_name1 = variable_name2s
+
+2) 在括号（包括圆括号、方括号和花括号）内换行，如：
+
+    class Edit(CBase):
+        def __init__(self, parent, width,
+                    font = FONT, color = BLACK, pos = POS, style = 0):
+                
+或：
+
+    very_very_very_long_variable_name = Edit(parent, /
+                                    width, /
+                                    font, /
+                                    color, /
+                                    pos)
+                                    
+如果行长到连第一个括号内的参数都放不下，则每个元素都单独占一行：
+
+    very_very_very_long_variable_name = ui.widgets.Edit( /
+                                    panrent, /
+                                    width, /
+                                    font, /
+                                    color, /
+                                    pos)
+                                    
+3) 在长行加入续行符强行断行，断行的位置应在操作符前，且换行后多一个缩进，
+以使维护人员看代码的时候看到代码行首即可判定这里存在换行，如：
     
-        variable_name1 = this.is.a.very.long.variable_name
-        variable_name2 = this.is.another.variable_name
-        variable_name1 = variable_name2s
-
-2. 在括号（包括圆括号、方括号和花括号）内换行，如：
-
-        class Edit(CBase):
-            def __init__(self, parent, width,
-                        font = FONT, color = BLACK, pos = POS, style = 0):
-                    
-    或：
-
-        very_very_very_long_variable_name = Edit(parent, /
-                                        width, /
-                                        font, /
-                                        color, /
-                                        pos)
-                                        
-    如果行长到连第一个括号内的参数都放不下，则每个元素都单独占一行：
-
-        very_very_very_long_variable_name = ui.widgets.Edit( /
-                                        panrent, /
-                                        width, /
-                                        font, /
-                                        color, /
-                                        pos)
-3.  在长行加入续行符强行断行，断行的位置应在操作符前，且换行后多一个缩进，
-    以使维护人员看代码的时候看到代码行首即可判定这里存在换行，如：
-    
-        if color == WHITE or color == BLACK /
-        or color == BLUE: # 注意 or 操作符在新行的行首而不是旧行的行尾
-        do_something(color);
+    if color == WHITE or color == BLACK /
+    or color == BLUE: # 注意 or 操作符在新行的行首而不是旧行的行尾
+    do_something(color);
 
 ### 命名
 
