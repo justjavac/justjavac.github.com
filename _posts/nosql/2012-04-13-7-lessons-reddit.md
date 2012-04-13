@@ -6,6 +6,7 @@ keywords: nosql,reddit
 category : nosql
 tags : [nosql, reddit]
 ---
+
 Steve Huffman，Reddit的共同创始人，分享了将Reddit从一个小型Web应用程序发展为大型社交网站过程中学到的主要经验。
 
 Steve Huffman和Alexis Ohanian在2005年创建了Reddit，当时在一台机器上运行Web应用程序、应用服务器和数据库。
