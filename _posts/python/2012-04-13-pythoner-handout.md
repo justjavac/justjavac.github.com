@@ -6,7 +6,6 @@ keywords: python,技巧
 category : python
 tags : [python, 技巧]
 ---
-# Python实用技巧-成为Pythoner必经之路
 
 ## 前言
 
