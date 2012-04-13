@@ -18,16 +18,16 @@ tags : [jekyll, seo, search]
 具体的写法如下：
 
     //jekyll 语法前反斜杆是为了转义输出，请去掉
-    &lt;?xml version="1.0" encoding="UTF-8" ?&gt;
-    &lt;articles&gt;
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <articles>
     {\% for post in site.posts %\}
-    &lt;article&gt;
-        &lt;title&gt;{\{ post.title }\}&lt;/title&gt;
-        &lt;url&gt;{\{ site.url }\}{\{ post.url }\}&lt;/url&gt;
-        &lt;date&gt;{\{ post.date | date_to_utc | date: '%Y-%m-%d'}\}&lt;/date&gt;
-    &lt;/article&gt;
+    <article>
+        <title>{\{ post.title }\}</title>
+        <url>{\{ site.url }\}{\{ post.url }\}</url>
+        <date>{\{ post.date | date_to_utc | date: '%Y-%m-%d'}\}</date>
+    </article>
     {\% endfor %\}
-    &lt;/articles&gt;
+    </articles>
 
 ### 二、添加 DOM 结构
 
@@ -40,14 +40,13 @@ DOM 结构就是 HTML 代码啦。
 DOM 结构保存在同一个页面。
 
     //样式表
-    &lt;link rel="stylesheet" href="/css/jquery-ui-1.8.18.custom.css" type="text/css"
-    /&gt;
+    <link rel="stylesheet" href="/css/jquery-ui-1.8.18.custom.css" type="text/css">
 
     //js
-    &lt;script src="/js/jquery-ui-1.8.18.custom.js"&gt;&lt;/script&gt;
+    <script src="/js/jquery-ui-1.8.18.custom.js"></script>
 
     //添加 DOM
-    &lt;input id="J_search" placeholder="Simple Search"/&gt;
+    <input id="J_search" placeholder="Simple Search"/>
 
 ### 三、设置全局地址
 
