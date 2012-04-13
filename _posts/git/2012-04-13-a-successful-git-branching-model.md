@@ -1,153 +1,153 @@
 ---
 layout: post
-title: git¶àÈËÐ­×÷¿ª·¢Á÷³Ì
-description: git¶àÈËÐ­×÷¿ª·¢Á÷³Ì
+title: gitå¤šäººåä½œå¼€å‘æµç¨‹
+description: gitå¤šäººåä½œå¼€å‘æµç¨‹
 keywords: git
 category : git
 tags : [git]
 ---
 
-Ê±¼ä²Ö´Ù£¬ÄÜÁ¦ÓÐÏÞ£¬´íÎóÄÑÃâ(´úÂëÃ»ÓÐ¾­¹ýÊµ¼ÊÑéÖ¤£¬ËùÒÔ¿ÉÄÜ»áÓÐÎÊÌâ)£¬»¶Ó­Ö¸Õý :)
+æ—¶é—´ä»“ä¿ƒï¼Œèƒ½åŠ›æœ‰é™ï¼Œé”™è¯¯éš¾å…(ä»£ç æ²¡æœ‰ç»è¿‡å®žé™…éªŒè¯ï¼Œæ‰€ä»¥å¯èƒ½ä¼šæœ‰é—®é¢˜)ï¼Œæ¬¢è¿ŽæŒ‡æ­£ :)
 
-Õâ¸ö¿ª·¢Á÷³Ì¾ÍÊÇ»ùÓÚ[a successful git model](http://nvie.com/posts/a-successful-git-branching-model/)ÕâÆªÎÄÕÂ¶øÀ´µÄ
+è¿™ä¸ªå¼€å‘æµç¨‹å°±æ˜¯åŸºäºŽ[a successful git model](http://nvie.com/posts/a-successful-git-branching-model/)è¿™ç¯‡æ–‡ç« è€Œæ¥çš„
 
-**ÏîÄ¿±³¾°**£º
+**é¡¹ç›®èƒŒæ™¯**ï¼š
 
-    ÕÅÈý / ÀîËÄ / ÍõÎå ´òËã¹²Í¬Ð­×÷£¬¿ª·¢Ò»Ì×²©¿ÍÏµÍ³
+    å¼ ä¸‰ / æŽå›› / çŽ‹äº” æ‰“ç®—å…±åŒåä½œï¼Œå¼€å‘ä¸€å¥—åšå®¢ç³»ç»Ÿ
 
-**ÏîÄ¿·Ö¹¤**£º
+**é¡¹ç›®åˆ†å·¥**ï¼š
 
-    ÕÅÈý / ÀîËÄ ¸ºÔðÎÄÕÂÏµÍ³
-    ÍõÎå ¸ºÔðÆÀÂÛÏµÍ³
+    å¼ ä¸‰ / æŽå›› è´Ÿè´£æ–‡ç« ç³»ç»Ÿ
+    çŽ‹äº” è´Ÿè´£è¯„è®ºç³»ç»Ÿ
 
-## ½¨Á¢·þÎñ¶Ë²Ö¿â
+## å»ºç«‹æœåŠ¡ç«¯ä»“åº“
 
-gitËäÈ»ÊÇ·Ö²¼Ê½°æ±¾¹ÜÀí¹¤¾ß£¬µ«ÎªÁË·½±ã¹ÜÀí£¬ÎÒÃÇÐèÒª½¨Á¢Ò»¸öÖÐÐÄ²Ö¿â£¬ÏÈÔÚ·þÎñ¶Ë½¨Á¢Á½Ìõ·ÖÖ§
+gitè™½ç„¶æ˜¯åˆ†å¸ƒå¼ç‰ˆæœ¬ç®¡ç†å·¥å…·ï¼Œä½†ä¸ºäº†æ–¹ä¾¿ç®¡ç†ï¼Œæˆ‘ä»¬éœ€è¦å»ºç«‹ä¸€ä¸ªä¸­å¿ƒä»“åº“ï¼Œå…ˆåœ¨æœåŠ¡ç«¯å»ºç«‹ä¸¤æ¡åˆ†æ”¯
 
     master
     develop
 
-master±£´æÎÈ¶¨°æ(production ready)£¬¿ª·¢ÈËÔ±Æ½Ê±µÄ´úÂë¶¼Ìá½»µ½develop·ÖÖ§ÉÏ
+masterä¿å­˜ç¨³å®šç‰ˆ(production ready)ï¼Œå¼€å‘äººå‘˜å¹³æ—¶çš„ä»£ç éƒ½æäº¤åˆ°developåˆ†æ”¯ä¸Š
 
-## ¿ª·¢ÕßµÄGit·ÖÖ§
+## å¼€å‘è€…çš„Gitåˆ†æ”¯
 
-### ÕÅÈýµÄGit·ÖÖ§
+### å¼ ä¸‰çš„Gitåˆ†æ”¯
 
-ÒòÎªÕÅÈýºÍÀîËÄÍ¬Ê±¿ª·¢ÎÄÕÂÏµÍ³£¬ËùÒÔ¾ÍÓÐÁËÏÂÃæµÄ·ÖÖ§
+å› ä¸ºå¼ ä¸‰å’ŒæŽå››åŒæ—¶å¼€å‘æ–‡ç« ç³»ç»Ÿï¼Œæ‰€ä»¥å°±æœ‰äº†ä¸‹é¢çš„åˆ†æ”¯
 
-    # ÕÅÈýµÄGit·ÖÖ§
+    # å¼ ä¸‰çš„Gitåˆ†æ”¯
     article (local)
     lisi/article (via git remote add lisi http://lisi-server/lisi.git)
     origin/master (via git remote add origin http://remote-server/blog.git)
     origin/develop
 
-### ÀîËÄµÄGit·ÖÖ§
+### æŽå››çš„Gitåˆ†æ”¯
 
-¸úÕÅÈýÀàËÆ£¬²»¹ýarticle server±ä³ÉÁËÕÅÈýµÄ
+è·Ÿå¼ ä¸‰ç±»ä¼¼ï¼Œä¸è¿‡article serverå˜æˆäº†å¼ ä¸‰çš„
 
-    # ÀîËÄµÄGit·ÖÖ§
+    # æŽå››çš„Gitåˆ†æ”¯
     article (local)
     zhangsan/article (via git remote add zhangsan http://zhangsan-server/zhangsan.git)
     origin/master (via git remote add origin http://remote-server/blog.git)
     origin/develop
 
-### ÍõÎåµÄGit·ÖÖ§
+### çŽ‹äº”çš„Gitåˆ†æ”¯
 
-ÒòÎªÖ»ÓÐÍõÎåÒ»¸öÈË¿ª·¢ÆÀÂÛÏµÍ³£¬ËùÒÔÖ»ÒªÒ»ÌõÔ¶³Ì·ÖÖ§¾ÍÐÐÁË
+å› ä¸ºåªæœ‰çŽ‹äº”ä¸€ä¸ªäººå¼€å‘è¯„è®ºç³»ç»Ÿï¼Œæ‰€ä»¥åªè¦ä¸€æ¡è¿œç¨‹åˆ†æ”¯å°±è¡Œäº†
 
-    # ÍõÎåµÄGit·ÖÖ§
+    # çŽ‹äº”çš„Gitåˆ†æ”¯
     comment (local)
     origin/master (via git remote add origin http://remote-server/blog.git)
     origin/develop
 
-## ¿ª·¢¹ý³Ì
+## å¼€å‘è¿‡ç¨‹
 
-ÕÅÈýºÍÀîËÄ¼ÙÉèÕÅÈý¸ºÔðÎÄÕÂµÄ¹ÜÀí£¬¼°Ç°¶ËÏÔÊ¾¡£ÀîËÄ¸ºÔðÎÄÕÂµÄ·ÖÀàºÍ±êÇ©ÏµÍ³¡£
+å¼ ä¸‰å’ŒæŽå››å‡è®¾å¼ ä¸‰è´Ÿè´£æ–‡ç« çš„ç®¡ç†ï¼ŒåŠå‰ç«¯æ˜¾ç¤ºã€‚æŽå››è´Ÿè´£æ–‡ç« çš„åˆ†ç±»å’Œæ ‡ç­¾ç³»ç»Ÿã€‚
 
-ÕÅÈý¿ª·¢ÍêÒ»²¿·Öºó(n´Î±¾µØ`commit`)£¬Ìá½»µ½±¾µØµÄgit server(Ò²¾ÍÊÇÀîËÄÌí¼ÓµÄ`http://zhangsan-server/zhangsan.git`)¡£
+å¼ ä¸‰å¼€å‘å®Œä¸€éƒ¨åˆ†åŽ(næ¬¡æœ¬åœ°`commit`)ï¼Œæäº¤åˆ°æœ¬åœ°çš„git server(ä¹Ÿå°±æ˜¯æŽå››æ·»åŠ çš„`http://zhangsan-server/zhangsan.git`)ã€‚
 
-ÀîËÄ¿ª·¢ÍêÒ»²¿·Öºó£¬ÒòÎªÒªÓëÕÅÈý¿ª·¢µÄ²¿·ÖºÏ²¢£¬ËùÒÔÐèÒªÖ´ÐÐÒ»ÏÂ`rebase`»ò`merge`
+æŽå››å¼€å‘å®Œä¸€éƒ¨åˆ†åŽï¼Œå› ä¸ºè¦ä¸Žå¼ ä¸‰å¼€å‘çš„éƒ¨åˆ†åˆå¹¶ï¼Œæ‰€ä»¥éœ€è¦æ‰§è¡Œä¸€ä¸‹`rebase`æˆ–`merge`
 
-    # µ±Ç°ÔÚarticle·ÖÖ§ÖÐ
-    git rebase zhangsan/article# Ìá½»µ½±¾µØµÄgit server (Ò²¾ÍÊÇÕÅÈýÌí¼ÓµÄhttp://lisi-server/lisi.git)¡£
+    # å½“å‰åœ¨articleåˆ†æ”¯ä¸­
+    git rebase zhangsan/article# æäº¤åˆ°æœ¬åœ°çš„git server (ä¹Ÿå°±æ˜¯å¼ ä¸‰æ·»åŠ çš„http://lisi-server/lisi.git)ã€‚
     git push local/article master
 
-ÕâÊ±ÕÅÈýÓÖ¿ª·¢ÍêÁËÒ»²¿·Ö£¬ËûÒ²»á×ß¸úÀîËÄÒ»ÑùµÄÁ÷³Ì£¬`rebase` & `push` (Èç¹ûÓÐ³åÍ»£¬½â¾öÖ®)¡£
+è¿™æ—¶å¼ ä¸‰åˆå¼€å‘å®Œäº†ä¸€éƒ¨åˆ†ï¼Œä»–ä¹Ÿä¼šèµ°è·ŸæŽå››ä¸€æ ·çš„æµç¨‹ï¼Œ`rebase` & `push` (å¦‚æžœæœ‰å†²çªï¼Œè§£å†³ä¹‹)ã€‚
 
-¼ÙÉèÓÉÕÅÈýÍ³Ò»¸ºÔð½«Ã¿ÈÕµÄ¿ª·¢½ø¶ÈÌá½»µ½remote develop·ÖÖ§ÉÏ£¬ÕÅÈýÔÚÖ´ÐÐÁËÉÏÃæËùËµµÄÁ÷³Ìºó£¬Ìá½»µ½·þÎñ¶ËµÄdevelop·ÖÖ§¡£µ«ÕâÊ±ºÜ¿ÉÄÜÍõÎåÒÑ¾­°ÑËûÐ´µÄ´úÂëÌá½»ÁË£¬ËùÒÔÒªÏÈÖ´ÐÐÒ»ÏÂ`rebase`
+å‡è®¾ç”±å¼ ä¸‰ç»Ÿä¸€è´Ÿè´£å°†æ¯æ—¥çš„å¼€å‘è¿›åº¦æäº¤åˆ°remote developåˆ†æ”¯ä¸Šï¼Œå¼ ä¸‰åœ¨æ‰§è¡Œäº†ä¸Šé¢æ‰€è¯´çš„æµç¨‹åŽï¼Œæäº¤åˆ°æœåŠ¡ç«¯çš„developåˆ†æ”¯ã€‚ä½†è¿™æ—¶å¾ˆå¯èƒ½çŽ‹äº”å·²ç»æŠŠä»–å†™çš„ä»£ç æäº¤äº†ï¼Œæ‰€ä»¥è¦å…ˆæ‰§è¡Œä¸€ä¸‹`rebase`
 
     git rebase origin/develop
     git push origin develop
 
-ÕâÑùÕÅÈýºÍÀîËÄµÄ´úÂë¾Í¶¼Ìá½»µ½ÁË·þÎñ¶ËµÄdevelop·ÖÖ§ÉÏ¡£ÍõÎåÄÇ±ßµÄÁ÷³ÌÒ²Ò»Ñù£¬Ö»ÊÇÉÙÁË±¾µØÍ¬²½µÄ¹ý³Ì¡£
+è¿™æ ·å¼ ä¸‰å’ŒæŽå››çš„ä»£ç å°±éƒ½æäº¤åˆ°äº†æœåŠ¡ç«¯çš„developåˆ†æ”¯ä¸Šã€‚çŽ‹äº”é‚£è¾¹çš„æµç¨‹ä¹Ÿä¸€æ ·ï¼Œåªæ˜¯å°‘äº†æœ¬åœ°åŒæ­¥çš„è¿‡ç¨‹ã€‚
 
-## ¿ª·¢Íê±Ï£¬½øÈë²âÊÔ½×¶Î
+## å¼€å‘å®Œæ¯•ï¼Œè¿›å…¥æµ‹è¯•é˜¶æ®µ
 
-¾­¹ý¼¸ÌìµÄ¿ª·¢£¬¸÷¸ö¹¦ÄÜ¶¼ÒÑ»ù±¾Íê³É£¬ÏÂÃæ¾ÍÒª½øÈë²âÊÔ½×¶Î¡£¾ßÌå×ö·¨ÊÇÔÚ·þÎñ¶ËÐÂÌí¼ÓÒ»¸ö·ÖÖ§£¬ÃüÃûÎªrelease£¬ËùÒÔÕâÊ±·þÎñ¶Ë¾ÍÓÐ3¸ö·ÖÖ§ÁË
+ç»è¿‡å‡ å¤©çš„å¼€å‘ï¼Œå„ä¸ªåŠŸèƒ½éƒ½å·²åŸºæœ¬å®Œæˆï¼Œä¸‹é¢å°±è¦è¿›å…¥æµ‹è¯•é˜¶æ®µã€‚å…·ä½“åšæ³•æ˜¯åœ¨æœåŠ¡ç«¯æ–°æ·»åŠ ä¸€ä¸ªåˆ†æ”¯ï¼Œå‘½åä¸ºreleaseï¼Œæ‰€ä»¥è¿™æ—¶æœåŠ¡ç«¯å°±æœ‰3ä¸ªåˆ†æ”¯äº†
 
     master
     develop
     release
 
-ÈýÎ»Í¬Ñ§¶¼ÔÚ±¾µØÐÂ½¨Ò»¸öbranch£¬¶ÔÓ¦·þÎñ¶ËµÄrelease·ÖÖ§
+ä¸‰ä½åŒå­¦éƒ½åœ¨æœ¬åœ°æ–°å»ºä¸€ä¸ªbranchï¼Œå¯¹åº”æœåŠ¡ç«¯çš„releaseåˆ†æ”¯
 
     git checkout -b release origin/release
 
-·Ö±ð½øÐÐ²âÊÔ£¬Èç¹û·¢ÏÖÎÊÌâ£¬ÔòÖ´ÐÐ`pull` & `push`
+åˆ†åˆ«è¿›è¡Œæµ‹è¯•ï¼Œå¦‚æžœå‘çŽ°é—®é¢˜ï¼Œåˆ™æ‰§è¡Œ`pull` & `push`
 
-    # µ±Ç°ÔÚrelease·ÖÖ§ÏÂ
+    # å½“å‰åœ¨releaseåˆ†æ”¯ä¸‹
     git pull origin release
     git push origin develop
 
-¾­¹ý¼¸ÌìµÄ²âÊÔºó£¬·¢ÏÖÃ»Ê²Ã´ÎÊÌâÁË£¬¾Í¿ÉÒÔ·¢²¼ÎÈ¶¨°æÁË£¬¼ÙÉèÎª0.1
+ç»è¿‡å‡ å¤©çš„æµ‹è¯•åŽï¼Œå‘çŽ°æ²¡ä»€ä¹ˆé—®é¢˜äº†ï¼Œå°±å¯ä»¥å‘å¸ƒç¨³å®šç‰ˆäº†ï¼Œå‡è®¾ä¸º0.1
 
     git checkout master
     git rebase origin/release
     git tag 0.1
     git push origin master --tags
 
-Í¬Ê±±ðÍüÁË°Ñrelease·ÖÖ§ÉÏµÄ´úÂëÓëdevelop·ÖÖ§ºÏ²¢£¬±£Ö¤develop·ÖÖ§ÉÏ²»»áÓÐÒÅÁôµÄbug¡£(Ã»ÓÐÕÒµ½ÈçºÎÖ±½Ó`merge`Á½¸ö·þÎñ¶Ë`branch`µÄ·½·¨)
+åŒæ—¶åˆ«å¿˜äº†æŠŠreleaseåˆ†æ”¯ä¸Šçš„ä»£ç ä¸Ždevelopåˆ†æ”¯åˆå¹¶ï¼Œä¿è¯developåˆ†æ”¯ä¸Šä¸ä¼šæœ‰é—ç•™çš„bugã€‚(æ²¡æœ‰æ‰¾åˆ°å¦‚ä½•ç›´æŽ¥`merge`ä¸¤ä¸ªæœåŠ¡ç«¯`branch`çš„æ–¹æ³•)
 
     git checkout develop
     git rebase origin/release
     git push origin develop
-    # É¾³ý·þÎñ¶ËµÄrelease·ÖÖ§
+    # åˆ é™¤æœåŠ¡ç«¯çš„releaseåˆ†æ”¯
     git push origin :release
 
-½ÓÏÂÀ´¾Í¿ÉÒÔ¼ÌÐøÔÚdevelop·ÖÖ§ÉÏ½øÐÐ¿ª·¢ÁË¡£
+æŽ¥ä¸‹æ¥å°±å¯ä»¥ç»§ç»­åœ¨developåˆ†æ”¯ä¸Šè¿›è¡Œå¼€å‘äº†ã€‚
 
-## Ìí¼ÓÐÂÌØÐÔ
+## æ·»åŠ æ–°ç‰¹æ€§
 
-²©¿ÍÏµÍ³ÐèÒªÌí¼Óarchives¹¦ÄÜ£¬Õâ¸ö¹¦ÄÜµÄ¿ª·¢¾Í½»¸øÁËÐÂÀ´µÄÕÔÁù¡£´ËÊ±£¬ÔÚ·þÎñ¶ËÐÂ¿ªÒ»¸ö·ÖÖ§£¬ÃüÃûÎªfeature£¬ÕâÊ±·þÎñ¶ËµÄ·ÖÖ§¾Í±ä³ÉÁËÕâÑù
+åšå®¢ç³»ç»Ÿéœ€è¦æ·»åŠ archivesåŠŸèƒ½ï¼Œè¿™ä¸ªåŠŸèƒ½çš„å¼€å‘å°±äº¤ç»™äº†æ–°æ¥çš„èµµå…­ã€‚æ­¤æ—¶ï¼Œåœ¨æœåŠ¡ç«¯æ–°å¼€ä¸€ä¸ªåˆ†æ”¯ï¼Œå‘½åä¸ºfeatureï¼Œè¿™æ—¶æœåŠ¡ç«¯çš„åˆ†æ”¯å°±å˜æˆäº†è¿™æ ·
 
     master
     develop
     feature/archive
 
-ÕÔÁùÒ²ÔÚ±¾µØ½¨Á¢Ò»¸öarchive·ÖÖ§£¬Ã¿ÌìÌá½»µ½·þÎñ¶ËµÄfeature/archive£¬ÕÔÁùµÄGit·ÖÖ§ÊÇÕâÑùµÄ(²»Ïà¹ØµÄ·þÎñ¶ËGitÒÑÊ¡È¥)
+èµµå…­ä¹Ÿåœ¨æœ¬åœ°å»ºç«‹ä¸€ä¸ªarchiveåˆ†æ”¯ï¼Œæ¯å¤©æäº¤åˆ°æœåŠ¡ç«¯çš„feature/archiveï¼Œèµµå…­çš„Gitåˆ†æ”¯æ˜¯è¿™æ ·çš„(ä¸ç›¸å…³çš„æœåŠ¡ç«¯Gitå·²çœåŽ»)
 
     master
     archive
     origin/feature/archive
 
-µÈµ½Õâ¸öfeature¿ª·¢ÍêÁË£¬Óë·þÎñ¶ËµÄdevelop·ÖÖ§Ö´ÐÐÒ»ÏÂ`rebase`£¬È»ºóÔÙÌá½»µ½·þÎñ¶ËµÄdevelop£¬ÕâÑù²©¿ÍµÄarchive¹¦ÄÜ¾ÍÓÐÁË
+ç­‰åˆ°è¿™ä¸ªfeatureå¼€å‘å®Œäº†ï¼Œä¸ŽæœåŠ¡ç«¯çš„developåˆ†æ”¯æ‰§è¡Œä¸€ä¸‹`rebase`ï¼Œç„¶åŽå†æäº¤åˆ°æœåŠ¡ç«¯çš„developï¼Œè¿™æ ·åšå®¢çš„archiveåŠŸèƒ½å°±æœ‰äº†
 
     git checkout archive
     git rebase origin/feature/archive
-    git push origin feature/archive# Èç¹ûÒªÉ¾³ý·þÎñ¶ËµÄfeature/archive·ÖÖ§µÄ»°
+    git push origin feature/archive# å¦‚æžœè¦åˆ é™¤æœåŠ¡ç«¯çš„feature/archiveåˆ†æ”¯çš„è¯
     git push origin :feature/archive
 
-½ÓÏÂÀ´µÄÁ÷³Ì¸úÉÏÃæµÄÒ»Ñù£º¿ª·¢Íê±Ïºó£¬ÐÂ½¨release·ÖÖ§£¬ÔÚÄÇÉÏÃæ½øÐÐbugÐÞ¸´£¬ÐÞ¸´Íê±Ïºó£¬`merge`µ½·þÎñ¶ËµÄmasterºÍdevelop
+æŽ¥ä¸‹æ¥çš„æµç¨‹è·Ÿä¸Šé¢çš„ä¸€æ ·ï¼šå¼€å‘å®Œæ¯•åŽï¼Œæ–°å»ºreleaseåˆ†æ”¯ï¼Œåœ¨é‚£ä¸Šé¢è¿›è¡Œbugä¿®å¤ï¼Œä¿®å¤å®Œæ¯•åŽï¼Œ`merge`åˆ°æœåŠ¡ç«¯çš„masterå’Œdevelop
 
-## ½ô¼±ÐÞ¸´Â©¶´
+## ç´§æ€¥ä¿®å¤æ¼æ´ž
 
-²©¿Í³öÏÖÁËÒ»¸öxssÂ©¶´£¬ÐèÒª¾¡¿ìÐÞ¸´£¬ÕâÊ±ÐÂ½¨Ò»¸öhotfix·ÖÖ§(ÏÖÔÚ±¾µØ½¨£¬È»ºóÌá½»µ½·þÎñ¶Ë)£¬È»ºó¶ÔÂ©¶´½øÐÐÐÞ¸´£¬ÐÞ¸´Íêºó£¬Ìá½»µ½·þÎñ¶ËµÄmasterºÍdevelop
+åšå®¢å‡ºçŽ°äº†ä¸€ä¸ªxssæ¼æ´žï¼Œéœ€è¦å°½å¿«ä¿®å¤ï¼Œè¿™æ—¶æ–°å»ºä¸€ä¸ªhotfixåˆ†æ”¯(çŽ°åœ¨æœ¬åœ°å»ºï¼Œç„¶åŽæäº¤åˆ°æœåŠ¡ç«¯)ï¼Œç„¶åŽå¯¹æ¼æ´žè¿›è¡Œä¿®å¤ï¼Œä¿®å¤å®ŒåŽï¼Œæäº¤åˆ°æœåŠ¡ç«¯çš„masterå’Œdevelop
 
     git checkout master
     git pull origin master
     git checkout -b hotfix
-    # Â©¶´ÐÞ¸´...
-    # ÐÞ¸´Íêºó
+    # æ¼æ´žä¿®å¤...
+    # ä¿®å¤å®ŒåŽ
     git push origin hotfix
     git checkout master
     git rebase hotfix
