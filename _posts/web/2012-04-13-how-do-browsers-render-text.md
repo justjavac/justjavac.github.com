@@ -37,9 +37,9 @@ tags : [web, 浏览器]
 也可能有阿拉伯文、希伯来文这种从右到左书写的文字；
 也有可能涉及印度系文字这样涉及复杂布局规则的文字；
 另外，还可能有网页内自己指定的文本语言，
-比如 <span lang="jp">日本语</span> 这样的标记，使得日文汉字可以使用日文字体显示 
+比如 `<span lang="jp">日本语</span>` 这样的标记，使得日文汉字可以使用日文字体显示 
 (因为 Han Unification 导致这些汉字和中文里的汉字使用同样的代码点，尽管很多写法不同)，
-"lang" 属性也可以在 HTTP 头、<meta> 或者 <html> 出现，
+"lang" 属性也可以在 HTTP 头、`<meta>` 或者 `<html>` 出现，
 用于标记整个文档的全局语言，通常这是一种好的习惯，方便浏览器进行字体匹配。
 
 为了统一处理所有这些复杂的情况，我们要将文本分为由不同语言组成的小段，
@@ -155,4 +155,4 @@ Linux/X11 下用 FreeType，Windows 下用 GDI/DirectWrite 等等。
 4. 最后还是应该放上对应的 generic family，比如 sans-serif 或者 serif。
 5. 尽量用字体的基本名称 (比如 English locale 下显示的)，而不要用本地化过的名称。除非特殊情况 (Windows 下“某些”浏览器在特定编码下只能支持本地化的字体名称)。Mac OS X 下字体名称可以用 Font Book 查到 (菜单 Preview -> Show Font Info)，Windows 下字体信息在微软的网站可以得到，Linux/X11 下可以使用 fc-list 命令查到。
 6. 字体名称中包含空格时记住用引号扩起，比如 "American Typewritter" 和 "Myriad Pro"。
-7. 文档开头最好指明语言，比如 <html lang="zh-CN">，可以使用的语言标记参见 W3C 的说明。
+7. 文档开头最好指明语言，比如 `<html lang="zh-CN">`，可以使用的语言标记参见 W3C 的说明。
