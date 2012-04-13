@@ -149,10 +149,10 @@ Linux/X11 下用 FreeType，Windows 下用 GDI/DirectWrite 等等。
 
 基于以上的介绍，可以尝试提出一个在现有浏览器下，针对中文用户的，书写 CSS 字体选择规则的建议，如下：
 
-1 首先确定要选择字体的元素应该使用的字体风格，比如是衬线字体、非衬线字体还是 cursive、fantasy 之类的；
-2 确定了风格之后，先选择西文字体，优先把平台独特的、在该平台下效果更好的字体写上，比如 Mac OS X 下有 Helvetica 也有 Arial，但 Helvetica (可能) 效果更好，Windows 下则一般只有 Arial，那么写 Helvetica, Arial 就比 Arial, Helvetica 或者只有 Arial 更好；
-3 然后列出中文字体，原则相同，多个平台共有的字体应该尽量放在后边，独有的字体放在前面，还需要照顾到 Mac OS X/Linux 下一般用户习惯用(细)黑体作为默认字体，Windows 下习惯以宋体作为默认字体的情况，比如 STXihei, SimSun 这样的写法比较常见，如果写作 SimSun, STXihei，但 Mac OS X 上装了 SimSun 效果就不会太好看。
-4 最后还是应该放上对应的 generic family，比如 sans-serif 或者 serif。
-5 尽量用字体的基本名称 (比如 English locale 下显示的)，而不要用本地化过的名称。除非特殊情况 (Windows 下“某些”浏览器在特定编码下只能支持本地化的字体名称)。Mac OS X 下字体名称可以用 Font Book 查到 (菜单 Preview -> Show Font Info)，Windows 下字体信息在微软的网站可以得到，Linux/X11 下可以使用 fc-list 命令查到。
-6 字体名称中包含空格时记住用引号扩起，比如 "American Typewritter" 和 "Myriad Pro"。
-7 文档开头最好指明语言，比如 <html lang="zh-CN">，可以使用的语言标记参见 W3C 的说明。
+1. 首先确定要选择字体的元素应该使用的字体风格，比如是衬线字体、非衬线字体还是 cursive、fantasy 之类的；
+2. 确定了风格之后，先选择西文字体，优先把平台独特的、在该平台下效果更好的字体写上，比如 Mac OS X 下有 Helvetica 也有 Arial，但 Helvetica (可能) 效果更好，Windows 下则一般只有 Arial，那么写 Helvetica, Arial 就比 Arial, Helvetica 或者只有 Arial 更好；
+3. 然后列出中文字体，原则相同，多个平台共有的字体应该尽量放在后边，独有的字体放在前面，还需要照顾到 Mac OS X/Linux 下一般用户习惯用(细)黑体作为默认字体，Windows 下习惯以宋体作为默认字体的情况，比如 STXihei, SimSun 这样的写法比较常见，如果写作 SimSun, STXihei，但 Mac OS X 上装了 SimSun 效果就不会太好看。
+4. 最后还是应该放上对应的 generic family，比如 sans-serif 或者 serif。
+5. 尽量用字体的基本名称 (比如 English locale 下显示的)，而不要用本地化过的名称。除非特殊情况 (Windows 下“某些”浏览器在特定编码下只能支持本地化的字体名称)。Mac OS X 下字体名称可以用 Font Book 查到 (菜单 Preview -> Show Font Info)，Windows 下字体信息在微软的网站可以得到，Linux/X11 下可以使用 fc-list 命令查到。
+6. 字体名称中包含空格时记住用引号扩起，比如 "American Typewritter" 和 "Myriad Pro"。
+7. 文档开头最好指明语言，比如 <html lang="zh-CN">，可以使用的语言标记参见 W3C 的说明。
