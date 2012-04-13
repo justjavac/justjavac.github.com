@@ -55,7 +55,7 @@ Python 依赖缩进来确定代码块的层次，行首空白符主要有两种�
 尽管现在的宽屏显示器已经可以单屏显示超过 256 列字符，但本规范仍然坚持行的最大长度不得超过 78 个字符的标准。
 折叠长行的方法有以下几种方法：
 
-1.  为长变量名换一个短名，如：
+1. variable 为长变量名换一个短名，如：
 
         this.is.a.very.long.variable_name = this.is.another.long.variable_name
 
