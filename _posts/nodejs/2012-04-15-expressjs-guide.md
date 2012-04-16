@@ -68,7 +68,7 @@ Express支持多工作环境，比如生产环境和开发环境等。开发者�
         app.use(express.errorHandler());
     });
 
-对于内部和多重设置（internal和arbitrary），Express提供了 set(key[, val]), enable(key), disable(key)等方法：
+对于内部和多重设置（internal和arbitrary），Express提供了 `set(key[, val])`, `enable(key)`, `disable(key)`等方法：
 
     app.configure(function(){
        app.set('views', __dirname + '/views');
@@ -103,23 +103,23 @@ Express 支持以下设置项：
 ## 路由
 
 Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
-例如我们可能想让用户帐号的URL看起来像/user/12的样子，下面的例子就能实现这样的路由，
-其中与占位标识符（本例为:id）相关的值可以被req.params获取到。
+例如我们可能想让用户帐号的URL看起来像`/user/12`的样子，下面的例子就能实现这样的路由，
+其中与占位标识符（本例为`:id`）相关的值可以被`req.params`获取到。
 
     app.get('/user/:id', function(req, res){
         res.send('user ' + req.params.id);
     });
 
-上例中当我们访问/user/12时返回“user 12”,
+上例中当我们访问`/user/12`时返回“user 12”,
 注：app.get相当于在服务器注册了一个监听get请求事件的侦听器，当请求的URL满足第一个参数时，
 执行后面的回调函数，该过程是异步的。
 
-路由是一个可以被内部编译成正则表达式的简单字符串，比如当/user/:id被编译后，被内部编译后的正则表达式字符串看起来会是下面的样子（简化后）：
+路由是一个可以被内部编译成正则表达式的简单字符串，比如当`/user/:id`被编译后，被内部编译后的正则表达式字符串看起来会是下面的样子（简化后）：
 
     /user/([^/]+)/?
 
-要实现复杂点的，我们可以传入正则表达式直接量，因为正则捕获组是匿名的因此我们可以通过req.params进行访问，
-第一个捕获组应该是req.params[0]，第二个应该是req.params[1]，以此类推。
+要实现复杂点的，我们可以传入正则表达式直接量，因为正则捕获组是匿名的因此我们可以通过`req.params`进行访问，
+第一个捕获组应该是`req.params[0]`，第二个应该是`req.params[1]`，以此类推。
 
     app.get(/^/users?(?:/(d+)(?:..(d+))?)?/, function(req, res){
         res.send(req.params);
@@ -183,8 +183,8 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
     app.listen(3000);
 
-通常我们所使用的占位符（比如/user/:id）都没有任何限制，即用户可以传入各种各样数据类型的id值，
-如果我们希望限制用户id为数字，可以这样写“/user/:id(d+)”，
+通常我们所使用的占位符（比如`/user/:id`）都没有任何限制，即用户可以传入各种各样数据类型的id值，
+如果我们希望限制用户id为数字，可以这样写`/user/:id(d+)`，
 这样就能保证只有该占位符数据类型为数值类型才会进行路由的相关处理。
 
 ## 路由控制
@@ -210,7 +210,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 `app.all()` 方法可以对所有HTTP动作应用单一调用入口，这在有些情况下很有用。
 
-下面我们使用该功能来从我们的模拟数据库中加载一个用户，并把它分配给req.user。
+下面我们使用该功能来从我们的模拟数据库中加载一个用户，并把它分配给 `req.user`。
 
     var express = require('express')
       , app = express.createServer();
@@ -246,7 +246,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 ## 中间件
 
-中间件可以通过Connect传入express.createServer()，就像正常的连接服务器一样，比如：
+中间件可以通过Connect传入 `express.createServer()`，就像正常的连接服务器一样，比如：
 
     var express = require('express');
 
@@ -255,11 +255,11 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
         express.bodyParser()
     );
 
-另外，在configure()函数块中利用use()函数增加中间件，也是一种很好的方式。
+另外，在 `configure()` 函数块中利用 `use()` 函数增加中间件，也是一种很好的方式。
 
     app.use(express.logger({ format: ':method :uri' }));
 
-通常连接中间件可以通过require("connect")的方式，如：
+通常连接中间件可以通过 `require("connect")` 的方式，如：
 
     var connect = require('connect');
     app.use(connect.logger());
@@ -276,7 +276,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 该功能对限制访问以及加载路由使用的数据非常有用。
 
-通常情况下异步数据的查询看起来像下面的样子，这里我们使用:id参数，并尝试获取一个用户。
+通常情况下异步数据的查询看起来像下面的样子，这里我们使用`:id`参数，并尝试获取一个用户。
 
     app.get('/user/:id', function(req, res, next){
       loadUser(req.params.id, function(err, user){
@@ -353,7 +353,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 ## HTTP 方法
 
-在前面的文章中我们已经接触过app.get()多次了，同时Express也提供了对其它HTTP动作的封装，如app.post(), app.del()等。
+在前面的文章中我们已经接触过 `app.get()` 多次了，同时Express也提供了对其它HTTP动作的封装，如 `app.post()`,  `app.del()`等。
 
 对于POST最常见的例子，就是当我们提交一个表单时，下面我们在HTML中将表单的method特性设置为“post”，然后需要在服务端定义对该表单提交的路由控制。
 
@@ -363,13 +363,13 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
        <input type="submit" value="Submit" />
     </form>
 
-默认情况下Express并不知道该如何处理该请求体，因此我们需要增加bodyParser中间件，用于分析application/x-www-form-urlencoded和application/json请求体，并把变量存入req.body。
+默认情况下Express并不知道该如何处理该请求体，因此我们需要增加bodyParser中间件，用于分析 `application/x-www-form-urlencoded` 和 `application/json` 请求体，并把变量存入req.body。
 
 我们可以像下面的样子来“使用”中间件：
 
     app.use(express.bodyParser());
 
-接下来下面的路由就可以访问req.body.user对象了，该对象包含客户端提交的name和email属性。
+接下来下面的路由就可以访问 `req.body.user` 对象了，该对象包含客户端提交的name和email属性。
 
     app.post('/', function(req, res){
       console.log(req.body.user);
@@ -378,7 +378,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 要在表单中使用PUT的HTTP方法，我们可以利用名为_method的隐藏表单域，它能改变HTTP方法。
 
-而在服务端，我们首先需要利用methodOverride中间件，把它放在bodyParser中间件下方，从而可以利用包含表单值的req.body。
+而在服务端，我们首先需要利用methodOverride中间件，把它放在bodyParser中间件下方，从而可以利用包含表单值的 `req.body`。
 
     app.use(express.bodyParser());
     app.use(express.methodOverride());
@@ -399,7 +399,7 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 ## 错误处理
 
-Express提供了app.error()方法来接收路由或传入next(err)的异常，下面的示例为不同的页面提供专门的NotFound异常服务：
+Express提供了 `app.error()` 方法来接收路由或传入 `next(err) `的异常，下面的示例为不同的页面提供专门的NotFound异常服务：
 
     function NotFound(msg){
       this.name = 'NotFound in justjavac.com';
@@ -417,11 +417,11 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
       throw new Error('keyboard cat!');
     });
 
-像下面一样，我们可以多次调用app.error()，这里我们检查如果是NotFound实例就显示404页面，否则将其传入下一个错误处理。
+像下面一样，我们可以多次调用 `app.error()`，这里我们检查如果是NotFound实例就显示404页面，否则将其传入下一个错误处理。
 
-注意这些处理可以定义在任何地方，它们可以放在路由可以listen()之处。
+注意这些处理可以定义在任何地方，它们可以放在路由可以 `listen()` 之处。
 
-这也允许在configure()块内做定义，于是我们就可以以不同的基于环境的方式处理异常。
+这也允许在 `configure()` 块内做定义，于是我们就可以以不同的基于环境的方式处理异常。
 
     app.error(function(err, req, res, next){
         if (err instanceof NotFound) {
@@ -454,7 +454,7 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
 
 路由参数预处理通过隐式的数据处理，可以大幅提高应用代码的可读性和请求URL的验证。
 
-假如你经常性的从几个路由获取通用数据，如通过/user/:id加载用户信息，通常我们可能会这样做：
+假如你经常性的从几个路由获取通用数据，如通过`/user/:id`加载用户信息，通常我们可能会这样做：
 
     app.get('/user/:userId', function(req, res, next){
       User.get(req.params.userId, function(err, user){
@@ -465,9 +465,9 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
 
 利用预处理后参数可以被映射到回调函数，从而可以提供诸如验证、强制性改变值，甚至从数据库中加载数据等功能。
 
-下面我们将调用app.param()并传入我们希望映射到某个中间件的参数，可以看到我们接收了包含占位符（:userId）值的id参数。
+下面我们将调用` app.param()` 并传入我们希望映射到某个中间件的参数，可以看到我们接收了包含占位符（`:userId`）值的id参数。
 
-在这里可以与平常一样进行用户数据加载以及错误处理，并能简单的通过调用next()将控制权转向下一个预处理或路由（路径控制）。
+在这里可以与平常一样进行用户数据加载以及错误处理，并能简单的通过调用 `next()` 将控制权转向下一个预处理或路由（路径控制）。
 
     app.param('userId', function(req, res, next, id){
       User.get(id, function(err, user){
@@ -488,7 +488,7 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
 
     app.param('number', function(n){ return parseInt(n, 10); });
 
-也可以同时将回调函数应用到多个占位符，比如路由/commits/:from-:to来说，:from和:to都是数值类型，我们可以将它们定义为数组：
+也可以同时将回调函数应用到多个占位符，比如路由`/commits/:from-:to`来说，`:from`和`:to`都是数值类型，我们可以将它们定义为数组：
 
     app.param(['from', 'to'], function(n){ return parseInt(n, 10); });
 
@@ -496,11 +496,11 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
 
 视图的文件名默认需遵循 `<name>.<engine>` 的形式，这里 `<engine>` 是要被加载的模块的名字。
 
-比如视图layout.ejs就是在告诉视图系统要require("ejs")，被加载的模块必须输出exports.compile(str, options)方法，并要返回一个函数来遵守Express的模板接口约定。
+比如视图layout.ejs就是在告诉视图系统要 `require("ejs")` ，被加载的模块必须输出 `exports.compile(str, options)` 方法，并要返回一个函数来遵守Express的模板接口约定。
 
-我们也可以使用app.register()来映射模板引擎到其它文件扩展名，从而实现更灵活的模板引擎行为，如此一来就可以实现“justjavac.html”可以被ejs引擎所渲染。
+我们也可以使用 `app.register()` 来映射模板引擎到其它文件扩展名，从而实现更灵活的模板引擎行为，如此一来就可以实现“justjavac.html”可以被ejs引擎所渲染。
 
-下面我们将用Jade引擎来渲染index.html，因为我们没有设置layout:false，index.jade渲染后的内容将被作为body本地变量传入layout.jade。
+下面我们将用Jade引擎来渲染index.html，因为我们没有设置 `layout:false`，index.jade渲染后的内容将被作为body本地变量传入layout.jade。
 
     app.get('/', function(req, res){
         res.render('index.jade', { title: 'justjavac, 关注Web前端技术！' });
@@ -514,7 +514,7 @@ Express提供了app.error()方法来接收路由或传入next(err)的异常，�
 
     res.render('index');
 
-代替如下方式:
+代替如下方式：
 
     res.render('index.jade');
 
@@ -528,7 +528,7 @@ Express同时提供了视图选项(view options)设置，这些设置会在每�
         layout: false
     });
 
-如果需要，这些设置可以在后续的res.render()调用中被覆盖：
+如果需要，这些设置可以在后续的 `res.render()` 调用中被覆盖：
 
 res.render('justjavac-view.ejs', { layout: true });
 
@@ -546,10 +546,7 @@ res.render('justjavac-view.ejs', { layout: true });
 
 这方面较好的例子就是自定义ejs模板的开始和关闭的标记：
 
-    app.set('view options', {
-        open: '{{',
-        close: '}}'
-    });
+    app.set('view options', { open: '{{', close: '}}' });
 
 ## 局部视图
 
