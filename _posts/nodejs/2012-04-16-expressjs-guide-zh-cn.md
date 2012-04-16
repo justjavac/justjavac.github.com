@@ -2,10 +2,12 @@
 layout: post
 title: Express.js 中文入门指引手册
 description: Express.js 中文入门指引手册
-keywords: node.js,javascript, expressjs
+keywords: node.js, javascript, expressjs
 category: nodejs
 tags: [nodejs, javascript, express.js]
 ---
+
+## 简介
 
 [Express](http://expressjs.com/) 是基于 [Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner/)，高性能、一流的web开发框架。
 
