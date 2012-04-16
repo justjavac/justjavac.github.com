@@ -44,7 +44,7 @@ jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板�
 1. 在你的仓库中新建内容为 www.youdomain.com 的 CNAME 文件；
 2. 在你的域名管理页或者是DNS解析的地方，增加一个记录，记录类别为CNAME(Alias)类型.
 
-*Note：* 如果你在CNAME中填写的是顶级域名，就得设置DNS的记录类别为A(Host)型，并设置主机为 `207.97.227.245`。详细介绍请移步Github的Pages页面。
+**Note：** 如果你在CNAME中填写的是顶级域名，就得设置DNS的记录类别为A(Host)型，并设置主机为 `207.97.227.245`。详细介绍请移步Github的Pages页面。
 
 接下来我们只需要按照自己的喜好设计页面。首先认识下jekyll的文件及目录配置:
 
@@ -61,19 +61,19 @@ jekyll是一个使用Ruby编写的静态站点生成工具，使用Liquid模板�
       |-- _config.yml
       `-- index.html
 
-*_includes*存放你需要在模板文件中包含的文件，你可以使用Liquid标签 `{‰ include file.ext ‰} `来引用相应的文件。
+**_includes**存放你需要在模板文件中包含的文件，你可以使用Liquid标签 `{‰ include file.ext ‰} `来引用相应的文件。
 
-*_plugins*可以增加你自己的插件
+**_plugins**可以增加你自己的插件
 
-*_layout*存放布局模板，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_layouts>
+**_layout**存放布局模板，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_layouts>
 
-*_post*存放文章列表，文件命名一定要遵循 yyyy-mm-dd-title.html|markdown|textile 规则，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_posts>
+**_post**存放文章列表，文件命名一定要遵循 yyyy-mm-dd-title.html|markdown|textile 规则，请参考<https://github.com/taberhuang/taberhuang.github.com/tree/master/_posts>
 
-*_sitejekyll*自动生成的，所以可以忽略，如果你有在本地安装jekyll并预览了的话，可以使用.gitignore设置Git停止对本目录的跟踪。
+**_sitejekyll**自动生成的，所以可以忽略，如果你有在本地安装jekyll并预览了的话，可以使用.gitignore设置Git停止对本目录的跟踪。
 
-*_config.yml*设置经常使用的配置选项，这样在本地启动预览时就不用每次都手动输入了。
+**_config.yml**设置经常使用的配置选项，这样在本地启动预览时就不用每次都手动输入了。
 
-*index.html 和所有的 HTML/Markdown/Textile 文件* 所有的HTML/Markdown/Textile文件都可以包含 YAML 配置，这类文件都会被jekyll解析。
+**index.html 和所有的 HTML/Markdown/Textile 文件** 所有的HTML/Markdown/Textile文件都可以包含 YAML 配置，这类文件都会被jekyll解析。
 
 现在你可以在自己的仓库中配置好你自己的目录及文件，也可以`clone`我的仓库，然后修改。
 
