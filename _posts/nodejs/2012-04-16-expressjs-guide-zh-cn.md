@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Express.js ÖÐÎÄÈëÃÅÖ¸ÒýÊÖ²á
+title: Express.js ä¸­æ–‡å…¥é—¨æŒ‡å¼•æ‰‹å†Œ
 tagline: 
-description: Express.js ÖÐÎÄÈëÃÅÖ¸ÒýÊÖ²á
+description: Express.js ä¸­æ–‡å…¥é—¨æŒ‡å¼•æ‰‹å†Œ
 keywords: node.js,javascript, expressjs
 category : nodejs
 tags : [nodejs, javascript, express.js]
 ---
 
-[Express](http://expressjs.com/) ÊÇ»ùÓÚ [Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner/)£¬¸ßÐÔÄÜ¡¢Ò»Á÷µÄweb¿ª·¢¿ò¼Ü¡£
+[Express](http://expressjs.com/) æ˜¯åŸºäºŽ [Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner/)ï¼Œé«˜æ€§èƒ½ã€ä¸€æµçš„webå¼€å‘æ¡†æž¶ã€‚
 
-## express µÄ°²×°
+## express çš„å®‰è£…
 
     $ npm install express
     
-»òÕß
+æˆ–è€…
 
     $ npm install -g express
 
-## ´´½¨·þÎñÆ÷
+## åˆ›å»ºæœåŠ¡å™¨
 
-Òª´´½¨ express.HTTPServer µÄÊµÀý£¬Ö»Ðè¼òµ¥µÄµ÷ÓÃ `createServer()` ·½·¨¼´¿É¡£Í¨¹ý HTTPServer ÊµÀý app ÎÒÃÇ¿ÉÒÔ¶¨Òå»ùÓÚ HTTP ¶¯×÷£¨HTTP verbs£©µÄÂ·ÓÉ£¨routes£©£¬±¾ÀýÖÐÎª `app.get()`¡£
+è¦åˆ›å»º express.HTTPServer çš„å®žä¾‹ï¼Œåªéœ€ç®€å•çš„è°ƒç”¨ `createServer()` æ–¹æ³•å³å¯ã€‚é€šè¿‡ HTTPServer å®žä¾‹ app æˆ‘ä»¬å¯ä»¥å®šä¹‰åŸºäºŽ HTTP åŠ¨ä½œï¼ˆHTTP verbsï¼‰çš„è·¯ç”±ï¼ˆroutesï¼‰ï¼Œæœ¬ä¾‹ä¸­ä¸º `app.get()`ã€‚
 
     var app = require('express').createServer();
 
@@ -30,44 +30,44 @@ tags : [nodejs, javascript, express.js]
 
     app.listen(3000);
 
-## ´´½¨ HTTPS ·þÎñÆ÷
+## åˆ›å»º HTTPS æœåŠ¡å™¨
 
-Òª³õÊ¼»¯Ò»¸öexpress.HTTPSServerÊµÀý£¬ÓëÉÏÀýÏàËÆ£¬²»Í¬µÄÊÇÔÚcreateServer·½·¨ÎÒÃÇ´«ÈëÒ»¸ö¶ÔÏó×÷ÎªÅäÖÃ²ÎÊý£¬¸Ã¶ÔÏó½ÓÊÜ key£¬ cert ºÍÆäËüÔÚNodeJS httpsÎÄµµÖÐÌáµ½µÄÅäÖÃ²ÎÊý¡£
+è¦åˆå§‹åŒ–ä¸€ä¸ªexpress.HTTPSServerå®žä¾‹ï¼Œä¸Žä¸Šä¾‹ç›¸ä¼¼ï¼Œä¸åŒçš„æ˜¯åœ¨createServeræ–¹æ³•æˆ‘ä»¬ä¼ å…¥ä¸€ä¸ªå¯¹è±¡ä½œä¸ºé…ç½®å‚æ•°ï¼Œè¯¥å¯¹è±¡æŽ¥å— keyï¼Œ cert å’Œå…¶å®ƒåœ¨NodeJS httpsæ–‡æ¡£ä¸­æåˆ°çš„é…ç½®å‚æ•°ã€‚
 
     var app = require('express').createServer({ key: ... });
 
-## ÅäÖÃ
+## é…ç½®
 
-ExpressÖ§³Ö¶à¹¤×÷»·¾³£¬±ÈÈçÉú²ú»·¾³ºÍ¿ª·¢»·¾³µÈ¡£¿ª·¢Õß¿ÉÒÔÊ¹ÓÃ `configure()` ·½·¨¸ù¾Ýµ±Ç°»·¾³µÄÐèÒª½øÐÐÉèÖÃ£¬
-µ±configure()Ã»ÓÐ´«Èë»·¾³Ãû³ÆÊ±£¬Ëü»áÔÚ¸÷»·¾³Ö®Ç°±»µ÷ÓÃ£¨×¢£ºÏàµ±ÓÚ±»¸÷¸öÃ÷È·»·¾³Ëù¹²Ïí£©¡£
+Expressæ”¯æŒå¤šå·¥ä½œçŽ¯å¢ƒï¼Œæ¯”å¦‚ç”Ÿäº§çŽ¯å¢ƒå’Œå¼€å‘çŽ¯å¢ƒç­‰ã€‚å¼€å‘è€…å¯ä»¥ä½¿ç”¨ `configure()` æ–¹æ³•æ ¹æ®å½“å‰çŽ¯å¢ƒçš„éœ€è¦è¿›è¡Œè®¾ç½®ï¼Œ
+å½“configure()æ²¡æœ‰ä¼ å…¥çŽ¯å¢ƒåç§°æ—¶ï¼Œå®ƒä¼šåœ¨å„çŽ¯å¢ƒä¹‹å‰è¢«è°ƒç”¨ï¼ˆæ³¨ï¼šç›¸å½“äºŽè¢«å„ä¸ªæ˜Žç¡®çŽ¯å¢ƒæ‰€å…±äº«ï¼‰ã€‚
 
-ÏÂÃæµÄÊ¾ÀýÎÒÃÇÖ»Å×³öÒì³££¨dumpException£©£¬²¢ÇÒÔÚ¿ª·¢Ä£Ê½¶ÔÒì³£¶ÑÕ»µÄÊä³ö×ö³öÏìÓ¦£¬
-µ«ÊÇ²»ÂÛ¶Ô¿ª·¢»òÕßÉú²ú»·¾³ÎÒÃÇ¶¼Ê¹ÓÃÁËmethodOverrideºÍbodyParser¡£
+ä¸‹é¢çš„ç¤ºä¾‹æˆ‘ä»¬åªæŠ›å‡ºå¼‚å¸¸ï¼ˆdumpExceptionï¼‰ï¼Œå¹¶ä¸”åœ¨å¼€å‘æ¨¡å¼å¯¹å¼‚å¸¸å †æ ˆçš„è¾“å‡ºåšå‡ºå“åº”ï¼Œ
+ä½†æ˜¯ä¸è®ºå¯¹å¼€å‘æˆ–è€…ç”Ÿäº§çŽ¯å¢ƒæˆ‘ä»¬éƒ½ä½¿ç”¨äº†methodOverrideå’ŒbodyParserã€‚
 
-ÌØ±ð×¢Òâ¶Ôapp.routerµÄÊ¹ÓÃ£¬Ëü¿ÉÒÔ±»ÓÃÀ´ÉèÖÃÓ¦ÓÃµÄÂ·ÓÉ£¨¿ÉÑ¡£©£¬
-·ñÔòÊ×´Î¶Ôapp.get()¡¢app.post()µÈµÄµ÷ÓÃ»áÉèÖÃÂ·ÓÉ¡£
+ç‰¹åˆ«æ³¨æ„å¯¹app.routerçš„ä½¿ç”¨ï¼Œå®ƒå¯ä»¥è¢«ç”¨æ¥è®¾ç½®åº”ç”¨çš„è·¯ç”±ï¼ˆå¯é€‰ï¼‰ï¼Œ
+å¦åˆ™é¦–æ¬¡å¯¹app.get()ã€app.post()ç­‰çš„è°ƒç”¨ä¼šè®¾ç½®è·¯ç”±ã€‚
 
-    // ¶¨Òå¹²Ïí»·¾³
+    // å®šä¹‰å…±äº«çŽ¯å¢ƒ
     app.configure(function(){
         app.use(express.methodOverride());
         app.use(express.bodyParser());
         app.use(app.router);
     });
 
-    // ¶¨Òå¿ª·¢»·¾³
+    // å®šä¹‰å¼€å‘çŽ¯å¢ƒ
     app.configure('development', function(){
         app.use(express.static(__dirname + '/public'));
         app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
     });
 
-    // ¶¨ÒåÉú²ú»·¾³
+    // å®šä¹‰ç”Ÿäº§çŽ¯å¢ƒ
     app.configure('production', function(){
         var oneYear = 31557600000;
         app.use(express.static(__dirname + '/public', { maxAge: oneYear }));
         app.use(express.errorHandler());
     });
 
-¶ÔÓÚÄÚ²¿ºÍ¶àÖØÉèÖÃ£¨internalºÍarbitrary£©£¬ExpressÌá¹©ÁË set(key[, val]), enable(key), disable(key)µÈ·½·¨£º
+å¯¹äºŽå†…éƒ¨å’Œå¤šé‡è®¾ç½®ï¼ˆinternalå’Œarbitraryï¼‰ï¼ŒExpressæä¾›äº† set(key[, val]), enable(key), disable(key)ç­‰æ–¹æ³•ï¼š
 
     app.configure(function(){
        app.set('views', __dirname + '/views');
@@ -75,56 +75,56 @@ ExpressÖ§³Ö¶à¹¤×÷»·¾³£¬±ÈÈçÉú²ú»·¾³ºÍ¿ª·¢»·¾³µÈ¡£¿ª·¢Õß¿ÉÒÔÊ¹ÓÃ `configure()` ·½
        // => "/absolute/path/to/views"
 
        app.enable('some feature');
-       // Óë app.set('some feature', true); ÏàÍ¬
+       // ä¸Ž app.set('some feature', true); ç›¸åŒ
 
        app.disable('some feature');
-       // Óë app.set('some feature', false); ÏàÍ¬
+       // ä¸Ž app.set('some feature', false); ç›¸åŒ
 
        app.enabled('some feature')
        // => false
     });
 
-ÒªÐÞ¸Ä»·¾³£¬¿ÉÒÔÍ¨¹ýÉèÖÃNODE_ENV»·¾³±äÁ¿À´ÊµÏÖ£¬ÀýÈç£º
+è¦ä¿®æ”¹çŽ¯å¢ƒï¼Œå¯ä»¥é€šè¿‡è®¾ç½®NODE_ENVçŽ¯å¢ƒå˜é‡æ¥å®žçŽ°ï¼Œä¾‹å¦‚ï¼š
 
     $ NODE_ENV=production node app.js
 
-ÕâºÜÖØÒª£¬ÒòÎªÐí¶àµÄ»º´æ»úÖÆÖ»ÓÐÔÚÉú²ú»·¾³²Å»áÆôÓÃ¡£
+è¿™å¾ˆé‡è¦ï¼Œå› ä¸ºè®¸å¤šçš„ç¼“å­˜æœºåˆ¶åªæœ‰åœ¨ç”Ÿäº§çŽ¯å¢ƒæ‰ä¼šå¯ç”¨ã€‚
 
-## ÉèÖÃ
+## è®¾ç½®
 
-Express Ö§³ÖÒÔÏÂÉèÖÃÏî£º
+Express æ”¯æŒä»¥ä¸‹è®¾ç½®é¡¹ï¼š
 
-* homeÎªres.redirect()Ìá¹©Ó¦ÓÃµÄ»ù×¼Â·¾¶£¬Í¸Ã÷µÄ´¦ÀíÒÑ°²×°µÄÓ¦ÓÃ¡£
-* viewsÊÓÍ¼£¨views£©²ãµÄ¸ùÄ¿Â¼£¬Ä¬ÈÏÖ¸ÏòCWD/views
-* view engineÄ¬ÈÏµÄÊÓÍ¼£¨view£©ÒýÇæµÄÃû×Ö£¬²»°üº¬À©Õ¹Ãû¡£
-* view optionsÓÃÓÚÉèÖÃÈ«¾ÖÊÓÍ¼Ñ¡ÏîµÄ¶ÔÏó
+* homeä¸ºres.redirect()æä¾›åº”ç”¨çš„åŸºå‡†è·¯å¾„ï¼Œé€æ˜Žçš„å¤„ç†å·²å®‰è£…çš„åº”ç”¨ã€‚
+* viewsè§†å›¾ï¼ˆviewsï¼‰å±‚çš„æ ¹ç›®å½•ï¼Œé»˜è®¤æŒ‡å‘CWD/views
+* view engineé»˜è®¤çš„è§†å›¾ï¼ˆviewï¼‰å¼•æ“Žçš„åå­—ï¼Œä¸åŒ…å«æ‰©å±•åã€‚
+* view optionsç”¨äºŽè®¾ç½®å…¨å±€è§†å›¾é€‰é¡¹çš„å¯¹è±¡
 
-## Â·ÓÉ
+## è·¯ç”±
 
-ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
-ÀýÈçÎÒÃÇ¿ÉÄÜÏëÈÃÓÃ»§ÕÊºÅµÄURL¿´ÆðÀ´Ïñ/user/12µÄÑù×Ó£¬ÏÂÃæµÄÀý×Ó¾ÍÄÜÊµÏÖÕâÑùµÄÂ·ÓÉ£¬
-ÆäÖÐÓëÕ¼Î»±êÊ¶·û£¨±¾ÀýÎª:id£©Ïà¹ØµÄÖµ¿ÉÒÔ±»req.params»ñÈ¡µ½¡£
+Expressåˆ©ç”¨HTTPåŠ¨ä½œæä¾›äº†æœ‰æ„ä¹‰å¹¶å¯Œæœ‰è¡¨çŽ°åŠ›çš„URLæ˜ å°„APIï¼Œ
+ä¾‹å¦‚æˆ‘ä»¬å¯èƒ½æƒ³è®©ç”¨æˆ·å¸å·çš„URLçœ‹èµ·æ¥åƒ/user/12çš„æ ·å­ï¼Œä¸‹é¢çš„ä¾‹å­å°±èƒ½å®žçŽ°è¿™æ ·çš„è·¯ç”±ï¼Œ
+å…¶ä¸­ä¸Žå ä½æ ‡è¯†ç¬¦ï¼ˆæœ¬ä¾‹ä¸º:idï¼‰ç›¸å…³çš„å€¼å¯ä»¥è¢«req.paramsèŽ·å–åˆ°ã€‚
 
     app.get('/user/:id', function(req, res){
         res.send('user ' + req.params.id);
     });
 
-ÉÏÀýÖÐµ±ÎÒÃÇ·ÃÎÊ/user/12Ê±·µ»Ø¡°user 12¡±,
-×¢£ºapp.getÏàµ±ÓÚÔÚ·þÎñÆ÷×¢²áÁËÒ»¸ö¼àÌýgetÇëÇóÊÂ¼þµÄÕìÌýÆ÷£¬µ±ÇëÇóµÄURLÂú×ãµÚÒ»¸ö²ÎÊýÊ±£¬
-Ö´ÐÐºóÃæµÄ»Øµ÷º¯Êý£¬¸Ã¹ý³ÌÊÇÒì²½µÄ¡£
+ä¸Šä¾‹ä¸­å½“æˆ‘ä»¬è®¿é—®/user/12æ—¶è¿”å›žâ€œuser 12â€,
+æ³¨ï¼šapp.getç›¸å½“äºŽåœ¨æœåŠ¡å™¨æ³¨å†Œäº†ä¸€ä¸ªç›‘å¬getè¯·æ±‚äº‹ä»¶çš„ä¾¦å¬å™¨ï¼Œå½“è¯·æ±‚çš„URLæ»¡è¶³ç¬¬ä¸€ä¸ªå‚æ•°æ—¶ï¼Œ
+æ‰§è¡ŒåŽé¢çš„å›žè°ƒå‡½æ•°ï¼Œè¯¥è¿‡ç¨‹æ˜¯å¼‚æ­¥çš„ã€‚
 
-Â·ÓÉÊÇÒ»¸ö¿ÉÒÔ±»ÄÚ²¿±àÒë³ÉÕýÔò±í´ïÊ½µÄ¼òµ¥×Ö·û´®£¬±ÈÈçµ±/user/:id±»±àÒëºó£¬±»ÄÚ²¿±àÒëºóµÄÕýÔò±í´ïÊ½×Ö·û´®¿´ÆðÀ´»áÊÇÏÂÃæµÄÑù×Ó£¨¼ò»¯ºó£©£º
+è·¯ç”±æ˜¯ä¸€ä¸ªå¯ä»¥è¢«å†…éƒ¨ç¼–è¯‘æˆæ­£åˆ™è¡¨è¾¾å¼çš„ç®€å•å­—ç¬¦ä¸²ï¼Œæ¯”å¦‚å½“/user/:idè¢«ç¼–è¯‘åŽï¼Œè¢«å†…éƒ¨ç¼–è¯‘åŽçš„æ­£åˆ™è¡¨è¾¾å¼å­—ç¬¦ä¸²çœ‹èµ·æ¥ä¼šæ˜¯ä¸‹é¢çš„æ ·å­ï¼ˆç®€åŒ–åŽï¼‰ï¼š
 
     /user/([^/]+)/?
 
-ÒªÊµÏÖ¸´ÔÓµãµÄ£¬ÎÒÃÇ¿ÉÒÔ´«ÈëÕýÔò±í´ïÊ½Ö±½ÓÁ¿£¬ÒòÎªÕýÔò²¶»ñ×éÊÇÄäÃûµÄÒò´ËÎÒÃÇ¿ÉÒÔÍ¨¹ýreq.params½øÐÐ·ÃÎÊ£¬
-µÚÒ»¸ö²¶»ñ×éÓ¦¸ÃÊÇreq.params[0]£¬µÚ¶þ¸öÓ¦¸ÃÊÇreq.params[1]£¬ÒÔ´ËÀàÍÆ¡£
+è¦å®žçŽ°å¤æ‚ç‚¹çš„ï¼Œæˆ‘ä»¬å¯ä»¥ä¼ å…¥æ­£åˆ™è¡¨è¾¾å¼ç›´æŽ¥é‡ï¼Œå› ä¸ºæ­£åˆ™æ•èŽ·ç»„æ˜¯åŒ¿åçš„å› æ­¤æˆ‘ä»¬å¯ä»¥é€šè¿‡req.paramsè¿›è¡Œè®¿é—®ï¼Œ
+ç¬¬ä¸€ä¸ªæ•èŽ·ç»„åº”è¯¥æ˜¯req.params[0]ï¼Œç¬¬äºŒä¸ªåº”è¯¥æ˜¯req.params[1]ï¼Œä»¥æ­¤ç±»æŽ¨ã€‚
 
     app.get(/^/users?(?:/(d+)(?:..(d+))?)?/, function(req, res){
         res.send(req.params);
     });
 
-Í¨¹ýLinuxµÄcurlÃüÁîÀ´²âÊÔÎÒÃÇ¶¨ÒåµÄÂ·ÓÉ£º
+é€šè¿‡Linuxçš„curlå‘½ä»¤æ¥æµ‹è¯•æˆ‘ä»¬å®šä¹‰çš„è·¯ç”±ï¼š
 
     $ curl http://justjavac.com:3000/user
     [null,null]
@@ -135,7 +135,7 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
     $ curl http://justjavac.com:3000/users/1..15
     ["1","15"]
 
-ÏÂÃæÊÇÒ»Ð©Â·ÓÉÀý×Ó£¬ÒÔ¼°ÓëÖ®ÏàÆ¥ÅäµÄ¹ØÁªÂ·¾¶£º
+ä¸‹é¢æ˜¯ä¸€äº›è·¯ç”±ä¾‹å­ï¼Œä»¥åŠä¸Žä¹‹ç›¸åŒ¹é…çš„å…³è”è·¯å¾„ï¼š
 
     "/user/:id"
     /user/12
@@ -169,7 +169,7 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
     /user/12
     /user/12.json
 
-ÁíÍâ£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ýPOST·½Ê½Ìá½»jsonÊý¾Ý£¬È»ºóÀûÓÃbodyParserÖÐ¼ä¼þ½âÎöjsonÇëÇóÌå²¢°ÑjsonÊý¾Ý·µ»Ø¸ø¿Í»§¶Ë£º
+å¦å¤–ï¼Œæˆ‘ä»¬å¯ä»¥é€šè¿‡POSTæ–¹å¼æäº¤jsonæ•°æ®ï¼Œç„¶åŽåˆ©ç”¨bodyParserä¸­é—´ä»¶è§£æžjsonè¯·æ±‚ä½“å¹¶æŠŠjsonæ•°æ®è¿”å›žç»™å®¢æˆ·ç«¯ï¼š
 
     var express = require('express')
       , app = express.createServer();
@@ -182,24 +182,24 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
 
     app.listen(3000);
 
-Í¨³£ÎÒÃÇËùÊ¹ÓÃµÄÕ¼Î»·û£¨±ÈÈç/user/:id£©¶¼Ã»ÓÐÈÎºÎÏÞÖÆ£¬¼´ÓÃ»§¿ÉÒÔ´«Èë¸÷ÖÖ¸÷ÑùÊý¾ÝÀàÐÍµÄidÖµ£¬
-Èç¹ûÎÒÃÇÏ£ÍûÏÞÖÆÓÃ»§idÎªÊý×Ö£¬¿ÉÒÔÕâÑùÐ´¡°/user/:id(d+)¡±£¬
-ÕâÑù¾ÍÄÜ±£Ö¤Ö»ÓÐ¸ÃÕ¼Î»·ûÊý¾ÝÀàÐÍÎªÊýÖµÀàÐÍ²Å»á½øÐÐÂ·ÓÉµÄÏà¹Ø´¦Àí¡£
+é€šå¸¸æˆ‘ä»¬æ‰€ä½¿ç”¨çš„å ä½ç¬¦ï¼ˆæ¯”å¦‚/user/:idï¼‰éƒ½æ²¡æœ‰ä»»ä½•é™åˆ¶ï¼Œå³ç”¨æˆ·å¯ä»¥ä¼ å…¥å„ç§å„æ ·æ•°æ®ç±»åž‹çš„idå€¼ï¼Œ
+å¦‚æžœæˆ‘ä»¬å¸Œæœ›é™åˆ¶ç”¨æˆ·idä¸ºæ•°å­—ï¼Œå¯ä»¥è¿™æ ·å†™â€œ/user/:id(d+)â€ï¼Œ
+è¿™æ ·å°±èƒ½ä¿è¯åªæœ‰è¯¥å ä½ç¬¦æ•°æ®ç±»åž‹ä¸ºæ•°å€¼ç±»åž‹æ‰ä¼šè¿›è¡Œè·¯ç”±çš„ç›¸å…³å¤„ç†ã€‚
 
-## Â·ÓÉ¿ØÖÆ
+## è·¯ç”±æŽ§åˆ¶
 
-Ò»¸öÓ¦ÓÃÖÐ¿ÉÒÔ¶¨Òå¶à¸öÂ·ÓÉ£¬ÎÒÃÇ¿ÉÒÔ¿ØÖÆÒÔÁîÆä×ªÏòÏÂÒ»¸öÂ·ÓÉ£¬ExpressÌá¹©ÁËµÚÈý¸ö²ÎÊý¼´ `next()` º¯Êý¡£
+ä¸€ä¸ªåº”ç”¨ä¸­å¯ä»¥å®šä¹‰å¤šä¸ªè·¯ç”±ï¼Œæˆ‘ä»¬å¯ä»¥æŽ§åˆ¶ä»¥ä»¤å…¶è½¬å‘ä¸‹ä¸€ä¸ªè·¯ç”±ï¼ŒExpressæä¾›äº†ç¬¬ä¸‰ä¸ªå‚æ•°å³ `next()` å‡½æ•°ã€‚
 
-µ±Ò»¸öÄ£Ê½²»±»Æ¥ÅäÊ±£¬¿ØÖÆ½«±»×ª»ØConnect£¨Express»ùÓÚConnectÄ£¿é£©£¬Í¬Ê±ÖÐ¼ä¼þ»á¼ÌÐø°´ÕÕËüÃÇÔÚ `use()` ÖÐÔö¼ÓµÄË³ÐòÀ´Ö´ÐÐ¡£
+å½“ä¸€ä¸ªæ¨¡å¼ä¸è¢«åŒ¹é…æ—¶ï¼ŒæŽ§åˆ¶å°†è¢«è½¬å›žConnectï¼ˆExpressåŸºäºŽConnectæ¨¡å—ï¼‰ï¼ŒåŒæ—¶ä¸­é—´ä»¶ä¼šç»§ç»­æŒ‰ç…§å®ƒä»¬åœ¨ `use()` ä¸­å¢žåŠ çš„é¡ºåºæ¥æ‰§è¡Œã€‚
 
-µ±¶à¸ö¶¨ÒåµÄÂ·ÓÉ¶¼¿ÉÄÜÆ¥ÅäÍ¬Ò»¸öURLÊ±Ò²ÊÇÈç´Ë£¬³ý·ÇÄ³¸öÂ·ÓÉ²¢²»µ÷ÓÃ `next()` ÇÒÒÑ½«ÏìÓ¦Êä³öµ½¿Í»§¶Ë£¬·ñÔòËüÃÇÒ²½«°´Ë³ÐòÖ´ÐÐ¡£
+å½“å¤šä¸ªå®šä¹‰çš„è·¯ç”±éƒ½å¯èƒ½åŒ¹é…åŒä¸€ä¸ªURLæ—¶ä¹Ÿæ˜¯å¦‚æ­¤ï¼Œé™¤éžæŸä¸ªè·¯ç”±å¹¶ä¸è°ƒç”¨ `next()` ä¸”å·²å°†å“åº”è¾“å‡ºåˆ°å®¢æˆ·ç«¯ï¼Œå¦åˆ™å®ƒä»¬ä¹Ÿå°†æŒ‰é¡ºåºæ‰§è¡Œã€‚
 
     app.get('/users/:id?', function(req, res, next){
         var id = req.params.id;
         if (id) {
-            // ×¢£ºÈç¹ûÔÚÕâÀï¾Í½«ÏìÓ¦ÄÚÈÝÊä³ö¸ø¿Í»§¶Ë£¬ÄÇÃ´ºóÐøµÄURLÓ³Éä½«²»»á±»µ÷ÓÃ
+            // æ³¨ï¼šå¦‚æžœåœ¨è¿™é‡Œå°±å°†å“åº”å†…å®¹è¾“å‡ºç»™å®¢æˆ·ç«¯ï¼Œé‚£ä¹ˆåŽç»­çš„URLæ˜ å°„å°†ä¸ä¼šè¢«è°ƒç”¨
         } else {
-            next(); // ½«¿ØÖÆ×ªÏòÏÂÒ»¸ö·ûºÏURLµÄÂ·ÓÉ
+            next(); // å°†æŽ§åˆ¶è½¬å‘ä¸‹ä¸€ä¸ªç¬¦åˆURLçš„è·¯ç”±
         }
     });
 
@@ -207,9 +207,9 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
         // do something else
     });
 
-`app.all()` ·½·¨¿ÉÒÔ¶ÔËùÓÐHTTP¶¯×÷Ó¦ÓÃµ¥Ò»µ÷ÓÃÈë¿Ú£¬ÕâÔÚÓÐÐ©Çé¿öÏÂºÜÓÐÓÃ¡£
+`app.all()` æ–¹æ³•å¯ä»¥å¯¹æ‰€æœ‰HTTPåŠ¨ä½œåº”ç”¨å•ä¸€è°ƒç”¨å…¥å£ï¼Œè¿™åœ¨æœ‰äº›æƒ…å†µä¸‹å¾ˆæœ‰ç”¨ã€‚
 
-ÏÂÃæÎÒÃÇÊ¹ÓÃ¸Ã¹¦ÄÜÀ´´ÓÎÒÃÇµÄÄ£ÄâÊý¾Ý¿âÖÐ¼ÓÔØÒ»¸öÓÃ»§£¬²¢°ÑËü·ÖÅä¸øreq.user¡£
+ä¸‹é¢æˆ‘ä»¬ä½¿ç”¨è¯¥åŠŸèƒ½æ¥ä»Žæˆ‘ä»¬çš„æ¨¡æ‹Ÿæ•°æ®åº“ä¸­åŠ è½½ä¸€ä¸ªç”¨æˆ·ï¼Œå¹¶æŠŠå®ƒåˆ†é…ç»™req.userã€‚
 
     var express = require('express')
       , app = express.createServer();
@@ -243,9 +243,9 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
 
     app.listen(3000);
 
-## ÖÐ¼ä¼þ
+## ä¸­é—´ä»¶
 
-ÖÐ¼ä¼þ¿ÉÒÔÍ¨¹ýConnect´«Èëexpress.createServer()£¬¾ÍÏñÕý³£µÄÁ¬½Ó·þÎñÆ÷Ò»Ñù£¬±ÈÈç£º
+ä¸­é—´ä»¶å¯ä»¥é€šè¿‡Connectä¼ å…¥express.createServer()ï¼Œå°±åƒæ­£å¸¸çš„è¿žæŽ¥æœåŠ¡å™¨ä¸€æ ·ï¼Œæ¯”å¦‚ï¼š
 
     var express = require('express');
 
@@ -254,28 +254,28 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
         express.bodyParser()
     );
 
-ÁíÍâ£¬ÔÚconfigure()º¯Êý¿éÖÐÀûÓÃuse()º¯ÊýÔö¼ÓÖÐ¼ä¼þ£¬Ò²ÊÇÒ»ÖÖºÜºÃµÄ·½Ê½¡£
+å¦å¤–ï¼Œåœ¨configure()å‡½æ•°å—ä¸­åˆ©ç”¨use()å‡½æ•°å¢žåŠ ä¸­é—´ä»¶ï¼Œä¹Ÿæ˜¯ä¸€ç§å¾ˆå¥½çš„æ–¹å¼ã€‚
 
     app.use(express.logger({ format: ':method :uri' }));
 
-Í¨³£Á¬½ÓÖÐ¼ä¼þ¿ÉÒÔÍ¨¹ýrequire("connect")µÄ·½Ê½£¬Èç£º
+é€šå¸¸è¿žæŽ¥ä¸­é—´ä»¶å¯ä»¥é€šè¿‡require("connect")çš„æ–¹å¼ï¼Œå¦‚ï¼š
 
     var connect = require('connect');
     app.use(connect.logger());
     app.use(connect.bodyParser());
 
-ÕâÈÃÈË¸Ð¾õÓÐÐ©²»Ì«Ë¬£¬ÓÚÊÇexpressÖØÐÂÊä³öÁË£¨re-exports)ÕâÐ©ÖÐ¼ä¼þÊôÐÔ£¬µ«ÊÇÔÚÊ¹ÓÃÉÏ±£³ÖÁËÒ»ÖÂÐÔ£º
+è¿™è®©äººæ„Ÿè§‰æœ‰äº›ä¸å¤ªçˆ½ï¼ŒäºŽæ˜¯expressé‡æ–°è¾“å‡ºäº†ï¼ˆre-exports)è¿™äº›ä¸­é—´ä»¶å±žæ€§ï¼Œä½†æ˜¯åœ¨ä½¿ç”¨ä¸Šä¿æŒäº†ä¸€è‡´æ€§ï¼š
 
     app.use(express.logger());
     app.use(express.bodyParser());
 
-## Â·ÓÉÖÐ¼ä¼þ
+## è·¯ç”±ä¸­é—´ä»¶
 
-ÕâÀïÂ·¾¶Ó³ÉäÒ²¿ÉÒÔÀí½âÎªÂ·ÓÉµÄÒâË¼£¬Â·ÓÉÍ¨¹ý´«ÈëÒ»¸ö»ò¶à¸ö¸½¼ÓµÄ»Øµ÷º¯Êý£¨»òÊý×é£©µ½·½·¨ÖÐ£¬´Ó¶ø¿ÉÒÔÀûÓÃÌØ¶¨Â·ÓÉµÄÖÐ¼ä¼þ¡£
+è¿™é‡Œè·¯å¾„æ˜ å°„ä¹Ÿå¯ä»¥ç†è§£ä¸ºè·¯ç”±çš„æ„æ€ï¼Œè·¯ç”±é€šè¿‡ä¼ å…¥ä¸€ä¸ªæˆ–å¤šä¸ªé™„åŠ çš„å›žè°ƒå‡½æ•°ï¼ˆæˆ–æ•°ç»„ï¼‰åˆ°æ–¹æ³•ä¸­ï¼Œä»Žè€Œå¯ä»¥åˆ©ç”¨ç‰¹å®šè·¯ç”±çš„ä¸­é—´ä»¶ã€‚
 
-¸Ã¹¦ÄÜ¶ÔÏÞÖÆ·ÃÎÊÒÔ¼°¼ÓÔØÂ·ÓÉÊ¹ÓÃµÄÊý¾Ý·Ç³£ÓÐÓÃ¡£
+è¯¥åŠŸèƒ½å¯¹é™åˆ¶è®¿é—®ä»¥åŠåŠ è½½è·¯ç”±ä½¿ç”¨çš„æ•°æ®éžå¸¸æœ‰ç”¨ã€‚
 
-Í¨³£Çé¿öÏÂÒì²½Êý¾ÝµÄ²éÑ¯¿´ÆðÀ´ÏñÏÂÃæµÄÑù×Ó£¬ÕâÀïÎÒÃÇÊ¹ÓÃ:id²ÎÊý£¬²¢³¢ÊÔ»ñÈ¡Ò»¸öÓÃ»§¡£
+é€šå¸¸æƒ…å†µä¸‹å¼‚æ­¥æ•°æ®çš„æŸ¥è¯¢çœ‹èµ·æ¥åƒä¸‹é¢çš„æ ·å­ï¼Œè¿™é‡Œæˆ‘ä»¬ä½¿ç”¨:idå‚æ•°ï¼Œå¹¶å°è¯•èŽ·å–ä¸€ä¸ªç”¨æˆ·ã€‚
 
     app.get('/user/:id', function(req, res, next){
       loadUser(req.params.id, function(err, user){
@@ -284,58 +284,58 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
       });
     });
 
-ÎªÁË±£³Ö´úÂëÕû½à²¢ÇÒÌá¸ß¿É¶ÁÐÔ£¬ÎÒÃÇ¿ÉÒÔÔÚÖÐ¼ä¼þÄÚ²¿Ó¦ÓÃ¸ÃÂß¼­¡£
+ä¸ºäº†ä¿æŒä»£ç æ•´æ´å¹¶ä¸”æé«˜å¯è¯»æ€§ï¼Œæˆ‘ä»¬å¯ä»¥åœ¨ä¸­é—´ä»¶å†…éƒ¨åº”ç”¨è¯¥é€»è¾‘ã€‚
 
-ÕýÈçÄãËù¿´µ½µÄ£¬½«Âß¼­³éÏóµ½ÖÐ¼ä¼þÀïÈÃÎÒÃÇ´ïµ½Ò»¶¨³Ì¶ÈµÄ¸´ÓÃ£¬Í¬Ê±´úÂë¸ü¸É¾»¡£
+æ­£å¦‚ä½ æ‰€çœ‹åˆ°çš„ï¼Œå°†é€»è¾‘æŠ½è±¡åˆ°ä¸­é—´ä»¶é‡Œè®©æˆ‘ä»¬è¾¾åˆ°ä¸€å®šç¨‹åº¦çš„å¤ç”¨ï¼ŒåŒæ—¶ä»£ç æ›´å¹²å‡€ã€‚
 
     function loadUser(req, res, next) {
-      // ÕâÀïÌá¹©¼ÙÊý¾Ý£¬Äã¿ÉÒÔ´ÓÊý¾Ý¿âÖÐ»ñÈ¡ÕæÊµÓÃ»§ÐÅÏ¢
+      // è¿™é‡Œæä¾›å‡æ•°æ®ï¼Œä½ å¯ä»¥ä»Žæ•°æ®åº“ä¸­èŽ·å–çœŸå®žç”¨æˆ·ä¿¡æ¯
       var user = users[req.params.id];
       if (user) {
         req.user = user;
         next();
       } else {
-        next(new Error('²»´æÔÚµÄÓÃ»§ ' + req.params.id));
+        next(new Error('ä¸å­˜åœ¨çš„ç”¨æˆ· ' + req.params.id));
       }
     }
 
     app.get('/user/:id', loadUser, function(req, res){
-      res.send('ÕýÔÚ²é¿´ÓÃ»§ ' + req.user.name);
+      res.send('æ­£åœ¨æŸ¥çœ‹ç”¨æˆ· ' + req.user.name);
     });
 
-×¢£º¿´µ½ÁËÂð£¿ÉÏÃæµÄÂ·¾¶Ó³ÉäµÄ»Øµ÷º¯Êý²ÎÊýÊÇ¿ÉÒÔÖ§³Ö¶à¸öµÄ¡£
+æ³¨ï¼šçœ‹åˆ°äº†å—ï¼Ÿä¸Šé¢çš„è·¯å¾„æ˜ å°„çš„å›žè°ƒå‡½æ•°å‚æ•°æ˜¯å¯ä»¥æ”¯æŒå¤šä¸ªçš„ã€‚
 
-¶àÖØÂ·ÓÉÖÐ¼ä¼þ¿ÉÒÔ±»°´ÕÕË³ÐòÀ´Ö´ÐÐ£¬´Ó¶ø¿ÉÒÔÊµÏÖ¸ü¸´ÔÓµÄÂß¼­£¬±ÈÈçÏÞÖÆ·ÃÎÊÄ³¸öÓÃ»§µÄ·ÃÎÊÈ¨ÏÞ£¬ÏÂÃæµÄ´úÂë½«Ö»ÔÊÐíÈÏÖ¤ÓÃ»§²Å¿ÉÒÔ±à¼­ÆäÕÊºÅÐÅÏ¢¡£
+å¤šé‡è·¯ç”±ä¸­é—´ä»¶å¯ä»¥è¢«æŒ‰ç…§é¡ºåºæ¥æ‰§è¡Œï¼Œä»Žè€Œå¯ä»¥å®žçŽ°æ›´å¤æ‚çš„é€»è¾‘ï¼Œæ¯”å¦‚é™åˆ¶è®¿é—®æŸä¸ªç”¨æˆ·çš„è®¿é—®æƒé™ï¼Œä¸‹é¢çš„ä»£ç å°†åªå…è®¸è®¤è¯ç”¨æˆ·æ‰å¯ä»¥ç¼–è¾‘å…¶å¸å·ä¿¡æ¯ã€‚
 
     function andRestrictToSelf(req, res, next) {
       req.authenticatedUser.id == req.user.id
         ? next()
-        : next(new Error('ÎÞÈ¨ÏÞ'));
+        : next(new Error('æ— æƒé™'));
 
     }
 
     app.get('/user/:id/edit', loadUser, andRestrictToSelf, function(req, res){
-      res.send('¿ªÊ¼±à¼­ÓÃ»§ ' + req.user.name);
+      res.send('å¼€å§‹ç¼–è¾‘ç”¨æˆ· ' + req.user.name);
     });
 
-Çë¼Ç×¡ÖÐ¼ä¼þÊÇ¼òµ¥µÄº¯Êý£¬ÎÒÃÇ»¹ÄÜ¶¨Òå·µ»ØÖÐ¼ä¼þµÄº¯Êý£¬´Ó¶ø¿ÉÒÔ´´½¨Ò»¸ö¸üÓÐ±íÏÖÁ¦ºÍ¸üÒ×ÓÃµÄÈçÏÂ·½°¸£º
+è¯·è®°ä½ä¸­é—´ä»¶æ˜¯ç®€å•çš„å‡½æ•°ï¼Œæˆ‘ä»¬è¿˜èƒ½å®šä¹‰è¿”å›žä¸­é—´ä»¶çš„å‡½æ•°ï¼Œä»Žè€Œå¯ä»¥åˆ›å»ºä¸€ä¸ªæ›´æœ‰è¡¨çŽ°åŠ›å’Œæ›´æ˜“ç”¨çš„å¦‚ä¸‹æ–¹æ¡ˆï¼š
 
     function andRestrictTo(role) {
       return function(req, res, next) {
         req.authenticatedUser.role == role
           ? next()
-          : next(new Error('ÎÞÈ¨ÏÞ'));
+          : next(new Error('æ— æƒé™'));
 
       }
     }
 
     app.del('/user/:id', loadUser, andRestrictTo('admin'), function(req, res){
-      res.send('ÒÑÉ¾³ýÓÃ»§ ' + req.user.name);
+      res.send('å·²åˆ é™¤ç”¨æˆ· ' + req.user.name);
     });
 
-×¢£ºapp.delµÄµÚÈý¸ö²ÎÊýÖ®ËùÒÔ¿ÉÒÔÕâÑùÐ´£¬ÊÇÒòÎªÆä·µ»ØµÄÊÇÒ»¸öº¯Êý£¬¶ø¸Ãº¯Êý¿ÉÒÔ·ÃÎÊ¡¯admin¡¯µÄÖµ£¬ÕâÀïÉæ¼°µ½±Õ°üµÄ¸ÅÄî£¬ÈçÓÐÒÉÎÊÇëÔÚjustjavac.com²éÕÒ±Õ°üÏà¹ØÎÄÕÂ¡£
+æ³¨ï¼šapp.delçš„ç¬¬ä¸‰ä¸ªå‚æ•°ä¹‹æ‰€ä»¥å¯ä»¥è¿™æ ·å†™ï¼Œæ˜¯å› ä¸ºå…¶è¿”å›žçš„æ˜¯ä¸€ä¸ªå‡½æ•°ï¼Œè€Œè¯¥å‡½æ•°å¯ä»¥è®¿é—®â€™adminâ€™çš„å€¼ï¼Œè¿™é‡Œæ¶‰åŠåˆ°é—­åŒ…çš„æ¦‚å¿µï¼Œå¦‚æœ‰ç–‘é—®è¯·åœ¨justjavac.comæŸ¥æ‰¾é—­åŒ…ç›¸å…³æ–‡ç« ã€‚
 
-Í¨³£Ê¹ÓÃµÄÖÐ¼ä¼þµÄ¡°Õ»¡±¿ÉÒÔ±»×÷ÎªÊý×é£¨µÝ¹éÓ¦ÓÃ£©´«Èë£¬Èç´Ë¿ÉÒÔ±»»ìºÏ²¢ÄÜÆ¥Åä¸ü¸´ÔÓµÄ¹¦ÄÜ¡£
+é€šå¸¸ä½¿ç”¨çš„ä¸­é—´ä»¶çš„â€œæ ˆâ€å¯ä»¥è¢«ä½œä¸ºæ•°ç»„ï¼ˆé€’å½’åº”ç”¨ï¼‰ä¼ å…¥ï¼Œå¦‚æ­¤å¯ä»¥è¢«æ··åˆå¹¶èƒ½åŒ¹é…æ›´å¤æ‚çš„åŠŸèƒ½ã€‚
 
     var a = [middleware1, middleware2]
       , b = [middleware3, middleware4]
@@ -348,13 +348,13 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
     app.get('/', a, b, function(){});
     app.get('/', all, function(){});
 
-¿ÉÒÔÈ¥expressÔ´Âë²Ö¿â²é¿´ÍêÕûµÄÂ·ÓÉÖÐ¼ä¼þÊ¾Àý¡£
+å¯ä»¥åŽ»expressæºç ä»“åº“æŸ¥çœ‹å®Œæ•´çš„è·¯ç”±ä¸­é—´ä»¶ç¤ºä¾‹ã€‚
 
-## HTTP ·½·¨
+## HTTP æ–¹æ³•
 
-ÔÚÇ°ÃæµÄÎÄÕÂÖÐÎÒÃÇÒÑ¾­½Ó´¥¹ýapp.get()¶à´ÎÁË£¬Í¬Ê±ExpressÒ²Ìá¹©ÁË¶ÔÆäËüHTTP¶¯×÷µÄ·â×°£¬Èçapp.post(), app.del()µÈ¡£
+åœ¨å‰é¢çš„æ–‡ç« ä¸­æˆ‘ä»¬å·²ç»æŽ¥è§¦è¿‡app.get()å¤šæ¬¡äº†ï¼ŒåŒæ—¶Expressä¹Ÿæä¾›äº†å¯¹å…¶å®ƒHTTPåŠ¨ä½œçš„å°è£…ï¼Œå¦‚app.post(), app.del()ç­‰ã€‚
 
-¶ÔÓÚPOST×î³£¼ûµÄÀý×Ó£¬¾ÍÊÇµ±ÎÒÃÇÌá½»Ò»¸ö±íµ¥Ê±£¬ÏÂÃæÎÒÃÇÔÚHTMLÖÐ½«±íµ¥µÄmethodÌØÐÔÉèÖÃÎª¡°post¡±£¬È»ºóÐèÒªÔÚ·þÎñ¶Ë¶¨Òå¶Ô¸Ã±íµ¥Ìá½»µÄÂ·ÓÉ¿ØÖÆ¡£
+å¯¹äºŽPOSTæœ€å¸¸è§çš„ä¾‹å­ï¼Œå°±æ˜¯å½“æˆ‘ä»¬æäº¤ä¸€ä¸ªè¡¨å•æ—¶ï¼Œä¸‹é¢æˆ‘ä»¬åœ¨HTMLä¸­å°†è¡¨å•çš„methodç‰¹æ€§è®¾ç½®ä¸ºâ€œpostâ€ï¼Œç„¶åŽéœ€è¦åœ¨æœåŠ¡ç«¯å®šä¹‰å¯¹è¯¥è¡¨å•æäº¤çš„è·¯ç”±æŽ§åˆ¶ã€‚
 
     <form method="post" action="/">
        <input type="text" name="user[name]" />
@@ -362,27 +362,27 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
        <input type="submit" value="Submit" />
     </form>
 
-Ä¬ÈÏÇé¿öÏÂExpress²¢²»ÖªµÀ¸ÃÈçºÎ´¦Àí¸ÃÇëÇóÌå£¬Òò´ËÎÒÃÇÐèÒªÔö¼ÓbodyParserÖÐ¼ä¼þ£¬ÓÃÓÚ·ÖÎöapplication/x-www-form-urlencodedºÍapplication/jsonÇëÇóÌå£¬²¢°Ñ±äÁ¿´æÈëreq.body¡£
+é»˜è®¤æƒ…å†µä¸‹Expresså¹¶ä¸çŸ¥é“è¯¥å¦‚ä½•å¤„ç†è¯¥è¯·æ±‚ä½“ï¼Œå› æ­¤æˆ‘ä»¬éœ€è¦å¢žåŠ bodyParserä¸­é—´ä»¶ï¼Œç”¨äºŽåˆ†æžapplication/x-www-form-urlencodedå’Œapplication/jsonè¯·æ±‚ä½“ï¼Œå¹¶æŠŠå˜é‡å­˜å…¥req.bodyã€‚
 
-ÎÒÃÇ¿ÉÒÔÏñÏÂÃæµÄÑù×ÓÀ´¡°Ê¹ÓÃ¡±ÖÐ¼ä¼þ£º
+æˆ‘ä»¬å¯ä»¥åƒä¸‹é¢çš„æ ·å­æ¥â€œä½¿ç”¨â€ä¸­é—´ä»¶ï¼š
 
     app.use(express.bodyParser());
 
-½ÓÏÂÀ´ÏÂÃæµÄÂ·ÓÉ¾Í¿ÉÒÔ·ÃÎÊreq.body.user¶ÔÏóÁË£¬¸Ã¶ÔÏó°üº¬¿Í»§¶ËÌá½»µÄnameºÍemailÊôÐÔ¡£
+æŽ¥ä¸‹æ¥ä¸‹é¢çš„è·¯ç”±å°±å¯ä»¥è®¿é—®req.body.userå¯¹è±¡äº†ï¼Œè¯¥å¯¹è±¡åŒ…å«å®¢æˆ·ç«¯æäº¤çš„nameå’Œemailå±žæ€§ã€‚
 
     app.post('/', function(req, res){
       console.log(req.body.user);
       res.redirect('back');
     });
 
-ÒªÔÚ±íµ¥ÖÐÊ¹ÓÃPUTµÄHTTP·½·¨£¬ÎÒÃÇ¿ÉÒÔÀûÓÃÃûÎª_methodµÄÒþ²Ø±íµ¥Óò£¬ËüÄÜ¸Ä±äHTTP·½·¨¡£
+è¦åœ¨è¡¨å•ä¸­ä½¿ç”¨PUTçš„HTTPæ–¹æ³•ï¼Œæˆ‘ä»¬å¯ä»¥åˆ©ç”¨åä¸º_methodçš„éšè—è¡¨å•åŸŸï¼Œå®ƒèƒ½æ”¹å˜HTTPæ–¹æ³•ã€‚
 
-¶øÔÚ·þÎñ¶Ë£¬ÎÒÃÇÊ×ÏÈÐèÒªÀûÓÃmethodOverrideÖÐ¼ä¼þ£¬°ÑËü·ÅÔÚbodyParserÖÐ¼ä¼þÏÂ·½£¬´Ó¶ø¿ÉÒÔÀûÓÃ°üº¬±íµ¥ÖµµÄreq.body¡£
+è€Œåœ¨æœåŠ¡ç«¯ï¼Œæˆ‘ä»¬é¦–å…ˆéœ€è¦åˆ©ç”¨methodOverrideä¸­é—´ä»¶ï¼ŒæŠŠå®ƒæ”¾åœ¨bodyParserä¸­é—´ä»¶ä¸‹æ–¹ï¼Œä»Žè€Œå¯ä»¥åˆ©ç”¨åŒ…å«è¡¨å•å€¼çš„req.bodyã€‚
 
     app.use(express.bodyParser());
     app.use(express.methodOverride());
 
-Ö®ËùÒÔÐèÒªÕâÑù×ö£¬ÊÇÒòÎªÕâÐ©´¦Àí²¢²»×ÜÊÇÄ¬ÈÏ½øÐÐµÄ£¬Ô­ÒòºÜ¼òµ¥£¬ÒòÎªÕâÐ©¶ÔExpressµÄÕûÌå¹¦ÄÜÀ´Ëµ²¢²»ÊÇ±ØÐèµÄ£¬ÒÀ¾ÝÓ¦ÓÃµÄ¾ßÌåÐèÇó£¬Äã²¢²»Ò»¶¨ÐèÒªÕâÐ©¹¦ÄÜ£¬Èç¹û¿Í»§¶ËÖ±½ÓÖ§³ÖPUTºÍDELETE·½·¨Ò²¿ÉÒÔ±»Ö±½Ó·ÃÎÊµ½£¬Í¬Ê±methodOverrideÎª±íµ¥Ìá¹©ÁËÇ¿´óµÄ½â¾ö·½°¸£¬ÏÂÃæÎÒÃÇÕ¹Ê¾ÏÂPUTµÄÊ¹ÓÃ£º
+ä¹‹æ‰€ä»¥éœ€è¦è¿™æ ·åšï¼Œæ˜¯å› ä¸ºè¿™äº›å¤„ç†å¹¶ä¸æ€»æ˜¯é»˜è®¤è¿›è¡Œçš„ï¼ŒåŽŸå› å¾ˆç®€å•ï¼Œå› ä¸ºè¿™äº›å¯¹Expressçš„æ•´ä½“åŠŸèƒ½æ¥è¯´å¹¶ä¸æ˜¯å¿…éœ€çš„ï¼Œä¾æ®åº”ç”¨çš„å…·ä½“éœ€æ±‚ï¼Œä½ å¹¶ä¸ä¸€å®šéœ€è¦è¿™äº›åŠŸèƒ½ï¼Œå¦‚æžœå®¢æˆ·ç«¯ç›´æŽ¥æ”¯æŒPUTå’ŒDELETEæ–¹æ³•ä¹Ÿå¯ä»¥è¢«ç›´æŽ¥è®¿é—®åˆ°ï¼ŒåŒæ—¶methodOverrideä¸ºè¡¨å•æä¾›äº†å¼ºå¤§çš„è§£å†³æ–¹æ¡ˆï¼Œä¸‹é¢æˆ‘ä»¬å±•ç¤ºä¸‹PUTçš„ä½¿ç”¨ï¼š
 
     <form method="post" action="/">
         <input type="hidden" name="_method" value="put" />
@@ -396,9 +396,9 @@ ExpressÀûÓÃHTTP¶¯×÷Ìá¹©ÁËÓÐÒâÒå²¢¸»ÓÐ±íÏÖÁ¦µÄURLÓ³ÉäAPI£¬
         res.redirect('back');
     });
 
-## ´íÎó´¦Àí
+## é”™è¯¯å¤„ç†
 
-ExpressÌá¹©ÁËapp.error()·½·¨À´½ÓÊÕÂ·ÓÉ»ò´«Èënext(err)µÄÒì³££¬ÏÂÃæµÄÊ¾ÀýÎª²»Í¬µÄÒ³ÃæÌá¹©×¨ÃÅµÄNotFoundÒì³£·þÎñ£º
+Expressæä¾›äº†app.error()æ–¹æ³•æ¥æŽ¥æ”¶è·¯ç”±æˆ–ä¼ å…¥next(err)çš„å¼‚å¸¸ï¼Œä¸‹é¢çš„ç¤ºä¾‹ä¸ºä¸åŒçš„é¡µé¢æä¾›ä¸“é—¨çš„NotFoundå¼‚å¸¸æœåŠ¡ï¼š
 
     function NotFound(msg){
       this.name = 'NotFound in justjavac.com';
@@ -416,11 +416,11 @@ ExpressÌá¹©ÁËapp.error()·½·¨À´½ÓÊÕÂ·ÓÉ»ò´«Èënext(err)µÄÒì³££¬ÏÂÃæµÄÊ¾ÀýÎª²»Í¬µÄÒ
       throw new Error('keyboard cat!');
     });
 
-ÏñÏÂÃæÒ»Ñù£¬ÎÒÃÇ¿ÉÒÔ¶à´Îµ÷ÓÃapp.error()£¬ÕâÀïÎÒÃÇ¼ì²éÈç¹ûÊÇNotFoundÊµÀý¾ÍÏÔÊ¾404Ò³Ãæ£¬·ñÔò½«Æä´«ÈëÏÂÒ»¸ö´íÎó´¦Àí¡£
+åƒä¸‹é¢ä¸€æ ·ï¼Œæˆ‘ä»¬å¯ä»¥å¤šæ¬¡è°ƒç”¨app.error()ï¼Œè¿™é‡Œæˆ‘ä»¬æ£€æŸ¥å¦‚æžœæ˜¯NotFoundå®žä¾‹å°±æ˜¾ç¤º404é¡µé¢ï¼Œå¦åˆ™å°†å…¶ä¼ å…¥ä¸‹ä¸€ä¸ªé”™è¯¯å¤„ç†ã€‚
 
-×¢ÒâÕâÐ©´¦Àí¿ÉÒÔ¶¨ÒåÔÚÈÎºÎµØ·½£¬ËüÃÇ¿ÉÒÔ·ÅÔÚÂ·ÓÉ¿ÉÒÔlisten()Ö®´¦¡£
+æ³¨æ„è¿™äº›å¤„ç†å¯ä»¥å®šä¹‰åœ¨ä»»ä½•åœ°æ–¹ï¼Œå®ƒä»¬å¯ä»¥æ”¾åœ¨è·¯ç”±å¯ä»¥listen()ä¹‹å¤„ã€‚
 
-ÕâÒ²ÔÊÐíÔÚconfigure()¿éÄÚ×ö¶¨Òå£¬ÓÚÊÇÎÒÃÇ¾Í¿ÉÒÔÒÔ²»Í¬µÄ»ùÓÚ»·¾³µÄ·½Ê½´¦ÀíÒì³£¡£
+è¿™ä¹Ÿå…è®¸åœ¨configure()å—å†…åšå®šä¹‰ï¼ŒäºŽæ˜¯æˆ‘ä»¬å°±å¯ä»¥ä»¥ä¸åŒçš„åŸºäºŽçŽ¯å¢ƒçš„æ–¹å¼å¤„ç†å¼‚å¸¸ã€‚
 
     app.error(function(err, req, res, next){
         if (err instanceof NotFound) {
@@ -430,30 +430,30 @@ ExpressÌá¹©ÁËapp.error()·½·¨À´½ÓÊÕÂ·ÓÉ»ò´«Èënext(err)µÄÒì³££¬ÏÂÃæµÄÊ¾ÀýÎª²»Í¬µÄÒ
         }
     });
 
-ÏÂÃæµÄÑÝÊ¾ÎÒÃÇ¼ÙÉèËùÓÐ´íÎó¶¼Îª500´íÎó£¬µ«Äã¿ÉÒÔ¸ù¾ÝÏ²ºÃÑ¡Ôñ¡£
+ä¸‹é¢çš„æ¼”ç¤ºæˆ‘ä»¬å‡è®¾æ‰€æœ‰é”™è¯¯éƒ½ä¸º500é”™è¯¯ï¼Œä½†ä½ å¯ä»¥æ ¹æ®å–œå¥½é€‰æ‹©ã€‚
 
-ÀýÈçµ±nodeÔÚ´¦ÀíÎÄ¼þÏµÍ³µ÷ÓÃÊ±£¬¾ÍÓÐ¿ÉÄÜ½ÓÊÕµ½ÕâÑùµÄ´íÎó¶ÔÏó£¬ÆäENOENTµÄerror.codeÎª¡°no such file or directory¡±£¬ÕâÊ±ÎÒÃÇ¿ÉÒÔÔÚ´íÎó´¦Àíº¯ÊýÖÐ½øÐÐ´¦ÀíÈ»ºóÏÔÊ¾ÌØ¶¨µÄÒ³Ãæ¸øÓÃ»§¡£
+ä¾‹å¦‚å½“nodeåœ¨å¤„ç†æ–‡ä»¶ç³»ç»Ÿè°ƒç”¨æ—¶ï¼Œå°±æœ‰å¯èƒ½æŽ¥æ”¶åˆ°è¿™æ ·çš„é”™è¯¯å¯¹è±¡ï¼Œå…¶ENOENTçš„error.codeä¸ºâ€œno such file or directoryâ€ï¼Œè¿™æ—¶æˆ‘ä»¬å¯ä»¥åœ¨é”™è¯¯å¤„ç†å‡½æ•°ä¸­è¿›è¡Œå¤„ç†ç„¶åŽæ˜¾ç¤ºç‰¹å®šçš„é¡µé¢ç»™ç”¨æˆ·ã€‚
 
     app.error(function(err, req, res){
        res.render('500.jade', { error: err });
     });
 
-ÎÒÃÇµÄÓ¦ÓÃÒ²¿ÉÒÔÀûÓÃConnect errorHandlerÖÐ¼ä¼þÀ´»ã±¨Òì³£ÐÅÏ¢¡£ÀýÈçÎÒÃÇÏëÔÚ¡°¿ª·¢¡±»·¾³Êä³öÒì³£µ½stderr£º
+æˆ‘ä»¬çš„åº”ç”¨ä¹Ÿå¯ä»¥åˆ©ç”¨Connect errorHandlerä¸­é—´ä»¶æ¥æ±‡æŠ¥å¼‚å¸¸ä¿¡æ¯ã€‚ä¾‹å¦‚æˆ‘ä»¬æƒ³åœ¨â€œå¼€å‘â€çŽ¯å¢ƒè¾“å‡ºå¼‚å¸¸åˆ°stderrï¼š
 
     app.use(express.errorHandler({ dumpExceptions: true }));
 
-Í¬Ê±ÔÚ¿ª·¢ÆÚ¼äÎÒÃÇÏëÓÃºÃ¿´µÄHTMLÒ³ÃæÏÔÊ¾Òì³£ÐÅÏ¢Ê±£¬¿ÉÒÔÉèÖÃshowStackµÄÖµÎªtrue£º
+åŒæ—¶åœ¨å¼€å‘æœŸé—´æˆ‘ä»¬æƒ³ç”¨å¥½çœ‹çš„HTMLé¡µé¢æ˜¾ç¤ºå¼‚å¸¸ä¿¡æ¯æ—¶ï¼Œå¯ä»¥è®¾ç½®showStackçš„å€¼ä¸ºtrueï¼š
 
     app.use(express.errorHandler({ showStack: true, dumpExceptions: true }));
 
-Èç¹ûÇëÇóÍ· `Accept: application/json`£¬errorHandlerÖÐ¼ä¼þÒ²ÄÜÒÔjson·½Ê½×ö³öÏìÓ¦£¬
-Õâ¶ÔÒÀÀµÓÚ¿Í»§¶ËJavascriptµÄÓ¦ÓÃ¿ª·¢ºÜÓÐÒæ´¦¡£
+å¦‚æžœè¯·æ±‚å¤´ `Accept: application/json`ï¼ŒerrorHandlerä¸­é—´ä»¶ä¹Ÿèƒ½ä»¥jsonæ–¹å¼åšå‡ºå“åº”ï¼Œ
+è¿™å¯¹ä¾èµ–äºŽå®¢æˆ·ç«¯Javascriptçš„åº”ç”¨å¼€å‘å¾ˆæœ‰ç›Šå¤„ã€‚
 
-## Â·ÓÉ²ÎÊýÔ¤´¦Àí
+## è·¯ç”±å‚æ•°é¢„å¤„ç†
 
-Â·ÓÉ²ÎÊýÔ¤´¦ÀíÍ¨¹ýÒþÊ½µÄÊý¾Ý´¦Àí£¬¿ÉÒÔ´ó·ùÌá¸ßÓ¦ÓÃ´úÂëµÄ¿É¶ÁÐÔºÍÇëÇóURLµÄÑéÖ¤¡£
+è·¯ç”±å‚æ•°é¢„å¤„ç†é€šè¿‡éšå¼çš„æ•°æ®å¤„ç†ï¼Œå¯ä»¥å¤§å¹…æé«˜åº”ç”¨ä»£ç çš„å¯è¯»æ€§å’Œè¯·æ±‚URLçš„éªŒè¯ã€‚
 
-¼ÙÈçÄã¾­³£ÐÔµÄ´Ó¼¸¸öÂ·ÓÉ»ñÈ¡Í¨ÓÃÊý¾Ý£¬ÈçÍ¨¹ý/user/:id¼ÓÔØÓÃ»§ÐÅÏ¢£¬Í¨³£ÎÒÃÇ¿ÉÄÜ»áÕâÑù×ö£º
+å‡å¦‚ä½ ç»å¸¸æ€§çš„ä»Žå‡ ä¸ªè·¯ç”±èŽ·å–é€šç”¨æ•°æ®ï¼Œå¦‚é€šè¿‡/user/:idåŠ è½½ç”¨æˆ·ä¿¡æ¯ï¼Œé€šå¸¸æˆ‘ä»¬å¯èƒ½ä¼šè¿™æ ·åšï¼š
 
     app.get('/user/:userId', function(req, res, next){
       User.get(req.params.userId, function(err, user){
@@ -462,11 +462,11 @@ ExpressÌá¹©ÁËapp.error()·½·¨À´½ÓÊÕÂ·ÓÉ»ò´«Èënext(err)µÄÒì³££¬ÏÂÃæµÄÊ¾ÀýÎª²»Í¬µÄÒ
       });
     });
 
-ÀûÓÃÔ¤´¦Àíºó²ÎÊý¿ÉÒÔ±»Ó³Éäµ½»Øµ÷º¯Êý£¬´Ó¶ø¿ÉÒÔÌá¹©ÖîÈçÑéÖ¤¡¢Ç¿ÖÆÐÔ¸Ä±äÖµ£¬ÉõÖÁ´ÓÊý¾Ý¿âÖÐ¼ÓÔØÊý¾ÝµÈ¹¦ÄÜ¡£
+åˆ©ç”¨é¢„å¤„ç†åŽå‚æ•°å¯ä»¥è¢«æ˜ å°„åˆ°å›žè°ƒå‡½æ•°ï¼Œä»Žè€Œå¯ä»¥æä¾›è¯¸å¦‚éªŒè¯ã€å¼ºåˆ¶æ€§æ”¹å˜å€¼ï¼Œç”šè‡³ä»Žæ•°æ®åº“ä¸­åŠ è½½æ•°æ®ç­‰åŠŸèƒ½ã€‚
 
-ÏÂÃæÎÒÃÇ½«µ÷ÓÃapp.param()²¢´«ÈëÎÒÃÇÏ£ÍûÓ³Éäµ½Ä³¸öÖÐ¼ä¼þµÄ²ÎÊý£¬¿ÉÒÔ¿´µ½ÎÒÃÇ½ÓÊÕÁË°üº¬Õ¼Î»·û£¨:userId£©ÖµµÄid²ÎÊý¡£
+ä¸‹é¢æˆ‘ä»¬å°†è°ƒç”¨app.param()å¹¶ä¼ å…¥æˆ‘ä»¬å¸Œæœ›æ˜ å°„åˆ°æŸä¸ªä¸­é—´ä»¶çš„å‚æ•°ï¼Œå¯ä»¥çœ‹åˆ°æˆ‘ä»¬æŽ¥æ”¶äº†åŒ…å«å ä½ç¬¦ï¼ˆ:userIdï¼‰å€¼çš„idå‚æ•°ã€‚
 
-ÔÚÕâÀï¿ÉÒÔÓëÆ½³£Ò»Ñù½øÐÐÓÃ»§Êý¾Ý¼ÓÔØÒÔ¼°´íÎó´¦Àí£¬²¢ÄÜ¼òµ¥µÄÍ¨¹ýµ÷ÓÃnext()½«¿ØÖÆÈ¨×ªÏòÏÂÒ»¸öÔ¤´¦Àí»òÂ·ÓÉ£¨Â·¾¶¿ØÖÆ£©¡£
+åœ¨è¿™é‡Œå¯ä»¥ä¸Žå¹³å¸¸ä¸€æ ·è¿›è¡Œç”¨æˆ·æ•°æ®åŠ è½½ä»¥åŠé”™è¯¯å¤„ç†ï¼Œå¹¶èƒ½ç®€å•çš„é€šè¿‡è°ƒç”¨next()å°†æŽ§åˆ¶æƒè½¬å‘ä¸‹ä¸€ä¸ªé¢„å¤„ç†æˆ–è·¯ç”±ï¼ˆè·¯å¾„æŽ§åˆ¶ï¼‰ã€‚
 
     app.param('userId', function(req, res, next, id){
       User.get(id, function(err, user){
@@ -477,135 +477,135 @@ ExpressÌá¹©ÁËapp.error()·½·¨À´½ÓÊÕÂ·ÓÉ»ò´«Èënext(err)µÄÒì³££¬ÏÂÃæµÄÊ¾ÀýÎª²»Í¬µÄÒ
       });
     });
 
-ÕâÑù×ö£¬²»½öÏòÉÏÃæÌáµ½µÄ¿ÉÒÔ´ó·ùÌá¸ßÂ·ÓÉµÄ¿É¶ÁÐÔ£¬»¹ÄÜÔÚÕû¸öÓ¦ÓÃÖÐ¹²Ïí¸Ã²¿·ÖµÄÂß¼­ÊµÏÖ£¬´ïµ½¸´ÓÃÄ¿µÄ¡£
+è¿™æ ·åšï¼Œä¸ä»…å‘ä¸Šé¢æåˆ°çš„å¯ä»¥å¤§å¹…æé«˜è·¯ç”±çš„å¯è¯»æ€§ï¼Œè¿˜èƒ½åœ¨æ•´ä¸ªåº”ç”¨ä¸­å…±äº«è¯¥éƒ¨åˆ†çš„é€»è¾‘å®žçŽ°ï¼Œè¾¾åˆ°å¤ç”¨ç›®çš„ã€‚
 
     app.get('/user/:userId', function(req, res){
-      res.send('justjavacÓÃ»§Îª ' + req.user.name);
+      res.send('justjavacç”¨æˆ·ä¸º ' + req.user.name);
     });
 
-¶ÔÓÚ¼òµ¥µÄÇé¿öÈçÂ·ÓÉÕ¼Î»·ûÑéÖ¤ºÍÇ¿ÆÈ¸Ä±äÖµ£¬Ö»ÐèÒª´«Èë1¸ö²ÎÊý£¨Ö§³Ö1¸ö²ÎÊý£©£¬ÆÚ¼äÅ×³öµÄÒì³£½«×Ô¶¯´«Èënext(err)¡£
+å¯¹äºŽç®€å•çš„æƒ…å†µå¦‚è·¯ç”±å ä½ç¬¦éªŒè¯å’Œå¼ºè¿«æ”¹å˜å€¼ï¼Œåªéœ€è¦ä¼ å…¥1ä¸ªå‚æ•°ï¼ˆæ”¯æŒ1ä¸ªå‚æ•°ï¼‰ï¼ŒæœŸé—´æŠ›å‡ºçš„å¼‚å¸¸å°†è‡ªåŠ¨ä¼ å…¥next(err)ã€‚
 
     app.param('number', function(n){ return parseInt(n, 10); });
 
-Ò²¿ÉÒÔÍ¬Ê±½«»Øµ÷º¯ÊýÓ¦ÓÃµ½¶à¸öÕ¼Î»·û£¬±ÈÈçÂ·ÓÉ/commits/:from-:toÀ´Ëµ£¬:fromºÍ:to¶¼ÊÇÊýÖµÀàÐÍ£¬ÎÒÃÇ¿ÉÒÔ½«ËüÃÇ¶¨ÒåÎªÊý×é£º
+ä¹Ÿå¯ä»¥åŒæ—¶å°†å›žè°ƒå‡½æ•°åº”ç”¨åˆ°å¤šä¸ªå ä½ç¬¦ï¼Œæ¯”å¦‚è·¯ç”±/commits/:from-:toæ¥è¯´ï¼Œ:fromå’Œ:toéƒ½æ˜¯æ•°å€¼ç±»åž‹ï¼Œæˆ‘ä»¬å¯ä»¥å°†å®ƒä»¬å®šä¹‰ä¸ºæ•°ç»„ï¼š
 
     app.param(['from', 'to'], function(n){ return parseInt(n, 10); });
 
-## ÊÓÍ¼äÖÈ¾
+## è§†å›¾æ¸²æŸ“
 
-ÊÓÍ¼µÄÎÄ¼þÃûÄ¬ÈÏÐè×ñÑ­ `<name>.<engine>` µÄÐÎÊ½£¬ÕâÀï `<engine>` ÊÇÒª±»¼ÓÔØµÄÄ£¿éµÄÃû×Ö¡£
+è§†å›¾çš„æ–‡ä»¶åé»˜è®¤éœ€éµå¾ª `<name>.<engine>` çš„å½¢å¼ï¼Œè¿™é‡Œ `<engine>` æ˜¯è¦è¢«åŠ è½½çš„æ¨¡å—çš„åå­—ã€‚
 
-±ÈÈçÊÓÍ¼layout.ejs¾ÍÊÇÔÚ¸æËßÊÓÍ¼ÏµÍ³Òªrequire("ejs")£¬±»¼ÓÔØµÄÄ£¿é±ØÐëÊä³öexports.compile(str, options)·½·¨£¬²¢Òª·µ»ØÒ»¸öº¯ÊýÀ´×ñÊØExpressµÄÄ£°å½Ó¿ÚÔ¼¶¨¡£
+æ¯”å¦‚è§†å›¾layout.ejså°±æ˜¯åœ¨å‘Šè¯‰è§†å›¾ç³»ç»Ÿè¦require("ejs")ï¼Œè¢«åŠ è½½çš„æ¨¡å—å¿…é¡»è¾“å‡ºexports.compile(str, options)æ–¹æ³•ï¼Œå¹¶è¦è¿”å›žä¸€ä¸ªå‡½æ•°æ¥éµå®ˆExpressçš„æ¨¡æ¿æŽ¥å£çº¦å®šã€‚
 
-ÎÒÃÇÒ²¿ÉÒÔÊ¹ÓÃapp.register()À´Ó³ÉäÄ£°åÒýÇæµ½ÆäËüÎÄ¼þÀ©Õ¹Ãû£¬´Ó¶øÊµÏÖ¸üÁé»îµÄÄ£°åÒýÇæÐÐÎª£¬Èç´ËÒ»À´¾Í¿ÉÒÔÊµÏÖ¡°justjavac.html¡±¿ÉÒÔ±»ejsÒýÇæËùäÖÈ¾¡£
+æˆ‘ä»¬ä¹Ÿå¯ä»¥ä½¿ç”¨app.register()æ¥æ˜ å°„æ¨¡æ¿å¼•æ“Žåˆ°å…¶å®ƒæ–‡ä»¶æ‰©å±•åï¼Œä»Žè€Œå®žçŽ°æ›´çµæ´»çš„æ¨¡æ¿å¼•æ“Žè¡Œä¸ºï¼Œå¦‚æ­¤ä¸€æ¥å°±å¯ä»¥å®žçŽ°â€œjustjavac.htmlâ€å¯ä»¥è¢«ejså¼•æ“Žæ‰€æ¸²æŸ“ã€‚
 
-ÏÂÃæÎÒÃÇ½«ÓÃJadeÒýÇæÀ´äÖÈ¾index.html£¬ÒòÎªÎÒÃÇÃ»ÓÐÉèÖÃlayout:false£¬index.jadeäÖÈ¾ºóµÄÄÚÈÝ½«±»×÷Îªbody±¾µØ±äÁ¿´«Èëlayout.jade¡£
+ä¸‹é¢æˆ‘ä»¬å°†ç”¨Jadeå¼•æ“Žæ¥æ¸²æŸ“index.htmlï¼Œå› ä¸ºæˆ‘ä»¬æ²¡æœ‰è®¾ç½®layout:falseï¼Œindex.jadeæ¸²æŸ“åŽçš„å†…å®¹å°†è¢«ä½œä¸ºbodyæœ¬åœ°å˜é‡ä¼ å…¥layout.jadeã€‚
 
     app.get('/', function(req, res){
-        res.render('index.jade', { title: 'justjavac, ¹Ø×¢WebÇ°¶Ë¼¼Êõ£¡' });
+        res.render('index.jade', { title: 'justjavac, å…³æ³¨Webå‰ç«¯æŠ€æœ¯ï¼' });
     });
 
-ÐÂÔöµÄview engineÉèÖÃ¿ÉÒÔÖ¸¶¨Ä¬ÈÏÄ£°åÒýÇæ£¬Èç¹ûÎÒÃÇÏëÊ¹ÓÃjade¿ÉÒÔÕâÑùÉèÖÃ£º
+æ–°å¢žçš„view engineè®¾ç½®å¯ä»¥æŒ‡å®šé»˜è®¤æ¨¡æ¿å¼•æ“Žï¼Œå¦‚æžœæˆ‘ä»¬æƒ³ä½¿ç”¨jadeå¯ä»¥è¿™æ ·è®¾ç½®ï¼š
 
     app.set('view engine', 'jade');
 
-ÓÚÊÇÎÒÃÇ¾Í¿ÉÒÔÍ¨¹ýÏÂÃæµÄ·½Ê½£º
+äºŽæ˜¯æˆ‘ä»¬å°±å¯ä»¥é€šè¿‡ä¸‹é¢çš„æ–¹å¼ï¼š
 
     res.render('index');
 
-´úÌæÈçÏÂ·½Ê½:
+ä»£æ›¿å¦‚ä¸‹æ–¹å¼:
 
     res.render('index.jade');
 
-µ±view engineÉèÖÃºó£¬Ä£°åµÄÀ©Õ¹Ãû¾Í³ÉÁË¿ÉÑ¡Ïî£¬Í¬Ê±ÎÒÃÇ»¹¿ÉÒÔ»ìºÏÆ¥Åä¶àÄ£°åÒýÇæ£º
+å½“view engineè®¾ç½®åŽï¼Œæ¨¡æ¿çš„æ‰©å±•åå°±æˆäº†å¯é€‰é¡¹ï¼ŒåŒæ—¶æˆ‘ä»¬è¿˜å¯ä»¥æ··åˆåŒ¹é…å¤šæ¨¡æ¿å¼•æ“Žï¼š
 
     res.render('another-page.ejs');
 
-ExpressÍ¬Ê±Ìá¹©ÁËÊÓÍ¼Ñ¡Ïî(view options)ÉèÖÃ£¬ÕâÐ©ÉèÖÃ»áÔÚÃ¿´ÎÊÓÍ¼äÖÈ¾ºóÓ¦ÓÃ£¬±ÈÈçÄã²¢²»¾­³£Ê¹ÓÃlayouts£¬¾Í¿ÉÒÔÕâÑùÉèÖÃ£º
+ExpressåŒæ—¶æä¾›äº†è§†å›¾é€‰é¡¹(view options)è®¾ç½®ï¼Œè¿™äº›è®¾ç½®ä¼šåœ¨æ¯æ¬¡è§†å›¾æ¸²æŸ“åŽåº”ç”¨ï¼Œæ¯”å¦‚ä½ å¹¶ä¸ç»å¸¸ä½¿ç”¨layoutsï¼Œå°±å¯ä»¥è¿™æ ·è®¾ç½®ï¼š
 
     app.set('view options', {
         layout: false
     });
 
-Èç¹ûÐèÒª£¬ÕâÐ©ÉèÖÃ¿ÉÒÔÔÚºóÐøµÄres.render()µ÷ÓÃÖÐ±»¸²¸Ç£º
+å¦‚æžœéœ€è¦ï¼Œè¿™äº›è®¾ç½®å¯ä»¥åœ¨åŽç»­çš„res.render()è°ƒç”¨ä¸­è¢«è¦†ç›–ï¼š
 
 res.render('justjavac-view.ejs', { layout: true });
 
-¿ÉÒÔÍ¨¹ýÖ¸¶¨Ò»¸öÂ·¾¶µÄ·½Ê½À´ÊµÏÖÓÃ×Ô¼ºµÄlayoutÀ´´úÌæÏµÍ³Ä¬ÈÏµÄ£¬±ÈÈçÈç¹ûÎÒÃÇ½«¡°view engine¡±ÉèÖÃÎªjade²¢ÇÒ×Ô¶¨ÒåÁËÒ»¸öÃûÎª¡°./views/mylayout.jade¡±µÄlayout£¬ÎÒÃÇ¿ÉÒÔÕâÑùÊ¹ÓÃËü£º
+å¯ä»¥é€šè¿‡æŒ‡å®šä¸€ä¸ªè·¯å¾„çš„æ–¹å¼æ¥å®žçŽ°ç”¨è‡ªå·±çš„layoutæ¥ä»£æ›¿ç³»ç»Ÿé»˜è®¤çš„ï¼Œæ¯”å¦‚å¦‚æžœæˆ‘ä»¬å°†â€œview engineâ€è®¾ç½®ä¸ºjadeå¹¶ä¸”è‡ªå®šä¹‰äº†ä¸€ä¸ªåä¸ºâ€œ./views/mylayout.jadeâ€çš„layoutï¼Œæˆ‘ä»¬å¯ä»¥è¿™æ ·ä½¿ç”¨å®ƒï¼š
 
     res.render('page', { layout: 'mylayout' });
 
-·ñÔò±ØÐëÖ¸¶¨À©Õ¹Ãû£º
+å¦åˆ™å¿…é¡»æŒ‡å®šæ‰©å±•åï¼š
 
     res.render('page', { layout: 'mylayout.jade' });
 
-ÕâÐ©Â·¾¶Ò²¿ÉÒÔÊÇ¾ø¶ÔÂ·¾¶£º
+è¿™äº›è·¯å¾„ä¹Ÿå¯ä»¥æ˜¯ç»å¯¹è·¯å¾„ï¼š
 
     res.render('page', { layout: __dirname + '/../../mylayout.jade' });
 
-Õâ·½Ãæ½ÏºÃµÄÀý×Ó¾ÍÊÇ×Ô¶¨ÒåejsÄ£°åµÄ¿ªÊ¼ºÍ¹Ø±ÕµÄ±ê¼Ç£º
+è¿™æ–¹é¢è¾ƒå¥½çš„ä¾‹å­å°±æ˜¯è‡ªå®šä¹‰ejsæ¨¡æ¿çš„å¼€å§‹å’Œå…³é—­çš„æ ‡è®°ï¼š
 
     app.set('view options', {
         open: '{{',
         close: '}}'
     });
 
-## ¾Ö²¿ÊÓÍ¼
+## å±€éƒ¨è§†å›¾
 
-ExpressÊÓÍ¼ÏµÍ³Ô­ÉúÖ§³Ö¾Ö²¿ºÍ¼¯ºÏÊÓÍ¼£¬Õâ³Æ×÷Î¢ÐÍÊÓÍ¼£¬Ö÷ÒªÓÃÓÚäÖÈ¾Ò»¸öÎÄµµÆ¬¶Î¡£
+Expressè§†å›¾ç³»ç»ŸåŽŸç”Ÿæ”¯æŒå±€éƒ¨å’Œé›†åˆè§†å›¾ï¼Œè¿™ç§°ä½œå¾®åž‹è§†å›¾ï¼Œä¸»è¦ç”¨äºŽæ¸²æŸ“ä¸€ä¸ªæ–‡æ¡£ç‰‡æ®µã€‚
 
-±ÈÈçÓëÆäÔÚÊÓÍ¼ÖÐÑ­»·ÏÔÊ¾ÆÀÂÛ£¬²»ÈçÊ¹ÓÃ¾Ö²¿¼¯ºÏ£¨partial collection£©£º
+æ¯”å¦‚ä¸Žå…¶åœ¨è§†å›¾ä¸­å¾ªçŽ¯æ˜¾ç¤ºè¯„è®ºï¼Œä¸å¦‚ä½¿ç”¨å±€éƒ¨é›†åˆï¼ˆpartial collectionï¼‰ï¼š
 
     partial('comment', { collection: comments });
 
-Èç¹û²»ÐèÒªÆäËüÑ¡Ïî»ò±¾µØ±äÁ¿£¬ÎÒÃÇ¿ÉÒÔÊ¡ÂÔ¶ÔÏó¶ø¼òµ¥µÄ´«ÈëÆÀÂÛÊý×é£¬ÕâºÍÉÏÃæµÄÊ¾ÀýÊÇÒ»ÑùµÄ£º
+å¦‚æžœä¸éœ€è¦å…¶å®ƒé€‰é¡¹æˆ–æœ¬åœ°å˜é‡ï¼Œæˆ‘ä»¬å¯ä»¥çœç•¥å¯¹è±¡è€Œç®€å•çš„ä¼ å…¥è¯„è®ºæ•°ç»„ï¼Œè¿™å’Œä¸Šé¢çš„ç¤ºä¾‹æ˜¯ä¸€æ ·çš„ï¼š
 
     partial('comment', comments);
 
-µ±Ê¹ÓÃ¾Ö²¿¼¯ºÏÊ±£¬Ö§³ÖÒ»Ð©¡°Ä§Êõ¡±±¾µØ±äÁ¿£º
+å½“ä½¿ç”¨å±€éƒ¨é›†åˆæ—¶ï¼Œæ”¯æŒä¸€äº›â€œé­”æœ¯â€æœ¬åœ°å˜é‡ï¼š
 
-    firstInCollection µ±ÎªµÚÒ»¸ö¶ÔÏóÊ±¸ÃÖµÎªtrue
-    indexInCollection ¼¯ºÏÖÐ¶ÔÏóµÄË÷ÒýÖµ
-    lastInCollection µ±Îª×îºóÒ»¸ö¶ÔÏóÊ±Îªtrue
-    collectionLength ¼¯ºÏµÄ³¤¶È
+    firstInCollection å½“ä¸ºç¬¬ä¸€ä¸ªå¯¹è±¡æ—¶è¯¥å€¼ä¸ºtrue
+    indexInCollection é›†åˆä¸­å¯¹è±¡çš„ç´¢å¼•å€¼
+    lastInCollection å½“ä¸ºæœ€åŽä¸€ä¸ªå¯¹è±¡æ—¶ä¸ºtrue
+    collectionLength é›†åˆçš„é•¿åº¦
 
-´«Èë£¨»òÉú³É£©µÄ±¾µØ±äÁ¿ÓÅÏÈ£¬µ«´«Èë¸¸ÊÓÍ¼µÄ±¾µØ±äÁ¿ÔÚ×ÓÊÓÍ¼ÈÔÓÐÐ§¡£Òò´ËÈç¹ûÎÒÃÇÓÃpartial(¡®blog/post¡¯, post)À´äÖÈ¾²©¿ÍÈÕÖ¾Ê±£¬½«Éú³ÉpostµÄ±¾µØ±äÁ¿£¬µ«µ÷ÓÃ±¾º¯ÊýµÄÊÓÍ¼ÓµÓÐ±¾µØÓÃ»§£¬ËüÔÚblog/postÊÓÍ¼ÒÀÈ»ÓÐÐ§¡£
+ä¼ å…¥ï¼ˆæˆ–ç”Ÿæˆï¼‰çš„æœ¬åœ°å˜é‡ä¼˜å…ˆï¼Œä½†ä¼ å…¥çˆ¶è§†å›¾çš„æœ¬åœ°å˜é‡åœ¨å­è§†å›¾ä»æœ‰æ•ˆã€‚å› æ­¤å¦‚æžœæˆ‘ä»¬ç”¨partial(â€˜blog/postâ€™, post)æ¥æ¸²æŸ“åšå®¢æ—¥å¿—æ—¶ï¼Œå°†ç”Ÿæˆpostçš„æœ¬åœ°å˜é‡ï¼Œä½†è°ƒç”¨æœ¬å‡½æ•°çš„è§†å›¾æ‹¥æœ‰æœ¬åœ°ç”¨æˆ·ï¼Œå®ƒåœ¨blog/postè§†å›¾ä¾ç„¶æœ‰æ•ˆã€‚
 
-ÐÔÄÜÌáÊ¾£ºµ±Ê¹ÓÃ¾Ö²¿¼¯ºÏäÖÈ¾100³¤¶ÈµÄÊý×é¾ÍÒâÎ¶×ÅÐèÒªäÖÈ¾100´ÎÊÓÍ¼£¬¶ÔÓÚ¼òµ¥µÄ¼¯ºÏÄã¿ÉÒÔ½«Ñ­»·ÄÚÁª£¬¶ø²»ÒªÊ¹ÓÃ¾Ö²¿¼¯ºÏ£¬ÕâÑù¿ÉÒÔ¼õÉÙÏµÍ³¿ªÏú¡£
+æ€§èƒ½æç¤ºï¼šå½“ä½¿ç”¨å±€éƒ¨é›†åˆæ¸²æŸ“100é•¿åº¦çš„æ•°ç»„å°±æ„å‘³ç€éœ€è¦æ¸²æŸ“100æ¬¡è§†å›¾ï¼Œå¯¹äºŽç®€å•çš„é›†åˆä½ å¯ä»¥å°†å¾ªçŽ¯å†…è”ï¼Œè€Œä¸è¦ä½¿ç”¨å±€éƒ¨é›†åˆï¼Œè¿™æ ·å¯ä»¥å‡å°‘ç³»ç»Ÿå¼€é”€ã€‚
 
 
-## ÊÓÍ¼²éÕÒ
+## è§†å›¾æŸ¥æ‰¾
 
-ÊÓÍ¼²éÕÒÊÇÏà¶ÔÓÚ¸¸ÊÓÍ¼½øÐÐµÄ£¬±ÈÈçÎÒÃÇÓÐÒ»¸öÃûÎª¡°views/user/list.jade¡±µÄÒ³ÃæÊÓÍ¼£¬Èç¹ûÔÚ¸ÃÊÓÍ¼ÖÐµ÷ÓÃpartial(¡®edit¡¯)£¬ÊÓÍ¼ÏµÍ³½«»á³¢ÊÔ²éÕÒ²¢¼ÓÔØ¡°views/user/edit.jade¡±£¬¶øpartial(¡®../messages¡¯)½«¼ÓÔØ¡°views/messages.jade¡±¡£
+è§†å›¾æŸ¥æ‰¾æ˜¯ç›¸å¯¹äºŽçˆ¶è§†å›¾è¿›è¡Œçš„ï¼Œæ¯”å¦‚æˆ‘ä»¬æœ‰ä¸€ä¸ªåä¸ºâ€œviews/user/list.jadeâ€çš„é¡µé¢è§†å›¾ï¼Œå¦‚æžœåœ¨è¯¥è§†å›¾ä¸­è°ƒç”¨partial(â€˜editâ€™)ï¼Œè§†å›¾ç³»ç»Ÿå°†ä¼šå°è¯•æŸ¥æ‰¾å¹¶åŠ è½½â€œviews/user/edit.jadeâ€ï¼Œè€Œpartial(â€˜../messagesâ€™)å°†åŠ è½½â€œviews/messages.jadeâ€ã€‚
 
-ÊÓÍ¼ÏµÍ³»¹Ö§³ÖË÷ÒýÄ£°å£¬ÕâÑùÄã¾Í¿ÉÒÔÊ¹ÓÃÒ»¸öÍ¬ÃûµÄÄ¿Â¼¡£±ÈÈç£¬ÔÚÒ»¸öÂ·ÓÉÖÐÎÒÃÇÖ´ÐÐres.render(¡®users¡¯)£¬Õâ½«Ö¸Ïò¡°views/users.jade¡±»òÕß¡°views/users/index.jade¡±¡£
+è§†å›¾ç³»ç»Ÿè¿˜æ”¯æŒç´¢å¼•æ¨¡æ¿ï¼Œè¿™æ ·ä½ å°±å¯ä»¥ä½¿ç”¨ä¸€ä¸ªåŒåçš„ç›®å½•ã€‚æ¯”å¦‚ï¼Œåœ¨ä¸€ä¸ªè·¯ç”±ä¸­æˆ‘ä»¬æ‰§è¡Œres.render(â€˜usersâ€™)ï¼Œè¿™å°†æŒ‡å‘â€œviews/users.jadeâ€æˆ–è€…â€œviews/users/index.jadeâ€ã€‚
 
-µ±Ê¹ÓÃÉÏÃæµÄË÷ÒýÊÓÍ¼Ê±£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ýpartial(¡®users¡¯)´ÓÍ¬ÃûÄ¿Â¼ÏÂÒýÓÃ¡°views/users/index.jade¡±£¬Í¬Ê±ÊÓÍ¼ÏµÍ³»á³¢ÊÔ¡°../users/index¡±£¬ÕâÄÜ¼õÉÙÎÒÃÇµ÷ÓÃpartial(¡®index¡¯)µÄÐèÒª¡£
+å½“ä½¿ç”¨ä¸Šé¢çš„ç´¢å¼•è§†å›¾æ—¶ï¼Œæˆ‘ä»¬å¯ä»¥é€šè¿‡partial(â€˜usersâ€™)ä»ŽåŒåç›®å½•ä¸‹å¼•ç”¨â€œviews/users/index.jadeâ€ï¼ŒåŒæ—¶è§†å›¾ç³»ç»Ÿä¼šå°è¯•â€œ../users/indexâ€ï¼Œè¿™èƒ½å‡å°‘æˆ‘ä»¬è°ƒç”¨partial(â€˜indexâ€™)çš„éœ€è¦ã€‚
 
-## Ä£°åÒýÇæ
+## æ¨¡æ¿å¼•æ“Ž
 
-ExpressÖ§³ÖÐí¶àÄ£°åÒýÇæ£¬³£ÓÃµÄÓÐ£º
+Expressæ”¯æŒè®¸å¤šæ¨¡æ¿å¼•æ“Žï¼Œå¸¸ç”¨çš„æœ‰ï¼š
 
-* Haml haml µÄÊµÏÖ
-* Jade haml.js ½ÓÌæÕß£¬Í¬Ê±Ò²ÊÇExpressµÄÄ¬ÈÏÄ£°åÒýÇæ
-* EJS Ç¶ÈëJavaScriptÄ£°å
-* CoffeeKup »ùÓÚCoffeeScriptµÄÄ£°åÒýÇæ
-* jQuery Templates µÄNodeJS°æ±¾
+* Haml haml çš„å®žçŽ°
+* Jade haml.js æŽ¥æ›¿è€…ï¼ŒåŒæ—¶ä¹Ÿæ˜¯Expressçš„é»˜è®¤æ¨¡æ¿å¼•æ“Ž
+* EJS åµŒå…¥JavaScriptæ¨¡æ¿
+* CoffeeKup åŸºäºŽCoffeeScriptçš„æ¨¡æ¿å¼•æ“Ž
+* jQuery Templates çš„NodeJSç‰ˆæœ¬
 
 ##  Session Support
 
-¿ÉÒÔÔÚExpressÖÐÍ¨¹ýÔö¼ÓConnectµÄsessionÖÐ¼ä¼þÀ´¿ªÆôSessionÖ§³Ö£¬µ±È»Ç°ÌáÊÇÐèÒªÔÚÕâÖ®Ç°Ê¹ÓÃcookieParserÖÐ¼ä¼þ£¬ÓÃÓÚ·ÖÎöºÍ´¦Àíreq.cookiesµÄcookieÊý¾Ý(ÎÒÃÇÖªµÀsession»áÀûÓÃcookie½øÐÐÍ¨ÐÅ±£³ÖµÄ)¡£
+å¯ä»¥åœ¨Expressä¸­é€šè¿‡å¢žåŠ Connectçš„sessionä¸­é—´ä»¶æ¥å¼€å¯Sessionæ”¯æŒï¼Œå½“ç„¶å‰ææ˜¯éœ€è¦åœ¨è¿™ä¹‹å‰ä½¿ç”¨cookieParserä¸­é—´ä»¶ï¼Œç”¨äºŽåˆ†æžå’Œå¤„ç†req.cookiesçš„cookieæ•°æ®(æˆ‘ä»¬çŸ¥é“sessionä¼šåˆ©ç”¨cookieè¿›è¡Œé€šä¿¡ä¿æŒçš„)ã€‚
 
     app.use(express.cookieParser());
     app.use(express.session({ secret: "keyboard cat" }));
 
-Ä¬ÈÏsessionÖÐ¼ä¼þÊ¹ÓÃConnect°ó¶¨µÄÄÚ´æ´æ´¢£¬µ«Ò²ÓÐÁíÍâµÄÊµÏÖ·½Ê½¡£±ÈÈçconnect-redis¾ÍÌá¹©ÁËÒ»¸öRedisµÄsession´æ´¢·½°¸£º
+é»˜è®¤sessionä¸­é—´ä»¶ä½¿ç”¨Connectç»‘å®šçš„å†…å­˜å­˜å‚¨ï¼Œä½†ä¹Ÿæœ‰å¦å¤–çš„å®žçŽ°æ–¹å¼ã€‚æ¯”å¦‚connect-rediså°±æä¾›äº†ä¸€ä¸ªRedisçš„sessionå­˜å‚¨æ–¹æ¡ˆï¼š
 
     var RedisStore = require('connect-redis');
     app.use(express.cookieParser());
-    app.use(express.session({ secret: "justjavac¼ÓÃÜ×Ö·û´®", store: new RedisStore }));
+    app.use(express.session({ secret: "justjavacåŠ å¯†å­—ç¬¦ä¸²", store: new RedisStore }));
 
-ÏÖÔÚreq.sessionºÍreq.sessionStoreÊôÐÔ¾Í¿ÉÒÔ±»ËùÓÐÂ·ÓÉ¼°ÏÂ¼¶ÖÐ¼ä¼þËù·ÃÎÊ£¬req.sessionµÄÊôÐÔ»á°éËæ×ÅÃ¿Ò»´ÎÏìÓ¦·¢ËÍ¸ø¿Í»§¶Ë£¬ÏÂÃæÊÇÒ»¸ö¹ºÎï³µµÄÀý×Ó£º
+çŽ°åœ¨req.sessionå’Œreq.sessionStoreå±žæ€§å°±å¯ä»¥è¢«æ‰€æœ‰è·¯ç”±åŠä¸‹çº§ä¸­é—´ä»¶æ‰€è®¿é—®ï¼Œreq.sessionçš„å±žæ€§ä¼šä¼´éšç€æ¯ä¸€æ¬¡å“åº”å‘é€ç»™å®¢æˆ·ç«¯ï¼Œä¸‹é¢æ˜¯ä¸€ä¸ªè´­ç‰©è½¦çš„ä¾‹å­ï¼š
 
     var RedisStore = require('connect-redis');
     app.use(express.bodyParser());
@@ -613,19 +613,19 @@ ExpressÖ§³ÖÐí¶àÄ£°åÒýÇæ£¬³£ÓÃµÄÓÐ£º
     app.use(express.session({ secret: "keyboard cat", store: new RedisStore }));
 
     app.post('/add-to-cart', function(req, res){
-      // ÀûÓÃbodyParser()ÖÐ¼ä¼þ´¦ÀíPOSTÌá½»µÄ±íµ¥Êý¾Ý
+      // åˆ©ç”¨bodyParser()ä¸­é—´ä»¶å¤„ç†POSTæäº¤çš„è¡¨å•æ•°æ®
       var items = req.body.items;
       req.session.items = items;
       res.redirect('back');
     });
 
     app.get('/add-to-cart', function(req, res){
-      // µ±Ò³Ãæ»Øµ½·µ»Ø²¢Í¨¹ýGETÇëÇó/add-to-cart Ê±
-      // ÎÒÃÇ¿ÉÒÔ¼ì²éreq.session.items && req.session.items.length£¬È»ºó½«ÐÅÏ¢´òÓ¡µ½Ò³Ãæ
+      // å½“é¡µé¢å›žåˆ°è¿”å›žå¹¶é€šè¿‡GETè¯·æ±‚/add-to-cart æ—¶
+      // æˆ‘ä»¬å¯ä»¥æ£€æŸ¥req.session.items && req.session.items.lengthï¼Œç„¶åŽå°†ä¿¡æ¯æ‰“å°åˆ°é¡µé¢
       if (req.session.items && req.session.items.length) {
         req.flash('info', 'You have %s items in your cart', req.session.items.length);
       }
       res.render('shopping-cart');
     });
 
-req.session¶ÔÏó»¹ÓµÓÐÐí¶àÆäËü·½·¨£¬ÈçSession#touch(), Session#destroy(), Session#regenerate()µÈÓÃÓÚsession´¦Àí£¬¸ü¶àÐÅÏ¢Çë²é¿´ [Connect SessionÎÄµµ](http://senchalabs.github.com/connect/middleware-session.html)¡£
+req.sessionå¯¹è±¡è¿˜æ‹¥æœ‰è®¸å¤šå…¶å®ƒæ–¹æ³•ï¼Œå¦‚Session#touch(), Session#destroy(), Session#regenerate()ç­‰ç”¨äºŽsessionå¤„ç†ï¼Œæ›´å¤šä¿¡æ¯è¯·æŸ¥çœ‹ [Connect Sessionæ–‡æ¡£](http://senchalabs.github.com/connect/middleware-session.html)ã€‚
