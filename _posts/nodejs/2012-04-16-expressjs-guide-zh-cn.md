@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Express.js 中文入门指引手册
-description: Express.js 中文入门指引手册
+title: Expressjs 中文入门指引手册
+description: Expressjs 中文入门指引手册
 keywords: node.js, javascript, expressjs
 category: nodejs
 tags: [nodejs, javascript, express.js]
