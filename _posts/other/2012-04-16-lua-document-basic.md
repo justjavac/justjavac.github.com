@@ -1,98 +1,98 @@
 ---
 layout: post
-title: lua½Å±¾ÎÄµµÖÐÎÄ·­Òë£¨»ù´¡£©
-description: lua½Å±¾ÎÄµµÖÐÎÄ·­Òë£¨»ù´¡£©
-keywords: ÊÖ²á,ÎÄµµ,·­Òë,lua
+title: luaè„šæœ¬æ–‡æ¡£ä¸­æ–‡ç¿»è¯‘ï¼ˆåŸºç¡€ï¼‰
+description: luaè„šæœ¬æ–‡æ¡£ä¸­æ–‡ç¿»è¯‘ï¼ˆåŸºç¡€ï¼‰
+keywords: æ‰‹å†Œ,æ–‡æ¡£,ç¿»è¯‘,lua
 category : other
-tags : [ÊÖ²á,ÎÄµµ,·­Òë,lua]
+tags : [æ‰‹å†Œ,æ–‡æ¡£,ç¿»è¯‘,lua]
 ---
  
-## ½éÉÜ
+## ä»‹ç»
  
-Lua¶Á×÷¡°Â¹°¡¡±£¬ÊÇÒ»ÖÖ¾Ý´´×÷ÕßËµµÄÀàPascal½Å±¾ÓïÑÔ¡£
-°ÍÎ÷ÈË×öµÄ£¬ÆäÃû×Ö"lua"ÊÇÎ÷°àÑÀÓïµÄÔÂÁÁ¡£
-LuaÊÇÄ¿Ç°ÔÚÓÎÏ·¹¤ÒµÖÐÓÃµÃ×î¶àµÄ½Å±¾ÓïÑÔ¡£
-ÓÅµãÊÇÖ´ÐÐËÙ¶È¿ì¡£
+Luaè¯»ä½œâ€œé¹¿å•Šâ€ï¼Œæ˜¯ä¸€ç§æ®åˆ›ä½œè€…è¯´çš„ç±»Pascalè„šæœ¬è¯­è¨€ã€‚
+å·´è¥¿äººåšçš„ï¼Œå…¶åå­—"lua"æ˜¯è¥¿ç­ç‰™è¯­çš„æœˆäº®ã€‚
+Luaæ˜¯ç›®å‰åœ¨æ¸¸æˆå·¥ä¸šä¸­ç”¨å¾—æœ€å¤šçš„è„šæœ¬è¯­è¨€ã€‚
+ä¼˜ç‚¹æ˜¯æ‰§è¡Œé€Ÿåº¦å¿«ã€‚
  
-## »ù±¾¸ÅÄî
+## åŸºæœ¬æ¦‚å¿µ
  
-Ò»¶Î½Å±¾¾ÍÊÇÒ»×éÃüÁîºÍÊý¾Ý¡£
+ä¸€æ®µè„šæœ¬å°±æ˜¯ä¸€ç»„å‘½ä»¤å’Œæ•°æ®ã€‚
 
-ÃüÁîµÄÊõÓï½Ð×÷ **Óï¾ä**£¬Ò»¶ÎÓï¾ä¿ÉÒÔÓÃ `do ... end` À¨ÆðÀ´¹¹³ÉÒ»¸öÓï¾ä¿é¡£
-Óï¾ä¿éÊÇÒ»¸öÏà¶Ô¶ÀÁ¢µÄ¿é£¬Âß¼­ÉÏµÈÍ¬ÓÚÒ»ÌõÓï¾ä¡£
+å‘½ä»¤çš„æœ¯è¯­å«ä½œ **è¯­å¥**ï¼Œä¸€æ®µè¯­å¥å¯ä»¥ç”¨ `do ... end` æ‹¬èµ·æ¥æž„æˆä¸€ä¸ªè¯­å¥å—ã€‚
+è¯­å¥å—æ˜¯ä¸€ä¸ªç›¸å¯¹ç‹¬ç«‹çš„å—ï¼Œé€»è¾‘ä¸Šç­‰åŒäºŽä¸€æ¡è¯­å¥ã€‚
  
-½Å±¾ÖÐÁ½¸ö¼õºÅ¡°--¡±ºóÃæµ½ÐÐÄ©µÄÄÚÈÝÎª **×¢ÊÍ**£¬½Å±¾½âÊÍÆ÷»áºöÂÔËüÃÇ¡£
-¶àÐÐ×¢ÊÍÎª¡°-- [[¡±´òÍ·Ö±µ½Æ¥ÅäµÄ¡°]]¡±¡£
+è„šæœ¬ä¸­ä¸¤ä¸ªå‡å·â€œ--â€åŽé¢åˆ°è¡Œæœ«çš„å†…å®¹ä¸º **æ³¨é‡Š**ï¼Œè„šæœ¬è§£é‡Šå™¨ä¼šå¿½ç•¥å®ƒä»¬ã€‚
+å¤šè¡Œæ³¨é‡Šä¸ºâ€œ-- [[â€æ‰“å¤´ç›´åˆ°åŒ¹é…çš„â€œ]]â€ã€‚
 
  
-**±êÊ¶·û** ÊÇ×ÖÄ¸»òÏÂ»®Ïß´òÍ·ÓÉ×ÖÄ¸¡¢ÏÂ»®ÏßºÍÊý×Ö×é³ÉµÄ±êÊ¶£¬ÓÃ×÷±äÁ¿Ãû»òº¯ÊýÃû¡£
+**æ ‡è¯†ç¬¦** æ˜¯å­—æ¯æˆ–ä¸‹åˆ’çº¿æ‰“å¤´ç”±å­—æ¯ã€ä¸‹åˆ’çº¿å’Œæ•°å­—ç»„æˆçš„æ ‡è¯†ï¼Œç”¨ä½œå˜é‡åæˆ–å‡½æ•°åã€‚
  
-## Êý¾Ý
+## æ•°æ®
 
-Êý¾Ý·Ö²»Í¬µÄÀàÐÍ¡£
+æ•°æ®åˆ†ä¸åŒçš„ç±»åž‹ã€‚
 
-LuaÖ§³ÖµÄÀàÐÍÓÐ£º
+Luaæ”¯æŒçš„ç±»åž‹æœ‰ï¼š
 
-    nil£º¿ÕÀàÐÍ£¬¼´Ã»ÓÐÊý¾Ý
-    boolean£º²¼¶ûÀàÐÍ£¬¼´Õæ(true)»ò¼Ù(false)
-    number£ºÊýÖµÀàÐÍ£¬Èç123£¬24.5£¬1.23e-12 (¼´1.23³Ë10µÄ-12´Î·½£©
-    string£º×Ö·û´®£¬¼´Ò»¶ÎÎÄ×Ö
-    table£ºÊý¾Ý±íÀàÐÍ£¬¼´¼ü-ÖµÊý¾Ý¶ÔµÄ¼¯ºÏ
-    function£ºº¯Êý£¬¼´Ò»¶ÎÃüÁî£¬ÔÚ½Å±¾ÖÐÃüÁîÒ²¿É×÷ÎªÊý¾Ý²Ù×÷
-    userdata£ºÓÃ»§Êý¾Ý£¬À©Õ¹µÄÊý¾ÝÀàÐÍ
-    thread£ºÏß³ÌÀàÐÍ
+    nilï¼šç©ºç±»åž‹ï¼Œå³æ²¡æœ‰æ•°æ®
+    booleanï¼šå¸ƒå°”ç±»åž‹ï¼Œå³çœŸ(true)æˆ–å‡(false)
+    numberï¼šæ•°å€¼ç±»åž‹ï¼Œå¦‚123ï¼Œ24.5ï¼Œ1.23e-12 (å³1.23ä¹˜10çš„-12æ¬¡æ–¹ï¼‰
+    stringï¼šå­—ç¬¦ä¸²ï¼Œå³ä¸€æ®µæ–‡å­—
+    tableï¼šæ•°æ®è¡¨ç±»åž‹ï¼Œå³é”®-å€¼æ•°æ®å¯¹çš„é›†åˆ
+    functionï¼šå‡½æ•°ï¼Œå³ä¸€æ®µå‘½ä»¤ï¼Œåœ¨è„šæœ¬ä¸­å‘½ä»¤ä¹Ÿå¯ä½œä¸ºæ•°æ®æ“ä½œ
+    userdataï¼šç”¨æˆ·æ•°æ®ï¼Œæ‰©å±•çš„æ•°æ®ç±»åž‹
+    threadï¼šçº¿ç¨‹ç±»åž‹
  
-±£´æÊý¾ÝµÄ¶«Î÷½Ð±äÁ¿¡£±äÁ¿·ÖÈ«¾Ö±äÁ¿ºÍ¾Ö²¿±äÁ¿¡£
-È«¾Ö±äÁ¿Ò»Ö±´æÔÚ£¬¾Ö²¿±äÁ¿Ö»Ö´ÐÐµ½ËüËùÔÚµÄ¾Ö²¿²Å´æÔÚ¡£
-Ó¦¸Ã¾¡Á¿Ê¹ÓÃ¾Ö²¿±äÁ¿£¬ÒÔ±ÜÃâÂß¼­´íÎó¡£
+ä¿å­˜æ•°æ®çš„ä¸œè¥¿å«å˜é‡ã€‚å˜é‡åˆ†å…¨å±€å˜é‡å’Œå±€éƒ¨å˜é‡ã€‚
+å…¨å±€å˜é‡ä¸€ç›´å­˜åœ¨ï¼Œå±€éƒ¨å˜é‡åªæ‰§è¡Œåˆ°å®ƒæ‰€åœ¨çš„å±€éƒ¨æ‰å­˜åœ¨ã€‚
+åº”è¯¥å°½é‡ä½¿ç”¨å±€éƒ¨å˜é‡ï¼Œä»¥é¿å…é€»è¾‘é”™è¯¯ã€‚
  
-Àý£º
+ä¾‹ï¼š
 
-        local x = 10        -- ¾Ö²¿±äÁ¿x±£´æÊýÖµ10
-        local title = "ÄãºÃ" -- ¾Ö²¿±äÁ¿title±£´æ×Ö·û´®"ÄãºÃ"
-        local dead = true   -- ¾Ö²¿±äÁ¿dead±£´æÕæ
+        local x = 10        -- å±€éƒ¨å˜é‡xä¿å­˜æ•°å€¼10
+        local title = "ä½ å¥½" -- å±€éƒ¨å˜é‡titleä¿å­˜å­—ç¬¦ä¸²"ä½ å¥½"
+        local dead = true   -- å±€éƒ¨å˜é‡deadä¿å­˜çœŸ
 
      
-        x = 10                -- È«¾Ö±äÁ¿x±£´æ10
-        do                    -- Óï¾ä¿é
-          local x = x         -- ¾Ö²¿±äÁ¿x±»¸³ÓèÈ«¾Ö±äÁ¿xµÄÖµ£¬Ö»ÔÚ¿éÄÚ´æÔÚ
-          print(x)            --> ÏÔÊ¾10
+        x = 10                -- å…¨å±€å˜é‡xä¿å­˜10
+        do                    -- è¯­å¥å—
+          local x = x         -- å±€éƒ¨å˜é‡xè¢«èµ‹äºˆå…¨å±€å˜é‡xçš„å€¼ï¼Œåªåœ¨å—å†…å­˜åœ¨
+          print(x)            --> æ˜¾ç¤º10
           x = x+1
-          do                  -- ÓÖÒ»¸öÄÚ²¿Óï¾ä¿é
-               local x = x+1     -- ÓÖÒ»¸ö¾Ö²¿±äÁ¿Ö»ÔÚ¸Ã¿éÄÚ´æÔÚ
-            print(x)          --> ÏÔÊ¾12
+          do                  -- åˆä¸€ä¸ªå†…éƒ¨è¯­å¥å—
+               local x = x+1     -- åˆä¸€ä¸ªå±€éƒ¨å˜é‡åªåœ¨è¯¥å—å†…å­˜åœ¨
+            print(x)          --> æ˜¾ç¤º12
           end
-          print(x)            --> ÏÔÊ¾11
+          print(x)            --> æ˜¾ç¤º11
         end
-        print(x)              --> ÏÔÊ¾10  È«¾Ö±äÁ¿xµÄÖµ
+        print(x)              --> æ˜¾ç¤º10  å…¨å±€å˜é‡xçš„å€¼
  
-## ×Ö·û´®
+## å­—ç¬¦ä¸²
  
-×Ö·û´®Êý¾ÝÊ¹ÓÃÒýºÅÀ¨ÆðÀ´ÒÔÇø±ðÓÚÆäËû·ûºÅ£¬×¢ÒâÊÇÓ¢ÎÄÒýºÅ¡£
+å­—ç¬¦ä¸²æ•°æ®ä½¿ç”¨å¼•å·æ‹¬èµ·æ¥ä»¥åŒºåˆ«äºŽå…¶ä»–ç¬¦å·ï¼Œæ³¨æ„æ˜¯è‹±æ–‡å¼•å·ã€‚
 
-Èç£º
+å¦‚ï¼š
 
         "Hello, world!"
     
-×Ö·û´®ÖÐ£¬ÓÃ¡°/"¡±±íÊ¾ÒýºÅ£¬ÓÃ¡°/'¡±±íÊ¾µ¥ÒýºÅ£¬ÓÃ¡°//¡±±íÊ¾¡°/¡±£¬ÓÃ¡°/n¡±±íÊ¾»»ÐÐ¡£
+å­—ç¬¦ä¸²ä¸­ï¼Œç”¨â€œ/"â€è¡¨ç¤ºå¼•å·ï¼Œç”¨â€œ/'â€è¡¨ç¤ºå•å¼•å·ï¼Œç”¨â€œ//â€è¡¨ç¤ºâ€œ/â€ï¼Œç”¨â€œ/nâ€è¡¨ç¤ºæ¢è¡Œã€‚
 
-## ±í´ïÊ½
+## è¡¨è¾¾å¼
  
-**±í´ïÊ½** ¾ÍÊÇËãÊ½¸ÅÄîµÄÀ©Õ¹¡£
+**è¡¨è¾¾å¼** å°±æ˜¯ç®—å¼æ¦‚å¿µçš„æ‰©å±•ã€‚
  
-ÊýÑ§±í´ïÊ½µÄÔËËã·ûÓÐ +, -, \* (³Ë), / (³ý), ^ (Ö¸Êý)£¬- (¸ººÅ)<br />
-Èç¹û²Ù×÷ÊýÊÇ×Ö·û´®ÀàÐÍ£¬²¢¿ÉÒÔ±»×ª»»³ÉÊýÖµ£¬Ôò½«×Ô¶¯×ª»»³ÉÊýÖµ
+æ•°å­¦è¡¨è¾¾å¼çš„è¿ç®—ç¬¦æœ‰ +, -, \* (ä¹˜), / (é™¤), ^ (æŒ‡æ•°)ï¼Œ- (è´Ÿå·)<br />
+å¦‚æžœæ“ä½œæ•°æ˜¯å­—ç¬¦ä¸²ç±»åž‹ï¼Œå¹¶å¯ä»¥è¢«è½¬æ¢æˆæ•°å€¼ï¼Œåˆ™å°†è‡ªåŠ¨è½¬æ¢æˆæ•°å€¼
  
-¹ØÏµÔËËã·û·µ»Ø²¼¶ûÖµtrue»òfalse£¬ÓÐ£º== £¨µÈÓÚ£©£¬~= £¨²»µÈÓÚ£©£¬< £¨Ð¡ÓÚ£©£¬> £¨´óÓÚ£©£¬<= £¨Ð¡ÓÚµÈÓÚ£©£¬>= £¨´óÓÚµÈÓÚ£©<br />
-×¢Òâ£¬¶ÔÊýÖµÀàÐÍ²»ÒªÓÃ==±È½Ï£¬Ó¦ÅÐ¶ÏÁ½ÊýµÄ²îÊÇ·ñÐ¡ÓÚÒ»¸ö×ã¹»Ð¡µÄÊý£¬·ñÔò¶ÔÓÐÐ©Êý¿´ÆðÀ´ÏàµÈÈ´²»ÏàµÈ¡£0 ³ýÍâ¡£
+å…³ç³»è¿ç®—ç¬¦è¿”å›žå¸ƒå°”å€¼trueæˆ–falseï¼Œæœ‰ï¼š== ï¼ˆç­‰äºŽï¼‰ï¼Œ~= ï¼ˆä¸ç­‰äºŽï¼‰ï¼Œ< ï¼ˆå°äºŽï¼‰ï¼Œ> ï¼ˆå¤§äºŽï¼‰ï¼Œ<= ï¼ˆå°äºŽç­‰äºŽï¼‰ï¼Œ>= ï¼ˆå¤§äºŽç­‰äºŽï¼‰<br />
+æ³¨æ„ï¼Œå¯¹æ•°å€¼ç±»åž‹ä¸è¦ç”¨==æ¯”è¾ƒï¼Œåº”åˆ¤æ–­ä¸¤æ•°çš„å·®æ˜¯å¦å°äºŽä¸€ä¸ªè¶³å¤Ÿå°çš„æ•°ï¼Œå¦åˆ™å¯¹æœ‰äº›æ•°çœ‹èµ·æ¥ç›¸ç­‰å´ä¸ç›¸ç­‰ã€‚0 é™¤å¤–ã€‚
  
-Âß¼­ÔËËã·û°üÀ¨£ºand £¨ºÍ£¬²¢ÇÒ£©£¬ or £¨»òÕß£©£¬not £¨·Ç£¬²»£©<br />
-Âß¼­ÔËËãµÄ²Ù×÷ÊýÒ»¶¨ÒªÊÇ²¼¶ûÀàÐÍ»ònil£¬nil±íÊ¾¿Õ£¬±»µ±×÷false´¦Àí¡£Ê¹ÓÃÆäËûÀàÐÍµÄ²Ù×÷Êý²»»á±¨´í£¬ÒòÎªÓÐÆäÌØ¶¨µÄ¹¦ÄÜ£¬µ«¼á¾ö²»ÍÆ¼öÊ¹ÓÃ¡£
+é€»è¾‘è¿ç®—ç¬¦åŒ…æ‹¬ï¼šand ï¼ˆå’Œï¼Œå¹¶ä¸”ï¼‰ï¼Œ or ï¼ˆæˆ–è€…ï¼‰ï¼Œnot ï¼ˆéžï¼Œä¸ï¼‰<br />
+é€»è¾‘è¿ç®—çš„æ“ä½œæ•°ä¸€å®šè¦æ˜¯å¸ƒå°”ç±»åž‹æˆ–nilï¼Œnilè¡¨ç¤ºç©ºï¼Œè¢«å½“ä½œfalseå¤„ç†ã€‚ä½¿ç”¨å…¶ä»–ç±»åž‹çš„æ“ä½œæ•°ä¸ä¼šæŠ¥é”™ï¼Œå› ä¸ºæœ‰å…¶ç‰¹å®šçš„åŠŸèƒ½ï¼Œä½†åšå†³ä¸æŽ¨èä½¿ç”¨ã€‚
  
-×Ö·û´®Á¬½ÓÔËËã·û£º.. £¨È¡µÃÁ½¸ö×Ö·û´®Á¬½ÓºóµÄ×Ö·û´®£©<br />
-Èç¹û²Ù×÷ÊýÊÇÊýÖµÐÍ£¬Ôò×Ô¶¯×ª»»Îª×Ö·û´®
+å­—ç¬¦ä¸²è¿žæŽ¥è¿ç®—ç¬¦ï¼š.. ï¼ˆå–å¾—ä¸¤ä¸ªå­—ç¬¦ä¸²è¿žæŽ¥åŽçš„å­—ç¬¦ä¸²ï¼‰<br />
+å¦‚æžœæ“ä½œæ•°æ˜¯æ•°å€¼åž‹ï¼Œåˆ™è‡ªåŠ¨è½¬æ¢ä¸ºå­—ç¬¦ä¸²
  
-ÓÅÏÈ¼¶£¬´Óµ×µ½¸ß£º
+ä¼˜å…ˆçº§ï¼Œä»Žåº•åˆ°é«˜ï¼š
 
     or
     and
@@ -100,78 +100,78 @@ LuaÖ§³ÖµÄÀàÐÍÓÐ£º
     ..
     +     -
     *     /
-    not   - (¸ººÅ)
+    not   - (è´Ÿå·)
     ^
        
-..ºÍ^ÊÇÓÒ½áºÏ£¬¾ÍÊÇËµ `2^2^3 == 2^(2^3)`¡£
+..å’Œ^æ˜¯å³ç»“åˆï¼Œå°±æ˜¯è¯´ `2^2^3 == 2^(2^3)`ã€‚
  
-Àý£º
+ä¾‹ï¼š
 
-    hp < 10 and not player.frozen -- hpÐ¡ÓÚ10 ²¢ÇÒ Íæ¼ÒÃ»ÓÐ±»±ù¶³ Ê±ÎªÕæ
+    hp < 10 and not player.frozen -- hpå°äºŽ10 å¹¶ä¸” çŽ©å®¶æ²¡æœ‰è¢«å†°å†» æ—¶ä¸ºçœŸ
  
-## Á÷³Ì¿ØÖÆÓï¾ä
+## æµç¨‹æŽ§åˆ¶è¯­å¥
  
-    while ±í´ïÊ½ do
-      Óï¾ä¿é
+    while è¡¨è¾¾å¼ do
+      è¯­å¥å—
     end
 
-Èç¹û±í´ïÊ½µÄ½á¹ûÎªtrue£¬ÔòÖ´ÐÐÓï¾ä¿é£¬µ½endºó·µ»ØwhileÔÙÑ­»·¡£
-Èç¹û±í´ïÊ½µÄ½á¹ûÎªfalse£¬ÔòÌø¹ýÓï¾ä¿éÖ´ÐÐendºóµÄÓï¾ä¡£
+å¦‚æžœè¡¨è¾¾å¼çš„ç»“æžœä¸ºtrueï¼Œåˆ™æ‰§è¡Œè¯­å¥å—ï¼Œåˆ°endåŽè¿”å›žwhileå†å¾ªçŽ¯ã€‚
+å¦‚æžœè¡¨è¾¾å¼çš„ç»“æžœä¸ºfalseï¼Œåˆ™è·³è¿‡è¯­å¥å—æ‰§è¡ŒendåŽçš„è¯­å¥ã€‚
  
     repeat
-      Óï¾ä¿é
-    until ±í´ïÊ½
+      è¯­å¥å—
+    until è¡¨è¾¾å¼
 
-ÏÈÖ´ÐÐÓï¾ä¿é£¬ÔÙÅÐ¶Ï±í´ïÊ½ÊÇ·ñÎªtrue£¬ÊÇÔò¼ÌÐøÏòÏÂÖ´ÐÐ£¬·ñÔò·µ»ØrepeatÖØ¸´¡£
+å…ˆæ‰§è¡Œè¯­å¥å—ï¼Œå†åˆ¤æ–­è¡¨è¾¾å¼æ˜¯å¦ä¸ºtrueï¼Œæ˜¯åˆ™ç»§ç»­å‘ä¸‹æ‰§è¡Œï¼Œå¦åˆ™è¿”å›žrepeaté‡å¤ã€‚
  
-Ñ­»·ÄÚ¿ÉÓÃbreakÓï¾äÌø³ö°üº¬¸ÃbreakµÄÒ»²ãÑ­»·¡£
+å¾ªçŽ¯å†…å¯ç”¨breakè¯­å¥è·³å‡ºåŒ…å«è¯¥breakçš„ä¸€å±‚å¾ªçŽ¯ã€‚
  
-    if ±í´ïÊ½ then
-      Óï¾ä¿é
+    if è¡¨è¾¾å¼ then
+      è¯­å¥å—
     else
-      Óï¾ä¿é
+      è¯­å¥å—
     end
 
      
-    if ±í´ïÊ½ then
-      Óï¾ä¿é
-    elseif ±í´ïÊ½ then
-      Óï¾ä¿é
+    if è¡¨è¾¾å¼ then
+      è¯­å¥å—
+    elseif è¡¨è¾¾å¼ then
+      è¯­å¥å—
     else
-      Óï¾ä¿é
+      è¯­å¥å—
     end
 
-¸ù¾Ý±í´ïÊ½µÄ½á¹¹Ñ¡ÔñÖ´ÐÐ¡£
+æ ¹æ®è¡¨è¾¾å¼çš„ç»“æž„é€‰æ‹©æ‰§è¡Œã€‚
  
-    for Ñ­»·±äÁ¿ = ³õÖµ, ÖÕÖµ do
-      Óï¾ä¿é
+    for å¾ªçŽ¯å˜é‡ = åˆå€¼, ç»ˆå€¼ do
+      è¯­å¥å—
     end
 
      
-    for Ñ­»·±äÁ¿ = ³õÖµ, ÖÕÖµ£¬Ã¿´ÎµÄÔöÁ¿ do
-      Óï¾ä¿é
+    for å¾ªçŽ¯å˜é‡ = åˆå€¼, ç»ˆå€¼ï¼Œæ¯æ¬¡çš„å¢žé‡ do
+      è¯­å¥å—
     end
 
-**¾ø¶Ô²»ÒªÔÚforÓï¾ä¿éÖÐÐÞ¸ÄÑ­»·±äÁ¿**¡£
+**ç»å¯¹ä¸è¦åœ¨forè¯­å¥å—ä¸­ä¿®æ”¹å¾ªçŽ¯å˜é‡**ã€‚
  
-## º¯Êý
+## å‡½æ•°
  
-º¯Êý¼´¿É±»ÖØ¸´µ÷ÓÃµÄÓï¾ä¿é¡£
+å‡½æ•°å³å¯è¢«é‡å¤è°ƒç”¨çš„è¯­å¥å—ã€‚
  
-    function º¯ÊýÃû(²ÎÊýÁÐ±í)
-      Óï¾ä¿é
+    function å‡½æ•°å(å‚æ•°åˆ—è¡¨)
+      è¯­å¥å—
     end
  
-²ÎÊýÁÐ±íÎªÓÃ¶ººÅ·Ö¸ôµÄ±äÁ¿ÃûÁÐ±í£¬µ±Ö´ÐÐµ½º¯ÊýÌåÄÚ²¿Ê±£¬ËûÃÇ¾ÍÊÇº¯ÊýÌåÄÚµÄ¾Ö²¿±äÁ¿£¬
-²¢ÇÒÒÑÓÃµ÷ÓÃÊ±Ö¸¶¨µÄÊµ²Î¸³Öµ¡£²ÎÊýÁÐ±í¿ÉÒÔÎª¿Õ¡£
+å‚æ•°åˆ—è¡¨ä¸ºç”¨é€—å·åˆ†éš”çš„å˜é‡ååˆ—è¡¨ï¼Œå½“æ‰§è¡Œåˆ°å‡½æ•°ä½“å†…éƒ¨æ—¶ï¼Œä»–ä»¬å°±æ˜¯å‡½æ•°ä½“å†…çš„å±€éƒ¨å˜é‡ï¼Œ
+å¹¶ä¸”å·²ç”¨è°ƒç”¨æ—¶æŒ‡å®šçš„å®žå‚èµ‹å€¼ã€‚å‚æ•°åˆ—è¡¨å¯ä»¥ä¸ºç©ºã€‚
  
-º¯Êý¿ÉÒÔ·µ»ØÖµ¸øµ÷ÓÃÕß£¬Ê¹ÓÃ 
+å‡½æ•°å¯ä»¥è¿”å›žå€¼ç»™è°ƒç”¨è€…ï¼Œä½¿ç”¨ 
 
-    return ·µ»ØÖµ
+    return è¿”å›žå€¼
     
-Ö´ÐÐreturnÖ®ºó½«´Óº¯Êý·µ»Øµ÷ÓÃÕßµÄÏÂÒ»ÌõÓï¾ä¼ÌÐøÖ´ÐÐ¡£
+æ‰§è¡Œreturnä¹‹åŽå°†ä»Žå‡½æ•°è¿”å›žè°ƒç”¨è€…çš„ä¸‹ä¸€æ¡è¯­å¥ç»§ç»­æ‰§è¡Œã€‚
  
-Àý£º
+ä¾‹ï¼š
 
     function max(a, b)
       if a > b then
@@ -183,93 +183,93 @@ LuaÖ§³ÖµÄÀàÐÍÓÐ£º
      
     local c = max(10, 20)   -- c == 20
  
-µ÷ÓÃº¯ÊýÊ±Ê¹ÓÃ
+è°ƒç”¨å‡½æ•°æ—¶ä½¿ç”¨
 
-    º¯ÊýÃû(²ÎÊýÁÐ±í) »ò º¯ÊýÃû()
+    å‡½æ•°å(å‚æ•°åˆ—è¡¨) æˆ– å‡½æ•°å()
     
-×¢ÒâÀ¨ºÅ±ØÐë¼ÓÉÏ£¬ÕâÑù²Å±íÊ¾º¯Êýµ÷ÓÃ£¬Ö´ÐÐº¯ÊýÄÚµÄÓï¾ä¡£
-Èç¹û²»¼ÓÔò±íÊ¾Ò»¸öº¯ÊýÀàÐÍµÄÖµ¡£\*
+æ³¨æ„æ‹¬å·å¿…é¡»åŠ ä¸Šï¼Œè¿™æ ·æ‰è¡¨ç¤ºå‡½æ•°è°ƒç”¨ï¼Œæ‰§è¡Œå‡½æ•°å†…çš„è¯­å¥ã€‚
+å¦‚æžœä¸åŠ åˆ™è¡¨ç¤ºä¸€ä¸ªå‡½æ•°ç±»åž‹çš„å€¼ã€‚\*
 
  
-µ±ÐèÒª·µ»Ø¶à¸öÖµÊ±£¬Ê¹ÓÃ
+å½“éœ€è¦è¿”å›žå¤šä¸ªå€¼æ—¶ï¼Œä½¿ç”¨
 
-    return ·µ»ØÖµ1£¬·µ»ØÖµ2£¬...
+    return è¿”å›žå€¼1ï¼Œè¿”å›žå€¼2ï¼Œ...
     
-µ÷ÓÃÊ±ÓÃ¶à¸ö±äÁ¿½ÓÊÕ·µ»ØÖµ£¬Àý£º
+è°ƒç”¨æ—¶ç”¨å¤šä¸ªå˜é‡æŽ¥æ”¶è¿”å›žå€¼ï¼Œä¾‹ï¼š
 
     local v1, v2, v3
     v1, v2, v3 = a_multi_return_value_funtion()
     
-×¢Òâ¾¡Á¿²»ÒªÊ¹ÓÃ¶à·µ»ØÖµ£¬ÒòÎª½Å±¾½âÊÍÆ÷²»¼ì²é±äÁ¿µÄ¸öÊýÊÇ·ñÆ¥Åä£¬¶àÔò¶ªÆú£¬ÉÙÔòÖÃnil£¬ÈÝÒ×µ¹ÖÂ´íÎó¶ø²»Ò×·¢ÏÖ¡£
+æ³¨æ„å°½é‡ä¸è¦ä½¿ç”¨å¤šè¿”å›žå€¼ï¼Œå› ä¸ºè„šæœ¬è§£é‡Šå™¨ä¸æ£€æŸ¥å˜é‡çš„ä¸ªæ•°æ˜¯å¦åŒ¹é…ï¼Œå¤šåˆ™ä¸¢å¼ƒï¼Œå°‘åˆ™ç½®nilï¼Œå®¹æ˜“å€’è‡´é”™è¯¯è€Œä¸æ˜“å‘çŽ°ã€‚
  
-## Êý¾Ý±í
+## æ•°æ®è¡¨
  
-Êý¾Ý±íÊÇ½Å±¾ÏµÍ³µÄºËÐÄÊý¾Ý½á¹¹£¬±¾ÖÊÉÏÊÇ´Ó¼üµ½ÖµµÄÓ³Éä¡£
-ÆäËüµÄÊý¾Ý½á¹¹¶¼ÓÉÊý¾Ý±í±íÊ¾¡£
+æ•°æ®è¡¨æ˜¯è„šæœ¬ç³»ç»Ÿçš„æ ¸å¿ƒæ•°æ®ç»“æž„ï¼Œæœ¬è´¨ä¸Šæ˜¯ä»Žé”®åˆ°å€¼çš„æ˜ å°„ã€‚
+å…¶å®ƒçš„æ•°æ®ç»“æž„éƒ½ç”±æ•°æ®è¡¨è¡¨ç¤ºã€‚
 
-ÈçÊý×é£¬ÒÔ´Ó1¿ªÊ¼µÄÕûÊýÎª¼üË÷Òý£º
+å¦‚æ•°ç»„ï¼Œä»¥ä»Ž1å¼€å§‹çš„æ•´æ•°ä¸ºé”®ç´¢å¼•ï¼š
 
     local arr = {10, 100, 1000} -- arr[1] = 10, arr[2] = 100, arr[3] = 1000
     
-´Êµä£¬ÒÔ×Ö·û´®Ë÷Òý£º
+è¯å…¸ï¼Œä»¥å­—ç¬¦ä¸²ç´¢å¼•ï¼š
 
-    local dict = {"pig" = "Öí", "dog" = "¹·"} -- dict["pig"] = "Öí" ¡­¡­
+    local dict = {"pig" = "çŒª", "dog" = "ç‹—"} -- dict["pig"] = "çŒª" â€¦â€¦
     
-¶ÔÏó£¬ÒÔÊôÐÔ£¨¼´¶Ô¶ÔÏóµÄÃèÊö£©ÃûË÷Òý£º
+å¯¹è±¡ï¼Œä»¥å±žæ€§ï¼ˆå³å¯¹å¯¹è±¡çš„æè¿°ï¼‰åç´¢å¼•ï¼š
 
-    local pig = {legs = 4, tail = 1, name = "Öí"} -- pig.legs = 4 ¡­¡­
+    local pig = {legs = 4, tail = 1, name = "çŒª"} -- pig.legs = 4 â€¦â€¦
     
-×÷Îª¶ÔÏóÊ¹ÓÃÊ±£¬×Ö·û´®×÷¼ü¡¢º¯Êý×÷Öµ¼´±íÊ¾¶ÔÏóµÄ·½·¨£¨¼´¶Ô¶ÔÏóµÄ²Ù×÷£©£¬µ÷ÓÃ·½·¨µÄÀý×Ó£º
+ä½œä¸ºå¯¹è±¡ä½¿ç”¨æ—¶ï¼Œå­—ç¬¦ä¸²ä½œé”®ã€å‡½æ•°ä½œå€¼å³è¡¨ç¤ºå¯¹è±¡çš„æ–¹æ³•ï¼ˆå³å¯¹å¯¹è±¡çš„æ“ä½œï¼‰ï¼Œè°ƒç”¨æ–¹æ³•çš„ä¾‹å­ï¼š
 
     deamon.attack(deamon, target, strength)
     
-Ò²¿É¼òÐ´Îª
+ä¹Ÿå¯ç®€å†™ä¸º
 
     deamon:attack(target, strength)
     
-¼´ÊÇËµÒòÎªµÚÒ»¸ö²ÎÊýÒ²ÊÇÊý¾Ý±í£¬ËùÒÔ½«µã»»³ÉÃ°ºÅ²¢Ê¡µôµÚÒ»¸ö²ÎÊý¡£
+å³æ˜¯è¯´å› ä¸ºç¬¬ä¸€ä¸ªå‚æ•°ä¹Ÿæ˜¯æ•°æ®è¡¨ï¼Œæ‰€ä»¥å°†ç‚¹æ¢æˆå†’å·å¹¶çœæŽ‰ç¬¬ä¸€ä¸ªå‚æ•°ã€‚
  
-## Ê¹ÓÃÊý¾Ý±íµÄforÓï¾ä
+## ä½¿ç”¨æ•°æ®è¡¨çš„forè¯­å¥
  
-    for Ñ­»·±äÁ¿i, Ñ­»·±äÁ¿v in ipairs(Êý¾Ý±ít) do
-      Óï¾ä¿é
+    for å¾ªçŽ¯å˜é‡i, å¾ªçŽ¯å˜é‡v in ipairs(æ•°æ®è¡¨t) do
+      è¯­å¥å—
     end
 
-iÊÇÕûÊý¼ü£¬vÊÇÖµ, Ñ­»·½«Öð´ÎµÃµ½ `(i = 1, v = t[1]), (i = 2, v = t[2]), ¡­¡­`
+iæ˜¯æ•´æ•°é”®ï¼Œvæ˜¯å€¼, å¾ªçŽ¯å°†é€æ¬¡å¾—åˆ° `(i = 1, v = t[1]), (i = 2, v = t[2]), â€¦â€¦`
  
-    for Ñ­»·±äÁ¿k, Ñ­»·±äÁ¿v in pairs(Êý¾Ý±ít) do
-      Óï¾ä¿é
+    for å¾ªçŽ¯å˜é‡k, å¾ªçŽ¯å˜é‡v in pairs(æ•°æ®è¡¨t) do
+      è¯­å¥å—
     end
 
-kÊÇ¼ü£¬vÊÇÖµ, Ñ­»·½«Öð´ÎµÃµ½Êý¾Ý±íÖÐµÄÃ¿Ò»¸ö¼ü-Öµ¶Ô¡£
+kæ˜¯é”®ï¼Œvæ˜¯å€¼, å¾ªçŽ¯å°†é€æ¬¡å¾—åˆ°æ•°æ®è¡¨ä¸­çš„æ¯ä¸€ä¸ªé”®-å€¼å¯¹ã€‚
  
-**¾ø¶Ô²»ÒªÔÚforÓï¾ä¿éÖÐÐÞ¸ÄÑ­»·±äÁ¿**¡£
+**ç»å¯¹ä¸è¦åœ¨forè¯­å¥å—ä¸­ä¿®æ”¹å¾ªçŽ¯å˜é‡**ã€‚
  
-## ³£ÓÃº¯Êý
+## å¸¸ç”¨å‡½æ•°
  
-`assert(v [, message])` -- ÓÃÓÚµ÷ÊÔ£¬¶ÏÑÔvÒ»¶¨Îªtrue£¬·ñÔòËµÃ÷ÓÐÂß¼­´íÎó£¬ÖÐ¶ÏÔËÐÐ²¢ÏÔÊ¾messageµÄÄÚÈÝ¡£
+`assert(v [, message])` -- ç”¨äºŽè°ƒè¯•ï¼Œæ–­è¨€vä¸€å®šä¸ºtrueï¼Œå¦åˆ™è¯´æ˜Žæœ‰é€»è¾‘é”™è¯¯ï¼Œä¸­æ–­è¿è¡Œå¹¶æ˜¾ç¤ºmessageçš„å†…å®¹ã€‚
  
-`tostring(e)` -- ½«e×ª»»³É×Ö·û´®
+`tostring(e)` -- å°†eè½¬æ¢æˆå­—ç¬¦ä¸²
  
-`tonumber(e [, base]£©`-- ½«e×ª»»³ÉÊýÖµ£¬Èç¹ûÖ¸¶¨base£¬Ôò°´Ö¸¶¨µÄ½øÖÆ×ª»»
+`tonumber(e [, base]ï¼‰`-- å°†eè½¬æ¢æˆæ•°å€¼ï¼Œå¦‚æžœæŒ‡å®šbaseï¼Œåˆ™æŒ‰æŒ‡å®šçš„è¿›åˆ¶è½¬æ¢
  
-`next(table [, index])` -- È¡Êý¾Ý±íÖÐindexµÄÏÂÒ»¸öË÷Òý¼ü£»Èç¹ûÊ¡ÂÔindexÔò·µ»ØµÚÒ»¸ö£»Èç¹ûindexÎª×îºóÒ»¸öÔò·µ»Ønil¡£
+`next(table [, index])` -- å–æ•°æ®è¡¨ä¸­indexçš„ä¸‹ä¸€ä¸ªç´¢å¼•é”®ï¼›å¦‚æžœçœç•¥indexåˆ™è¿”å›žç¬¬ä¸€ä¸ªï¼›å¦‚æžœindexä¸ºæœ€åŽä¸€ä¸ªåˆ™è¿”å›žnilã€‚
  
-`error(message [, level])` -- ÖÕÖ¹Ö´ÐÐ²¢¸ø³ö´íÎóÐÅÏ¢
+`error(message [, level])` -- ç»ˆæ­¢æ‰§è¡Œå¹¶ç»™å‡ºé”™è¯¯ä¿¡æ¯
  
-## Êý¾Ý±íº¯Êý
+## æ•°æ®è¡¨å‡½æ•°
  
-`table.sort(table [, comp])` -- ½«Êý¾Ý±íÔªËØ°´ÖµÅÅÐò¡£Èç¹ûÖ¸¶¨comp±È½Ïº¯Êý£¬ÔòÊ¹ÓÃcompº¯Êý½øÐÐ±È½Ï¡£compÓ¦ÓÐÁ½¸ö²ÎÊý£¬µ±a<bÊ±·µ»Øtrue¡£
+`table.sort(table [, comp])` -- å°†æ•°æ®è¡¨å…ƒç´ æŒ‰å€¼æŽ’åºã€‚å¦‚æžœæŒ‡å®šcompæ¯”è¾ƒå‡½æ•°ï¼Œåˆ™ä½¿ç”¨compå‡½æ•°è¿›è¡Œæ¯”è¾ƒã€‚compåº”æœ‰ä¸¤ä¸ªå‚æ•°ï¼Œå½“a<bæ—¶è¿”å›žtrueã€‚
 
-`table.insert(table, [pos,] value)` -- ÔÚtableµÄposË÷ÒýÎ»ÖÃ²åÈëvalue¡£
+`table.insert(table, [pos,] value)` -- åœ¨tableçš„posç´¢å¼•ä½ç½®æ’å…¥valueã€‚
  
-`table.remove(table [, pos])` -- É¾³ýtableÖÐË÷ÒýÎªposµÄÔªËØ£¬Ê¡ÂÔposÊ±Îª×îºóÒ»¸öÔªËØ¡£
+`table.remove(table [, pos])` -- åˆ é™¤tableä¸­ç´¢å¼•ä¸ºposçš„å…ƒç´ ï¼Œçœç•¥posæ—¶ä¸ºæœ€åŽä¸€ä¸ªå…ƒç´ ã€‚
  
-`table.foreachi(table, f)` -- ¶ÔtableÖÐÃ¿Ò»¸öÖµ£¬µ÷ÓÃfº¯Êý£¬²ÎÊýÎªÕûÊýË÷ÒýºÍÔªËØÖµ
+`table.foreachi(table, f)` -- å¯¹tableä¸­æ¯ä¸€ä¸ªå€¼ï¼Œè°ƒç”¨få‡½æ•°ï¼Œå‚æ•°ä¸ºæ•´æ•°ç´¢å¼•å’Œå…ƒç´ å€¼
  
-`table.foreach(table, f)` -- ¶ÔtableÖÐÃ¿Ò»¸öÖµ£¬µ÷ÓÃfº¯Êý£¬²ÎÊýÎª¼üºÍÖµ
+`table.foreach(table, f)` -- å¯¹tableä¸­æ¯ä¸€ä¸ªå€¼ï¼Œè°ƒç”¨få‡½æ•°ï¼Œå‚æ•°ä¸ºé”®å’Œå€¼
  
-ÊýÑ§¿âº¯Êý
+æ•°å­¦åº“å‡½æ•°
  
     math.abs     math.acos    math.asin    math.atan    math.atan2
     math.ceil    math.cos     math.deg     math.exp     math.floor
@@ -277,55 +277,55 @@ kÊÇ¼ü£¬vÊÇÖµ, Ñ­»·½«Öð´ÎµÃµ½Êý¾Ý±íÖÐµÄÃ¿Ò»¸ö¼ü-Öµ¶Ô¡£
     math.pow     math.rad     math.sin     math.sqrt    math.tan
     math.frexp   math.ldexp   math.random  math.randomseed
 
-## ÀàÐÍ
+## ç±»åž‹
 
-LuaÊÇ¶¯Ì¬ÀàÐÍÓïÑÔ£¬²»ÐèÒªÈËÎªÖ¸Ã÷±äÁ¿ÀàÐÍ£¬½Å±¾½âÊÍÆ÷»á×Ô¶¯ÅÐ¶Ï±äÁ¿ÀàÐÍ¡£
-¼òµ¥µÄËµ£¬¸ø±äÁ¿¸³Ê²Ã´ÀàÐÍµÄÖµ£¬±äÁ¿¾Í±ä³ÉÊ²Ã´ÀàÐÍ¡£
+Luaæ˜¯åŠ¨æ€ç±»åž‹è¯­è¨€ï¼Œä¸éœ€è¦äººä¸ºæŒ‡æ˜Žå˜é‡ç±»åž‹ï¼Œè„šæœ¬è§£é‡Šå™¨ä¼šè‡ªåŠ¨åˆ¤æ–­å˜é‡ç±»åž‹ã€‚
+ç®€å•çš„è¯´ï¼Œç»™å˜é‡èµ‹ä»€ä¹ˆç±»åž‹çš„å€¼ï¼Œå˜é‡å°±å˜æˆä»€ä¹ˆç±»åž‹ã€‚
 
-º¯Êý `type(var)` ·µ»Ø±äÁ¿varµÄÀàÐÍÃû¡£
+å‡½æ•° `type(var)` è¿”å›žå˜é‡varçš„ç±»åž‹åã€‚
 
-**×¢Òâ**£º²»Í¬ÀàÐÍµÄ±äÁ¿ÓÃ¡°==¡±±È½Ï×ÜÊÇÎª `false`£¬`false == nil` Ò²ÊÇ `false`¡£
-Îª±ÜÃâ²»Ò×²é³öµÄ´íÎó£¬²»Òª±È½Ï²»Í¬ÀàÐÍµÄ±äÁ¿¡£
+**æ³¨æ„**ï¼šä¸åŒç±»åž‹çš„å˜é‡ç”¨â€œ==â€æ¯”è¾ƒæ€»æ˜¯ä¸º `false`ï¼Œ`false == nil` ä¹Ÿæ˜¯ `false`ã€‚
+ä¸ºé¿å…ä¸æ˜“æŸ¥å‡ºçš„é”™è¯¯ï¼Œä¸è¦æ¯”è¾ƒä¸åŒç±»åž‹çš„å˜é‡ã€‚
 
-## ÒýÓÃÀàÐÍ
+## å¼•ç”¨ç±»åž‹
 
-Êý¾Ý±íÀàÐÍ£¨table£©£¬º¯ÊýÀàÐÍ£¨function£©£¬ÓÃ»§¶¨ÒåÀàÐÍ£¨userdata) ¶¼ÊÇÒýÓÃÀàÐÍ¡£
-¼´ËûÃÇÊÇ¶ÔÄÚÈÝµÄÒýÓÃ£¬¶à¸öÒýÓÃÀàÐÍµÄ±äÁ¿¿ÉÒÔÒýÓÃÍ¬Ò»¸öÄÚÈÝ¡£
+æ•°æ®è¡¨ç±»åž‹ï¼ˆtableï¼‰ï¼Œå‡½æ•°ç±»åž‹ï¼ˆfunctionï¼‰ï¼Œç”¨æˆ·å®šä¹‰ç±»åž‹ï¼ˆuserdata) éƒ½æ˜¯å¼•ç”¨ç±»åž‹ã€‚
+å³ä»–ä»¬æ˜¯å¯¹å†…å®¹çš„å¼•ç”¨ï¼Œå¤šä¸ªå¼•ç”¨ç±»åž‹çš„å˜é‡å¯ä»¥å¼•ç”¨åŒä¸€ä¸ªå†…å®¹ã€‚
 
-Àý£º
+ä¾‹ï¼š
 
     local table1 = {1, 2, 3, 4}
-       local table2 = table1             -- table1ºÍtable2¶¼ÒýÓÃÍ¬Ò»¸öÊý¾Ý±í
+       local table2 = table1             -- table1å’Œtable2éƒ½å¼•ç”¨åŒä¸€ä¸ªæ•°æ®è¡¨
        table2[2] = 99
        print(table1[2])                     -- table1[2] = 99
 
-Èç¹ûÒýÓÃÀàÐÍÃ»ÓÐÌá¹©×Ô¼ºµÄ==¡¢~=ÔËËã·û²Ù×÷£¬ÔòÖ´ÐÐÈ±Ê¡µÄ±È½ÏÔËËã£¬¼´ÅÐ¶ÏÁ½ÒýÓÃÊÇ·ñÖ¸ÏòÍ¬Ò»ÄÚÈÝ£»
-×¢Òâ²»ÊÇ±È½ÏÄÚÈÝÊÇ·ñÒ»ÖÂ¡£
+å¦‚æžœå¼•ç”¨ç±»åž‹æ²¡æœ‰æä¾›è‡ªå·±çš„==ã€~=è¿ç®—ç¬¦æ“ä½œï¼Œåˆ™æ‰§è¡Œç¼ºçœçš„æ¯”è¾ƒè¿ç®—ï¼Œå³åˆ¤æ–­ä¸¤å¼•ç”¨æ˜¯å¦æŒ‡å‘åŒä¸€å†…å®¹ï¼›
+æ³¨æ„ä¸æ˜¯æ¯”è¾ƒå†…å®¹æ˜¯å¦ä¸€è‡´ã€‚
 
-Àý£º
+ä¾‹ï¼š
 
-    {} == {}    -- ÓÀÔ¶Îªfalse£¬ÒòÎª´´½¨ÁËÁ½¸ö¿ÕÊý¾Ý±í£¬ËüÃÇ²»ÊÇÍ¬Ò»¸öÊý¾Ý±í¡£ 
+    {} == {}    -- æ°¸è¿œä¸ºfalseï¼Œå› ä¸ºåˆ›å»ºäº†ä¸¤ä¸ªç©ºæ•°æ®è¡¨ï¼Œå®ƒä»¬ä¸æ˜¯åŒä¸€ä¸ªæ•°æ®è¡¨ã€‚ 
 
-## ±äÁ¿
+## å˜é‡
 
-Lua´¦Àí¾Ö²¿±äÁ¿Òª±È´¦ÀíÈ«¾Ö±äÁ¿¿ì¼¸±¶£¬ËùÒÔ¾¡Á¿Ê¹ÓÃ¾Ö²¿±äÁ¿¡£
-ÔÚËùÓÐº¯ÊýÍâ²¿¼´È«¾ÖÒ²¿ÉÉùÃ÷¾Ö²¿±äÁ¿£¬²î±ðÊÇÈ«¾Ö±äÁ¿Ò»Ö±´æÔÚ£¬
-¶øÉùÃ÷ÔÚÈ«¾ÖµÄ¾Ö²¿±äÁ¿Ö»ÔÚ¸ÃÄ£¿éµÄÉú´æÆÚ´æÔÚ£¬²¢Ö»ÄÜ±»ÉùÃ÷ËüµÄÄ£¿é·ÃÎÊ¡£
+Luaå¤„ç†å±€éƒ¨å˜é‡è¦æ¯”å¤„ç†å…¨å±€å˜é‡å¿«å‡ å€ï¼Œæ‰€ä»¥å°½é‡ä½¿ç”¨å±€éƒ¨å˜é‡ã€‚
+åœ¨æ‰€æœ‰å‡½æ•°å¤–éƒ¨å³å…¨å±€ä¹Ÿå¯å£°æ˜Žå±€éƒ¨å˜é‡ï¼Œå·®åˆ«æ˜¯å…¨å±€å˜é‡ä¸€ç›´å­˜åœ¨ï¼Œ
+è€Œå£°æ˜Žåœ¨å…¨å±€çš„å±€éƒ¨å˜é‡åªåœ¨è¯¥æ¨¡å—çš„ç”Ÿå­˜æœŸå­˜åœ¨ï¼Œå¹¶åªèƒ½è¢«å£°æ˜Žå®ƒçš„æ¨¡å—è®¿é—®ã€‚
 
-Ê¹ÓÃÈ«¾Ö±äÁ¿ÓÐÄÑÒÔ·¢ÏÖµÄ´íÎó£¬Àý£º
+ä½¿ç”¨å…¨å±€å˜é‡æœ‰éš¾ä»¥å‘çŽ°çš„é”™è¯¯ï¼Œä¾‹ï¼š
 
     g_DeamonCount = 10
        ...
-       g_DeamonCuont = 20    -- Æ´Ð´´íÎó£¬oºÍuµßµ¹ÁË£¬µ«²»»á±»½Å±¾½âÊÍÆ÷·¢ÏÖ£¬
-                -- ÒòÎªÒ»¸öÐÂµÄÈ«¾Ö±äÁ¿±»´´½¨ÁË
+       g_DeamonCuont = 20    -- æ‹¼å†™é”™è¯¯ï¼Œoå’Œué¢ å€’äº†ï¼Œä½†ä¸ä¼šè¢«è„šæœ¬è§£é‡Šå™¨å‘çŽ°ï¼Œ
+                -- å› ä¸ºä¸€ä¸ªæ–°çš„å…¨å±€å˜é‡è¢«åˆ›å»ºäº†
 
-LuaÕýÔÚ¼ÓÈë `global` ¹Ø¼ü×ÖÒÔ½â¾ö´ËÎÊÌâ¡£
+Luaæ­£åœ¨åŠ å…¥ `global` å…³é”®å­—ä»¥è§£å†³æ­¤é—®é¢˜ã€‚
 
-¶ÁÈ¡Î´¸³ÖµµÄ±äÁ¿Ò²²»»á±¨´í£¬ËùÒÔ×îºÃÉùÃ÷±äÁ¿Ê±¸³¸öÈ±Ê¡Öµ¡£ 
+è¯»å–æœªèµ‹å€¼çš„å˜é‡ä¹Ÿä¸ä¼šæŠ¥é”™ï¼Œæ‰€ä»¥æœ€å¥½å£°æ˜Žå˜é‡æ—¶èµ‹ä¸ªç¼ºçœå€¼ã€‚ 
 
-## º¯ÊýÇ¶Ì×
+## å‡½æ•°åµŒå¥—
 
-º¯Êý¼ÈÊÇ¿ÉÖ´ÐÐµÄÃüÁî£¬Ò²ÊÇ¿ÉÊ¹ÓÃµÄÊý¾Ý£¬ËùÒÔº¯ÊýÂú×ã±äÁ¿µÄ×÷ÓÃÓò¹æÔò£¬¼´Ö»ÔÚÉùÃ÷ËüµÄ¿éÄÚ´æÔÚ£¬Àý£º
+å‡½æ•°æ—¢æ˜¯å¯æ‰§è¡Œçš„å‘½ä»¤ï¼Œä¹Ÿæ˜¯å¯ä½¿ç”¨çš„æ•°æ®ï¼Œæ‰€ä»¥å‡½æ•°æ»¡è¶³å˜é‡çš„ä½œç”¨åŸŸè§„åˆ™ï¼Œå³åªåœ¨å£°æ˜Žå®ƒçš„å—å†…å­˜åœ¨ï¼Œä¾‹ï¼š
 
     function foo()
          ...
@@ -334,58 +334,58 @@ LuaÕýÔÚ¼ÓÈë `global` ¹Ø¼ü×ÖÒÔ½â¾ö´ËÎÊÌâ¡£
          function foo()
            ...
          end
-         foo()                   -- µ÷ÓÃdo...endÄÚµÄfoo()
+         foo()                   -- è°ƒç”¨do...endå†…çš„foo()
        end
-       foo()               -- µ÷ÓÃÈ«¾ÖµÄfoo()
+       foo()               -- è°ƒç”¨å…¨å±€çš„foo()
 
-¼´ `function foo()..end` µÈÍ¬ÓÚ `local foo = function()...end`
+å³ `function foo()..end` ç­‰åŒäºŽ `local foo = function()...end`
 
-## Ò»Ð©¿âº¯Êý
+## ä¸€äº›åº“å‡½æ•°
 
-`dofile(ÎÄ¼þÃû)` -- Ö´ÐÐÖ¸¶¨ÎÄ¼þÖÐµÄ½Å±¾
+`dofile(æ–‡ä»¶å)` -- æ‰§è¡ŒæŒ‡å®šæ–‡ä»¶ä¸­çš„è„šæœ¬
 
-`print(e1, e2, ...)` -- ÏÔÊ¾±äÁ¿»ò³£Á¿µÄÖµ
+`print(e1, e2, ...)` -- æ˜¾ç¤ºå˜é‡æˆ–å¸¸é‡çš„å€¼
 
-`math.abs(v)` -- È¡vµÄ¾ø¶ÔÖµ
+`math.abs(v)` -- å–vçš„ç»å¯¹å€¼
 
-`math.acos(v)`, `math.asin(v)` -- ·´ÓàÏÒ£¬·´ÕýÏÒ
+`math.acos(v)`, `math.asin(v)` -- åä½™å¼¦ï¼Œåæ­£å¼¦
 
-`math.atan(y/x)`, `math.atan2(y, x)` -- ·´ÕýÇÐ£¬Ç°ÕßÖ»ÊÊÓÃÓÚµÚÒ»ÏóÏÞ£¬ºóÕß¿ÉÓÃÓÚËùÓÐÏóÏÞ
+`math.atan(y/x)`, `math.atan2(y, x)` -- åæ­£åˆ‡ï¼Œå‰è€…åªé€‚ç”¨äºŽç¬¬ä¸€è±¡é™ï¼ŒåŽè€…å¯ç”¨äºŽæ‰€æœ‰è±¡é™
 
-`math.floor(v)` -- È¡Ð¡ÓÚµÈÓÚvµÄ×î´óÕûÊý
+`math.floor(v)` -- å–å°äºŽç­‰äºŽvçš„æœ€å¤§æ•´æ•°
 
-`math.ceil(v)` -- È¡´óÓÚµÈÓÚvµÄ×îÐ¡ÕûÊý
+`math.ceil(v)` -- å–å¤§äºŽç­‰äºŽvçš„æœ€å°æ•´æ•°
 
-`math.cos(v)`, `math.sin(v)`, `math.tan(v)` -- È¡ÓàÏÒ£¬ÕýÏÒ£¬ÕýÇÐ
+`math.cos(v)`, `math.sin(v)`, `math.tan(v)` -- å–ä½™å¼¦ï¼Œæ­£å¼¦ï¼Œæ­£åˆ‡
 
-`math.deg(v)` -- »¡¶È±ä½Ç¶È
+`math.deg(v)` -- å¼§åº¦å˜è§’åº¦
 
-`math, rad(v)` -- ½Ç¶È±ä»¡¶È
+`math, rad(v)` -- è§’åº¦å˜å¼§åº¦
 
-`math.exp(v)` -- È¡eµÄv´ÎÃÝ
+`math.exp(v)` -- å–eçš„væ¬¡å¹‚
 
-`math.log(v)` -- È¡ÒÔeÎªµ×µÄ¶ÔÊý£¨×ÔÈ»¶ÔÊý£©
+`math.log(v)` -- å–ä»¥eä¸ºåº•çš„å¯¹æ•°ï¼ˆè‡ªç„¶å¯¹æ•°ï¼‰
 
-`math.log10(v)` -- È¡ÒÔ10Îªµ×µÄ¶ÔÊý
+`math.log10(v)` -- å–ä»¥10ä¸ºåº•çš„å¯¹æ•°
 
-`math.pow(x, y)` -- ¼´xµÄy´ÎÃÝ
+`math.pow(x, y)` -- å³xçš„yæ¬¡å¹‚
 
-`math.min(v1, v2, ...)`, `math.max(v1, v2, ...)` -- È¡×îÐ¡µÄ£¬×î´óµÄ
+`math.min(v1, v2, ...)`, `math.max(v1, v2, ...)` -- å–æœ€å°çš„ï¼Œæœ€å¤§çš„
 
-`math.mod(v1, v2)` -- È¡v1 / v2µÄÓàÊý
+`math.mod(v1, v2)` -- å–v1 / v2çš„ä½™æ•°
 
-`math.sqrt(v)` -- È¡vµÄÆ½·½¸ù
+`math.sqrt(v)` -- å–vçš„å¹³æ–¹æ ¹
 
-`math.random()` -- È¡0µ½1µÄËæ»úÐ¡Êý
+`math.random()` -- å–0åˆ°1çš„éšæœºå°æ•°
 
-`math.random(upper)` -- È¡1µ½upperµÄËæ»úÕûÊý
+`math.random(upper)` -- å–1åˆ°upperçš„éšæœºæ•´æ•°
 
-`math.random(lower, upper)` -- È¡lowerµ½upperµÄËæ»úÕûÊý
+`math.random(lower, upper)` -- å–loweråˆ°upperçš„éšæœºæ•´æ•°
 
-`math.randomseed(seed)` -- ÖÃËæ»úÊýÖÖ×Ó
+`math.randomseed(seed)` -- ç½®éšæœºæ•°ç§å­
 
-## Ð´ÓÎÏ·½Å±¾µÄ×¢ÒâÊÂÏî
+## å†™æ¸¸æˆè„šæœ¬çš„æ³¨æ„äº‹é¡¹
 
-¾¡Á¿Ê¹ÓÃ±¾ÏµÁÐÎÄµµÖÐÌáµ½µÄÓÃ·¨£ºLua±¾ÉíÓï·¨ºÜËÉ£¬ÓÃ·¨ºÜÁé»î£¬ÔÚ¿´ÆäËüÎÄµµºÍÑùÀýÊ±»áÓÐÔÚ´ËÃ»ÓÐÌáµ½µÄÓï·¨ÄÚÈÝ£¬
-ÕâÐ©Óï·¨ÄÚÈÝ²»ÊÇ±ØÒªµÄ£¬µ«È´ÈÝÒ×µ¼ÖÂ´íÎó»ò´øÀ´¹ý´óµÄ¸´ÔÓÐÔ¡£
-ÀýÈçÓÃ `(test) and v1 or v2` À´Ä£ÄâCÓïÑÔµÄÈýÔª±í´ïÊ½£¬ÎÒÃÇ²»ÍÆ¼öÊ¹ÓÃ¡£
+å°½é‡ä½¿ç”¨æœ¬ç³»åˆ—æ–‡æ¡£ä¸­æåˆ°çš„ç”¨æ³•ï¼šLuaæœ¬èº«è¯­æ³•å¾ˆæ¾ï¼Œç”¨æ³•å¾ˆçµæ´»ï¼Œåœ¨çœ‹å…¶å®ƒæ–‡æ¡£å’Œæ ·ä¾‹æ—¶ä¼šæœ‰åœ¨æ­¤æ²¡æœ‰æåˆ°çš„è¯­æ³•å†…å®¹ï¼Œ
+è¿™äº›è¯­æ³•å†…å®¹ä¸æ˜¯å¿…è¦çš„ï¼Œä½†å´å®¹æ˜“å¯¼è‡´é”™è¯¯æˆ–å¸¦æ¥è¿‡å¤§çš„å¤æ‚æ€§ã€‚
+ä¾‹å¦‚ç”¨ `(test) and v1 or v2` æ¥æ¨¡æ‹ŸCè¯­è¨€çš„ä¸‰å…ƒè¡¨è¾¾å¼ï¼Œæˆ‘ä»¬ä¸æŽ¨èä½¿ç”¨ã€‚
