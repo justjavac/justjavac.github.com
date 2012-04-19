@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Web.py Cookbook 简体中文版 - Web.py using FastCGI and Apache 2
-description: Web.py Cookbook 简体中文版 - Web.py using FastCGI and Apache 2
+title: Web.py Cookbook 绠�浣撲腑鏂囩増 - Web.py using FastCGI and Apache 2
+description: Web.py Cookbook 绠�浣撲腑鏂囩増 - Web.py using FastCGI and Apache 2
 keywords: python, web.py, cookbook
 category : python
 tags : [python, web.py, cookbook]

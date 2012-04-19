@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Web.py Cookbook 简体中文版 - deploying web.py with nginx and mod_wsgi
-description: Web.py Cookbook 简体中文版 - deploying web.py with nginx and mod_wsgi
+title: Web.py Cookbook 绠�浣撲腑鏂囩増 - deploying web.py with nginx and mod_wsgi
+description: Web.py Cookbook 绠�浣撲腑鏂囩増 - deploying web.py with nginx and mod_wsgi
 keywords: python, web.py, cookbook
 category : python
 tags : [python, web.py, cookbook]

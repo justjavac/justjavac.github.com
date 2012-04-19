@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Web.py Cookbook 简体中文版 - CGI deployment on Apache
-description: Web.py Cookbook 简体中文版 - CGI deployment on Apache
+title: Web.py Cookbook 绠�浣撲腑鏂囩増 - CGI deployment on Apache
+description: Web.py Cookbook 绠�浣撲腑鏂囩増 - CGI deployment on Apache
 keywords: python, web.py, cookbook
 category : python
 tags : [python, web.py, cookbook]
