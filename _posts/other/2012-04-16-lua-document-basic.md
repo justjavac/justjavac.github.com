@@ -2,9 +2,9 @@
 layout: post
 title: lua脚本文档中文翻译（基础）
 description: lua脚本文档中文翻译（基础）
-keywords: 手册,文档,翻译,lua
+keywords: 手册, 文档, 翻译, lua
 category : other
-tags : [手册,文档,翻译,lua]
+tags : [手册, 文档, 翻译, lua]
 ---
  
 ## 介绍
