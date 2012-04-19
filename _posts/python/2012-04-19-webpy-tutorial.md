@@ -223,5 +223,5 @@ web.py 还有一些帮助我们debug的工具。当它在内建的服务器中�
 ## 下一步是什么?
 
 * [更多文档](http://webpy.org/docs/0.3)
-* [Cookbook](http://webpy.org/cookbook)
+* [Cookbook](http://justjavac.com/python/2012/04/19/webpy-cookbook/)
 * [code samples](http://webpy.org/src)
