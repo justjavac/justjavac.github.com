@@ -55,7 +55,7 @@ tags : [python, web.py]
 <pre><code>sudo python setup.py install
 </code></pre>
 
-<p>查看 <a href="http://justjavac.com/python/2012/04/19/webpy3-tutorial-recommended_setup/">推荐设置</a>.</p>
+<p>查看 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial-recommended_setup/">推荐设置</a>.</p>
 
 <p>另外一个选择是使用<a href="http://peak.telecommunity.com/DevCenter/EasyInstall">Easy Install</a>. Easy Install 使用如下：</p>
 
@@ -64,7 +64,7 @@ tags : [python, web.py]
 
 <h2 name="dev">开发</h2>
 
-<p>web.py 内置了web服务器。可以按照 <a href="http://justjavac.com/python/2012/04/19/webpy3-tutorial/">tutorial</a> 学习如何写一个Web应用。 写完后，将你的代码放到 <code>code.py</code> 并如下面的方法来启动服务器：</p>
+<p>web.py 内置了web服务器。可以按照 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial/">tutorial</a> 学习如何写一个Web应用。 写完后，将你的代码放到 <code>code.py</code> 并如下面的方法来启动服务器：</p>
 
 <pre><code> python code.py
 </code></pre>
