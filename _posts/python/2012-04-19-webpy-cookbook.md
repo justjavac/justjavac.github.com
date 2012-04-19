@@ -24,13 +24,13 @@ tags : [python, web.py]
 -------------------------------------------------
 
 ##基本应用:
-* [Hello World](helloworld.zh-cn)
-* [提供静态文件访问](staticfiles.zh-cn)
-* [理解URL控制](url_handling.zh-cn)
-* [跳转与重定向](redirect%20seeother.zh-cn)
-* [使用子应用](subapp.zh-cn)
-* [提供XML访问](xmlfiles.zh-cn)
-* [从post读取原始数据](postbasic.zh-cn)
+* [Hello World](http://justjavac.com/python/2012/04/19/webpy-cookbook-helloworld/)
+* [提供静态文件访问](http://justjavac.com/python/2012/04/19/webpy-cookbook-staticfiles/)
+* [理解URL控制](http://justjavac.com/python/2012/04/19/webpy-cookbook-url-handling/)
+* [跳转与重定向](http://justjavac.com/python/2012/04/19/webpy-cookbook-redirect-seeother/)
+* [使用子应用](http://justjavac.com/python/2012/04/19/webpy-cookbook-subapp/)
+* [提供XML访问](http://justjavac.com/python/2012/04/19/webpy-cookbook-xmlfiles/)
+* [从post读取原始数据](http://justjavac.com/python/2012/04/19/webpy-cookbook-postbasic/)
 
 ##高级应用
 * [用web.ctx获得客户端信息](ctx.zh-cn)

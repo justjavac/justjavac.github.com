@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Web.py Cookbook 简体中文版 - 提供静态文件 (诸如js脚本, css样式表和图象文件)
+title: Web.py Cookbook 简体中文版 - 提供静态文件
+tagline: (诸如js脚本, css样式表和图象文件)
 description: Web.py Cookbook 简体中文版 - 提供静态文件 (诸如js脚本, css样式表和图象文件)
 keywords: python, web.py, cookbook
 category : python
