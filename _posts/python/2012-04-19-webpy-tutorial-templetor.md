@@ -7,8 +7,7 @@ category : python
 tags : [python, web.py]
 ---
 
-<a name="introduction"></a>
-## Introduction
+<h2 name="introduction">Introduction</h2>
 
 <style>
 pre {
@@ -40,10 +39,10 @@ web.py 的模板语言叫做 `Templetor`，它能负责将 python 的强大功�
 第二行中的 `$name` 将会用 `name` 的值来替换。
 
 <div class="warning">
-如果是从 web.py 0.2 升级请看这里 <a href="#upgrading">升级</a> 部分。
+如果是从 web.py 0.2 升级请看这里 <a href="#upgrading">升级 </a> 部分。
 </div>
 
-<a name="using"></a>
+<a name="using"> </a>
 ## 使用模板系统
 
 通用渲染模板的方法：
@@ -64,7 +63,7 @@ web.py 的模板语言叫做 `Templetor`，它能负责将 python 的强大功�
     hello = web.template.Template(template)
     return hello('world')
 
-<a name="syntax"></a>
+<a name="syntax"> </a>
 ## 语法
 
 ### 表达式用法
@@ -231,7 +230,7 @@ web.py 的模板语言叫做 `Templetor`，它能负责将 python 的强大功�
     >>> str(out)
     '\n\n<div>\nhello world\n</div>\n'
 
-<a name="builtins"></a>
+<a name="builtins"> </a>
 ## 内置 和 全局
 
 像 python 的任何函数一样，模板系统同样可以使用内置以及局部参数。很多内置的公共方法像 `range`，`min`，`max`等，以及布尔值 `True` 和 `False`，在模板中都是可用的。部分内置和全局对象也可以使用在模板中。
@@ -249,7 +248,7 @@ web.py 的模板语言叫做 `Templetor`，它能负责将 python 的强大功�
     # 禁用所有内置方法
     render = web.template.render('templates', builtins={})
 
-<a name="security"></a>
+<a name="security"> </a>
 ## 安全
 
 模板的设计想法之一是允许非高级用户来写模板，如果要使模板更安全，可在模板中禁用以下方法：
@@ -260,7 +259,7 @@ web.py 的模板语言叫做 `Templetor`，它能负责将 python 的强大功�
 
 如果模板中使用以上提及的会引发异常 `SecurityException`。
 
-<a name="upgrading"></a>
+<a name="upgrading"> </a>
 ## 从 web.py 0.2 升级
 
 新版本大部分兼容早期版本，但仍有部分使用方法会无法运行，看看以下原因：

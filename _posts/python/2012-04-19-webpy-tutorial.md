@@ -127,7 +127,7 @@ URL 的后面的 ? 看起来不好看？修改下 URL 配置：
     
 现在访问 /Joe 看看，它会显示 hello Joe。
 
-如果学习更多关于 web.py 的模板处理，请访问 [web.py 模板](http://webpy.org/docs/0.3/templetor).
+如果学习更多关于 web.py 的模板处理，请访问 [web.py 模板](http://justjavac.com/python/2012/04/19/webpy-tutorial-templetor/).
 
 ## 数据库操作
 
