@@ -18,7 +18,7 @@ title: 实时语言切换
 
 ## 解法:
 
- * 首先你必须阅读 [模板语言中的i18n支持](i18n_support_in_template_file.zh-cn), 然后尝试下面的代码。
+ * 首先你必须阅读 [模板语言中的i18n支持](http://justjavac.com/python/2012/04/19/webpy-cookbook-i18n-support-in-template-file), 然后尝试下面的代码。
 
 文件: code.py
 
@@ -112,7 +112,7 @@ title: 实时语言切换
 
     $_('Hello')
 
-不要忘记生成必要的po&mo语言文件。参考: [模板语言中的i18n支持](i18n_support_in_template_file.zh-cn)
+不要忘记生成必要的po&mo语言文件。参考: [模板语言中的i18n支持](http://justjavac.com/python/2012/04/19/webpy-cookbook-i18n-support-in-template-file)
 
 现在运行code.py:
 

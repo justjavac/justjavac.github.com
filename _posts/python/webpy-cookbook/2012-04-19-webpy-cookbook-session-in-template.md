@@ -7,9 +7,11 @@ category : python
 tags : [python, web.py]
 ---
 
-`问题`: 我想在模板中使用session（比如：读取并显示session.username）
+## 问题: 
 
-`解决`:
+我想在模板中使用session（比如：读取并显示session.username）
+
+## 解决:
 
 在应用程序中的代码:
 

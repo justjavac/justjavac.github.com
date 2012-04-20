@@ -13,7 +13,7 @@ tags : [python, web.py]
 
 ## 解法
 
-*注意！！！：session并不能在调试模式(Debug mode)下正常工作，这是因为session与调试模试下的重调用相冲突(有点类似firefox下著名的Firebug插件，使用Firebug插件分析网页时，会在火狐浏览器之外单独对该网页发起请求，所以相当于同时访问该网页两次)，下一节中我们会给出在调试模式下使用session的解决办法。*
+**注意**！！！：session并不能在调试模式(Debug mode)下正常工作，这是因为session与调试模试下的重调用相冲突(有点类似firefox下著名的Firebug插件，使用Firebug插件分析网页时，会在火狐浏览器之外单独对该网页发起请求，所以相当于同时访问该网页两次)，下一节中我们会给出在调试模式下使用session的解决办法。
 
 `web.session`模块提供session支持。下面是一个简单的例子－－统计有多少人正在使用session(session计数器)：
 
