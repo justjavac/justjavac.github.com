@@ -13,7 +13,7 @@ tags : [python, web.py, cookbook]
 
 ## 方案
 
-创建一个钩子并使用sqlalchemy的scoped session
+创建一个钩子并使用sqlalchemy的 [scoped session]
 (http://www.sqlalchemy.org/docs/05/session.html#unitofwork_contextual)
 
 

@@ -38,7 +38,7 @@ tags : [python, web.py]
 </ul>
 
 
-<h2 name="install">安装</h2>
+<h2 id="install">安装</h2>
 
 <p>安装web.py, 请先下载：</p>
 
@@ -62,7 +62,7 @@ tags : [python, web.py]
 <pre><code>easy_install web.py
 </code></pre>
 
-<h2 name="dev">开发</h2>
+<h2 id="dev">开发</h2>
 
 <p>web.py 内置了web服务器。可以按照 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial/">tutorial</a> 学习如何写一个Web应用。 写完后，将你的代码放到 <code>code.py</code> 并如下面的方法来启动服务器：</p>
 
@@ -71,7 +71,7 @@ tags : [python, web.py]
 
 <p>打开你的浏览器输入 <a href="http://localhost:8080/">http://localhost:8080/</a> 查看页面。 若要制定另外的端口，使用 <code>python code.py 1234</code>。</p>
 
-<h2 name="prod">产品</h2>
+<h2 id="prod">产品</h2>
 
 <p>现在所运行 web.py 程序的web服务器是挺不错的， 但绝大多数网站还是需要更加专业一些的web服务器。web.py 实现了 <a href="http://www.python.org/dev/peps/pep-0333/">WSGI</a> 并能在任何兼容它的服务器上运行。 WSGI 是一个web服务器与应用程序之间的通用API, 就如Java 的 Servlet 接口。 你需要安装 <a href="http://trac.saddi.com/flup">flup</a> (<a href="http://www.saddi.com/software/flup/dist/">download here</a>) 使web.py 支持with CGI， FastCGI 或 SCGI， flup提供了这些API的WSGI接口。</p>
 
@@ -82,9 +82,9 @@ tags : [python, web.py]
 
 <p>并运行 <code>chmod +x code.py</code> 添加可执行属性。</p>
 
-<h3 name="lighttpd">LightTPD</h3>
+<h3 id="lighttpd">LightTPD</h3>
 
-<h4 name="lighttpdfastcgi">.. 使用 FastCGI</h4>
+<h4 id="lighttpdfastcgi">.. 使用 FastCGI</h4>
 
 <p>在产品中通过FastCGI结合lighttpd是web.py使用的一种推荐方法。 <a href="http://reddit.com/">reddit.com</a> 通过该方法来处理百万次的点击。</p>
 
@@ -125,9 +125,9 @@ tags : [python, web.py]
 )
 </code></pre>
 
-<h3 name="apache">Apache</h3>
+<h3 id="apache">Apache</h3>
 
-<h4 name="apachecgi">.. 使用 CGI</h4>
+<h4 id="apachecgi">.. 使用 CGI</h4>
 
 <p>添加以下到 <code>httpd.conf</code> 或 <code>apache2.conf</code>。</p>
 
@@ -135,7 +135,7 @@ tags : [python, web.py]
 ScriptAlias /foo/ /path/to/code.py
 </code></pre>
 
-<h4 name="apachecgihtaccess">.. 使用 CGI .htaccess</h4>
+<h4 id="apachecgihtaccess">.. 使用 CGI .htaccess</h4>
 
 <p>CGI很容易配置， 但不适合高性能网站。
 添加以下到你的 <code>.htaccess</code>：</p>
@@ -165,7 +165,7 @@ def cgidebugerror():
 web.internalerror = cgidebugerror
 </code></pre>
 
-<h4 name="apachefastcgi">.. 使用 FastCGI</h4>
+<h4 id="apachefastcgi">.. 使用 FastCGI</h4>
 
 <p>FastCGI很容易配置，运行方式如同mod_python。</p>
 
@@ -184,7 +184,7 @@ web.internalerror = cgidebugerror
 
 <p><a href="http://lemurware.blogspot.com/2006/05/webpy-apache-configuration-and-you.html">Walter 还有一些额外建议</a>.</p>
 
-<h4 name="apachescgi">.. 使用 SCGI</h4>
+<h4 id="apachescgi">.. 使用 SCGI</h4>
 
 <p>https://www.mems-exchange.org/software/scgi/
 从 http://www.mems-exchange.org/software/files/mod_scgi/ 下载 <code>mod_scgi</code> 代码
@@ -203,7 +203,7 @@ SCGIMount / 127.0.0.1:8080
 <p>打开你的浏览器，访问127.0.0.1
 It's ok!</p>
 
-<h4 name="apachemodpython">.. 使用 mod_python</h4>
+<h4 id="apachemodpython">.. 使用 mod_python</h4>
 
 <p>mod_python 运行方式如同FastCGI， 但不是那么方便配置。</p>
 
@@ -241,7 +241,7 @@ PythonOption wsgi.application codep::main
 
 <p>确保访问 <code>/codep.py/</code> 的时候有添加最后的 <code>/</code>。  否则，你将会看到一条错误信息，比如 <code>A server error occurred. Please contact the administrator.</code></p>
 
-<h4 name="apachemodwsgi">.. 使用 mod_wsgi</h4>
+<h4 id="apachemodwsgi">.. 使用 mod_wsgi</h4>
 
 <p>mod_wsgi 是一个新的Apache模块 <a href="http://code.google.com/p/modwsgi/wiki/PerformanceEstimates">通常优于mod_python</a> 用于架设WSGI应用，它非常容易配置。</p>
 
@@ -271,7 +271,7 @@ import web
 
 <p>最终应该可以访问 <code>http://example.com/code.py/</code>。</p>
 
-<h4 name="apachemodrewrite">mod_rewrite 法则，Apache</h4>
+<h4 id="apachemodrewrite">mod_rewrite 法则，Apache</h4>
 
 <p>如果希望 web.py 能够通过 'http://example.com' 访问，代替使用 'http://example.com/code.py/'， 添加以下法则到 <code>.htaccess</code> 文件：</p>
 
