@@ -8,6 +8,7 @@ tags : [python, web.py, cookbook]
 ---
 
 ## 问题：
+
 怎样在webpy中使用Cheetah模板引擎？
 
 ## 解决：

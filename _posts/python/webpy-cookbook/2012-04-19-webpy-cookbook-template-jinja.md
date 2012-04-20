@@ -9,7 +9,7 @@ tags : [python, web.py, cookbook]
 
 ## 问题
 
-如何在web.py中使用Jinja2 (http://jinja.pocoo.org/2/) 模板引擎?
+如何在web.py中使用 [Jinja2] (http://jinja.pocoo.org/2/) 模板引擎?
 
 ## 方案
 
