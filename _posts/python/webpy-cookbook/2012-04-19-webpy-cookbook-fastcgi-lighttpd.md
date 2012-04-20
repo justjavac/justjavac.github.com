@@ -10,11 +10,12 @@ tags : [python, web.py, cookbook]
 
 如果你对这个主题有任何问题，可以点击下面的链接访问相应的话题:
 
-http://www.mail-archive.com/webpy@googlegroups.com/msg02800.html
+<http://www.mail-archive.com/webpy@googlegroups.com/msg02800.html>
 
 下面的代码基于lighttpd 1.4.18，更高版本也可以工作
 
 ##Note:  
+
 * 你可以重命名 <code>code.py</code>为任何你自己愿意的名字，该例子还是以code.py为例。
 * <code>/path-to/webpy-app</code> 为包含你的 <code>code.py</code>代码的路径。
 * <code>/path-to/webpy-app/code.py</code> 应该是你的**python file**的完整路径。
@@ -25,33 +26,31 @@ Note: 较早版本的lighttpd可能会按照不同的方式组织.conf文件，�
 
 ###ligghttpd 在 Debian GNU/Linux 下的配置文件
 
-<pre>
-Files and Directories in /etc/lighttpd:
----------------------------------------
+    Files and Directories in /etc/lighttpd:
+    ---------------------------------------
 
-lighttpd.conf:
-         main configuration file
+    lighttpd.conf:
+             main configuration file
 
-conf-available/
-        This directory contains a series of .conf files. These files contain
-        configuration directives necessary to load and run webserver modules.
-        If you want to create your own files they names should be
-        build as nn-name.conf where "nn" is two digit number (number
-        is used to find order for loading files)
+    conf-available/
+            This directory contains a series of .conf files. These files contain
+            configuration directives necessary to load and run webserver modules.
+            If you want to create your own files they names should be
+            build as nn-name.conf where "nn" is two digit number (number
+            is used to find order for loading files)
 
-conf-enabled/
-        To actually enable a module for lighttpd, it is necessary to create a
-        symlink in this directory to the .conf file in conf-available/.
+    conf-enabled/
+            To actually enable a module for lighttpd, it is necessary to create a
+            symlink in this directory to the .conf file in conf-available/.
 
-Enabling and disabling modules could be done by provided
-/usr/sbin/lighty-enable-mod and /usr/sbin/lighty-disable-mod scripts.
-</pre>
+    Enabling and disabling modules could be done by provided
+    /usr/sbin/lighty-enable-mod and /usr/sbin/lighty-disable-mod scripts.
 
-<strong>
 对于web py， 你需要允许 mod_fastcgi 模块和 mod_rewrite模块, 运行: <code>/usr/sbin/lighty-enable-mod</code> 启用 <code>fastcgi</code> （Mac OS X可能不需要）  
 (mod_rewrite 模块可能需要启用 <code>10-fastcgi.conf</code>文件).
 
 ##下面是文件的基本结构（Mac OS X不同）:
+
 * <code>/etc/lighttpd/lighttpd.conf</code>
 * <code>/etc/lighttpd/conf-available/10-fastcgi.conf</code>
 * <code>code.py</code>

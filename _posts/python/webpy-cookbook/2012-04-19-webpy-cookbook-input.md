@@ -32,7 +32,11 @@ web.input()方法返回一个包含从url(GET方法)或http header(POST方法,�
 
 如果你想传递一个多值变量,比如像这样:
 
-<select multiple size="3"><option>foo</option><option>bar</option><option>baz</option></select>
+    <select multiple size="3">
+      <option>foo</option>
+      <option>bar</option>
+      <option>baz</option>
+    </select>
 
 你需要让web.input知道这是一个多值变量,否则会变成一串而不是一个变量 .传递一个list给 web.input 作为默认值,就会正常工作.举个例子, 访问 http://example.com?id=10&id=20:
 
