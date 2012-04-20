@@ -45,11 +45,9 @@ if __name__ == "__main__":
 
 ## 模板文件
 
-<pre>
-## File: templates/hello.html
+    ## File: templates/hello.html
 
-Hello, ${name}.
-</pre>
+    Hello, ${name}.
 
 ## 注意:
 如果你使用Apache+mod_wsgi来部署webpy程序, 你也许会在Apache错误日志中得到下面的错误信息:
@@ -57,15 +55,14 @@ Hello, ${name}.
 
 你必须使用绝对路径指出模板的位置.
 你也可以使用相对路径来让它更简单一些:
-<pre>
-import os
 
-render = render_mako(
-        directories=[os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),],
-        input_encoding='utf-8',
-        output_encoding='utf-8',
-        )
-</pre>
+    import os
+
+    render = render_mako(
+            directories=[os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),],
+            input_encoding='utf-8',
+            output_encoding='utf-8',
+            )
 
 ## 参考:
 
