@@ -1235,7 +1235,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-之后会载入一个漂亮的web页面，其内容为“empty”。怎么回事？
+之后载入一个漂亮的web页面，其内容为“empty”。怎么回事？
 </p>
 
 <p>
@@ -1269,15 +1269,15 @@ class="pun">=</span><span class="pln"> stdout</span><span class="pun">;</span><s
 class="pln"><br></span><span class="pun">}</span></pre>
 
 <p>
-现在就到了问题根源所在了：我们的代码是同步执行的，这就意味着在调用<em>exec()</em>之后，Node.js会立即执行 <em>return content</em> ；在这个时候，<em>content</em>仍然是“empty”，因为传递给<em>exec()</em>的回调函数还未执行到——因为<em>exec()</em>的操作是异步的。
+现在就到了问题根源所在了：我们的代码是同步执行的，这就意味着在调用<em>exec()</em>之后，Node.js立即执行 <em>return content</em> ；在这个时候，<em>content</em>仍然是“empty”，因为传递给<em>exec()</em>的回调函数还未执行到——因为<em>exec()</em>的操作是异步的。
 </p>
 
 <p>
-我们这里“ls -lah”的操作其实是非常快的（除非当前目录下有上百万个文件）。这也是为什么回调函数也会很快的执行到 —— 不过，不管怎么说它还是异步的。
+我们这里“ls -lah”的操作其实是非常快的（除非当前目录下有上百万个文件）。这也是为什么回调函数可以很快的执行到 —— 不过，不管怎么说它还是异步的。
 </p>
 
 <p>
-为了让效果更加明显，我们想象一个更耗时的命令： “find /”，它在我机器上需要执行1分钟左右的时间，然而，尽管在请求处理程序中，我把“ls -lah”换成“find /”，当打开/start URL的时候，依然能够立即获得HTTP响应 —— 很明显，当<em>exec()</em>在后台执行的时候，Node.js自身会继续执行后面的代码。并且我们这里假设传递给<em>exec()</em>的回调函数，只会在“find /”命令执行完成之后才会被调用。
+为了让效果更加明显，我们想象一个更耗时的命令： “find /”，它在我机器上需要执行1分钟左右的时间，然而，尽管在请求处理程序中，我把“ls -lah”换成“find /”，当打开/start URL的时候，依然能够立即获得HTTP响应 —— 很明显，当<em>exec()</em>在后台执行的时候，Node.js自身会继续执行后面的代码。并且我们这里假设传递给<em>exec()</em>的回调函数，只有在“find /”命令执行完成之后才被调用。
 </p>
 
 <p>
@@ -1438,7 +1438,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-这时再次我们启动应用（<em>node index.js</em>），一切都会工作的很好。
+这时再次我们启动应用（<em>node index.js</em>），一切都工作的很好。
 </p>
 
 <p>
@@ -1487,7 +1487,7 @@ class="pun">.</span><span class="pln">upload </span><span class="pun">=</span><s
 class="pln"> upload</span><span class="pun">;</span></pre>
 
 <p>
-这样一来，当请求<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>的时候，会花10秒钟的时间才载入，而当请求<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>的时候，会立即响应，纵然这个时候/start响应还在处理中。
+这样一来，当请求<a href="http://localhost:8888/start" rel="nofollow">http://localhost:8888/start</a>的时候，将花10秒钟的时间才载入，而当请求<a href="http://localhost:8888/upload" rel="nofollow">http://localhost:8888/upload</a>的时候，node.js立即响应，纵然这个时候/start响应还在处理中。
 </p>
 
 <h3 name="serving-something-useful">更有用的场景</h3>
@@ -1497,7 +1497,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-服务器，请求路由以及请求处理程序都已经完成了，下面让我们按照此前的用例给网站添加交互：用户选择一个文件，上传该文件，然后在浏览器中看到上传的文件。 为了保持简单，我们假设用户只会上传图片，然后我们应用将该图片显示到浏览器中。
+服务器，请求路由以及请求处理程序都已经完成了，下面让我们按照此前的用例给网站添加交互：用户选择一个文件，上传该文件，然后在浏览器中看到上传的文件。 为了保持简单，我们假设用户只上传图片，然后我们应用将该图片显示到浏览器中。
 </p>
 
 <p>
@@ -1574,7 +1574,7 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-你可能会说：这种直接将视觉元素放在请求处理程序中的方式太丑陋了。说的没错，但是，我并不想在本书中介绍诸如MVC之类的模式，因为这对于你了解JavaScript或者Node.js环境来说没多大关系。
+你可能说：这种直接将视觉元素放在请求处理程序中的方式太丑陋了。说的没错，但是，我并不想在本书中介绍诸如MVC之类的模式，因为这对于你了解JavaScript或者Node.js环境来说没多大关系。
 </p>
 
 <p>
@@ -1582,15 +1582,15 @@ class="pln"> upload</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-现在，我们已经是新手中的专家了，很自然会想到采用异步回调来实现非阻塞地处理POST请求的数据。
+现在，我们已经是新手中的专家了，很自然的想到采用异步回调来实现非阻塞地处理POST请求的数据。
 </p>
 
 <p>
-这里采用非阻塞方式处理是明智的，因为POST请求一般都比较“重” —— 用户可能会输入大量的内容。用阻塞的方式处理大数据量的请求必然会导致用户操作的阻塞。
+这里采用非阻塞方式处理是明智的，因为POST请求一般都比较“重” —— 用户可能输入大量的内容。用阻塞的方式处理大数据量的请求必然导致用户操作的阻塞。
 </p>
 
 <p>
-为了使整个过程非阻塞，Node.js会将POST数据拆分成很多小的数据块，然后通过触发特定的事件，将这些小数据块传递给回调函数。这里的特定的事件有<em>data</em>事件（表示新的小数据块到达了）以及<em>end</em>事件（表示所有的数据都已经接收完毕）。
+为了使整个过程非阻塞，Node.js将POST数据拆分成很多小的数据块，然后通过触发特定的事件，将这些小数据块传递给回调函数。这里的特定的事件有<em>data</em>事件（表示新的小数据块到达了）以及<em>end</em>事件（表示所有的数据都已经接收完毕）。
 </p>
 
 <p>
@@ -1684,11 +1684,11 @@ class="pln"> start</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-上述代码在每个数据块到达的时候输出了日志，这对于最终生产环境来说，是很不好的（数据量可能会很大，还记得吧？），但是，在开发阶段是很有用的，有助于让我们看到发生了什么。
+上述代码在每个数据块到达的时候输出了日志，这对于最终生产环境来说，是很不好的（数据量可能很大，还记得吧？），但是，在开发阶段是很有用的，有助于让我们看到发生了什么。
 </p>
 
 <p>
-我建议可以尝试下，尝试着去输入一小段文本，以及大段内容，当大段内容的时候，就会发现<em>data</em>事件会触发多次。
+我建议可以尝试下，尝试着去输入一小段文本，以及大段内容，当大段内容的时候，就会发现<em>data</em>事件触发了多次。
 </p>
 
 <p>
@@ -2230,12 +2230,12 @@ class="pln"> show</span><span class="pun">;</span></pre>
 </p>
 
 <p>
-到这里，我们可以将<em>postData</em>从服务器以及请求处理程序中移除了 —— 一方面，对于我们处理文件上传来说已经不需要了，另外一方面，它甚至可能会引发这样一个问题： 我们已经“消耗”了<em>request</em>对象中的数据，这意味着，对于<em>form.parse</em>来说，当它想要获取数据的时候就什么也获取不到了。（因为Node.js不会对数据做缓存）
+到这里，我们可以将<em>postData</em>从服务器以及请求处理程序中移除了 —— 一方面，对于我们处理文件上传来说已经不需要了，另外一方面，它甚至可能引发这样一个问题： 我们已经“消耗”了<em>request</em>对象中的数据，这意味着，对于<em>form.parse</em>来说，当它想要获取数据的时候就什么也获取不到了。（因为Node.js不会对数据做缓存）
 </p>
 
 <p>
 我们从<em>server.js</em>开始 —— 移除对postData的处理以及<em>request.setEncoding</em>
-（这部分node-formidable自身会处理），转而采用将<em>request</em>对象传递给请求路由的方式：
+（这部分由node-formidable自身处理），转而采用将<em>request</em>对象传递给请求路由的方式：
 </p>
 <pre class="prettyprint lang-js"><span class="kwd">var</span><span class="pln"> http </span><span
 class="pun">=</span><span class="pln"> require</span><span class="pun">(</span><span
@@ -2304,7 +2304,7 @@ class="pun">.</span><span class="pln">route </span><span class="pun">=</span><sp
 class="pln"> route</span><span class="pun">;</span></pre>
 
 <p>
-现在，<em>request</em>对象就可以在我们的<em>upload</em>请求处理程序中使用了。node-formidable会处理将上传的文件保存到本地<em>/tmp</em>目录中，而我们需要做的是确保该文件保存成<em>/tmp/test.png</em>。 没错，我们保持简单，并假设只允许上传PNG图片。
+现在，<em>request</em>对象就可以在我们的<em>upload</em>请求处理程序中使用了。node-formidable将处理将上传的文件保存到本地<em>/tmp</em>目录中，而我们需要做的是确保该文件保存成<em>/tmp/test.png</em>。 没错，我们保持简单，并假设只允许上传PNG图片。
 </p>
 
 <p>
@@ -2424,7 +2424,7 @@ class="pun">.</span><span class="pln">show </span><span class="pun">=</span><spa
 class="pln"> show</span><span class="pun">;</span></pre>
 
 <p>
-好了，重启服务器，我们应用所有的功能就可以用了。选择一张本地图片，将其上传到服务器，然后浏览器就会显示该图片。
+好了，重启服务器，我们应用所有的功能就可以用了。选择一张本地图片，将其上传到服务器，然后浏览器就可以显示该图片。
 </p>
 
 <h2 name="conclusion-and-outlook">总结与展望</h2>
