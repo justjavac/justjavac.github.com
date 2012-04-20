@@ -80,7 +80,7 @@ GET是我们都熟悉的。它用于请求网页文本。当你在浏览器输�
 
 在 Python 中写 HTML 不是聪明的选择，相反在 HTML 中写 Python 则有趣的多。幸运的是，web.py 让这件事情做得简单而又漂亮。
 
-注意： 老版本的 web.py 使用 [Cheetah 模板系统](http://www.cheetahtemplate.org/)，你可以也欢迎使用其他模板系统，但它可能不会被长久支持。
+注意： 老版本的 web.py 使用 [Cheetah 模板系统](http://justjavac.com/python/2012/04/19/webpy-cookbook-template-cheetah/)，你可以也欢迎使用其他模板系统，但它可能不会被长久支持。
 
 给模板新建一个目录（命名为 templates），在该目录下新建一个以 .html 结尾的文件，内容如下：
 
