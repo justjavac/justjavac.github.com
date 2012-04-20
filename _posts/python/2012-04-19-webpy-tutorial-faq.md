@@ -9,7 +9,7 @@ tags : [python, web.py]
 
 99. **如何使用template.py模板?**
 
-    基本的文档内容与一些代码片段，请查看 [template.py doc](/templetor)
+    基本的文档内容与一些代码片段，请查看 [template.py doc](http://justjavac.com/python/2012/04/19/webpy-tutorial-templetor/)
 
     通过web.py应用显示页面，使用如下
 
