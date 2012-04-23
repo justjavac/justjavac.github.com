@@ -1,7 +1,7 @@
 ---
 layout: post
 title: web.py 0.3 新手指南 - 模板系统
-description: web.py 0.3 新手指南 - 模板系统
+description: web.py 的模板语言叫做Templetor，它能负责将 python 的强大功能传递给模板系统。在模板中没有重新设计语法，它是类 python 的。
 keywords: python, web.py, 新手指南, 模板
 category : python
 tags : [python, web.py]

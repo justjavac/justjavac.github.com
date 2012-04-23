@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python实用技巧-成为Pythoner必经之路
-description: Python实用技巧-成为Pythoner必经之路
+description: 本文主要记录 Python 中一些常用技巧，本文重点描述的是告诉你怎么写才是更好？
 keywords: python,技巧
 category : python
 tags : [python, 技巧]

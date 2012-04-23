@@ -2,6 +2,7 @@
 layout:     post
 title:      一天时间用python写门语言
 keywords: python
+description: 用一天的时间，利用python写一门属于自己的编程语言。
 category : python
 tags : [python]
 ---

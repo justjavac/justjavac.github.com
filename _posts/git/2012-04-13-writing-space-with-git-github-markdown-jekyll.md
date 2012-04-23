@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 理想的写作环境：git+github+markdown+jekyll
-description: 理想的写作环境：git+github+markdown+jekyll
+description: 理想的写作环境，受各类干扰小、清理废话及版本管理容易。曾花费较长时间寻找，最后，还是找到了。采取git+github+markdown+jekyll
 keywords: git, github, markdown, jekyll
 category : git
 tags : [git, github, markdown, jekyll]

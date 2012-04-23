@@ -1,7 +1,7 @@
 ---
 layout: post
 title: web.py 0.3 新手指南
-description: web.py 0.3 新手指南
+description: 你知道Python同时你希望制作一个网站。那么web.py正好提供了一种简单的方法。
 keywords: python, web.py, 新手指南
 category : python
 tags : [python, web.py]
@@ -15,7 +15,7 @@ tags : [python, web.py]
 
 如果你希望读完整个指南， 你需要安装Python, web.py, flup, psycopg2, 和Postgres (或者等价的数据库和Python驱动)。 详细，可以查看 [webpy.org](http://webpy.org).
 
-如果你已经有了一个web.py项目，请看看升级 页面的相关信息。
+如果你已经有了一个web.py项目，请看看升级页面的相关信息。
 
 准备开始。
 

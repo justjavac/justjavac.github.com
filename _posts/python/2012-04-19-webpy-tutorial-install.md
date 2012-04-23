@@ -1,7 +1,7 @@
 ---
 layout: post
 title: web.py 0.3 新手指南 - 安装
-description: web.py 0.3 新手指南 - 安装
+description: 如何安装web.py，一步一步教会你安装web.py。
 keywords: python, web.py, 新手指南, 安装
 category : python
 tags : [python, web.py]

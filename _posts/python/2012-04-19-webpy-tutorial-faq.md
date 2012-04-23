@@ -1,7 +1,6 @@
 ---
 layout: post
 title: web.py 0.3 新手指南 - FAQ
-description: web.py 0.3 新手指南 - FAQ
 keywords: python, web.py, 新手指南, FAQ
 category : python
 tags : [python, web.py]
