@@ -55,7 +55,7 @@ tags : [python, web.py]
 <pre><code>sudo python setup.py install
 </code></pre>
 
-<p>查看 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial-recommended-setup/">推荐设置</a>.</p>
+<p>查看 <a href="http://webpy.org/recommended_setup" target="_blank">推荐设置</a>.</p>
 
 <p>另外一个选择是使用<a href="http://peak.telecommunity.com/DevCenter/EasyInstall">Easy Install</a>. Easy Install 使用如下：</p>
 
