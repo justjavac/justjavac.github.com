@@ -1,7 +1,7 @@
 ---
 layout: post
 title: javascript程序编码规范
-description: javascript程序编码规范
+description: JavaScript 编程语言作为最流行的客户端脚本语言，早已被众多 Web 开发人员所熟悉。随着 Web2.0 时代的到来和 Ajax 技术的广泛应用，JavaScript 也逐渐吸引着更多的视线。工作中要求越多的是对 JavaScript 语言的深入学习，灵活运用，和对编码质量的保证
 keywords: javascript
 category : javascript
 tags : [javascript, 规范]
