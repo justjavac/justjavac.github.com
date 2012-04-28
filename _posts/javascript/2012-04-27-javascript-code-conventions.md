@@ -33,31 +33,31 @@ tags : [javascript, 规范]
 
 最流行的有两种。一种是起首的大括号另起一行：
 
-　　block
-　　{
-　　　　...
-　　}
+    block
+    {
+        ...
+    }
 
 另一种是起首的大括号跟在关键字的后面：
 
-　　block {
-　　　　...
-　　}
+    block {
+        ...
+    }
 
 一般来说，这两种写法都可以接受。
 但是，Javascript要使用后一种，因为Javascript会自动添加句末的分号，导致一些难以察觉的错误。
 
-　　return
-　　{
-　　　　key:value;
-　　};
+    return
+    {
+        key:value;
+    };
 
 上面的代码的原意，是要返回一个对象，但实际上返回的是undefined，因为Javascript自动在return语句后面添加了分号。
 为了避免这一类错误，需要写成下面这样：
 
-　　return {
-　　　　key : value;
-　　};
+    return {
+        key : value;
+    };
 
 因此，
 
@@ -76,11 +76,11 @@ tags : [javascript, 规范]
 
 按照上面的规则，下面的写法都是不规范的：
 
-　　foo (bar)
-　　return(a+b);
-　　if(a === 0) {...}
-　　function foo (b) {...}
-　　function(x) {...}
+    foo (bar)
+    return(a+b);
+    if(a === 0) {...}
+    function foo (b) {...}
+    function(x) {...}
 
 ## 三、分号
 
@@ -88,25 +88,25 @@ tags : [javascript, 规范]
 
 大多数情况下，如果你省略了句尾的分号，Javascript会自动添加。
 
-　　var a = 1
+    var a = 1
 
 等同于
 
-　　var a = 1;
+    var a = 1;
 
 因此，有人提倡省略句尾的分号。
 
 但麻烦的是，如果下一行的第一个字元（token）是下面这五个字符之一，
 Javascript将不对上一行句尾添加分号："("、"["、"/"、"+"和"-"。
 
-　　x = y
-　　(function (){
-　　　　...
-　　})();
+    x = y
+    (function (){
+        ...
+    })();
 
 上面的代码等同于
 
-　　x = y(function (){...})();
+    x = y(function (){...})();
 
 因此，
 
@@ -116,16 +116,16 @@ Javascript将不对上一行句尾添加分号："("、"["、"/"、"+"和"-"。
 
 with可以减少代码的书写，但是会造成混淆。
 
-　　with (o) {
-　　　　foo = bar;
-　　}
+    with (o) {
+        foo = bar;
+    }
 
 上面的代码，可以有四种运行结果：
 
-　　o.foo = bar;
-　　o.foo = o.bar;
-　　foo = bar;
-　　foo = o.bar;
+    o.foo = bar;
+    o.foo = o.bar;
+    foo = bar;
+    foo = o.bar;
 
 这四种结果都可能发生，取决于不同的变量是否有定义。
 
@@ -139,13 +139,13 @@ Javascript有两个表示"相等"的运算符："相等"（==）和"严格相等
 
 因为"相等"运算符会自动转换变量类型，造成很多意想不到的情况：
 
-　　0 == ''// true
-　　1 == true // true
-　　2 == true // false
-　　0 == '0' // true
-　　false == 'false' // false
-　　false == '0' // true
-　　" \t\r\n " == 0 // true
+    0 == ''// true
+    1 == true // true
+    2 == true // false
+    0 == '0' // true
+    false == 'false' // false
+    false == '0' // true
+    " \t\r\n " == 0 // true
 
 因此，
 
@@ -157,30 +157,30 @@ Javascript有两个表示"相等"的运算符："相等"（==）和"严格相等
 
 比如，原来的语句是
 
-　　a = b;
-　　if (a) {...}
+    a = b;
+    if (a) {...}
 
 他喜欢写成下面这样:
 
-　　if (a = b) {...}
+    if (a = b) {...}
 
 虽然语句少了一行，但是可读性大打折扣，而且会造成误读，让别人误以为这行代码的意思是：
 
-　　if （a === b）{...}
+    if （a === b）{...}
 
 另外一种情况是，有些程序员喜欢在同一行中赋值多个变量：
 
-　　var a = b = 0;
+    var a = b = 0;
 
 他以为，这行代码等同于
 
-　　var a = 0, b = 0;
+    var a = 0, b = 0;
 
 实际上不是，它的真正效果是下面这样：
 
-　　b = 0;
+    b = 0;
 
-　　var a = b;
+    var a = b;
 
 因此，
 
@@ -190,25 +190,25 @@ Javascript有两个表示"相等"的运算符："相等"（==）和"严格相等
 
 Javascript会自动将变量声明"提升"（hoist）到代码块（block）的头部。
 
-　　if (!o) {
-　　　　var o = {};
-　　}
+    if (!o) {
+        var o = {};
+    }
 
 等同于
 
-　　var o;
-　　if (!o) {
-　　　　o = {};
-　　}
+    var o;
+    if (!o) {
+        o = {};
+    }
 
 为了避免可能出现的问题，不如把变量声明都放在代码块的头部。
 
-　　for (var i ...) {...}
+    for (var i ...) {...}
 
 最好写成：
 
-　　var i;
-　　for (i ...) {...,}
+    var i;
+    for (i ...) {...,}
 
 因此，
 
@@ -228,7 +228,7 @@ Javascript最大的语法缺点，可能就是全局变量对于任何一个代�
 
 Javascript使用new命令，从建构函数生成一个新对象。
 
-　　var o = new myObject();
+    var o = new myObject();
 
 这种做法的问题是，一旦你忘了加上new，myObject()内部的this关键字就会指向全局对象，导致所有绑定在this上面的变量，
 都变成全部变量。
@@ -245,20 +245,20 @@ Javascript使用new命令，从建构函数生成一个新对象。
 
 事实上，所有的++运算符都可以用"+= 1"代替。
 
-　　++x
+    ++x
 
 等同于
 
-　　x += 1;
+    x += 1;
 
 代码变得更清晰了。有一个很可笑的例子，某个Javascript函数库的源代码中出现了下面的片段：
 
-　　++x;
-　　++x;
+    ++x;
+    ++x;
 
 这个程序员忘了，还有更简单、更合理的写法：
 
-　　x += 2;
+    x += 2;
 
 因此，
 
@@ -270,15 +270,15 @@ Javascript使用new命令，从建构函数生成一个新对象。
 
 下面的代码
 
-　　if (a) b(); c();
+    if (a) b(); c();
 
 原意可能是
 
-　　if (a) { b(); c();}
+    if (a) { b(); c();}
 
 但是，实际效果是
 
-　　if (a) { b();} c();
+    if (a) { b();} c();
 
 因此，
 
