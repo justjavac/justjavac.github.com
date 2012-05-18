@@ -1,12 +1,11 @@
 ---
 layout: post
-title: 25个必须记住的SSH命令
-description: 25个必须记住的SSH命令
-keywords: ssh
-category : other
-tags : [ssh, 技巧]
+title: 关于返回 Null 值的问题
+description: 我感觉返回null值是有问题的，它大量的被使用在一个方法有不同的返回类型时。返回一个Null对象在某些情况下是合适的，但并不适合当你需要向客户端传送两种不同的东西的情形。
+keywords: java, Null, 函数
+category : java
+tags : [java, 技巧]
 ---
-关于返回 Null 值的问题
 
 我总感觉一个方法返回null值有问题。
 当读了Misko Hevery关于[how to think about OO](http://misko.hevery.com/2009/07/31/how-to-think-about-oo/)的博客文章后，又让我想起这个问题。
