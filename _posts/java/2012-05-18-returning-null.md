@@ -25,8 +25,8 @@ tags : [java, 技巧]
 
 从这段代码，可以看出两种情况(从结构上讲)
 
-    1. 如果认证通过, 客户端会被通知验证成功, 生成一个新的Cookie
-    2. 如果认证失败, 则通过返回的null值通知客户端
+1. 如果认证通过, 客户端会被通知验证成功, 生成一个新的Cookie
+2. 如果认证失败, 则通过返回的null值通知客户端
 
 客户端的方法应该是什么样的？
 
@@ -42,11 +42,11 @@ tags : [java, 技巧]
 我们在两个地方做了相同的事情，只是在语法上有稍微的不同，每个地方，我们都要检查验证是否成功。
 如果我们使用IoC（反向控制）模式，或“Tell Don’t Ask”模式或“Hollywood原则”，会如何？
 
-Cookie login(Ldap ldap, AuthenticationRegistry authenticationRegistry) {
-    if ( ldap.auth(user, password) )
-        authenticationRegistry.authSucceeded(new Cookie(user));
-    authenticationRegistry.authFailed(user);
-}
+    Cookie login(Ldap ldap, AuthenticationRegistry authenticationRegistry) {
+        if ( ldap.auth(user, password) )
+            authenticationRegistry.authSucceeded(new Cookie(user));
+        authenticationRegistry.authFailed(user);
+    }
 
 客户端：
 
