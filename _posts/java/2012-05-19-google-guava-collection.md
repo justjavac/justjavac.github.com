@@ -224,11 +224,11 @@ MapMaker 是用来构造 ConcurrentMap 的工具类。
 
 或者构造用各种不同 reference 作为 key 和 value 的 Map:
 
-//ConcurrentMap with soft reference key and weak reference value 
-ConcurrentMap<String, Object> map2 = new MapMaker() 
-    .softKeys() 
-    .weakValues() 
-    .makeMap(); 
+    //ConcurrentMap with soft reference key and weak reference value 
+    ConcurrentMap<String, Object> map2 = new MapMaker() 
+        .softKeys() 
+        .weakValues() 
+        .makeMap(); 
 
 
 或者构造有自动移除时间过期项的 Map:
@@ -282,7 +282,7 @@ ConcurrentMap<String, Object> map2 = new MapMaker()
 ## Ordering class: 灵活的多字段排序比较器
 
 要对集合排序或者求最大值最小值，首推 java.util.Collections 类，但关键是要提供 Comparator 接口的实现。
-假设有个待排序的 List<Foo>，而 Foo 里面有两个排序关键字 int a, int b 和 int c:
+假设有个待排序的 `List<Foo>`，而 Foo 里面有两个排序关键字 int a, int b 和 int c:
 
     Collections.sort(list, new Comparator<Foo>(){    
         @Override    
