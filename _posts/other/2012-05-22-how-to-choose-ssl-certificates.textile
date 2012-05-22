@@ -1,0 +1,87 @@
+---
+layout: post
+title: 如何为https网站加入ssl证书
+keywords: https,ssl
+description: 要提高网站与客户端浏览器之间的安全性, 可以基于https协议对传输的数据进行加密. https协议采用公钥私钥加密算法进行加密, 服务器用私钥对网页进行加密后, 连同公钥一起发给浏览器.
+category : other
+tags : [https,ssl]
+---
+
+要提高网站与客户端浏览器之间的安全性, 可以基于https协议对传输的数据进行加密.
+https协议采用公钥私钥加密算法进行加密, 服务器用私钥对网页进行加密后, 连同公钥一起发给浏览器.
+由于, 公钥是服务器发送的, 浏览器认为它不可信任, 就会提示用户选择是否进一步操作.
+这对用户来说非常不友好, 觉得这个网站不安全.
+
+为了解决这个问题, 我们需要将公钥制作成数字证书, 放到专门的认证机构(ca)
+
+认证机构有很多家, 比如
+
+* <http://www.geotrust.com>
+* <http://www.verisign.com>
+* <http://www.rapidssl.com>
+
+这些都是收费的, 免费的只有一家 <http://www.startssl.com>, 但是firefox3.5不支持, 所以不考虑
+
+不了解的同学可以看下 [数字签名是什么](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
+
+## 认证类型
+
+各个认证机构提供的类型也有很多不一样, 按认证范围可以分为
+
+* 域名型, 针对域名进行认证(快速认证)
+* 企业型, 同时认证公司名称等信息(完整认证)
+
+据说rapidssl不支持企业认证
+
+按认证的域名可以分为
+
+* 单域名 www.example.com
+* 多域名 www.example1.com, www.example2.com
+* 泛二级域名 *.exmaple.com
+* 多个二级域名 a.example.com, b.example.com
+
+此外还有赔付保障(证书被破解找机构赔)、移动设备支持情况、木马扫瞄等功能类型的差异, 没什么用
+
+在这里我们主要关注泛二级域名, 报价(元/每年)
+
+* rapidssl 1550
+* GeoTrust 6850
+* VeriSign 38000
+
+以上报价由 <www.trustasia.com> 提供
+
+GeoTrust,VeriSign只能是企业级认证的产品才包含泛二级域名类型, 所以价格贵很多
+
+rapidssl符合要求, 价格较低, 还有优惠
+
+* [positive ssl 89$](http://www.namecheap.com/ssl-certificates/comodo.aspx)
+* [clickssl 139$](http://www.clickssl.com/rapidssl/rapidsslwildcard.aspx)
+* [servertastic 139$](https://www.servertastic.com/rapidssl/)
+* [cheapssls 148$](http://www.cheapssls.com/geotrust-ssl-certificates/rapidssl-wildcard.html)
+
+## 多域名认证
+
+由于早期https协议并不支持servername, 所以每个域名只能使用关联一个独立ip.
+后期加入的Server Name Indication(SNI)功能才支持, 但是并不是所有的浏览器都支持, 兼容性查看 [这里](http://en.wikipedia.org/wiki/Server_Name_Indication).
+godaddy提供的UCC证书支持多域名, [UCC认证](http://www.godaddy.com/ssl/ssl-certificates.aspx?ci=9039).
+
+关于https是否会导致请求太慢的问题, 可以查看[https误解三](http://slj.me/2011/02/top-7-myths-about-https/).
+
+nginx关于ssl的配置可查看[官方文档](http://nginx.org/en/docs/http/configuring_https_servers.html).
+@nginx -V@ 命令可以查看当前安装的nginx是否已经安装ssl模块、是否支持SNI.
+具体安装过程可参考 <http://zou.lu/nginx-https-ssl-module/> 或者 <http://blog.yorkxin.org/2009/01/17/rails-ssl/>.
+
+### 生成证书
+
+    openssl genrsa -des3 -out domain.key 2048
+    req -new -key shopqi.key -out domain.csr
+    cat domain.csr # 复制到购买ssl证书的网站
+
+    # 收到认证证书后打包证书(注意顺序)
+    cat STAR_domain_com.crt PositiveSSLCA.crt UTNAddTrustServerCA.crt AddTrustExternalCARoot.crt >> domain.crt
+
+### 去掉nginx重启需要输入密码
+
+    cp domain.key domain.key.com
+    openssl rsa -in domain.key.com -out domain.key
+    chmod 400 domain.key
