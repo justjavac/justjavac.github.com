@@ -1,10 +1,10 @@
-﻿---
+---
 layout: post
 title: 从一道php面试题说起
 description: 总的来说，程序员算是英语水平比较好的群体，因为在这个行业，英文资料是最全面、最及时、需求也最迫切的。因此，据我观察，即便刚入门不久的程序员，面对陌生的问题，一般也能查阅英文文档，找到需要的信息。
 keywords: php, cookie, 面试
-category : php
-tags : [php, 面试]
+category: php
+tags: [php, 面试]
 ---
 
 面试题目：
