@@ -7,7 +7,7 @@ category: nodejs
 tags: [javascript, nodejs]
 ---
 
-**声明**：这篇文章绝不是一篇讨论 [NodeJS[1] 和 Ruby on Rails 孰优孰略的檄文。
+**声明**：这篇文章绝不是一篇讨论 [NodeJS][1] 和 Ruby on Rails 孰优孰略的檄文。
 它描述的只是我们做决策过程中的一些思考、决策背后的原因。
 两种框架都非常优秀，都出色的完成了它们的设计初衷，这也是为什么我们部分的模块仍然运行在NodeJS上的原因。
 
