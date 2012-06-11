@@ -11,7 +11,7 @@ tags: [javascript, nodejs]
 它描述的只是我们做决策过程中的一些思考、决策背后的原因。
 两种框架都非常优秀，都出色的完成了它们的设计初衷，这也是为什么我们部分的模块仍然运行在NodeJS上的原因。
 
-[1]: http://justjavac.com/nodejs/2012/04/03/node-beginner/
+[1]: http://justjavac.com/nodejs/2012/04/03/node-beginner.html
 
 我是NodeJs的大粉丝，认为这是一项让人非常兴奋的技术，相信它会变的越来越流行。
 我对这项技术非常的欣赏——尽管我们最近把[Targeter App](http://targeterapp.com/)从NodeJS迁移到了Ruby on Rails。

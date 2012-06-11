@@ -325,7 +325,7 @@ java.util 中没有 Collection 类能满足这些需求，但是编写一个这�
 
 [1]: http://java.sun.com/developer/onlineTraining/collections/Collection.html
 [2]: http://java.sun.com/j2se/1.4.2/docs/guide/collections/index.html
-[3]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-2
+[3]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-2.html
 
 ## 关于作者
 

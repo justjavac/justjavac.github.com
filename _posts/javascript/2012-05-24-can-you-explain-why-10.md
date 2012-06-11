@@ -11,7 +11,7 @@ tags : [javascript]
 
 既然遇到了这个问题，我们不妨也跟着提高一下。
 
-这是一个[Javascript语言题目](http://justjavac.com/javascript/2012/04/05/you-dont-know-javascript)，一个完全有效的等式，不信自己可以试一下，下面看看高人的题解：
+这是一个[Javascript语言题目](http://justjavac.com/javascript/2012/04/05/you-dont-know-javascript.html)，一个完全有效的等式，不信自己可以试一下，下面看看高人的题解：
 
     ++[[]][+[]]+[+[]]
 

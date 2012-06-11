@@ -37,7 +37,7 @@ tags : [数据库, BD]
 使用情况统计数据，测量数据，GPS定位数据，session数据，任何只是短时间内对你有用，或经常变化的数据。
 如果你发现自己正在使用定时任务从某个表里删除有效期只有一小时，一天或数周的数据，
 那说明你没有找对正确的做事情的方法。
-使用[redis](http://justjavac.com/nosql/2012/04/13/redis-persistence-demystified/)，statsd/graphite， Riak，它们都是干这种事情更合适的工具。
+使用[redis](http://justjavac.com/nosql/2012/04/13/redis-persistence-demystified.html)，statsd/graphite， Riak，它们都是干这种事情更合适的工具。
 这建议也适用于对于收集那些短生命期的数据。
 
 当然，用挖土机在后花园里种土豆也是可行的，但相比起从储物间里拿出一把铲子，

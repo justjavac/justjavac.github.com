@@ -11,7 +11,7 @@ tags : [python, web.py]
 
 你知道 [Python][1] 同时你希望制作一个网站。 那么web.py正好提供了一种简单的方法。
 
-[1]: http://justjavac.com/python/2012/04/13/pythoner-handout/
+[1]: http://justjavac.com/python/2012/04/13/pythoner-handout.html
 
 如果你希望读完整个指南， 你需要安装Python, web.py, flup, psycopg2, 和Postgres (或者等价的数据库和Python驱动)。 详细，可以查看 [webpy.org](http://webpy.org).
 
@@ -80,7 +80,7 @@ GET是我们都熟悉的。它用于请求网页文本。当你在浏览器输�
 
 在 Python 中写 HTML 不是聪明的选择，相反在 HTML 中写 Python 则有趣的多。幸运的是，web.py 让这件事情做得简单而又漂亮。
 
-注意： 老版本的 web.py 使用 [Cheetah 模板系统](http://justjavac.com/python/2012/04/19/webpy-cookbook-template-cheetah/)，你可以也欢迎使用其他模板系统，但它可能不会被长久支持。
+注意： 老版本的 web.py 使用 [Cheetah 模板系统](http://justjavac.com/python/2012/04/19/webpy-cookbook-template-cheetah.html)，你可以也欢迎使用其他模板系统，但它可能不会被长久支持。
 
 给模板新建一个目录（命名为 templates），在该目录下新建一个以 .html 结尾的文件，内容如下：
 
@@ -127,7 +127,7 @@ URL 的后面的 ? 看起来不好看？修改下 URL 配置：
     
 现在访问 /Joe 看看，它会显示 hello Joe。
 
-如果学习更多关于 web.py 的模板处理，请访问 [web.py 模板](http://justjavac.com/python/2012/04/19/webpy-tutorial-templetor/).
+如果学习更多关于 web.py 的模板处理，请访问 [web.py 模板](http://justjavac.com/python/2012/04/19/webpy-tutorial-templetor.html).
 
 ## 数据库操作
 
@@ -223,5 +223,5 @@ web.py 还有一些帮助我们debug的工具。当它在内建的服务器中�
 ## 下一步是什么?
 
 * [更多文档](http://webpy.org/docs/0.3)
-* [Cookbook](http://justjavac.com/python/2012/04/19/webpy-cookbook/)
+* [Cookbook](http://justjavac.com/python/2012/04/19/webpy-cookbook.html)
 * [code samples](http://webpy.org/src)

@@ -65,7 +65,7 @@ Java当然是当前最大的安全漏洞, 但是通过javascript同样会对存�
 我只能想到的是浏览器中的photoshop或者其他的一些编辑器（比如视频、浏览器中的IDE）才需要依赖于javascript. 
 其他都可以通过重新加载和服务器端的一些部件解决. 
 
-让我们直面这样一个事实——在[Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner "Node入门")的时代, 服务器端也可以用javascript来写. 
+让我们直面这样一个事实——在[Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner.html "Node入门")的时代, 服务器端也可以用javascript来写. 
 Dav Glass of Yahoo两年前显示如果一个工具库编写成余环境独立的, 那么你就可以同时在客户端和服务器端复用这些工具. 
 
 "应用需要javascript"的真正原因似乎是其他原因, 而非技术上的. 
@@ -91,7 +91,7 @@ Dav Glass of Yahoo两年前显示如果一个工具库编写成余环境独立�
 通过展现给用户看他们能通过开启或者关闭浏览器中部件来解决问题同样是没有意义的. 
 当一个普通用户卡在你的应用中了, 这并不是一个告诉用户发生了什么的做法. 
 
-或许所有这些问题在[node](http://justjavac.com/nodejs/2012/04/06/just-what-is-nodejs-a-ready-to-code-server "什么是Node.js")变得成熟以及普及以后都不会再是问题. 
+或许所有这些问题在[node](http://justjavac.com/nodejs/2012/04/06/just-what-is-nodejs-a-ready-to-code-server.html "什么是Node.js")变得成熟以及普及以后都不会再是问题. 
 我将很乐意看到这点. 
 
 原文链接：[That "javascript not available" case][1]

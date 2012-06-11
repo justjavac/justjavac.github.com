@@ -402,8 +402,8 @@ guava-r09-gwt.jar，javadoc，源代码，readme 等文件。
 [2]: http://www.javalobby.org/articles/google-collections/
 [3]: http://www.infoq.com/news/2010/01/google_collections_10
 [4]: http://stackoverflow.com/questions/tagged/guava
-[5]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-1
-[6]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-2
+[5]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-1.html
+[6]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-2.html
 
 ## 关于作者
 

@@ -64,7 +64,7 @@ tags : [python, web.py]
 
 <h2 id="dev">开发</h2>
 
-<p>web.py 内置了web服务器。可以按照 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial/">tutorial</a> 学习如何写一个Web应用。 写完后，将你的代码放到 <code>code.py</code> 并如下面的方法来启动服务器：</p>
+<p>web.py 内置了web服务器。可以按照 <a href="http://justjavac.com/python/2012/04/19/webpy-tutorial.html">tutorial</a> 学习如何写一个Web应用。 写完后，将你的代码放到 <code>code.py</code> 并如下面的方法来启动服务器：</p>
 
 <pre><code> python code.py
 </code></pre>

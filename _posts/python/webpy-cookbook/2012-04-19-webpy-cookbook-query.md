@@ -32,7 +32,7 @@ webpy不会尝试为您和您的数据库建立层。相反，它试图以方便
     results = db.query("SELECT * FROM entries JOIN users WHERE entries.author_id = users.id")
 
 
-为了防止SQL注入攻击，db.query还接受了“vars”语法如下描述[db.select](http://justjavac.com/python/2012/04/19/webpy-cookbook-select/):
+为了防止SQL注入攻击，db.query还接受了“vars”语法如下描述[db.select](http://justjavac.com/python/2012/04/19/webpy-cookbook-select.html):
 
     results = db.query("SELECT * FROM users WHERE id=$id", vars={'id':10})
 

@@ -185,5 +185,5 @@ jQuery的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 英文原文：[10 Tips for Writing Awesome jQuery Plugins][3]
 
 [1]: http://www.websanova.com/plugins/websanova/tooltip
-[2]: http://justjavac.com/git/2012/04/13/git-quick-start
+[2]: http://justjavac.com/git/2012/04/13/git-quick-start.html
 [3]: http://www.queness.com/post/10828/10-tips-for-writing-awesome-jquery-plugins/

@@ -9,7 +9,7 @@ tags : [编程]
 
 这些年来，我看到过大量的反编程模式。我感觉应该向大家分享一些。
 
-今天，我要介绍的是被我称作反for-if编程模式的反模式「如果感兴趣可以查看一下这篇文章：[for 循环为何可恨？](http://justjavac.com/other/2012/05/15/whats-wrong-with-the-for-loop)」，也就是人们所说的”我们卖给你整个座位，但你需要的只是一个边。”
+今天，我要介绍的是被我称作反for-if编程模式的反模式「如果感兴趣可以查看一下这篇文章：[for 循环为何可恨？](http://justjavac.com/other/2012/05/15/whats-wrong-with-the-for-loop.html)」，也就是人们所说的”我们卖给你整个座位，但你需要的只是一个边。”
 
 这是一个特殊的反for-case模式，其中所有的情况中只有一次会是null。
 
