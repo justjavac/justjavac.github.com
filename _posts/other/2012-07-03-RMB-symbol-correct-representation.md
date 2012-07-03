@@ -1,4 +1,10 @@
-人民币的符号的正确表示法？一杠？两杠？
+---
+layout:     post
+title:      人民币的符号的正确表示法？一杠？两杠？
+keywords: 编程, 知识, web, css
+category : other
+tags : [编程, 知识, web, css]
+---
 
 因为做的项目会跟钱打了交道，所以被研究了。
 
