@@ -9,11 +9,6 @@ tagline: 专注最时髦的web开发技术
 
 <div class="row">
   <div class="span8">
-  
-  <ul class="tag_box inline">
-  {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
-</ul>
 
 {% for category in site.categories %} 
   <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
