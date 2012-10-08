@@ -9,14 +9,8 @@ tagline: 专注最时髦的web开发技术
 
 <div class="row">
   <div class="span8">
-
-{% for category in site.categories %} 
-  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  <ul>
-    {% assign pages_list = category[1] %}  
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate %}
   </div>
   
   <aside class="span4">
