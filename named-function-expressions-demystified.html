@@ -872,7 +872,7 @@
   <p style="margin-top: 2em; background: #ffc; float: left; padding: 0.5em;"> 要提建议或者反馈错误吗？可以<a href="http://thinkweb2.com/projects/prototype/named-function-expressions-demystified/" title="">在这篇博文中留言</a> 或者<a href="http://cloudflare.com/email-protection.html#117a707f76706951767c70787d3f727e7c" title="给我写邮件吧">给我写封邮件</a>，随便，怎么都行。 <br>
     这篇文章也 <a href="http://github.com/kangax/nfe/tree/master" title="this article on github">通过github实现了版本管理</a>，访问这个链接可以看到本文的最新版本。 </p>
   <p style="float: right; margin-top: 2em; padding: 0.5em;"> 发表时间：<span class="dtstart">2009年6月17日</span> 最近修改：<span class="dtstart">2009年10月9日</span> </p>
-
+ <div class="clearfix"></div>
 </div>
 
       <footer>
@@ -907,7 +907,7 @@
     
 
 
-  <script type="text/javascript">
+<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-11003279-2']);
   _gaq.push(['_trackPageview']);
@@ -919,37 +919,8 @@
   })();
 </script>
 
-  <script type="text/javascript">
-   $.fn.smartFloat = function() {
-    var position = function(element) {
-        var top = element.position().top, pos = element.css("position");
-        $(window).scroll(function() {
-            var scrolls = $(this).scrollTop();
-            if (scrolls > top) {
-                if (window.XMLHttpRequest) {
-                    element.css({
-                        position: "fixed",
-                        top: 0
-                    });
-                } else {
-                    element.css({
-                        top: scrolls
-                    });    
-                }
-            }else {
-                element.css({
-                    position: "absolute",
-                    top: top
-                });    
-            }
-        });
-    };
-    return $(this).each(function() {
-        position($(this));                         
-    });
-};
-
-$("#menu_fly").smartFloat();
+<script type="text/javascript">
+$.fn.smartFloat=function(){var a=function(b){var c=b.position().top,d=b.css("position");$(window).scroll(function(){var e=$(this).scrollTop();if(e>c){if(window.XMLHttpRequest){b.css({position:"fixed",top:0})}else{b.css({top:e})}}else{b.css({position:"absolute",top:c})}})};return $(this).each(function(){a($(this))})};$("#menu_fly").smartFloat();
 </script>
 
 
