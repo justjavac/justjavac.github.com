@@ -52,7 +52,7 @@
   <h1>命名函数表达式探秘</h1>
 </div>
 
-<div class="row">
+
 
     <div style="text-align: right;"><em>作者：<a href="http://perfectionkills.com/" title="">Juriy "kangax" Zaytsev</a></em></div>
     <div style="text-align: right;"><em>译者：<a href="http://www.cn-cuckoo.com/" title="">为之漫笔</a></em></div>
@@ -75,7 +75,7 @@
       <li><a href="#future-considerations">对未来的思考</a></li>
       <li><a href="#credits">致谢</a></li>
     </ol>
-  </div>
+
   <h2 id="introduction">前言</h2>
   <p>我觉得很奇怪，网上好像一直没有人认真地讨论过命名函数表达式（Named Function Expression，即“有名字函数表达式”，与“匿名函数”相对。——译者注）。而这也许正是各种各样的误解随处可见的一个原因。在这篇文章里，我打算从理论和实践两个方面出发，对这些令人惊叹的JavaScript结构的优缺点给出一个结论。</p>
   <p>简单来讲，命名函数表达式只有一个用处——在调试器或性能分析程序中描述函数的名称。没错，也可以使用函数名实现递归，但你很快就会知道，目前来看这通常是不切实际的。当然，如果你不关注调试，那就没什么可担心的。否则，就应该往下看一看，看看在跨浏览器开发中都会出现哪些小毛病（glitch），也看看应该怎样解决它们。</p>
