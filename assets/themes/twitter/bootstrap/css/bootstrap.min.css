@@ -90,7 +90,7 @@ dt{font-weight:bold;}
 dd{margin-left:9px;}
 hr{margin:18px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
 strong{font-weight:bold;}
-em{font-style:italic;}
+em{font-style:normal;color: dimGray;}
 .muted{color:#999999;}
 abbr{font-size:90%;text-transform:uppercase;border-bottom:1px dotted #ddd;cursor:help;}
 blockquote{padding:0 0 0 15px;margin:0 0 18px;border-left:5px solid #eeeeee;}blockquote p{margin-bottom:0;font-size:13px;font-weight:300;line-height:22.5px;}
