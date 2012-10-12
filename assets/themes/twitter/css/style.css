@@ -69,8 +69,6 @@ html, body {
 	color:#FFF;
 }
 #menu_fly {
-    background: url(images/tbg.gif) repeat-x;
-    text-align:center;
     /*width: 100px; */
     padding-top: 10px;
     border: #E3E2DF 1px solid;
