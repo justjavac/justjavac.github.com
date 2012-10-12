@@ -7,7 +7,8 @@
     <meta content="named function expressions, function expression, javascript, jscript identifier leak, function names in debuggers" name="keywords">
     <meta name="author" content="justjavac">
     <link rel="alternate" title="justjavac的博客" href="/atom.xml" type="application/rss+xml" />
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <script src="/assets/js/jquery-1.6.4.js"></script>
+   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -873,7 +874,6 @@
   <p style="float: right; margin-top: 2em; padding: 0.5em;"> 发表时间：<span class="dtstart">2009年6月17日</span> 最近修改：<span class="dtstart">2009年10月9日</span> </p>
 
 </div>
-</div>
 
       <footer>
         <p>&copy; justjavac 2012 
@@ -884,7 +884,26 @@
       </footer>
 
     </div> <!-- /container -->
-
+    
+<div id="menu_fly">
+    <ol>
+      <li><a href="#introduction">前言</a></li>
+      <li><a href="#expr-vs-decl">函数表达式与函数声明</a></li>
+      <li><a href="#function-statements">函数语句</a></li>
+      <li><a href="#named-expr">命名函数表达式</a></li>
+      <li><a href="#names-in-debuggers">调试器中的函数名</a></li>
+      <li><a href="#jscript-bugs">JScript的bug</a></li>
+      <li><a href="#jscript-memory-management">JScript的内存管理</a></li>
+      <li><a href="#tests">测试</a></li>
+      <li><a href="#safari-bug">Safari中存在的bug</a></li>
+      <li><a href="#spidermonkey-peculiarity">SpiderMonkey的怪癖</a></li>
+      <li><a href="#solution">解决方案</a></li>
+      <li><a href="#alt-solution">替代方案</a></li>
+      <li><a href="#webkit-displayName">WebKit的displayName</a></li>
+      <li><a href="#future-considerations">对未来的思考</a></li>
+      <li><a href="#credits">致谢</a></li>
+    </ol>
+</div>
     
 
 
@@ -898,6 +917,39 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+</script>
+
+  <script type="text/javascript">
+$.fn.smartFloat = function() {
+    var position = function(element) {
+        var top = element.position().top, pos = element.css("position");
+        $(window).scroll(function() {
+            var scrolls = $(this).scrollTop();
+            if (scrolls > top) {
+                if (window.XMLHttpRequest) {
+                    element.css({
+                        position: "fixed",
+                        top: 0
+                    });
+                } else {
+                    element.css({
+                        top: scrolls
+                    });    
+                }
+            }else {
+                element.css({
+                    position: "absolute",
+                    top: top
+                });    
+            }
+        });
+    };
+    return $(this).each(function() {
+        position($(this));                         
+    });
+};
+
+$("#menu_fly").smartFloat();
 </script>
 
 

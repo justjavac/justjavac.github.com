@@ -68,3 +68,16 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
+#menu_fly {
+    background: url(images/tbg.gif) repeat-x;
+    text-align:center;
+    /*width: 100px; */
+    padding-top: 10px;
+    border: #E3E2DF 1px solid;
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    position: absolute;
+    right: 5px;
+    top: 200px;
+}
