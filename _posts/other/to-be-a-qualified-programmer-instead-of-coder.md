@@ -93,18 +93,18 @@ B. **使用Use**
 C. **学习Learn**
 
 <ol>
-<li><strong>理解Understand</strong>——你做了什么及你为什么那样做——从代码和实现中学习。</li>
+<li><p><strong>理解Understand</strong>——你做了什么及你为什么那样做——从代码和实现中学习。</p></li>
 
-<li><strong>扩充知识Expand</strong>——
+<li><p><strong>扩充知识Expand</strong>——
 <ul>
   <li>实践性知识Practical：解决问题的特定方法、技巧及风格；</li>
   <li>概念知识Concept：学习新概念、提炼现有的并构建自己的概念；</li>
   <li>隐性知识Recessive：明智地使用并学习搜索到的解决方案，经验会自然而然地得到增长。</li>
-</ul>
+</ul></p>
 </li>
 
-<li><strong>收集Collect</strong>（链接、意见、参考文献、阅读清单）—任何对你今后搜索、发现及学习有用的有趣信息。
-为这些目标积累知识。</li>
+<li><p><strong>收集Collect</strong>（链接、意见、参考文献、阅读清单）—任何对你今后搜索、发现及学习有用的有趣信息。
+为这些目标积累知识。</p></li>
 </ol>
 
 还有一点也很重要: **分享与交流**。
