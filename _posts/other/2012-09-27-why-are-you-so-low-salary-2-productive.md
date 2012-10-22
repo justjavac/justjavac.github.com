@@ -6,6 +6,8 @@ category : other
 tags : [方法]
 ---
 
+在上一篇文章中提到，升薪的关键在于『[你可以做别人做不了的事](http://justjavac.com/other/2012/09/21/why-are-you-so-low-salary.html)』。
+
 程序员，就是整天与机器打交道的那群人。 
 在计算机并不普及的年代，这样的描述毫无疑问。
 
