@@ -44,8 +44,8 @@ tags: [php, MVC]
 
 比如
 
-	GET http://justjavac.com/users			// 所有用户
-	GET http://justjavac.com/users/phper	// 标识为phper的用户
+    GET http://justjavac.com/users         // 所有用户
+    GET http://justjavac.com/users/phper   // 标识为phper的用户
 
 ## 2. 扩展名
 
@@ -71,19 +71,19 @@ a、当我们请求 `http://justjavac.com/users` 时，框架将返回一个html
 
 b、当我们请求 `http://justjavac.com/user.json` 时，将返回 json 格式数据。
 
-	[
-		{
-			"firstName" : "just",
-			"lastName" : "javac",
-			"userName" : "@justjavac"
-		},
-		{
-			"firstName" : "Tom",
-			"lastName" : "Cat",
-			"userName" : "@tomcat"
-		},
-		……
-	]
+    [
+        {
+            "firstName" : "just",
+            "lastName" : "javac",
+            "userName" : "@justjavac"
+        },
+        {
+            "firstName" : "Tom",
+            "lastName" : "Cat",
+            "userName" : "@tomcat"
+        },
+        ……
+    ]
 
 c、当我们请求 `http://justjavac.com/user.xml` 时，
 将返回 xml 格式的数据，xml 文档可由 DTD 或者 XSD 定义。
@@ -140,8 +140,8 @@ REST 也可以利用这些头，告诉客户端在一定时间内不需要再次
 PHP 的灵活使得自动化测试或者 TDD 变得困难，至少和 Java 比就差了好大一截。
 在框架中，将很自由的开启调试，比如我的设计是通过添加 url 参数：
 
-	http://justjavac.com/user/justjavac?DEBUG=2
-	
+    http://justjavac.com/user/justjavac?DEBUG=2
+    
 通过添加 DEBUG 参数告诉框架开启调试模式，后面的参数值是调试的级别 level。
 类似的，你也可以加入 LOG 参数来启动日志。
 
