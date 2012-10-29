@@ -22,7 +22,7 @@ tags: [php, MVC]
 跟随本教程，将从零开始设计一个属于自己的 MVC 框架。
 
 我使用过 ZendFramwork、CodeIgniter，每个框架都有自己的优点和不足。
-在写本文之前，我又看了Symfony、cakephp、MooPHP、doitphp等的核心源码，
+在写本文之前，我又看了 Symfony、cakephp、MooPHP、doitphp 等的核心源码，
 下面说说我将把我的框架设计成什么样子，这一章主要讨论 URL 的设计。
 
 ## 1. REST
@@ -64,11 +64,12 @@ tags: [php, MVC]
 用 url `http://justjavac.com/users` 就可以唯一标识，
 而 **扩展名可以用来标识资源的不同表现形式**。
 
-甲) 当我们请求 `http://justjavac.com/users` 时，框架将返回一个html文档。
+a、当我们请求 `http://justjavac.com/users` 时，框架将返回一个html文档，
+数据可能在表格中，也可能在 form 中，也可能在 div 中（如下图）。
 
 ![table of users](/assets/images/diy-design-php-mvc-framework-url-users.png "table of users")
 
-乙) 当我们请求 `http://justjavac.com/user.json` 时，将返回 json 格式数据。
+b、当我们请求 `http://justjavac.com/user.json` 时，将返回 json 格式数据。
 
 	[
 		{
@@ -77,29 +78,35 @@ tags: [php, MVC]
 			"userName" : "@justjavac"
 		},
 		{
-			……
+			"firstName" : "Tom",
+			"lastName" : "Cat",
+			"userName" : "@tomcat"
 		},
 		……
 	]
 
-丙) 当我们请求 `http://justjavac.com/user.xml` 时，
+c、当我们请求 `http://justjavac.com/user.xml` 时，
 将返回 xml 格式的数据，xml 文档可由 DTD 或者 XSD 定义。
 
-如果我们想把所有用户的列表发给管理员，或者打印出来。
+d、如果我们想把所有用户的列表发给管理员，或者打印出来呢？
+
 可以直接访问 `http://justjavac.com/user.xls`，框架将会返回 Excel 电子表格。
 当我们高高兴兴把文件下载下来，却发现电脑没有安装 Excel，怎么办？
-没关系，我们还可以访问 `http://justjavac.com/user.jpg` 毕竟看图工具我们还是有的。
+没关系，我们还可以访问 `http://justjavac.com/user.jpg`，毕竟看图工具我们还是有的。
 
-总之，不管用了什么扩展名，将返回同一个资源，只是表现形式不同罢了。
+总之，**不管用了什么扩展名，将返回同一个资源，只是表现形式不同罢了**。
 这也就是经常所说的 **数据 + 模板 = 输出**。
 
-如果没有扩展名呢？返回 HTML 文档？别忘了 http 请求的 Accept。
-设置 `Accept: application/x-excel` 我们依然可以得到一个电子表格。
+如果没有扩展名呢？返回 HTML 文档？
+
+别忘了 http 请求的 Accept。
+设置请求头的 `Accept: application/x-excel` 我们依然可以得到一个电子表格。
+
 甚至当我们访问某个用户时， `http://justjavac.com/user/justjavac`，我们可以使用 `Accept: text/x-vcard`，如果不知道嘛意思，自己Google去。
 
 ![justjavac.vcard](/assets/images/diy-design-php-mvc-framework-url-vcard.png "justjavac.vcard")
 
-下面说说设计模式，在这个功能上，可以用一个适配器模式，根据不同的扩展名选择不同的适配器，执行不同的功能，提供相同的接口，具体实现就不多说了。
+下面说说设计模式，在这个功能上，可以用一个适配器模式，**根据不同的扩展名选择不同的适配器，执行不同的功能，最后提供相同的接口**，具体实现就不多说了。
 
 ## 3. 多语言支持
 
@@ -108,6 +115,7 @@ tags: [php, MVC]
 ## 4. 充分利用 HTTP
 
 和请求有关的错误和其他重要的状态信息怎么办呢？
+
 简单，使用 HTTP 的状态码！
 通过使用 HTTP 状态码，你不需要为你的接口想出 error/success 规则，它已经为你做好。
 
@@ -137,7 +145,7 @@ PHP 的灵活使得自动化测试或者 TDD 变得困难，至少和 Java 比�
 通过添加 DEBUG 参数告诉框架开启调试模式，后面的参数值是调试的级别 level。
 类似的，你也可以加入 LOG 参数来启动日志。
 
-这样设计还有一个好处就是，不需要修改配置文件，而且还可以针对某一个页面来开启或者关闭。
+这样设计还有一个好处就是，不需要修改配置文件，而且还可以 **针对某一个页面来开启或者关闭**。
 当我用 CI 时，每次我发现程序中的问题，都在配置文件中将 log 级别设置为 all，
 再重新打开页面，当我再看 log 文件时，居然已经几百行了，因为我访问的每个页面都被记录到了日志里面。
 
