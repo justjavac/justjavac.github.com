@@ -5,9 +5,6 @@ permalink: /:categories/:year/:month/:day/:title.html
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-
-# add by justjavac on 2012-11-01
-markdown: rdiscount
 pygments: true
 
 paginate: 5
