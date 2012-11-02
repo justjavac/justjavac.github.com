@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: 如何评价“黑客与画家”
-keywords: book,书籍
+title: 如何评价 黑客与画家
+keywords: book
 category: book
 tags: [book]
 ---
