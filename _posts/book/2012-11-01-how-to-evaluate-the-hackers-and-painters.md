@@ -1,9 +1,9 @@
 ﻿---
 layout: post
-title: 如何评价『黑客与画家』
+title: 如何评价“黑客与画家”
 keywords: book,书籍
-category : book
-tags : [book]
+category: book
+tags: [book]
 ---
 
 一本好的书，让我们收获的不单单是某种技巧，或者某种方法论， 
