@@ -16,13 +16,13 @@ tagline: 专注最时髦的web开发技术
   <aside class="span4">
     
     <section>
-    <h4>RSS订阅</h4>
+    <h3>RSS订阅</h3>
     <p>本博客源码托管在 <a href="https://github.com/justjavac/justjavac.github.com" target="_blank">github</a> 上，因此访问速度不是很快，而且有时会出现打不开的情况（你懂滴），
         建议大家多使用RSS访问阅读（推荐使用 <a href="https://www.google.com/reader/view/feed/http%3A//justjavac.com/atom.xml" target="_blank" title="订阅到 Goolge Reader">Google Reader</a>）。</p>
     </section>
     
     <section>
-    <h4>推荐阅读</h4>
+    <h3>推荐阅读</h3>
     <ul id="recent_posts">
       <li><a href="http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html">代码之谜 - 开篇/前言/序</a></li>
       <li><a href="http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html">一个合格的程序员应该读过哪些书</a></li>
@@ -37,13 +37,15 @@ tagline: 专注最时髦的web开发技术
     </ul>
     </section>
     
-  {% unless site.categories == empty %}
-    <h4>分类</h4>
+    <section>
+    {% unless site.categories == empty %}
+    <h3>分类</h3>
     <ul class="tag_box">
       {% assign categories_list = site.categories %}
       {% include JB/categories_list %}
     </ul>
-  {% endunless %}  
+    {% endunless %}  
+    </section>
     
   </aside>
 </div>

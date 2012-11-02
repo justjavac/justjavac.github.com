@@ -26,9 +26,10 @@
   </div>
   
   <aside class="span4">
-<iframe width="300" height="90" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=300&height=90&fansRow=1&ptype=0&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=0&isFans=0&uid=1361535293&verifier=cfc77363&colors=d6f3f7,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>    <h4>发布日期</h4>
+<iframe width="300" height="90" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=300&height=90&fansRow=1&ptype=0&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=0&isFans=0&uid=1361535293&verifier=cfc77363&colors=d6f3f7,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>    <h3>发布日期</h3>
     <div class="date"><span>{{ page.date | date:"%Y-%m-%d" }}</span></div>
 
+    <section>
   {% unless page.tags == empty %}
     <h4>标签</h4>
     <ul class="tag_box">
@@ -36,9 +37,10 @@
     {% include JB/tags_list %}
     </ul>
   {% endunless %}  
+    </section>
     
     <section>
-    <h4>推荐阅读</h4>
+    <h3>推荐阅读</h3>
     <ul id="recent_posts">
       <li><a href="http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html">代码之谜 - 开篇/前言/序</a></li>
       <li><a href="http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html">一个合格的程序员应该读过哪些书</a></li>
