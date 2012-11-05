@@ -68,7 +68,7 @@ a:hover{color:#005580;text-decoration:underline;}
 .container-fluid:after{clear:both;}
 p{margin:1em 0;font-family:Helvetica,arial,freesans,clean,sans-serif;font-size:13px;line-height:1.6em;}p small{font-size:11px;color:#999999;}
 .lead{margin-bottom:18px;font-size:20px;font-weight:200;line-height:27px;}
-h1,h2,h3,h4,h5,h6{margin:0;font-weight:bold;color:#333333;text-rendering:optimizelegibility;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;color:#999999;}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:bold;color:#333333;text-rendering:optimizelegibility;font-family: 'Microsoft YaHei',Verdana,"BitStream vera Sans";}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;color:#999999;}
 h1{font-size:30px;line-height:38px;}h1 small{font-size:18px;}
 h2{font-size:24px;line-height:38px;}h2 small{font-size:18px;}
 h3{font-size:18px;line-height:30px;}h3 small{font-size:14px;}
