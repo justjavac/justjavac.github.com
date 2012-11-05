@@ -94,7 +94,7 @@ strong{font-weight:bold;}
 em{font-style:normal;color: dimGray;}
 .muted{color:#999999;}
 abbr{font-size:90%;text-transform:uppercase;border-bottom:1px dotted #ddd;cursor:help;}
-blockquote{margin:0 0 18px;border:1px dashed #CCC;padding:8px 12px 8px 36px;
+blockquote{margin:18px 0 18px;border:1px dashed #CCC;padding:0 12px 8px 36px;
 background:#F4F5F7 url(../img/blockquote.gif) 3px 3px no-repeat;}
 blockquote p{margin-bottom:0;font-size:13px;font-weight:300;line-height:22.5px;}
 blockquote small{display:block;line-height:18px;color:#999999;}blockquote small:before{content:'\2014 \00A0';}
