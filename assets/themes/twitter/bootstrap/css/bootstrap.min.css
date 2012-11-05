@@ -70,7 +70,7 @@ p{margin:1em 0;font-family:Helvetica,arial,freesans,clean,sans-serif;font-size:1
 .lead{margin-bottom:18px;font-size:20px;font-weight:200;line-height:27px;}
 h1,h2,h3,h4,h5,h6{margin:0;font-weight:bold;color:#333333;text-rendering:optimizelegibility;font-family: 'Microsoft YaHei',Verdana,"BitStream vera Sans";}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;color:#999999;}
 h1{font-size:25px;line-height:36px;}h1 small{font-size:18px;}
-h2{font-size:20px;line-height:32px;}h2 small{font-size:18px;}
+h2{font-size:20px;line-height:32px;border-bottom: 1px solid #CCC;}h2 small{font-size:18px;}
 h3{font-size:18px;line-height:30px;}h3 small{font-size:14px;}
 section h3{font-size:18px;line-height:38px;letter-spacing:3px;}
 h4,h5,h6{line-height:18px;}
