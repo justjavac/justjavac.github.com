@@ -6,7 +6,7 @@ category : codepuzzle
 tags : [代码之谜, 浮点数]
 ---
 
-在『代码之谜』系列的前几篇文章中，很多次出现了浮点数。
+在『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列的前几篇文章中，很多次出现了浮点数。
 浮点数在很多编程语言中被称为简单数据类型，其实，浮点数比起那些复杂数据类型（比如字符串）来说，
 一点都不简单。
 
