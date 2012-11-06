@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 代码之谜 - 有限与无限
+title: 代码之谜（一）- 有限与无限
 tagline: 从整数的绝对值说起
 description: 整数的绝对值
 keywords: 代码之谜

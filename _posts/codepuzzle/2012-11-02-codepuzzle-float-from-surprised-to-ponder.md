@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 代码之谜-浮点数（从惊讶到思考）
+title: 代码之谜（四）- 浮点数（从惊讶到思考）
 keywords: 代码之谜, 浮点数
 category : codepuzzle
 tags : [代码之谜, 浮点数]

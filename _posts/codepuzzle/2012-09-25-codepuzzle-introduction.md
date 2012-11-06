@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 代码之谜 - 开篇/前言/序
+title: 代码之谜（零）- 开篇/前言/序
 tagline: 其实，你不懂代码
 description: 其实，你不懂代码
 keywords: 代码之谜
