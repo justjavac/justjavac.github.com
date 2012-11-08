@@ -38,7 +38,7 @@ tags : [git, github, markdown, jekyll]
 
 不再忧虑排版，专注写作。
 
-<http://markdown.tw>
+<http://justjavac.com/jekyll/2012/03/31/markdown-basics.html>
 
 ## jekyll
 
