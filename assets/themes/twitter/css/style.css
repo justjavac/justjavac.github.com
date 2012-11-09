@@ -2,6 +2,17 @@
 html, body {
   background-color: #eee;
 }
+.section {
+  border: #D2D2D2 1px solid;
+  padding: 0 5px;
+}
+section h3 {
+  font-size: 18px;
+  border-bottom: #D2D2D2 1px solid;
+  letter-spacing:3px;
+  height: 30px;
+  margin-bottom: 8px;
+}
 .navbar {
   margin-bottom: 0;
 }
