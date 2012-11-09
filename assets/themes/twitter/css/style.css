@@ -5,6 +5,7 @@ html, body {
 section {
   border: #D2D2D2 1px solid;
   padding: 0 5px;
+  margin-bottom:5px;
 }
 section h3 {
   font-size: 18px;
