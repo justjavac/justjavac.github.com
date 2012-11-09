@@ -1,4 +1,4 @@
-# justjavac
+## justjavac
 
 2005年的时候，写博客是一种流行；<br>
 2011年的时候，写博客是一种坚持。
@@ -10,7 +10,7 @@
 2005年的时候，很多人玩博客就是为了互踩和点击量；<br>
 2011年的时候，还在写博客的人多数是因为记录。
 
-# 最新动态
+## 最新动态
 
 目前正在编写『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列
 
