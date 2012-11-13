@@ -54,7 +54,7 @@ TNND，那个 false 是什么意思？不替换吗？还是别的什么意思？
 
 这又是什么啊？
 
-看了文档才知道，这是创建一个文本框，第三个参数是：“是否要滚动条”，第四个是：“是否要自动换行”。TNND。
+看了文档才知道，这是创建一个文本框，第三个参数是：“是否要滚动条”，第四个是：“是否要自动换行”。TNND！
 
 这种情况还不算最差，看看下面的双重否定。
 
@@ -69,6 +69,6 @@ TNND，那个 false 是什么意思？不替换吗？还是别的什么意思？
 看完这篇文章，我希望你再也 **不要把bool为作为函数参数了**。除非两个原因：
 
 * 你 100% 确认不会带来阅读上的问题，比如 Java 的 setVisible (bool). 
-* 你 100% 确认你想去 [写出无法维护很难阅读的代码](http://coolshell.cn/articles/4758.html)。 
+* 你 100% 确认你想去 [写出迷一样的代码](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)。 
 
-如果你想设计一个好的 API，强烈推荐你读一下 Nokia 的 Q t的《API Design Principles》，本文就是其中的 “Boolean Trap”。
+如果你想设计一个好的 API，强烈推荐你读一下 Nokia 的 Qt 的《API Design Principles》，本文就是其中的 “Boolean Trap”。
