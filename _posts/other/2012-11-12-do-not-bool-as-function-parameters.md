@@ -1,4 +1,10 @@
-千万不要把 bool 当成函数参数
+---
+layout:     post
+title:      千万不要把 bool 当成函数参数
+keywords: 参数,函数
+category : other
+tags : [参数,函数]
+---
 
 我们有很多 Coding Style 或 代码规范。
 但这一条可能会经常被我们所遗忘，就是我们 **经常会在函数的参数里使用bool参数，这会大大地降低代码的可读性**。
@@ -68,7 +74,7 @@ TNND，那个 false 是什么意思？不替换吗？还是别的什么意思？
 
 看完这篇文章，我希望你再也 **不要把bool为作为函数参数了**。除非两个原因：
 
-* 你 100% 确认不会带来阅读上的问题，比如 Java 的 setVisible (bool). 
+* 你 100% 确认不会带来阅读上的问题，比如 Java 的 `setVisible (bool)`. 
 * 你 100% 确认你想去 [写出迷一样的代码](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)。 
 
 如果你想设计一个好的 API，强烈推荐你读一下 Nokia 的 Qt 的《API Design Principles》，本文就是其中的 “Boolean Trap”。
