@@ -98,3 +98,85 @@ section h3 {
     display: inline-block;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHNJREFUeNpMjSEOACEMBFvAonDAX/g1Hskj8CBQCASid72kFzZpuruTtEhEcKuU8hW9dzC1VhpjQIwRzjmYUsKcM1lrQTF4hQzYMODMXt0n55w/4K3kvtb6BuCcIyOhtYb8h7XW+saEEGDvTVKKvPfwCDAAeVw3ymTDSoEAAAAASUVORK5CYII=) no-repeat right center;
 }
+/*------ hot ------------*/
+.hots {
+    overflow: hidden;
+    margin: 0 0 20px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.hots .textItem {
+    overflow: hidden;
+    margin: 0 0 5px;
+    color: #535353;
+    list-style-type: none;
+    _clear: both;
+}
+
+.hots .textItem p {
+    margin: 0;
+    padding: 0;
+}
+
+.hots .textItem .itemTitle {
+    overflow: hidden;
+    float: left;
+    display: inline;
+    height: 20px;
+    line-height: 23px;
+}
+
+.hots .itemTitle span {
+    float: left;
+    display: inline;
+    width: 15px;
+    background: url('/images/icon_square.gif') no-repeat 0 10px;
+}
+
+.hots .textItem .analytics {
+    clear: both;
+    margin-left: 15px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.hots .textItem a {
+    color: #4a7cb3;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.hots .textItem a:hover {
+    color: #ef4b4b;
+}
+.default .itemTitle span { text-indent: -9999px; _text-indent:0; _line-height: 9999px;}
+.textItem .itemTitle span {
+    float: left;
+    display: inline;
+    width: 16px;
+    height: 16px;
+    margin: 2px 5px 0 0;
+    line-height: 16px;
+    background: url('../images/hot.gif') no-repeat 0 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-indent: 0;
+}
+
+.textItem .itemTitle .hot { background-position: -16px 0;}
+
+.gray .textItem .itemTitle span, .white .textItem .itemTitle span {
+    width: 18px;
+    height: 14px;
+    margin-top: 3px;
+    line-height: 14px;
+}
+
+.white .textItem .itemTitle span { color: #535353;}
+.gray .textItem .itemTitle .hot, .white .textItem .itemTitle .hot { background-position: 0 0;}
+.hots .textItem .analytics { margin-left: 21px;}
+.gray .textItem .analytics, .white .textItem .analytics { margin-left: 23px;}

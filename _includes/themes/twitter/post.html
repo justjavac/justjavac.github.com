@@ -88,7 +88,68 @@
     
     <section>
     <h3>热门文章</h3>
-    <iframe id="wumii_hot" width="100%" height="305" frameborder="0" scrolling="no" src="http://app.wumii.com/ext/widget/hot?prefix=http%3A%2F%2Fjustjavac.com%2F&num=10&t=1" onload="hotload()"></iframe>
+    <ul class="hots gray">
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="hot">1</span>
+                <a href="http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html" target="_blank" title="代码之谜（零）- 开篇/前言/序">
+    代码之谜（零）- 开篇/前言/序</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="hot">2</span>
+                <a href="http://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html" target="_blank" title="代码之谜（四）- 浮点数（从惊讶到思考）">
+    代码之谜（四）- 浮点数（从惊讶到思考）</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="hot">3</span>
+                <a href="http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html" target="_blank" title="为什么 ++[[]][+[]]+[+[]] = 10？">
+    为什么 ++[[]][+[]]+[+[]] = 10？</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">4</span>
+                <a href="http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-operator.html" target="_blank" title="代码之谜（三）- 运算符">
+    代码之谜（三）- 运算符</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">5</span>
+                <a href="http://justjavac.com/other/2012/11/12/do-not-bool-as-function-parameters.html" target="_blank" title="千万不要把 bool 当成函数参数">
+    千万不要把 bool 当成函数参数</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">6</span>
+                <a href="http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html" target="_blank" title="一个合格的程序员应该读过哪些书">
+    一个合格的程序员应该读过哪些书</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">7</span>
+                <a href="http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html" target="_blank" title="代码之谜（二）- 语句与表达式">
+    代码之谜（二）- 语句与表达式</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">8</span>
+                <a href="http://justjavac.com/codepuzzle/2012/10/15/codepuzzle-finite-and-infinite.html" target="_blank" title="代码之谜（一）- 有限与无限">
+    代码之谜（一）- 有限与无限</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">9</span>
+                <a href="http://justjavac.com/nosql/2012/04/13/redis-persistence-demystified.html" target="_blank" title="解密Redis持久化">
+    解密Redis持久化</a></p>
+            </li>
+    <li class="textItem">
+            <p class="itemTitle">
+                <span class="">10</span>
+                <a href="http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html" target="_blank" title="代码之谜（五）- 浮点数（谁偷了你的精度？）">
+    代码之谜（五）- 浮点数（谁偷了你的精度？）</a></p>
+            </li>
+    </ul>
     </section>
     
   </aside>
@@ -100,15 +161,6 @@ document.onscroll = function(){
     for(var i = 0; i < lnks.length; i++){
         document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
         document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
-    }
-}
-
-function hotload(){
-    console.log("hotload" + new Date());
-    var num = document.getElementById("wumii_hot").getElementsByTagName("a").length;
-    for(var i = 0; i < num; i++){
-        document.getElementById("wumii_hot").getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
-        document.getElementById("wumii_hot").getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
     }
 }
 </script>
