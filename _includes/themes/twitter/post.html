@@ -95,12 +95,14 @@
 </div>
 <script type="text/javascript">
 document.onload = function(){
-    document.getElementsByClassName("wumii-related-items-div")[0].onload = function(){
-        var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
-        for(var i = 0; i < lnks.length; i++){
-            lnks[i].onmousedown = function(){ return false;};    
-            lnks[i].onmouseup = function(){ return false;}; 
+    setTimeout(function() {
+        document.getElementsByClassName("wumii-related-items-div")[0].onload = function(){
+            var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
+            for(var i = 0; i < lnks.length; i++){
+                lnks[i].onmousedown = function(){ return false;};    
+                lnks[i].onmouseup = function(){ return false;}; 
+            }
         }
-    }
+    }, 10000)
 }
 </script>
