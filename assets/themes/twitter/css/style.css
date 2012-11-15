@@ -131,7 +131,7 @@ section h3 {
     float: left;
     display: inline;
     width: 15px;
-    background: url('/images/icon_square.gif') no-repeat 0 10px;
+    background: url('/assets/images/icon_square.gif') no-repeat 0 10px;
 }
 
 .hots .textItem .analytics {
@@ -160,7 +160,7 @@ section h3 {
     height: 16px;
     margin: 2px 5px 0 0;
     line-height: 16px;
-    background: url('../images/hot.gif') no-repeat 0 0;
+    background: url('/assets/images/hot.gif') no-repeat 0 0;
     color: #fff;
     font-size: 12px;
     text-align: center;
