@@ -94,19 +94,17 @@
   </aside>
 </div>
 <script type="text/javascript">
-document.onload = function(){
-    setTimeout(function() {
-        document.getElementsByClassName("wumii-related-items-div")[0].onload = function(){
-            var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
-            for(var i = 0; i < lnks.length; i++){
-                document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
-                document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
-            }
-        }
-    }, 10000)
+document.onscroll = function(){
+    console.log("onscroll" + new Date());
+    var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
+    for(var i = 0; i < lnks.length; i++){
+        document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
+        document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
+    }
 }
 
 function hotload(){
+    console.log("hotload" + new Date());
     var num = document.getElementsByTagName("a").length;
     for(var i = 0; i < num; i++){
         document.getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
