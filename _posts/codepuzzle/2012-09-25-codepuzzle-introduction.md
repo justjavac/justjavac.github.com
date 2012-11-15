@@ -51,7 +51,7 @@ tags : [代码之谜]
 
     foo2(010);
     
-第三段代码: (注: 这不是 javascript 的问题，而且所有语言的问题，归根结底是 IEEE 标准中二进制浮点运算的问题，关于浮点数的详细问题请阅读 [代码之谜 - 浮点数]()，「为什么没有链接呢，呵呵，因为我还没有写，正在整理中」。)
+第三段代码: (注: 这不是 javascript 的问题，而且所有语言的问题，归根结底是 IEEE 标准中二进制浮点运算的问题，关于浮点数的详细问题请阅读 [代码之谜 - 浮点数](http://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html)，「<del>为什么没有链接呢，呵呵，因为我还没有写，正在整理中</del>」。)
     
     console.log(0.2 + 0.4);
     
