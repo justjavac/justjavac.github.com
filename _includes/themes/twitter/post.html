@@ -96,7 +96,9 @@
 <script type="text/javascript">
     var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
     for(var i = 0; i < lnks.length; i++){
-        lnks[i].onmousedown = function(){ return false;};    
-        lnks[i].onmouseup = function(){ return false;}; 
+        lnks[i].onload = function(){
+            lnks[i].onmousedown = function(){ return false;};    
+            lnks[i].onmouseup = function(){ return false;}; 
+        }
     }
 </script>
