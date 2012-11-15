@@ -88,7 +88,7 @@
     
     <section>
     <h3>热门文章</h3>
-    <iframe width="100%" height="305" frameborder="0" scrolling="no" src="http://app.wumii.com/ext/widget/hot?prefix=http%3A%2F%2Fjustjavac.com%2F&num=10&t=1" onload="hotload()"></iframe>
+    <iframe id="wumii_hot" width="100%" height="305" frameborder="0" scrolling="no" src="http://app.wumii.com/ext/widget/hot?prefix=http%3A%2F%2Fjustjavac.com%2F&num=10&t=1" onload="hotload()"></iframe>
     </section>
     
   </aside>
@@ -105,10 +105,10 @@ document.onscroll = function(){
 
 function hotload(){
     console.log("hotload" + new Date());
-    var num = document.getElementsByTagName("a").length;
+    var num = document.getElementById("wumii_hot").getElementsByTagName("a").length;
     for(var i = 0; i < num; i++){
-        document.getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
-        document.getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
+        document.getElementById("wumii_hot").getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
+        document.getElementById("wumii_hot").getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
     }
 }
 </script>
