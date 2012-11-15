@@ -4,7 +4,16 @@
 
 <div class="row">
   <div class="span8">
+    <div id="article">
     {{ content }}
+    </div>
+    <script type="text/javascript">
+        var lnks = document.getElementById("article").getElementsByTagName("a");
+        for(var i = 0; i < lnks.length; i++){
+            lnks[i].target = "_blank";
+            lnks[i].className = "external";            
+        }
+    </script>
     <script type="text/javascript" id="wumiiRelatedItems"></script>
     <script type="text/javascript">
     var wumiiPermaLink = ""; //请用代码生成文章永久的链接

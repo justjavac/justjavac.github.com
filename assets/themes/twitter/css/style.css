@@ -92,3 +92,9 @@ section h3 {
     right: 5px;
     top: 200px;
 }
+.external {
+    padding: 0 10px 0 0;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHNJREFUeNpMjSEOACEMBFvAonDAX/g1Hskj8CBQCASid72kFzZpuruTtEhEcKuU8hW9dzC1VhpjQIwRzjmYUsKcM1lrQTF4hQzYMODMXt0n55w/4K3kvtb6BuCcIyOhtYb8h7XW+saEEGDvTVKKvPfwCDAAeVw3ymTDSoEAAAAASUVORK5CYII=) no-repeat right center;
+}
