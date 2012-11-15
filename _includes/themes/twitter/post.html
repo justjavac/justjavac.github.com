@@ -99,8 +99,8 @@ document.onload = function(){
         document.getElementsByClassName("wumii-related-items-div")[0].onload = function(){
             var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
             for(var i = 0; i < lnks.length; i++){
-                lnks[i].onmousedown = function(){ return false;};    
-                lnks[i].onmouseup = function(){ return false;}; 
+                document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
+                document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
             }
         }
     }, 10000)
