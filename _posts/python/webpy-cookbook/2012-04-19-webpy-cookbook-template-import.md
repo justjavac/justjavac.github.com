@@ -7,9 +7,11 @@ category : python
 tags : [python, web.py, cookbook]
 ---
 
-`Problem`: How can I import a python module in template?
+## Problem: 
 
-`Solution`:
+How can I import a python module in template?
+
+## Solution:
 
 While you write templates, inevitably you will need to write some functions which is related to display logic only.  web.py gives you the flexibility to write large blocks of code, including defining functions, directly in the template using `$code` blocks (if you don't know what is $code block, please read the [tutorial for Templator](http://justjavac.com/python/2012/04/19/webpy-tutorial-templetor.html) first).  For example, the following code block will translate a status code from database to a human readable status message:
 
