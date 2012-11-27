@@ -17,7 +17,7 @@ tags : [代码之谜]
 前几天QQ群里有人问道，遂打算写一个系列，用比较「贫」的语言把他们讲述出来。
 
 原文首发在我的博客:  <http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html>, 因为我也不能保证我的博客空间总是稳定的，所以，如果博客访问不了，
-可以到 [CSDN](http://blog.csdn.net/justjavac/article/details/8019644) 查看这篇文章，还可以顺便看看热心网友的评论。
+可以到 [iteye](http://justjavac.iteye.com/blog/1685559) 或 [CSDN](http://blog.csdn.net/justjavac/article/details/8019644) 查看这篇文章，还可以顺便看看热心网友的评论。
 
 -------------------------------------
 
