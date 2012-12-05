@@ -172,3 +172,5 @@ CSDN曾明文保存过用户的口令。
 * Charles Miller’s Persistent Login Cookie Best Practice
 * Wikipedia: HTTP cookie
 * Personal knowledge questions for fallback authentication: Security questions in the era of Facebook </p>
+
+原文来自：<http://coolshell.cn/articles/5353.html>
