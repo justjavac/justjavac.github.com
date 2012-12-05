@@ -165,7 +165,8 @@ CSDN曾明文保存过用户的口令。
 这个时候你怎么办？一般最常见使用的方法是让所有的用户输错口令后再次尝试的时间成本增加。</p></li>
 </ul><p>最后，再说一下，关于用户登录，使用第三方的 OAuth 和 OpenID 也不失为一个很不错的选择。</p>
 
-<p>参考文章
+**参考文章**
+
 * OWASP Guide To Authentication
 * Dos and Don’ts of Client Authentication on the Web （PDF）
 * Charles Miller’s Persistent Login Cookie Best Practice
