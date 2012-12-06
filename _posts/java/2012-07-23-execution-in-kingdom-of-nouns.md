@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 名词王国里的死刑（翻译） - A Story of Hello World
+title: 名词王国里的死刑（翻译）
+tagline: A Story of Hello World
 keywords: 代码, code
 category : java
 tags : [java]
