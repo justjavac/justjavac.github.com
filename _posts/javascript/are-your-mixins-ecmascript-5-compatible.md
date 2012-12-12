@@ -11,7 +11,7 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 作者：Nicholas C. Zakas
 
-译文：[你的 mixin 兼容 ECMAScript 5 吗？]()
+译文：[你的 mixin 兼容 ECMAScript 5 吗？](http://justjavac.com/javascript/2012/12/12/are-your-mixins-ecmascript-5-compatible.html)
 
 译者：[justjavac](http://justjavac.com)
 
