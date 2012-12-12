@@ -11,11 +11,11 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 作者：Nicholas C. Zakas
 
-译文：[你的 mixin 兼容 ECMAScript 5 吗？](http://justjavac.com/javascript/2012/12/12/are-your-mixins-ecmascript-5-compatible.html)
+译文：[你的 mixin 兼容 ECMAScript 5 吗？](http://justjavac.com/javascript/2012/12/11/are-your-mixins-ecmascript-5-compatible.html)
 
 译者：[justjavac](http://justjavac.com)
 
-好久没更新博客了，今天在 nczonline 看到了这篇博客，于是把它翻译了过来，英语水平有限，大家忍者点看，以下是正文：
+好久没更新博客了，今天在 nczonline 看到了这篇博客，于是第一时间把它翻译了过来。英语水平有限，大家忍者点看，以下是正文：
 
 我最近在与客户合作的项目中，需要充分利用的 ECMAScript 5，在此我遇到一个非常有趣的问题。
 该问题源于一个非常常见的模式： **mixin** （译注：很多文章翻译成「混入」，我觉得还是保留原文吧。其流程程度不亚于 Closure，什么！你不知道？拜托，如果你是从火星来的，请自觉 Google 吧。[@justjavac](http://justjavac.com)），
