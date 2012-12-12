@@ -50,7 +50,6 @@ tags : [ECMAScript 5, JavaScript, mixin]
 这是我遇到的问题：
 
     (function() {
-
         // to be filled in later
         var name;
 
@@ -62,7 +61,6 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
         // let's just say this is later
         name = "Nicholas";
-
     }());
 
     console.log(object.name);       // undefined
@@ -95,7 +93,6 @@ tags : [ECMAScript 5, JavaScript, mixin]
 一个纯粹的 ECMAScript 5 版本的 `mixin()` 应该这样写：
 
     function mixin(receiver, supplier) {
-
         Object.keys(supplier).forEach(function(value, property) {
             Object.defineProperty(receiver, property, Object.getOwnPropertyDescriptor(supplier, property));
         });
