@@ -160,13 +160,3 @@
     
   </aside>
 </div>
-<script type="text/javascript">
-document.onscroll = function(){
-    console.log("onscroll" + new Date());
-    var lnks = document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a");
-    for(var i = 0; i < lnks.length; i++){
-        document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmousedown = function(){ return false;};    
-        document.getElementsByClassName("wumii-related-items-div")[0].getElementsByTagName("a")[i].onmouseup = function(){ return false;}; 
-    }
-}
-</script>
