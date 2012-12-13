@@ -5,6 +5,7 @@ permalink: /:categories/:year/:month/:day/:title.html
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
+markdown: rdiscount
 pygments: true
 
 paginate: 5
@@ -12,7 +13,7 @@ paginate: 5
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title: justjavac的博客
+title: justjavac
 tagline: 专注最时髦的web开发技术
 
 author:
