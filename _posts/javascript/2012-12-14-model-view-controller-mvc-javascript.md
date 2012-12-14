@@ -20,7 +20,7 @@ tags : [mvc, JavaScript]
 我喜欢 JavaScript，因为它是在世界上最灵活的语言之一。
 在 JavaScript 中，程序员可以根据自己的口味选择编程风格：面向过程或面向对象。
 如果你是一个重口味，JavaScript 一样可以应付自如：
-面向过程，面向对象，[面向方面](http://www.jroller.com/page/deep/20030701)，
+面向过程，面向对象，[面向方面 AOP](http://en.wikipedia.org/wiki/Aspect-oriented_programming)，
 使用 JavaScript 开发人员甚至可以使用[函数式编程技术](http://www-128.ibm.com/developerworks/java/library/wa-javascript.html)。
 
 这篇文章中，我的目标是编写一个简单的 JavaScript 组件，来向大家展示一下 JavaScript 的强大。
