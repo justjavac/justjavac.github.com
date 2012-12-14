@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]JavaScript 的 MVC 模式 
+title: 「译」JavaScript 的 MVC 模式 
 description: 我喜欢 JavaScript，因为它是在世界上最灵活的语言之一。在 JavaScript 中，程序员可以根据自己的口味选择编程风格：面向过程或面向对象。如果你是一个重口味，JavaScript 一样可以应付自如：面向过程，面向对象，面向方面，使用 JavaScript 开发人员甚至可以使用函数式编程技术)。
 keywords: mvc, JavaScript, design pattern, 设计模式
 category : javascript
@@ -131,15 +131,15 @@ So, the model of the component is very simple - it is stored in an array propert
         }
     };
 
-View 类需要定义控制器类，以便与它交互。
+`View` 类需要定义控制器类，以便与它交互。
 虽然这个任务可以有许多不同的接口（interface），但我更喜欢最简单的。
 我希望我的项目是在一个 ListBox 控件和它下面的两个按钮：“加号”按钮添加项目，“减”删除所选项目。
-组件所提供的“选择”功能则需要 select 控件的原生功能的支持。
+组件所提供的“选择”功能则需要 `select` 控件的原生功能的支持。
 
-一个 View 类被绑定在一个 Controller 类上，
-其中“…控制器处理用户输入事件，通常是通过一个已注册的回调函数”（wikipedia.org）。
+一个 `View` 类被绑定在一个 `Controller` 类上，
+其中「…控制器处理用户输入事件，通常是通过一个已注册的回调函数」（wikipedia.org）。
 
-下面是 View 和 Controller 类：
+下面是 `View` 和 `Controller` 类：
 
     /**
      * 视图。
@@ -248,7 +248,7 @@ View 类需要定义控制器类，以便与它交互。
         }
     };
 
-当然，Model, View, Controller 类应当被实例化。
+当然，`Model`, `View`, `Controller` 类应当被实例化。
 
 下面是一个使用此 MVC 的完整代码：
 
