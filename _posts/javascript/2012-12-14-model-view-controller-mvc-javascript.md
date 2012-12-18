@@ -13,7 +13,7 @@ tags : [mvc, JavaScript]
 
 译文：[JavaScript 的 MVC 模式](http://justjavac.com/javascript/2012/12/14/model-view-controller-mvc-javascript.html)
 
-译者：[justjavac](http://justjavac.com)
+译者：[justjavac](http://weibo.com/justjavac)
 
 本文介绍了[模型-视图-控制器模式](http://en.wikipedia.org/wiki/Model-view-controller)在 JavaScript 中的实现。
 
