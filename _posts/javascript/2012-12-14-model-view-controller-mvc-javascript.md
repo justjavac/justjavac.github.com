@@ -15,6 +15,8 @@ tags : [mvc, JavaScript]
 
 译者：[justjavac](http://weibo.com/justjavac)
 
+----------------------------------------------------
+
 本文介绍了[模型-视图-控制器模式](http://en.wikipedia.org/wiki/Model-view-controller)在 JavaScript 中的实现。
 
 我喜欢 JavaScript，因为它是在世界上最灵活的语言之一。

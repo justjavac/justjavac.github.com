@@ -15,6 +15,8 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 译者：[justjavac](http://weibo.com/justjavac)
 
+----------------------------------------------------
+
 好久没更新博客了，今天在 nczonline 看到了这篇博客，于是第一时间把它翻译了过来。英语水平有限，大家忍者点看，以下是正文：
 
 我最近在与客户合作的项目中，需要充分利用的 ECMAScript 5，在此我遇到一个非常有趣的问题。

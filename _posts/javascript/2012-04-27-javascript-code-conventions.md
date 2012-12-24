@@ -1,19 +1,19 @@
 ---
 layout: post
-title: javascript编程风格
+title: javascript 编程风格
 description: javascript 编程语言作为最流行的客户端脚本语言，早已被众多 Web 开发人员所熟悉。随着 Web2.0 时代的到来和 Ajax 技术的广泛应用，javascript 也逐渐吸引着更多的视线。工作中要求越多的是对 javascript 语言的深入学习，灵活运用，和对编码质量的保证。
 keywords: javascript, 编程风格
 category : javascript
 tags : [javascript, 规范]
 ---
 
-[Douglas Crockford](http://www.crockford.com) 是javascript权威，Json格式就是他的发明。
+[Douglas Crockford](http://www.crockford.com) 是 javascript 权威，Json 格式就是他的发明。
 
-去年11月他有一个演讲（<a href="http://www.youtube.com/watch?v=taaEzHI9xyY" target="_blank">Youtube</a>），谈到了好的javascript编程风格是什么。
+去年11月他有一个演讲 [Youtube](http://www.youtube.com/watch?v=taaEzHI9xyY)，谈到了好的 javascript 编程风格是什么。
 
-我非常推荐这个演讲，它不仅有助于学习javascript，而且能让你心情舒畅，因为Crockford讲得很幽默，时不时让听众会心一笑。
+我非常推荐这个演讲，它不仅有助于学习 javascript，而且能让你心情舒畅，因为 Crockford 讲得很幽默，时不时让听众会心一笑。
 
-下面，我根据这个演讲和Crockford编写的 <a href="http://javascript.crockford.com/code.html" target="_blank">代码规范</a>，总结一下"javascript编程风格"。
+下面，我根据这个演讲和 Crockford 编写的[代码规范(英文)](http://javascript.crockford.com/code.html)，总结一下"javascript 编程风格"。
 
 **所谓"编程风格"（programming style），指的是编写代码的样式规则**。不同的程序员，往往有不同的编程风格。
 
@@ -24,7 +24,7 @@ tags : [javascript, 规范]
 所以，有一点应该明确，"编程风格"的选择不应该基于个人爱好、熟悉程度、打字工作量等因素，
 而要考虑如何尽量使代码清晰易读、减少出错。
 你选择的，不是你喜欢的风格，而是一种能够清晰表达你的意图的风格。
-这一点，对于javascript这种语法自由度很高、<a href="http://justjavac.iteye.com/blog/1502754" target="_blank">不完全成熟</a>的语言尤其重要。
+这一点，对于 javascript 这种语法自由度很高、[不完全成熟](http://justjavac.iteye.com/blog/1502754)的语言尤其重要。
 
 ## 一、大括号的位置
 
@@ -45,14 +45,14 @@ tags : [javascript, 规范]
     }
 
 一般来说，这两种写法都可以接受。
-但是，javascript要使用后一种，因为javascript会自动添加句末的分号，导致一些难以察觉的错误。
+但是，javascript 要使用后一种，因为 javascript 会自动添加句末的分号，导致一些难以察觉的错误。
 
     return
     {
         key:value;
     };
 
-上面的代码的原意，是要返回一个对象，但实际上返回的是undefined，因为javascript自动在return语句后面添加了分号。
+上面的代码的原意，是要返回一个对象，但实际上返回的是 `undefined`，因为 javascript 自动在 `return` 语句后面添加了分号。
 为了避免这一类错误，需要写成下面这样：
 
     return {
@@ -65,7 +65,7 @@ tags : [javascript, 规范]
 
 ## 二、 圆括号
 
-圆括号（parentheses）在javascript中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。
+圆括号（parentheses）在 javascript 中有两种作用，一种表示调用函数，另一种表示不同的值的组合（grouping）。
 我们可以用空格，区分这两种不同的括号。
 
 **规则2：调用函数的时候，函数名与左括号之间没有空格。**
@@ -86,7 +86,7 @@ tags : [javascript, 规范]
 
 分号表示语句的结束。
 
-大多数情况下，如果你省略了句尾的分号，javascript会自动添加。
+大多数情况下，如果你省略了句尾的分号，javascript 会自动添加。
 
     var a = 1
 
@@ -97,7 +97,7 @@ tags : [javascript, 规范]
 因此，有人提倡省略句尾的分号。
 
 但麻烦的是，如果下一行的第一个字元（token）是下面这五个字符之一，
-javascript将不对上一行句尾添加分号："("、"["、"/"、"+"和"-"。
+javascript 将不对上一行句尾添加分号："("、"["、"/"、"+"和"-"。
 
     x = y
     (function (){
@@ -114,7 +114,7 @@ javascript将不对上一行句尾添加分号："("、"["、"/"、"+"和"-"。
 
 ## 四、with语句
 
-with可以减少代码的书写，但是会造成混淆。
+`with` 可以减少代码的书写，但是会造成混淆。
 
     with (o) {
         foo = bar;
@@ -131,11 +131,11 @@ with可以减少代码的书写，但是会造成混淆。
 
 因此，
 
-**规则6：不要使用with语句。**
+**规则6：不要使用 with 语句。**
 
 ## 五、相等和严格相等
 
-javascript有两个表示"相等"的运算符："相等"（==）和"严格相等"（===）。
+javascript 有两个表示"相等"的运算符："相等"（==）和"严格相等"（===）。
 
 因为"相等"运算符会自动转换变量类型，造成很多意想不到的情况：
 
@@ -188,7 +188,7 @@ javascript有两个表示"相等"的运算符："相等"（==）和"严格相等
 
 ## 七、变量声明
 
-javascript会自动将变量声明"提升"（hoist）到代码块（block）的头部。
+javascript 会自动将变量声明"提升"（hoist）到代码块（block）的头部。
 
     if (!o) {
         var o = {};
@@ -218,24 +218,24 @@ javascript会自动将变量声明"提升"（hoist）到代码块（block）的�
 
 ## 八、全局变量
 
-javascript最大的语法缺点，可能就是全局变量对于任何一个代码块，都是可读可写。
+javascript 最大的语法缺点，可能就是全局变量对于任何一个代码块，都是可读可写。
 
 这对代码的模块化和重复使用，非常不利。
 
-**规则11：避免使用全局变量；如果不得不使用，用大写字母表示变量名，比如UPPER_CASE。**
+**规则11：避免使用全局变量；如果不得不使用，用大写字母表示变量名，比如 UPPER_CASE。**
 
 ## 九、new命令
 
-javascript使用new命令，从建构函数生成一个新对象。
+javascript 使用 new 命令，从建构函数生成一个新对象。
 
     var o = new myObject();
 
-这种做法的问题是，一旦你忘了加上new，myObject()内部的this关键字就会指向全局对象，导致所有绑定在this上面的变量，
+这种做法的问题是，一旦你忘了加上 `new`，`myObject()` 内部的 `this` 关键字就会指向全局对象，导致所有绑定在 `this` 上面的变量，
 都变成全部变量。
 
-**规则12：不要使用new命令，改用Object.create()命令。**
+**规则12：不要使用 new 命令，改用 Object.create() 命令。**
 
-如果不得不使用new，为了防止出错，最好在视觉上把建构函数与其他函数区分开来。
+如果不得不使用 `new`，为了防止出错，最好在视觉上把建构函数与其他函数区分开来。
 
 **规则13：建构函数的函数名，采用首字母大写（InitialCap）；其他函数名，一律首字母小写。**
 
@@ -243,7 +243,7 @@ javascript使用new命令，从建构函数生成一个新对象。
 
 自增（++）和自减（--）运算符，放在变量的前面或后面，返回的值不一样，很容易发生错误。
 
-事实上，所有的++运算符都可以用"+= 1"代替。
+事实上，所有的 `++` 运算符都可以用 `+= 1` 代替。
 
     ++x
 
@@ -251,7 +251,7 @@ javascript使用new命令，从建构函数生成一个新对象。
 
     x += 1;
 
-代码变得更清晰了。有一个很可笑的例子，某个javascript函数库的源代码中出现了下面的片段：
+代码变得更清晰了。有一个很可笑的例子，某个 javascript 函数库的源代码中出现了下面的片段：
 
     ++x;
     ++x;
@@ -266,7 +266,7 @@ javascript使用new命令，从建构函数生成一个新对象。
 
 ## 十一、区块
 
-如果循环和判断的代码体只有一行，javascript允许该区块（block）省略大括号。
+如果循环和判断的代码体只有一行，javascript 允许该区块（block）省略大括号。
 
 下面的代码
 

@@ -66,25 +66,25 @@ JavaScript 具有 6 种内置 [数据类型](https://developer.mozilla.org/en/Ja
 
 下面的表格就是 `+` 运算符对于不同类型进行运算后，得到的结果类型
 
-    -------------------------------------------------------------------------------------------
-                | undefined | boolean | number | string | function | object | null   | array  | 
-    -------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------------
+               | undefined | boolean | number | string | function | object | null   | array
+    ----------------------------------------------------------------------------------------
 
-    undefined   | number    | number  | number | string | string   | string | number | string | 
+    undefined  | number    | number  | number | string | string   | string | number | string
 
-    boolean     | number    | number  | number | string | string   | string | number | string | 
+    boolean    | number    | number  | number | string | string   | string | number | string
 
-    number      | number    | number  | number | string | string   | string | number | string | 
+    number     | number    | number  | number | string | string   | string | number | string
 
-    string      | string    | string  | string | string | string   | string | string | string | 
+    string     | string    | string  | string | string | string   | string | string | string
 
-    function    | string    | string  | string | string | string   | string | string | string | 
+    function   | string    | string  | string | string | string   | string | string | string
 
-    object      | string    | string  | string | string | string   | string | string | string | 
+    object     | string    | string  | string | string | string   | string | string | string
 
-    null        | number    | number  | number | string | string   | string | number | string | 
+    null       | number    | number  | number | string | string   | string | number | string
 
-    array       | string    | string  | string | string | string   | string | string | string | 
+    array      | string    | string  | string | string | string   | string | string | string
 
     -------------------------------------------------------------------------------------------
 
@@ -94,9 +94,9 @@ JavaScript 具有 6 种内置 [数据类型](https://developer.mozilla.org/en/Ja
 
 例如：
 
-var o = { 
-    valueOf : function () { return 4; } 
-};
+    var o = { 
+        valueOf : function () { return 4; } 
+    };
 
 计算 `o + 2` 将得到 6, 是一个数字 number；计算 `o + '2'` 得到 '42', 是一个字符串 string。
 

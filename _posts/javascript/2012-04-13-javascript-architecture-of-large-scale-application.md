@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      大型应用的javascript架构
+title:      大型应用的 javascript 架构
 keywords: javascript, 架构
 category : javascript
 tags : [javascript, 架构]
 ---
 
-<p>目前很多网站基本没有明确的前端架构，大多是服务端渲染视图页，输出到浏览器，再配合一些js，来进行交互。</p>
+目前很多网站基本没有明确的前端架构，大多是服务端渲染视图页，输出到浏览器，再配合一些 js，来进行交互。
 
 <p>如果只是实现一些简单的效果，没有较复杂的逻辑，那么这种处理是合理的，
 尤其是有了jQuery之类的利器，js代码写起来甚至有种随心所欲的感觉。</p>

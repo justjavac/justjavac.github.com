@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 细数javascript容易被忽略的语法陷阱
+title: 细数 javascript 容易被忽略的语法陷阱
 description: 细数javascript容易被忽略的语法陷阱
 keywords: javascript
 category : javascript
