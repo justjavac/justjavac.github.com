@@ -22,6 +22,7 @@ tags : [javascript, 对象]
 在 JavaScript 中，加法的规则其实很简单，只有两种情况:
 
 * 把数字和数字相加
+
 * 把字符串和字符串相加
 
 所有其他类型的值都会被自动转换成这两种类型的值。 
@@ -33,11 +34,17 @@ tags : [javascript, 对象]
 在 JavaScript 中，一共有两种类型的值:
 
 * 原始值(primitives)
+
     1. undefined
+    
     2. null
+    
     3. boolean
+    
     4. number
+    
     5. string
+    
 * 对象值(objects)。
 
 除了原始值外，其他的所有值都是对象类型的值，包括数组(array)和函数(function)。
@@ -47,7 +54,9 @@ tags : [javascript, 对象]
 加法运算符会触发三种类型转换：
 
 1. 转换为原始值
+
 2. 转换为数字
+
 3. 转换为字符串
 
 ### 通过 ToPrimitive() 将值转换为原始值
@@ -74,6 +83,7 @@ JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
 如果没有 `PreferredType` 这个参数，则 `PreferredType` 的值会按照这样的规则来自动设置：
 
 * `Date` 类型的对象会被设置为 `String`，
+
 * 其它类型的值会被设置为 `Number`。
 
 ### 通过 ToNumber() 将值转换为数字
@@ -190,6 +200,7 @@ JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
     `PreferredType` 被省略，因此 `Date` 类型的值采用 `String`，其他类型的值采用 `Number`。
 
 2. 如果 prim1 或者 prim2 中的任意一个为字符串，则将另外一个也转换成字符串，然后返回两个字符串连接操作后的结果。
+
 3. 否则，将 prim1 和 prim2 都转换为数字类型，返回他们的和。
 
 ### 预料到的结果
@@ -263,7 +274,7 @@ JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
 
 一个函数或方法的参数也会被解析成一个表达式:
 
-    > console。log({} + {})
+    > console.log({} + {})
     [object Object][object Object]
 
 经过前面的讲解，对于下面这样的计算结果，你也应该不会感到吃惊了:

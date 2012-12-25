@@ -73,7 +73,7 @@ tags : [javascript, 对象]
 
 使用 `Object` 作为构造函数（使用关键词 `new`）基本上具有相同的效果，但作为一个函数，它更好地描述了哦一个事实：并不是每次都需要创建新的对象。 
 
-## 相关阅读：
+## 参考
 
 1. [JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
     

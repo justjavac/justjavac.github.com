@@ -32,6 +32,7 @@ tags : [JavaScript]
 JavaScript 的 `+` 运算符有两个目的：
 
 1. 将两个数相加；
+
 2. 将两个字符串连接。
 
 规范并没有定义 `+` 运算符在数组上的行为，所以javascript 首先 **把数组转换成字符串**，然后在字符串上进行 `+` 运算。
@@ -48,12 +49,17 @@ JavaScript 具有 6 种内置 [数据类型](https://developer.mozilla.org/en/Ja
 （译注：从给出的连接看，原作者的意思应该是 **原始类型系统** 的数据类型，JavaScript 事实上有两套类型系统。
 第一套类型系统是用 `typeof` 来识别，称之为原始(primitive)类型系统，而第二套类型系统是以它为基础，从 `object` 这一种类型中发展起来的，即对象类型系统，对象类型系统用 `instanceof` 来识别。[@justjavac](http://weibo.com/justjavac)）
 
-1. undefined
-2. boolean
-3. number
-4. string
-5. function
-6. object
+* undefined
+
+* boolean
+
+* number
+
+* string
+
+* function
+
+* object
 
 需要注意的是，`null` 和 `[]` 是两个截然不同的类型，当使用 `typeof` 运算时，它们却都返回 `object`。
 但是在使用 `+` 运算符时，在这两种情况下的工作方式是不同的。

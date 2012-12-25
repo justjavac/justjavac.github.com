@@ -37,7 +37,9 @@ tags : [mvc, JavaScript]
 MVC 模式的英文名称是 Model-View-Controller pattern，顾名思义，其主要部分组成：
 
 * 模型Model()，用于存储程序中使用到的数据;
+
 * 视图(View)，用不同的表现形式来呈现数据；
+
 * 控制器(Controller)，更新模型。
 
 在维基百科对 MVC 体系结构的定义中，它由如下三部分组成：
@@ -59,6 +61,7 @@ So, the model of the component is very simple - it is stored in an array propert
 因此，组件模型是非常简单的 - 它只需要两个属性：
 
 1. 数组 `_items` 用来存储所有元素
+
 2. 普通变量 `_selectedIndex` 用来存储选定的元素索引
 
 代码如下：

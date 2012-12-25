@@ -237,8 +237,11 @@ typeof 可以用来检测一个值是否是函数。
 下面提到的，应该是目前 JavaScript 中最迫切需要的，可以代替一些 `typeof` 目前职责的功能特性：
 
 * `isDefined()` (比如 `Object.isDefined()`): 可以作为一个函数或者一个运算符
+
 * `isObject()`
+
 * `getTypeName()`
+
 * 能够跨框架的,检测一个对象是否是指定的构造函数的实例的机制
 
 检查某个变量是否已经被声明这样的需求，可能没那么必要有自己的运算符。
@@ -246,5 +249,6 @@ typeof 可以用来检测一个值是否是函数。
 ## 参考文章
 
 1. [JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
+
 2. [Improving the JavaScript typeof operator](http://www.2ality.com/2011/11/improving-typeof.html)
 
