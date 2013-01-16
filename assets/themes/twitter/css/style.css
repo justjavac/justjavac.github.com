@@ -1,6 +1,7 @@
 /* Override some defaults */
 html, body {
   background-color: #eee;
+  padding-top: 40px;
 }
 section {
   border: #D2D2D2 1px solid;
