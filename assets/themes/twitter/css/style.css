@@ -180,3 +180,7 @@ section h3 {
 .gray .textItem .itemTitle .hot, .white .textItem .itemTitle .hot { background-position: 0 0;}
 .hots .textItem .analytics { margin-left: 21px;}
 .gray .textItem .analytics, .white .textItem .analytics { margin-left: 23px;}
+
+#d-top {position:fixed; float:right; z-index:10; right:10px; bottom:10px;}
+#d-top img { width:42px; filter:alpha(opcity=30); opacity:0.3; }
+#d-top a:hover img { filter:alpha(opcity=100); opacity:1; }
