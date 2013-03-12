@@ -1,7 +1,6 @@
 ---
 layout: post
 title:「译」在 python 中，如果 x 是 list，为何 x = x + "ha" 抛出异常
-description: 众所周知，在 python 中，+ 运算符可以使用在列表上，那么 + 显然可以运算在 "ha" 上。
 keywords: python, list, 运算符
 category: python
 tags: [python, list, 运算符]
