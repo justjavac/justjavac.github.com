@@ -1,6 +1,6 @@
 ---
 layout:     post
-title: 「译」在 python 中，如果 x 是 list，为何 x = x + "ha" 抛出异常
+title: 「译」在 python 中，如果 x 是 list，为什么 x += "ha" 可以运行，而 x = x + "ha" 却抛出异常呢？
 keywords: python, list, 运算符
 category: python
 tags: [python, list, 运算符]
