@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:「译」在 python 中，如果 x 是 list，为何 x = x + "ha" 抛出异常
+title: 「译」在 python 中，如果 x 是 list，为何 x = x + "ha" 抛出异常
 keywords: python, list, 运算符
 category: python
 tags: [python, list, 运算符]
