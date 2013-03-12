@@ -1,13 +1,11 @@
 ---
 layout: post
-title:「译」在 python 中，如果 x 是 list，为什么 x += "ha" 可以运行，而 x = x + "ha" 却抛出异常呢？
+title:「译」在 python 中，如果 x 是 list，为何x += "ha" 可以运行，而 x = x + "ha" 却抛出异常
 description: 众所周知，在 python 中，+ 运算符可以使用在列表上，那么 + 显然可以运算在 "ha" 上。
 keywords: python, list, 运算符
-category : python
-tags : [python, list, 运算符]
+category: python
+tags: [python, list, 运算符]
 ---
-
-「译」在 python 中，如果 x 是 list，为什么 x += "ha" 可以运行，而 x = x + "ha" 却抛出异常呢？
 
 原文：[python - If x is list, why does x += "ha" work, while x = x + "ha" throw an exception? ](http://stackoverflow.com/questions/3216706/if-x-is-list-why-does-x-ha-work-while-x-x-ha-throw-an-exception)
 
