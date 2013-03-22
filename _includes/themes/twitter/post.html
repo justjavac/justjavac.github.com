@@ -1,12 +1,7 @@
 <div class="page-header">
   <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
 </div>
-
-<div class="row-fluid">
-  <div class="span8">  
-    <div id="article">
-    {{ content }}
-    <!-- Baidu Button BEGIN -->
+<!-- Baidu Button BEGIN -->
 <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
 <a class="bds_tsina"></a>
 <a class="bds_qzone"></a>
@@ -27,6 +22,10 @@
 document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 </script>
 <!-- Baidu Button END -->
+<div class="row-fluid">
+  <div class="span8">  
+    <div id="article">
+    {{ content }}    
     <a rel="nofollow" href="http://www.alexa.com/siteinfo/justjavac.com" target="_blank"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/s/c?url=justjavac.com'></script></a>
       </div>  
     
