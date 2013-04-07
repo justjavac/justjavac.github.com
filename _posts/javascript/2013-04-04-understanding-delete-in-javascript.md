@@ -20,20 +20,30 @@ tags : [javascript, delete]
 下面翻译其中的主要部分。目录结构：
 
 1. 理论
+
     1. 代码的类型
     2. 代码执行的上下文
     3. 活化对象和变量对象
     4. 属性的内部属性
     5. 内建和DontDelete
     6. 未声明的变量赋值
+
 2. Firebug的混乱
+
     1. 通过eval删除变量
+
 3. 浏览器的遵守情况
+
     1. Gecko DontDelete bug
+
 4. IE bugs
+
 5. 误解
+
 6. 'delete'和宿主对象
+
 7. ES5严格模式
+
 8. 总结
 
 ...书中声称
