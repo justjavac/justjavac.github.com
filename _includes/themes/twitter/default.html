@@ -54,9 +54,13 @@
         <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+            <li><a href="javascript:void(0)">代码之谜</a></li>
+            <li><a href="javascript:void(0)" title="转载的文章">她山之石</a></li>
+            <li><a href="javascript:void(0)" title="翻译的文章">师夷长技</a></li>
+            <li><a href="/categories.html">目录</a></li>
+            <li><a href="/tags.html">标签</a></li>
+            <li><a href="/archive.html">归档</a></li>
+            <li><a href="javascript:void(0)">关于我</a></li>
           </ul>
         </div>
       </div>
@@ -80,12 +84,14 @@
     </div> <!-- /container -->
 
     {% include JB/analytics %}
-    <script src="/assets/js/jquery-1.9.0.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
     <script src="/assets/js/bootstrap-affix.js"></script>
+
+    <!-- UJian Button BEGIN -->
+    <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&uid=1514075"></script>
+    <a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+    <!-- UJian Button END -->
     
-    <script type="text/javascript" src="http://lurongkai.github.com/anti-baidu/js/loader.min.js"></script>
-    
-    <script async="true" src="http://www.iteye.com/blog/download_pdf/10967"></script>
     <script async="true" src="http://justjavac.iteye.com/blog/1725977"></script>
   </body>
 </html>
