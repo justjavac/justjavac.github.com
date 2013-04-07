@@ -80,7 +80,7 @@ MDC([MDN][]]) 的资源大概是这其中最详细的了，但不幸的是它遗
 
 [msdn]:http://msdn.microsoft.com/en-us/library/2b2z052x%28VS.85%29.aspx
 
-## 理论 | Theory
+## 一、理论 | Theory
 
 那么，为什么我们能删除一个对象的属性：
 
@@ -109,7 +109,7 @@ MDC([MDN][]]) 的资源大概是这其中最详细的了，但不幸的是它遗
 在下面几段中我将试着简短地回顾这些内容，要理解它们并不难。
 如果你并不关注它们表现背后的原因，可以跳过这一章。
 
-### 代码的类型 | Type of code
+### 1.1、代码的类型 | Type of code
 
 ECMAScript 中有三类可执行代码：
 
@@ -128,7 +128,7 @@ ECMAScript 中有三类可执行代码：
 3. 最后，放入内建函数 eval 中的代码就作为 Eval code 来解析。
 我们将很快看到为什么这一类型是特殊的。
 
-### 代码执行的上下文 | Execution Context
+### 1.2、代码执行的上下文 | Execution Context
 
 当 ECMAScript 代码执行时，它总是发生在一个确定的执行上下文(context)中。
 执行作用域是一个抽象实体，它有助于理解作用域和变量实例化的工作原理。
@@ -142,7 +142,7 @@ ECMAScript 中有三类可执行代码：
 这个函数可能调用另一个函数，等等。
 即使当函数递归调用自己时，在每一步调用中仍然进入了不同的执行上下文。
 
-### 活化对象和变量对象 | Activation object / Variable object
+### 1.3、活化对象和变量对象 | Activation object / Variable object
 
 每一个执行上下文都有一个与之相关联的变量对象（Variable object）。
 和它相似的，变量对象也是一个抽象实体，一种用来描述变量实例化的机制。
@@ -203,7 +203,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
     }) ();
 
 
-### 属性的内部属性 | Property attributes
+### 1.4、属性的内部属性 | Property attributes
 
 就要接近主题了。
 现在我们明确了变量发生了什么（它们成了属性），剩下的需要理解的概念就是属性的内部属性（property attributes）。
@@ -239,7 +239,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
     delete GLOBAL_OBJECT.baz; // true
     typeof GLOBAL_OBJECT.baz; // "undefined"
 
-### 内建和DontDelete | Build-ins and DontDelete
+### 1.5、内建和DontDelete | Build-ins and DontDelete
 
 所以这就是所有这一切发生的原因：属性的一个特殊的内部属性控制着该属性是否可以被删除。
 注意：内建对象的一些属性拥有内部属性 DontDelete，因此不能被删除；
@@ -267,7 +267,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
         bar; // "bah"
     }) (1,"bah");
 
-### 未声明的变量赋值 | Undeclared assignments
+### 1.6、未声明的变量赋值 | Undeclared assignments
 
 [你可能记得](http://perfectionkills.com/onloadfunction-considered-harmful/#how_does_it_work)，未声明的变量赋值会成为全局对象的属性，除非这一属性在作用域链内的其他地方被找到。
 而现在我们了解了属性赋值和变量声明的区别——后者生成 DontDelete 而前者不生成——这也就是为什么未声明的变量赋值可以被删除的原因了。
@@ -299,7 +299,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
     delete bar; // true;
     typeof bar; // "undefined"
 
-### Firebug 的混乱 | Firebug confusion
+## 二、Firebug 的混乱 | Firebug confusion
 
 那么， firebug 中发生了什么？
 为什么在控制台中声明的变量能够被删除，而不是想我们之前讨论的那样？
@@ -325,7 +325,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
 显然，其中的变量声明最终都生成了**不带 DontDelete 的属性**，所以可以被删除。
 所以要小心普通的全局代码和 Firebug 控制台中代码的区别。
 
-### 通过eval删除变量 | Delete variables via eval
+### 2.1、通过eval删除变量 | Delete variables via eval
 
 这个有趣的 eval 行为，结合 ECMAScript 的另一个方面可以在技术上允许我们删除那些原本不能删除的属性。
 这个方面是关于函数声明——在相同的执行上下文中它们能覆盖同名的变量：
@@ -374,7 +374,7 @@ Eval code 简单地使用在它调用中的执行上下文的变量对象。
     eval(' alert( x ); alert(delete x) ');
     var x = 1;
 
-## 浏览器的遵守情况 | Browsers compliance
+## 三、浏览器的遵守情况 | Browsers compliance
 
 了解事物的工作原理是重要的，但实际的实现情况更重要。
 浏览器在创建和删除变量/属性时都遵守这些标准吗？
@@ -395,7 +395,7 @@ eval 中的变量声明变成不可删除（而 eval 中的函数声明则正常
 
 与 Safari 类似，Konqueror（3.5，而非4.3）在 delete 无引用和删除 arguments 是也存在同样问题。
 
-### Gecko DontDelete bug
+### 3.1、Gecko DontDelete bug
 
 Gecko 1.8.x 浏览器—— Firefox 2.x, Camino 1.x, Seamonkey 1.x, etc.
 ——存在一个有趣的 bug：显式赋值值给一个属性能移除它的 DontDelete，即使该属性通过变量或函数声明而生成。
@@ -411,7 +411,7 @@ Gecko 1.8.x 浏览器—— Firefox 2.x, Camino 1.x, Seamonkey 1.x, etc.
 令人惊讶的是，IE5.5-8 也通过了绝大部分测试，除了删除非引用抛出错误（e.g. delete 1，就像旧的 Safari）。
 但是，虽然不能马上发现，事实上 **IE 存在更严重的 bug**，这些 bug 是关于全局对象。
 
-## IE bugs 
+## 四、IE bugs 
 
 在 IE 中（至少在 IE6-8 中），下面的表达式抛出异常（在全局代码中）：
 
@@ -464,7 +464,7 @@ Gecko 1.8.x 浏览器—— Firefox 2.x, Camino 1.x, Seamonkey 1.x, etc.
     window.getBase() === this.getBase(); // true
     window.getBase() === getBase(); // false
 
-## 误解 | Misconceptions
+## 五、误解 | Misconceptions
 
 我们不能低估理解事物工作原理的重要性。
 我看过网络上一些关于 delete 操作的误解。
@@ -472,7 +472,7 @@ Gecko 1.8.x 浏览器—— Firefox 2.x, Camino 1.x, Seamonkey 1.x, etc.
 现在我们了解了 delete 操作的核心，也就清楚了这个答案是不正确的。
 delete 不区分变量和属性（事实上在 delete 操作中这些都是引用），而只关心 DontDelete（以及属性是否已经存在）。
 
-## 'delete'和宿主对象 | ’delete‘ and host object
+## 六、'delete'和宿主对象 | ’delete‘ and host object
 
 一个 delete 的算法大致像这样：
 
@@ -506,9 +506,9 @@ delete window.alert 返回 true，尽管这个属性没有任何条件可能产�
 
 所以这个故事告诉我们**永远不要相信宿主对象**。
 
-## ES5 严格模式 | ES5 strict mode
+## 七、ES5 严格模式 | ES5 strict mode
 
-## 那么 ECMAScript 第 5 版中的严格模式将带来什么？
+那么 ECMAScript 第 5 版中的严格模式将带来什么？
 目前介绍了其中的一些限制。
 当删除操作指向一个变量/函数参数/函数声明的直接引用时抛出 SyntaxError。
 此外，如果属性拥有内部属性[[Configurable]] == false，将抛出 TypeError：
@@ -537,7 +537,7 @@ delete window.alert 返回 true，尽管这个属性没有任何条件可能产�
 看了之前给出的变量、函数声明和参数的例子，相信现在你也理解了，所有这些限制都是有其意义的。
 严格模式采取了更积极的和描述性的措施，而不只是忽略这些问题。
 
-## 总结 | Summary
+## 八、总结 | Summary
 
 由于这篇文章已经很长了，因此我就不再讨论另一些内容（e.g.通过 delete 删除数组项及其影响）。
 你可以翻阅 [MDC/MDN 上的文章](https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Operators/Special_Operators/delete_Operator#section_5)或阅读规范然后自己测试。
