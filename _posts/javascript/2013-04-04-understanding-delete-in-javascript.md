@@ -8,7 +8,7 @@ tags : [javascript, delete]
 
 原文：[Understanding delete](http://perfectionkills.com/understanding-delete/)
 
-译文：[javascript 中的 delete](http://www.cnblogs.com/jscode/archive/2012/09/02/2667464.html)
+译文：[javascript 中的 delete](http://justjavac.com/javascript/2013/04/04/understanding-delete-in-javascript.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
