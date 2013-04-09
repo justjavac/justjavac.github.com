@@ -20,29 +20,29 @@ tags : [javascript,quirks]
 
 ## 目录
 
-    1. [隐式数值转换（Implicit conversion of values）](http://www.2ality.com/2013/04/quirk-implicit-conversion.html) [中文(正在翻译)]()
+1. [隐式数值转换（Implicit conversion of values）](http://www.2ality.com/2013/04/quirk-implicit-conversion.html) [中文(正在翻译)]()
 
-    2. 两个「空值」：undefined 和 null（Two "non-values" undefined and null）
+2. 两个「空值」：undefined 和 null（Two "non-values" undefined and null）
 
-    3. Normal equality ==
+3. Normal equality ==
 
-    4. 未知的变量名将创建一个全局变量（Unknown variable names create global variables）
+4. 未知的变量名将创建一个全局变量（Unknown variable names create global variables）
 
-    5. 参数处理方式（Parameter handling）
+5. 参数处理方式（Parameter handling）
 
-    6. 变量的作用范围（The scope of variables）
+6. 变量的作用范围（The scope of variables）
 
-    7. 闭包和自由(外部)变量（Closures and free (external) variables）
+7. 闭包和自由(外部)变量（Closures and free (external) variables）
 
-    8. “对象、数组——傻傻分不清楚”（Array-like objects）
+8. “对象、数组——傻傻分不清楚”（Array-like objects）
 
-    9. 子类的构造函数（Subtyping constructors）
+9. 子类的构造函数（Subtyping constructors）
 
-    10. 属性的读写（Reading and writing of properties）
+10. 属性的读写（Reading and writing of properties）
 
-    11. 函数中的 this（this in real functions）
+11. 函数中的 this（this in real functions）
 
-    12. for-in循环（The for-in loop）
+12. for-in循环（The for-in loop）
 
 ## 准备知识
 
@@ -52,4 +52,4 @@ ECMAScript 6 消除了许多 javascript（ECMAScript 5） 的怪癖。
 
 ## 参考:
 
-    1. [ECMAScript: ES.next versus ES 6 versus ES Harmony](http://www.2ality.com/2011/06/ecmascript.html) 「[中文](http://justjavac.com/javascript/2013/04/06/ecmascript-es-next-versus-es-6-versus-es-harmony.html)」
+1. [ECMAScript: ES.next versus ES 6 versus ES Harmony](http://www.2ality.com/2011/06/ecmascript.html) 「[中文](http://justjavac.com/javascript/2013/04/06/ecmascript-es-next-versus-es-6-versus-es-harmony.html)」
