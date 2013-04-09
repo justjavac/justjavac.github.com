@@ -1,5 +1,3 @@
-「译」ECMAScript：ES.next 和 ES6 以及 ES Harmony 之间的区别
-
 ---
 layout: post
 title: 「译」ECMAScript：ES.next 和 ES6 以及 ES Harmony 之间的区别
