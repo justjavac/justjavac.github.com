@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 「译」javascript 的 12 个怪癖（quirks）
-keywords: javascript,quirks
+keywords: javascript, quirks
 category : javascript
-tags : [javascript,quirks]
+tags : [javascript, quirks]
 ---
 
 原文：[12 JavaScript quirks](http://www.2ality.com/2013/04/12quirks.html)
@@ -17,8 +17,6 @@ tags : [javascript,quirks]
 实际上 javascript 是一个相当简洁的语言，但是也难免会有一些怪癖（quirks）。
 本章是 [javascript 的 12 个怪癖](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇，
 也是一个目录，为的是你能更好的了解它们：
-
-## 目录
 
 1. [隐式数值转换（Implicit conversion of values）](http://www.2ality.com/2013/04/quirk-implicit-conversion.html) [中文(正在翻译)]()
 
@@ -43,8 +41,6 @@ tags : [javascript,quirks]
 11. 函数中的 this（this in real functions）
 
 12. for-in循环（The for-in loop）
-
-## 准备知识
 
 本系列文章，需要您了解 ECMAScript 5 和 javascript 的基本知识，凡涉及到比较复杂的，文章中将会给出解释。
 在这个 [系列（德语）](http://www.2ality.com/2013/01/fallgruben.html) 的结尾有关于 [ECMAScript 6](http://www.2ality.com/2011/06/ecmascript.html) 「[中文](http://justjavac.com/javascript/2013/04/06/ecmascript-es-next-versus-es-6-versus-es-harmony.html)」 的解释，
