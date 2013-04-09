@@ -184,4 +184,4 @@ section h3 {
 #d-top {position:fixed; float:right; z-index:10; right:10px; bottom:10px;}
 #d-top img { width:42px; filter:alpha(opcity=30); opacity:0.3; }
 #d-top a:hover img { filter:alpha(opcity=100); opacity:1; }
-.v-fork-me {position:fixed;right:0;top:50px;z-index:999;}
+.v-fork-me {position:fixed;right:0;top:40px;z-index:999;}
