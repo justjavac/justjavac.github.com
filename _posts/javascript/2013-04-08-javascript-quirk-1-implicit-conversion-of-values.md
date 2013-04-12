@@ -14,6 +14,8 @@ tags : [javascript, quirks]
 
 ----------------------------------------------------
 
+## 零：提要
+
 [此贴子是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇。]
 
 JavaScript 是非常宽容的，「来者不拒」，不在乎什么类型。
@@ -28,17 +30,17 @@ JavaScript 是非常宽容的，「来者不拒」，不在乎什么类型。
 即使如此，这些隐式转换也会引起怪癖（quirks）。
 但是当自动转换为字符串时，可能会引起问题。
 
-## 隐式转换为布尔：“truthy”和“falsy”
+## 一：隐式转换为布尔：“truthy”和“falsy”
 
 当 JavaScript 需要一个布尔值时（例如：`if` 语句），任何值都可以被使用。
 最终这些值将被转换为 `true` 或 `false`。
 
 下面的值被转换为 `false`：
 
-    * undefined, null
-    * Boolean: false
-    * Number: -0, +0, NaN
-    * String: ''
+* undefined, null
+* Boolean: false
+* Number: -0, +0, NaN
+* String: ''
 
 所有其他值都认为是 `true`。
 被转换成 'false' 的值我们成之为 falsy，被转换成 'true' 的值我们成之为 truthy。
@@ -53,7 +55,7 @@ Boolean 将其参数转换为布尔值（boolean）：
     > Boolean(3)
     true
 
-## 字符串的隐式转换
+## 二、字符串的隐式转换
 
 在 Web 开发中，我们经常得到字符串值，实际上我们期望的却是数字或者布尔值。
 例如，用户输入的表单中的数据。
@@ -92,7 +94,7 @@ Boolean 将其参数转换为布尔值（boolean）：
     > Boolean('undefined')  // ！！
     true
 
-## 对象的隐式转换
+## 三、对象的隐式转换
 
 只有在 JavaScript 表达式或语句中需要用到数字或字符串时，对象才被隐式转换。
 当需要将对象转换成数字时，需要以下三个步骤：
@@ -115,7 +117,7 @@ Boolean 将其参数转换为布尔值（boolean）：
 如果把对象转换成字符串时，则转换操作的第一步和第二步的顺序会调换：
 先尝试 `toString()` 进行转换，如果不是原始值，则再尝试使用 `valueOf()`。
 
-## 相关阅读
+## 四、相关阅读
 
 1. [JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)

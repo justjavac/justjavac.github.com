@@ -18,7 +18,7 @@ tags : [javascript, quirks]
 本章是 [javascript 的 12 个怪癖](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇，
 也是一个目录，为的是你能更好的了解它们：
 
-1. [隐式数值转换（Implicit conversion of values）](http://www.2ality.com/2013/04/quirk-implicit-conversion.html) [中文(正在翻译)]()
+1. [隐式数值转换（Implicit conversion of values）](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html) （已翻译）
 
 2. 两个「空值」：undefined 和 null（Two "non-values" undefined and null）
 
