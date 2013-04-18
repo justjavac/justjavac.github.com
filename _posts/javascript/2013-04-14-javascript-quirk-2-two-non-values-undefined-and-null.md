@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」JavaScript 的怪癖 1：两个「空值」：undefined 和 null
+title: 「译」JavaScript 的怪癖 2：两个「空值」：undefined 和 null
 keywords: javascript, quirks, undefined, null
 category : javascript
 tags : [javascript, quirks]
@@ -22,7 +22,7 @@ tags : [javascript, quirks]
 对于“空值”或“空引用”，大多数编程语言只有一个值。比如，在 Java 中用的是 `null`。
 但是在 Javascript 中却有两个特殊的值: `undefined` 和 `null`。
 他们基本上是相同，但用法上却略有些不同。
-在这个[系列教程](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）")的最后，我会解释一下在 ECMAScript 6 中的一些变化。
+在这个 [系列教程](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的最后，我会解释一下在 ECMAScript 6 中的一些变化。
 
 `undefined` 是被语言本身所分配的。
 如果一个变量还没有被初始化，那么它的值就是 `undefined`:
@@ -57,7 +57,7 @@ tags : [javascript, quirks]
         // v 没有值
     }
 
-在本[系列](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）")的第 5 部分——关于函数参数的处理——你将会看到更多的上面校检例子。
+在本 [系列](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的第 5 部分——关于函数参数的处理——你将会看到更多的上面校检例子。
 有一点要注意的是：这个检查也会把 `false`, `-0`, `+0`, `NaN` 与 '' 当成“空值”。
 如果这不是你想要的，那么就不能使用上面的校检方法了。
 
