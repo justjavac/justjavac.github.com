@@ -10,11 +10,14 @@ tags : [javascript, quirks]
 
 译文：[「译」JavaScript 的怪癖 2：两个「空值」：undefined 和 null](http://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html)
 
-译者：SingleSeeker
+译者：[SingleSeeker](http://weibo.com/singleseeker)
 
 ----------------------------------------------------
 
-[此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第二篇。]
+此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第二篇。
+感谢 [@SingleSeeker](http://weibo.com/singleseeker) 对本文的翻译。
+
+以下是正文：
 
 对于“空值”或“空引用”，大多数编程语言只有一个值。比如，在 Java 中用的是 `null`。
 但是在 Javascript 中却有两个特殊的值: `undefined` 和 `null`。
