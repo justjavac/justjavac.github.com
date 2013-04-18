@@ -55,8 +55,8 @@
 
 
 
-    <div style="text-align: right;"><em>作者：<a href="http://perfectionkills.com/" title="">Juriy "kangax" Zaytsev</a></em></div>
-    <div style="text-align: right;"><em>译者：<a href="http://www.cn-cuckoo.com/" title="">为之漫笔</a></em></div>
+    <div style="text-align: right;"><em>作者：<a href="http://perfectionkills.com/" title="" target="_blank" rel="nofollow">Juriy "kangax" Zaytsev</a></em></div>
+    <div style="text-align: right;"><em>译者：<a href="http://www.cn-cuckoo.com/" title="" target="_blank" rel="nofollow">为之漫笔</a></em></div>
     <div style="text-align: right;"> 发表时间：<span class="dtstart">2009年6月17日</span> 最近修改：<span class="dtstart">2009年10月9日</span> </div>
     <div style="text-align: right;"> 翻译时间：<span class="dtstart">2009年12月9日</span> 修订时间：<span class="dtstart">2009年12月22日</span> </div>
     <ol>
@@ -540,7 +540,7 @@
   <p>这个结果大致验证了我的想法——显式地清除多余的引用确实可以释放内存，但释放的内存空间相对不多。在创建10000个函数对象的情况下，大约有3MB左右。对于大型应用程序，以及需要长时间运行或者在低内存设备（如手持设备）上运行的程序而言，这是绝对需要考虑的。但对小型脚本而言，这点差别可能也算不了什么。</p>
   <p>有读者可能认为本文到此差不多就该结尾了——实际上还差得远呢 :)。我还想再多谈一点，这些内容涉及的是Safari 2.x。</p>
   <h2 id="safari-bug">Safari中存在的bug</h2>
-  <p> 在Safari较早的版本——Safari 2.x系列中，也存在一些鲜为人知的与NFE有关的bug。我在Web上看到<a href="http://meyerweb.com/eric/thoughts/2005/07/11/safari-syntaxerror/">有人说Safari 2.x不支持NFE</a> 。实际上不是那么回事。Safari确实支持NFE，只不过它的实现中存在bug而已（很快你就会看到）。</p>
+  <p> 在Safari较早的版本——Safari 2.x系列中，也存在一些鲜为人知的与NFE有关的bug。我在Web上看到<a href="http://meyerweb.com/eric/thoughts/2005/07/11/safari-syntaxerror/" target="_blank">有人说Safari 2.x不支持NFE</a> 。实际上不是那么回事。Safari确实支持NFE，只不过它的实现中存在bug而已（很快你就会看到）。</p>
   <p>在某些情况下，Safari 2.x遇到函数表达式时会出现不能完全解析程序的问题。而且，此时的Safari不会抛出任何错误（例如<code>SyntaxError</code>），只会“默默地知难而退”：</p>
   <pre lang="javascript" class="prettyprint">
   (function f(){})(); // &lt;== NFE
@@ -648,7 +648,7 @@
   // 看到了吗，函数的字符串表示中没有标识符g
   String(f); // function () { }
 </pre>
-  <p>这不算什么大问题。但正如我以前说过的，<a href="http://thinkweb2.com/projects/prototype/those-tricky-functions/">函数的反编译结果是无论如何也不能相信的</a>。 </p>
+  <p>这不算什么大问题。但正如我以前说过的，<a href="http://thinkweb2.com/projects/prototype/those-tricky-functions/" target="_blank">函数的反编译结果是无论如何也不能相信的</a>。 </p>
   <h2 id="spidermonkey-peculiarity">SpiderMonkey的怪癖</h2>
   <p> 大家都知道，命名函数表达式的标识符只在函数的局部作用域中有效。但包含这个标识符的局部作用域又是什么样子的吗？其实非常简单。在命名函数表达式被求值时，会<strong>创建一个特殊的对象</strong>，该对象的唯一目的就是保存一个属性，而这个属性的名字对应着函数标识符，属性的值对应着那个函数。这个对象会被注入到当前作用域链的前端。然后，被“扩展”的作用域链又被用于初始化函数。 </p>
   <p> 在这里（想象一下本山大叔在小品《火炬手》中发表获奖感言的情景吧。——译者注），有一点十分有意思，那就是ECMA-262定义这个（保存函数标识符的）“特殊”对象的方式。标准说<strong>“像调用new Object()表达式那样”</strong>创建这个对象。如果从字面上来理解这句话，那么这个对象就应该是全局<code>Object</code>的一个实例。然而，只有一个实现是按照标准字面上的要求这么做的，这个实现就是SpiderMonkey。因此，在SpiderMonkey中，扩展<code>Object.prototype</code>有可能会干扰函数的局部作用域： </p>
@@ -804,7 +804,7 @@
     return hasClassName;
   })();
 </pre>
-  <p>显然，当存在多个分支函数定义时，这个方案就不能胜任了。不过，我最早见过<a href="http://tobielangel.com/">托比·兰吉（Tobiel Langel）</a>使用过一个很有味道的模式。他的这种模式是<strong>提前使用函数声明来定义所有函数，并分别为这些函数指定不同的标识符</strong>：</p>
+  <p>显然，当存在多个分支函数定义时，这个方案就不能胜任了。不过，我最早见过<a href="http://tobielangel.com/" target="_blank" rel="nofollow">托比·兰吉（Tobiel Langel）</a>使用过一个很有味道的模式。他的这种模式是<strong>提前使用函数声明来定义所有函数，并分别为这些函数指定不同的标识符</strong>：</p>
   <pre lang="javascript" class="prettyprint">
   var addEvent = (function(){
 
@@ -841,7 +841,7 @@
   <p>另外，托比使用的模式还存在一个小问题，即增加内存占用。提前创建N个不同名字的函数，等于有N-1的函数是用不到的。具体来讲，如果<code>document.documentElement</code>中包含<code>attachEvent</code>，那么<code>addEventListener</code> 和<code>addEventAsProperty</code>则根本就用不着了。可是，他们都占着内存哪；而且，这些内存将永远都得不到释放，原因跟JScript臭哄哄的命名表达式相同——这两个函数都被“截留”在返回的那个函数的闭包中了。</p>
   <p>不过，增加内存占用这个问题确实没什么大不了的。如果某个库——例如Prototype.js——采用了这种模式，无非也就是多创建一两百个函数而已。只要不是（在运行时）重复地创建这些函数，而是只（在加载时）创建一次，那么就没有什么好担心的。</p>
   <h2 id="webkit-displayName">WebKit的displayName</h2>
-  <p>WebKit团队在这个问题采取了有点儿另类的策略。囿于函数（包括匿名和命名函数）如此之差的表现力，WebKit引入了一个“特殊的”<code>displayName</code>属性（本质上是一个字符串），如果开发人员为函数的这个属性赋值，则该属性的值将在调试器或性能分析器中被显示在函数“名称”的位置上。<a href="http://www.alertdebugging.com/2009/04/29/building-a-better-javascript-profiler-with-webkit/">弗朗西斯科·托依玛斯基（Francisco Tolmasky）详细地解释了这个策略的原理和实现</a>。</p>
+  <p>WebKit团队在这个问题采取了有点儿另类的策略。囿于函数（包括匿名和命名函数）如此之差的表现力，WebKit引入了一个“特殊的”<code>displayName</code>属性（本质上是一个字符串），如果开发人员为函数的这个属性赋值，则该属性的值将在调试器或性能分析器中被显示在函数“名称”的位置上。<a href="http://www.alertdebugging.com/2009/04/29/building-a-better-javascript-profiler-with-webkit/" target="_blank" rel="nofollow">弗朗西斯科·托依玛斯基（Francisco Tolmasky）详细地解释了这个策略的原理和实现</a>。</p>
   <h2 id="future-considerations">对未来的思考</h2>
   <p>将来的ECMAScript-262第5版（目前还是草案）会引入所谓的<strong>严格模式（strict mode）</strong>。开启严格模式的实现会禁用语言中的那些不稳定、不可靠和不安全的特性。据说出于安全方面的考虑，<code>arguments.callee</code>属性将在严格模式下被“封杀”。因此，在处于严格模式时，访问<code>arguments.callee</code>会导致<code>TypeError</code>（参见ECMA-262第5版的10.6节）。而我之所以在此提到严格模式，是因为如果在基于第5版标准的实现中无法使用<code>arguments.callee</code>来执行递归操作，那么使用命名函数表达式的可能性就会大大增加。从这个意义上来说，理解命名函数表达式的语义及其bug也就显得更加重要了。</p>
   <pre lang="javascript" class="prettyprint">
@@ -865,21 +865,21 @@
   factorial(10);
 </pre>
   <h2 id="credits">致谢</h2>
-  <p><strong><em>理查德· 康福德（Richard Cornford）</em></strong>，是他率先<a href="http://groups.google.com/group/comp.lang.javascript/msg/5b508b03b004bce8">解释了JScript中命名函数表达式所存在的bug</a>。理查德解释了我在这篇文章中提及的大多数bug，所以我强烈建议大家去看看他的解释。我还要感谢<strong><em>Yann-Erwan Perio（这是中国人吗？——译者注）</em></strong>和<strong><em>道格拉斯·克劳克佛德（Douglas Crockford）</em></strong>，他们早在2003年就在<a href="http://groups.google.com/group/comp.lang.javascript/msg/03d53d114d176323">comp.lang.javascript论坛中提及并讨论NFE问题了</a>。</p>
+  <p><strong><em>理查德· 康福德（Richard Cornford）</em></strong>，是他率先<a href="http://groups.google.com/group/comp.lang.javascript/msg/5b508b03b004bce8" target="_blank" rel="nofollow">解释了JScript中命名函数表达式所存在的bug</a>。理查德解释了我在这篇文章中提及的大多数bug，所以我强烈建议大家去看看他的解释。我还要感谢<strong><em>Yann-Erwan Perio（这是中国人吗？——译者注）</em></strong>和<strong><em>道格拉斯·克劳克佛德（Douglas Crockford）</em></strong>，他们早在2003年就在<a href="http://groups.google.com/group/comp.lang.javascript/msg/03d53d114d176323" target="_blank" rel="nofollow">comp.lang.javascript论坛中提及并讨论NFE问题了</a>。</p>
   <p><strong><em>约翰-戴维·道尔顿（John-David Dalton）</em></strong>对“最终解决方案”提出了很好的建议。</p>
   <p><strong><em>托比·兰吉</em></strong>的点子被我用在了“替代方案”中。</p>
   <p><strong><em>盖瑞特·史密斯（Garrett Smith）</em></strong>和<strong><em>德米特里·苏斯尼科（Dmitry Soshnikov）</em></strong>对本文的多方面作出了补充和修正。</p>
-  <p style="margin-top: 2em; background: #ffc; float: left; padding: 0.5em;"> 要提建议或者反馈错误吗？可以<a href="http://thinkweb2.com/projects/prototype/named-function-expressions-demystified/" title="">在这篇博文中留言</a> 或者<a href="http://cloudflare.com/email-protection.html#117a707f76706951767c70787d3f727e7c" title="给我写邮件吧">给我写封邮件</a>，随便，怎么都行。 <br>
-    这篇文章也 <a href="http://github.com/kangax/nfe/tree/master" title="this article on github">通过github实现了版本管理</a>，访问这个链接可以看到本文的最新版本。 </p>
+  <p style="margin-top: 2em; background: #ffc; float: left; padding: 0.5em;"> 要提建议或者反馈错误吗？可以<a href="http://thinkweb2.com/projects/prototype/named-function-expressions-demystified/" title="" target="_blank" rel="nofollow">在这篇博文中留言</a> 或者<a href="http://cloudflare.com/email-protection.html#117a707f76706951767c70787d3f727e7c" title="给我写邮件吧" target="_blank" rel="nofollow">给我写封邮件</a>，随便，怎么都行。 <br>
+    这篇文章也 <a href="http://github.com/kangax/nfe/tree/master" title="this article on github" target="_blank" rel="nofollow">通过github实现了版本管理</a>，访问这个链接可以看到本文的最新版本。 </p>
   <p style="float: right; margin-top: 2em; padding: 0.5em;"> 发表时间：<span class="dtstart">2009年6月17日</span> 最近修改：<span class="dtstart">2009年10月9日</span> </p>
  <div class="clearfix"></div>
 </div>
 
       <footer>
         <p>&copy; justjavac 2012 
-          基于 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> 构建, 
-          源码托管在 <a href="https://github.com/justjavac/justjavac.github.com" target="_blank">github</a> 上
+          基于 <a href="http://jekyllbootstrap.com" target="_blank" rel="nofollow" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          和 <a href="http://twitter.github.com/bootstrap/" target="_blank" rel="nofollow">Twitter Bootstrap</a> 构建, 
+          源码托管在 <a href="https://github.com/justjavac/justjavac.github.com" target="_blank" rel="nofollow">github</a> 上
         </p>
       </footer>
 
@@ -925,7 +925,7 @@ $.fn.smartFloat=function(){var a=function(b){var c=b.position().top,d=b.css("pos
 
   <!-- UJian Button BEGIN -->
     <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&uid=1514075"></script>
-    <a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+    <a href="http://www.ujian.cc" rel="nofollow" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
     <!-- UJian Button END -->
 
   </body>
