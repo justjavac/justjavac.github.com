@@ -24,7 +24,9 @@ First, a few syntactic phenomena need to be explained that are relevant for the 
 
 ## Expression versus statement:
 
-* Expression: everything that becomes a value when evaluated. Examples:
+*   Expression: everything that becomes a value when evaluated. 
+
+    Examples:
 
         3 * Math.sqrt(x)
         i++
@@ -34,7 +36,10 @@ First, a few syntactic phenomena need to be explained that are relevant for the 
         function() {} // function expression
 
 
-* Statement: everything that “does something”. A program is always a sequence of statements. Examples:
+*   Statement: everything that "does something". 
+    A program is always a sequence of statements. 
+    
+    Examples:
 
         for(var i=0; i<3; i++) {
             console.log(i);
@@ -110,7 +115,7 @@ It does not necessarily mean that actual semicolons are inserted into the source
 Instead, it is a nice metaphor for explaining when semicolons are optional.
 
 **The norm**: The parser treats every new token as part of the current statement, unless there is a semicolon that terminates it. 
-The following examples show code where you might think a semicolon should be inserted, but isn’t. 
+The following examples show code where you might think a semicolon should be inserted, but isn't. 
 This illustrates the risks of omitting semicolons.
 
 No ASI:
@@ -142,8 +147,8 @@ No semicolon is inserted. Instead, the beginning of the second line is interpret
 the comma is allowed due to the comma operator 
 (which evaluates both its left-hand side and its right-hand side and returns its right-hand side).
 
-No ASI: In many browsers, the code below assigns 0 to func, 
-because a++ is interpreted as the argument of an invocation of the function in the previous line.
+No ASI: In many browsers, the code below assigns `0` to `func`, 
+because `a++` is interpreted as the argument of an invocation of the function in the previous line.
 
     var a = 0;
     var func = function(x) { return x }
@@ -152,7 +157,7 @@ because a++ is interpreted as the argument of an invocation of the function in t
 **Exceptions to the norm**: ASI is applied in the following cases.
 
 *   **Newline plus illegal token**: If a newline is encountered and followed by a token that cannot be added to the current statement, 
-a semicolon is inserted.
+    a semicolon is inserted.
 
     Example:
 
@@ -164,7 +169,7 @@ a semicolon is inserted.
         if (a < 0) a = 0;
         console.log(a);
 
-*   **Forbidden LineTerminators**: The following syntactic constructs forbid a newline (“LineTerminator”) at a certain position. 
+*   **Forbidden LineTerminators**: The following syntactic constructs forbid a newline ("LineTerminator") at a certain position. 
     If there is a newline at that position, a semicolon is inserted. 
     The ECMAScript standard calls the grammar rules below restricted productions.
 
@@ -213,7 +218,7 @@ a semicolon is inserted.
           ok: false;
         };
 
-    Triggers ASI and is interpreted as an empty return statement, followed by a block (with the label ok and the expression statement false), 
+    Triggers ASI and is interpreted as an empty return statement, followed by a block (with the label ok and the expression statement `false`), 
     followed by an empty statement (after the closing brace). 
     Thus, if you want to return an object literal, do it as follows.
 
@@ -233,7 +238,7 @@ a semicolon is inserted.
 
     **Cases where ASI is not performed**
 
-*   **Head of for loop**: Semicolons are not inserted inside the head of a for loop. 
+*   **Head of for loop**: Semicolons are not inserted inside the head of a `for` loop. 
     This is obvious, because inserted (line-terminating) semicolons are different from the (argument-separating) head semicolons.
 
 *   **Causing empty statements**: Semicolons are not inserted if they would be parsed as empty statements. 
@@ -243,7 +248,7 @@ a semicolon is inserted.
         if (a > b)
         else c = d
 
-    Normally, ASI would be triggered, because else cannot follow the if head. 
+    Normally, ASI would be triggered, because else cannot follow the `if` head. 
     However, adding a semicolon after the head would create an empty statement and is thus not done. 
     Accordingly, the above code causes a syntax error. 
     However, if one manually inserts a semicolon, the result is syntactically correct.
@@ -252,7 +257,7 @@ a semicolon is inserted.
         else c = b
 
     Note that this rule is not necessary in the following example, where there is no danger of ASI, 
-    because the opening brace can follow the if head.
+    because the opening brace can follow the `if` head.
 
         if (a > b)
         {
@@ -262,13 +267,13 @@ a semicolon is inserted.
 ## 3. Recommendations
 
 * Always add semicolons and avoid the headaches of semicolon insertion, at least for your own code. 
-Yes, you will have to type more. But for me, semicolons increase the readability of code, because I’m so used to them.
+Yes, you will have to type more. But for me, semicolons increase the readability of code, because I'm so used to them.
 
 * Don’t put postfix ++ (or postfix --) and its operand in separate lines.
 
 * If the following statements have an argument, don’t put it in a separate line: return, throw, break, continue.
 
-* For consistency (with return), if an opening brace or bracket is part of a statement, don’t put it in a separate line.
+* For consistency (with return), if an opening brace or bracket is part of a statement, don't put it in a separate line.
 
     var obj = { // don’t move the brace to a new line
         name: "John"
