@@ -16,11 +16,17 @@ header : 关于迷渡
 <h2>如何实现的呢？</h2>
 
 <p>
-	有人说是直接拼写的 ASCII 码，这倒也是一种方法，下次试试 ^_^。不过上面的代码不是这么干的。
+	有人说是直接拼写的 ASCII 码。这倒也是一种方法，下次试试 ^_^。不过上面的代码不是这么干的。
+</p>
+
+<h2>第一步</h2>
+
+<p>
+	先来个简单的，就以 <code>justjavac</code> 为例吧。首先我们要输出 <code>j</code>。
 </p>
 
 <p>
-	先来个简单的，就以 <code>justjavac</code> 为例吧。首先我们要输出 <code>j</code>。下面这段代码可以输出 <code>j</code>：
+	下面这段代码可以输出 <code>j</code>：
 </p>
 
 <pre>
@@ -29,12 +35,39 @@ header : 关于迷渡
 
 <p>
 	<strong>解释</strong>：代码 <code>1+{}</code> 的结果是 <code>"1[object Object]"</code>，
-	虽然不是最后的结果，但我们庆幸的是，我们得到了一个包含 j 的字符串。
+	显然，我们得到了一个包含 j 的字符串。但为什么会如此奇怪呢？毕竟我们都期望 <code>1+{}</code> 的结果应该是 1。
+</p>
+
+<h3>对象加法</h3>
+
+<p>有下面这样的一个加法操作。</p>
+
+<pre><code>value1 + value2
+</code></pre>
+
+<p>在计算这个表达式时，内部的操作步骤是这样的 (§11.6.1):</p>
+
+<ol>
+<li><p>将两个操作数转换为原始值 (以下是数学表示法的伪代码，不是可以运行的 JavaScript 代码):</p>
+
+<pre><code> prim1 := ToPrimitive(value1)
+ prim2 := ToPrimitive(value2)
+</code></pre>
+
+<p> <code>PreferredType</code> 被省略，因此 <code>Date</code> 类型的值采用 <code>String</code>，其他类型的值采用 <code>Number</code>。</p></li>
+<li><p>如果 prim1 或者 prim2 中的任意一个为字符串，则将另外一个也转换成字符串，然后返回两个字符串连接操作后的结果。</p></li>
+<li><p>否则，将 prim1 和 prim2 都转换为数字类型，返回他们的和。</p></li>
+</ol>
+
+<p>
+	更多详细内容参考 <li><a href="http://justjavac.com/javascript/2012/12/20/object-plus-object.html" target="_blank">JavaScript中,{}+{}等于多少?</a></li>
 </p>
 
 <p>
 	由于字符串可以当作数组一样取里面的元素，于是 <code>(1+{})[4]</code> 就得到了 j。
 </p>
+
+<h2>第二步</h2>
 
 <p>
 	既然我们得到了 j，那下一步就是 u 了。我们还是按照这个思路，哪个字符串里面还有 u 呢？ 
@@ -57,7 +90,20 @@ header : 关于迷渡
 
 <p>
 	呵呵，上面使用正在表达式 <code>/1/</code> 有点儿卖弄的嫌疑，其实用 <code>1[1]</code> 就够了。
-	为了更有 geek 感，可以多出现 0 1， 通过 <code>/1+/[+0]+[+1]</code> 我们可以得到字符串 "undefined1"。
+	为了更有 geek 感，可以多出现 0 和 1。通过 <code>/1+/[+0]+[+1]</code> 我们可以得到字符串 "undefined1"。
+</p>
+
+<p>
+	使用数组操作符把我们想要的 u 提取出来， <code>(/1+/[+0]+[+1])[0]</code>。
+</p>
+
+<p>
+	现在我们已经得到了字符串 "ju" 了。按照这种方法，我们可以得到其他的字符串。没有做不到的，只有想不到的。 
+</p>
+
+<p>
+	当我们得到了所有的字符串，就可以使用 + 号把他们连接起来。
+	你以为这就完了吗？当然远远没有，我们应该让我们的代码更 Cool，更有 geek 范。
 </p>
 
 <h2>相关阅读：</h2>
