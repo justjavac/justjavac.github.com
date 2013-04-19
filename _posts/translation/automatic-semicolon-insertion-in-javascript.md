@@ -18,7 +18,7 @@ In JavaScript, automatic semicolon insertion allows one to omit a semicolon at t
 While you always should write semicolons, knowing how JavaScript handles their omission is important knowledge, 
 because it helps you understand code without semicolons and because it has effects even in code with semicolons.
 
-## Background: JavaScript syntax
+## 1. Background: JavaScript syntax
 
 First, a few syntactic phenomena need to be explained that are relevant for the remainder of this post.
 
@@ -103,7 +103,7 @@ Example:
 All of the above are expression statements. 
 The first two have no effect.
 
-## The rules of automatic semicolon insertion (ASI)
+## 2. The rules of automatic semicolon insertion (ASI)
 
 "Semicolon insertion" is just a term. 
 It does not necessarily mean that actual semicolons are inserted into the source code during parsing. 
@@ -151,22 +151,22 @@ because a++ is interpreted as the argument of an invocation of the function in t
 
 **Exceptions to the norm**: ASI is applied in the following cases.
 
-* **Newline plus illegal token**: If a newline is encountered and followed by a token that cannot be added to the current statement, 
+*   **Newline plus illegal token**: If a newline is encountered and followed by a token that cannot be added to the current statement, 
 a semicolon is inserted.
 
-Example:
+    Example:
 
-    if (a < 0) a = 0
-    console.log(a)
+        if (a < 0) a = 0
+        console.log(a)
 
-This triggers ASI and becomes
+    This triggers ASI and becomes
 
-    if (a < 0) a = 0;
-    console.log(a);
+        if (a < 0) a = 0;
+        console.log(a);
 
-* **Forbidden LineTerminators**: The following syntactic constructs forbid a newline (“LineTerminator”) at a certain position. 
-If there is a newline at that position, a semicolon is inserted. 
-The ECMAScript standard calls the grammar rules below restricted productions.
+*   **Forbidden LineTerminators**: The following syntactic constructs forbid a newline (“LineTerminator”) at a certain position. 
+    If there is a newline at that position, a semicolon is inserted. 
+    The ECMAScript standard calls the grammar rules below restricted productions.
 
         PostfixExpression
             LeftHandSideExpression [no LineTerminator here] ++
@@ -180,86 +180,86 @@ The ECMAScript standard calls the grammar rules below restricted productions.
         ThrowStatement
             throw [no LineTerminator here] Expression? ;
 
-For PostfixExpression, the rationale is avoiding the modification of a value on the previous line. 
-For continue, break, return and throw, the rationale is that if they are used without an argument, 
-they should not refer to the next line if one forgets a semicolon.
+    For PostfixExpression, the rationale is avoiding the modification of a value on the previous line. 
+    For continue, break, return and throw, the rationale is that if they are used without an argument, 
+    they should not refer to the next line if one forgets a semicolon.
 
-Example:
+    Example:
 
-    a
-    ++
-    c
+        a
+        ++
+        c
 
-Triggers ASI and becomes
+    Triggers ASI and becomes
 
-    a;
-    ++
-    c
+        a;
+        ++
+        c
 
-Example:
+    Example:
 
-    return
-    a + b
+        return
+        a + b
 
-Triggers ASI and becomes
+    Triggers ASI and becomes
 
-    return;
-    a + b;
+        return;
+        a + b;
 
-Example by Crockford:
+    Example by Crockford:
 
-    return
-    {
-      ok: false;
-    };
+        return
+        {
+          ok: false;
+        };
 
-Triggers ASI and is interpreted as an empty return statement, followed by a block (with the label ok and the expression statement false), 
-followed by an empty statement (after the closing brace). 
-Thus, if you want to return an object literal, do it as follows.
+    Triggers ASI and is interpreted as an empty return statement, followed by a block (with the label ok and the expression statement false), 
+    followed by an empty statement (after the closing brace). 
+    Thus, if you want to return an object literal, do it as follows.
 
-    return {
-      ok: false;
-    };
+        return {
+          ok: false;
+        };
 
 
-* **Last statements in blocks and programs**: Missing semicolons are added before a closing brace and at the end of a program. 
-The following example would be syntactically incorrect without ASI.
+*   **Last statements in blocks and programs**: Missing semicolons are added before a closing brace and at the end of a program. 
+    The following example would be syntactically incorrect without ASI.
 
         function add(a,b) { return a+b }
 
-ASI turns this code into
+    ASI turns this code into
 
-    function add(a,b) { return a+b; }
+        function add(a,b) { return a+b; }
 
-**Cases where ASI is not performed**
+    **Cases where ASI is not performed**
 
-* **Head of for loop**: Semicolons are not inserted inside the head of a for loop. 
-This is obvious, because inserted (line-terminating) semicolons are different from the (argument-separating) head semicolons.
+*   **Head of for loop**: Semicolons are not inserted inside the head of a for loop. 
+    This is obvious, because inserted (line-terminating) semicolons are different from the (argument-separating) head semicolons.
 
-* **Causing empty statements**: Semicolons are not inserted if they would be parsed as empty statements. 
+*   **Causing empty statements**: Semicolons are not inserted if they would be parsed as empty statements. 
 
-Example:
+    Example:
 
-    if (a > b)
-    else c = d
+        if (a > b)
+        else c = d
 
-Normally, ASI would be triggered, because else cannot follow the if head. 
-However, adding a semicolon after the head would create an empty statement and is thus not done. 
-Accordingly, the above code causes a syntax error. 
-However, if one manually inserts a semicolon, the result is syntactically correct.
+    Normally, ASI would be triggered, because else cannot follow the if head. 
+    However, adding a semicolon after the head would create an empty statement and is thus not done. 
+    Accordingly, the above code causes a syntax error. 
+    However, if one manually inserts a semicolon, the result is syntactically correct.
 
-    if (a > b);
-    else c = b
+        if (a > b);
+        else c = b
 
-Note that this rule is not necessary in the following example, where there is no danger of ASI, 
-because the opening brace can follow the if head.
+    Note that this rule is not necessary in the following example, where there is no danger of ASI, 
+    because the opening brace can follow the if head.
 
-    if (a > b)
-    {
-        c = a
-    }
+        if (a > b)
+        {
+            c = a
+        }
 
-## Recommendations
+## 3. Recommendations
 
 * Always add semicolons and avoid the headaches of semicolon insertion, at least for your own code. 
 Yes, you will have to type more. But for me, semicolons increase the readability of code, because I’m so used to them.
@@ -283,7 +283,7 @@ Compare:
         name: "John"
     };
 
-## Related reading
+## 4. Related reading
 
 1. ECMAScript Language Specification, 5th edition, section 7.9. [Source of this post and of some of the examples.]
 
