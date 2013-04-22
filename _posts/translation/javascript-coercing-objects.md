@@ -10,7 +10,7 @@ tags : [javascript]
 
 译文：[]()
 
-译者：[何欢爱HuangFeng]()
+译者：[何欢 love HuangFeng]()
 
 ----------------------------------------------------
 
@@ -64,9 +64,9 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
         }
     };
 
-### 1.1 强制转换为number
+### 1.1 强制转换为 number
 
-有两种常见的方法来 coercing to number: the unary plus operator and Number, used as a function (not as a constructor).
+有两种常见的方法可以将一个值强制转换为 number: + 单目操作符以及作为函数的 Number（而不是作为构造函数）.
 
     > +obj
     valueOf
@@ -75,14 +75,13 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
     valueOf
     0
 
-In both cases, things work as expected: the number algorithm is used. 
-Then the result returned by `valueOf()` is converted to number.
+两种方法都像预期那样工作：它们都用了 number 算法. 
+结果由 `valueOf()` 所返回的结果被转成了 number.
 
-## 1.2 Coercing to string
+## 1.2 强制转换为 string
 
-Two common ways of coercing a value to string are: 
-the binary plus operator where one operand is a string and `String`, 
-used as a function (not as a constructor).
+有两种常见的方法可以将一个值强制转换为 string： 
+二元+操作符，其中一个是string类型，以及作为函数的 `String`（而不是作为构造函数）.
 
     > ''+obj
     valueOf
@@ -91,21 +90,21 @@ used as a function (not as a constructor).
     toString
     '1'
 
-The binary plus operator uses the default algorithm, because one can add either numbers or strings.
+二元+操作符使用了 default 算法，因为1跟numbers和strings都能进行累加操作.
 
-## 1.3 Coercing to boolean
+## 1.3 强制转换为 boolean
 
-Two ways of coercing to boolean are: 
-using the unary negation operator twice (once converts to boolean and negates) or using `Boolean` as a function.
+有两种方法可以将一个值强制转换为 boolean：
+使用两次二元逻辑反操作符（先一次转成boolean，然后取反） 或使用作为函数的 `Boolean` .
 
     > !!obj
     true
     > Boolean(obj)
     true
 
-Here we see that objects are never converted to primitive. 
-The rule is simply: any object is always `true`. 
-For primitives, only the following values are coerced to `false`, all other values are coerced to `true`.
+现在我们看到，对象从未被转成原始值。
+规则很简单: 任何对象永远是 `true`. 
+对于原始值（primitives）来讲，只有以下值才会被转成 `false`，其他所有值都会被转成 `true`.
 
 * undefined
 * null
@@ -113,12 +112,12 @@ For primitives, only the following values are coerced to `false`, all other valu
 * +0, -0, NaN
 * ""
 
-## 2. Understanding the initial result
+## 2. 了解初始的结果
 
-Now it should be obvious why `!!(new Boolean(false))` evaluates to `true`: 
-Any instance of `Boolean` is always an object and those are always coerced to `true`.
+现在，很明显就能预料为什么 `!!(new Boolean(false))` 的值为 `true`: 
+任何 `Boolean` 的实例永远都是一个对象，因此他们总是被转换成 `true`.
 
-## Recommendations
+## 推荐
 
 Here are a few recommendations for coercion and objects:
 
