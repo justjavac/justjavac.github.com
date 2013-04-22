@@ -16,7 +16,7 @@ tags : [javascript]
 
 This blog post looks at how JavaScript coerces objects to primitives. 
 If you don’t know the difference between primitive values and objects, 
-I suggest you consult my article “[Categorizing values in JavaScript][]” at the Adobe Developer Connection. 
+I suggest you consult my article “[Categorizing values in JavaScript][]”（感谢紫云飞翻译的中文版[JavaScript:如何判断值的类型](http://www.cnblogs.com/ziyunfei/archive/2012/10/11/2717057.html)） at the Adobe Developer Connection. 
 This post was triggered by the [following tweet][] by David Bruant:
 
 [Categorizing values in JavaScript]: http://www.adobe.com/devnet/html5/articles/categorizing-values-in-javascript.html
