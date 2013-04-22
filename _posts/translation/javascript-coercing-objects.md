@@ -64,7 +64,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
         }
     };
 
-## 1.1 强制转换为 number
+### 1.1 强制转换为 number
 
 有两种常见的方法可以将一个值强制转换为 number: + 单目操作符以及作为函数的 Number（而不是作为构造函数）.
 
@@ -78,7 +78,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 两种方法都像预期那样工作：它们都用了 number 算法. 
 结果由 `valueOf()` 所返回的结果被转成了 number.
 
-## 1.2 强制转换为 string
+### 1.2 强制转换为 string
 
 有两种常见的方法可以将一个值强制转换为 string： 
 二元+操作符，其中一个是string类型，以及作为函数的 `String`（而不是作为构造函数）.
@@ -92,7 +92,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 
 二元+操作符使用了 default 算法，因为1跟numbers和strings都能进行累加操作.
 
-## 1.3 强制转换为 boolean
+### 1.3 强制转换为 boolean
 
 有两种方法可以将一个值强制转换为 boolean：
 使用两次二元逻辑反操作符（先一次转成boolean，然后取反） 或使用作为函数的 `Boolean` .
@@ -137,7 +137,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 	    'true'
 
 *	1 并不总是会强制将对象转成原始值（primitives）。 
-	不过这样做通常受益良多 [WTFs][1] 和 [hacks][2].
+	不过这样做通常受益良多。[WTFs][1] 和 [hacks][2].
 
 ## 4. 进深阅读
 
