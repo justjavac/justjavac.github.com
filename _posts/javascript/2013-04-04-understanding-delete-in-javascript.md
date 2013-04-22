@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」javascript 中的 delete
+title: javascript 中的 delete
 keywords: javascript,delete
 category : javascript
 tags : [javascript, delete]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」JavaScript 的怪癖 1：隐式类型转换
+title: JavaScript 的怪癖 1：隐式类型转换
 keywords: javascript, quirks
 category : javascript
 tags : [javascript, quirks]
@@ -8,7 +8,7 @@ tags : [javascript, quirks]
 
 原文：[JavaScript quirk 1: implicit conversion of values](http://www.2ality.com/2013/04/quirk-implicit-conversion.html)
 
-译文：[「译」JavaScript 的怪癖 1：隐式类型转换](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)
+译文：[JavaScript 的怪癖 1：隐式类型转换](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 

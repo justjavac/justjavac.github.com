@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」JavaScript 的怪癖 2：两个「空值」：undefined 和 null
+title: JavaScript 的怪癖 2：两个「空值」：undefined 和 null
 keywords: javascript, quirks, undefined, null
 category : javascript
 tags : [javascript, quirks]
@@ -8,7 +8,7 @@ tags : [javascript, quirks]
 
 原文：[JavaScript quirk 2: two “non-values” – undefined and null](http://www.2ality.com/2013/04/quirk-undefined.html)
 
-译文：[「译」JavaScript 的怪癖 2：两个「空值」：undefined 和 null](http://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html)
+译文：[JavaScript 的怪癖 2：两个「空值」：undefined 和 null](http://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html)
 
 译者：[SingleSeeker](http://weibo.com/singleseeker)
 

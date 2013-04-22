@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」javascript 的 12 个怪癖（quirks）
+title: javascript 的 12 个怪癖（quirks）
 keywords: javascript, quirks
 category : javascript
 tags : [javascript, quirks]
@@ -8,7 +8,7 @@ tags : [javascript, quirks]
 
 原文：[12 JavaScript quirks](http://www.2ality.com/2013/04/12quirks.html)
 
-译文：[「译」javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
+译文：[javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」开发者如何提升和推销自己
+title: 开发者如何提升和推销自己
 description: 编写出伟大的代码对于开发者来说已经到达一个层级了。但是不断提升、适当的推销自己，可以令你得到更多。以下是一些有效的途径，希望能够帮到你。
 keywords: code, 提升
 category : other

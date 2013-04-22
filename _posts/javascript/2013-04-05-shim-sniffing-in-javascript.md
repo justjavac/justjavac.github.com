@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」JavaScript 当中的代码嗅探
+title: JavaScript 当中的代码嗅探
 keywords: javascript
 category : javascript
 tags : [javascript]
