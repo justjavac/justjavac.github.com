@@ -1,57 +1,57 @@
 ---
 layout: post
-title: Coercing objects to primitives
+title: 强制对象（objects）为原始值（primitives）
 keywords: javascript, object, primitive
 category : javascript
 tags : [javascript]
 ---
 
-原文：[Coercing objects to primitives](http://www.2ality.com/2012/11/coercing-objects.html)
+原文：[强制转换对象（objects）为原始值（primitives）](http://www.2ality.com/2012/11/coercing-objects.html)
 
 译文：[]()
 
-译者：[OKter]()
+译者：[何欢爱HuangFeng]()
 
 ----------------------------------------------------
 
-This blog post looks at how JavaScript coerces objects to primitives. 
-If you don’t know the difference between primitive values and objects, 
-I suggest you consult my article “[Categorizing values in JavaScript][]”（感谢紫云飞翻译的中文版[JavaScript:如何判断值的类型](http://www.cnblogs.com/ziyunfei/archive/2012/10/11/2717057.html)） at the Adobe Developer Connection. 
-This post was triggered by the [following tweet][] by David Bruant:
+本博文讨论的是JavaScript如何强制转换对象 objects 为 primitives。 
+如果你不明白原始值（primitive values）和 objects 之间的区别, 
+建议在Adobe开发者版块阅读我的文章 “[JavaScript:如何判断值的类型][]”（感谢紫云飞翻译的中文版[JavaScript:如何判断值的类型](http://www.cnblogs.com/ziyunfei/archive/2012/10/11/2717057.html)） 。 
+本文章由 [关注推特][] David Bruant 启发:
 
-[Categorizing values in JavaScript]: http://www.adobe.com/devnet/html5/articles/categorizing-values-in-javascript.html
-[following tweet]: https://twitter.com/DavidBruant/status/273451064764805120
+[JavaScript:如何判断值的类型]: http://www.adobe.com/devnet/html5/articles/categorizing-values-in-javascript.html
+[关注推特]: https://twitter.com/DavidBruant/status/273451064764805120
 
 	!!(new Boolean(false)) #wtfjs
 
-The result of the above expression is `true`. 
-Let us first learn about coercion in JavaScript. 
-We can then use that knowledge to understand this result.
+以上表达式的结果是 `true`. 
+我们先来认识一下 JavaScript 中的强制转换，
+接着我们就能用这个知识来理解以上的结果了。
 
-## 1. Coercion
+## 1. 强制转换
 
-Many operators and functions in JavaScript expect their arguments to have certain types. 
-If they don’t, they are coerced (converted) to those types. 
-Coercing an object to a primitive type is a two-step process: First, the object is converted to a primitive. 
-Then, if necessary, the primitive is converted to the correct type. 
-Two methods are used to convert an object to a primitive:
+许多JavaScript里的操作符和函数都要求其参数为特定的类型。
+如果不符合预期的类型，它们就会被强制（转换）成其他的类型。
+强制将一个对象转换为一个原始值类型仅需两步: 首先，该对象被转为一个原始值。
+然后，如果必要的话，该原始值会被转成正确的类型。 
+要将对象（object）转换为原始值（primitive）用到两种方法：
 
 1. `valueOf()`
 2. `toString()`
 
-There are three conversion algorithms:
+有三种转换算法：
 
-1. “Number”: you expect the value to be a number.
-2. “String”: you expect the value to be a string.
-3. “Default”: you don’t have any expectations for the value.
+1. “Number”: 你期待该值是一个数字
+2. “String”: 你期待该值是一个字符串
+3. “Default”: 你对该值没有任何期待
 
-The number algorithm first calls `valueOf()` and uses the returned value if it is primitive. 
-Otherwise, it calls `toString()` and uses its value if it is primitive. 
-Otherwise, an exception is thrown. 
-The string algorithm calls the methods in reverse order. 
-The default algorithm is “number” for non-dates and “string” for dates.
+number 算法首先会调用 `valueOf()` ，如果返回值是一个原始值（primitive） 就使用它。 
+要不然，它会调用 `toString()` ，如果返回值是一个原始值（primitive） 就使用它。  
+如若不然，则抛出异常。 
+string 算法则以相反的顺序会调用这些函数。
+default 算法用于非日期型的 “number” 和日期型的 “string”
 
-Let’s try out coercion via the following object:
+我们可以用下面这个对象来实验一下强制转换:
 
     var obj = {
         valueOf: function () {
@@ -64,9 +64,9 @@ Let’s try out coercion via the following object:
         }
     };
 
-### 1.1 Coercing to number
+### 1.1 强制转换为number
 
-There are two common ways for coercing to number: the unary plus operator and Number, used as a function (not as a constructor).
+有两种常见的方法来 coercing to number: the unary plus operator and Number, used as a function (not as a constructor).
 
     > +obj
     valueOf
