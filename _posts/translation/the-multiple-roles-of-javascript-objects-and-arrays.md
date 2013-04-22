@@ -1,9 +1,9 @@
 ---
-layout: post
-title: The multiple roles of JavaScript objects and arrays
-keywords: javascript, object, array
-category : javascript
-tags : [javascript]
+layout: post  
+title: The multiple roles of JavaScript objects and arrays  
+keywords: javascript, object, array  
+category : javascript  
+tags : [javascript]  
 ---
 
 原文：[The multiple roles of JavaScript objects and arrays](http://www.2ality.com/2012/01/roles-objects-arrays.html)
