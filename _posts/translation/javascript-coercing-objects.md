@@ -1,22 +1,22 @@
 ---
 layout: post
-title: 强制对象（objects）为原始值（primitives）
+title: 强制转换对象（objects）为原始值（primitives）
 keywords: javascript, object, primitive
 category : javascript
 tags : [javascript]
 ---
 
-原文：[强制转换对象（objects）为原始值（primitives）](http://www.2ality.com/2012/11/coercing-objects.html)
+原文：[Coercing objects to primitives](http://www.2ality.com/2012/11/coercing-objects.html)
 
-译文：[]()
+译文：[强制转换对象（objects）为原始值（primitives）](http://justjavac.com/javascript/2013/04/22/javascript-coercing-objects-to-primitives.html)
 
 译者：[何欢 love HuangFeng]()
 
 ----------------------------------------------------
 
-本博文讨论的是JavaScript如何强制转换对象 objects 为 primitives。 
+本博文讨论的是 JavaScript 如何强制转换对象 objects 为 primitives。 
 如果你不明白原始值（primitive values）和 objects 之间的区别, 
-建议在Adobe开发者版块阅读我的文章 “[JavaScript:如何判断值的类型][]”（感谢紫云飞翻译的中文版[JavaScript:如何判断值的类型](http://www.cnblogs.com/ziyunfei/archive/2012/10/11/2717057.html)） 。 
+建议在 Adobe 开发者版块阅读我的文章 “[JavaScript:如何判断值的类型][]”（感谢紫云飞翻译的中文版[JavaScript:如何判断值的类型](http://www.cnblogs.com/ziyunfei/archive/2012/10/11/2717057.html)） 。 
 本文章由 [关注推特][] David Bruant 启发:
 
 [JavaScript:如何判断值的类型]: http://www.adobe.com/devnet/html5/articles/categorizing-values-in-javascript.html
@@ -30,7 +30,7 @@ tags : [javascript]
 
 ## 1. 强制转换
 
-许多JavaScript里的操作符和函数都要求其参数为特定的类型。
+许多 JavaScript 里的操作符和函数都要求其参数为特定的类型。
 如果不符合预期的类型，它们就会被强制（转换）成其他的类型。
 强制将一个对象转换为一个原始值类型仅需两步: 首先，该对象被转为一个原始值。
 然后，如果必要的话，该原始值会被转成正确的类型。 
@@ -81,7 +81,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 ### 1.2 强制转换为 string
 
 有两种常见的方法可以将一个值强制转换为 string： 
-二元+操作符，其中一个是string类型，以及作为函数的 `String`（而不是作为构造函数）.
+二元 `+` 操作符，其中一个是 string 类型，以及作为函数的 `String`（而不是作为构造函数）.
 
     > ''+obj
     valueOf
@@ -90,12 +90,12 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
     toString
     '1'
 
-二元+操作符使用了 default 算法，因为1跟numbers和strings都能进行累加操作.
+二元 `+` 操作符使用了 default 算法，因为 1 跟 numbers 和 strings 都能进行累加操作.
 
 ### 1.3 强制转换为 boolean
 
 有两种方法可以将一个值强制转换为 boolean：
-使用两次二元逻辑反操作符（先一次转成boolean，然后取反） 或使用作为函数的 `Boolean` .
+使用两次二元逻辑反操作符（先一次转成 boolean，然后取反） 或使用作为函数的 `Boolean` .
 
     > !!obj
     true
