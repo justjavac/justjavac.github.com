@@ -10,7 +10,7 @@ tags : [javascript]
 
 译文：[强制转换对象（objects）为原始值（primitives）](http://justjavac.com/javascript/2013/04/22/javascript-coercing-objects-to-primitives.html)
 
-译者：[何欢 love HuangFeng]()
+译者：[何欢 love HuangFeng]
 
 ----------------------------------------------------
 
@@ -117,7 +117,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 现在，很明显就能预料为什么 `!!(new Boolean(false))` 的值为 `true`: 
 任何 `Boolean` 的实例永远都是一个对象，因此他们总是被转换成 `true`.
 
-## 推荐的方法
+## 3. 推荐的方法
 
 现在我们推荐一些强制转换对象的方法:
 
