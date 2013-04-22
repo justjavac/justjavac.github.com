@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」JavaScript 的 MVC 模式 
+title: JavaScript 的 MVC 模式 
 description: 我喜欢 JavaScript，因为它是在世界上最灵活的语言之一。在 JavaScript 中，程序员可以根据自己的口味选择编程风格：面向过程或面向对象。如果你是一个重口味，JavaScript 一样可以应付自如：面向过程，面向对象，面向方面，使用 JavaScript 开发人员甚至可以使用函数式编程技术)。
 keywords: mvc, JavaScript, design pattern, 设计模式
 category : javascript

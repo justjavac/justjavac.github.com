@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「译」你的 mixin 兼容 ECMAScript 5 吗？
+title: 你的 mixin 兼容 ECMAScript 5 吗？
 description: 我最近在与客户合作的项目中，可以充分利用的ECMAScript 5，在此我遇到一个非常有趣的问题。该问题源于一个非常常见的模式： mixin，也就是在 JavaScript 中把一个对象的属性（包括方法） mixin 到另一个。
 keywords: ECMAScript 5, JavaScript, mixin
 category : javascript
