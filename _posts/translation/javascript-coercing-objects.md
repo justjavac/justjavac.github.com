@@ -64,7 +64,7 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
         }
     };
 
-### 1.1 强制转换为 number
+## 1.1 强制转换为 number
 
 有两种常见的方法可以将一个值强制转换为 number: + 单目操作符以及作为函数的 Number（而不是作为构造函数）.
 
@@ -117,17 +117,17 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 现在，很明显就能预料为什么 `!!(new Boolean(false))` 的值为 `true`: 
 任何 `Boolean` 的实例永远都是一个对象，因此他们总是被转换成 `true`.
 
-## 推荐
+## 推荐的方法
 
-Here are a few recommendations for coercion and objects:
+现在我们推荐一些强制转换对象的方法:
 
-*	Stay away from instances of `Boolean`, `Number` and `String`. 
-	You don’t normally need or encounter them in JavaScript.
+*	远离 `Boolean`, `Number` 和 `String` 的实例。
+	JavaScript里通常你不需要或者不会遇到它们。
 
-*	However, I do like using `Boolean`, `Number` and `String` as functions, to coerce values. 
-	They are nicely descriptive when used in this manner.
+*	然而，我喜欢把 `Boolean`, `Number` 和 `String` 用作函数来强制转换值。 
+	这样使用的话，表述性就非常好。
 
-*	Obviously, all of the above ways of coercing to primitives work for any value, not just for objects:
+*	很明显，以上所有强制转成原始值的方法适用于任何值，而非仅仅对象:
 
 	    > Number("123")
 	    123
@@ -136,10 +136,10 @@ Here are a few recommendations for coercion and objects:
 	    > String(true)
 	    'true'
 
-*	One does not often coerce objects to primitives. 
-	Doing so is, however, good for many [WTFs][1] and [hacks][2].
+*	1 并不总是会强制将对象转成原始值（primitives）。 
+	不过这样做通常受益良多 [WTFs][1] 和 [hacks][2].
 
-## 4. Further reading
+## 4. 进深阅读
 
 1. [JavaScript中,{}+{}等于多少?][1] [Describes the binary plus operator and the conversion to number and string in detail]
 
