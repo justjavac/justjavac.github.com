@@ -14,117 +14,113 @@ tags : [javascript, ASI]
 
 ----------------------------------------------------
 
-In JavaScript, automatic semicolon insertion allows one to omit a semicolon at the end of a line. 
-While you always should write semicolons, knowing how JavaScript handles their omission is important knowledge, 
-because it helps you understand code without semicolons and because it has effects even in code with semicolons.
+在JavaScript中，行尾的分号有一种自动插入机制，这样子，可以容忍某些朋友忽略了输入分号。
+当然你最好养成输入分号的习惯，同时掌握JavaScript是如何处理忽略输入分号的情况的，因为这种知识有助于你理解没有分号的代码。
 
-## 1. Background: JavaScript syntax
 
-First, a few syntactic phenomena need to be explained that are relevant for the remainder of this post.
+## 1. 背景：JavaScript语法
 
-## Expression versus statement:
+为了方便大家理解，首先介绍下基本的语法概念
 
-*   Expression: everything that becomes a value when evaluated. 
+## Expression(表达式) vs statement（语句）:
 
-    Examples:
+*   Expression: 表达式，执行之后都会有一个值
+
+    例如:
 
         3 * Math.sqrt(x)
         i++
         obj.prop
         [ "a", "b", "c" ]
         { first: "Jane", last: "Doe" }
-        function() {} // function expression
+        function() {} // 函数表达式
 
 
-*   Statement: everything that "does something". 
-    A program is always a sequence of statements. 
-    
-    Examples:
+*   Statement: 语句，每一个语句都会做些事情
+    一个程序经常是由一系列的语句组成的
+
+    例如:
 
         for(var i=0; i<3; i++) {
             console.log(i);
         }
-        function twice(x) { // function declaration
+        function twice(x) { // 函数声明
             return 2 * x;
         }
-        var foo = twice(21); // assignment
+        var foo = twice(21); // 赋值
 
-Note that the right hand side of the assignment is an expression.
+请注意，赋值语句的等号右侧是一个表达式。
+**语句应该以分号结尾**:
+除了下面这些语句，Javascript中的每一个语句都应该以分号结尾。
 
-**Statements that have to be terminated by a semicolon**: 
-Every statement in JavaScript is terminated by a semicolon, except the following ones.
+* 循环语句: `for`, `while` (not `do-while`)
+* 分支语句: `if`, `switch`, `try`
+* 函数声明 (不是函数表达式)
 
-* Loops: `for`, `while` (not `do-while`)
-* Branching: `if`, `switch`, `try`
-* Function declarations (not function expressions)
-
-Example: `while` versus `do-while`
+例如: `while` vs `do-while`
 
     while(a > 0) {
         a--;
-    } // no semicolon
-    
+    } // 没有分号
+
     do {
         a--;
     } while(a > 0);
 
-Example: function declaration versus function expression.
+例如: 函数声明 vs 函数表达式
 
     function foo() {
-    } // no semicolon
-    
+    } // 没有分号
+
     var foo = function() {
     };
 
-Note: if you do add a semicolon after the above mentioned statements, you do not get a syntax error, 
-because it is considered an empty statement (see below).
+注意：如果你在上面语句的末尾增加一个分号，不会有任何错误。因为解释器会将它认为是一个空语句。
 
-**The empty statement**. A semicolon on its own is an empty statement and does nothing. 
-Empty statements can appear anywhere a statement is expected. 
-They are useful in situations where a statement is demanded, but not needed. 
-In such situations, blocks are usually also allowed, but an empty block is longer than a semicolon. 
+**空语句**. 一个分号，只有一个分号的时候，它是一个空语句，并且什么也不干。
+空语句可以出现在任何一个语句可以出现的地方。
 
-Example: The following two statements are equivalent.
+有些情况当需要一个语句时，空语句是很有用的，但不是必须的。这种情况下，块代码也是允许的，只是一个空的块比一个分号要长而已。
+
+例如: 下面2个语句是等效的
 
 
     while(processNextItem() > 0);
     while(processNextItem() > 0) {}
 
-The function processNextItem is assumed to return the number of remaining items. 
-The following program is also syntactically correct: three empty statements.
+假定processNextItem函数返回待处理的成员数目。
+
+下面的程序同样语法上是正确：三个空语句。
 
     ;;;
 
-**Expressions as statements**. Any expression can become a statement. 
-Then it has to be terminated by a semicolon. 
+**表达式作为语句**. 任何表达式可以做为一个语句，只需要加一个分号结尾。
 
-Example:
+例如:
 
     "hello world";
     a + b;
     sum(5, 3);
     a++;
 
-All of the above are expression statements. 
-The first two have no effect.
+上面这些都是表达式语句。
+The first two have no effect.不太理解这句
 
-## 2. The rules of automatic semicolon insertion (ASI)
+## 2. 自动插入分号机制(ASI)
 
-"Semicolon insertion" is just a term. 
-It does not necessarily mean that actual semicolons are inserted into the source code during parsing. 
-Instead, it is a nice metaphor for explaining when semicolons are optional.
+"分号插入"只是一个术语，并不意味着代码在解析时会真正的插入什么分号。这只是一个当分号是可有可无的时候的比喻或者解释。
 
-**The norm**: The parser treats every new token as part of the current statement, unless there is a semicolon that terminates it. 
-The following examples show code where you might think a semicolon should be inserted, but isn't. 
-This illustrates the risks of omitting semicolons.
+**规范**: 语法解析器将换行视为当前语句的一部分，除非有一个显式的分号结束这一行。
+下面给出一些示例代码，你以为也许会有一个分号被自动插入，但是，实际上却不是的。
+这个例子充分说明了忽略分号的风险。
 
 No ASI:
 
     a = b + c
     (d + e).print()
 
-This does not trigger ASI, because the opening parenthesis could follow c in a function call. 
-The above is thus interpreted as:
+这样的代码不会触发“分号插入”, 因为括号可以跟上上一行的c，形成一个函数调用。
+上面的代码解释为：
 
     a = b + c(d + e).print();
 
@@ -133,44 +129,41 @@ No ASI:
     a = b
     /hi/g.exec(c).map(d);
 
-No semicolon is inserted, the second line is not interpreted as a regular expression literal. 
-Instead, the above is equivalent to:
+同样没有分号插入, 第二行不会解释为正则表达式字面量，取而代之的是：
 
-    a = b / hi / g.exec(c).map(d);        
+    a = b / hi / g.exec(c).map(d);
 
 No ASI:
 
     var foo = "bar"
     [ "red", "green" ].foreach(function(c) { console.log(c) })
 
-No semicolon is inserted. Instead, the beginning of the second line is interpreted as an index for the string "bar"; 
-the comma is allowed due to the comma operator 
-(which evaluates both its left-hand side and its right-hand side and returns its right-hand side).
+没有分号插入。 相反，第二行开头被解释为字符串"bar"的下标索引。逗号分隔符也是符号语法操作的(执行了逗号的左侧和右侧，并返回逗号的右侧)
 
-No ASI: In many browsers, the code below assigns `0` to `func`, 
-because `a++` is interpreted as the argument of an invocation of the function in the previous line.
+No ASI: 在许多浏览器中，下面的代码将给func赋值为0。因为a++被解释为上一行中函数表达式的参数了。
 
     var a = 0;
     var func = function(x) { return x }
     (a++)
 
-**Exceptions to the norm**: ASI is applied in the following cases.
+**规范的例外**: ASI(分号插入)在下面的情况下是适用的：
 
-*   **Newline plus illegal token**: If a newline is encountered and followed by a token that cannot be added to the current statement, 
-    a semicolon is inserted.
+*   **新的一行构成了非法的语法**: 如果新起了一行，并且这新的一行不能加到当前语句中时，会自动增加一个分号。
 
-    Example:
+    例如:
 
         if (a < 0) a = 0
         console.log(a)
 
-    This triggers ASI and becomes
+    该代码会触发“分号插入”，然后变成
 
         if (a < 0) a = 0;
         console.log(a);
 
-*   **Forbidden LineTerminators**: The following syntactic constructs forbid a newline ("LineTerminator") at a certain position. 
-    If there is a newline at that position, a semicolon is inserted. 
+*   **绝对禁止的行结束符**: 下面的语句结构禁止插入一个行结束符。
+
+    如果在不该换行的地方换行了，就会插入一个分号，触发“分号插入”。
+    ECMAScript标准
     The ECMAScript standard calls the grammar rules below restricted productions.
 
         PostfixExpression
@@ -185,110 +178,106 @@ because `a++` is interpreted as the argument of an invocation of the function in
         ThrowStatement
             throw [no LineTerminator here] Expression? ;
 
-    For PostfixExpression, the rationale is avoiding the modification of a value on the previous line. 
-    For continue, break, return and throw, the rationale is that if they are used without an argument, 
+    For PostfixExpression, the rationale is avoiding the modification of a value on the previous line.
+    For continue, break, return and throw, the rationale is that if they are used without an argument,
     they should not refer to the next line if one forgets a semicolon.
 
-    Example:
+    例如:
 
         a
         ++
         c
 
-    Triggers ASI and becomes
+    触发ASI成为
 
         a;
         ++
         c
 
-    Example:
+    例如:
 
         return
         a + b
 
-    Triggers ASI and becomes
+    触发ASI成为
 
         return;
         a + b;
 
-    Example by Crockford:
+    Crockford提供的示例:
 
         return
         {
           ok: false;
         };
 
-    Triggers ASI and is interpreted as an empty return statement, followed by a block (with the label ok and the expression statement `false`), 
-    followed by an empty statement (after the closing brace). 
-    Thus, if you want to return an object literal, do it as follows.
+    触发ASI并解释为空返回语句, 后面跟着一个块代码(一个ok标签和语句表达式`false`),再后面跟着一个空语句（在结束的花括号后面）。
+    实际上，如果你想返回对象字面量，应该这样写代码：
 
         return {
           ok: false;
         };
 
 
-*   **Last statements in blocks and programs**: Missing semicolons are added before a closing brace and at the end of a program. 
-    The following example would be syntactically incorrect without ASI.
+*   **块代码程序中的最后一条语句**: 在程序结尾，关闭花括号的之前的最后一条语句，遗漏的分号会被自动添加。
+    下面的例子语法上是错误的，如果没触发“分号插入”的话。
 
         function add(a,b) { return a+b }
 
-    ASI turns this code into
+    “分号插入”会将上面代码变为：
 
         function add(a,b) { return a+b; }
 
-    **Cases where ASI is not performed**
+    **“分号插入”不起作用的一些情况**
 
-*   **Head of for loop**: Semicolons are not inserted inside the head of a `for` loop. 
+*   **for循环的头部**: for循环的头部代码部分不会自动插入分号。
+    这是显然的，因为
     This is obvious, because inserted (line-terminating) semicolons are different from the (argument-separating) head semicolons.
 
-*   **Causing empty statements**: Semicolons are not inserted if they would be parsed as empty statements. 
+*   **导致空语句**: 如果分号会被解释为空语句，则下面的情况不会自动插入分号。
 
-    Example:
+    例如:
 
         if (a > b)
         else c = d
 
-    Normally, ASI would be triggered, because else cannot follow the `if` head. 
-    However, adding a semicolon after the head would create an empty statement and is thus not done. 
-    Accordingly, the above code causes a syntax error. 
-    However, if one manually inserts a semicolon, the result is syntactically correct.
+    一般情况下, “分号插入”会被触发，因为else不能跟在"if"语句头后面。但是在if头后面插入一个分号会导致一个空语句。
+    因为上面的代码会导致一个语法错误。如果你手动插入一个分号，结果就是：语法是正确的。
 
         if (a > b);
         else c = b
 
-    Note that this rule is not necessary in the following example, where there is no danger of ASI, 
-    because the opening brace can follow the `if` head.
+    注意，这条规则在下面的情况下是不需要的。因为花括号是可以跟在if头后面的，没有“分号插入”的风险。
 
         if (a > b)
         {
             c = a
         }
 
-## 3. Recommendations
+## 3. 建议
 
-* Always add semicolons and avoid the headaches of semicolon insertion, at least for your own code. 
-Yes, you will have to type more. But for me, semicolons increase the readability of code, because I'm so used to them.
+* 经常增加分号避免“分号插入”的困扰，至少你自己的代码要如此。虽然这样你可能要多打点字，但是在我来看，分号增加了代码可读性，因为我已经习惯他了。
 
-* Don’t put postfix ++ (or postfix --) and its operand in separate lines.
+* 不要将++或--放在独立的一行。
 
-* If the following statements have an argument, don’t put it in a separate line: return, throw, break, continue.
+* 如果return, throw, break, continue这些语句有参数，不要将参数放在独立的行。
 
-* For consistency (with return), if an opening brace or bracket is part of a statement, don't put it in a separate line.
+* 保持一致（与return）, 如果一个花括号或者方括号是表达式的一部分，不要将他们放在独立的一行。
 
-    var obj = { // don’t move the brace to a new line
+    var obj = { // 不要将花括号放到新行
         name: "John"
     };
-    var arr = [ // don’t move the bracket to a new line
+    var arr = [ // 不要将方括号放到新行
         5, 13, 29
     ];
 
-Compare:
+比较:
 
     return {
         name: "John"
     };
 
-## 4. Related reading
+## 4. 相关资料
 
 1. ECMAScript Language Specification, 5th edition, section 7.9. [Source of this post and of some of the examples.]
 
