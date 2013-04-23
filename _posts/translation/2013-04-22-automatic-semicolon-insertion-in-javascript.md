@@ -8,7 +8,7 @@ tags : [javascript, ASI]
 
 原文：[Automatic semicolon insertion in JavaScript](http://www.2ality.com/2011/05/semicolon-insertion.html)
 
-译文：[JavaScript 中的自动分号插入（ASI）](http://justjavac.com/javascript/2013/04/19/automatic-semicolon-insertion-in-javascript.html)
+译文：[JavaScript 中的自动分号插入（ASI）](http://justjavac.com/javascript/2013/04/22/automatic-semicolon-insertion-in-javascript.html)
 
 译者：[@jackyqi](http://weibo.com/thankwsx)
 
