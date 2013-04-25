@@ -51,7 +51,7 @@ Brian McKenna ([@puffnfresh][puffnfresh]) [suggests][] 提供了下列测试代�
 
 如果最后的转换是个数值，会是上述调用 `valueOf()` 与 `toString` 的这个顺序。
 
-如果最后的转换是字符串，那么“toString”会被先调用。
+如果最后的转换是字符串，那么 `toString` 会被先调用。
 加号运算符可能会被值转成数值型或是字符串型，但它通常[根据数字运算产生一个基本类型][2]。
 
 不用在文章开始发的代码片段， `Object.prototype.valueOf()` 会返回这个对象本身，这个是从原生对象继续来的没有被重写的方法：
