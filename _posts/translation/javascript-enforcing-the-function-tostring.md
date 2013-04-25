@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enforcing toString()
+title: javascript 中强制执行 toString()
 keywords: javascript, toString
 category : javascript
 tags : [javascript]
@@ -10,7 +10,7 @@ tags : [javascript]
 
 译文：[javascript 中强制执行 toString()]()
 
-译者：[singleseeker]()
+译者：[singleseeker](http://weibo.com/singleseeker)
 
 ----------------------------------------------------
 
@@ -97,7 +97,7 @@ But this trick can still be useful.
 
 If an object really wants to be converted to a number then it will bring its own `valueOf()`, anyway.
 
-ss罗嗦：这篇文章翻译起来真心是想更种吐槽，知识点总结的倒是不错，不过做为一个不是英语为母语的老外写的英文技术文章交给我一个母语不是英语的菜鸟翻译，着实够折磨人。下面进行简单的总结。
+[@singleseeker](http://weibo.com/singleseeker)罗嗦：这篇文章翻译起来真心是想更种吐槽，知识点总结的倒是不错，不过做为一个不是英语为母语的老外写的英文技术文章交给我一个母语不是英语的菜鸟翻译，着实够折磨人。下面进行简单的总结。
 
 1. 通常"valuOf()"指示返回一个未转换的对象，也就是其本身
 2. 加号运算符除了"Date"对象外，几乎全是先调用"valueof()"方法
@@ -105,9 +105,9 @@ ss罗嗦：这篇文章翻译起来真心是想更种吐槽，知识点总结的
 
 ## References
 
-1. [Coercing objects to primitives][1]
+1. [强制转换对象（objects）为原始值（primitives）][1]
 
 2. [JavaScript中,{}+{}等于多少?][2]
 
-[1]: http://www.2ality.com/2012/11/coercing-objects.html
+[1]: http://justjavac.com/javascript/2013/04/22/javascript-coercing-objects-to-primitives.html "强制转换对象（objects）为原始值（primitives）"
 [2]: http://justjavac.com/javascript/2012/12/20/object-plus-object.html "JavaScript中,{}+{}等于多少?"
