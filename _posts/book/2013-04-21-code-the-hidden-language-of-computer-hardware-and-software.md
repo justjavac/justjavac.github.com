@@ -30,4 +30,4 @@ tags: [book]
 
 * [如何评价『黑客与画家』](http://justjavac.com/book/2012/11/01/how-to-evaluate-the-hackers-and-painters.html)
 
-* [哲学入门书籍『苏菲的世界』](http://justjavac.com/book/2013/04/21/the-world-of-sophie.htm)
+* [哲学入门书籍『苏菲的世界』](http://justjavac.com/book/2013/04/21/the-world-of-sophie.html)
