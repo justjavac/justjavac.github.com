@@ -49,7 +49,7 @@ Brian McKenna ([@puffnfresh][puffnfresh]) [suggests][] 提供了下列测试代�
 
 3. 再不然，抛出错误
 
-如果最后的转换是个数值，会是上述调用 `valueOf()` 与 `toString` 的这个顺序。
+如果最后的转换是个数值，会是上述调用 `valueOf()` 与 `toString()` 的这个顺序。
 
 如果最后的转换是字符串，那么 `toString` 会被先调用。
 加号运算符可能会被值转成数值型或是字符串型，但它通常[根据数字运算产生一个基本类型][2]。
@@ -78,9 +78,9 @@ Brian McKenna ([@puffnfresh][puffnfresh]) [suggests][] 提供了下列测试代�
 
 1. 通常 `valuOf()` 指示返回一个未转换的对象，也就是其本身
 
-2. 加号运算符除了 `Date` 对象外，几乎全是先调用 `valueof()` 方法
+2. 加号运算符除了 `Date` 对象外，几乎全是先调用 `valueOf()` 方法
 
-3. 如果使得 `valueof()` 返回一个明确的基本数值类型，那么当一个对象与字符串相加时，`toString()` 将不会被调用
+3. 如果使得 `valueOf()` 返回一个明确的基本数值类型，那么当一个对象与字符串相加时，`toString()` 将不会被调用
 
 ## 参考
 
