@@ -6,6 +6,15 @@ category : javascript
 tags : [javascript, quirks]
 ---
 
+###
+标题： JavaScript的怪癖之三：标准的等号 (==)
+关键词: javascript, 等号，怪癖
+分类 : javascript
+标签: [javascript, 怪癖]
+###
+
+
+
 原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-undefined.html)
 
 译文：[JavaScript quirk 3: normal equality (==)](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
