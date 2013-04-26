@@ -17,7 +17,7 @@ tags : [javascript, quirks]
 
 译文：[JavaScript quirk 3: normal equality (==)](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
 
-译者：[未翻译](iranw翻译中)
+译者：[未翻译](iranw翻译[http://www.phpno.com/])
 
 ----------------------------------------------------
 
