@@ -63,9 +63,11 @@ Objects perform duties in two domains: they sometimes define the program, someti
 The overlap of the two domains becomes negatively apparent when you are invoking methods on an object-as-map that can have arbitrary keys. 
 For example, the following function is how you would naively implement a check for the presence of a key:
 
-    function hasKey(obj, key) {
-        return obj.hasOwnProperty(key);
-    }
+```javascript
+function hasKey(obj, key) {
+    return obj.hasOwnProperty(key);
+}
+```
 
 Normal usage:
 
