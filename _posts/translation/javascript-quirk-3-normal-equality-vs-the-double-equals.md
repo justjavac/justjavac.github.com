@@ -13,8 +13,6 @@ tags : [javascript, quirks]
 标签: [javascript, 怪癖]
 ###
 
-
-
 原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-undefined.html)
 
 译文：[JavaScript quirk 3: normal equality (==)](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
@@ -29,6 +27,9 @@ Let’s start with a simple rule:
 the normal equality operators `==` and `!=` are so problematic that you should always use strict equality (`===` and `!==`). 
 Some people say that there are exceptions to this rule, I disagree [2][]. 
 Keeping this rule in mind, we can now take a look at what is strange about `==` without burdening our minds unnecessarily.
+
+让我们先看一个简单的例子：
+
 
 The “normal” equality operator (`==`) has many quirks. 
 While it is forgiving, it does not adhere to the typical rules of truthy and falsy (see [quirk 1][]):
