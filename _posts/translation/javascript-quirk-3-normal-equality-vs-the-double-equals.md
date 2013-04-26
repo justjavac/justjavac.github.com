@@ -29,6 +29,13 @@ Some people say that there are exceptions to this rule, I disagree [2][].
 Keeping this rule in mind, we can now take a look at what is strange about `==` without burdening our minds unnecessarily.
 
 让我们先看一个简单的例子：
+由于一般的等于符号‘==’、‘!=’经常会出现问题以至于我们不得不适用严格等于('==='、'!==')。
+当然有人说这些规则也有厉害，我是不同意这个观点的[2][](这个是什么意思呢？).
+
+
+
+
+
 
 
 The “normal” equality operator (`==`) has many quirks. 
