@@ -20,9 +20,11 @@ Brian McKenna ([@puffnfresh][puffnfresh]) [suggests][] 提供了下列测试代�
 [puffnfresh]: https://twitter.com/puffnfresh
 [suggests]: https://twitter.com/puffnfresh/status/316630924198572032
 
-    Object.prototype.valueOf = function () {
-        throw new Error('Use an explicit toString');
-    };
+```javascript
+Object.prototype.valueOf = function () {
+    throw new Error('Use an explicit toString');
+};
+```
 
 这些代码会产生什么效果？
 你现在再也不能用加号运算符去把一个对像转成一个字符串了：
