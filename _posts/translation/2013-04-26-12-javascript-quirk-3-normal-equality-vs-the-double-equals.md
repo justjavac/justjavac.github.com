@@ -6,7 +6,7 @@ category : javascript
 tags : [javascript, quirks]
 ---
 
-原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-undefined.html)
+原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-equality.html)
 
 译文：[JavaScript 的怪癖 3：标准的等号 (==)](http://justjavac.com/javascript/2013/04/26/12-javascript-quirk-3-normal-equality-vs-the-double-equals.html)
 
