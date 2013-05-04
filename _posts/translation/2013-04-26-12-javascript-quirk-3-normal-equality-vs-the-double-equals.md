@@ -6,9 +6,9 @@ category : javascript
 tags : [javascript, quirks]
 ---
 
-原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-undefined.html)
+原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-equality.html)
 
-译文：[JavaScript 的怪癖 3：标准的等号 (==)](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html)
+译文：[JavaScript 的怪癖 3：标准的等号 (==)](http://justjavac.com/javascript/2013/04/26/12-javascript-quirk-3-normal-equality-vs-the-double-equals.html)
 
 译者：[iranw](http://www.phpno.com)
 
@@ -18,7 +18,7 @@ tags : [javascript, quirks]
 
 让我们先看一个简单的例子：
 由于一般的等于符号 `==`、`!=`经常会出现问题，以至于我们不得不使用严格等于(`===`、`!==`)。
-当然有人说这些规则也有例外，我不同意这个观点[[2]][]。
+当然有人说这些规则也有例外，我不同意这个观点[[2]][2]。
 怀揣的这个问题，我们现在就来看一下这个奇怪的现象：`==` 是不必要。
 
 
