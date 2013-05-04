@@ -21,7 +21,15 @@ title : Atom Feed
    <link href="{{ site.production_url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.production_url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <content type="html">
+   	{{ post.content | xml_escape }}
+   	&lt;hr/&gt;
+	由于博客空间在国外，所以有时会造成不稳定（你懂滴），如果您觉得我的博文对您有帮助，可以点击下面按钮订阅到邮箱，本站所有文章均已全文输出。
+	&lt;br/&gt;
+	&lt;a rel="nofollow" target="_blank" href="http://list.qq.com/cgi-bin/qf_invite?id=9470cda4ab8e31116b60ca9011bc7991511661b78345faed"&gt;
+    &lt;img border="0" alt="填写您的邮件地址，订阅我们的精彩内容：" src="http://rescdn.list.qq.com/zh_CN/htmledition/images/qunfa/manage/picMode_light_m.png" /&gt;
+	&lt;/a&gt;
+   </content>
  </entry>
  {% endfor %}
  
