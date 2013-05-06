@@ -23,7 +23,7 @@ Normally, JavaScript automatically creates a global variable if you use an unkno
     > foo
     123
 
-Thankfully, you get a warning in ECMAScript 5 strict mode [[1]][1]:
+Thankfully, you get a warning in ECMAScript 5 strict mode [\[1\]][1]:
 
     > function f() { 'use strict'; foo = 123 }
     > f()
