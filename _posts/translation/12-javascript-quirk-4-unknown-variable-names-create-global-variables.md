@@ -1,7 +1,7 @@
 ---
 layout: post  
-title: JavaScript 的怪癖 3：标准的等号 (==)  
-keywords: javascript, quirks, equality 
+title: JavaScript 的怪癖 4：unknown variable names create global variables  
+keywords: javascript, quirks, global 
 category : javascript  
 tags : [javascript, quirks]
 ---
