@@ -1,9 +1,10 @@
 ---
 layout: post
 title: ECMAScript：ES.next 和 ES6 以及 ES Harmony 之间的区别
-keywords: javascript，ECMAScript
-category : javascript
-tags : [javascript，ECMAScript]
+keywords: javascript, ECMAScript
+category: javascript
+tags: [javascript, ECMAScript]
+uids: 1708684567
 ---
 
 原文：[ECMAScript: ES.next versus ES 6 versus ES Harmony](http://www.2ality.com/2011/06/ecmascript.html)

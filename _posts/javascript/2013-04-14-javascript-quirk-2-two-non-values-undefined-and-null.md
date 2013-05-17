@@ -4,6 +4,7 @@ title: JavaScript 的怪癖 2：两个「空值」：undefined 和 null
 keywords: javascript, quirks, undefined, null
 category : javascript
 tags : [javascript, quirks]
+uids: 2127182625
 ---
 
 原文：[JavaScript quirk 2: two “non-values” – undefined and null](http://www.2ality.com/2013/04/quirk-undefined.html)
