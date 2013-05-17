@@ -4,6 +4,7 @@ title: JavaScript 中的自动分号插入（ASI）
 keywords: javascript,ASI
 category : javascript
 tags : [javascript, ASI]
+uids: 1661854533
 ---
 
 原文：[Automatic semicolon insertion in JavaScript](http://www.2ality.com/2011/05/semicolon-insertion.html)

@@ -4,6 +4,7 @@ title: javascript 中强制执行 toString()
 keywords: javascript, toString
 category : javascript
 tags : [javascript]
+uids: 2127182625
 ---
 
 原文：[Enforcing toString()](http://www.2ality.com/2013/04/enforcing-tostring.html)

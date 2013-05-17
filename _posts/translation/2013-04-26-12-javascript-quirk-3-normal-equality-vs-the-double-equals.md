@@ -4,6 +4,7 @@ title: JavaScript 的怪癖 3：标准的等号 (==)
 keywords: javascript, quirks, equality
 category : javascript
 tags : [javascript, quirks]
+uids: 1564393001
 ---
 
 原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-equality.html)
