@@ -19,6 +19,8 @@ tags: [python]
 有关 Python 内编写类的各种技巧和方法(构建和初始化、重载操作符、类描述、属性访问控制、自定义序列、反射机制、可调用对象、上下文管理、构建描述符对象、Pickling)。
 你可以把它当作一个教程，进阶，或者使用参考；我希望它能够成为一份针对 Python 方法的用户友好指南。
 
+本文源码托管在 [github](https://github.com/justjavac/magicmethods-zh_CN) 上。
+
 ## 内容目录
 
 1. [介绍](#intro)
