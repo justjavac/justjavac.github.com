@@ -8,7 +8,7 @@ tags: [javascript, 入门]
 
 原文：[learning JavaScript - my experience and advice](http://sivers.org/learn-js)
 
-译文：[学习 JavaScript - 我的经验与建议（译）](#)
+译文：[学习 JavaScript - 我的经验与建议（译）](http://justjavac.com/javascript/2013/03/25/learning-javascript-my-experience-and-advice.html)
 
 译者：[youngsterxyf](https://github.com/youngsterxyf)
 
