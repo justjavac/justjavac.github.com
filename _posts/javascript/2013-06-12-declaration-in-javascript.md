@@ -88,8 +88,8 @@ tags : [javascript]
 2. 以右侧函数名来执行函数
 3. 能成功吗？
 
-    var f = function ab() {};
-    ab();
+        var f = function ab() {};
+        ab();
 
 答案是否定的，因为上面的代码对f函数的定义是以**命名函数表达式(Named Function Expressions)**，而并非真正的函数声明，注意**该函数名只在该函数的作用域内有用**。
 下面这段代码充分说明了它的意义：
