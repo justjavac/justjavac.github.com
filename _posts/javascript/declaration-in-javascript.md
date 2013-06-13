@@ -4,7 +4,6 @@ title: 谈 javascript 变量声明
 keywords: javascript
 category : javascript
 tags : [javascript]
-uids: 2127182625
 ---
 
 原文：[谈 javascript 变量声明](http://qingbob.com/blog/%E8%B0%88javascript%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)
