@@ -8,7 +8,7 @@ tags: [JavaScript, 翻译]
 
 译者：[youngsterxyf](https://github.com/youngsterxyf)
 
-对于具备基于类的编程语言（如Java或C++）经验的程序员来说，JavaScript有点混乱，因为它是一种动态语言，并且不提供`class`的实现（虽然关键字`class`是保留的，不可用作变量名）。
+对于具备基于类的编程语言（如Java或C++）经验的程序员来说，JavaScript有点混乱，因为它是一种动态语言，并且不提供 `class` 的实现（虽然关键字`class`是保留的，不可用作变量名）。
 
 说到继承，JavaScript只有一种结构：对象。每个对象都有一个内部链接指向另一个对象，这个对象称为**原型** (prototype)。那个原型对象也有自己的原型，如此直到某个对象以`null`作为其原型。`null`，根据定义，没有原型，作为这种**原型链**的最后一环而存在。
 
