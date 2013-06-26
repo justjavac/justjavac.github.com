@@ -14,6 +14,8 @@ tags : [javascript, quirks]
 
 ----------------------------------------------------
 
+本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
+
 实际上 javascript 是一个相当简洁的语言，但是也难免会有一些怪癖（quirks）。
 本章是 [javascript 的 12 个怪癖](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇，
 也是一个目录，为的是你能更好的了解它们：

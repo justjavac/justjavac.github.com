@@ -18,6 +18,8 @@ tags : [javascript, quirks]
 
 [此贴子是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇。]
 
+本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
+
 JavaScript 是非常宽容的，「来者不拒」，不在乎什么[类型](http://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html "JavaScript 的 typeof 的用途")。
 例如，它如果想要接受数字，它并不拒绝其他类型的值，而是试图把它们转换成数字：
 

@@ -17,6 +17,8 @@ uids: 1564393001
 
 此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第三篇。
 
+本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
+
 让我们先看一个简单的例子：
 由于一般的等于符号 `==`、`!=`经常会出现问题，以至于我们不得不使用严格等于(`===`、`!==`)。
 当然有人说这些规则也有例外，我不同意这个观点[[2]][2]。
