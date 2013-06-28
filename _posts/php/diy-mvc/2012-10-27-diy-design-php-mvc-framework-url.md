@@ -16,7 +16,7 @@ tags: [php, MVC]
 我觉得，如果一个有一年经验的程序员连一个 Framework v0.0.1 都开发不出来的话，肯定是没有深入理解一个框架。
 
 前几天 @phoenixg 说要自己写个 MVC 框架。
-而且他也确实不仅仅是说说而已，短短一个周末，这个框架雏形就神奇的出现在了 [github](https://github.com/phoenixg/phpframework) 上。
+而且他也确实不仅仅是说说而已，短短一个周末，这个框架雏形就神奇的出现在了 [github](https://github.com/phoenixg/phx) 上。
 
 这篇博文的名字是『自己动手<strong>设计</strong> PHP MVC框架』，
 所以本文不会涉及太多的编码，文中出现的任何代码片段都是我直接在 vim 里面敲的，
