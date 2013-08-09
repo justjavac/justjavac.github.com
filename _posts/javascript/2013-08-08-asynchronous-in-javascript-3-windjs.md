@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript中的异步梳理（3）——使用 Wind.js
+title: JavaScript 中的异步梳理（3）——使用 Wind.js
 keywords: javascript, asynchronous
 category : javascript
 tags : [javascript, asynchronous]

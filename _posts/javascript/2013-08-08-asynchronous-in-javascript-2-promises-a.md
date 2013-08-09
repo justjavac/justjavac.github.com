@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript中的异步梳理（2）——使用Promises/A
+title: JavaScript 中的异步梳理（2）——使用 Promises/A
 keywords: javascript, asynchronous
 category : javascript
 tags : [javascript, asynchronous]
