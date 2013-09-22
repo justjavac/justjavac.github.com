@@ -25,7 +25,7 @@ tags : [linux, cron]
 
 表格: Crontab 字段与允许的值 (Linux Crontab)
 
-<table>
+<table class="table table-bordered">
 <thead>
 <tr><th>字段</th><th>描述</th><th>允许的值</th></tr>
 </thead>
@@ -156,7 +156,7 @@ cron 的基本用法是在特定的时间执行一项任务，如下是 6 月 10
 
 Table: Cron special keywords and its meaning
 
-<table>
+<table class="table table-bordered">
 <thead>
 <tr><th>Keyword</th><th>Equivalent</th></tr>
 </thead>
