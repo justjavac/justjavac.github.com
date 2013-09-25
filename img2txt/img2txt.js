@@ -3,7 +3,7 @@ var c = cv.getContext('2d');
 var txtDiv = document.getElementById('txt');
 var fileBtn = document.getElementById("up-button");
 var img = new Image();
-img.src = 'http://justjavac.com/assets/images/a.jpg';
+img.src = 'a.jpg';
 img.onload = init; // 图片加载完开始转换
 fileBtn.onchange = getImg;
 
