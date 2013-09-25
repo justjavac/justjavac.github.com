@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>img2txt：基于canvas的图片转字符画工具</title>    
+</head>
+<body>
+<style type="text/css">
+    #hananBackgroundColorOpacity{margin:10px 0;}
+    #hananBackgroundColorOpacity span{margin-left:10px; color:#8a8c8e;}
+    #hananBackgroundColorOpacity textarea{width:650px; height:120px; padding:5px; color:#fff; background:#000;}
+    #hananBackgroundColorOpacity strong{color:#000;}
+    #hananBackgroundColorOpacity h3{color:#000; border-bottom:1px solid #ccc; line-height:57px;}
+    #hananBackgroundColorOpacity h3 a{ color: #000; text-decoration: none; float:right; font-family: "MICROSOFT YAHEI"; font-size: 22px;}
+    #hananBackgroundColorOpacity h3 .c{ clear:both; height:0px;margin:0;padding:0;}
+    #hananBackgroundColorOpacity .hanan_introduction,
+    #hananBackgroundColorOpacity .hanan_introduction a{  font-size:12px; color:#6E6E6E; }
+    #hananBackgroundColorOpacity img{border:none;}
+
+    /* contnet */
+    * {margin: 0;padding: 0;}
+    body {font-size: 12px; margin: 10px; font-family: simsun; background: #fff;}
+    p { height: 12px;}
+    p.ts { margin: 10px 0 0 0; width: 500px; float: left;}
+    span {width: 12px;}
+    #cv, #txt {float: left;}
+    #cv { margin-right: 5px;}
+    .bt{ height: 37px; }
+    form, input {width: 73px;height: 27px;}
+    form {
+        position: relative;
+        float: left;
+        margin: 0 10px 0 0;
+    }
+    #up-button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        outline: none;
+    }
+    #button{
+    }
+    iframe {display: none;}
+</style>
+<div id="hananBackgroundColorOpacity">
+    <h3><a href="http://justjavac.com">justjavac</a> img2txt：基于canvas的图片转字符画工具
+        <div class="c"></div>
+    </h3>
+</div>
+<div class="bt">
+    <form id="uf">
+        <input type="file" name="file" id="up-button"/>
+        <input type="button" id="button" value="选择图片"/>
+    </form>
+</div>
+
+<canvas id="cv">fuck ie</canvas>
+<div id="txt"></div>
+
+<script src="https://gist.github.com/justjavac/6696499.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11003279-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
