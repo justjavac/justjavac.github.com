@@ -37,7 +37,7 @@ javascript：请看注释和下面的解释。
 	var txtDiv = document.getElementById('txt');
 	var fileBtn = document.getElementById("up-button");
 	var img = new Image();
-	img.src = 'a.jpg';
+	img.src = 'http://justjavac.com/assets/images/a.jpg';
 	img.onload = init; // 图片加载完开始转换
 	fileBtn.onchange = getImg;
 	 
