@@ -21,7 +21,7 @@ quine 程序的升级版——动态的 quine。
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/justjavac/RN2PL/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-点此查看对比版：http://jsfiddle.net/justjavac/RN2PL/ **注意结果的红字部分**
+点此查看对比版：<http://jsfiddle.net/justjavac/RN2PL/> **注意输出结果的红字部分**
 
 通过查看源代码的几个 javascript 关键字可以看出：
 
