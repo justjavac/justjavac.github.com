@@ -25,6 +25,6 @@ tags : [javascript, qq]
 
 如果觉得复制来复制去太麻烦，我做了一个书签。
 
-将下面的链接拖到书签栏：<a href="javascript:void(function(){var ids=document.querySelectorAll(".member_id");var names=document.querySelectorAll(".member_name");var output="";var length=ids.length;for(var i=0;i<length;i++){output+=ids[i].innerText.slice(1,-1)+":"+names[i].innerText+"\n"}console.log(output);}());" onclick="javascript:alert('把这个按钮拖到你的浏览器书签栏'); return false;">获取QQ群成员</a>
+将下面的链接拖到书签栏：<a href='javascript:void(function(){var ids=document.querySelectorAll(".member_id");var names=document.querySelectorAll(".member_name");var output="";var length=ids.length;for(var i=0;i<length;i++){output+=ids[i].innerText.slice(1,-1)+":"+names[i].innerText+"\n"}console.log(output);}());' onclick="javascript:alert('把这个按钮拖到你的浏览器书签栏'); return false;">获取QQ群成员</a>
 
 注：本代码只供学习研究使用。
