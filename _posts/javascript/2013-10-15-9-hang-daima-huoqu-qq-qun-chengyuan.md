@@ -28,14 +28,14 @@ tags : [javascript, qq]
 	var output = "", length = ids.length;
 	 
 	for(var i=0; i<length; i++){
-	    output += ids[i].innerText.slice(1,-1) + ":" + names[i].innerText + "\n";
+	    output += ids[i].innerHTML.slice(1,-1) + ":" + names[i].innerHTML + "\n";
 	}
 	
 	console.log(output);
 
 如果觉得复制来复制去太麻烦，我做了一个书签。
 
-将下面的链接拖到书签栏：<a href='javascript:void(function(){var ids=document.querySelectorAll(".member_id");var names=document.querySelectorAll(".member_name");var output="";var length=ids.length;for(var i=0;i<length;i++){output+=ids[i].innerText.slice(1,-1)+":"+names[i].innerText+"\n"}console.log(output);}());' onclick="javascript:alert('请把我拖到你的浏览器书签栏'); return false;">获取QQ群成员</a>
+将下面的链接拖到书签栏：<a href='javascript:void(function(){var ids=document.querySelectorAll(".member_id");var names=document.querySelectorAll(".member_name");var output="";var length=ids.length;for(var i=0;i<length;i++){output+=ids[i].innerHTML.slice(1,-1)+":"+names[i].innerHTML+"\n"}console.log(output);}());' onclick="javascript:alert('请把我拖到你的浏览器书签栏'); return false;">获取QQ群成员</a>
 
 然后你就可以，进入群通讯录 --> `Ctrl + Shift + J` --> 点击标签栏 --> 复制。
 
