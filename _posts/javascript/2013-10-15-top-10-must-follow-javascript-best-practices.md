@@ -105,13 +105,11 @@ DOM 是最复杂的 API，会使得代码执行过程变慢。有时候 web 页�
 
 ## 相关阅读
 
-
 1. [JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 
 2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
 3. [为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
-
 
 ## 相关书籍
 
