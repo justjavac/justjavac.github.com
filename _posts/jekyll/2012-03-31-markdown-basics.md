@@ -16,7 +16,7 @@ tags : [jekyll, markdown]
 [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 [Github]: https://github.com/riku/Markdown-Syntax-CN
 
-Markdown: Basics （快速入门） / ([点击查看完整语法说明](./index.html))
+Markdown: Basics （快速入门） / ([点击查看完整语法说明](./markdown-syntax.html))
 ================
 
 Getting the Gist of Markdown's Formatting Syntax
