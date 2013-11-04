@@ -24,15 +24,15 @@ tags : [javascript, quirks]
 
 2. [两个「空值」：undefined 和 null](http://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html) （已翻译）
 
-3. Normal equality ==
+3. [标准的等号 (==)](http://justjavac.com/javascript/2013/04/26/12-javascript-quirk-3-normal-equality-vs-the-double-equals.html)
 
-4. 未知的变量名将创建一个全局变量（Unknown variable names create global variables）
+4. [未知的变量名将创建一个全局变量](https://github.com/justjavac/12-javascript-quirks/blob/master/cn/4-unknown-variable-names-create-global-variables.md)
 
-5. 参数处理方式（Parameter handling）
+5. [参数处理方式](https://github.com/justjavac/12-javascript-quirks/blob/master/cn/5-parameter-handling.md)
 
-6. 变量的作用范围（The scope of variables）
+6. [变量的作用范围](https://github.com/justjavac/12-javascript-quirks/blob/master/cn/6-the-scope-of-variables.md)
 
-7. 闭包和自由(外部)变量（Closures and free (external) variables）
+7. [闭包和自由(外部)变量](https://github.com/justjavac/12-javascript-quirks/blob/master/cn/7-inadvertent-sharing-of-variables-via-closures.md)
 
 8. “对象、数组——傻傻分不清楚”（Array-like objects）
 
