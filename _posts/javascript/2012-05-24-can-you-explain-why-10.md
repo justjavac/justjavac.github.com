@@ -67,4 +67,4 @@ tags : [javascript]
 
 如果你想知道更详细的信息，请访问[这里(英文)][1]。
 
-[1]: http://stackoverflow.com/questions/7202157/can-you-explain-why-10
+[1]: http://stackoverflow.com/q/7202157/343194 "Can you explain why ++[[]][+[]]+[+[]] = “10”?"

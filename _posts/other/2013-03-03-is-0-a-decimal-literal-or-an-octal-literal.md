@@ -7,7 +7,7 @@ category : other
 tags : [进制]
 ---
 
-原文：[Is 0 a decimal literal or an octal literal?](http://stackoverflow.com/questions/6895522/is-0-a-decimal-literal-or-an-octal-literalpt)
+原文：[Is 0 a decimal literal or an octal literal?](http://stackoverflow.com/q/6895522/343194)
 
 译文：[C++ 中 0 是十进制还是八进制？](http://justjavac.com/other/2013/03/03/is-0-a-decimal-literal-or-an-octal-literal.html)
 

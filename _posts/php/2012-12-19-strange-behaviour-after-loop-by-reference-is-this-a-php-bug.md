@@ -7,7 +7,7 @@ category : php
 tags : [php]
 ---
 
-本文整理自 stackoverflow 网站上的一篇文章 [Strange behaviour after loop by reference - Is this a PHP bug?](http://stackoverflow.com/questions/8220399/strange-behaviour-after-loop-by-reference-is-this-a-php-bug) ——
+本文整理自 stackoverflow 网站上的一篇文章 [Strange behaviour after loop by reference - Is this a PHP bug?](http://stackoverflow.com/q/8220399/343194) ——
 在 PHP 循环中，如果使用 **引用** 会引发非常奇怪的行为 - 这是 PHP 的一个 bug 吗？
 
 ## 问题

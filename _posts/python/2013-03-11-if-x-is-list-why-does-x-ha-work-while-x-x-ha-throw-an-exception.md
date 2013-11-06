@@ -6,7 +6,7 @@ category: python
 tags: [python, list, 运算符]
 ---
 
-原文：[python - If x is list, why does x += "ha" work, while x = x + "ha" throw an exception? ](http://stackoverflow.com/questions/3216706/if-x-is-list-why-does-x-ha-work-while-x-x-ha-throw-an-exception)
+原文：[python - If x is list, why does x += "ha" work, while x = x + "ha" throw an exception? ](http://stackoverflow.com/q/3216706/343194)
 
 译文：[在 python 中，如果 x 是 list，为什么 x += "ha" 可以运行，而 x = x + "ha" 却抛出异常呢？](http://justjavac.com/python/2013/03/11/if-x-is-list-why-does-x-ha-work-while-x-x-ha-throw-an-exception.html)
 

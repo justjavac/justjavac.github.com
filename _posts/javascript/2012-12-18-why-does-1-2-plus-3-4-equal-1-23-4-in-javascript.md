@@ -7,7 +7,7 @@ category : javascript
 tags : [JavaScript]
 ---
 
-在 stackoverflow 上有人提问：[arrays - Why does [1,2] + [3,4] = "1,23,4" in JavaScript?](http://stackoverflow.com/questions/7124884/why-does-1-2-3-4-1-23-4-in-javascript)
+在 stackoverflow 上有人提问：[arrays - Why does [1,2] + [3,4] = "1,23,4" in JavaScript?](http://stackoverflow.com/q/7124884/343194)
 
 ## 问题
 
