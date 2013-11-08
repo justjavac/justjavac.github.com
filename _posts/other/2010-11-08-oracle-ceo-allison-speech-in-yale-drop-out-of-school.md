@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 甲骨文 CEO 埃里森耶鲁演讲：退学吧
+title: 甲骨文CEO在耶鲁大学 2000 届毕业典礼上的演讲：退学吧
 keywords: CEO, oracle, 辍学, 退学
 category : other
 tags : [CEO, oracle]
