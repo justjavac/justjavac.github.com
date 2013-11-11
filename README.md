@@ -12,7 +12,7 @@
 
 ## 最新动态
 
-目前正在编写『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列
+目前正在编写『[代码之谜](http://justjavac.com/codepuzzle.html)』系列
 
 有很多人反映我的博客打不开，身为一名程序员，你懂滴。
 如果您觉得我的博文对您有帮助，可以点击下面按钮订阅到邮箱，本站所有文章均已全文输出。
