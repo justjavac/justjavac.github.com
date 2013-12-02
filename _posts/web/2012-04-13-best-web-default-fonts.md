@@ -6,6 +6,10 @@ category : web
 tags : [web, 字体]
 ---
 
+作者：[玉伯也叫射雕](http://weibo.com/lifesinger)
+
+----------------------------------------------------
+
 最近淘宝网首页有个小小的 默认字体调整风波，中文默认字体远比我们想象中的复杂。以前主要关注 font-family 自身，忽略了 lang 属性和 charset 设置。今天做了个更详尽的测试：
 
 <http://lifesinger.github.com/lab/2011/default-fonts/>
