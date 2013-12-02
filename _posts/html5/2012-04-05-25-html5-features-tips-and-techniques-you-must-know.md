@@ -7,6 +7,14 @@ category : html5
 tags : [必知必会, html5]
 ---
 
+原文： [28 HTML5 Features, Tips, and Techniques you Must Know](http://net.tutsplus.com/tutorials/html-css-techniques/25-html5-features-tips-and-techniques-you-must-know/)
+
+译文： [28个你必须知道的HTML5的新特性,技巧以及技术](http://adamlu.com/?p=584)
+
+译者： [Adam Lu](http://adamlu.com)
+
+---------------------
+
 ## 1. 新的Doctype
 
 尽管使用`<!DOCTYPE html>`，即使浏览器不懂这句话也会按照标准模式去渲染

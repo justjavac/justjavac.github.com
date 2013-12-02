@@ -6,6 +6,14 @@ category : other
 tags : [函数式编程语言, go]
 ---
 
+原文： [Is Go a Functional Programming Language?](http://www.mprescient.com/journal/2011/2/8/screwtape-letter-32-is-go-a-functional-programming-language.html)
+
+译者： [coolxing](http://coolxing.iteye.com)
+
+-------------------------
+
+[2012-05-19 翻译，对原文有所扩展，也有所删减。版权属于原作者，转载必须保留此声明。]
+
 **go是函数式编程语言吗?**
 
 不是, 当然不是.

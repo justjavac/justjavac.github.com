@@ -6,8 +6,15 @@ category : html5
 tags : [html5]
 ---
 
-原文链接请点击 [此处](http://html5doctor.com/avoiding-common-html5-mistakes/)，
-作者为[Richard Clark](http://html5doctor.com/author/richc/).
+原文： [Avoiding common HTML5 mistakes ](http://html5doctor.com/avoiding-common-html5-mistakes/)
+
+作者： [Richard Clark](http://html5doctor.com/author/richc/)
+
+译文： [避免常见的六种HTML5错误用法](http://www.ued163.com/?p=1820) （链接已失效）
+
+译者： (如果您知道谁翻译的这篇文章，请联系我)
+
+---------------------------
 
 本文为原创翻译，同时对原文做了一些简化处理。
 本文遵循 [署名-非商业性使用协议](http://creativecommons.org/licenses/by-nc/2.5/cn/)。

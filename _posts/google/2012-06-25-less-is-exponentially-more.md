@@ -6,6 +6,14 @@ category : google
 tags : [go, google]
 ---
 
+原文： [Less is exponentially more](http://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)
+
+译文： [少即是极多](http://coolshell.cn/articles/7771.html)
+
+译者： [@左耳朵耗子](http://weibo.com/haoel)
+
+---------------------
+
 这是一篇翻译练习。力图保留原意。若有不准确处，求速速指出。
 [猛击此处](http://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)（墙）看原文。
 

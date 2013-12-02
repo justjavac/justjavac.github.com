@@ -6,7 +6,7 @@ category : web
 tags : [web, 字体]
 ---
 
-作者：[玉伯也叫射雕](http://weibo.com/lifesinger)
+作者：[@lifesinger](http://weibo.com/lifesinger)
 
 ----------------------------------------------------
 
