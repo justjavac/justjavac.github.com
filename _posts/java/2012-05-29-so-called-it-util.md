@@ -7,6 +7,16 @@ category : other
 tags : [编程]
 ---
 
+原文： [And when you call it, you can call it Util](http://hadihariri.com/2012/02/18/and-when-you-call-it-you-can-call-it-util/)
+
+作者： [@hhariri](http://twitter.com/hhariri)
+
+译文： [那就叫它Util吧](http://www.aqee.net/and-when-you-call-it-you-can-call-it-util/)
+
+译者： [外刊IT评论](http://www.aqee.net)
+
+-------------------
+
 > 那就叫它Util吧
 
 别!! 事实上，你不能把它叫做什么Util。也许你会认为我是一个在背后吹毛求疵的讨厌的家伙。不，我不是。
