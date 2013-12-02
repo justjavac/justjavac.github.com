@@ -7,6 +7,16 @@ category : java
 tags : [java]
 ---
 
+原文： [Java API Design Checklist](http://theamiableapi.com/2012/01/16/java-api-design-checklist/)
+
+作者： [Ferenc Mihaly](http://theamiableapi.com/)
+
+译文： [java API 设计准则](http://lukaseder.wordpress.com/2012/01/18/the-good-api-design/) （墙）
+
+译者： [lukaseder](http://lukaseder.wordpress.com)
+
+-------------------
+
 在java API设计中有着许多的各种规则「[只要一个返回语句](http://justjavac.com/java/2012/05/18/a-return-to-good-code.html)」、「[关于返回 Null 值的问题](http://justjavac.com/java/2012/05/18/returning-null.html)」 与折衷考量，和其他所有复杂任务一样，它考验着我们的记忆力及脑力.
 这里我找到了一个对正在设计java API的软件开发人员而言非常不错的[准则列表][1]，其中介绍的一些准则可能是很明显的，又或者不那么显眼，但确实非常不错，希望你会喜欢. 
 

@@ -7,6 +7,16 @@ category : other
 tags : [编程]
 ---
 
+原文： [Styles of programming](http://www.codeinstructions.com/2008/10/styles-of-programming.html)
+
+作者： Domingos Neto
+
+译文： [各种囧然不同流行的编程风格](http://coolshell.cn/articles/2058.html)
+
+译者： [陈皓](http://coolshell.cn)
+
+-------------------
+
 我遇到了很多使用囧然不同风格的开发者，下面是我所知道的一些，你还知道其它的吗? 
 
 ## 散弹枪编程

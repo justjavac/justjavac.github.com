@@ -7,6 +7,16 @@ category : html5
 tags : [html5]
 ---
 
+原文： [TOP 10 REASONS TO USE HTML5 RIGHT NOW](http://tympanus.net/codrops/2011/11/24/top-10-reasons-to-use-html5-right-now/)
+
+作者： [Patrick Cox](http://tympanus.net/codrops/2011/11/24/top-10-reasons-to-use-html5-right-now/)
+
+译文： [现在就使用HTML5的十大原因](http://www.gbin1.com/technology/html/20111205top10reasonstousehtml5rightnow/)
+
+译者： [gbin1](http://www.gbin1.com)
+
+-------------------
+
 你难道还没有考虑使用HTML5？
 当然我猜想你可能有自己的原因；
 它现在还没有被广泛的支持，在IE中不好使，或者你就是喜欢写比较严格的XHTML代码。

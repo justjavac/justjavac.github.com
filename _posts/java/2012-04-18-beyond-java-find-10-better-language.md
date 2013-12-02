@@ -7,6 +7,16 @@ category : java
 tags : [java]
 ---
 
+原文： [10 good reasons to look for something better than Java](http://www.theserverside.com/news/thread.tss?thread_id=55185)
+
+作者： Mario Fusco
+
+译文： [离开Java，寻找更佳语言的10大理由](http://www.iteye.com/news/8909)
+
+译者： [liuu](http://liuu.iteye.com/)
+
+-------------------
+
 别误解，其实在我的职业生涯中，我已经编写了无数的Java代码；而且，我仍然认为Java一门伟大的（程序）语言。
 相对于C++和Smalltack，Java已经有了很大的改进；但现在，即使是Java，也已经开始感觉到了其15年的积重。
 

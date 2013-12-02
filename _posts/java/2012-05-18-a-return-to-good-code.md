@@ -7,6 +7,12 @@ category : java
 tags : [java, 技巧]
 ---
 
+原文： [A return to Good Code](http://www.theserverside.com/tip/A-return-to-Good-Code)
+
+译文： [只要一个返回语句](http://www.aqee.net/a-return-to-good-code/)
+
+-------------------
+
 别再这样写了：
 
     public boolean foo() {
@@ -55,5 +61,3 @@ tags : [java, 技巧]
 关键要说的是，没有任何理由可以为写糟糕的代码或当懒惰的程序员做托辞，特别是当写出好的代码并不是那么困难的情况下。
 不要在写出里面有成百上千个返回语句的方法了。
 java里的方法只可以返回一个值，相应的，一个方法应该有且只有一个返回语句。
-
-[本文英文原文链接：[A return to Good Code](http://www.theserverside.com/tip/A-return-to-Good-Code)]

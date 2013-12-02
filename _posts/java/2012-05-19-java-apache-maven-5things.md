@@ -8,6 +8,12 @@ category : java
 tags : [maven, apache, java]
 ---
 
+原文： [关于 Apache Maven 您不知道的 5 件事](http://www.ibm.com/developerworks/cn/java/j-5things13/)
+
+作者： Steven Haines
+
+-------------------
+
 Maven 是为 Java™ 开发人员提供的一个极为优秀的构建工具，您也可以使用它来管理您的项目生命周期。
 作为一个生命周期管理工具，Maven 是基于阶段操作的，而不像 Ant 是基于 “任务” 构建的。
 Maven 完成项目生命周期的所有阶段，包括验证、代码生成、编译、测试、打包、集成测试、安装、部署、以及项目网站创建和部署。

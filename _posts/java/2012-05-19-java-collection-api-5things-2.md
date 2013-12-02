@@ -7,6 +7,12 @@ category : java
 tags : [api, collections, 算法]
 ---
 
+原文： [关于 Java Collections API 您不知道的 5 件事，第 2 部分](http://www.ibm.com/developerworks/cn/java/j-5things3.html)
+
+作者： Ted Neward
+
+-------------------
+
 java.util 中的 Collections 类旨在通过取代数组提高 Java 性能。
 如您在 [第 1 部分](http://justjavac.com/java/2012/05/18/java-collection-api-5things-1.html)中了解到的，它们也是多变的，能够以各种方式定制和扩展，帮助实现优质、简洁的代码。
 

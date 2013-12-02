@@ -8,6 +8,12 @@ category : java
 tags : [api, collections, google, guava, 算法]
 ---
 
+原文： [Google Guava Collections 使用介绍](http://www.ibm.com/developerworks/cn/java/j-lo-googlecollection/)
+
+作者： 卢声远
+
+-------------------
+
 ## Google Guava Collections 使用介绍
 
 Google Guava Collections（以下都简称为 Guava Collections）是 Java Collections Framework 的增强和扩展。
