@@ -8,7 +8,7 @@ tags : [javascript, jQuery]
 
 原文：[Writing Better jQuery Code](http://flippinawesome.org/2013/11/25/writing-better-jquery-code/)
 
-译者：[@MathewDurden](https://twitter.com/MathewDurden)
+作者：[@MathewDurden](https://twitter.com/MathewDurden)
 
 译文：[高效 jquery 的奥秘](http://yanhaijing.com/jquery/2013/12/05/%E9%AB%98%E6%95%88jQuery%E7%9A%84%E5%A5%A5%E7%A7%98/)
 
