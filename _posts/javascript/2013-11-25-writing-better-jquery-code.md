@@ -22,11 +22,11 @@ tags : [javascript, jQuery]
 快速渲染和响应意味着更好的用户体验。
 
 首先，在脑子里牢牢记住 jQuery 就是 javascript。
-这意味着我们应该采取相同的编码惯例,风格指南和最佳实践。
+这意味着我们应该采取相同的编码惯例，风格指南和最佳实践。
 
 首先，如果你是一个 javascript 新手，我建议您阅读 《[24 JavaScript Best Practices for Beginners](http://net.tutsplus.com/tutorials/JavaScript-ajax/24-JavaScript-best-practices-for-beginners/)》， 这是一篇高质量的 javascript 教程，接触 jQuery 之前最好先阅读。
 
-当你准备使用 jQuery,我强烈建议你遵循下面这些指南:
+当你准备使用 jQuery，我强烈建议你遵循下面这些指南:
 
 ## 缓存变量 ##
 
@@ -34,12 +34,12 @@ DOM 遍历是昂贵的，所以尽量将会重用的元素缓存。
 
 	// 糟糕	
 	h = $('#element').height();
-	$('#element').css('height',h-20);
+	$('#element').css('height', h-20);
 	
 	// 建议	
 	$element = $('#element');
 	h = $element.height();
-	$element.css('height',h-20);
+	$element.css('height', h-20);
 
 ## 避免全局变量  ##
 
@@ -48,12 +48,12 @@ jQuery 与 javascript 一样，一般来说，最好确保你的变量在函数�
 	// 糟糕	
 	$element = $('#element');
 	h = $element.height();
-	$element.css('height',h-20);
+	$element.css('height', h-20);
 	
 	// 建议	
 	var $element = $('#element');
 	var h = $element.height();
-	$element.css('height',h-20);
+	$element.css('height', h-20);
 
 ## 使用匈牙利命名法 ##
 
