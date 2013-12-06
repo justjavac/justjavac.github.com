@@ -7,31 +7,48 @@ category : javascript
 tags : [javascript]
 ---
 
+原文：[Top 13 JavaScript Mistakes](http://corporate.tuenti.com/dev/blog/top-13-javascript-mistakes)
+
+译文：[开发者最容易犯的 13 个 JavaScript 错误](http://justjavac.com/javascript/2012/04/05/top-13-javascript-mistakes.html)
+
+译者：[@justjavac](http://weibo.com/justjavac)
+
+----------------------------------------------------
+
 开发者最容易犯的 JavaScript 错误，总结出 13 个。
 这些当中可能少不了你犯的错误。
 我们描述了这些陋习，并列出来解决办法，希望对开发者有帮助。
 
-## 1.for…数组迭代的用法 Usage of for..in to iterate Arrays
+## 1. for… 数组迭代的用法 <small>Usage of for..in to iterate Arrays</small>
 
 举例：
+
+    var myArray = ["a", "b", "c"];
+    for (var i in myArray) {
+        console.log(myArray[i]);
+    }
+
+**注**：原文为：
 
     var myArray = [ “a”, “b”, “c” ];
     var totalElements = myArray.length;
     for (var i = 0; i < totalElements; i++) {
-        console.log(myArray[i]);
+       console.log(myArray[i]);
     }
 
-这里主要的问题是语句中的 “for…” 不能保证顺序，这意味着你将获得不同的执行结果。
+疑有误，感谢 lveyo 同学的提醒。
+
+这里主要的问题是语句中的 "for…" 不能保证顺序，这意味着你将获得不同的执行结果。
 此外，如果有人增加一些其他自定义功能的函数 `Array.prototype`，你的循环将重复遍历这些函数，就像原数组项。
 
-解决办法：一直使用规则的 for 循环来遍历数组。
+解决办法：一直使用规则的 `for` 循环来遍历数组。
 
-    var myArray = [ “a”, “b”, “c” ];
+    var myArray = ["a", "b", "c"];
     for (var i=0; i<myArray.length; i++) {
         console.log(myArray[i]);
     }
 
-## 2.数组维度Array dimensions
+## 2. 数组维度 Array dimensions
 
 举例
 
@@ -43,7 +60,7 @@ tags : [javascript]
 
     var myArray = [];
 
-## 3.未定义属性 Undefined properties
+## 3. 未定义属性 Undefined properties
 
 举例：
 
@@ -53,7 +70,7 @@ tags : [javascript]
     }
 
 未定义属性，将在对象中创建元素（键 `someOtherProperty` 和值 `undefined`.）。
-如果你遍历数组，检测已存在的元素，那么下面的语句将都返回 “未定义/undefined”
+如果你遍历数组，检测已存在的元素，那么下面的语句将都返回 "未定义/undefined"。
 
     typeof myObject['someOtherProperty'] // undefined
     typeof myObject['unknownProperty'] // undefined
@@ -65,7 +82,7 @@ tags : [javascript]
         someOtherProperty: null
     }
 
-## 4.闭包的滥用Misuse of Closures
+## 4. 闭包的滥用 Misuse of Closures
 
 举例：
 
@@ -79,14 +96,14 @@ tags : [javascript]
         })(a, b, c, d);
     }
 
-这里开发者使用两个函数来传递参数 a、b、c 到 onclick handler。
+这里开发者使用两个函数来传递参数 `a`、`b`、`c` 到 `onclick`。
 双函数根本不需要，徒增代码的复杂性。
 
-变量 abc 已经在局部函数中被定义，因为他们已经在主函数中作为参数被声明。
+变量 `a`、`b`、`c` 已经在局部函数中被定义，因为他们已经在主函数中作为参数被声明。
 局部函数中的任何函数都可创建主函数中定义的所有变量的闭包。
 因此不需要再次传递它们。
 
-看看这里 JavaScript Closures FAQ 了解更多。
+看看这里 [JavaScript Closures FAQ](http://jibbering.com/faq/notes/closures/) 了解更多。
 
 解决办法：使用闭环来简化你的代码。
 
@@ -101,7 +118,7 @@ tags : [javascript]
         };
     }
 
-## 5.循环中的闭包Closures in loops
+## 5. 循环中的闭包 Closures in loops
 
 举例：
 
@@ -112,12 +129,12 @@ tags : [javascript]
         }
     }
 
-在这里例子里面，当用户点击不同的 divs 时，我们想触发一个动作(显示 “Div number 1”, “Div number 2”… 等) 。
-然而，如果你在页面有 10 个 divs，他们全部都会显示 “Div number 10”。
+在这里例子里面，当用户点击不同的 `divs` 时，我们想触发一个动作(显示 "Div number 1", "Div number 2"… 等) 。
+然而，如果你在页面有 10 个 `divs`，他们全部都会显示 "Div number 10"。
 
-问题是当我们使用局部函数创建一个闭包时，函数中的代码可以访问变量 i。
-关键是函数内部 i 和函数外部 i 涉及同样的变量。
-当我们的循环结束，i 指向了值 10，所以局部函数中的 i 的值将是 10。
+问题是当我们使用局部函数创建一个闭包时，函数中的代码可以访问变量 `i`。
+关键是函数内部 `i` 和函数外部 `i` 涉及同样的变量。
+当我们的循环结束，`i` 指向了值 `10`，所以局部函数中的 `i` 的值将是 `10`。
 
 解决办法：使用第二函数来传递正确的值。
 
@@ -130,7 +147,7 @@ tags : [javascript]
         })(i);
     }
 
-## 6.DOM对象的内测泄漏Memory leaks with DOM objects
+## 6. DOM 对象的内测泄漏 Memory leaks with DOM objects
 
 举例：
 
@@ -143,7 +160,7 @@ tags : [javascript]
     attachEvents();
 
 该代码创建了一个引用循环。
-变量元素包含函数的引用（归于 onclick 属性）。
+变量元素包含函数的引用（归于 `onclick` 属性）。
 同时，函数保持一个 DOM 元素的引用（提示函数内部可以访问元素，因为闭包。）。
 
 所以 JavaScript 垃圾收集器不能清除元素或是函数，因为他们被相互引用。
@@ -161,7 +178,7 @@ tags : [javascript]
     };
     attachEvents();
 
-## 7.区别整数数字和浮点数字 Differentiate float numbers from integer numbers
+## 7. 区别整数数字和浮点数字 Differentiate float numbers from integer numbers
 
 举例：
 
@@ -177,7 +194,7 @@ tags : [javascript]
     var myNumber = 3.5;
     var myResult = 3.5 + 1; //Result is 4.5, as expected
 
-## 8.with() 作为快捷方式的用法 Usage of with() as a shortcut
+## 8. with() 作为快捷方式的用法 Usage of with() as a shortcut
 
 举例：
 
@@ -199,7 +216,7 @@ tags : [javascript]
     var sc = team.attackers.myWarrior;
     console.log(“Your warrior power is ” + (sc.attack * sc.speed));
 
-## 9.setTimeout/setInterval 字符串的用法 Usage of strings with setTimeout/setInterval
+## 9. setTimeout/setInterval 字符串的用法 Usage of strings with setTimeout/setInterval
 
 举例：
 
@@ -224,7 +241,7 @@ tags : [javascript]
             log2(arg);
         }, 200);
 
-## 10.setInterval() 的用法 Usage of setInterval() for heavy functions
+## 10. setInterval() 的用法 Usage of setInterval() for heavy functions
 
 举例：
 
@@ -248,7 +265,7 @@ JavaScript 引擎只增加下一个执行到队列如果没有另外一个执行
     }
     setTimeout(domOperations, 200);
 
-## 11.“this”的滥用Misuse of ‘this’
+## 11. "this" 的滥用 Misuse of "this"
 
 这个常用错误，没有例子，因为非常难创建来演示。
 this 的值在 JavaScript 中与其他语言有很大的不同。
@@ -272,7 +289,7 @@ this points to an empty Object.
 
 this points to the object passed as first argument.
 
-## 12.eval() 访问动态属性的用法 Usage of eval() to access dynamic properties
+## 12. eval() 访问动态属性的用法 Usage of eval() to access dynamic properties
 
 举例：
 
@@ -288,7 +305,7 @@ this points to the object passed as first argument.
     var i = 2;
     var myResult = myObject[“p”+i];
 
-## 13.未定义(undefined)作为变量的用法Usage of undefined as a variable
+## 13. 未定义(undefined)作为变量的用法 Usage of undefined as a variable
 
 举例：
 
