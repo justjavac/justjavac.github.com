@@ -48,7 +48,7 @@ tags : [javascript]
         console.log(myArray[i]);
     }
 
-## 2. 数组维度 Array dimensions
+## 2. 数组维度 <small>Array dimensions</small>
 
 举例
 
@@ -60,7 +60,7 @@ tags : [javascript]
 
     var myArray = [];
 
-## 3. 未定义属性 Undefined properties
+## 3. 未定义属性 <small>Undefined properties</small>
 
 举例：
 
@@ -82,7 +82,7 @@ tags : [javascript]
         someOtherProperty: null
     }
 
-## 4. 闭包的滥用 Misuse of Closures
+## 4. 闭包的滥用 <small>Misuse of Closures</small>
 
 举例：
 
@@ -118,7 +118,7 @@ tags : [javascript]
         };
     }
 
-## 5. 循环中的闭包 Closures in loops
+## 5. 循环中的闭包 <small>Closures in loops</small>
 
 举例：
 
@@ -147,7 +147,7 @@ tags : [javascript]
         })(i);
     }
 
-## 6. DOM 对象的内测泄漏 Memory leaks with DOM objects
+## 6. DOM 对象的内测泄漏 <small>Memory leaks with DOM objects</small>
 
 举例：
 
@@ -178,7 +178,7 @@ tags : [javascript]
     };
     attachEvents();
 
-## 7. 区别整数数字和浮点数字 Differentiate float numbers from integer numbers
+## 7. 区别整数数字和浮点数字 <small>Differentiate float numbers from integer numbers</small>
 
 举例：
 
@@ -194,7 +194,7 @@ tags : [javascript]
     var myNumber = 3.5;
     var myResult = 3.5 + 1; //Result is 4.5, as expected
 
-## 8. with() 作为快捷方式的用法 Usage of with() as a shortcut
+## 8. with() 作为快捷方式的用法 <small>Usage of with() as a shortcut</small>
 
 举例：
 
@@ -216,7 +216,7 @@ tags : [javascript]
     var sc = team.attackers.myWarrior;
     console.log(“Your warrior power is ” + (sc.attack * sc.speed));
 
-## 9. setTimeout/setInterval 字符串的用法 Usage of strings with setTimeout/setInterval
+## 9. setTimeout/setInterval 字符串的用法 <small>Usage of strings with setTimeout/setInterval</small>
 
 举例：
 
@@ -241,7 +241,7 @@ tags : [javascript]
             log2(arg);
         }, 200);
 
-## 10. setInterval() 的用法 Usage of setInterval() for heavy functions
+## 10. setInterval() 的用法 <small>Usage of setInterval() for heavy functions</small>
 
 举例：
 
@@ -265,7 +265,7 @@ JavaScript 引擎只增加下一个执行到队列如果没有另外一个执行
     }
     setTimeout(domOperations, 200);
 
-## 11. "this" 的滥用 Misuse of "this"
+## 11. "this" 的滥用 <small>Misuse of "this"</small>
 
 这个常用错误，没有例子，因为非常难创建来演示。
 this 的值在 JavaScript 中与其他语言有很大的不同。
@@ -289,7 +289,7 @@ this points to an empty Object.
 
 this points to the object passed as first argument.
 
-## 12. eval() 访问动态属性的用法 Usage of eval() to access dynamic properties
+## 12. eval() 访问动态属性的用法 <small>Usage of eval() to access dynamic properties</small>
 
 举例：
 
@@ -305,7 +305,7 @@ this points to the object passed as first argument.
     var i = 2;
     var myResult = myObject[“p”+i];
 
-## 13. 未定义(undefined)作为变量的用法 Usage of undefined as a variable
+## 13. 未定义(undefined)作为变量的用法 <small>Usage of undefined as a variable</small>
 
 举例：
 
