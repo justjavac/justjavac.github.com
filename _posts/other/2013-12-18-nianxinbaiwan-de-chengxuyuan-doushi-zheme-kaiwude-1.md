@@ -6,7 +6,7 @@ category : other
 tags : [程序员, 读书]
 ---
 
-《[编程之道][1]》出自美国一位资深的程序设计师 Geoffrey James 之手。
+《编程之道》出自美国一位资深的程序设计师 Geoffrey James 之手。
 
 相传作者早起打太极拳的时候，突然开悟，悟到了编程之道。
 
@@ -78,5 +78,10 @@ tags : [程序员, 读书]
 
 **欢迎补充**
 
+## 相关文章
 
-  [1]: http://book.douban.com/subject/1899158/
+- [据说，年薪百万的程序员，都是这么开悟的（一）][1]
+- [据说，年薪百万的程序员，都是这么开悟的（二）][2]
+
+[1]: http://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-1.html
+[2]: http://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-2.html
