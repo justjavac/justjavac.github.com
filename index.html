@@ -186,9 +186,10 @@ function pinit() {
     opacity:0.7,
     zIndex:10000
     })
-  $(container).on("click",function(){
+    $(container).on("click",function(){
+        console.log("container click");
     $(container).addClass("hidden")
-    isStop = 0;
+        isStop = 0;
     })
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 3000 );
   camera.position.z = 1000;
@@ -233,13 +234,11 @@ function pinit() {
   
   renderer = new THREE.CanvasRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
-  container.appendChild( renderer.domElement );
-    
+  container.appendChild( renderer.domElement );    
   
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
   document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-  document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-  
+  document.addEventListener( 'touchmove', onDocumentTouchMove, false );  
   //
   window.addEventListener( 'resize', onWindowResize, false );  
 }
@@ -263,25 +262,19 @@ function onDocumentMouseMove( event ) {
 }
 
 function onDocumentTouchStart( event ) {
-  if ( event.touches.length === 1 ) {
-  
-    event.preventDefault();
-    
+  if ( event.touches.length === 1 ) {  
+    event.preventDefault();    
     mouseX = event.touches[ 0 ].pageX - windowHalfX;
     mouseY = event.touches[ 0 ].pageY - windowHalfY;    
   }  
 }
 
 function onDocumentTouchMove( event ) {
-
-  if ( event.touches.length === 1 ) {
-  
-    event.preventDefault();
-    
+  if ( event.touches.length === 1 ) {  
+    event.preventDefault();    
     mouseX = event.touches[ 0 ].pageX - windowHalfX;
     mouseY = event.touches[ 0 ].pageY - windowHalfY;    
-  }
-  
+  }  
 }
 
 //
