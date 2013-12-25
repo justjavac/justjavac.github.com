@@ -234,17 +234,14 @@ function pinit() {
   renderer = new THREE.CanvasRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
   container.appendChild( renderer.domElement );
-  
-  
+    
   
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
   document.addEventListener( 'touchstart', onDocumentTouchStart, false );
   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
   
   //
-  
-  window.addEventListener( 'resize', onWindowResize, false );
-  
+  window.addEventListener( 'resize', onWindowResize, false );  
 }
 
 function onWindowResize() {
@@ -255,29 +252,24 @@ function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   
-  renderer.setSize( window.innerWidth, window.innerHeight );
-  
+  renderer.setSize( window.innerWidth, window.innerHeight );  
 }
 
 //
 
 function onDocumentMouseMove( event ) {
-
   mouseX = event.clientX - windowHalfX;
   mouseY = event.clientY - windowHalfY;
 }
 
 function onDocumentTouchStart( event ) {
-
   if ( event.touches.length === 1 ) {
   
     event.preventDefault();
     
     mouseX = event.touches[ 0 ].pageX - windowHalfX;
-    mouseY = event.touches[ 0 ].pageY - windowHalfY;
-    
-  }
-  
+    mouseY = event.touches[ 0 ].pageY - windowHalfY;    
+  }  
 }
 
 function onDocumentTouchMove( event ) {
@@ -287,8 +279,7 @@ function onDocumentTouchMove( event ) {
     event.preventDefault();
     
     mouseX = event.touches[ 0 ].pageX - windowHalfX;
-    mouseY = event.touches[ 0 ].pageY - windowHalfY;
-    
+    mouseY = event.touches[ 0 ].pageY - windowHalfY;    
   }
   
 }
@@ -297,10 +288,8 @@ function onDocumentTouchMove( event ) {
   var isStop = 0;
 function animate() {
 if(!isStop)
-  requestAnimationFrame( animate );
-  
-  render();
-  
+  requestAnimationFrame( animate );  
+  render();  
 }
 var t= 0;
 var R = 400;
