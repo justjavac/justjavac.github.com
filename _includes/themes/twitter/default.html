@@ -60,6 +60,7 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ ASSET_PATH }}/css/style.css?v=201312251006" rel="stylesheet" media="all" />
+    <link href="{{ ASSET_PATH }}/css/trun.css" rel="stylesheet" />
     
     <link rel="index" title="{{ site.title }}" href="{{ HOME_PATH }}" />
     {% if page.previous %}
@@ -118,10 +119,21 @@
       <img src="{{ ASSET_PATH }}/bootstrap/img/forkme_right_darkblue.png" alt="Fork me on GitHub">
     </a>
 
+    <div>
+      <img id="folder" src="turn/code.png" alt="The turning code image for a Javascript effect.">
+    </div>
+
     {% include JB/analytics %}
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>    
     <script src="/assets/js/bootstrap-affix.js"></script>
+    <script src="/assets/js/trun.js"></script>
+    <script>
+      $('#folder').fold({
+        directory: '/assets/images/trun', 
+        turnImage: 'fold.png'
+      });
+    </script>
 
     <!-- UJian Button BEGIN -->
     <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&uid=1514075"></script>

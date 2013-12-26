@@ -1,0 +1,76 @@
+
+#turn_wrapper {
+  width: 80px;
+  height: 80px;
+  display:block;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#turn_hideme {
+  width: 85%;
+  height: 85%;
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	float:left;
+	top:0;
+	left: 0;
+	z-index:1;
+}
+
+#turn_object{
+	position: relative;
+}
+
+#turn_wrapper.right #turn_hideme *,
+#turn_wrapper.right #turn_object {
+	float: right !important;
+}
+
+#turn_wrapper.right #turn_hideme {
+	float: right !important;
+	right: 0 !important;
+	left: auto;
+}
+#turn_wrapper.right #turn_object {
+	right: 0 !important;
+	left: auto !important;
+}
+
+#turn_wrapper.right {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 0;
+	right: 0 !important;
+}
+
+#turn_wrapper.right #turn_object * {
+	position: absolute;
+	right: 0 !important;
+}
+
+#turn_wrapper #turn_object img#turn_fold {
+	display:block;
+  width: 100%;
+  height:100%;
+	z-index:1000;
+	right: 0;
+	position:absolute;
+}
+
+#turn_wrapper .ui-wrapper {
+  left: 0 !important;
+  top: 0 !important;
+}
+
+#turn_wrapper .ui-resizable-handle {
+  border: none !important;
+  border-width: 0 !important;
+	/* I have NO idea why this works for IE7, but it does. Background none doesn't work. Go figure. */
+  background: url(#none) !important; 
+  width: 100% !important;
+  height: 100% !important;
+}
