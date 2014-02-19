@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 为什么 ["1", "2", "3"].map(parseInt) 返回 [1, NaN, NaN]？
+title: JavaScript Puzzlers 解密（一）：为什么 ["1", "2", "3"].map(parseInt) 返回 [1, NaN, NaN]？
 keywords: javascript, Puzzlers
 category : javascript
 tags : [javascript, Puzzlers]
