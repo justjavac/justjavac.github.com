@@ -11,7 +11,7 @@ tags : [jekyll, category, blog]
 
 假如您也想在你的博客上实现这样的效果（如右图）, 请看下文。
 
-<img src="/resources/category-list.jpg" alt="categroy list" class="img-right">
+<img src="/assets/images/category-list.jpg" alt="categroy list" class="img-right">
 
 在某些地方，例如文章页面，你可能希望在侧边栏添加这样的功能。有一个分类目录，还能显示出分类文章的篇数。
 
@@ -63,7 +63,7 @@ posts"&gt;{\{ category | first }\} {\{ category | last | size }\}&lt;/a&gt;
 
 你也可以参考我的分类主页来设计自己的分类主页，具体的效果，我截个图看看。我的分类主页的源代码在<a href="https://gist.github.com/1899544" target="_blank" title="The gist for category index page">这里</a>。
 
-<img src="/resources/category-index.jpg" alt="category index" class="img-center" />
+<img src="/assets/images/category-index.jpg" alt="category index" class="img-center" />
 
 ## 五、我们写的代码最终是如何完成工作的？
 
