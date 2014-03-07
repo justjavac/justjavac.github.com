@@ -6,8 +6,32 @@
     <div id="article">
     {{ content }}    
     </div>  
+
+    {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+    {% endunless %}  
     
     <hr/>
+
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; 上一篇</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">归档</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>下一篇 &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
     
     由于博客空间在国外，所以有时会造成不稳定（你懂滴），如果您觉得我的博文对您有帮助，
     建议大家多使用RSS访问阅读，本站所有文章均已全文输出。
