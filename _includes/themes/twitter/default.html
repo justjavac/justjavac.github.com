@@ -21,13 +21,16 @@
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ ASSET_PATH }}/css/style.css?v=201312251006" rel="stylesheet" media="all" />
     <link href="{{ ASSET_PATH }}/css/turn.css" rel="stylesheet" />
+
     
     <link rel="index" title="{{ site.title }}" href="{{ HOME_PATH }}" />
     {% if page.previous %}
     <link rel="prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" />
+    <link href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prerender" />
     {% endif %}
     {% if page.next %}
     <link rel="next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" />
+    <link href="{{ BASE_PATH }}{{ page.next.url }}" rel="prerender" />
     {% endif %}
     
     <!-- Le fav and touch icons -->
