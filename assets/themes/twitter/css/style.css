@@ -190,3 +190,9 @@ section h3 {
 .hidden {
   display: none;
 }
+.affix{
+  position: fixed;
+}
+.hot_articles.affix{
+  top: 50px;
+}
