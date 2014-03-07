@@ -62,13 +62,18 @@ section h3 {
 .tag_box.inline li {
 	float:left;
 }
-.tag_box a, .tag_box li i {
+.tag_box a {
 	padding: 3px 6px;
 	margin: 2px;
 	background: #eee;
 	color:#005F6B;
 	border-radius: 3px;
 	text-decoration:none;
+}
+.tag_box li i {
+  padding: 3px 6px;
+  margin: 2px;
+  border-radius: 3px;
 }
 .tag_box a span{
 	vertical-align:super;
