@@ -42,8 +42,9 @@
     <script type="text/javascript" id="wumiiRelatedItems"></script>
     <script type="text/javascript">
     var wumiiPermaLink = ""; //请用代码生成文章永久的链接
-    var wumiiTitle = ""; //请用代码生成文章标题
-    var wumiiTags = ""; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+    var wumiiTitle = {{ page.title | jsonify }}; //请用代码生成文章标题
+    var wumiiTags = {{ page.tags | join:"," | jsonify }}; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+    var wumiiCategories = {{ page.categories | jsonify }};
     var wumiiSitePrefix = "http://justjavac.com/";
     var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
 </script>
