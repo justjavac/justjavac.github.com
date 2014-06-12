@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 屌丝应该知道的 6 个残酷人生事实（血泪翻译）
-keywords: CEO, oracle, 辍学, 退学
+keywords: 屌丝, 哲理
 category : other
-tags : [CEO, oracle]
+tags : [屌丝, 哲理]
 ---
 
 原译文标题为：Loser应该知道的 6 个残酷人生事实（血泪翻译），译者（天理难容）没有翻译 Loser，
