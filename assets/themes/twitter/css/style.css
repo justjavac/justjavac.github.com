@@ -196,3 +196,6 @@ section h3 {
 .hot_articles.affix{
   top: 100px;
 }
+.dropdown-menu a{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
