@@ -64,7 +64,7 @@ tags : [博客, 软文]
 如果您有知乎账号，不要吝啬你的「赞同」和「感谢」。
 
 
-  [1]: %E4%B8%80%E4%B8%AA%E5%90%88%E6%A0%BC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E8%AF%BB%E8%BF%87%E5%93%AA%E4%BA%9B%E4%B9%A6
+  [1]: http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html
   [4]: http://www.360weboy.com/
   [5]: http://www.the5fire.com/
   [6]: https://github.com/justjavac/free-programming-books-zh_CN
