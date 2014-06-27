@@ -78,3 +78,5 @@ TNND，那个 false 是什么意思？不替换吗？还是别的什么意思？
 * 你 100% 确认你想去 [写出迷一样的代码](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)。 
 
 如果你想设计一个好的 API，强烈推荐你读一下 Nokia 的 Qt 的《API Design Principles》，本文就是其中的 “Boolean Trap”。
+
+文章来源：<http://coolshell.cn/articles/5444.html> 
