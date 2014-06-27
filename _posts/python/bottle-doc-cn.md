@@ -6,7 +6,7 @@ category : python
 tags : [python, 文档]
 ---
 
-译者: smallfish <smallfish.xy@gmail.com>
+译者: smallfish (smallfish.xy@gmail.com)
 
 更新日期: 2009-09-25
 
