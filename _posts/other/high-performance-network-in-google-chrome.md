@@ -5,9 +5,6 @@ categories: [other]
 tags: [Chrome, 性能]
 ---
 
-译文：<http://tech.uc.cn/?p=2092>  
-译者：UC技术博客
-
 ## 一、Google Chrome 的历史和指导原则
 
 【译注】这部分不再详细翻译，只列出核心意思。
@@ -531,3 +528,5 @@ Google Search 就在它的搜索结果里加入 prerender, 因为第一个搜索
 
 <a href="http://www.igvita.com/">Ilya Grigorik</a> is a web performance engineer and developer advocate on the Make The Web Fast team at Google, where he spends his days and nights on making the web fast and driving adoption of performance best practices.<br>
 <a href="https://twitter.com/igrigorik">Follow @igrigorik</a>
+
+文章来源：[UC技术博客](http://tech.uc.cn/?p=2092)
