@@ -199,3 +199,8 @@ section h3 {
 .dropdown-menu a{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+#article p, #article li {
+  font-family: arial, sans-serif;
+  line-height: 1.6em;
+  color: #333333;
+}
