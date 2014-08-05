@@ -3,6 +3,7 @@ layout: post
 title: Google Chrome 中的高性能网络
 categories: [other]
 tags: [Chrome, 性能]
+type: porter
 ---
 
 ## 一、Google Chrome 的历史和指导原则
