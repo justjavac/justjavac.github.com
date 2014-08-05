@@ -9,8 +9,35 @@ description: 我们不生产文章，我们只是互联网的搬运工。
 
 <div class="row">
   <div class="span8">   
-    {% assign posts_collate = site.posts %}
-    {% include JB/porters_collate %}
+  {% for post in site.posts && post.type == "porter"  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
+  
+    {% if forloop.first %}
+      <h2>{{this_year}}年{{this_month}}月</h2>
+      <ul>
+    {% endif %}
+  
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></li>
+  
+    {% if forloop.last %}
+      </ul>
+    {% else %}
+      {% if this_year != next_year %}
+        </ul>
+        <h2>{{next_year}}年{{next_month}}月</h2>
+        <ul>
+      {% else %}
+        {% if this_month != next_month %}
+          </ul>
+          <h2>{{next_year}}年{{next_month}}月</h2>
+          <ul>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
   </div>
   
   <aside class="span4">
