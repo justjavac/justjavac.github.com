@@ -130,3 +130,13 @@ tags : [经济学, 趣题]
 我敢保证，不出一个月的时间，你女朋友——肯定和你分手，呵呵。
 
 以后博客多分享些经济学的东西。
+
+## 相关阅读
+
+* [怪诞行为学:可预测的非理性](http://www.amazon.cn/gp/product/B0040NO84W/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0040NO84W&linkCode=as2&tag=cfjh-23)
+
+* [不诚实的诚实真相](http://www.amazon.cn/gp/product/B00ANZNH16/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00ANZNH16&linkCode=as2&tag=cfjh-23)
+
+* [一切皆有价(一本观点更具颠覆性、争议性和畅销性的通俗经济学读物)](http://www.amazon.cn/gp/product/B0058BUL9Q/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0058BUL9Q&linkCode=as2&tag=cfjh-23)
+
+* [每天5分钟读点博弈论](http://www.amazon.cn/gp/product/B007B6GB7C/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007B6GB7C&linkCode=as2&tag=cfjh-23)
