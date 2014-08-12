@@ -255,3 +255,9 @@ tab 与空格混用的缩进是不可容忍的，在运行项目时应使用 `�
 
 开发人员往往在加入项目之前已经形成自有的编码风格，加入项目后应以本规范为准编写代码。
 特别是匈牙利命名法，因为带有类型信息，并不适合 Python 编程，不应在 Python 项目中应用。 
+
+### 相关推荐
+
+* [Python核心编程](http://www.amazon.cn/gp/product/B001BKVXOA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001BKVXOA&linkCode=as2&tag=favbook-23)
+* [Python Cookbook](http://www.amazon.cn/gp/product/B003LPO4KS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003LPO4KS&linkCode=as2&tag=favbook-23)
+* [像计算机科学家一样思考Python](http://www.amazon.cn/gp/product/B00EEDI2X6/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EEDI2X6&linkCode=as2&tag=favbook-23)
