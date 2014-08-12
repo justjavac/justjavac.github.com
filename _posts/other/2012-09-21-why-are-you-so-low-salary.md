@@ -6,7 +6,7 @@ category : other
 tags : [方法]
 ---
 
-在SCDN回复了我的博客的回复(有点拗口): [程序员之路](http://blog.csdn.net/justjavac/article/details/7998856), 因为回复字数有限制, 觉得没有说尽兴, 故写了一篇博文. 
+在 CSDN 回复了我的博客的回复(有点拗口): [程序员之路](http://blog.csdn.net/justjavac/article/details/7998856), 因为回复字数有限制, 觉得没有说尽兴, 故写了一篇博文. 
 
 写的有点简单了. 
 
