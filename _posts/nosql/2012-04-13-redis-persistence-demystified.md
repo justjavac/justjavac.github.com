@@ -153,3 +153,11 @@ Redis是一个内存数据库，无论是RDB还是AOF，都只是其保证数据
 而在利用RDB和利用AOF启动上，其启动时间有一些差别。RDB的启动时间会更短，原因有两个，一是RDB文件中每一条数据只有一条记录，不会像AOF日志那样可能有一条数据的多次操作记录。所以每条数据只需要写一次就行了。另一个原因是RDB文件的存储格式和Redis数据在内存中的编码格式是一致的，不需要再进行数据编码工作。在CPU消耗上要远小于AOF日志的加载。
 
 好了，大概内容就说到这里。更详细完整的版本请看Redis作者的博文：[Redis persistence demystified ](http://antirez.com/post/redis-persistence-demystified.html)。本文如有描述不周之处，就大家指正。
+
+## 扩展阅读
+
+* [Redis设计与实现](http://www.amazon.cn/gp/product/B00L4XHH0S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00L4XHH0S&linkCode=as2&tag=cfjh-23)
+
+* [NoSQL精粹](http://www.amazon.cn/gp/product/B00EEQ2GPS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EEQ2GPS&linkCode=as2&tag=cfjh-23)
+
+* [七周七数据库](http://www.amazon.cn/gp/product/B00D5PQX6M/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00D5PQX6M&linkCode=as2&tag=cfjh-23)
