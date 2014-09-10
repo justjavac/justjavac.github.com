@@ -6,7 +6,7 @@ category : web
 tags : [web, http]
 ---
 
-英文原文： [HTTP API Design Guide][1]
+英文原文： [HTTP API Design Guide][1]  
 本文译者： [LeoXu][2], [Garfielt][3], [无若][4], [--zxp][5]
 
 ******
