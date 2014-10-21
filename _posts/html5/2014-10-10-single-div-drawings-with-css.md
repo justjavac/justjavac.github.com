@@ -62,11 +62,13 @@ tags : [div, html5, css3]
 
 ![多个相同的形状][6]
 
+```css
     div {
         box-shadow: 170px 0 10px yellow,
                     330px 0 0 -20px blue,
                     330px 5px 5px -20px black;
     }
+```
 
 我们甚至可以给 `box-shadow` 添加 `box-shadow`。注意它们申明顺序。再者，把它们当做层更容易理解。
 
