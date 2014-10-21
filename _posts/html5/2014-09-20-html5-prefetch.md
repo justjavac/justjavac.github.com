@@ -41,7 +41,7 @@ tags : [html5, prefetch]
 
 DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲时提前将这些域名转化为 IP 地址，真正请求资源时就避免了上述这个过程的时间。
 
-{% highlight html %}
+{% highlight css %}
 <meta http-equiv='x-dns-prefetch-control' content='on'>
 <link rel='dns-prefetch' href='http://g-ecx.images-amazon.com'>
 <link rel='dns-prefetch' href='http://z-ecx.images-amazon.com'>
@@ -58,7 +58,7 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 Chrome 下，我们可以用 `link` 标签声明特定文件的预加载：
 
-{% highlight html %}
+{% highlight css %}
 <link rel='subresource' href='critical.js'>
 <link rel='subresource' href='main.css'>
 
@@ -67,7 +67,7 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 Firefox 中或用 `meta` 标签声明：
 
-{% highlight html %}
+{% highlight css %}
 <meta http-equiv="Link" content="<critical.js>; rel=prefetch">
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 预渲染意味着我们提前加载好用户即将访问的下一个页面，否则进行预渲染这个页面将浪费资源，慎用！
 
-{% highlight html %}
+{% highlight css %}
 <link rel='prerender' href='http://www.pagetoprerender.com'>
 {% endhighlight %}
 
@@ -91,7 +91,7 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 Firefox 中或用 `rel='next'` 来声明
 
-{% highlight html %}
+{% highlight css %}
 <link rel="next" href="http://www.pagetoprerender.com">
 {% endhighlight %}
 
@@ -113,11 +113,11 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 `head` 中强势插入 `link[rel='prerender']` 即可：
 
-{% highlight javascript %}
+{% highlight css %}
 var hint =document.createElement("link")
-hint.setAttribute(“rel”,”prerender”)
-hint.setAttribute(“href”,”next-page.html”)
-document.getElementsByTagName(“head”)[0].appendChild(hint)
+hint.setAttribute("rel","prerender")
+hint.setAttribute("href","next-page.html")
+document.getElementsByTagName("head")[0].appendChild(hint)
 {% endhighlight %}
 
 ## 兼容性
