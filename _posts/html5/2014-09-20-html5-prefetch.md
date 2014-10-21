@@ -41,12 +41,14 @@ tags : [html5, prefetch]
 
 DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲时提前将这些域名转化为 IP 地址，真正请求资源时就避免了上述这个过程的时间。
 
-    <meta http-equiv='x-dns-prefetch-control' content='on'>
-    <link rel='dns-prefetch' href='http://g-ecx.images-amazon.com'>
-    <link rel='dns-prefetch' href='http://z-ecx.images-amazon.com'>
-    <link rel='dns-prefetch' href='http://ecx.images-amazon.com'>
-    <link rel='dns-prefetch' href='http://completion.amazon.com'>
-    <link rel='dns-prefetch' href='http://fls-na.amazon.com'>
+{% highlight html %}
+<meta http-equiv='x-dns-prefetch-control' content='on'>
+<link rel='dns-prefetch' href='http://g-ecx.images-amazon.com'>
+<link rel='dns-prefetch' href='http://z-ecx.images-amazon.com'>
+<link rel='dns-prefetch' href='http://ecx.images-amazon.com'>
+<link rel='dns-prefetch' href='http://completion.amazon.com'>
+<link rel='dns-prefetch' href='http://fls-na.amazon.com'>
+{% endhighlight %}
 
 应用场景1：我们的资源存在在不同的 CDN 中，那提前声明好这些资源的域名，就可以节省请求发生时产生的域名解析的时间。
 
@@ -56,14 +58,18 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 Chrome 下，我们可以用 `link` 标签声明特定文件的预加载：
 
-    <link rel='subresource' href='critical.js'>
-    <link rel='subresource' href='main.css'>
+{% highlight html %}
+<link rel='subresource' href='critical.js'>
+<link rel='subresource' href='main.css'>
 
-    <link rel='prefetch' href='secondary.js'>
+<link rel='prefetch' href='secondary.js'>
+{% endhighlight %}
 
 在 Firefox 中或用 `meta` 标签声明：
 
-    <meta http-equiv="Link" content="<critical.js>; rel=prefetch">
+{% highlight html %}
+<meta http-equiv="Link" content="<critical.js>; rel=prefetch">
+{% endhighlight %}
 
 `rel='subresource'` 表示当前页面必须加载的资源，应该放到页面最顶端先加载，有最高的优先级。
 
@@ -77,13 +83,17 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 预渲染意味着我们提前加载好用户即将访问的下一个页面，否则进行预渲染这个页面将浪费资源，慎用！
 
-    <link rel='prerender' href='http://www.pagetoprerender.com'>
+{% highlight html %}
+<link rel='prerender' href='http://www.pagetoprerender.com'>
+{% endhighlight %}
 
 `rel='prerender'` 表示浏览器会帮我们渲染但隐藏指定的页面，一旦我们访问这个页面，则秒开了！
 
 在 Firefox 中或用 `rel='next'` 来声明
 
-    <link rel="next" href="http://www.pagetoprerender.com">
+{% highlight html %}
+<link rel="next" href="http://www.pagetoprerender.com">
+{% endhighlight %}
 
 ## 不是所有的资源都可以预加载
 
@@ -103,10 +113,12 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 
 在 `head` 中强势插入 `link[rel='prerender']` 即可：
 
+{% highlight javascript %}
     var hint =document.createElement("link")
     hint.setAttribute(“rel”,”prerender”)
     hint.setAttribute(“href”,”next-page.html”)
     document.getElementsByTagName(“head”)[0].appendChild(hint)
+{% endhighlight %}
 
 ## 兼容性
 
