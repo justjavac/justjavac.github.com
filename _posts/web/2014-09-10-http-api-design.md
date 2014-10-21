@@ -38,53 +38,47 @@ tags : [web, http]
 
 尽可能在响应中提供完整的资源描述 (例如，带有所有属性的对象). 总是在200和201响应中提供完整的资源, 包括 PUT/PATCH 和 DELETE 请求, 例如:
 
-{% highlight shell %}
-$ curl -X DELETE \  
-  https://service.com/apps/1f9b/domains/0fd4
+    $ curl -X DELETE \  
+      https://service.com/apps/1f9b/domains/0fd4
 
-HTTP/1.1 200 OK
-Content-Type: application/json;charset=utf-8
-...
-{
-  "created_at": "2012-01-01T12:00:00Z",
-  "hostname": "subdomain.example.com",
-  "id": "01234567-89ab-cdef-0123-456789abcdef",
-  "updated_at": "2012-01-01T12:00:00Z"
-}
-{% endhighlight %}
+    HTTP/1.1 200 OK
+    Content-Type: application/json;charset=utf-8
+    ...
+    {
+      "created_at": "2012-01-01T12:00:00Z",
+      "hostname": "subdomain.example.com",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "updated_at": "2012-01-01T12:00:00Z"
+    }
 
 202 响应不会包含完整的资源描述，例如:
 
-{% highlight shell %}
-$ curl -X DELETE \  
-  https://service.com/apps/1f9b/dynos/05bd
+    $ curl -X DELETE \  
+      https://service.com/apps/1f9b/dynos/05bd
 
-HTTP/1.1 202 Accepted
-Content-Type: application/json;charset=utf-8
-...
-{}
-{% endhighlight %}
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json;charset=utf-8
+    ...
+    {}
 
 ## 接受请求中序列化的JSON
 
 接受PUT/PATCH/POST请求中的序列化JSON, 作为表单编码数据的替代或者补充. 这样就可以创建对称的JSON序列化响应，例如:
 
 
-{% highlight shell %}
-$ curl -X POST https://service.com/apps \
-    -H "Content-Type: application/json" \
-    -d '{"name": "demoapp"}'
+    $ curl -X POST https://service.com/apps \
+        -H "Content-Type: application/json" \
+        -d '{"name": "demoapp"}'
 
-{
-  "id": "01234567-89ab-cdef-0123-456789abcdef",
-  "name": "demoapp",
-  "owner": {
-    "email": "username@example.com",
-    "id": "01234567-89ab-cdef-0123-456789abcdef"
-  },
-  ...
-}
-{% endhighlight %}
+    {
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "name": "demoapp",
+      "owner": {
+        "email": "username@example.com",
+        "id": "01234567-89ab-cdef-0123-456789abcdef"
+      },
+      ...
+    }
 
 
 ## 提供资源 (UU)ID
@@ -200,13 +194,10 @@ $ curl -X POST https://service.com/apps \
 
     HTTP/1.1 429 Too Many Requests
 
-
-{% highlight json %}
-{
-  "id":      "rate_limit",
-  "message": "Account reached its API rate limit.",
-  "url":     "https://docs.service.com/rate-limits"}
-{% endhighlight %}
+    {
+      "id":      "rate_limit",
+      "message": "Account reached its API rate limit.",
+      "url":     "https://docs.service.com/rate-limits"}
 
 
 为你的错误格式，以及客户端可能会遇到的错误id编写文档.
@@ -295,23 +286,19 @@ $ curl -X POST https://service.com/apps \
 用户第一次查看你的api很可能是在使用curl的命令行里。如果API的响应有良好的打印格式，那在命令行里它们会很容易理解。为了给这些开发者提供方便，良好打印格式的JSON如下：
 
 
-{% highlight json %}
-{
-  "beta": false,
-  "email": "alice@heroku.com",
-  "id": "01234567-89ab-cdef-0123-456789abcdef",
-  "last_login": "2012-01-01T12:00:00Z",
-  "created_at": "2012-01-01T12:00:00Z",
-  "updated_at": "2012-01-01T12:00:00Z"}
-{% endhighlight %}
+    {
+      "beta": false,
+      "email": "alice@heroku.com",
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "last_login": "2012-01-01T12:00:00Z",
+      "created_at": "2012-01-01T12:00:00Z",
+      "updated_at": "2012-01-01T12:00:00Z"}
 
 
 而不是：
 
 
-{% highlight json %}
     {"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z", "created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
-{% endhighlight %}
 
 
 要确保在JSON结尾有换行，以防止阻塞用户的终端界面。
