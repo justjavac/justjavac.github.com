@@ -38,47 +38,53 @@ tags : [web, http]
 
 尽可能在响应中提供完整的资源描述 (例如，带有所有属性的对象). 总是在200和201响应中提供完整的资源, 包括 PUT/PATCH 和 DELETE 请求, 例如:
 
-    $ curl -X DELETE \  
-      https://service.com/apps/1f9b/domains/0fd4
-    
-    HTTP/1.1 200 OK
-    Content-Type: application/json;charset=utf-8
-    ...
-    {
-      "created_at": "2012-01-01T12:00:00Z",
-      "hostname": "subdomain.example.com",
-      "id": "01234567-89ab-cdef-0123-456789abcdef",
-      "updated_at": "2012-01-01T12:00:00Z"
-    }
+{% highlight shell %}
+$ curl -X DELETE \  
+  https://service.com/apps/1f9b/domains/0fd4
+
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+...
+{
+  "created_at": "2012-01-01T12:00:00Z",
+  "hostname": "subdomain.example.com",
+  "id": "01234567-89ab-cdef-0123-456789abcdef",
+  "updated_at": "2012-01-01T12:00:00Z"
+}
+{% endhighlight %}
 
 202 响应不会包含完整的资源描述，例如:
 
-    $ curl -X DELETE \  
-      https://service.com/apps/1f9b/dynos/05bd
-    
-    HTTP/1.1 202 Accepted
-    Content-Type: application/json;charset=utf-8
-    ...
-    {}
+{% highlight shell %}
+$ curl -X DELETE \  
+  https://service.com/apps/1f9b/dynos/05bd
+
+HTTP/1.1 202 Accepted
+Content-Type: application/json;charset=utf-8
+...
+{}
+{% endhighlight %}
 
 ## 接受请求中序列化的JSON
 
 接受PUT/PATCH/POST请求中的序列化JSON, 作为表单编码数据的替代或者补充. 这样就可以创建对称的JSON序列化响应，例如:
 
 
-    $ curl -X POST https://service.com/apps \
-        -H "Content-Type: application/json" \
-        -d '{"name": "demoapp"}'
-    
-    {
-      "id": "01234567-89ab-cdef-0123-456789abcdef",
-      "name": "demoapp",
-      "owner": {
-        "email": "username@example.com",
-        "id": "01234567-89ab-cdef-0123-456789abcdef"
-      },
-      ...
-    }
+{% highlight shell %}
+$ curl -X POST https://service.com/apps \
+    -H "Content-Type: application/json" \
+    -d '{"name": "demoapp"}'
+
+{
+  "id": "01234567-89ab-cdef-0123-456789abcdef",
+  "name": "demoapp",
+  "owner": {
+    "email": "username@example.com",
+    "id": "01234567-89ab-cdef-0123-456789abcdef"
+  },
+  ...
+}
+{% endhighlight %}
 
 
 ## 提供资源 (UU)ID
@@ -87,7 +93,6 @@ tags : [web, http]
 
 用小写 8-4-4-4-12 格式生成UUID，例如:
 
-
     "id": "01234567-89ab-cdef-0123-456789abcdef"
 
 
@@ -95,11 +100,13 @@ tags : [web, http]
 
 默认为资源提供创建和更新的时间戳，例如:
 
-    {
-      ...
-      "created_at": "2012-01-01T12:00:00Z",
-      "updated_at": "2012-01-01T13:00:00Z",
-      ...}
+{% highlight json %}
+{
+  ...
+  "created_at": "2012-01-01T12:00:00Z",
+  "updated_at": "2012-01-01T13:00:00Z",
+  ...}
+{% endhighlight %}
 
 这些时间戳可能对一些资源没啥用，如此则可以省去.
 
@@ -141,34 +148,40 @@ tags : [web, http]
 使用一个内联的对象来序列化外键引用，例如:
 
 
-    {
-      "name": "service-production",
-      "owner": {
-        "id": "5d8201b0..."
-      },
-      ...}
+{% highlight json %}
+{
+  "name": "service-production",
+  "owner": {
+    "id": "5d8201b0..."
+  },
+  ...}
+{% endhighlight %}
 
 
 而不是如下例:
 
 
-    {
-      "name": "service-production",
-      "owner_id": "5d8201b0...",
-      ...}
+{% highlight json %}
+{
+  "name": "service-production",
+  "owner_id": "5d8201b0...",
+  ...}
+{% endhighlight %}
 
 
 这种方式使得在不必改变响应结构或者引入更多顶级响应域的前提下内联如更多相关资源的信息，例如:
 
 
-    {
-      "name": "service-production",
-      "owner": {
-        "id": "5d8201b0...",
-        "name": "Alice",
-        "email": "alice@heroku.com"
-      },
-      ...}
+{% highlight json %}
+{
+  "name": "service-production",
+  "owner": {
+    "id": "5d8201b0...",
+    "name": "Alice",
+    "email": "alice@heroku.com"
+  },
+  ...}
+{% endhighlight %}
 
 
 ## 支持为方便起见的非id间接引用
@@ -188,10 +201,12 @@ tags : [web, http]
     HTTP/1.1 429 Too Many Requests
 
 
-    {
-      "id":      "rate_limit",
-      "message": "Account reached its API rate limit.",
-      "url":     "https://docs.service.com/rate-limits"}
+{% highlight json %}
+{
+  "id":      "rate_limit",
+  "message": "Account reached its API rate limit.",
+  "url":     "https://docs.service.com/rate-limits"}
+{% endhighlight %}
 
 
 为你的错误格式，以及客户端可能会遇到的错误id编写文档.
@@ -280,19 +295,23 @@ tags : [web, http]
 用户第一次查看你的api很可能是在使用curl的命令行里。如果API的响应有良好的打印格式，那在命令行里它们会很容易理解。为了给这些开发者提供方便，良好打印格式的JSON如下：
 
 
-    {
-      "beta": false,
-      "email": "alice@heroku.com",
-      "id": "01234567-89ab-cdef-0123-456789abcdef",
-      "last_login": "2012-01-01T12:00:00Z",
-      "created_at": "2012-01-01T12:00:00Z",
-      "updated_at": "2012-01-01T12:00:00Z"}
+{% highlight json %}
+{
+  "beta": false,
+  "email": "alice@heroku.com",
+  "id": "01234567-89ab-cdef-0123-456789abcdef",
+  "last_login": "2012-01-01T12:00:00Z",
+  "created_at": "2012-01-01T12:00:00Z",
+  "updated_at": "2012-01-01T12:00:00Z"}
+{% endhighlight %}
 
 
 而不是：
 
 
+{% highlight json %}
     {"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z", "created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
+{% endhighlight %}
 
 
 要确保在JSON结尾有换行，以防止阻塞用户的终端界面。
