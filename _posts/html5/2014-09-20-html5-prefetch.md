@@ -114,10 +114,10 @@ DNS prefetch 分析这个页面需要的资源所在的域名，浏览器空闲�
 在 `head` 中强势插入 `link[rel='prerender']` 即可：
 
 {% highlight javascript %}
-    var hint =document.createElement("link")
-    hint.setAttribute(“rel”,”prerender”)
-    hint.setAttribute(“href”,”next-page.html”)
-    document.getElementsByTagName(“head”)[0].appendChild(hint)
+var hint =document.createElement("link")
+hint.setAttribute(“rel”,”prerender”)
+hint.setAttribute(“href”,”next-page.html”)
+document.getElementsByTagName(“head”)[0].appendChild(hint)
 {% endhighlight %}
 
 ## 兼容性
