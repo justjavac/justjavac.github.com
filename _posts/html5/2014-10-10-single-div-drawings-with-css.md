@@ -38,9 +38,11 @@ tags : [div, html5, css3]
 
 ![伪元素][3]
 
+{% highlight css %}
     div { background: red; }
     div:before { background: yellow; }
     div:after { background: blue; }
+{% endhighlight %}
 
 容易想到，这三个元素可以并排成为三个叠在一起的层。因此，在我的脑海中，它看起来是下面这样的：
 
