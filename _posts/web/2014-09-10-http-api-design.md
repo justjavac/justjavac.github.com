@@ -286,19 +286,23 @@ tags : [web, http]
 用户第一次查看你的api很可能是在使用curl的命令行里。如果API的响应有良好的打印格式，那在命令行里它们会很容易理解。为了给这些开发者提供方便，良好打印格式的JSON如下：
 
 
-    {
-      "beta": false,
-      "email": "alice@heroku.com",
-      "id": "01234567-89ab-cdef-0123-456789abcdef",
-      "last_login": "2012-01-01T12:00:00Z",
-      "created_at": "2012-01-01T12:00:00Z",
-      "updated_at": "2012-01-01T12:00:00Z"}
+{% highlight json %}
+{
+  "beta": false,
+  "email": "alice@heroku.com",
+  "id": "01234567-89ab-cdef-0123-456789abcdef",
+  "last_login": "2012-01-01T12:00:00Z",
+  "created_at": "2012-01-01T12:00:00Z",
+  "updated_at": "2012-01-01T12:00:00Z"}
+{% endhighlight %}
 
 
 而不是：
 
 
-    {"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z", "created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
+{% highlight json %}
+{"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z", "created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
+{% endhighlight %}
 
 
 要确保在JSON结尾有换行，以防止阻塞用户的终端界面。
