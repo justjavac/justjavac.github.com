@@ -78,13 +78,15 @@ div:after { background: blue; }
 
 ![渐变][7]
 
-    div {
-        background-image: linear-gradient(to right, gray, white, gray, black);
-    }
-    
-    div:after {
-        background-image: radial-gradient(circle, yellow 50%, transparent 50%), linear-gradient(to right, blue, red); 
-    }
+{% highlight css %}
+div {
+    background-image: linear-gradient(to right, gray, white, gray, black);
+}
+
+div:after {
+    background-image: radial-gradient(circle, yellow 50%, transparent 50%), linear-gradient(to right, blue, red); 
+}
+{% endhighlight %}
 
 ## 视觉
 
@@ -109,134 +111,150 @@ div:after { background: blue; }
 
 ![][9]
 
-    div {
-        background: #237449;
-        background-image: linear-gradient(to bottom,
-                                      transparent 62%,
-                                      black(.3) 100%);
-        box-shadow: 2px 2px 3px black(.3);
-    }
+{% highlight css %}
+div {
+    background: #237449;
+    background-image: linear-gradient(to bottom,
+                                  transparent 62%,
+                                  black(.3) 100%);
+    box-shadow: 2px 2px 3px black(.3);
+}
+{% endhighlight %}
 
 然后，我使用一个从左到右的 `linear-gradient` 制作纸包装。`alpha` 值为 `.6`，这样的之前的渐变可以透出来。
 
 ![][10]
 
-    div {
-        background-image: linear-gradient(to right,
-                                      transparent 12px,
-                                      rgba(41,237,133,.6) 12px,
-                                      rgba(41,237,133,.6) 235px,
-                                      transparent 235px);
-    }
+{% highlight css %}
+div {
+    background-image: linear-gradient(to right,
+                                  transparent 12px,
+                                  rgba(41,237,133,.6) 12px,
+                                  rgba(41,237,133,.6) 235px,
+                                  transparent 235px);
+}
+{% endhighlight %}
 
 接下来，我继续使用同样的方式，从左到右渐变，制作蜡笔上的条纹。
 
 ![][11]
 
-    div {
-        background-image: linear-gradient(to right,
-                                      transparent 25px,
-                                      black(.6) 25px,
-                                      black(.6) 30px,
-                                      transparent 30px,
-                                      transparent 35px,
-                                      black(.6) 35px,
-                                      black(.6) 40px,
-                                      transparent 40px,
-                                      transparent 210px,
-                                      black(.6) 210px,
-                                      black(.6) 215px,
-                                      transparent 215px,
-                                      transparent 220px,
-                                      black(.6) 220px,
-                                      black(.6) 225px,
-                                      transparent 225px);
-    }
+{% highlight css %}
+div {
+    background-image: linear-gradient(to right,
+                                  transparent 25px,
+                                  black(.6) 25px,
+                                  black(.6) 30px,
+                                  transparent 30px,
+                                  transparent 35px,
+                                  black(.6) 35px,
+                                  black(.6) 40px,
+                                  transparent 40px,
+                                  transparent 210px,
+                                  black(.6) 210px,
+                                  black(.6) 215px,
+                                  transparent 215px,
+                                  transparent 220px,
+                                  black(.6) 220px,
+                                  black(.6) 225px,
+                                  transparent 225px);
+}
+{% endhighlight %}
 
 纸包装上印刷的椭圆，使用一个 `radial-gradient` 轻松搞定！
 
 ![][12]
 
-    div {
-        background-image: radial-gradient(ellipse at top,
-                                      black(.6) 50px,
-                                      transparent 54px);
-    }
+{% highlight css %}
+div {
+    background-image: radial-gradient(ellipse at top,
+                                  black(.6) 50px,
+                                  transparent 54px);
+}
+{% endhighlight %}
 
 我刚才单独展示了各个部分，不过别忘了 `background-image` 看起来是这样的：
 
-    div {
-                          // ellipse printed on wrapper
-        background-image: radial-gradient(ellipse at top,
-                                      black(.6) 50px,
-                                      transparent 54px),
-                          // printed stripes
-                          linear-gradient(to right,
-                                      transparent 25px,
-                                      black(.6) 25px,
-                                      black(.6) 30px,
-                                      transparent 30px,
-                                      transparent 35px,
-                                      black(.6) 35px,
-                                      black(.6) 40px,
-                                      transparent 40px,
-                                      transparent 210px,
-                                      black(.6) 210px,
-                                      black(.6) 215px,
-                                      transparent 215px,
-                                      transparent 220px,
-                                      black(.6) 220px,
-                                      black(.6) 225px,
-                                      transparent 225px),
-                          // wrapper
-                          linear-gradient(to right,
-                                      transparent 12px,
-                                      rgba(41,237,133,.6) 12px,
-                                      rgba(41,237,133,.6) 235px,
-                                      transparent 235px),
-                          // crayon body shading
-                          linear-gradient(to bottom,
-                                      transparent 62%,
-                                      black(.3) 100%)
-    }
+{% highlight css %}
+div {
+                      // ellipse printed on wrapper
+    background-image: radial-gradient(ellipse at top,
+                                  black(.6) 50px,
+                                  transparent 54px),
+                      // printed stripes
+                      linear-gradient(to right,
+                                  transparent 25px,
+                                  black(.6) 25px,
+                                  black(.6) 30px,
+                                  transparent 30px,
+                                  transparent 35px,
+                                  black(.6) 35px,
+                                  black(.6) 40px,
+                                  transparent 40px,
+                                  transparent 210px,
+                                  black(.6) 210px,
+                                  black(.6) 215px,
+                                  transparent 215px,
+                                  transparent 220px,
+                                  black(.6) 220px,
+                                  black(.6) 225px,
+                                  transparent 225px),
+                      // wrapper
+                      linear-gradient(to right,
+                                  transparent 12px,
+                                  rgba(41,237,133,.6) 12px,
+                                  rgba(41,237,133,.6) 235px,
+                                  transparent 235px),
+                      // crayon body shading
+                      linear-gradient(to bottom,
+                                  transparent 62%,
+                                  black(.3) 100%)
+}
+{% endhighlight %}
 
 完成了 `div`，我们把注意力转移到 `:before` 伪类元素上，创建蜡笔的笔头。使用实心和透明的边框，我制作了一个三角形，把它和我之前绘制的 `div` 放到一起。
 
 ![][13]
 
-    div:before {
-        height: 10px;
-        border-right: 48px solid #237449;
-        border-bottom: 13px solid transparent;
-        border-top: 13px solid transparent;
-    }
+{% highlight css %}
+div:before {
+    height: 10px;
+    border-right: 48px solid #237449;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+}
+{% endhighlight %}
 
 比起蜡笔笔杆，笔头看起来有点平，我们可以使用 `:after` 伪类元素来修复这个问题。我添加一个从顶部到底部的 `linear-gradient`，制作了一个反光效果，贯穿整只蜡笔。
 
 ![][14]
 
-    div:after {
-        background-image: linear-gradient(to bottom,
-                                        white(0) 12px,
-                                        white(.2) 17px,
-                                        white(.2) 19px,
-                                        white(0) 24px);
-    }
+{% highlight css %}
+div:after {
+    background-image: linear-gradient(to bottom,
+                                    white(0) 12px,
+                                    white(.2) 17px,
+                                    white(.2) 19px,
+                                    white(0) 24px);
+}
+{% endhighlight %}
 
 这给那个扁平的三角形添加更多的层次感，更加真实。制作接近尾声，我给 `:after` 添加一些文字，定位，使得看起来像是印刷在蜡笔包装上的一样。
 
 ![][15]
 
-    div:after {
-        content: 'green';
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        color: black(.3);
-        text-align: right;
-        padding-right: 47px;
-        padding-top: 17px;
-    }
+{% highlight css %}
+div:after {
+    content: 'green';
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black(.3);
+    text-align: right;
+    padding-right: 47px;
+    padding-top: 17px;
+}
+{% endhighlight %}
 
 大功告成！
 
@@ -252,67 +270,71 @@ div:after { background: blue; }
 
 ![][17]
 
-    div:before {
-        background: #333;
-        box-shadow: 0 0 0 2px #eee,
-                    -1px -1px 1px 3px #333,
-                    -95px 6px 0 0 #ccc,
-                    30px 3px 0 12px #ccc,
-                    -18px 37px 0 46px #ccc,
-     
-                    -96px -6px 0 -6px #555,
-                    -96px -9px 0 -6px #ddd,
-     
-                    -155px -10px 1px 3px #888,
-                    -165px -10px 1px 3px #999,
-                    -170px -10px 1px 3px #666,
-                    -162px -8px 0 5px #555,
-     
-                    85px -4px 1px -3px #ccc,
-                    79px -4px 1px -3px #888,
-                    82px 1px 0 -4px #555;
-    }
+{% highlight css %}
+div:before {
+    background: #333;
+    box-shadow: 0 0 0 2px #eee,
+                -1px -1px 1px 3px #333,
+                -95px 6px 0 0 #ccc,
+                30px 3px 0 12px #ccc,
+                -18px 37px 0 46px #ccc,
+ 
+                -96px -6px 0 -6px #555,
+                -96px -9px 0 -6px #ddd,
+ 
+                -155px -10px 1px 3px #888,
+                -165px -10px 1px 3px #999,
+                -170px -10px 1px 3px #666,
+                -162px -8px 0 5px #555,
+ 
+                85px -4px 1px -3px #ccc,
+                79px -4px 1px -3px #888,
+                82px 1px 0 -4px #555;
+}
+{% endhighlight %}
 
 类似的，下面是 `:after`（灰色的圆）以及使用它的 `box-shadow` 制作的几个细节部分。
 
 ![][18]
 
-    div:after {
-        background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
-        border-radius: 50%;
-        box-shadow: 0 3px 2px #999,
-                    1px -2px 0 white,
-                    -1px -3px 2px #555,
-                    0 0 0 15px #c2c2c2,
-                    0 -2px 0 15px white,
-                    -2px -5px 1px 17px #666,
-                    0 10px 10px 15px black(.3),
-     
-                    -90px -51px 1px -43px #aaa,
-                    -90px -50px 1px -40px #888,
-                    -90px -51px 0 -34px #ccc,
-                    -90px -50px 0 -30px #aaa,
-                    -90px -48px 1px -28px black(.2),
-     
-                    -124px -73px 1px -48px #eee,
-                    -125px -72px 0 -46px #666,
-                    -85px -73px 1px -48px #eee,
-                    -86px -72px 0 -46px #666,
-                    42px -82px 1px -48px #eee,
-                    41px -81px 0 -46px #777,
-                    67px -73px 1px -48px #eee,
-                    66px -72px 0 -46px #666,
-     
-                    -46px -86px 1px -45px #444,
-                    -44px -87px 0 -38px #333,
-                    -44px -86px 0 -37px #ccc,
-                    -44px -85px 0 -34px #999,
-     
-                    14px -89px 1px -48px #eee,
-                    12px -84px 1px -48px #999,
-                    23px -85px 0 -47px #444,
-                    23px -87px 0 -46px #888;
-    }
+{% highlight css %}
+div:after {
+    background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+    border-radius: 50%;
+    box-shadow: 0 3px 2px #999,
+                1px -2px 0 white,
+                -1px -3px 2px #555,
+                0 0 0 15px #c2c2c2,
+                0 -2px 0 15px white,
+                -2px -5px 1px 17px #666,
+                0 10px 10px 15px black(.3),
+ 
+                -90px -51px 1px -43px #aaa,
+                -90px -50px 1px -40px #888,
+                -90px -51px 0 -34px #ccc,
+                -90px -50px 0 -30px #aaa,
+                -90px -48px 1px -28px black(.2),
+ 
+                -124px -73px 1px -48px #eee,
+                -125px -72px 0 -46px #666,
+                -85px -73px 1px -48px #eee,
+                -86px -72px 0 -46px #666,
+                42px -82px 1px -48px #eee,
+                41px -81px 0 -46px #777,
+                67px -73px 1px -48px #eee,
+                66px -72px 0 -46px #666,
+ 
+                -46px -86px 1px -45px #444,
+                -44px -87px 0 -38px #333,
+                -44px -86px 0 -37px #ccc,
+                -44px -85px 0 -34px #999,
+ 
+                14px -89px 1px -48px #eee,
+                12px -84px 1px -48px #999,
+                23px -85px 0 -47px #444,
+                23px -87px 0 -46px #888;
+}
+{% endhighlight %}
 
 有点疯狂？不过你看到了吧， 多个 `box-shadow` 确实可以给使用单个 `div` 绘图添加很多细节部分。
 
@@ -326,25 +348,27 @@ div:after { background: blue; }
 
 ![][19]
 
-    div {
-        border-left: 80px solid transparent;
-        border-right: 80px solid transparent;
-        border-bottom: 80px solid red;
-    }
-     
-    div:before {
-        border-left: 80px solid transparent;
-        border-right: 80px solid transparent;
-        border-bottom: 80px solid red;
-        border-image: linear-gradient(to right, red, blue);
-    }
-     
-    div:after {
-        border-left: 80px solid transparent;
-        border-right: 80px solid transparent;
-        border-bottom: 80px solid red;
-        box-shadow: 5px 5px 5px gray;
-    }
+{% highlight css %}
+div {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid red;
+}
+ 
+div:before {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid red;
+    border-image: linear-gradient(to right, red, blue);
+}
+ 
+div:after {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid red;
+    box-shadow: 5px 5px 5px gray;
+}
+{% endhighlight %}
 
 ### 多层渐变
 
