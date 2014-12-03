@@ -4,6 +4,7 @@ title: 一道逻辑题 - 我拿走了哪个数
 keywords: 算法
 category : other
 tags : [算法]
+type: porter
 ---
 
 原文链接：<http://www.cnblogs.com/baiyanhuang/archive/2010/06/23/1763981.html>

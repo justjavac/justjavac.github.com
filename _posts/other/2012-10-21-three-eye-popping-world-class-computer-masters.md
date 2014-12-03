@@ -4,6 +4,7 @@ title: 让人目瞪口呆的三位世界级电脑大师
 keywords: 电脑大师, 幽默
 category : other
 tags : [电脑大师, 幽默]
+type: porter
 ---
 
 本文于08年发布于javaeye，原文地址： <http://justjavac.iteye.com/blog/169737>，

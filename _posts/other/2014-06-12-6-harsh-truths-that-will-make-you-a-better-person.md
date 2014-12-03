@@ -4,6 +4,7 @@ title: 屌丝应该知道的 6 个残酷人生事实（血泪翻译）
 keywords: 屌丝, 哲理
 category : other
 tags : [屌丝, 哲理]
+type: translation
 ---
 
 原译文标题为：Loser应该知道的 6 个残酷人生事实（血泪翻译），译者（天理难容）没有翻译 Loser，

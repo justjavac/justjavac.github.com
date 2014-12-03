@@ -4,6 +4,7 @@ title: 『神雕瞎驴』金庸看完哭了
 keywords: 幽默
 category : other
 tags : [幽默，神雕瞎驴]
+type: porter
 ---
 
 ## 一、身世  

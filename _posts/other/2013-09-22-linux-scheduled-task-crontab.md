@@ -4,6 +4,7 @@ title:      Linux 计划任务 — crontab
 keywords: linux, cron
 category : other
 tags : [linux, cron]
+type: porter
 ---
 
 原文：[Linux 计划任务 — crontab](http://letcodefly.com/article/1)

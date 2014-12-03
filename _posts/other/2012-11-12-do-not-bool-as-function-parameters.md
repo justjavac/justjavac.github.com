@@ -4,7 +4,11 @@ title:      千万不要把 bool 当成函数参数
 keywords: 参数,函数
 category : other
 tags : [参数,函数]
+type: porter
 ---
+
+原作者：陈皓  
+链接：http://coolshell.cn/articles/5444.html
 
 我们有很多 Coding Style 或 代码规范。
 但这一条可能会经常被我们所遗忘，就是我们 **经常会在函数的参数里使用bool参数，这会大大地降低代码的可读性**。

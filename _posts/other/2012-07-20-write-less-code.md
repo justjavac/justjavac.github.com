@@ -4,7 +4,13 @@ title:      写更少的代码
 keywords: 代码,思索
 category : other
 tags : [编程, 代码]
+type: translation
 ---
+
+原文来源：[Write Less Code](http://source.yeeyan.org/view/439390_e97)  
+原作者：Mike Grouchy  
+译文来源：[写更少的代码](http://article.yeeyan.org/view/lins05/298037)  
+译者：[lins05](http://user.yeeyan.org/u/lins05)
 
 软件开发的一个基本事实是：你需要写代码。
 但是一个最大的概念误区是“写代码就是我的工作”。

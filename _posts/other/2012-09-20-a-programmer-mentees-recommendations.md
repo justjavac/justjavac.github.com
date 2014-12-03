@@ -5,6 +5,7 @@ description: 对一个初学者来说，IT界的技术风潮是不可追赶，�
 keywords: 学习, 大学, 程序员
 category : other
 tags : [学习, 程序员]
+type: porter
 ---
 
 始终认为，**对一个初学者来说，IT界的技术风潮是不可追赶**。
