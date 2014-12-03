@@ -5,6 +5,7 @@ description: 解密Redis持久化
 keywords: nosql, redis, 持久化
 category : nosql
 tags : [nosql, redis]
+type: porter
 ---
 
 本文内容来源于Redis 作者博文，Redis作者说，他看到的所有针对Redis的讨论中，对Redis持久化 的误解是最大的，于是他写了[一篇长文 ](http://antirez.com/post/redis-persistence-demystified.html)来对Redis的持久化进行了系统性的论述。

@@ -4,6 +4,7 @@ title: 前端开发，从菜鸟到大牛的取经之路
 keywords: web, 前端
 category : web
 tags : [web, 前端]
+type: porter
 ---
 
 以我的经验，大部分技术，熟读下列四类书籍即可。 

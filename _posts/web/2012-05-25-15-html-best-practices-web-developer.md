@@ -5,6 +5,7 @@ description: TML已经走过了近20的发展历程。从HTML4到XHTML，再到�
 keywords: web, 浏览器
 category : web
 tags : [web, 浏览器]
+type: porter
 ---
 
 HTML已经走过了近20的发展历程。

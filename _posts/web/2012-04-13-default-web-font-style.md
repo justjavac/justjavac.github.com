@@ -4,6 +4,7 @@ title: 默认Web字体样式
 keywords: web, 字体, css
 category : web
 tags : [web, 字体]
+type: porter
 ---
 
 <p>通常用户看到的页面的样式(css)会受到三层控制:</p>

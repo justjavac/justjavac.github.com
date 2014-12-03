@@ -5,6 +5,7 @@ description: 在拉斯姆斯·勒道夫（Rasmus Lerdorf，译者注：php之父
 keywords: php, 编程语言
 category : php
 tags : [php]
+type: porter
 ---
 
 在拉斯姆斯·勒道夫（Rasmus Lerdorf，译者注：php之父）准备把php整合出来的时候，他很聪明地没有选择用格陵兰语或者丹麦语去写，尽管他有这两国的血统。

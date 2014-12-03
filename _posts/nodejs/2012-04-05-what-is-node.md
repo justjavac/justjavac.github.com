@@ -5,6 +5,7 @@ description: 什么是Node
 keywords: node.js,javascript
 category : nodejs
 tags : [nodejs, javascript]
+type: porter
 ---
 
 ## Node不是万能药！但的确能解决一些关键问题。

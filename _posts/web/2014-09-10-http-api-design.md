@@ -4,6 +4,7 @@ title: HTTP API 设计指南
 keywords: web, http
 category : web
 tags : [web, http]
+type: translation
 ---
 
 英文原文： [HTTP API Design Guide][1]  

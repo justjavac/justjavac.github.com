@@ -5,6 +5,7 @@ description: 总的来说，程序员算是英语水平比较好的群体，因�
 keywords: 程序员, 学英语, 读书
 category : other
 tags : [程序员]
+type: porter
 ---
 
 文 / 余晟

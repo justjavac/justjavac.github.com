@@ -4,6 +4,7 @@ title: 浏览器如何渲染文本
 keywords: web, 浏览器
 category : web
 tags : [web, 浏览器]
+type: porter
 ---
 
 <p>浏览器是我们最常用的软件之一，文本又是网页中最主要的元素，

@@ -5,6 +5,7 @@ description: 这些年来，我看到过大量的反编程模式。我感觉应�
 keywords: 编程, for, if
 category : other
 tags : [编程]
+type: porter
 ---
 
 这些年来，我看到过大量的反编程模式。我感觉应该向大家分享一些。

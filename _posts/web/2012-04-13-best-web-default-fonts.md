@@ -4,6 +4,7 @@ title: 最佳 Web 中文默认字体
 keywords: web, 字体, css
 category : web
 tags : [web, 字体]
+type: porter
 ---
 
 作者：[@lifesinger](http://weibo.com/lifesinger)

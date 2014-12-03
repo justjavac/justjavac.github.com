@@ -5,6 +5,7 @@ description: 这篇文章绝不是一篇讨论 NodeJS 和 Ruby on Rails 孰优�
 keywords: javascript, nodejs, Ruby on Rails, ROR
 category: nodejs
 tags: [javascript, nodejs]
+type: porter
 ---
 
 **声明**：这篇文章绝不是一篇讨论 [NodeJS][1] 和 Ruby on Rails 孰优孰略的檄文。

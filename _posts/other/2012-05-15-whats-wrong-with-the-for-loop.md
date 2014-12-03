@@ -5,6 +5,7 @@ description: 不久前，出版过数十本编程书籍的大作家发表了对J
 keywords: for, 闭包
 category : other
 tags : [for, 闭包]
+type: porter
 ---
 
 Java 的闭包(Closure)特征最近成为了一个热门话题。

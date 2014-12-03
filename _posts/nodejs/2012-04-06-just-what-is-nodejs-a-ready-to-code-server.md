@@ -6,6 +6,7 @@ description: 什么是Node.js
 keywords: node.js,javascript
 category : nodejs
 tags : [nodejs, javascript]
+type: porter
 ---
 
 ## 简介

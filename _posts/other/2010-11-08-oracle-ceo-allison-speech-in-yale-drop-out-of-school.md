@@ -4,6 +4,7 @@ title: 甲骨文CEO在耶鲁大学 2000 届毕业典礼上的演讲：退学吧
 keywords: CEO, oracle, 辍学, 退学
 category : other
 tags : [CEO, oracle]
+type: porter
 ---
 
 埃里森：Lawrence J.Ellison，是全球第二大软件公司（甲骨文）的 CEO。2000年全球富豪榜第二。

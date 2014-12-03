@@ -5,6 +5,7 @@ description: 不要使用‘er’结尾的对象命名。（Don’t make objects
 keywords: code, 代码
 category : other
 tags : [code, 代码]
+type: porter
 ---
 
 多年以前（早在1992年），我加入了这个疯狂的skunkworks项目，这个项目使用的是他们叫做Smalltalk的另类程序语言。

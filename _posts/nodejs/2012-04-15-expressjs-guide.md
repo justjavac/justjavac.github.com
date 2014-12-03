@@ -5,6 +5,7 @@ description: Expressjs 中文入门指引手册
 keywords: node.js,javascript
 category : nodejs
 tags : [nodejs, javascript]
+type: porter
 ---
 
 ## 简介
