@@ -4,7 +4,11 @@ title:      人民币的符号的正确表示法？一杠？两杠？
 keywords: 编程, 知识, web, css
 category : other
 tags : [编程, 知识, web, css]
+type: porter
 ---
+
+原文链接：<http://www.aoao.org.cn/blog/2010/03/rmb/>  
+原作者：[aoao](http://www.aoao.org.cn/)
 
 因为做的项目会跟钱打了交道，所以被研究了。
 
