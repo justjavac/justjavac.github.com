@@ -394,25 +394,25 @@ Tardis 就是一个很好的例子，显示或隐藏渐变，创建了一张细�
 
   [1]: http://2013.cssconf.com/talk-verou.html
   [2]: http://div.justjavac.com
-  [3]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-1.png
-  [4]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-2.png
-  [5]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-3.png
-  [6]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-4.png
-  [7]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-5.png
-  [8]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-6.png
-  [9]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-7.png
-  [10]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-8.png
-  [11]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-9.png
-  [12]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-10.png
-  [13]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-11.png
-  [14]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-12.png
-  [15]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-13.png
-  [16]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-14.png
-  [17]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-15.gif
-  [18]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-16.gif
-  [19]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-17.png
-  [20]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-18.png
-  [21]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-19.png
+  [3]: http://ww2.sinaimg.cn/large/5127613dgw1encf0uz737j20ci03xglk.jpg
+  [4]: http://ww4.sinaimg.cn/large/5127613dgw1encf1klyz7j205m050q2w.jpg
+  [5]: http://ww2.sinaimg.cn/large/5127613dgw1encf1xq8h6j20cz02hglm.jpg
+  [6]: http://ww2.sinaimg.cn/large/5127613dgw1encf35se7ij20cz04x74d.jpg
+  [7]: http://ww3.sinaimg.cn/large/5127613dgw1encf3e1oszj2057038dfr.jpg
+  [8]: http://ww2.sinaimg.cn/large/5127613dgw1encf3morw0j20dw0370sj.jpg
+  [9]: http://ww2.sinaimg.cn/large/5127613dgw1encf3uv1qnj20dw02n0sk.jpg
+  [10]: http://ww2.sinaimg.cn/large/5127613dgw1encf42x9rrj20dw02ndfo.jpg
+  [11]: http://ww3.sinaimg.cn/large/5127613dgw1encf49l7pkj20dw02nglh.jpg
+  [12]: http://ww1.sinaimg.cn/large/5127613dgw1encf4g9g30j20dw02n746.jpg
+  [13]: http://ww4.sinaimg.cn/large/5127613dgw1encf4n4ifbj20dw02n3yf.jpg
+  [14]: http://ww2.sinaimg.cn/large/5127613dgw1encf4u2lvoj20dw02njrb.jpg
+  [15]: http://ww4.sinaimg.cn/large/5127613dgw1encf50o2uqj20dw02n0so.jpg
+  [16]: http://ww3.sinaimg.cn/large/5127613dgw1encf5750kqj20dw07ujre.jpg
+  [17]: http://ww4.sinaimg.cn/large/5127613djw1encf5dec1hg20dw07umxn.gif
+  [18]: http://ww3.sinaimg.cn/large/5127613djw1encf5kenr2g20dw07umxx.gif
+  [19]: http://ww3.sinaimg.cn/large/5127613djw1encf5qqltnj20f302odfx.jpg
+  [20]: http://ww4.sinaimg.cn/large/5127613djw1encf60az10j20dw0a9t93.jpg
+  [21]: http://ww2.sinaimg.cn/large/5127613djw1encf66w800j20dw0a9mxy.jpg
   [22]: https://twitter.com/rafaelcaricio
   [23]: https://chrome.google.com/webstore/detail/css-gradient-inspector/blklpjonlhpakchaahdnkcjkfmccmdik
   [24]: http://div.justjavac.com
