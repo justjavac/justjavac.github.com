@@ -394,25 +394,25 @@ Tardis 就是一个很好的例子，显示或隐藏渐变，创建了一张细�
 
   [1]: http://2013.cssconf.com/talk-verou.html
   [2]: http://div.justjavac.com
-  [3]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-1.png
-  [4]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-2.png
-  [5]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-3.png
-  [6]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-4.png
-  [7]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-5.png
-  [8]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-6.png
-  [9]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-7.png
-  [10]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-8.png
-  [11]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-9.png
-  [12]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-10.png
-  [13]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-11.png
-  [14]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-12.png
-  [15]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-13.png
-  [16]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-14.png
-  [17]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-15.gif
-  [18]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-16.gif
-  [19]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-17.png
-  [20]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-18.png
-  [21]: https://hacks.mozilla.org/wp-content/uploads/2014/09/asinglediv-19.png
+  [3]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-1.png
+  [4]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-2.png
+  [5]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-3.png
+  [6]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-4.png
+  [7]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-5.png
+  [8]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-6.png
+  [9]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-7.png
+  [10]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-8.png
+  [11]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-9.png
+  [12]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-10.png
+  [13]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-11.png
+  [14]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-12.png
+  [15]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-13.png
+  [16]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-14.png
+  [17]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-15.gif
+  [18]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-16.gif
+  [19]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-17.png
+  [20]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-18.png
+  [21]: http://blog.mozilla.org/hacks/files/2014/09/asinglediv-19.png
   [22]: https://twitter.com/rafaelcaricio
   [23]: https://chrome.google.com/webstore/detail/css-gradient-inspector/blklpjonlhpakchaahdnkcjkfmccmdik
   [24]: http://div.justjavac.com
