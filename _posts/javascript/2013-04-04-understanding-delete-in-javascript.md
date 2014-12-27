@@ -14,7 +14,7 @@ tags : [javascript, delete]
 
 ----------------------------------------------------
 
-在这篇文章中作者从《[JavaScript面向对象编程指南](http://t.cn/zT44xV0)》一书中关于 delete 的错误讲起，详细讲述了关于 delete 操作的实现，
+在这篇文章中作者从《[JavaScript面向对象编程指南](http://www.amazon.cn/gp/product/B00BLZMC4K/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00BLZMC4K&linkCode=as2&tag=jsbook-23)》一书中关于 delete 的错误讲起，详细讲述了关于 delete 操作的实现，
 局限以及在不同浏览器和插件（这里指 firebug）中的表现。
 
 下面翻译其中的主要部分。

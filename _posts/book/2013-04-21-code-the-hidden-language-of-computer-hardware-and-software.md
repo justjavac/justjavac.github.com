@@ -8,7 +8,7 @@ tags: [book]
 
 在知乎回答了一个关于书籍推荐的问题：[有哪些短小精悍的好书推荐？](http://www.zhihu.com/question/20567389/answer/16619056)
 
-如果只推荐一本计算机类的神书，那必然是《[编码:隐匿在计算机软硬件背后的语言](http://t.cn/zTzzmKZ)》。
+如果只推荐一本计算机类的神书，那必然是《[编码:隐匿在计算机软硬件背后的语言](http://www.amazon.cn/gp/product/B009RSXIB4/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B009RSXIB4&linkCode=as2&tag=cfjh-23)》。
 
 > 渴望交流是大多数人的天性。在本书中，“编码”通常指一种在人和机器之间进行信息转换的系统。
 > 换句话说、编码即是交流。

@@ -8,7 +8,7 @@ tags: [book]
 
 在知乎回答了一个关于书籍推荐的问题：[有哪些短小精悍的好书推荐？](http://www.zhihu.com/question/20567389/answer/16619056)。
 
-如果只让我推荐一本哲学入门的书，那肯定是《[苏菲的世界](http://t.cn/zOd6t0G )》
+如果只让我推荐一本哲学入门的书，那肯定是《[苏菲的世界](http://www.amazon.cn/gp/product/B0011F5QPC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011F5QPC&linkCode=as2&tag=cfjh-23)》
 
 这些天我一直在看《苏菲的世界》，看那些在时空中闪现的哲人们是**如何解析生命和世界的意义**的。
 “苏菲”这个名字有“智慧”的意思。

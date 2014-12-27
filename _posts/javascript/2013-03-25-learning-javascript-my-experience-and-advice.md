@@ -21,7 +21,7 @@ tags: [javascript, 入门]
 注：我是想真正地学习 JavaScript---不是捷径，或快速技巧，或元工具（meta-tools）之类让我不必要学习 JavaScript 的东西。
 我想学习、掌握、阅读、理解以及记住 JavaScript 这门语言，从而在以后的日子里能够理解所有其他以 JavaScript 编写的很酷的东西。
 
-首先---很多人可能会告诉你去阅读[Douglas Crockford的著作《JavaScript语言精粹》](http://t.cn/zHRR6mQ)。
+首先---很多人可能会告诉你去阅读[Douglas Crockford的著作《JavaScript语言精粹》](http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=jsbook-23)。
 但当我开始阅读这本书时，才发现它是如此的紧凑简洁以致我根本不知道它在说啥！
 
 你知道何时一个专家是在谈论自己的领域，就不知道如何为其他人做点简化么？
@@ -30,19 +30,19 @@ tags: [javascript, 入门]
 但它真的不是要教你学习 JavaScript。它不会指导你学习任何东西。
 因此我建议先跳过这本书。
 
-相反，从[Marijn Haverbeke的著作《JavaScript编程精解》](http://t.cn/zHRRaTu)开始学习吧。
+相反，从[Marijn Haverbeke的著作《JavaScript编程精解》](http://www.amazon.cn/gp/product/B009A7D25E/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B009A7D25E&linkCode=as2&tag=jsbook-23)开始学习吧。
 
 这本书一开始非常简单易学，简直是太简单了，这能鼓舞你，让你自信起来。
 你就能得意洋洋地说“这很简单嘛！”
 
 [阅读这里的在线版本](http://eloquentjavascript.net/contents.html)，因为你可以直接在浏览器中测试实验。
 
-然后，在读完几个章节后，**转而阅读**[《JavaScript高级程序设计》，第三版---Nicholas Zakas著](http://t.cn/zHRRoLF)。
+然后，在读完几个章节后，**转而阅读**[《JavaScript高级程序设计》，第三版---Nicholas Zakas著](http://www.amazon.cn/gp/product/B007OQQVMY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007OQQVMY&linkCode=as2&tag=jsbook-23)。
 
 这是一本终极教程，花很多篇幅详细解释大量知识点，覆盖几乎所有东西。每个章节你都应花费几个小时来阅读，等你读完这本书时，你知道的也就和大多数自称JavaScript程序员的人一样多了。
 
-有趣的是，读完这本书后，我又回过头来阅读[《JavaScript语言精粹》](http://t.cn/zHRR6mQ)，现在我能理解书中讲述的东西了。
-但由于[《JavaScript高级程序设计》](http://t.cn/zHRRoLF)一书的内容是如此全面，所以也就覆盖了所有的“精粹”了。
+有趣的是，读完这本书后，我又回过头来阅读[《JavaScript语言精粹》](http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=jsbook-23)，现在我能理解书中讲述的东西了。
+但由于[《JavaScript高级程序设计》](http://www.amazon.cn/gp/product/B007OQQVMY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007OQQVMY&linkCode=as2&tag=jsbook-23)一书的内容是如此全面，所以也就覆盖了所有的“精粹”了。
 
 当然，你必须记住你正在学习的东西，因此我强烈推荐你记下学习的每个新知识点，最好是记在一个抽认卡程序中，[就像这样](http://sivers.org/srs)。
 因为要学习很多东西，所以你必须在几周或几个月后提醒自己学习过哪些东西。
@@ -71,7 +71,7 @@ tags: [javascript, 入门]
 
 学习了纯 JavaScript 冗长的处理问题的方式，你会很喜欢 jQuery 提供的快捷方式。
 
-我真的很喜欢[《深入浅出jQuery》](http://t.cn/zHRROUa)一书，绝对是傻瓜式书籍。
+我真的很喜欢[《深入浅出jQuery》](http://www.amazon.cn/gp/product/B0087AZY9C/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0087AZY9C&linkCode=as2&tag=jsbook-23)一书，绝对是傻瓜式书籍。
 这本书非常精彩地引导你学习 jQuery，边学边应用你学习过的东西。
 
 如果你仍然渴望学习更多关于 JavaScript 的东西，那么深入学习：

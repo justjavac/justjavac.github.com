@@ -12,7 +12,7 @@ tags : [排序, 算法]
 1. 如果 a≤b 并且 b≤c 那么 a≤c（传递性）。
 2. 对于 a 或 b，要不 a≤b，要不 b≤a（完全性）。
 
-这个问题可以用[信息论](http://t.cn/zlkY7gi)来回答。
+这个问题可以用[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=cfjh-23)来回答。
 
 我从 1 到 5 中挑一个数字出来让你来猜，每回合你都可以问我一个问题，我的回答“是”或“不是”（1 或 0），那么你至少需要几个回合才能保证猜出这个数字？
 

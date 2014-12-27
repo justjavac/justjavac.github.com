@@ -46,7 +46,7 @@ C#就象当年的ASP 一样，“忽如一夜春风来，千树万树梨花开�
 总之许多人花了大量的时间把书背得滚瓜烂熟却等于什么也没学。
 
 在学习编程的时候这些学生也是这样，他们确切的记得C++语法的各个细节。
-看完了C++ 教程后看《[Thinking in C++](http://t.cn/zlZcdfg)》（确实是好书），《[Inside C++](http://t.cn/zlZcDr6)》，《C++ reference》，this C++, that C++……，
+看完了C++ 教程后看《[Thinking in C++](http://www.amazon.cn/gp/product/B00119J7N0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00119J7N0&linkCode=as2&tag=cfjh-23)》（确实是好书），《[Inside C++](http://www.amazon.cn/gp/product/B0011A8QKO/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011A8QKO&linkCode=as2&tag=cfjh-23)》，《C++ reference》，this C++, that C++……，
 然后是网上各种各样的关于C++语法的奇闻逸事，然后发现自己又忘了C++的一些语法，最后回头继续恶补…。
 
 有个师弟就跟我说：“C++太难了，学了这里忘了那里，学了继承忘了模板。”
