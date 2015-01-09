@@ -27,9 +27,11 @@ tags : [javascript, asynchronous]
 
 在同步、阻塞的环境下，我们写下如下代码
 
-	str = readFile('...');
-	str += 'ok';
-	writeFile('...');
+```javascript
+str = readFile('...');
+str += 'ok';
+writeFile('...');
+```
 
 似乎理所当然地就认为 1、3 两行耗时操作会阻塞掉程序，于是在开发 GUI 程序的时候，遇到 IO 操作我们通常会开启新的线程来进行 IO，
 然后完成时再通知主线程，这样可以避免GUI失去响应。
@@ -50,7 +52,9 @@ Wind.js 的原名叫 Jscex，全称 JavaScript Computation Expression，即 Java
 
 在命令式编程中，我们写下
 
-	c = a + b;
+```javascript
+c = a + b;
+```
 
 的时候，a+b这个表达式就已经被执行计算，并且把结果赋值给 `c` 了。
 但在函数式语言中则不尽然，由于「延迟计算」的特性，上面的代码并不一定会立即执行，而只有在它「需要被执行」（例如输出）的时候才会真正执行。
@@ -60,38 +64,46 @@ Wind.js 的原名叫 Jscex，全称 JavaScript Computation Expression，即 Java
 
 例如这里我们定义一个异步方法 `printAsync`
 
-	var printAsync = eval(Wind.compile('async', function(n){
-	    console.log(n);
-	}));
+```javascript
+var printAsync = eval(Wind.compile('async', function(n){
+	console.log(n);
+}));
+```
 
 当执行它的时候，并不会直接执行方法，而是会返回一个 `Task` 对象，可以通过
 
-	var task = printAsync(1);
-	task.start(); // 1
+```javascript
+var task = printAsync(1);
+task.start(); // 1
+```
 
 来真正启动一个 `Task`
 
 到这里似乎并没有看出来异步方法和 `Task` 有什么用，那么我们再看看从异步方法里调用别的异步任务的情况
 
-	var fibo = eval(Wind.compile('async', function(){
-	    var a = 1, b = 1;
-	    console.log(a);
-	    $await(Wind.Async.sleep(1000));
-	    console.log(b);
-	    while (true){
-	        $await(Wind.Async.sleep(1000));
-	        var c = a + b;
-	        console.log(c);
-	        a = b;
-	        b = c;
-	    }   
-	}));
+```javascript
+var fibo = eval(Wind.compile('async', function(){
+	var a = 1, b = 1;
+	console.log(a);
+	$await(Wind.Async.sleep(1000));
+	console.log(b);
+	while (true){
+		$await(Wind.Async.sleep(1000));
+		var c = a + b;
+		console.log(c);
+		a = b;
+		b = c;
+	}   
+}));
+```
 
 上文的代码中，在异步方法里使用了 `$await` 来「等待」一个异步任务，这里的异步任务是由 `Wind.Async.sleep` 提供的等待1秒钟的任务。
 
 通过这样的代码实现了每隔 1 秒钟自动打印下一个斐波那契数，想一想如果不使用 Wind.js 的话似乎意味着我们需要 `setInterval` 了，而在 js 里写一个
 
-	while (true){
+```javascript
+while (true){
+```
 
 似乎也算得上是一件匪夷所思的事情了。
 

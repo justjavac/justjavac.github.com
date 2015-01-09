@@ -28,10 +28,12 @@ quine 程序的升级版——动态的 quine。
 * `setInterval` 和 `Date` 用来做动态效果
 * 他自己输出了自己，而且 `Date` 还是动态的：
 
-        s = ( "setInterval(z='" // 外层代码
-              + z.replace(/[\\\']/g,"\\$&") // COOL
-            + "\')" ) // 赋值结束
-            .match(/.{1,37}/g).join("\\\n"); // 组装
+	```javascript
+	s = ( "setInterval(z='" // 外层代码
+		  + z.replace(/[\\\']/g,"\\$&") // COOL
+		+ "\')" ) // 赋值结束
+		.match(/.{1,37}/g).join("\\\n"); // 组装
+	```
 
 * 输出到 `document.body.innerHTML`，并用 `<pre>` 标签包围起来
 * 动态替换字符串的一部分。

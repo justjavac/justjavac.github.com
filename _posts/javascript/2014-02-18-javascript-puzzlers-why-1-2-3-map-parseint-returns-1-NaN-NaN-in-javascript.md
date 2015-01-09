@@ -26,7 +26,9 @@ tags : [javascript, Puzzlers]
 
 ## 语法
 
-    parseInt(string, radix)
+```javascript
+parseInt(string, radix)
+```
 
 <table class="table">
 <tbody>
@@ -77,12 +79,14 @@ tags : [javascript, Puzzlers]
 
 在本例中，我们将使用 `parseInt()` 来解析不同的字符串：
 
-    parseInt("10");         // 返回 10 (默认十进制)
-    parseInt("19",10);      // 返回 19 (十进制: 10+9)
-    parseInt("11",2);       // 返回 3 (二进制: 2+1)
-    parseInt("17",8);       // 返回 15 (八进制: 8+7)
-    parseInt("1f",16);      // 返回 31 (十六进制: 16+15)
-    parseInt("010");        // 未定：返回 10 或 8
+```javascript
+parseInt("10");         // 返回 10 (默认十进制)
+parseInt("19",10);      // 返回 19 (十进制: 10+9)
+parseInt("11",2);       // 返回 3 (二进制: 2+1)
+parseInt("17",8);       // 返回 15 (八进制: 8+7)
+parseInt("1f",16);      // 返回 31 (十六进制: 16+15)
+parseInt("010");        // 未定：返回 10 或 8
+```
 
 ------------
 
@@ -90,7 +94,9 @@ tags : [javascript, Puzzlers]
 
 对数组的每个元素调用定义的回调函数并返回包含结果的数组。
 
-    array1.map(callbackfn[, thisArg])
+```javascript
+array1.map(callbackfn[, thisArg])
+```
 
 <table class="table">
 <tbody>
@@ -131,7 +137,9 @@ tags : [javascript, Puzzlers]
 
 回调函数的语法如下所示：
 
-    function callbackfn(value, index, array1)
+```javascript
+function callbackfn(value, index, array1)
+```
 
 可使用**最多**三个参数来声明回调函数。
 
@@ -193,54 +201,60 @@ tags : [javascript, Puzzlers]
 
 下面的示例阐释了 `map` 方法的用法。
 
-    // 定义回调函数
-    // 计算圆的面积
-    function AreaOfCircle(radius) { 
-        var area = Math.PI * (radius * radius); 
-        return area.toFixed(0); 
-    } 
-     
-    // 定义一个数组，保护三个元素
-    var radii = [10, 20, 30]; 
-     
-    // 计算 radii 的面积. 
-    var areas = radii.map(AreaOfCircle); 
-     
-    document.write(areas); 
-     
-    // 输出: 
-    // 314,1257,2827
+```javascript
+// 定义回调函数
+// 计算圆的面积
+function AreaOfCircle(radius) { 
+	var area = Math.PI * (radius * radius); 
+	return area.toFixed(0); 
+} 
+ 
+// 定义一个数组，保护三个元素
+var radii = [10, 20, 30]; 
+ 
+// 计算 radii 的面积. 
+var areas = radii.map(AreaOfCircle); 
+ 
+document.write(areas); 
+ 
+// 输出: 
+// 314,1257,2827
+```
 
 下面的示例阐释 `thisArg` 参数的用法，该参数指定对其引用 `this` 关键字的对象。
 
-    // 定义一个对象 object，保护 divisor 属性和 remainder 方法
-    // remainder 函数求每个传入的值的个位数。（即除以 10 取余数）
-    var obj = { 
-        divisor: 10, 
-        remainder: function (value) { 
-            return value % this.divisor; 
-        } 
-    } 
-    
-    // 定义一个包含 4 个元素的数组
-    var numbers = [6, 12, 25, 30]; 
-    
-    // 对 numbers 数组的每个元素调用 obj 对象的 remainder 函数。
-    // map 函数的第 2 个参数传入 ogj。 
-    var result = numbers.map(obj.remainder, obj); 
-    document.write(result); 
-     
-    // 输出: 
-    // 6,2,5,0
+```javascript
+// 定义一个对象 object，保护 divisor 属性和 remainder 方法
+// remainder 函数求每个传入的值的个位数。（即除以 10 取余数）
+var obj = { 
+	divisor: 10, 
+	remainder: function (value) { 
+		return value % this.divisor; 
+	} 
+} 
+
+// 定义一个包含 4 个元素的数组
+var numbers = [6, 12, 25, 30]; 
+
+// 对 numbers 数组的每个元素调用 obj 对象的 remainder 函数。
+// map 函数的第 2 个参数传入 ogj。 
+var result = numbers.map(obj.remainder, obj); 
+document.write(result); 
+ 
+// 输出: 
+// 6,2,5,0
+```
 
 在下面的示例中，内置 JavaScript 方法用作回调函数。
 
-    // 对数组中的每个元素调用 Math.sqrt(value) （求平方根）
-    var numbers = [9, 16]; 
-    var result = numbers.map(Math.sqrt); 
-    
-    document.write(result); 
-    // 输出: 3,4
+```javascript
+// 对数组中的每个元素调用 Math.sqrt(value) （求平方根）
+var numbers = [9, 16]; 
+var result = numbers.map(Math.sqrt); 
+
+document.write(result); 
+// 输出: 3,4
+```
 
 `[9, 16].map(Math.sqrt)` 回调函数，输出的结果是 `[3, 4]`。
 但是为什么 `["1", "2", "3"].map(parseInt)` 却返回 `[1,NaN,NaN]`？
@@ -265,44 +279,58 @@ tags : [javascript, Puzzlers]
 
 到底是不是呢？我们重新定义 `parseInt(string, radix)` 函数：
 
-    var parseInt = function(string, radix) {
-        return string + "-" + radix;
-    };
+```javascript
+var parseInt = function(string, radix) {
+	return string + "-" + radix;
+};
 
-    ["1", "2", "3"].map(parseInt);
+["1", "2", "3"].map(parseInt);
+```
 
 输出结果为：
 
-    ["1-0", "2-1", "3-2"]
+```javascript
+["1-0", "2-1", "3-2"]
+```
 
 看见，`map` 函数将数组的值 `value` 传递给了 `parseInt` 的第一个参数，将数组的索引传递给了第二个参数。
 第三个参数呢？我们再加一个参数
 
-    var parseInt = function(string, radix, obj) {
-        return string + "-" + radix + "-" + obj;
-    };
+```javascript
+var parseInt = function(string, radix, obj) {
+	return string + "-" + radix + "-" + obj;
+};
 
-    ["1", "2", "3"].map(parseInt);
+["1", "2", "3"].map(parseInt);
+```
 
 输出结果：
 
-    ["1-0-1,2,3", "2-1-1,2,3", "3-2-1,2,3"]
+```javascript
+["1-0-1,2,3", "2-1-1,2,3", "3-2-1,2,3"]
+```
 
 我们再继续增加参数：
 
-    var parseInt = function(string, radix, obj, other) {
-        return string + "-" + radix + "-" + obj + "-" + other;
-    };
+```javascript
+var parseInt = function(string, radix, obj, other) {
+	return string + "-" + radix + "-" + obj + "-" + other;
+};
 
-    ["1", "2", "3"].map(parseInt);
+["1", "2", "3"].map(parseInt);
+```
 
 输出结果：
 
-    ["1-0-1,2,3-undefined", "2-1-1,2,3-undefined", "3-2-1,2,3-undefined"]
+```javascript
+["1-0-1,2,3-undefined", "2-1-1,2,3-undefined", "3-2-1,2,3-undefined"]
+```
 
 第四个参数为 `undefined`，看见 `map` 确实为 `parseInt` 传递了三个参数。就像作者写道的：
 
-    (element, index, array)
+```javascript
+(element, index, array)
+```
 
 1. 数组的值
 
@@ -312,11 +340,15 @@ tags : [javascript, Puzzlers]
 
 UPDATE 原文勘误：（谢谢 [米粽粽](http://www.html-js.com/card/468) 提醒）
 
-    ["1", "2", "3"].map(parseInt)
+```javascript
+["1", "2", "3"].map(parseInt)
+```
 
 应该对应的是：
 
-    [parseInt("1", 0), parseInt("2", 1), parseInt("3", 2)]
+```javascript
+[parseInt("1", 0), parseInt("2", 1), parseInt("3", 2)]
+```
 
 `parseInt("3", 2)` 的第二个参数是界于 2-36 之间的，之所以返回 `NaN` 是因为 字符串 `"3"` 里面没有合法的二进制数，所以 `NaN`。
 
@@ -332,21 +364,23 @@ UPDATE 原文勘误：（谢谢 [米粽粽](http://www.html-js.com/card/468) 提
 
 简单列举一下：
 
-    parseInt("1", 0);    // 十进制 1
-    parseInt("2", 1);    // 第二个参数不在 2-36 直接
-    parseInt("3", 2);    // 二进制 NaN
-    parseInt("4", 3);    // 三进制
-    parseInt("5", 4);
-    parseInt("6", 5);
-    parseInt("7", 6);
-    parseInt("8", 7);
-    parseInt("9", 8);
-    parseInt("10", 9);   // 九进制 （1*9+0 = 9）
-    parseInt("11", 10);  // 十进制 （1*10+1 = 11）
-    parseInt("12", 11);
-    parseInt("13", 12);
-    parseInt("14", 13);
-    parseInt("15", 14);
-    parseInt("16", 15);
+```javascript
+parseInt("1", 0);    // 十进制 1
+parseInt("2", 1);    // 第二个参数不在 2-36 直接
+parseInt("3", 2);    // 二进制 NaN
+parseInt("4", 3);    // 三进制
+parseInt("5", 4);
+parseInt("6", 5);
+parseInt("7", 6);
+parseInt("8", 7);
+parseInt("9", 8);
+parseInt("10", 9);   // 九进制 （1*9+0 = 9）
+parseInt("11", 10);  // 十进制 （1*10+1 = 11）
+parseInt("12", 11);
+parseInt("13", 12);
+parseInt("14", 13);
+parseInt("15", 14);
+parseInt("16", 15);
+```
 
 （全文完）

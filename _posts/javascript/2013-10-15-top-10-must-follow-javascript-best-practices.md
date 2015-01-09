@@ -32,16 +32,20 @@ Javascript 的很多扩展的特性是的它变得更加的犀利， 同时也�
 
 添加新的属性到对象 prototype 中是导致脚本出错的常见原因。
 
-	yourObject.prototype.anotherFunction = ‘Hello’;
-	yourObject.prototype.anotherMethod = function () { … };
+```javascript
+yourObject.prototype.anotherFunction = ‘Hello’;
+yourObject.prototype.anotherMethod = function () { … };
+```
 
 在上面代码中，所有的变量都会被影响，因为他们都继承于 `yourObject`。这样的使用会导致意想不到的行为。所以建议在使用完后删除类似的修改。
 
-	yourObject.prototype.anotherFunction = ‘Hello’;
-	yourObject.prototype.anotherMethod = function () { … };
-	test.anotherMethod();
-	delete yourObject.prototype.anotherFunction = ‘Hello’;
-	delete yourObject.prototype.anotherMethod = function () { … };
+```javascript
+yourObject.prototype.anotherFunction = ‘Hello’;
+yourObject.prototype.anotherMethod = function () { … };
+test.anotherMethod();
+delete yourObject.prototype.anotherFunction = ‘Hello’;
+delete yourObject.prototype.anotherMethod = function () { … };
+```
 
 ## 3. Debug Javascript 代码 
 
@@ -63,12 +67,16 @@ DOM 是最复杂的 API，会使得代码执行过程变慢。有时候 web 页�
 
 ## 7. 不要用 "SetTimeOut" 和 "Setinterval" 方法来作为 "Eval" 的备选
 
-	setTimeOut( "document.getID('value')", 3000);
+```javascript
+setTimeOut( "document.getID('value')", 3000);
+```
 
 在以上代码中 `document.getID('value')` 在 `setTimeOut` 方法中被作为字符串来处理。
 这类似于 `eval` 方法，在每个代码执行中来执行一个字符串，因此会降低性能，因此，建议在这些方法中传递一个方法。
 
-	setTimeOut(yourFunction, 3000);
+```javascript
+setTimeOut(yourFunction, 3000);
+```
 
 ## 8. [] 比 new Array(); 更好
 
@@ -78,21 +86,27 @@ DOM 是最复杂的 API，会使得代码执行过程变慢。有时候 web 页�
 
 建议：
 
-	var a = ['1A','2B'];
+```javascript
+var a = ['1A','2B'];
+```
 
 避免：
 
-	var a = new Array();
+```javascript
+var a = new Array();
 	a[0] = "1A";
 	a[1] = "2B";
+```
 
 ## 9. 尽量不要多次使用 var
 
 在初始每一个变量的时候，程序员都习惯使用 `var` 关键字。相反，建议你使用逗号来避免多余的关键字，并且减少代码体积。 如下：
 
-	var variableOne = ‘string 1’, 
-	variableTwo = ‘string 2’, 
-	variableThree = ‘string 3’;
+```javascript
+var variableOne = ‘string 1’, 
+variableTwo = ‘string 2’, 
+variableThree = ‘string 3’;
+```
 
 ## 10. 不要忽略分号 ";"
 

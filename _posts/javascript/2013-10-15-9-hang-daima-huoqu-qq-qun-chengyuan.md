@@ -23,15 +23,17 @@ tags : [javascript, qq]
 
 把下面那段代码这贴进去，回车！
 
-	var ids    = document.querySelectorAll(".member_id");
-	var names  = document.querySelectorAll(".member_name");
-	var output = "", length = ids.length;
-	 
-	for(var i=0; i<length; i++){
-	    output += ids[i].innerHTML.slice(1,-1) + ":" + names[i].innerHTML + "\n";
-	}
-	
-	console.log(output);
+```javascript
+var ids    = document.querySelectorAll(".member_id");
+var names  = document.querySelectorAll(".member_name");
+var output = "", length = ids.length;
+ 
+for(var i=0; i<length; i++){
+	output += ids[i].innerHTML.slice(1,-1) + ":" + names[i].innerHTML + "\n";
+}
+
+console.log(output);
+```
 
 如果觉得复制来复制去太麻烦，我做了一个书签。
 

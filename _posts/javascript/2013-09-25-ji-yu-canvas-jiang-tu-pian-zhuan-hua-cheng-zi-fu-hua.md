@@ -17,22 +17,28 @@ HTML5 让这个可能变成了现实，通过 canvas，可以很轻松实现这�
 
 HTML：一个 `canvas` 元素 `#cv`，一个字符画容器 `#txt`。
 
-	<canvas id="cv">fuck ie</canvas>
-	<div id="txt"></div>
+```html
+<canvas id="cv">fuck ie</canvas>
+<div id="txt"></div>
+```
 
 css：由于每一行用 `p` 来填充，所以 `p` 的 `height` 和 `font-size` 大小应该一致都是 `12px`，这样可以避免每行出现空隙。
 
-	* {margin: 0;padding: 0;}
-	body {font-size: 12px; margin: 10px; font-family: simsun; background: #fff;}
-	p { height: 12px;}
-	p.ts { margin: 10px 0 0 0; width: 500px; float: left;}
-	span {width: 12px;}
-	#cv, #txt {float: left;}
-	#cv { margin-right: 5px;}
+```css
+* {margin: 0;padding: 0;}
+body {font-size: 12px; margin: 10px; font-family: simsun; background: #fff;}
+p { height: 12px;}
+p.ts { margin: 10px 0 0 0; width: 500px; float: left;}
+span {width: 12px;}
+#cv, #txt {float: left;}
+#cv { margin-right: 5px;}
+```
 
 javascript：请看注释和下面的解释。
 
+```html
 <script src="https://gist.github.com/justjavac/6696499.js"></script>
+```javascript
 
 **如何取到相应像素点的灰度？**
 

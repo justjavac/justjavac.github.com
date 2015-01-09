@@ -95,13 +95,13 @@ type: translation
 
 默认为资源提供创建和更新的时间戳，例如:
 
-{% highlight json %}
+```json
 {
   ...
   "created_at": "2012-01-01T12:00:00Z",
   "updated_at": "2012-01-01T13:00:00Z",
   ...}
-{% endhighlight %}
+```
 
 这些时间戳可能对一些资源没啥用，如此则可以省去.
 
@@ -143,31 +143,31 @@ type: translation
 使用一个内联的对象来序列化外键引用，例如:
 
 
-{% highlight json %}
+```json
 {
   "name": "service-production",
   "owner": {
     "id": "5d8201b0..."
   },
   ...}
-{% endhighlight %}
+```
 
 
 而不是如下例:
 
 
-{% highlight json %}
+```json
 {
   "name": "service-production",
   "owner_id": "5d8201b0...",
   ...}
-{% endhighlight %}
+```
 
 
 这种方式使得在不必改变响应结构或者引入更多顶级响应域的前提下内联如更多相关资源的信息，例如:
 
 
-{% highlight json %}
+```json
 {
   "name": "service-production",
   "owner": {
@@ -176,7 +176,7 @@ type: translation
     "email": "alice@heroku.com"
   },
   ...}
-{% endhighlight %}
+```
 
 
 ## 支持为方便起见的非id间接引用
@@ -287,7 +287,7 @@ type: translation
 用户第一次查看你的api很可能是在使用curl的命令行里。如果API的响应有良好的打印格式，那在命令行里它们会很容易理解。为了给这些开发者提供方便，良好打印格式的JSON如下：
 
 
-{% highlight json %}
+```json
 {
   "beta": false,
   "email": "alice@heroku.com",
@@ -295,15 +295,15 @@ type: translation
   "last_login": "2012-01-01T12:00:00Z",
   "created_at": "2012-01-01T12:00:00Z",
   "updated_at": "2012-01-01T12:00:00Z"}
-{% endhighlight %}
+```
 
 
 而不是：
 
 
-{% highlight json %}
+```json
 {"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z", "created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
-{% endhighlight %}
+```
 
 
 要确保在JSON结尾有换行，以防止阻塞用户的终端界面。

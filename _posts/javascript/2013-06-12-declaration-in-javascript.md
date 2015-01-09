@@ -12,11 +12,13 @@ tags : [javascript]
 
 之前的面试中遇到过一道面试题
 
-    var a = 10;
-    (function () {
-        console.log(a); 
-        var a = 20;
-    })()
+```javascript
+var a = 10;
+(function () {
+	console.log(a); 
+	var a = 20;
+})()
+```
 
 * 短短 5 行代码 `console.log(a)` 的结果是什么？
 * 如果把 `var a = 20;` 和 `console.log(a)` 语句顺序对调呢？
@@ -26,39 +28,47 @@ tags : [javascript]
 关键在于 javascript 的变量声明有一个 hoisting 机制，变量声明永远都会被提升至作用域的最顶端（注意测试还只是声明，还没有赋值）。
 其实上面的语句相当于：
 
-    var a = 10;
-    (function () {
-        var a; // 在这里对变量hoisting，先声明
-        console.log(a); 
-        a = 20; // 再赋值
-    })()
+```javascript
+var a = 10;
+(function () {
+	var a; // 在这里对变量hoisting，先声明
+	console.log(a); 
+	a = 20; // 再赋值
+})()
+```
 
 再精简一点:
 
-    bla = 2
-    var bla;
-     
-    // 这是分割线，上下代码的效果其实是一样的
-     
-    var bla;
-    bla = 2;
+```javascript
+bla = 2
+var bla;
+ 
+// 这是分割线，上下代码的效果其实是一样的
+ 
+var bla;
+bla = 2;
+```
 
 也就是先使用，再声明（注意是声明，还没有赋值），这样一来，声明和赋值就被分开来了。
 所以最佳实践都推荐最好在函数的顶端把需要使用的变量首先声明一遍。
 
 同理，我们可以理解下面的代码也是会报错的
 
-    f() // 明显这里有错，因为 f 还没有被赋一个函数
-    var f = function () {
-        console.log("Hello");
-    }
+```javascript
+f() // 明显这里有错，因为 f 还没有被赋一个函数
+var f = function () {
+	console.log("Hello");
+}
+```
 
 但有一个问题，如果将上例 f 的函数声明修改一下，还会报错吗
 
-    f() // 可以运行吗？
-    function f() {
-        console.log("Hello");
-    }
+```javascript
+f() // 可以运行吗？
+function f() {
+	console.log("Hello");
+}
+```
 
 这里我其实想强调的是两种函数声明的 `var f = function () {}` 和 `function f() {}` 差别。
 
@@ -72,51 +82,61 @@ tags : [javascript]
 
 而第一个例子，执行的效果是这样的
 
-    var f;
-    f() // 没有定义任何函数，当然无法执行
-    f = function () {
-        console.log("Hello");
-    }
+```javascript
+var f;
+f() // 没有定义任何函数，当然无法执行
+f = function () {
+	console.log("Hello");
+}
+```
 
 这么看来，虽然 javascript 是允许先执行再声明，但**切勿这么做，请遵循先声明再使用的好习惯**。
 
 再看看另一种情况，如果我把之前的函数定义
 
-    var f = function () {};
+```javascript
+var f = function () {};
+```
 
 1. 给右侧的匿名函数增加函数名
 2. 以右侧函数名来执行函数
 3. 能成功吗？
 
-        var f = function ab() {};
-        ab();
+	```javascript
+	var f = function ab() {};
+	ab();
+	```
 
 答案是否定的，因为上面的代码对f函数的定义是以**命名函数表达式(Named Function Expressions)**，而并非真正的函数声明，注意**该函数名只在该函数的作用域内有用**。
 下面这段代码充分说明了它的意义：
 
-    var f = function foo(){
-        return typeof foo;
-    };
-    typeof foo; // "undefined"
-    f(); // "function"
+```javascript
+var f = function foo(){
+	return typeof foo;
+};
+typeof foo; // "undefined"
+f(); // "function"
+```
 
 那么如此声明还有什么意义呢？好吧，就我目前找到的资料而言，这样做的好处就是便于调试。
 
 接下来考虑一些意想不到的边缘，虽然我觉得一个程序员写出下面的代码有点自找苦吃，而且应该是在实战中避免的，但作为考试的题目来说是值得一说的。
 比如对比下面两段代码:
 
-    function value(){
-        return 1;
-    }
-    var value;
-    alert(typeof value);    //"function"
+```javascript
+function value(){
+	return 1;
+}
+var value;
+alert(typeof value);    //"function"
 
 
-    function value(){
-        return 1;
-    }
-    var value = 1;
-    alert(typeof value);    //"number"
+function value(){
+	return 1;
+}
+var value = 1;
+alert(typeof value);    //"number"
+```
 
 第一段代码想说明的是**函数声明会覆盖变量声明**，注意是声明，还没有赋值。
 如代码中，虽然同名变量在函数后再次声明，但是 `typeof` 的结果仍然是 `function`

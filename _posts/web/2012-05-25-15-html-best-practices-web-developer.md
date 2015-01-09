@@ -19,12 +19,14 @@ HTML已经走过了近20的发展历程。
 当开发一个Web页面时，要考虑第一件事就是区分页面重点。
 将这些内容用DIV标签包含起来，页面的代码会呈现出整洁、缩进良好的风格。
 
-    <div id="header"></div>
-    <div id="body-container">
-            <div id="content"> <!-- Content -- > </div> 
-            <div id="right-side-bar"> <!-- Right Side Bar Content Area -- ></div>
-    </div> 
-    <div id="footer"></div>
+```html
+<div id="header"></div>
+<div id="body-container">
+		<div id="content"> <!-- Content -- > </div> 
+		<div id="right-side-bar"> <!-- Right Side Bar Content Area -- ></div>
+</div> 
+<div id="footer"></div>
+```
 
 ## 2、将HTML标签和CSS样式表分割开来 
 
@@ -36,7 +38,9 @@ HTML已经走过了近20的发展历程。
 开发者应该养成习惯，单独建立文件，用以存放CSS样式表。
 而这也将方便其他开发者在修改你的代码时，能迅速完成工作。
 
-    <p style="color: #CCC; font-size:16px; font-family: arial">An example to illustrate inline style in html</p>
+```html
+<p style="color: #CCC; font-size:16px; font-family: arial">An example to illustrate inline style in html</p>
+```
 
 ## 3、优化CSS代码 
 
@@ -69,9 +73,11 @@ HTML已经走过了近20的发展历程。
 对于博客，我（指本文作者）推荐使用`<h1>`标签来突出博客标题。
 因为，博客标题几乎是页面中最重要的部分。
 
-    <h1>This is the topmost heading</h1>
-    <h2>This is a sub-heading underneath the topmost heading.</h2>
-    <h3>This is a sub-heading underneath the h2 heading.</h3>
+```html
+<h1>This is the topmost heading</h1>
+<h2>This is a sub-heading underneath the topmost heading.</h2>
+<h3>This is a sub-heading underneath the h2 heading.</h3>
+```
 
 ## 6、在合适的地方使用合适的HTML标签 
 
@@ -79,8 +85,10 @@ HTML标签是构造规范内容结构的关键。
 例如，`<em>` 标签用来强调重点内容。`<p>` 标签适用于突出文章段落。
 如果想要在段落间加空行，就不要使用 `<br />` 标签。
 
-    <em>emphasized text</em>
-    <strong>strongly emphasized text</strong>
+```html
+<em>emphasized text</em>
+<strong>strongly emphasized text</strong>
+```
 
 对于一组相关的元素，建议使用`<ul>`、`<ol>`或 `<dl>`标签。
 但是，不要错误的使用`<blockquote>`标签，因为它原本是用来定义块应用的。 
@@ -110,11 +118,13 @@ HTML标签是构造规范内容结构的关键。
 
 下面这段代码可读性就非常差：
 
-    <DIV>
-    <IMG SRC="images/demo_image.jpg" alt="demo image"/>
-    <A HREF="#" TITLE="click here">Click Here</A>
-    <P>some sample text</P>
-    </DIV>
+```html
+<DIV>
+<IMG SRC="images/demo_image.jpg" alt="demo image"/>
+<A HREF="#" TITLE="click here">Click Here</A>
+<P>some sample text</P>
+</DIV>
+```
 
 ## 11、为图片标签添加alt属性 
 
@@ -122,23 +132,27 @@ HTML标签是构造规范内容结构的关键。
 因为搜索引擎通常无法直接抓取图片文件。
 但是，如果开发者在alt属性里添加了图片的描述内容，将会方便搜索引擎的抓取。
 
-    <!-- has an alt attribute, which will validate, but alt value is meaningless -- >
-    <img id="logo" src="images/bgr_logo.png" alt="brg_logo.png" />
+```html
+<!-- has an alt attribute, which will validate, but alt value is meaningless -- >
+<img id="logo" src="images/bgr_logo.png" alt="brg_logo.png" />
 
-    <!-- The correct way -- > 
-    <img id="logo" src="images/bgr_logo.png" alt="Anson Cheung - Web Development" />
+<!-- The correct way -- > 
+<img id="logo" src="images/bgr_logo.png" alt="Anson Cheung - Web Development" />
+```
 
 ## 12、在表格里使用 label 和 fieldset
 
 为了提高代码质量，并让用户容易理解表格内容，我们应该用 `<label>` 和 `<fieldset>` 标签创建表格元素。
 
-    <fieldset>
-        <legend>Personal Particular</legend>
-        <label for="name">Name</label><input type="text" id="name" name="name" />
-        <label for="email">E-mail</label><input type="text" id="email" name="email" />
-        <label for="subject">Subject</label><input type="text" id="subject" name="subject" />
-        <label for="message" >Message Body</label><textarea rows="10" cols="20" id="message" name="message" ></textarea>
-    </fieldset>
+```html
+<fieldset>
+	<legend>Personal Particular</legend>
+	<label for="name">Name</label><input type="text" id="name" name="name" />
+	<label for="email">E-mail</label><input type="text" id="email" name="email" />
+	<label for="subject">Subject</label><input type="text" id="subject" name="subject" />
+	<label for="message" >Message Body</label><textarea rows="10" cols="20" id="message" name="message" ></textarea>
+</fieldset>
+```
 
 ## 13、将浏览器兼容代码标明信息并相互分开 
 
@@ -148,17 +162,19 @@ HTML标签是构造规范内容结构的关键。
 
 下面就是一个很好的示例：
 
-    <!--[if IE 7]>
-    <link rel="stylesheet" href="css/ie-7.css" media="all">
-    <![endif]-->
+```html
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/ie-7.css" media="all">
+<![endif]-->
 
-    <!--[if IE 6]>
-    <link rel="stylesheet" href="css/ie-6.css" media="all">
-    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
-    <script type="text/javascript">
-            DD_belatedPNG.fix('#logo');
-    </script>
-    <![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="css/ie-6.css" media="all">
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+		DD_belatedPNG.fix('#logo');
+</script>
+<![endif]-->
+```
 
 ## 14、避免过度注释 
 

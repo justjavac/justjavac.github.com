@@ -44,11 +44,13 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 举个例子：删除一字符串中指定的字符。
 
-    var str="www.baidu.com/?page";
-    str=str.replace('?page',"");
-    alert(str);
-    str=str.substring(0,str.indexOf("/"));
-    alert(str);
+```javascript
+var str="www.baidu.com/?page";
+str=str.replace('?page',"");
+alert(str);
+str=str.substring(0,str.indexOf("/"));
+alert(str);
+```
 
 首先不要苛责代码的对错严谨，毕竟每个程序员都有这样的一个过程；
 其次，这两段代码在这个实例里没有什么大过错，可能会有瑕疵，
@@ -56,53 +58,55 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 再举个例子：
 
-    // 计算系统当前是星期几
-    var str = "";
-    var week = new Date().getDay();
-    if (week == 0) {
-        str = "今天是星期日";
-    } else if (week == 1) {
-        str = "今天是星期一";
-    } else if (week == 2) {
-        str = "今天是星期二";
-    } else if (week == 3) {
-        str = "今天是星期三";
-    } else if (week == 4) {
-        str = "今天是星期四";
-    } else if (week == 5) {
-        str = "今天是星期五";
-    } else if (week == 6) {
-        str = "今天是星期六";
-    }
+```javascript
+// 计算系统当前是星期几
+var str = "";
+var week = new Date().getDay();
+if (week == 0) {
+	str = "今天是星期日";
+} else if (week == 1) {
+	str = "今天是星期一";
+} else if (week == 2) {
+	str = "今天是星期二";
+} else if (week == 3) {
+	str = "今天是星期三";
+} else if (week == 4) {
+	str = "今天是星期四";
+} else if (week == 5) {
+	str = "今天是星期五";
+} else if (week == 6) {
+	str = "今天是星期六";
+}
 
-    // 或者更好一些
-    var str1 = "今天是星期";
-    var week = new Date().getDay();
-    switch (week) {
-        case 0 :
-            str1 += "日";
-            break;
-        case 1 :
-            str1 += "一";
-            break;
-        case 2 :
-            str1 += "二";
-            break;
-        case 3 :
-            str1 += "三";
-            break;
-        case 4 :
-            str1 += "四";
-            break;
-        case 5 :
-            str1 += "五";
-            break;
-        case 6 :
-            str1 += "六";
-            break;
-    }
-    alert(str);
-    alert(str1);
+// 或者更好一些
+var str1 = "今天是星期";
+var week = new Date().getDay();
+switch (week) {
+	case 0 :
+		str1 += "日";
+		break;
+	case 1 :
+		str1 += "一";
+		break;
+	case 2 :
+		str1 += "二";
+		break;
+	case 3 :
+		str1 += "三";
+		break;
+	case 4 :
+		str1 += "四";
+		break;
+	case 5 :
+		str1 += "五";
+		break;
+	case 6 :
+		str1 += "六";
+		break;
+}
+alert(str);
+alert(str1);
+```
 
 ”入门”阶段是每个程序员的必经之路，只要“入门”，你就上路了。
 所谓“师傅领进门，修行靠个人”，有了这个“入门”的基础，自己就可以摸索着前进了。
@@ -124,18 +128,22 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 同样以上面的那段“字符串剪裁”代码为例：
 
-    var str="www.baidu.com/?page";
-    str=str.replace(/?page/,"");
-    alert(str);
+```javascript
+var str="www.baidu.com/?page";
+str=str.replace(/?page/,"");
+alert(str);
+```
 
 仅仅解决问题对于“登堂”阶段来说已经不是问题，这个级别所给出方案不能是漏洞百出。
 
 以上面这段代码为例：replace方法的第一个参数虽然可以支持字符串，但最佳的类型是正则表达式；
 
-    var a = new Array("日", "一", "二", "三", "四", "五", "六");
-    var week = new Date().getDay();
-    var str = "今天是星期"+ a[week];
-    alert(str);
+```javascript
+var a = new Array("日", "一", "二", "三", "四", "五", "六");
+var week = new Date().getDay();
+var str = "今天是星期"+ a[week];
+alert(str);
+```
 
 对比“入门级”的代码，不管是从代码量、代码效率、代码优美性、代码思路来说，
 “登堂”级的这个日期处理代码都要优秀很多。
@@ -162,14 +170,16 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 还以上面的那个例子为例，你能说出1、2、3之间的差别，以及适用于那种环境吗？
 
-    var str="www.baidu.com/?page";
-    // 1、字符串剪裁
-    str.substring(0, str.indexOf("?page"));
-    // 2、正则表达式
-    str.replace(/?page/, "");
-    // 3、字符串分拆、合并
-    str.split("?page").join("");
-    
+```javascript
+var str="www.baidu.com/?page";
+// 1、字符串剪裁
+str.substring(0, str.indexOf("?page"));
+// 2、正则表达式
+str.replace(/?page/, "");
+// 3、字符串分拆、合并
+str.split("?page").join("");
+```
+
 能够解决问题的方法会有很多，但是对于程序员来说应该选择最优秀的。
 上面这段代码从代码量来说“正则表达式”最优秀；
 从代码执行效率来说： “字符串剪裁”法最高（Chrome中“正则表达式”效率最高），split法最次；
@@ -180,8 +190,10 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 再以“今天是星期几”为例，“登堂”级的代码你敢说是最优秀的代码了吗？
 
-    // 计算系统当前是星期几
-    var str = "今天是星期" + "日一二三四五六".charAt(new Date().getDay());
+```javascript
+// 计算系统当前是星期几
+var str = "今天是星期" + "日一二三四五六".charAt(new Date().getDay());
+```
 
 对比“登堂”级的示例代码，上面这段代码给你什么感受？程序员追求的就是完美。
 “入室”级别追求的就是每一招每一式的完美无缺。
@@ -237,29 +249,31 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 以一招胜万招。
 
-    var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
+```javascript
+var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
 
-    // 我将这个字符串里所可能想到的各种情况都列举出来
-    var a = [
-        "http://www.xxx.com/VMpn=?pn=0"// pn= 可能出现在 ? 前
-        , "http://www.xxx.com/VMpn=?pn="// URL里允许pn 值为空
-        , "http://www.xxx.com/VMpn=?pn=0&a=1"// URL 里可有多个字段
-        , "http://www.xxx.com/VMpn=?a=1&pn=0"// 可能排在最后
-        , "http://www.xxx.com/VMpn=?a=1&pn=0&pn=1"// 可能有多个 pn 字段
-        , "http://www.xxx.com/VMpn=?a=1&pn=0&b=2"// 可能在中间
-        , "http://www.xxx.com/VMpn=?a=1&pn=0&pn=1&b=1" // 可能在中间成组
-        , "http://www.xxx.com/VMpn=?a=1&pn=0&b=1&pn=1" // 可能零星分布
-    ];
-    
-    /* 需求的不言之秘：
-        ? 若出现在字符串最尾则要去之
-        ? & 两个符号不可重叠
-    */
-    var reg = /((\?)(pn=[^&]*&)+(?!pn=))|(((\?|&)pn=[^&]*)+$)|(&pn=[^&]*)/g;
+// 我将这个字符串里所可能想到的各种情况都列举出来
+var a = [
+	"http://www.xxx.com/VMpn=?pn=0"// pn= 可能出现在 ? 前
+	, "http://www.xxx.com/VMpn=?pn="// URL里允许pn 值为空
+	, "http://www.xxx.com/VMpn=?pn=0&a=1"// URL 里可有多个字段
+	, "http://www.xxx.com/VMpn=?a=1&pn=0"// 可能排在最后
+	, "http://www.xxx.com/VMpn=?a=1&pn=0&pn=1"// 可能有多个 pn 字段
+	, "http://www.xxx.com/VMpn=?a=1&pn=0&b=2"// 可能在中间
+	, "http://www.xxx.com/VMpn=?a=1&pn=0&pn=1&b=1" // 可能在中间成组
+	, "http://www.xxx.com/VMpn=?a=1&pn=0&b=1&pn=1" // 可能零星分布
+];
 
-    for (var i = 0; i < a.length; i++) {
-        alert(a[i] + "\n" + a[i].replace(reg, "$2"));
-    }
+/* 需求的不言之秘：
+	? 若出现在字符串最尾则要去之
+	? & 两个符号不可重叠
+*/
+var reg = /((\?)(pn=[^&]*&)+(?!pn=))|(((\?|&)pn=[^&]*)+$)|(&pn=[^&]*)/g;
+
+for (var i = 0; i < a.length; i++) {
+	alert(a[i] + "\n" + a[i].replace(reg, "$2"));
+}
+```
 
 这个阶段已经不再追求一招一式，对你来说不是使用什么创新绝招解决需求，
 而是给出成熟稳重的方案，从根上解决问题。
@@ -296,37 +310,39 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 
 还是以那个“字符串剪裁”的老例子：
 
-    /**
-    * 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰
-    * @author:meizz
-    * @version: 2010/12/16
-    * @param {String} str 被正则表达式字符串保护编码的字符串
-    * @return {String} 被保护处理过后的字符串
-    */
-    function escapeReg(str) {
-        return str.replace(new RegExp("([.*+?^=!:\x24{}()|[\\]\/\\\\])", "g"), "\\\x241");
-    }
+```javascript
+/**
+* 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰
+* @author:meizz
+* @version: 2010/12/16
+* @param {String} str 被正则表达式字符串保护编码的字符串
+* @return {String} 被保护处理过后的字符串
+*/
+function escapeReg(str) {
+	return str.replace(new RegExp("([.*+?^=!:\x24{}()|[\\]\/\\\\])", "g"), "\\\x241");
+}
 
-    /**
-    * 删除URL字符串中指定的 Query
-    * @author:meizz
-    * @version:2010/12/16
-    * @param {String} url URL字符串
-    * @param {String} key 被删除的Query名
-    * @return {String} 被删除指定 query 后的URL字符串
-    */
+/**
+* 删除URL字符串中指定的 Query
+* @author:meizz
+* @version:2010/12/16
+* @param {String} url URL字符串
+* @param {String} key 被删除的Query名
+* @return {String} 被删除指定 query 后的URL字符串
+*/
 
-    function delUrlQuery(url, key) {
-        key = escapeReg(key);
-        var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
-            "=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
-        return url.replace(reg, "\x241")
-    }
+function delUrlQuery(url, key) {
+	key = escapeReg(key);
+	var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
+		"=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
+	return url.replace(reg, "\x241")
+}
 
-    // 应用实例
-    var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
-    delUrlQuery(str, "pn");
-    
+// 应用实例
+var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
+delUrlQuery(str, "pn");
+```
+
 这段代码相对于层次4《入微》有什么区别吗？
 
 从代码实现上来说没有太大的区别，但是从思路上来说却有着本质的区别：
@@ -360,67 +376,71 @@ WEB前端研发工程师，在国内是一个朝阳职业，自07-08年正式有
 这个级别的人完全有能力写出不差于Bindows/jQuery/Ext/YUI/Dojo的同等级别规模的前端开发框架。
 **应用成熟的开发框架指导、解决问题**。
 
-    // 库文件 /mz/string/escapeReg.js
-    /**
-    * 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰
-    * @author:meizz
-    * @version: 2010/12/16
-    * @param {String} str 被正则表达式字符串保护编码的字符串
-    * @return {String} 被保护处理过后的字符串
-    */
-    mz.string.escapeReg = function (str) {
-        return str.replace(new RegExp("([.*+?^=!:\x24{}()|[\\]\/\\\\])", "g"), "\\\x241");
-    }
+```javascript
+// 库文件 /mz/string/escapeReg.js
+/**
+* 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰
+* @author:meizz
+* @version: 2010/12/16
+* @param {String} str 被正则表达式字符串保护编码的字符串
+* @return {String} 被保护处理过后的字符串
+*/
+mz.string.escapeReg = function (str) {
+	return str.replace(new RegExp("([.*+?^=!:\x24{}()|[\\]\/\\\\])", "g"), "\\\x241");
+}
 
-    // 库文件 /mz/url/delQuery.js
-    /// include mz.string.escapeReg;
-    /**
-    * 删除URL字符串中指定的 Query
-    * @author:meizz
-    * @version:2010/12/16
-    * @param {String} url URL字符串
-    * @param {String} key 被删除的Query名
-    * @return {String} 被删除指定 query 后的URL字符串
-    */
-    mz.url.delQuery = function (url, key) {
-        key = mz.string.escapeReg(key);
-        var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
-            "=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
-        return url.replace(reg, "\x241")
-    }
+// 库文件 /mz/url/delQuery.js
+/// include mz.string.escapeReg;
+/**
+* 删除URL字符串中指定的 Query
+* @author:meizz
+* @version:2010/12/16
+* @param {String} url URL字符串
+* @param {String} key 被删除的Query名
+* @return {String} 被删除指定 query 后的URL字符串
+*/
+mz.url.delQuery = function (url, key) {
+	key = mz.string.escapeReg(key);
+	var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
+		"=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
+	return url.replace(reg, "\x241")
+}
 
-    // 应用实例
-    /// include mz.url.delQuery;
-    var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
-    mz.url.delQuery(str, "pn");
-    
+// 应用实例
+/// include mz.url.delQuery;
+var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
+mz.url.delQuery(str, "pn");
+```
+
 自成体系，有基础，也有理论高度。
 知道为什么这样设计，也知道什么样的设计最好。
 
 比如这个例子可以有这样的封装：
 
-    // 库文件 /mz/url/delQuery.js
-    /// include mz.string.escapeReg;
-    /**
-    * 删除URL字符串中指定的 Query
-    * @author:meizz
-    * @version:2010/12/16
-    * @param {String} url URL字符串
-    * @param {String} key 被删除的Query名
-    * @return {String} 被删除指定 query 后的URL字符串
-    */
-    String.prototype.delQuery = function ( key) {
-    key = mz.string.escapeReg(key);
-    var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
-            "=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
-        return this.replace(reg, "\x241")
-    }
+```javascript
+// 库文件 /mz/url/delQuery.js
+/// include mz.string.escapeReg;
+/**
+* 删除URL字符串中指定的 Query
+* @author:meizz
+* @version:2010/12/16
+* @param {String} url URL字符串
+* @param {String} key 被删除的Query名
+* @return {String} 被删除指定 query 后的URL字符串
+*/
+String.prototype.delQuery = function ( key) {
+key = mz.string.escapeReg(key);
+var reg = new RegExp("((\\?)("+ key +"=[^&]*&)+(?!"+ key +
+		"=))|(((\\?|&)"+ key +"=[^&]*)+$)|(&"+ key +"=[^&]*)", "g");
+	return this.replace(reg, "\x241")
+}
 
-    // 应用实例
-    /// include mz.url.delQuery;
-    var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
-    str.delQuery("pn");
-    
+// 应用实例
+/// include mz.url.delQuery;
+var str = "http://www.xxx.com/?pn=0"; // 删除指定字符 pn=0
+str.delQuery("pn");
+```
+
 而为什么不采用下面的那种封装呢？
 经过了《知微》和《化蝶》你就懂了。
 

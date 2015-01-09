@@ -50,13 +50,17 @@ type: porter
 
 1. 如果页面 charset 是 utf-8, 完美的默认字体方案是：
 
-        font-family: arial, sans-serif;
+	```css
+	font-family: arial, sans-serif;
+	```
 
   无论省略 lang 还是设置为 zh-CN, 在各种环境下都满足预期。
 
 2. 如果页面 charset 是 gbk, 推荐默认字体方案为：
 
-        font-family: arial;
+	```css
+	font-family: arial;
+	```
 
   Chrome OS 下未测试，根据陈成博客上的反馈，
   好像会因为没有 sans-serif 而导致中文字体很难看。
