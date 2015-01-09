@@ -20,7 +20,7 @@ tags : [代码之谜, 浮点数]
 我以前 **只是盲目接受知识，根本就没有自己思考过**，
 那次对话，比我大学四年学到的知识都多”。
 
-我看他简历上写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=cfjh-23)》才谈了很多关于二分法以及编码的话题，
+我看他简历上写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》才谈了很多关于二分法以及编码的话题，
 整个过程大概3个小时——这是我面试时间最长的一次。
 
 因为时间久远，我把一些我能回忆起来的关于浮点数的内容整理在这篇博客中。
@@ -63,7 +63,7 @@ tags : [代码之谜, 浮点数]
 
 『他思索了片刻』“哦。我明白了， **2bit 可以表示 4 个数，不管是整数、小数或者字符**，就算是用 2bit 表示苹果，我们也只能表示 4 个，如果想要表示更多，就得用更多的 bit 位。”
 
-虽然他在简历中写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=cfjh-23)》，他对 **N bit可以表示的信息量是 2^N** 
+虽然他在简历中写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》，他对 **N bit可以表示的信息量是 2^N** 
 肯定没有完全理解，或者只是被动接受了这个定理。
 
 过了一会儿他又继续说：“按照这个逻辑，8bit 只能表示 256 个浮点数了，这也太少了。
