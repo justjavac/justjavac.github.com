@@ -25,48 +25,54 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 大多数 mixin 的功能看起来像这样：
 
-    function mixin(receiver, supplier) {
-        for (var property in supplier) {
-            if (supplier.hasOwnProperty(property)) {
-                receiver[property] = supplier[property];
-            }
-        }
-    }
+```javascript
+function mixin(receiver, supplier) {
+	for (var property in supplier) {
+		if (supplier.hasOwnProperty(property)) {
+			receiver[property] = supplier[property];
+		}
+	}
+}
+```
 
 在此 `mixin()` 函数中，一个 `for` 循环遍历属性提供者（supplier）并赋值给对象接收者（receiver）。
 几乎所有的 JavaScript 库有某种形式的类似功能，让您可以编写这样的代码：
 
-    mixin(object, {
-        name: "Nicholas",
+```javascript
+mixin(object, {
+	name: "Nicholas",
 
-        sayName: function() {
-            console.log(this.name);
-        }
-    });
+	sayName: function() {
+		console.log(this.name);
+	}
+});
 
-    object.sayName();       // outputs "Nicholas"
+object.sayName();       // outputs "Nicholas"
+```
 
 在此示例中，`object` 对象接收了属性 `name` 和方法 `sayName()`。
 这在 ECMAScript 3 中运行良好，但在 ECMAScript 5 上却没那么乐观。
 
 这是我遇到的问题：
 
-    (function() {
-        // to be filled in later
-        var name;
+```javascript
+(function() {
+	// to be filled in later
+	var name;
 
-        mixin(object, {
-            get name() {
-                return name;
-            }
-        });
+	mixin(object, {
+		get name() {
+			return name;
+		}
+	});
 
-        // let's just say this is later
-        name = "Nicholas";
-    }());
+	// let's just say this is later
+	name = "Nicholas";
+}());
 
-    console.log(object.name);       // undefined
-    
+console.log(object.name);       // undefined
+```
+
 这个例子看起来有点做作，但它准确的描述这个问题。
 进行 mixin 的属性使用了 ECMAScript 5 的新特性：一个 getter 属性存取器。
 `getter` 引用一个未初始化的局部变量 `name`，因此这个属性未定义 `undefined`。
@@ -83,7 +89,9 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 在这个例子中，mixin() 的过程其实是这样的：
 
-    receiver.name = supplier.name;
+```javascript
+receiver.name = supplier.name;
+```
 
 属性 `receiver.name` 被创建，并且被赋值为 `supplier.name` 的值。
 当然，`supplier.name` 有一个 getter 方法用来返回本地变量 name 的值。
@@ -94,11 +102,13 @@ tags : [ECMAScript 5, JavaScript, mixin]
 要解决这个问题，你需要使用属性描述符(译注：descriptor)将属性从一个对象 mixin 到另一个对象。
 一个纯粹的 ECMAScript 5 版本的 `mixin()` 应该这样写：
 
-    function mixin(receiver, supplier) {
-        Object.keys(supplier).forEach(function(value, property) {
-            Object.defineProperty(receiver, property, Object.getOwnPropertyDescriptor(supplier, property));
-        });
-    }
+```javascript
+function mixin(receiver, supplier) {
+	Object.keys(supplier).forEach(function(value, property) {
+		Object.defineProperty(receiver, property, Object.getOwnPropertyDescriptor(supplier, property));
+	});
+}
+```
 
 在这个新版本函数中，`Object.keys()` 用来获取一个数组，包含了 `supplier` 对象的所有枚举属性。
 然后，`foreach()` 方法用来遍历这些属性。
@@ -111,19 +121,21 @@ getter 方法被正确地从 `supplier` 传递到了 `receiver`。
 
 当然，如果你仍然需要支持旧的浏览器，那么你就需要一个函数，回落的 ECMAScript 3：
 
-    function mixin(receiver, supplier) {
-        if (Object.keys) {
-            Object.keys(supplier).forEach(function(value, property) {
-                Object.defineProperty(receiver, property, Object.getOwnPropertyDescriptor(supplier, property));
-            });
-        } else {
-            for (var property in supplier) {
-                if (supplier.hasOwnProperty(property)) {
-                    receiver[property] = supplier[property];
-                }
-            }
-        }
-    }
+```javascript
+function mixin(receiver, supplier) {
+	if (Object.keys) {
+		Object.keys(supplier).forEach(function(value, property) {
+			Object.defineProperty(receiver, property, Object.getOwnPropertyDescriptor(supplier, property));
+		});
+	} else {
+		for (var property in supplier) {
+			if (supplier.hasOwnProperty(property)) {
+				receiver[property] = supplier[property];
+			}
+		}
+	}
+}
+```
 
 如果您需要使用一个 `mixin()` 函数，一定要仔细检查它在 ECMAScript 5 可以正常工作，特别是 getter 和 setter 方法。
 否则，你会发现自己陷入像我一样的错误。

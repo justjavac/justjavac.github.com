@@ -103,57 +103,77 @@ typeof在两种情况下会返回 "undefined":
 
 解决办法：不要使用 `typeof` 来做这项任务，用下面这样的函数来代替：
 
-    function isDefined(x) {
-        return x !== null && x !== undefined;
-    }
+```javascript
+function isDefined(x) {
+	return x !== null && x !== undefined;
+}
+```
 
 另一个可能性是引入一个 “默认值运算符”，在 myValue 未定义的情况下，下面的表达式会返回 defaultValue：
 
-    myValue ?? defaultValue
+```javascript
+myValue ?? defaultValue
+```
 
 上面的表达式等价于：
  
-    (myValue !== undefined && myValue !== null) ? myValue : defaultValue
+```javascript
+(myValue !== undefined && myValue !== null) ? myValue : defaultValue
+```
 
 又或者：
 
-    myValue ??= defaultValue
+```javascript
+myValue ??= defaultValue
+```
 
 其实是下面这条语句的简化：
 
-    myValue = myValue ?? defaultValue
+```javascript
+myValue = myValue ?? defaultValue
+```
 
 当你访问一个嵌套的属性时，比如 bar，你或许会需要这个运算符的帮助：
 
-    obj.foo.bar
+```javascript
+obj.foo.bar
+```
 
 如果 `obj` 或者 `obj.foo` 是未定义的，上面的表达式会抛出异常。
 一个运算符 .?? 可以让上面的表达式在遍历一层一层的属性时，返回第一个遇到的值为 `undefined` 或 `null` 的属性：
 
-    obj.??foo.??bar
+```javascript
+obj.??foo.??bar
+```
 
 上面的表达式等价于：
 
-    (obj === undefined || obj === null) ? obj
-        : (obj.foo === undefined || obj.foo === null) ? obj.foo
-            : obj.foo.bar
-        
+```javascript
+(obj === undefined || obj === null) ? obj
+	: (obj.foo === undefined || obj.foo === null) ? obj.foo
+		: obj.foo.bar
+```
+  
 ## 区分对象值和原始值
 
 下面的函数用来检测 x 是否是一个对象值：
 
-    function isObject(x) {
-        return (typeof x === "function"
-                || (typeof x === "object" && x !== null));
-    }
+```javascript
+function isObject(x) {
+	return (typeof x === "function"
+			|| (typeof x === "object" && x !== null));
+}
+```
 
 问题：上面的检测比较复杂，是因为 `typeof` 把函数和对象看成是不同的类型，而且 `typeof null` 返回 "object".
 
 解决办法：下面的方法也经常用于检测对象值：
 
-    function isObject2(x) {
-        return x === Object(x);
-    }
+```javascript
+function isObject2(x) {
+	return x === Object(x);
+}
+```
 
 警告：你也许认为这里可以使用 `instanceof Object` 来检测，但是 `instanceof` 是通过使用使用一个对象的原型来判断实例关系的，那么没有原型的对象怎么办呢：
 
@@ -195,22 +215,24 @@ obj 确实是一个对象，但它不是任何值的实例:
 
 解决办法：下面的函数可以修复这个问题(只针对这个用例)。
 
-    function getPrimitiveTypeName(x) {
-        var typeName = typeof x;
-        switch(typeName) {
-            case "undefined":
-            case "boolean":
-            case "number":
-            case "string":
-                return typeName;
-            case "object":
-                if (x === null) {
-                    return "null";
-                }
-            default: // 前面的判断都没通过
-                throw new TypeError("参数不是一个原始值: "+x);
-        }
-    }
+```javascript
+function getPrimitiveTypeName(x) {
+	var typeName = typeof x;
+	switch(typeName) {
+		case "undefined":
+		case "boolean":
+		case "number":
+		case "string":
+			return typeName;
+		case "object":
+			if (x === null) {
+				return "null";
+			}
+		default: // 前面的判断都没通过
+			throw new TypeError("参数不是一个原始值: "+x);
+	}
+}
+```
 
 更好的解决办法：实现一个函数 `getTypeName()`，除了可以返回原始值的的类型，还可以返回对象值的内部 [[Class]] 属性。
 这里讲了如何实现这个函数(译者注：jQuery 中的 `$.type` 就是这样的实现)

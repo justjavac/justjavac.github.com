@@ -13,15 +13,21 @@ tags : [JavaScript]
 
 我想将一个数组追加到另一个数组的后面，于是我在 firebug 编写如下代码：
 
-    [1,2] + [3,4]
+```javascript
+[1,2] + [3,4]
+```
 
 但是，出乎意料，它却输出了：
 
-    "1,23,4"
-   
+```javascript
+"1,23,4"
+```
+
 而没有输出我期望的：
 
-    [1,2,3,4]
+```javascript
+[1,2,3,4]
+```
 
 这是怎么回事呢？为什么 `[1,2] + [3,4]` **不等于** `[1,2,3,4]`？
 
@@ -39,8 +45,10 @@ JavaScript 的 `+` 运算符有两个目的：
 
 如果想连接两个数组，可以使用数组的 `concat` 方法：
 
-    [1, 2].concat([3, 4]) // [1, 2, 3, 4]
- 
+```javascript
+[1, 2].concat([3, 4]) // [1, 2, 3, 4]
+ ```
+
 ### javascript 中的 + 运算符概述
 
 下面简单介绍一下 `+` 运算符，有兴趣的话可以看看我以前写的 [代码之谜（三）- 运算符](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-operator.html)。
@@ -100,9 +108,11 @@ JavaScript 具有 6 种内置 [数据类型](https://developer.mozilla.org/en/Ja
 
 例如：
 
-    var o = { 
-        valueOf : function () { return 4; } 
-    };
+```javascript
+var o = { 
+	valueOf : function () { return 4; } 
+};
+```
 
 计算 `o + 2` 将得到 6, 是一个数字 number；计算 `o + '2'` 得到 '42', 是一个字符串 string。
 

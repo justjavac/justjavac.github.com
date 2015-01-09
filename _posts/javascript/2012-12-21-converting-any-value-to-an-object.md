@@ -21,7 +21,9 @@ tags : [javascript, 对象]
 
 让我们从一个小测验开始： 
 
-    ({}).valueOf.call(myvar)
+```javascript
+({}).valueOf.call(myvar)
+```
 
 这段代码的作用是什么？
 

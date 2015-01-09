@@ -40,7 +40,9 @@ tags : [javascript, ECMAScript]
 
 如果要在全局范围内使用严格模式，只需要在代码的第一行加上下面的代码：
 
-    "use strict";
+```javascript
+"use strict";
+```
 
 这样在一个js文件，或者script标签内的所有代码都需要遵循严格模式的代码要求
 
@@ -48,10 +50,12 @@ tags : [javascript, ECMAScript]
 
 如果要在某个函数中使用**严格模式**需要在函数的第一行加上 `"use strict"`;，如下面的代码
 
-    function foo(){
-        "use strict";
-        //……
-    }
+```javascript
+function foo(){
+	"use strict";
+	//……
+}
+```
 
 ### 2.3 使用严格模式注意的情况
 
@@ -60,9 +64,11 @@ tags : [javascript, ECMAScript]
 另外在函数的严格模式中函数体和函数声明部分就需要遵循严格模式，而不是只有函数体内的代码才遵循严格模式，
 例如在严格模式中不允许重新定义 `eval`，说以下面的代码是会抛出异常的
 
-    function eval(){
-        "use strict";
-        //……
-    }
+```javascript
+function eval(){
+	"use strict";
+	//……
+}
+```
 
 今天写到这，下一篇介绍严格模式下面的[语法限制]()。 

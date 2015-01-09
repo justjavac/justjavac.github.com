@@ -28,8 +28,10 @@ JavaScript 可算是世界上最流行的编程语言，它曾被 Web 开发设�
 
 看看这段代码，它返回的是 object。
 
-    console.log(typeof null); // object    
-  
+```javascript
+console.log(typeof null); // object    
+```
+
 这实在令人费解，假如 null 表示空值，它怎么可以是对象？
 简单说，它是 JavaScript 最初版本的错误，这个错误甚至被微软的 JScript 直接借用。
 
@@ -37,8 +39,10 @@ JavaScript 可算是世界上最流行的编程语言，它曾被 Web 开发设�
 
 NaN，表示一个非数字的值，然而问题是，NaN不等于任何东西，甚至不等于它自己。
 
-    console.log(NaN === NaN); // false    
-  
+```javascript
+console.log(NaN === NaN); // false    
+```
+
 这显然不对，事实上，如果要判断一个值确实是 NaN，你需要用 `isNaN()` 函数。
 
 ## 4. 全局变量
@@ -55,8 +59,10 @@ NaN，表示一个非数字的值，然而问题是，NaN不等于任何东西�
 
 比如，以下是用 JavaScript 探测 Safari 时得到的结果：
 
-    console.log(navigator.userAgent);     
-    // Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10    
+```javascript
+console.log(navigator.userAgent);     
+// Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10    
+```
 
 是否注意到其中的第一个单词 Mozilla/5.0，为什么 Safari 会被探测为 Mozilla，
 尽管 Safari 后来已经纠正这一问题，但仍然不能解释为什么它们要这样误导开发者。
@@ -66,52 +72,61 @@ NaN，表示一个非数字的值，然而问题是，NaN不等于任何东西�
  
 User Agent 是一段用来标识当前浏览器身份的字符串，世界上第一个浏览器 Mosaic， 曾这样标志自己：
 
-    Mosaic/0.9     // browser name / version number   
-  
+```javascript
+Mosaic/0.9     // browser name / version number   
+```
+
 这很合理，因此当 Netscape 出来的时候，它保留了 Mosaic 这个传统，
 还在后面添加了一个加密方式部分。
  
-    Mozilla/2.02 [en] (Win95; I)     // browser name / version / encryption   
- 
+```javascript
+Mozilla/2.02 [en] (Win95; I)     // browser name / version / encryption   
+```
+
 到目前为止，一切安好，直到 IE3 发布，当 IE3 发布的时候，Netscape 正如日中天，
 那时，很多服务器和程序已经部署了客户端探测机制，以便认出 Netscape，
 虽然现在看来，这很值得争议，但当时并没什么。
 
 当 IE 初次推出它们的 User Agent 标志的时候，是这个样子：
 
-    MSIE/3.0 (Win95; U)    
- 
+```javascript
+MSIE/3.0 (Win95; U)    
+```
+
 这让 IE 很被动，因为 Netscape 已经能被很多服务器识别，
 因此，开发者们干脆希望 IE 被误认为 Mozilla，
 然后，再单独加一个 IE 的标签。
 
-    Mozilla/2.0 (compatible; MSIE 3.0; Windows 95)    
-  
+```javascript
+Mozilla/2.0 (compatible; MSIE 3.0; Windows 95)    
+```
+
 如今，几乎所有浏览器都步 IE 后尘，将自己标识为 Mozilla，这大概是一种连锁反应。
 
 ## 6. 不一致的函数范围
 
 参看以下代码： 
  
-    function that will call a function with the name equal to parameter fn.     
-    function foo(fn) {     
-        if (typeof fn === "function") {     
-            fn();     
-        }     
-    }     
-       
-    // Create an object with a property and a method.     
-    var bar = {     
-         barbar : "Hello, World!",     
-         method  : function() {     
-             alert(this.barbar);     
-         }     
-     };     
-         
-     bar.method(); // Alerts Hello, World!     
-     foo(bar.method); // If we call the foo function add pass the "bar.method" method, it somehow alerts "undefined."     
-     foo(function() { bar.method(); }); // alerts Hello, World, after    
-
+```javascript
+function that will call a function with the name equal to parameter fn.     
+function foo(fn) {     
+	if (typeof fn === "function") {     
+		fn();     
+	}     
+}     
+   
+// Create an object with a property and a method.     
+var bar = {     
+	 barbar : "Hello, World!",     
+	 method  : function() {     
+		 alert(this.barbar);     
+	 }     
+ };     
+	 
+ bar.method(); // Alerts Hello, World!     
+ foo(bar.method); // If we call the foo function add pass the "bar.method" method, it somehow alerts "undefined."     
+ foo(function() { bar.method(); }); // alerts Hello, World, after    
+```
  
 foo(bar.method) 返回结果不同原因是，method 函数是被当作 windows 对象，
 而不是 bar 下的对象调用的。
@@ -144,8 +159,10 @@ JavaScript 没有整数，需要来回转换，因此，转换操作花的时间
 
 JavaScript 在小数计算访问存在一些小问题。
 
-    console.log(.2 + .4); // 0.6000000000000001    
- 
+```javascript
+console.log(.2 + .4); // 0.6000000000000001    
+```
+
 为什么会这样？
 
 简单说，因为 JavaScript 使用 IEEE 标准进行二进制浮点运算，
@@ -155,89 +172,107 @@ JavaScript 在小数计算访问存在一些小问题。
 
 看看以下两段代码：
 
-    // braces on the right     
-    return {     
-     foo : bar     
-    };     
-        
-    // braces on their own line     
-    return    
-    {     
-      foo : bar     
-     };    
+```javascript
+// braces on the right     
+return {     
+ foo : bar     
+};     
+	
+// braces on their own line     
+return    
+{     
+  foo : bar     
+};
+```
   
 它们应该是一样的，只是 { 位置不同而已，是吧。
 
 然而我们再看下面的代码：
 
-    var foo = function() {     
-          return {     
-            a : 'b'    
-        };     
-        
-    }();     
-        
-    alert(foo.a); // b     
- 
+```javascript
+var foo = function() {     
+	  return {     
+		a : 'b'    
+	};     
+	
+}();     
+	
+alert(foo.a); // b     
+```
+
 如果我们把其中的
  
-    return  {     
-        a : 'b'    
-    };    
-   
+```javascript
+return  {     
+	a : 'b'    
+};    
+```javascript
+
 换成
  
-    return    
-    {     
-        a : 'b'    
-    };     
- 
+```javascript
+return    
+{     
+	a : 'b'    
+};     
+```
+
 就会引发错误，这是因为 JavaScript 有一个功能，
 会纠正它认为错误的代码书写，它会自作聪明地在 return 这个词后面插入一个 ";" ，
 错误因此而生。
  
-    return; // JS incorrectly adds this semicolon.     
-    {     
-        a : 'b'; // It'll add a semicolon here as well, because it doesn't realize that this is an object.     
-    };    
+```javascript
+return; // JS incorrectly adds this semicolon.     
+{     
+	a : 'b'; // It'll add a semicolon here as well, because it doesn't realize that this is an object.     
+};    
+```
 
 ## 附：
 1. 
 
-        parseInt('06') -> 6   
-        parseInt('07') -> 7   
-        parseInt('08') -> 0   
-        parseInt('09') -> 0   
-        parseInt('10') -> 10  
+	```javascript
+	parseInt('06') -> 6   
+	parseInt('07') -> 7   
+	parseInt('08') -> 0   
+	parseInt('09') -> 0   
+	parseInt('10') -> 10  
+	```
 
 这是很多语言都会有的问题，就是0开始的数字都是八进制。
 
 2. 
 
-        ''        ==   '0'           //false   
-        0         ==   ''            //true   
-        0         ==   '0'           //true   
-        false     ==   'false'       //false   
-        false     ==   '0'           //true   
-        false     ==   undefined     //false   
-        false     ==   null          //false   
-        null      ==   undefined     //true   
-        " \t\r\n" ==   0             //true  
+	```javascript
+	''        ==   '0'           //false   
+	0         ==   ''            //true   
+	0         ==   '0'           //true   
+	false     ==   'false'       //false   
+	false     ==   '0'           //true   
+	false     ==   undefined     //false   
+	false     ==   null          //false   
+	null      ==   undefined     //true   
+	" \t\r\n" ==   0             //true  
+	```
 
 3. 
-        2 == [2]   
-          
-        // Even stranger   
-        2 == [[[2]]]   
-          
-        // And down-right nutty   
-        var a = { "abc" : 1 };   
-        a[[[["abc"]]]] === a["abc"]; // this is also true  
 
- 归根结底，原因还是一样——javascript是若类型语言。
+	```javascript
+	2 == [2]   
+	  
+	// Even stranger   
+	2 == [[[2]]]   
+	  
+	// And down-right nutty   
+	var a = { "abc" : 1 };   
+	a[[[["abc"]]]] === a["abc"]; // this is also true  
+	```
+
+归根结底，原因还是一样——javascript是若类型语言。
  
 4. 
 
+	```javascript
     var a = {};   
     a.b === undefined; // true because property b is not set   
     undefined = 42;   
@@ -245,12 +280,15 @@ JavaScript 在小数计算访问存在一些小问题。
 
     var a = {};   
     typeof a.b == "undefined"; // always true  
+	```
 
 在javascript中，你可以改变undefined的值。
 
 5. 最不可思议，但又合乎道理的。
 
-        alert(111111111111111111111)     // 输出111111111111111110000  
+	```javascript
+	alert(111111111111111111111)     // 输出111111111111111110000  
+	```
 
 其实这不能怪javascript，只能怪IEEE。
 
@@ -260,8 +298,10 @@ JavaScript 在小数计算访问存在一些小问题。
  
 6. 
 
-        typeof null // object   
-        null === Object // false  
-        
-        1. 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1  
+	```javascript
+	typeof null // object   
+	null === Object // false  
+
+	1. 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1  
+	```
 

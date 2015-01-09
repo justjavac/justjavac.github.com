@@ -12,9 +12,11 @@ tags : [javascript]
 事实上它们就是完全一样，除了一个代码里说的是“Spaghetti(意大利面条)”，
 另一个代码里说的是“Chocolate Moose(巧克力慕丝)”。
 
-    // 一个小例子：
-    alert("I'd like some Spaghetti!");
-    alert("I'd like some Chocolate Moose!");
+```javascript
+// 一个小例子：
+alert("I'd like some Spaghetti!");
+alert("I'd like some Chocolate Moose!");
+```
 
 这个例子恰好是用Javascript写的，但即使是你不懂Javascript，你也应该能看懂我说的。
 
@@ -22,12 +24,14 @@ tags : [javascript]
 
 所以你决定写一个函数：
 
-    function SwedishChef( food ) {
-        alert("I'd like some " + food + "!");
-    }
+```javascript
+function SwedishChef( food ) {
+	alert("I'd like some " + food + "!");
+}
 
-    SwedishChef("Spaghetti");
-    SwedishChef("Chocolate Moose");
+SwedishChef("Spaghetti");
+SwedishChef("Chocolate Moose");
+```
 
 没错，这个例子很简单，但你可以想出一些更有实际价值的例子。
 这样做是更好一些，有很多理由，这些理由估计你都听说过一万遍了。
@@ -37,25 +41,29 @@ tags : [javascript]
 而一块是不停的调用一个叫PutInPot的函数。
 除此之外，这两块代码完全一样。
  
-    alert("get the lobster");
-    PutInPot("lobster");
-    PutInPot("water");
+```javascript
+alert("get the lobster");
+PutInPot("lobster");
+PutInPot("water");
 
-    alert("get the chicken");
-    BoomBoom("chicken");
-    BoomBoom("coconut");
+alert("get the chicken");
+BoomBoom("chicken");
+BoomBoom("coconut");
+```
 
 现在，你需要一个途径，把一个参数传递到一个函数里，而这个参数本身是个函数。
 这是一个很重要的功能，它是一个好的方法，能让你发现函数中存在的重复的代码，减少这样的重复。
 
-    function Cook( i1, i2, f ) {
-        alert("get the " + i1);
-        f(i1);
-        f(i2);
-    }
+```javascript
+function Cook( i1, i2, f ) {
+	alert("get the " + i1);
+	f(i1);
+	f(i2);
+}
 
-    Cook( "lobster", "water", PutInPot );
-    Cook( "chicken", "coconut", BoomBoom );
+Cook( "lobster", "water", PutInPot );
+Cook( "chicken", "coconut", BoomBoom );
+```
 
 看见了没！
 我们把一个函数当做了参数。
@@ -65,80 +73,92 @@ tags : [javascript]
 且慢… 如果你还没有写出PutInPot 或 BoomBoom 函数呢。
 如果你能把他们写成内联函数，而不是要在其它地方先声明，这样是不是更好？
 
-    Cook( "lobster",
-          "water",
-          function(x) { alert("pot " + x); }  );
-    Cook( "chicken",
-          "coconut",
-          function(x) { alert("boom " + x); } );
+```javascript
+Cook( "lobster",
+	  "water",
+	  function(x) { alert("pot " + x); }  );
+Cook( "chicken",
+	  "coconut",
+	  function(x) { alert("boom " + x); } );
+```
 
 老天，这太方便了。
 注意到了没有，我即时创建了一个方法，甚至都不用麻烦给它起名，只需掂着它的耳朵把它丢进函数里。
 
 当你开始思考把匿名函数当作参数时，你也许会注意到有一种代码到处都是，就是，遍历数组里的所有元素进行操作。
 
-    var a = [1,2,3];
+```javascript
+var a = [1,2,3];
 
-    for (i=0; i<a.length; i++) {
-        a[i] = a[i] * 2;
-    }
+for (i=0; i<a.length; i++) {
+	a[i] = a[i] * 2;
+}
 
-    for (i=0; i<a.length; i++) {
-        alert(a[i]);
-    }
+for (i=0; i<a.length; i++) {
+	alert(a[i]);
+}
+```
 
 对数组里的每个元素进行操作是一种很常见的动作，你可以写出一个函数，让它为你做这些：
 
-    function map(fn, a) {
-        for (i = 0; i < a.length; i++) {
-            a[i] = fn(a[i]);
-        }
-    }
+```javascript
+function map(fn, a) {
+	for (i = 0; i < a.length; i++) {
+		a[i] = fn(a[i]);
+	}
+}
+```
 
 现在，你可以把上面的代码重写成这样：
 
-    map( function(x){return x*2;}, a );
-    map( alert, a );
+```javascript
+map( function(x){return x*2;}, a );
+map( alert, a );
+```
 
 另一个常见的跟数组相关的操作是，通过某种方式把数组里的所有值组合到一起。
 
-    function sum(a) {
-        var s = 0;
-        for (i = 0; i < a.length; i++) {
-            s += a[i];
-        }
-        return s;
-    }
+```javascript
+function sum(a) {
+	var s = 0;
+	for (i = 0; i < a.length; i++) {
+		s += a[i];
+	}
+	return s;
+}
 
-    function join(a) {
-        var s = "";
-        for (i = 0; i < a.length; i++) {
-            s += a[i];
-        }
-        return s;
-    }
+function join(a) {
+	var s = "";
+	for (i = 0; i < a.length; i++) {
+		s += a[i];
+	}
+	return s;
+}
 
-    alert(sum([1,2,3]));
-    alert(join(["a","b","c"]));
+alert(sum([1,2,3]));
+alert(join(["a","b","c"]));
+```
 
 sum 和 join 看起来非常的相似，你也许会想把它们的通用之处提取出来做成一个能把数组里的元素合并成一个值的通用函数：
 
-    function reduce(fn, a, init) {
-        var s = init;
-        for (i = 0; i < a.length; i++)
-            s = fn( s, a[i] );
-        return s;
-    }
+```javascript
+function reduce(fn, a, init) {
+	var s = init;
+	for (i = 0; i < a.length; i++)
+		s = fn( s, a[i] );
+	return s;
+}
 
-    function sum(a) {
-        return reduce( function(a, b){ return a + b; },
-                       a, 0 );
-    }
+function sum(a) {
+	return reduce( function(a, b){ return a + b; },
+				   a, 0 );
+}
 
-    function join(a) {
-        return reduce( function(a, b){ return a + b; },
-                       a, "" );
-    }
+function join(a) {
+	return reduce( function(a, b){ return a + b; },
+				   a, "" );
+}
+```
 
 很多老式的语言根本没有方法做出这种事情。
 另外一些语言允许你做这些，但不容易(例如，C语言里有函数指针，但你必须进行声明，并要在什么地方定义它)。

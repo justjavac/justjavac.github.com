@@ -251,11 +251,15 @@ javascript 的两种值的定义：
 
 `instanceof` 可以检测一个值是否是某个构造函数的实例：
 
-    value instanceof Constructor
+```javascript
+value instanceof Constructor
+```
 
 如果上面的表达式返回 `true`，则表示 `value` 是 `Constructor` 的一个实例。它等价于：
 
-    Constructor.prototype.isPrototypeOf(value)
+```javascript
+Constructor.prototype.isPrototypeOf(value)
+```
 
 大多数对象是 `Object` 的实例，因为原型链的末端（prototype chain）是 `Object.prototype`。 
 原始值不是任何对象的实例:

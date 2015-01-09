@@ -181,84 +181,90 @@ js要承担更多的任务，这时如果维持现状不变，那js就会变得�
 
 <p><strong>模块基类(这里使用了John Resig的simple javascript inheritance)</strong></p>
 
-<pre><code>var Module = Class.extend({
-        init: function(obj) {
-                this.name = obj.name;
-                this.tpl = obj.tpl ? $(obj.tpl).text() : $('#'+obj.name+'-tpl').text();
-                this.$el = obj.el ? $(obj.el) : $('#'+obj.name);
-                this.data = {};
-        },
-        getTplData: function(data) {
-                return this.data.tplData;
-        },
-        renderTpl: function(data) {
-                this.data.tplData = data;
-                //使用了Mustache模板引擎
-                var html = Mustache.to_html(this.tpl, data);
-                this.$el.html(html);
-        }});
-</code></pre>
+```javascript
+var Module = Class.extend({
+	init: function(obj) {
+			this.name = obj.name;
+			this.tpl = obj.tpl ? $(obj.tpl).text() : $('#'+obj.name+'-tpl').text();
+			this.$el = obj.el ? $(obj.el) : $('#'+obj.name);
+			this.data = {};
+	},
+	getTplData: function(data) {
+			return this.data.tplData;
+	},
+	renderTpl: function(data) {
+			this.data.tplData = data;
+			//使用了Mustache模板引擎
+			var html = Mustache.to_html(this.tpl, data);
+			this.$el.html(html);
+	}
+});
+```
 
 <p><strong>列表模块</strong></p>
 
-<pre><code>var List = Module.extend({
-        // Module 提供方法供Mediator调用
-        hl: function($item, lock) {
-                var $lis = this.$el.find('li');
-                $lis.each(function(){
-                        $(this).removeClass('hl');
-                        if (lock) {
-                                $(this).data('locked', false);
-                        }
-                        if (!lock &amp;&amp; $(this).data('locked')) {
-                                $(this).addClass('hl');
-                        }
-                });
-                if (lock)
-                        $item.data('locked', true);
-                $item.addClass('hl');
-        },
-        unhl: function($item) {
-                $item.removeClass('hl');
-        }});
-</code></pre>
+```javascript
+var List = Module.extend({
+	// Module 提供方法供Mediator调用
+	hl: function($item, lock) {
+			var $lis = this.$el.find('li');
+			$lis.each(function(){
+					$(this).removeClass('hl');
+					if (lock) {
+							$(this).data('locked', false);
+					}
+					if (!lock &amp;&amp; $(this).data('locked')) {
+							$(this).addClass('hl');
+					}
+			});
+			if (lock)
+					$item.data('locked', true);
+			$item.addClass('hl');
+	},
+	unhl: function($item) {
+			$item.removeClass('hl');
+	}
+});
+```
 
 <p>前面说了模块就是准备好方法，让Mediator调用。</p>
 
 <p><strong>列表Mediator</strong></p>
 
-<pre><code>var ListMediator = Mediator.extend({
-        init: function(){
-                var self = this;
-                // 初始化Module
-                this.module =new List({
-                        "name": "list"
-                });
-                // 绑定事件
-                self.module.$el.delegate('li', 'click', function(e){
-                        e.preventDefault();
-                        // 调用Module方法
-                        self.module.hl($(this), true);
-                        var index = self.module.$el.find('li').index($(this));
-                        // 发布消息，所有监听该事件的方法将被触发
-                        // 参数为object，方便以后添加键值对
-                        $.publish(self.module.name+':click', {
-                                "content": self.module.getTplData().list[index].content
-                        });
-                }).delegate('li', 'mouseover', function(e){
-                        self.module.hl($(this));
-                }).delegate('li', 'mouseout', function(e){
-                        self.module.unhl($(this));
-                });
-                // 获取源数据，使用了$.proxy，创建特定的context
-                $.getJSON('data.json', $.proxy(function(data){
-                        // 调用Module的方法
-                        this.module.renderTpl(data);
-                        // 发布数据已载入消息
-                        $.publish(self.module.name+':loaded', data);
-                }, this));
-        }});
-</code></pre>
+```javascript
+var ListMediator = Mediator.extend({
+	init: function(){
+			var self = this;
+			// 初始化Module
+			this.module =new List({
+					"name": "list"
+			});
+			// 绑定事件
+			self.module.$el.delegate('li', 'click', function(e){
+					e.preventDefault();
+					// 调用Module方法
+					self.module.hl($(this), true);
+					var index = self.module.$el.find('li').index($(this));
+					// 发布消息，所有监听该事件的方法将被触发
+					// 参数为object，方便以后添加键值对
+					$.publish(self.module.name+':click', {
+							"content": self.module.getTplData().list[index].content
+					});
+			}).delegate('li', 'mouseover', function(e){
+					self.module.hl($(this));
+			}).delegate('li', 'mouseout', function(e){
+					self.module.unhl($(this));
+			});
+			// 获取源数据，使用了$.proxy，创建特定的context
+			$.getJSON('data.json', $.proxy(function(data){
+					// 调用Module的方法
+					this.module.renderTpl(data);
+					// 发布数据已载入消息
+					$.publish(self.module.name+':loaded', data);
+			}, this));
+	}
+});
+```
 
 <p>可以把模块想像成Model，Mediator想像成Controller，这样就实现了高内聚，低耦合。
 每一个单元(模块+Mediator)都可以单独使用，也可以被移除，而不影响现有架构。</p>

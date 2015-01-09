@@ -63,7 +63,9 @@ tags : [javascript, 对象]
 
 JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
 
-    ToPrimitive(input，PreferredType?)
+```javascript
+ToPrimitive(input，PreferredType?)
+```
 
 可选参数 `PreferredType` 可以是 `Number` 或者 `String`。
 它只代表了一个转换的偏好，转换结果不一定必须是这个参数所指的类型（汗），但转换结果一定是一个原始值。
@@ -166,16 +168,18 @@ JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
 
 下面的对象可以让你看到引擎内部的转换过程。
 
-    var obj = {
-        valueOf: function () {
-            console.log("valueOf");
-            return {}; // not a primitive
-        }，
-        toString: function () {
-            console.log("toString");
-            return {}; // not a primitive
-        }
-    }
+```javascript
+var obj = {
+	valueOf: function () {
+		console.log("valueOf");
+		return {}; // not a primitive
+	}，
+	toString: function () {
+		console.log("toString");
+		return {}; // not a primitive
+	}
+}
+```
 
 `Number` 作为一个函数被调用(而不是作为构造函数调用)时，会在引擎内部调用 `ToNumber()` 操作:
 
@@ -188,14 +192,18 @@ JavaScript 引擎内部的抽象操作 `ToPrimitive()` 有着这样的签名:
 
 有下面这样的一个加法操作。
 
-    value1 + value2
+```javascript
+value1 + value2
+```
 
 在计算这个表达式时，内部的操作步骤是这样的 (§11.6.1):
 
 1. 将两个操作数转换为原始值 (以下是数学表示法的伪代码，不是可以运行的 JavaScript 代码):
 
-        prim1 := ToPrimitive(value1)
-        prim2 := ToPrimitive(value2)
+	```javascript
+	prim1 := ToPrimitive(value1)
+	prim2 := ToPrimitive(value2)
+	```
 
     `PreferredType` 被省略，因此 `Date` 类型的值采用 `String`，其他类型的值采用 `Number`。
 

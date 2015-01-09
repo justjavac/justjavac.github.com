@@ -9,10 +9,12 @@ tags : [javascript, 赋值]
 
 ## 一、引子
 
-    var a = {n:1};  
-    a.x = a = {n:2};  
-    alert(a.x); // --> undefined  
- 
+```javascript
+var a = {n:1};  
+a.x = a = {n:2};  
+alert(a.x); // --> undefined  
+```
+
 看 jQuery 源码 时发现的这种写法。
 以上第二句 `a.x = a = {n:2}` 是一个连续赋值表达式。
 这个连续赋值表达式在引擎内部究竟发生了什么？是如何解释的？
@@ -24,9 +26,11 @@ tags : [javascript, 赋值]
 
 步骤如下
  
-    a.x = {n:2};
-    a = {n:2};
- 
+```javascript
+a.x = {n:2};
+a = {n:2};
+```
+
 这种解释得出的结果与实际运行结果一致，貌似是对的。
 
 > 注意「猜想1」中 a.x 被赋值过。
@@ -36,9 +40,11 @@ tags : [javascript, 赋值]
 
 步骤如下：
  
-    a = {n:2};
-    a.x 未被赋值{n:2}
- 
+```javascript
+a = {n:2};
+a.x 未被赋值{n:2}
+```
+
 等价于 `a.x = (a = {n:2})`，即执行了第一步，这样也能解释 `a.x` 为 `undefined` 了。
 
 > 注意「猜想2」中 a.x 压根没被赋值过。
@@ -50,30 +56,38 @@ tags : [javascript, 赋值]
 
 如下，加一个变量 b，指向 a。
 
-    var a = {n:1};  
-    var b = a; // 持有a，以回查  
-    a.x = a = {n:2};  
-    alert(a.x);// --> undefined  
-    alert(b.x);// --> [object Object]  
- 
+```javascript
+var a = {n:1};  
+var b = a; // 持有a，以回查  
+a.x = a = {n:2};  
+alert(a.x);// --> undefined  
+alert(b.x);// --> [object Object]  
+```
+
 发现 `a.x` 仍然是 `undefined`，神奇的是 `b.x` 并未被赋值过(比如：`b.x={n:2})`，却变成了 `[object Object]`。
 b 是指向 `a({n:1})` 的，只有 `a.x = {n:2}` 执行了才说明b是有x属性的。
 实际执行过程：从右到左，a 先被赋值为 `{n:2}`，随后 `a.x` 被赋值 `{n:2}`。
  
-    a = {n:2};
-    a.x = {n:2};
+```javascript
+a = {n:2};
+a.x = {n:2};
+```
 
 等价于
 
-    a.x = (a = {n:2});
- 
+```javascript
+a.x = (a = {n:2});
+```
+
 与猜想2的区别在于 `a.x` 被赋值了，猜想2中并未赋值。
 最重要的区别，第一步 `a = {n:2}` 的 a 指向的是新的对象 `{n:2}`， 第二步 `a.x = {n:2}` 中的 a 是 `{a:1}`。
 
 即在这个连等语句
 
-    a.x = a = {n:2};  
- 
+```javascript
+a.x = a = {n:2};  
+```
+
 a.x 中的a指向的是 `{n:1}`，a 指向的是 `{n:2}`。
 
                   a.x  =  a  = {n:2}
@@ -88,9 +102,11 @@ a.x 中的a指向的是 `{n:1}`，a 指向的是 `{n:2}`。
 
 最初我在理解这个连等赋值语句时
 
-    var a = {n:1};  
-    a.x = a = {n:2};  
- 
+```javascript
+var a = {n:1};  
+a.x = a = {n:2};  
+```
+
 认为引擎会限制 `a.x` 的重写（a 被重写后），实际却不是这样的。
 指向的对象已经不同了。引擎也没有限制 `a.x={n:2}` 的重写。
 
@@ -101,9 +117,11 @@ fun 执行后，这里的 变量 b 溢出到 fun 外成为了全局变量。
 
 想到了吗？
 
-    function fun(){  
-        var a = b = 5;  
-    }  
-    fun();  
-    alert(typeof a); // --> undefined  
-    alert(typeof b); // --> number  
+```javascript
+function fun(){  
+	var a = b = 5;  
+}  
+fun();  
+alert(typeof a); // --> undefined  
+alert(typeof b); // --> number  
+```

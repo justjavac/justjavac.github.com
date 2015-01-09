@@ -27,17 +27,21 @@ tags : [javascript, arguments]
 尽管有它的局限性，但 `arguments` 仍不失为一个非常有用的对象。
 例如，你可以创建参数个数不定的函数，如大牛 Dean Edwards 写的 base2 这个库中的 `format` 方法，秀一下其灵活性：
 
-    function format(string) {
-        var args = arguments;
-        var pattern = new RegExp("%([1-" + arguments.length + "])", "g");
-        return String(string).replace(pattern, function(match, index) {
-            return args[index];
-        });
-    };
+```javascript
+function format(string) {
+	var args = arguments;
+	var pattern = new RegExp("%([1-" + arguments.length + "])", "g");
+	return String(string).replace(pattern, function(match, index) {
+		return args[index];
+	});
+};
+```
 
 你提供一个模板字符串，用 %1 到 %9 作为占位符加入其中，然后提供最多 9 个其他的参数用以插入，如：
 
-    format("And the %1 want to know whose %2 you %3", "papers", "shirt", "wear");
+```javascript
+format("And the %1 want to know whose %2 you %3", "papers", "shirt", "wear");
+```
 
 上面这个句代码会返回字符串“And the papers want to know whose shirt you wear”
 
@@ -49,7 +53,9 @@ javascript 允许我们给一个函数传递任意多个参数，而不管函数
 
 尽管 `arguments` 不是一个真正的数组，但使用标准的数组方法 `slice`，我们可以很容易的将它转化一个真正的数组，像这样：
 
-    var args = Array.prototype.slice.call(arguments);
+```javascript
+var args = Array.prototype.slice.call(arguments);
+```
 
 `args` 变量现在是一个包含了 `arguments` 对象所有值的数组了。
 
@@ -60,13 +66,15 @@ javascript 允许我们给一个函数传递任意多个参数，而不管函数
 这个函数允许你代入一个函数引用和任意数量的参数给它，它会返回一个调用你指定的函数的匿名函数，
 并在函数被调用时，一并代入预置参数和其它新参数。
 
-    function makeFunc() {
-        var args = Array.prototype.slice.call(arguments);
-        var func = args.shift();
-        return function() {
-            return func.apply(null, args.concat(Array.prototype.slice.call(arguments)));
-        };
-    }
+```javascript
+function makeFunc() {
+	var args = Array.prototype.slice.call(arguments);
+	var func = args.shift();
+	return function() {
+		return func.apply(null, args.concat(Array.prototype.slice.call(arguments)));
+	};
+}
+```
 
 代入 `makeFunc` 函数的第一个参数是你想调用的函数的引用(是的，在这个简单的例子中未做错误验证。)
 并且它已从 `arguments` 数组中移除。
@@ -81,18 +89,24 @@ javascript 允许我们给一个函数传递任意多个参数，而不管函数
 为了让你每次调用 `format` 函数时，不用不厌其烦的引用该模板文字，
 你可以使用 `makeFunc` 这个实用的函数来返回一个会为你自动调用 `format` 函数并填充模板参数的函数：
 
-    var majorTom = makeFunc(format, "This is Major Tom to ground control. I'm %1.");
+```javascript
+var majorTom = makeFunc(format, "This is Major Tom to ground control. I'm %1.");
+```
 
 你可以像这样重复调用 `majorTom` 函数：
 
-    majorTom("stepping through the door");
-    majorTom("floating in a most peculiar way");
+```javascript
+majorTom("stepping through the door");
+majorTom("floating in a most peculiar way");
+```
 
 每次调用 `majorTom` 函数时，它会调用 `format` 函数并代入第一个参数和既定的模板文字。
 上面的函数将返回：
 
-    "This is Major Tom to ground control. I'm stepping through the door."
-    "This is Major Tom to ground control. I'm floating in a most peculiar way."
+```javascript
+"This is Major Tom to ground control. I'm stepping through the door."
+"This is Major Tom to ground control. I'm floating in a most peculiar way."
+```
 
 ## 4、创建自引用的函数
 
@@ -107,30 +121,36 @@ javascript 允许我们给一个函数传递任意多个参数，而不管函数
 
 下面是 `repeat` 函数的定义：
 
-    function repeat(fn, times, delay) {
-        return function() {
-            if(times-- > 0) {
-                fn.apply(null, arguments);
-                var args = Array.prototype.slice.call(arguments);
-                var self = arguments.callee;
-                setTimeout(function(){self.apply(null,args)}, delay);
-            }
-        };
-    }
+```javascript
+function repeat(fn, times, delay) {
+	return function() {
+		if(times-- > 0) {
+			fn.apply(null, arguments);
+			var args = Array.prototype.slice.call(arguments);
+			var self = arguments.callee;
+			setTimeout(function(){self.apply(null,args)}, delay);
+		}
+	};
+}
+```
 
 `repeat` 函数通过 `arguments.callee` 获得其函数内部的匿名函数的引用，定义为变量 `self`。
 这样，通过使用 `setTimeout` 方法，该匿名函数可在一段延时后再次调用自身。
 
 这里有一个简单得不能再简单的函数，它代入一个字符串并弹出一个包含该字符串的警告框：
 
-    function comms(s) {
-        alert(s);
-    }
+```javascript
+function comms(s) {
+	alert(s);
+}
+```
 
 我想创建上面这个函数的特别版本，它重复 3 次，每次间隔 2 秒。使用 `repeat` 函数，我可以这么做：
 
-    var somethingWrong = repeat(comms, 3, 2000);
-    somethingWrong("Can you hear me, major tom?");
+```javascript
+var somethingWrong = repeat(comms, 3, 2000);
+somethingWrong("Can you hear me, major tom?");
+```
 
 `somethingWrong` 函数的运行结果是：每隔 2 秒弹出警告窗 3 次。
 

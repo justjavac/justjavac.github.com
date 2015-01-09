@@ -63,7 +63,9 @@ MIME 类型是由服务器而非 scripttag 来决定的。
 
 不要把读者的时间浪费在阅读类似于:
 
-        i = 0; // 让i等于0
+```javascript
+i = 0; // 让i等于0
+```
 
 使用单行注释。
 块注释用于注释正式文档和无用代码。
@@ -80,9 +82,11 @@ javascript 并不强制必须这么做,但是这么做可以让程序易于阅�
 最好把每个变量的声明语句单独放到一行,并加上注释说明。
 所有变量按照字母排序。
 
-    var currentEntry; // 当前选择项    
-    var level;        // 缩进程度    
-    var size;         // 表格大小
+```javascript
+var currentEntry; // 当前选择项    
+var level;        // 缩进程度    
+var size;         // 表格大小
+```
 
 javascript 没有块范围,所以在块里面定义变量很容易引起 C/C++/Java 程序员们的误解。
 在函数的首部定义所有的变量。
@@ -102,54 +106,60 @@ javascript 没有块范围,所以在块里面定义变量很容易引起 C/C++/J
 函数程序体应缩进四个空格。 
 `}`(右大括号)与声明函数的那一行代码头部对齐。
 
-    function outer(c, d) {        
-        var e = c * d;        
-        function inner(a, b) {            
-            return (e * a) + b;        
-        }        
-        return inner(0, 1);    
-    }
+```javascript
+function outer(c, d) {        
+	var e = c * d;        
+	function inner(a, b) {            
+		return (e * a) + b;        
+	}        
+	return inner(0, 1);    
+}
+```
 
 下面这种书写方式可以在 javascript 中正常使用,因为在 javascript 中,函数和对象的声明可以放到任何表达式允许的地方。
 且它让内联函数和混合结构具有最好的可读性。
 
-    function getElementsByClassName(className) {        
-        var results = [];  
-        
-        walkTheDOM(document.body, function (node) {            
-        var a;                  // 类名数组            
-        var c = node.className; // 节点的类名            
-        var i;                  // 循环计数器
-        
-        // If the node has a class name, then split it into a list of simple names.
-        // If any of them match the requested name, then append the node to the set of results.            
-        if (c) {                
-            a = c.split(' ');                
-                for (i = 0; i < a.length; i += 1) {                    
-                    if (a[i] === className) {                        
-                        results.push(node);                        
-                        break;                    
-                    }                
-                }            
-            }        
-        });        
-        
-        return results;    
-    }
+```javascript
+function getElementsByClassName(className) {        
+	var results = [];  
+	
+	walkTheDOM(document.body, function (node) {            
+	var a;                  // 类名数组            
+	var c = node.className; // 节点的类名            
+	var i;                  // 循环计数器
+	
+	// If the node has a class name, then split it into a list of simple names.
+	// If any of them match the requested name, then append the node to the set of results.            
+	if (c) {                
+		a = c.split(' ');                
+			for (i = 0; i < a.length; i += 1) {                    
+				if (a[i] === className) {                        
+					results.push(node);                        
+					break;                    
+				}                
+			}            
+		}        
+	});        
+	
+	return results;    
+}
+```
 
 如果函数是匿名函数,则在 `function` 和 `(` (左括号)之间应有一个空格。
 如果省略了空格,否则会让人感觉函数名叫作 `function`。
 
-    div.onclick = function (e) {        
-        return false;    
-    };   
-    
-    that = {        
-        method: function () {
-            return this.datum;        
-        },        
-        datum: 0    
-    };
+```javascript
+div.onclick = function (e) {        
+	return false;    
+};   
+
+that = {        
+	method: function () {
+		return this.datum;        
+	},        
+	datum: 0    
+};
+```
 
 尽量不使用全局函数。
 
@@ -206,72 +216,85 @@ javascript 可以把任何表达式当作一条语句。
 
 if语句应如以下格式:
 
-    if (condition){
-        statements; 
-    }
-    
-    if (condition) {
-        statements; 
-    } else {
-        statements; 
-    }
-    
-    if (condition) {
-        statements; 
-    } else if (condition) {
-        statements; 
-    } else {
-        statements; 
-    }
-    
+```javascript
+if (condition){
+	statements; 
+}
+
+if (condition) {
+	statements; 
+} else {
+	statements; 
+}
+
+if (condition) {
+	statements; 
+} else if (condition) {
+	statements; 
+} else {
+	statements; 
+}
+```
+
 ## for 语句
 
 for 语句应如以下格式:
 
-    for (initialization;condition ; update) {
-        statements; 
-    }
+```javascript
+for (initialization;condition ; update) {
+	statements; 
+}
 
-    for (variable in object)if (filter) {
-        statements; 
-    }
-    
+for (variable in object)if (filter) {
+	statements; 
+}
+```
+
 第一种形式的循环用于已经知道相关参数的数组循环。
 第二种形式应用于对象中。
 `object` 原型中的成员将会被包含在迭代器中。
 通过预先定义 `hasOwnProperty` 方法来区分真正的 `object` 成员是个不错方法:
 
-    for (variablein object) if (object.hasOwnProperty(variable )){
-        statements; 
-    }
-    
+```javascript
+for (variablein object) if (object.hasOwnProperty(variable )){
+	statements; 
+}
+```
+
 ## while 语句
 
 while 语句应如以下格式:
 
-    while (condition){
-        statements; 
-    }
-    
+```javascript
+while (condition){
+	statements; 
+}
+```
+
 ## do 语句
 
 do 语句应如以下格式:
+
+```javascript
     do {
         statements; 
     } while (condition);
-    
+```
+
 不像别的复合语句,do 语句总是以 ;(分号) 结尾。
 
 ## switch 语句
 
 switch 语句应如以下格式:
 
-    switch (expression){
-    case expression:
-        statements; 
-    default:
-        statements; 
-    }
+```javascript
+switch (expression){
+case expression:
+	statements; 
+default:
+	statements; 
+}
+```
 
 每个 case与switch对齐。
 这可避免过分缩进。
@@ -283,20 +306,22 @@ switch 语句应如以下格式:
 
 try语句应如以下格式:
 
-    try {
-        statements;
-    } catch (variable){
-        statements;
-    }
+```javascript
+try {
+	statements;
+} catch (variable){
+	statements;
+}
 
-    try {
-        statements;
-    } catch (variable){
-        statements;
-   } finally {
-        statements;
-    }
-    
+try {
+	statements;
+} catch (variable){
+	statements;
+} finally {
+	statements;
+}
+```
+
 ## continue 语句
 
 避免使用continue语句。
@@ -314,7 +339,9 @@ try语句应如以下格式:
 
 * 跟在((左括号)后面的关键字应被一个空格隔开。
 
-        while (true) {
+	```javascript
+	while (true) {
+	```
 
 * 函数参数与((左括号)之间不应该有空格。这能帮助区分关键字和函数调用。
 
@@ -350,11 +377,15 @@ try语句应如以下格式:
 
 避免在if和while语句的条件部分进行赋值。
 
-    if (a = b) {
-    
+```javascript
+if (a = b) {
+```
+
 是一条正确语句?或者
 
-    if (a == b) {
+```javascript
+if (a == b) {
+```
 
 才是对的?避免这种不容易判断对错的结构。
 
@@ -370,11 +401,15 @@ try语句应如以下格式:
 小心在+后紧跟+或++。
 这种形式很容易仍人迷惑。应插入括号以便于理解。
 
-    total = subtotal + +myInput.value;
+```javascript
+total = subtotal + +myInput.value;
+```
 
 最好能写成
 
-    total = subtotal + (+myInput.value);
+```javascript
+total = subtotal + (+myInput.value);
+```
 
 这样+ +不会被误认为是++。
 

@@ -14,10 +14,12 @@ tags : [javascript, 赋值]
 
 ## 用正确的方式初始化
 
-    // 错误       |  // 正确
-    int x;        |
-    // ...        |  // ...
-    x = init();   |  int x = init();
+```java
+// 错误       |  // 正确
+int x;        |
+// ...        |  // ...
+x = init();   |  int x = init();
+```
 
 “正确” 方式的主要优点是你能很方便的浏览 x 的定义的同时知道它的值。
 这样也能 **保证 x 始终处在一个固定变量状态**，大多数的编译器都能检测到这种状态。
@@ -29,10 +31,12 @@ tags : [javascript, 赋值]
 
 ## 构造新数据
 
-    // 错误          |  // 正确
-    int x = init();  |  int x = init();
-    // ...           |  // ...
-    x = something(); |  int y = something();
+```java
+// 错误          |  // 正确
+int x = init();  |  int x = init();
+// ...           |  // ...
+x = something(); |  int y = something();
+```
 
 这样做很重要。
 
@@ -46,14 +50,16 @@ x的值我们可以保证它是通过 `init()` 初始化的值。
 
 ## 用函数，不要用过程
 
-    // 错误                  |  // 正确
-    void to_utf8(string s);  |  string to_utf8(string s);
-                             |
-    // ...                   |  // ...
-                             |
-    string s1 = latin();     |  use_string(to_utf8(latin()))
-    to_utf8(s1);             |
-    use_string(s1);          |
+```java
+// 错误                  |  // 正确
+void to_utf8(string s);  |  string to_utf8(string s);
+						 |
+// ...                   |  // ...
+						 |
+string s1 = latin();     |  use_string(to_utf8(latin()))
+to_utf8(s1);             |
+use_string(s1);          |
+```
 
 “正确” 方式使用的是一个普通的数字函数：它接受输入值，返回计算后的值。
 另一边，“错误” 方式使用了过程。
@@ -77,26 +83,28 @@ x的值我们可以保证它是通过 `init()` 初始化的值。
 
 在很多的入门级的介绍面向对象编程的课程中，你能看到这样一个著名的二维坐标的例子：
 
-    // 非常非常错误
-    class Point
-    {
-    public:
-      // constructor
-      Point() { x = 0; y = 0; }
+```java
+// 非常非常错误
+class Point
+{
+public:
+  // constructor
+  Point() { x = 0; y = 0; }
 
-      float get_x() { return x; }
-      float get_y() { return y; }
+  float get_x() { return x; }
+  float get_y() { return y; }
 
-      void set_x(float new_x) { x = new_x; }
-      void set_y(float new_y) { y = new_y; }
+  void set_x(float new_x) { x = new_x; }
+  void set_y(float new_y) { y = new_y; }
 
-      move(Point p) {
-        x = x + p.x;
-        y = y + p.y;
-      }
-    private:
-      float x; float y;
-    };
+  move(Point p) {
+	x = x + p.x;
+	y = y + p.y;
+  }
+private:
+  float x; float y;
+};
+```
 
 这样设计的原因很简单：你可以通过构造函数创建一个新的坐标，然后通过 `set_x()` 和 `set_y()` 进行初始化。
 内部数据是经过封装的(private)，只能通过 `get_x()` 和 `get_y()` 来访问。
@@ -112,26 +120,28 @@ x的值我们可以保证它是通过 `init()` 初始化的值。
 
 正确的设计更简单，而且不失功能：
 
-    // 正确的
-    class Point
-    {
-    public:
-      // constructor
-      Point (float x, float y) {
-        _x = x; _y = y;
-      }
+```java
+// 正确的
+class Point
+{
+public:
+  // constructor
+  Point (float x, float y) {
+	_x = x; _y = y;
+  }
 
-      x() { return x; }
-      y() { return y; }
+  x() { return x; }
+  y() { return y; }
 
-    private:
-      float _x; float _y
-    }
+private:
+  float _x; float _y
+}
 
-    Point move(Point p1, Point p2) {
-      return Point(p1.x() + p2.x(),
-                   p1.y() + p2.y());
-    }
+Point move(Point p1, Point p2) {
+  return Point(p1.x() + p2.x(),
+			   p1.y() + p2.y());
+}
+```
 
 另外，如果你愿意，你可以把 _x 和 _y 声明成 public 和常量。
 
@@ -156,52 +166,56 @@ x的值我们可以保证它是通过 `init()` 初始化的值。
 
 这样的数据结构如果在ML语言里是很好设计出来的，但在以类为基础的语言里会稍微有点复杂：
 
-    -- Haskell
-    -- A list is either the Empty list,
-    -- or it contains an Int and a List
-    data List = Empty
-              | NotEmpty Int List
+```haskell
+-- Haskell
+-- A list is either the Empty list,
+-- or it contains an Int and a List
+data List = Empty
+		  | NotEmpty Int List
 
-    -- utility functions
+-- utility functions
 
-    is_empty Empty         = true
-    is_empty NotEmpty x xs = false
+is_empty Empty         = true
+is_empty NotEmpty x xs = false
 
-    head Empty         = error
-    head NotEmpty x xs = x
+head Empty         = error
+head NotEmpty x xs = x
 
-    tail Empty         = error
-    tail notEmpty x xs = xs
+tail Empty         = error
+tail notEmpty x xs = xs
+```
 
-    // Java(ish)
-    class List
-    {
-    public:
-      // constructors
-      List() { _is_empty = true; }
-      List(int i, List next) {
-        _i        = i;
-        _next     = next;
-        _is_empty = false;
-      }
+```java
+// Java(ish)
+class List
+{
+public:
+  // constructors
+  List() { _is_empty = true; }
+  List(int i, List next) {
+	_i        = i;
+	_next     = next;
+	_is_empty = false;
+  }
 
-      bool is_empty() { return _is_empty; }
+  bool is_empty() { return _is_empty; }
 
-      int head() {
-        if (_is_empty) error();
-        return _i;
-      }
+  int head() {
+	if (_is_empty) error();
+	return _i;
+  }
 
-      List tail() {
-         if (_is_empty) error();
-         return _next;
-      }
+  List tail() {
+	 if (_is_empty) error();
+	 return _next;
+  }
 
-    private:
-      int  _i;
-      List _next;
-      bool _is_empty;
-    }
+private:
+  int  _i;
+  List _next;
+  bool _is_empty;
+}
+```
 
 你可以看到，现在这个 List 类是不可变的。
 我们不能修改 List 对象。
@@ -229,10 +243,12 @@ x的值我们可以保证它是通过 `init()` 初始化的值。
 
 或者，在代码里：
 
-    List l  = List(x, List(y, List()));
-    int  i  = 42;
+```java
+List l  = List(x, List(y, List()));
+int  i  = 42;
 
-    List l2 = List(i, l); // cheap
+List l2 = List(i, l); // cheap
+```
 
 l 仍然存在，不可变，而新建的 l2 只是多了一个新建的单元。
 类似的，删除顶部的元素也是不费任何资源的容易。
@@ -246,12 +262,14 @@ l 仍然存在，不可变，而新建的 l2 只是多了一个新建的单元�
 比如说，你想给一个数组排序，你必须用 quicksort。
 Quicksort 严重的依赖于变换转移操作，但是你可以隐藏这些操作：
 
-    array pure_sort (array a)
-    {
-      array a2 = copy(a);
-      quicksort(a2); // modify a2, nothing else
-      return a2;
-    }
+```c
+array pure_sort (array a)
+{
+  array a2 = copy(a);
+  quicksort(a2); // modify a2, nothing else
+  return a2;
+}
+```
 
 于是，当 `pure_sort()` 这个内部函数不能按照我的建议的去写时，影响并不大，因为它被限制在函数内了。
 最终，`pure_sort()` 的行为就像是个普通的函数了。
@@ -261,47 +279,49 @@ Quicksort 严重的依赖于变换转移操作，但是你可以隐藏这些操�
 
 写出来可能会是这样：
 
-    // 错误
+```java
+// 错误
+Point p(0, 0);
+wile(true) // loop forever
+{
+  p = move(p, get_mouse_movement());
 
-    Point p(0, 0);
-    wile(true) // loop forever
-    {
-      p = move(p, get_mouse_movement());
+  if (p.x() < 0   ) p = Point(0    , p.y());
+  if (p.x() > 1024) p = Point(1024 , p.y());
+  if (p.y() < 0   ) p = Point(p.x(), 0    );
+  if (p.y() > 768 ) p = Point(p.x(), 768  );
 
-      if (p.x() < 0   ) p = Point(0    , p.y());
-      if (p.x() > 1024) p = Point(1024 , p.y());
-      if (p.y() < 0   ) p = Point(p.x(), 0    );
-      if (p.y() > 768 ) p = Point(p.x(), 768  );
-
-      draw(p);
-    }
+  draw(p);
+}
+```
 
 这里有个错误，它在主程序里对越界坐标进行了检查。
 
 更好的方式是这样：
 
-    // 正确
+```java
+// 正确
+point smart_move(point p, point mouse_movement)
+{
+  float x = p.x() < 0    ? 0
+		  : p.x() > 1024 ? 1024
+		  :                p.x();
 
-    point smart_move(point p, point mouse_movement)
-    {
-      float x = p.x() < 0    ? 0
-              : p.x() > 1024 ? 1024
-              :                p.x();
+  float y = p.y() < 0   ? 0
+		  : p.y() > 768 ? 768
+		  :               p.y();
 
-      float y = p.y() < 0   ? 0
-              : p.y() > 768 ? 768
-              :               p.y();
+  return Point(x, y);
+}
 
-      return Point(x, y);
-    }
-
-    // 主程序
-    Point p(0, 0);
-    wile(true) // loop forever
-    {
-      p = smart_move(p, get_mouse_movement());
-      draw(p);
-    }
+// 主程序
+Point p(0, 0);
+wile(true) // loop forever
+{
+  p = smart_move(p, get_mouse_movement());
+  draw(p);
+}
+```
 
 现在，主程序变得更简单了。
 运算部分，`smart_move()`，可以进行单独测试，甚至可以在其它地方重用。 
