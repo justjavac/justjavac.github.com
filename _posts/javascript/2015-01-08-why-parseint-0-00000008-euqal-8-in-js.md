@@ -26,8 +26,8 @@ console.log(0.1 + 0.2); // 0.30000000000000004
 
 后来发现这问题并不会导致 `parseInt(0.0000008)` 变成 `8`，那么问题就可能在 `parseInt` 这个函数上。
 
-## parseInt
-> `parseInt(string, radix)`
+	## parseInt
+	> `parseInt(string, radix)`
 
 `parseInt` 接受两个参数，第一个参数是要转换的字符串（忽略空白）；第二个参数是基数。
 
