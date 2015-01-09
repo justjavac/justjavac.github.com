@@ -54,11 +54,13 @@ uids: 2127182625
 幸运的是两个值都是 [false 型](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)。
 因此，只用一个判断，就可以同时检验这两项是否为真:
 
-    if (v) {
-        // v 有值
-    } else {
-        // v 没有值
-    }
+```javascript
+if (v) {
+	// v 有值
+} else {
+	// v 没有值
+}
+```
 
 在本 [系列](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的第 5 部分——关于函数参数的处理——你将会看到更多的上面校检例子。
 有一点要注意的是：这个检查也会把 `false`, `-0`, `+0`, `NaN` 与 '' 当成“空值”。
@@ -68,20 +70,24 @@ uids: 2127182625
 
 有些人提倡使用不等于（`!=`）来校检 v 既不是 `undefined` 或 `null`:
 
-    if (v != null) {
-        // v 有值
-    } else {
-        // v 没有值
-    }
+```javascript
+if (v != null) {
+	// v 有值
+} else {
+	// v 没有值
+}
+```
 
 不过，这要求你要明白 `!=` 认为 `null` 只等于它自己或是 `undefined`。
 我喜欢用更有可读性的 `!==`:
 
-    if (v !== undefined && v !== null) {
-        // v 有值
-    } else {
-        // v 没有值
-    }
+```javascript
+if (v !== undefined && v !== null) {
+	// v 有值
+} else {
+	// v 没有值
+}
+```
 
 [性能方面](http://jsperf.com/definedness)，所有在这个章节中提到的这三个校检基本是相同的。
 所以，最后用哪个取决于你的需求还有你的品味。
