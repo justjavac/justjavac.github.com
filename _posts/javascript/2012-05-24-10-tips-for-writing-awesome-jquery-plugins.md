@@ -17,7 +17,9 @@ tags : [jQuery]
 这是我遇到的最大的问题，因此我将它放在第一个来讲。
 **插件就是插件，不需要用户再进行额外的设置和定义，应该有一个最基本的预设**。 
 
-    $("#container").wTooltip();
+```javascript
+$("#container").wTooltip();
+```
 
 jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面、上一个/下一个按钮等。
 我曾经见过有的插件需要用户设定一个包含 ID 和 class 的 DIV，然后再通过插件功能来引用它。
@@ -28,14 +30,16 @@ jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 一般插件都包括基础默认设置，因此，在开发插件时应提供一套默认值。
 这肯定会提高开发者使用插件的机率，并扩大插件的知名度。 
 
-    var defaultSettings = {
-        mode            : 'Pencil',
-        lineWidthMin    : '0',
-        lineWidthMax    : '10',
-        lineWidth       : '2'
-    };
+```javascript
+var defaultSettings = {
+	mode            : 'Pencil',
+	lineWidthMin    : '0',
+	lineWidthMax    : '10',
+	lineWidth       : '2'
+};
 
-    settings = $.extend({}, defaultSettings, settings || {});
+settings = $.extend({}, defaultSettings, settings || {});
+```
 
 上面的代码是以标准的方式来设定默认值，其他插件使用者能够通过各种设置来对插件进行扩展。 
 
@@ -44,14 +48,18 @@ jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 在写插件时，尽量令插件的类、ID、命名与众不同。
 这也不是件难事儿，只要避免与现有的 JavaScript 和 CSS 代码重名就可以了。 
 
-    $("#container").tooltip();    //bad    
-    $("#container").wTooltip();   //good
+```javascript
+$("#container").tooltip();    //bad    
+$("#container").wTooltip();   //good
+```
 
 在上面的例子中，在插件的普通命名前加上一个 “W”，就能和可能存在的通用名称区别开来。
 包括 “tab” 或 “holder” 等通用术语我也使用这种包含独特关键字的命名方法。 
 
-    _wPaint_button
-    _wPaint_holder
+```javascript
+_wPaint_button
+_wPaint_holder
+```
 
 同时，加入下划线的方法也可以确保 ID 或 class 的名称不与其他的重复，这也让我更加确信我写的 jQuery 插件将独一无二。 
 
@@ -60,23 +68,25 @@ jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 大多数好的插件都有这段标准的 jQuery 代码，它包含了插件开发、维护和更新阶段所有的重要代码。
 如果想获得更多信息的话，可以查看我的[jQuery Tooltip Plugin][1]代码。 
 
-    var defaultSettings = {
-        //settings
-    };
+```javascript
+var defaultSettings = {
+	//settings
+};
 
-    $.fn.wPaint = function(settings)
-    {
-        //check for setters/getters
-        
-        return this.each(function()
-        {
-            var elem = $(this);
-            //run some code here
-            elem.data("_wPaint", wPaint);
-        }
-        
-        //classes/prototyping
-    }
+$.fn.wPaint = function(settings)
+{
+	//check for setters/getters
+	
+	return this.each(function()
+	{
+		var elem = $(this);
+		//run some code here
+		elem.data("_wPaint", wPaint);
+	}
+	
+	//classes/prototyping
+}
+```
 
 需要注意以下五个关键点： 
 
@@ -111,19 +121,21 @@ jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 * 一是不必实例化每个方法的单独拷贝，这样的话效率更高，运行速度更快;
 * 二是只引用每个对象方法，不保存其拷贝，可以节省大量内存.
 
-    function Canvas(settings)
-    {
-        this.canvas = null;     
-        this.ctx = null;
-    }
+```javascript
+function Canvas(settings)
+{
+	this.canvas = null;     
+	this.ctx = null;
+}
 
-    Canvas.prototype = 
-    {
-        generate: function()
-        {
-            //generate code
-        }
-    }
+Canvas.prototype = 
+{
+	generate: function()
+	{
+		//generate code
+	}
+}
+```
 
 它还能帮你组织代码，使其能重复使用。
 上面的例子中只有 Canvas 对象对每个新对象进行实例化，原型只是被引用而已。 
@@ -134,22 +146,24 @@ jQuery 的幻灯片放映插件就是个很好的示例，比如滑动的界面�
 
 下面的代码是关于允许插件被修改，最基本的设置如下： 
 
-    if(typeof option === 'object') {
-        settings = option;
-    } else if (typeof option === 'string') {
-        if(this.data('_wPaint_canvas') &&
-                defaultSettings[option] !== undefined
-                ) {
-            var canvas = this.data('_wPaint_canvas');
+```javascript
+if (typeof option === 'object') {
+	settings = option;
+} else if (typeof option === 'string') {
+	if(this.data('_wPaint_canvas') &&
+			defaultSettings[option] !== undefined
+			) {
+		var canvas = this.data('_wPaint_canvas');
 
-            if (settings) {
-                canvas.settings[option] = settings;
-                return true;
-            }else{
-                return canvas.settings[option];
-            }
-        } else return false;
-    }
+		if (settings) {
+			canvas.settings[option] = settings;
+			return true;
+		}else{
+			return canvas.settings[option];
+		}
+	} else return false;
+}
+```
 
 ## 8. 在所有浏览器上进行测试 
 
