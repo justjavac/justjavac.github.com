@@ -73,9 +73,10 @@ shaper 的工作就被简化为 <strong>在确定的语言、确定的字体下�
 
 <p>比如这样的规则：</p>
 
-<pre><code>p { font-family: Helvetica, Arial, sans-serif; }
+```css
+p { font-family: Helvetica, Arial, sans-serif; }
 strong { font-weight: bold; }
-</code></pre>
+```
 
 <p>如果对于这样一段文本：</p>
 

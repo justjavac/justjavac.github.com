@@ -31,10 +31,11 @@ type: porter
 
 <p>以后准备使用如下默认字体样式：</p>
 
-<pre><code>body{
+```css
+body{
   font: 12px/1.5 arial;
 }
-</code></pre>
+```
 
 <h3>字体：arial</h3>
 
