@@ -22,7 +22,9 @@ tags : [javascript]
 [JavaScript:如何判断值的类型]: http://www.adobe.com/devnet/html5/articles/categorizing-values-in-javascript.html
 [关注推特]: https://twitter.com/DavidBruant/status/273451064764805120
 
-	!!(new Boolean(false)) #wtfjs
+```javascript
+!!(new Boolean(false)) #wtfjs
+```
 
 以上表达式的结果是 `true`. 
 我们先来认识一下 JavaScript 中的强制转换，
@@ -53,16 +55,18 @@ default 算法用于非日期型的 “number” 和日期型的 “string”
 
 我们可以用下面这个对象来实验一下强制转换:
 
-    var obj = {
-        valueOf: function () {
-            console.log("valueOf");
-            return '0';
-        },
-        toString: function () {
-            console.log("toString");
-            return 1;
-        }
-    };
+```javascript
+var obj = {
+	valueOf: function () {
+		console.log("valueOf");
+		return '0';
+	},
+	toString: function () {
+		console.log("toString");
+		return 1;
+	}
+};
+```
 
 ### 1.1 强制转换为 number
 

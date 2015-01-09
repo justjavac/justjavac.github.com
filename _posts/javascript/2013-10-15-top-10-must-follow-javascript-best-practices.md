@@ -33,17 +33,17 @@ Javascript 的很多扩展的特性是的它变得更加的犀利， 同时也�
 添加新的属性到对象 prototype 中是导致脚本出错的常见原因。
 
 ```javascript
-yourObject.prototype.anotherFunction = ‘Hello’;
+yourObject.prototype.anotherFunction = 'Hello';
 yourObject.prototype.anotherMethod = function () { … };
 ```
 
 在上面代码中，所有的变量都会被影响，因为他们都继承于 `yourObject`。这样的使用会导致意想不到的行为。所以建议在使用完后删除类似的修改。
 
 ```javascript
-yourObject.prototype.anotherFunction = ‘Hello’;
+yourObject.prototype.anotherFunction = 'Hello';
 yourObject.prototype.anotherMethod = function () { … };
 test.anotherMethod();
-delete yourObject.prototype.anotherFunction = ‘Hello’;
+delete yourObject.prototype.anotherFunction = 'Hello';
 delete yourObject.prototype.anotherMethod = function () { … };
 ```
 
