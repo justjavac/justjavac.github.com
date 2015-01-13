@@ -127,7 +127,7 @@ var_dump($a);   // int(27)
 
 WTF！居然不按套路出牌。`0` 开头的不被认为是八进制，但是 `0x` 开头的却被认为是十六进制。
 
-在 PHP 官方文档中[Integer 整型](http://php.net/manual/zh/language.types.integer.php)还有另一个八进制陷阱：
+在 PHP 官方文档中 [Integer 整型](http://php.net/manual/zh/language.types.integer.php) 还有另一个八进制陷阱：
 
 ```php
 var_dump(01090); // 八进制 010 = 十进制 8
