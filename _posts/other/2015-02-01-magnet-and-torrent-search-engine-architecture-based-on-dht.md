@@ -5,7 +5,7 @@ categories: [other]
 tags: [magnet, DHT, BitTorrent, torrent]
 ---
 
-做了一个磁力链接和 BT 种子的搜索引擎 [{Magnet & Torrent}](http://magnet-torrent.com)，本文简单介绍一下主要的系统功能和用到的技术。
+上周开发了一个磁力链接和 BT 种子的搜索引擎 [{Magnet & Torrent}](http://magnet-torrent.com)，本文简单介绍一下主要的系统功能和用到的技术。
 
 系统包括几个独立的部分：
 
