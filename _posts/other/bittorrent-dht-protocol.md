@@ -7,17 +7,15 @@ tags: [Protocol, DHT, BitTorrent]
 
 原文：[DHT Protocol](http://www.bittorrent.org/beps/bep_0005.html)  
 
-------------------
-
-**BEP**: 5  
-**Title**: DHT Protocol   
-**Version**: 3dec52cb3ae103ce22358e3894b31cad47a6f22b  
-**Last-Modified**: Tue Apr 2 16:51:45 2013 -0700  
-**Author**: Andrew Loewenstern <drue@bittorrent.com>, Arvid Norberg <arvid@bittorrent.com>  
-**Status**: Draft  
-**Type**: Standards Track  
-**Created**: 31-Jan-2008  
-**Post-History**: 22-March-2013: Add "implied_port" to announce_peer message, to improve NAT support
+> **BEP**: 5  
+> **Title**: DHT Protocol   
+> **Version**: 3dec52cb3ae103ce22358e3894b31cad47a6f22b  
+> **Last-Modified**: Tue Apr 2 16:51:45 2013 -0700  
+> **Author**: Andrew Loewenstern <drue@bittorrent.com>, Arvid Norberg <arvid@bittorrent.com>  
+> **Status**: Draft  
+> **Type**: Standards Track  
+> **Created**: 31-Jan-2008  
+> **Post-History**: 22-March-2013: Add "implied_port" to announce_peer message, to improve NAT support
 
 BitTorrent 使用"分布式哈希表"(DHT)来为无 tracker 的种子(torrents)存储 peer 之间的联系信息。这样每个 peer 都成了 tracker。这个协议基于 Kademila[1] 网络并且在 UDP 上实现。
 
