@@ -63,12 +63,10 @@ peers 如果支持 DHT 协议就将 BitTorrent 协议握手消息的保留位的
 
 一个无 tracker 的 torrent 文件字典不包含 `announce` 关键字，而使用 `nodes` 关键字来替代。这个关键字对应的内容应该设置为 torrent 创建者的路由表中 K 个最接近的节点。可供选择的，这个关键字也可以设置为一个已知的可用节点，比如这个 torrent 文件的创建者。请不要自动加入 `router.bittorrent.com` 到 torrent 文件中或者自动加入这个节点到客户端路由表中。
 
-```
-nodes = [["<host>", <port>], ["<host>", <port>], ...]
-nodes = [["127.0.0.1", 6881], ["your.router.node", 4804]]
-```
+- nodes = `[["<host>", <port>], ["<host>", <port>], ...]`
+- nodes = `[["127.0.0.1", 6881], ["your.router.node", 4804]]`
 
-## KRPC协议 KRPC Protocol
+## KRPC 协议 KRPC Protocol
 
 KRPC 协议是由 bencode 编码组成的一个简单的 RPC 结构，他使用 UDP 报文发送。一个独立的请求包被发出去然后一个独立的包被回复。这个协议没有重发。它包含 3 种消息：请求，回复和错误。对DHT协议而言，这里有 4 种请求：`ping`，`find_node`，`get_peers` 和 `announce_peer`。
 
@@ -90,7 +88,7 @@ Peers 的联系信息被编码为 6 字节的字符串。又被称为 "CompactIP
 
 ### 错误 Errors
 
-错误，对应于 KPRC 消息字典中的 `y` 关键字的值是 `e`，包含一个附加的关键字 e`。关键字 `e` 是列表类型。第一个元素是数字类型，表明了错误码。第二个元素是字符串类型，表明了错误信息。当一个请求不能解析或出错时，错误包将被发送。下表描述了可能出现的错误码：
+错误，对应于 KPRC 消息字典中的 `y` 关键字的值是 `e`，包含一个附加的关键字 `e`。关键字 `e` 是列表类型。第一个元素是数字类型，表明了错误码。第二个元素是字符串类型，表明了错误信息。当一个请求不能解析或出错时，错误包将被发送。下表描述了可能出现的错误码：
 
 <table class="table">
 <tbody>
@@ -117,12 +115,10 @@ Peers 的联系信息被编码为 6 字节的字符串。又被称为 "CompactIP
 </tbody>
 </table>
 
-### 错误包例子 Example Error Packets:
+**错误包例子 Example Error Packets:**
 
-```
-generic error = {"t":"aa", "y":"e", "e":[201, "A Generic Error Ocurred"]}
-bencoded = d1:eli201e23:A Generic Error Ocurrede1:t2:aa1:y1:ee
-```
+- generic error = `{"t":"aa", "y":"e", "e":[201, "A Generic Error Ocurred"]}`
+- bencoded = `d1:eli201e23:A Generic Error Ocurrede1:t2:aa1:y1:ee`
 
 ## DHT 请求 DHT Queries
 
@@ -135,14 +131,12 @@ bencoded = d1:eli201e23:A Generic Error Ocurrede1:t2:aa1:y1:ee
 - 参数: `{"id" : "<querying nodes id>"}`
 - 回复: `{"id" : "<queried nodes id>"}`
 
-### 报文包例子 Example Packets
+**报文包例子 Example Packets**
 
-```
-ping Query = {"t":"aa", "y":"q", "q":"ping", "a":{"id":"abcdefghij0123456789"}}
-bencoded = d1:ad2:id20:abcdefghij0123456789e1:q4:ping1:t2:aa1:y1:qe
-Response = {"t":"aa", "y":"r", "r": {"id":"mnopqrstuvwxyz123456"}}
-bencoded = d1:rd2:id20:mnopqrstuvwxyz123456e1:t2:aa1:y1:re
-```
+- ping Query = `{"t":"aa", "y":"q", "q":"ping", "a":{"id":"abcdefghij0123456789"}}`
+- bencoded = `d1:ad2:id20:abcdefghij0123456789e1:q4:ping1:t2:aa1:y1:qe`
+- Response = `{"t":"aa", "y":"r", "r": {"id":"mnopqrstuvwxyz123456"}}`
+- bencoded = `d1:rd2:id20:mnopqrstuvwxyz123456e1:t2:aa1:y1:re`
 
 ### find_node
 
@@ -151,14 +145,12 @@ bencoded = d1:rd2:id20:mnopqrstuvwxyz123456e1:t2:aa1:y1:re
 - 参数: `{"id" : "<querying nodes id>", "target" : "<id of target node>"}`
 - 回复: `{"id" : "<queried nodes id>", "nodes" : "<compact node info>"}`
 
-### 报文包例子 Example Packets
+**报文包例子 Example Packets**
 
-```
-find_node Query = {"t":"aa", "y":"q", "q":"find_node", "a": {"id":"abcdefghij0123456789", "target":"mnopqrstuvwxyz123456"}}
-bencoded = d1:ad2:id20:abcdefghij01234567896:target20:mnopqrstuvwxyz123456e1:q9:find_node1:t2:aa1:y1:qe
-Response = {"t":"aa", "y":"r", "r": {"id":"0123456789abcdefghij", "nodes": "def456..."}}
-bencoded = d1:rd2:id20:0123456789abcdefghij5:nodes9:def456...e1:t2:aa1:y1:re
-```
+- find\_node Query = `{"t":"aa", "y":"q", "q":"find_node", "a": {"id":"abcdefghij0123456789", "target":"mnopqrstuvwxyz123456"}}`
+- bencoded = `d1:ad2:id20:abcdefghij01234567896:target20:mnopqrstuvwxyz123456e1:q9:find_node1:t2:aa1:y1:qe`
+- Response = `{"t":"aa", "y":"r", "r": {"id":"0123456789abcdefghij", "nodes": "def456..."}}`
+- bencoded = `d1:rd2:id20:0123456789abcdefghij5:nodes9:def456...e1:t2:aa1:y1:re`
 
 ### get_peers
 
@@ -168,44 +160,29 @@ bencoded = d1:rd2:id20:0123456789abcdefghij5:nodes9:def456...e1:t2:aa1:y1:re
 - 回复: `{"id" : "<queried nodes id>", "token" :"<opaque write token>", "values" : ["<peer 1 info string>", "<peer 2 info string>"]}`
 - 或: `{"id" : "<queried nodes id>", "token" :"<opaque write token>", "nodes" : "<compact node info>"}`
 
-### 报文包例子 Example Packets:
+**报文包例子 Example Packets:**
 
-```
-get_peers Query = {"t":"aa", "y":"q", "q":"get_peers", "a": {"id":"abcdefghij0123456789", "info_hash":"mnopqrstuvwxyz123456"}}
-bencoded = d1:ad2:id20:abcdefghij01234567899:info_hash20:mnopqrstuvwxyz123456e1:q9:get_peers1:t2:aa1:y1:qe
-Response with peers = {"t":"aa", "y":"r", "r": {"id":"abcdefghij0123456789", "token":"aoeusnth", "values": ["axje.u", "idhtnm"]}}
-bencoded = d1:rd2:id20:abcdefghij01234567895:token8:aoeusnth6:valuesl6:axje.u6:idhtnmee1:t2:aa1:y1:re
-Response with closest nodes = {"t":"aa", "y":"r", "r": {"id":"abcdefghij0123456789", "token":"aoeusnth", "nodes": "def456..."}}
-bencoded = d1:rd2:id20:abcdefghij01234567895:nodes9:def456...5:token8:aoeusnthe1:t2:aa1:y1:re
-```
+- get\_peers Query = `{"t":"aa", "y":"q", "q":"get_peers", "a": {"id":"abcdefghij0123456789", "info_hash":"mnopqrstuvwxyz123456"}}`
+- bencoded = `d1:ad2:id20:abcdefghij01234567899:info_hash20:mnopqrstuvwxyz123456e1:q9:get_peers1:t2:aa1:y1:qe`
+- Response with peers = `{"t":"aa", "y":"r", "r": {"id":"abcdefghij0123456789", "token":"aoeusnth", "values": ["axje.u", "idhtnm"]}}`
+- bencoded = `d1:rd2:id20:abcdefghij01234567895:token8:aoeusnth6:valuesl6:axje.u6:idhtnmee1:t2:aa1:y1:re`
+- Response with closest nodes = `{"t":"aa", "y":"r", "r": {"id":"abcdefghij0123456789", "token":"aoeusnth", "nodes": "def456..."}}`
+- bencoded = `d1:rd2:id20:abcdefghij01234567895:nodes9:def456...5:token8:aoeusnthe1:t2:aa1:y1:re`
 
 ### announce_peer
 
 这个请求用来表明发出 `announce_peer` 请求的节点，正在某个端口下载 torrent 文件。`announce_peer` 包含 4 个参数。第一个参数是 `id`，包含了请求节点的 ID；第二个参数是 `info_hash`，包含了 torrent 文件的 infohash；第三个参数是 `port` 包含了整型的端口号，表明 peer 在哪个端口下载；第四个参数数是 `token`，这是在之前的 `get_peers` 请求中收到的回复中包含的。收到 `announce_peer` 请求的节点必须检查这个 `token` 与之前我们回复给这个节点 `get_peers` 的 `token` 是否相同。如果相同，那么被请求的节点将记录发送 `announce_peer` 节点的 IP 和请求中包含的 port 端口号在 peer 联系信息中对应的 infohash 下。
 
-参数:  
+- 参数: `{"id" : "<querying nodes id>",  "implied_port": <0 or 1>, "info_hash" : "<20-byte infohash of target torrent>",  "port" : <port number>,  "token" : "<opaque token>"}`
+- 回复: `{"id" : "<queried nodes id>"}`
 
-```
-{
-  "id" : "<querying nodes id>",
-  "implied_port": <0 or 1>,
-  "info_hash" : "<20-byte infohash of target torrent>",
-  "port" : <port number>,
-  "token" : "<opaque token>"
-}
-```
+**报文包例子 Example Packets:**
 
-回复: `{"id" : "<queried nodes id>"}`
-
-### 报文包例子 Example Packets:
-
-```
-announce_peers Query = {"t":"aa", "y":"q", "q":"announce_peer", "a": {"id":"abcdefghij0123456789", "implied_port": 1, "info_hash":"mnopqrstuvwxyz123456", "port": 6881, "token": "aoeusnth"}}
-bencoded = d1:ad2:id20:abcdefghij01234567899:info_hash20:<br />
-mnopqrstuvwxyz1234564:porti6881e5:token8:aoeusnthe1:q13:announce_peer1:t2:aa1:y1:qe
-Response = {"t":"aa", "y":"r", "r": {"id":"mnopqrstuvwxyz123456"}}
-bencoded = d1:rd2:id20:mnopqrstuvwxyz123456e1:t2:aa1:y1:re
-```
+- announce\_peers Query = `{"t":"aa", "y":"q", "q":"announce_peer", "a": {"id":"abcdefghij0123456789", "implied_port": 1, "info_hash":"mnopqrstuvwxyz123456", "port": 6881, "token": "aoeusnth"}}`
+- bencoded = `d1:ad2:id20:abcdefghij01234567899:info_hash20:<br />
+mnopqrstuvwxyz1234564:porti6881e5:token8:aoeusnthe1:q13:announce_peer1:t2:aa1:y1:qe`
+- Response = `{"t":"aa", "y":"r", "r": {"id":"mnopqrstuvwxyz123456"}}`
+- bencoded = `d1:rd2:id20:mnopqrstuvwxyz123456e1:t2:aa1:y1:re`
 
 ## References
 
