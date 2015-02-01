@@ -7,7 +7,7 @@ tags: [Protocol, DHT, BitTorrent]
 
 ## 前言
 
-做了一个磁力链接和BT种子的搜索引擎 [{Magnet & Torrent}](http://magnet-torrent.com)，因此把 DHT 协议重新看了一遍，<http://www.bittorrent.org/beps/bep_0005.html>
+做了一个磁力链接和BT种子的搜索引擎 [{Magnet & Torrent}](http://magnet-torrent.com)，因此把 [DHT](http://www.bittorrent.org/beps/bep_0005.html) 协议重新看了一遍。
 
 > **BEP**: 5  
 > **Title**: DHT Protocol   
