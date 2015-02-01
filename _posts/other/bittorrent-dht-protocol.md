@@ -92,11 +92,30 @@ Peers 的联系信息被编码为 6 字节的字符串。又被称为 "CompactIP
 
 错误，对应于 KPRC 消息字典中的 `y` 关键字的值是 `e`，包含一个附加的关键字 e`。关键字 `e` 是一个列表类型。第一个元素是一个数字类型，表明了错误码。第二个元素是一个字符串类型，表明了错误信息。当一个请求不能解析或出错时，错误包将被发送。下表描述了可能出现的错误码：
 
-错误码	描述
-201	一般错误
-202	服务错误
-203	协议错误，比如不规范的包，无效的参数，或者错误的 token
-204	未知方法
+<table class="table">
+<tbody>
+<tr>
+<th>错误码</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>201</td>
+<td>一般错误</td>
+</tr>
+<tr>
+<td>202</td>
+<td>服务错误</td>
+</tr>
+<tr>
+<td>203</td>
+<td>协议错误，比如不规范的包，无效的参数，或者错误的 token</td>
+</tr>
+<tr>
+<td>204</td>
+<td>未知方法</td>
+</tr>
+</tbody>
+</table>
 
 ### 错误包例子 Example Error Packets:
 
@@ -168,7 +187,7 @@ bencoded = d1:rd2:id20:abcdefghij01234567895:nodes9:def456...5:token8:aoeusnthe1
 
 参数:  
 
-```json
+```
 {
   "id" : "<querying nodes id>",
   "implied_port": <0 or 1>,
