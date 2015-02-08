@@ -7,8 +7,8 @@ category: php
 tags: [php, Laravel]
 ---
 
-原文： http://laravel.com/docs/master/releases#laravel-5.0  
-译文： http://discuss.flarum.org.cn/24-laravel-5  
+原文： <http://laravel.com/docs/master/releases#laravel-5.0>  
+译文： <http://discuss.flarum.org.cn/24-laravel-5>  
 译者： [flarum](http://discuss.flarum.org.cn)
 
 Laravel 5.0 包括超过 [22 个新特性](https://laravel-news.com/2015/01/laravel-5/)。
