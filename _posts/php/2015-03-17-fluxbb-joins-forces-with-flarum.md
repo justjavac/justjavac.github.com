@@ -29,8 +29,6 @@ Franz 专门从事后端的开发，负责整体的架构和性能。
 
 Franz 的加盟将使我们能发挥我们的长处，共同完成一个惊人的论坛软件。通过我们一起努力，一定可以开发出优秀的软件。
 
-If you have any comments, questions, concerns, or you’re interested in contributing to the [development of Flarum](http://discuss.flarum.org), head over to the Flarum development forum and let us know!
-
 如果您有任何意见、疑问、建议，或你对 Flarum 的发展感兴趣，可以加入 [Flarum 开发者论坛](http://discuss.flarum.org.cn)！
 
 
