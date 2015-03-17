@@ -17,11 +17,11 @@ tags : [php, FluxBB,Flarum]
 [FluxBB](http://fluxbb.org) 是一个快速、轻量级论坛软件，它的开发者是一名德国的 PHP 天才 Franz Liedke。
 FluxBB 的下一个版本(2.0)将被完全重写，并已经开发了一段时间。FluxBB 看起来非常有前途的，但由于时间的限制，它的开发进展一直非常缓慢。
 
-Franz 和我曾经谈论过 PHP 论坛软件的未来。今天我很高兴地宣布：**Franz 将加入 Flarum 核心团队，并且 FluxBB 2.0 将合并到 Flarum**。
+Franz 和我曾经谈论过 PHP 论坛软件的未来。今天我很高兴地宣布：**Franz 将加入 [Flarum](http://flarum.org.cn) 核心团队，并且 FluxBB 2.0 将合并到 Flarum**。
 
 我们这两个项目有着非常相似的愿景：
 提供一个简约的论坛软件核心，和高扩展性，允许用户定制自己的论坛而不会变得臃肿、死板、缓慢。
-我写过一篇文章 [what's ahead for Flarum this year](http://tobyzerner.com/flarum) —— 文章中描绘的发展路线将随着 FluxBB 和 Flarum 的合并而更加增强。
+我写过一篇文章 [what's ahead for Flarum this year](http://tobyzerner.com/flarum) —— 文章中描绘的发展路线将随着 FluxBB 和 [Flarum](http://flarum.org.cn) 的合并而更加增强。
 
 Franz 将加入我们，并成为 Flarum 的核心成员，并负责和 FluxBB 2.0 相关的工作。
 Franz 专门从事后端的开发，负责整体的架构和性能。
