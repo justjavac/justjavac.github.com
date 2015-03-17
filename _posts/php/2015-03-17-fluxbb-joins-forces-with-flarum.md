@@ -8,7 +8,7 @@ tags : [php, FluxBB,Flarum]
 ---
 
 原文：[FluxBB Joins Forces With Flarum](http://tobyzerner.com/fluxbb)  
-作者：[tobyzerner](http://tobyzerner.com)  
+作者：[Toby Zerner](http://tobyzerner.com)  
 译文：[强强联合：FluxBB 作者加盟 Flarum](http://justjavac.com/2015/03/17/fluxbb-joins-forces-with-flarum.html)  
 译者：[justjavac](http://justjavac.com)
 
