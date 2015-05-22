@@ -4,17 +4,24 @@
 <div class="row-fluid">
   <div class="span8">  
     <div id="article">
-    {{ content }}    
+    {{ content }}
+    <p>继续阅读关于
+    {% unless page.tags == empty %}
+    {% assign tags_list = page.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %} 
+      	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" rel="tag">{{ tag }}</a>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %} 
+      	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" rel="tag">{{ tag[0] }}</a>
+      {% endfor %}
+    {% endif %}
+    {% endunless %}
+    {% assign tags_list = nil %}
+    的文章</p>
     </div>  
 
-    {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-    {% endunless %}  
-    
     <hr/>
 
     <div class="pagination">
