@@ -33,6 +33,8 @@ Simon 想退一步，以使论坛保持简洁。回归到最基本的对话。�
 
 esoTalk 视频：[esoTalk: a simple fast free web-forum](https://vimeo.com/2867330)
 
+<iframe src="https://player.vimeo.com/video/2867330" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 不幸的是，Simon 在 2009 年去世。世界失去了一位杰出的人。
 
 这是一个悲伤的时刻，带着对他的回忆，我竭力地继续为完善 esoTalk 而工作。然而，我毕竟是一个年轻的开发人员，编写的代码不知不觉地[重新发明了轮子](http://esotalk.org/blog/future-of-esotalk.html)。当我开始关注生活中的其他领域时，发现 esoTalk 已经逐渐变得陈旧。
