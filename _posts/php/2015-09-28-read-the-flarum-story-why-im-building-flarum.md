@@ -31,7 +31,7 @@ Simon 想退一步，以使论坛保持简洁。回归到最基本的对话。�
 
 我们研究了所有论坛中关于讨论列表的层次结构，并交换了各自的意见。我们摆脱了识别标志，而是实现了一个强大的 **gambit** 搜索系统(一个简化版的 [GitHub's search tokens](https://help.github.com/articles/searching-issues/))。我们使用短轮询，因此在论坛中所以人可以几乎实时对话。esoTalk 是有别于其他论坛的，人们对此很感兴趣。
 
-<iframe src="https://player.vimeo.com/video/2867330" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+esoTalk 视频：[esoTalk: a simple fast free web-forum](https://vimeo.com/2867330)
 
 不幸的是，Simon 在 2009 年去世。世界失去了一位杰出的人。
 
