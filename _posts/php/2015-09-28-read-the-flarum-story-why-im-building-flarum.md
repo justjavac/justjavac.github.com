@@ -8,7 +8,7 @@ tags : [php, Flarum,laravel]
 ---
 
 原文：[Read The Flarum Story: Why I'm Building Flarum](http://flarum.org/story/)  
-译文：[Read The Flarum Story: Why I'm Building Flarum](http://justjavac.com/2015/09/28/read-the-flarum-story-why-im-building-flarum.html)  
+译文：[Flarum 的故事：我为什么开发 Flarum](http://justjavac.com/2015/09/28/read-the-flarum-story-why-im-building-flarum.html)  
 译者：[Flarum 中文开发者社区](http://discuss.flarum.org.cn)
 
 --------------------
