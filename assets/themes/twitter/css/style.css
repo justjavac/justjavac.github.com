@@ -194,6 +194,12 @@ section h3 {
 .affix{
   position: fixed;
 }
+@media (max-width: 979px) {
+  .affix{
+    position: static;
+  }
+}
+
 .hot_articles.affix{
   top: 100px;
 }
