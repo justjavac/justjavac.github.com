@@ -185,7 +185,7 @@ section h3 {
 #d-top img { width:42px; filter:alpha(opcity=30); opacity:0.3; }
 #d-top a:hover img { filter:alpha(opcity=100); opacity:1; }
 .v-fork-me {position:fixed;right:0;top:40px;z-index:999;}
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   .v-fork-me {display: none;}
 }
 .hidden {
