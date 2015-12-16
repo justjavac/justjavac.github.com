@@ -16,7 +16,7 @@ tags : [javascript, Lo-Dash]
 --------------------
 
 我一直以为像 Lo-Dash 这样的库已经不能再快了，毕竟它们已经足够快了。
-Lo-Dash 几乎完全混合了各种 [JavaScript 奇技淫巧](https://www.youtube.com/watch?v=NthmeLEhDDM)来压榨出最好的性能。
+Lo-Dash 几乎完全混合了各种 [JavaScript 奇技淫巧](https://www.youtube.com/watch?v=NthmeLEhDDM)（YouTube）来压榨出最好的性能。
 
 ## 惰性计算
 
