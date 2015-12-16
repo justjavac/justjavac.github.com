@@ -90,8 +90,9 @@ function contains55(str) {
 var r = _(phoneNumbers).map(String).filter(contains55).take(100);
 ```
 
-在这个例子中，`map` 和 `filter` 用来处理 `99,999` 个元素，然而我们只需要它的一个子集就可以得到想要的结果了，例如 `1000` 个。
-性能提升是巨大的（[基准测试](http://jsperf.com/lazy-demo)）：
+在这个例子中，`map` 和 `filter` 用来处理 `99,999` 个元素。
+不过我们只需要它的一个子集就可以得到想要的结果了，例如 `10,000` 个，
+性能提升也是非常大的（[基准测试](http://jsperf.com/lazy-demo)）：
 
 ![benchmark](/assets/images/benchmark.jpg)
 
