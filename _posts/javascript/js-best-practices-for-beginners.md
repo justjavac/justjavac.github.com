@@ -32,41 +32,41 @@ JavaScript 使用两种相等性操作符：`===`，`!==` 和 `==`，`!=`。
 
 技术上来说，你确实可能侥幸地省略多数花括号和分号。大多数浏览器都能够正确地解释如下代码片段：
 
-{% highlight js %}
+```javascript
 if(someVariableExists)
     x = false
-{% endhighlight %}
+```
 
 然而，再考虑一下这段代码：
 
-{% highlight js %}
+```javascript
 if(someVariableExists)
     x = false
     anotherFunctionCall();
-{% endhighlight %}
+```
 
 可能会有人认为上一段代码等价于：
 
-{% highlight js %}
+```javascript
 if(someVariableExists) {
     x = false;
     anotherFunctionCall();
 }
-{% endhighlight %}
+```
 
 很不幸，他错了。事实上，它的本意是：
 
-{% highlight js %}
+```javascript
 if(someVariableExists)
     x = false;
 anotherFunctionCall();
-{% endhighlight %}
+```
 
 你应该也注意到了，代码中缩进模仿了花括号的功能。毋庸置疑，这是非常恐怖的做法，无论如何都应该避免。唯一可以省略花括号的时候是在一行式的语句中，但即使这种情况，也是很有争议的。
 
-{% highlight js %}
+```javascript
 if(2 + 2 === 4) return 'nicely done';
-{% endhighlight %}
+```
 
 **始终要想着以后**
 
@@ -94,13 +94,13 @@ if(2 + 2 === 4) return 'nicely done';
 
 **更好的做法**
 
-{% highlight js %}
+```javascript
 <p>And now you know my favorite kinds of corn. </p>
 <script type="text/javascript" src="path/to/file.js"></script>
 <script type="text/javascript" src="path/to/anotherFile.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 ###6.在For语句之外声明变量
 
@@ -108,25 +108,25 @@ if(2 + 2 === 4) return 'nicely done';
 
 **糟糕的做法**
 
-{% highlight js %}
+```javascript
 for(var i = 0; i < someArray.length; i++) {
     var container = document.getElementById('container');
     container.innerHtml += 'my number: ' + i;
     console.log(i);
 }
-{% endhighlight %}
+```
 
 注意上面代码片段中的每次迭代都需要检查数组的长度，并且每次都要遍历DOM树找到"container"元素---效率多低啊！
 
 **更好的做法**
 
-{% highlight js %}
+```javascript
 var container = document.getElementById('container');
 for(var i = 0, len = someArray.length; i < len; i++) {
     container.innerHtml += 'my number: ' + i;
     console.log(i);
 }
-{% endhighlight %}
+```
 
 感谢有位朋友留下评论展示如何进一步优化上面的代码块。
 
@@ -134,10 +134,10 @@ for(var i = 0, len = someArray.length; i < len; i++) {
 
 当需要遍历一个数组或者对象之时，不要总是使用你能信手粘来的"for"语句。创造性地找个能够完成工作的最快速的方案。
 
-{% highlight js %}
+```javascript
 var arr = ['item 1', 'item 2', 'item 3', ...];
 var list = '<ul><li>' + arr.join('</li><li>') + '</li></ul>';
-{% endhighlight %}
+```
 
 >
 > "我不会以测试基准来烦你；你只须相信我（或者自己去测试一下）---这是目前为止最快的方式！"
@@ -151,25 +151,25 @@ var list = '<ul><li>' + arr.join('</li><li>') + '</li></ul>';
 > "通过将全局的东西封装进单个命名空间，能够大大降低与其他应用、部件、代码库交互混乱的概率。"--- Douglas Crockford
 >
 
-{% highlight js %}
+```javascript
 var name = 'jeffrey';
 var lastname = 'Way';
 
 function doSomething() {...}
 
 console.log(name);      // Jeffrey -- or window.name
-{% endhighlight %}
+```
 
 **更好的做法**
 
-{% highlight js %}
+```javascript
 var DudeNameSpace = {
     name: 'Jeffrey',
     lastname: 'Way',
     doSometing: function() {...}
 }
 console.log(DudeNameSpace.name);    // Jeffrey
-{% endhighlight %}
+```
 
 注意我们是怎样将全局性的“足迹”减少为一个命名可笑的"DudeNameSpace"对象的。
 
@@ -177,12 +177,12 @@ console.log(DudeNameSpace.name);    // Jeffrey
 
 一开始看起来似乎没有必要，但请相信我，你将会想尽可能好地注释你的代码。当你几个月后再次回到项目，会发生什么呢？发现你根本没法轻松地记起当初对每一行代码的想法。或者，如果你的某个同事需要修改你的代码，那又会怎么样呢？始终，一直记着注释你代码的重要部分吧。
 
-{% highlight js %}
+```javascript
 // Cycle through array and echo out each name
 for(var i = 0, len = array.length; i < len; i++) {
     console.log(array[i]);
 }
-{% endhighlight %}
+```
 
 ###10.拥抱渐进增强
 
@@ -194,62 +194,62 @@ for(var i = 0, len = array.length; i < len; i++) {
 
 考虑一下如下代码：
 
-{% highlight js %}
+```javascript
 setInterval(
 "document.getElementById('container').innerHTML += 'my new number: ' + i", 3000
 );
-{% endhighlight %}
+```
 
 这段代码不仅低效，而且其行为与"eval"函数相同。永远不要传给字符串给SetInterval和SetTimeOut。相反，应传递一个函数名。
 
-{% highlight js %}
+```javascript
 setInterval(someFunction, 3000);
-{% endhighlight %}
+```
 
 ###12.不要使用"With"语句
 
 乍一看，"With"语句似乎是个聪明的想法。基本概念是它们能够为访问深度嵌套对象提供一种简写方式。例如...
 
-{% highlight js %}
+```javascript
 with (being.person.man.bodyparts) {
     arms = true;
     legs = true;
 }
-{% endhighlight %}
+```
 
 **取代如下写法**
 
-{% highlight js %}
+```javascript
 being.person.man.bodyparts.arms = true;
 being.person.man.bodyparts.legs = true;
-{% endhighlight %}
+```
 
 很不幸，经过一些测试，会发现这种简写在设置新成员时表现非常糟糕。作为替代，你应该使用var。
 
-{% highlight js %}
+```javascript
 var o = being.person.man.bodyparts;
 o.arms = true;
 o.legs = true;
-{% endhighlight %}
+```
 
 ###13.使用{}而不是New Object()
 
 JavaScript中有多种创建对象的方式。也许更传统的方式是使用"new"构造器，像这样：
 
-{% highlight js %}
+```javascript
 var o = new Object();
 o.name = 'Jeffrey';
 o.lastname = 'Way';
 o.someFuncion = function() {
     console.log(this.name);
 }
-{% endhighlight %}
+```
 
 然而，这种方式因其行为并不是我们所想的那样而被认为是“糟糕的实践。相反，我推荐你使用更健壮的对象字面方法。
 
 **更好的写法**
 
-{% highlight js %}
+```javascript
 var o = {
     name: 'Jeffrey',
     lastName: 'Way',
@@ -257,13 +257,13 @@ var o = {
         console.log(this.name);
     }
 };
-{% endhighlight %}
+```
 
 注意如果你只是想简单地创建个空对象，{}就派上用场了。
 
-{% highlight js %}
+```javascript
 var o = {};
-{% endhighlight %}
+```
 
 >
 > "对象字面量使我们能够编写支持很多特性的代码，并对代码的实现者来说代码仍然相对直观。不需要直接调用构造器或维护传递给函数的参数的正确顺序，等等。" --- dyn-web.com
@@ -275,17 +275,17 @@ var o = {};
 
 **过得去的写法**
 
-{% highlight js %}
+```javascript
 var a = new Array();
 a[0] = 'Joe';
 a[1] = 'Plumber';
-{% endhighlight %}
+```
 
 **更好的写法**
 
-{% highlight js %}
+```javascript
 var a = ['Joe', 'Plumber'];
-{% endhighlight %}
+```
 
 >
 >"JavaScript中一个常见的错误是需要数组时使用对象或需要对象时使用数组。规则很简单：当属性名是小的连续整数时，你应该使用数组。否则，使用对象"---Douglas Crockford
@@ -293,19 +293,19 @@ var a = ['Joe', 'Plumber'];
 
 ###15.一长串变量？省略"var"关键字，使用逗号替代
 
-{% highlight js %}
+```javascript
 var someItem = 'some string';
 var anotherItem = 'another string';
 var oneMoreItem = 'one more string';
-{% endhighlight %}
+```
 
 **更好的写法**
 
-{% highlight js %}
+```javascript
 var someItem = 'some string',
     anotherItem = 'another string',
     oneMoreItem = 'one more string';
-{% endhighlight %}
+```
 
 相当的不言自明。我不知道这里是否有任何真正的速度提升，但是它使你的代码更加简洁了。
 
@@ -313,35 +313,35 @@ var someItem = 'some string',
 
 技术上来说，大多数浏览器都允许你的省略一些分号。
 
-{% highlight js %}
+```javascript
 var someItem = 'some string'
 function doSomething() {
     return 'something'
 }
-{% endhighlight %}
+```
 
 话虽如此，但这是一种非常糟糕的做法，可能导致更大的问题，问题查找起来也更困难。
 
 **更好的写法**
 
-{% highlight js %}
+```javascript
 var someItem = 'some string';
 function doSomething() {
     return 'something';
 }
-{% endhighlight %}
+```
 
 ###18."For in"语句
 
 遍历对象内的成员时，你也会得到方法函数。为了解决这个问题，应始终将你的代码包装在一个if语句中来过滤信息。
 
-{% highlight js %}
+```javascript
 for(key in object) {
     if(object.hasOwnProperty(key)) {
         ... then do something...
     }
 }
-{% endhighlight %}
+```
 
 引自*JavaScript: 语言精粹， Douglas Crockford著*
 
@@ -349,13 +349,13 @@ for(key in object) {
 
 需要一种快速简单的方法来检测一个操作花费多长时间么？使用Firebug的"timer"特性记录结果。
 
-{% highlight js %}
+```javascript
 function TimeTracker() {
     console.time("MyTimer");
     for(x=5000; x > 0; x--){}
     console.timeEnd("MyTimer");
 }
-{% endhighlight %}
+```
 
 ###20.阅读，阅读，再阅读
 
@@ -372,14 +372,14 @@ function TimeTracker() {
 
 相比调用函数，当页面加载或调用父函数时，让函数自动执行会简单些。简单地将你的函数包装在圆括号内，并添加额外的一对圆括号，其本质上就调用了这个函数。
 
-{% highlight js %}
+```javascript
 (function doSomething() {
     return {
         name: 'jeff',
         lastName: 'way'
     };
  })();
-{% endhighlight %}
+```
 
 ###22.原始(raw)JavaScript代码的执行速度始终快于使用代码库
 
@@ -393,24 +393,24 @@ jQuery的"each"方法用来做遍历非常赞，但使用原生"for"语句始终
 
 简单地导入该脚本，你就能获得一个新的JSON全局对象，用于解析你的.json文件。
 
-{% highlight js %}
+```javascript
 var response = JSON.parse(xhr.responseText);
 
 var container = document.getElementById('container');
 for(var i = 0, len = response.length; i < len; i++) {
     container.innerHTML += '<li>' + response[i].name + ' : ' + response[i].email + '</li>';
 }
-{% endhighlight %}
+```
 
 ###24.删除"Language"
 
 几年前，在script标签内常见有"language"属性。
 
-{% highlight js %}
+```javascript
 <script type="text/javascript" language="javascript">
 ...
 </script>
-{% endhighlight %}
+```
 
 然而，这个属性很早就被弃用了，所以就不要再使用了。
 
