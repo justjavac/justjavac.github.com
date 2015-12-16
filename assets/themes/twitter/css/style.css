@@ -12,6 +12,9 @@ section h3 {
   height: 30px;
   margin-bottom: 8px;
 }
+li {
+  line-height: 1.6em;
+}
 .navbar {
   margin-bottom: 0;
 }
