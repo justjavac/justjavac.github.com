@@ -21,29 +21,31 @@ tags: [JavaScript, 翻译]
 JavaScript 对象可看作是动态地装载属性（这里指**自有属性**）的"包包"，并且每个对象都有一个链指向一个原型对象。
 如下即为当尝试访问一个属性时发生的事情：
 
-    // 假设有个对象 o，其原型链如下所示：
-    // {a: 1, b: 2} ---> {b: 3, c: 4} ---> null
-    // 'a' 和 'b' 是 o 的自有属性。
+```javascript
+// 假设有个对象 o，其原型链如下所示：
+// {a: 1, b: 2} ---> {b: 3, c: 4} ---> null
+// 'a' 和 'b' 是 o 的自有属性。
 
-    // 本例中，someObject.[[Prototype]] 指定 someObject 的原型。
-    // 这完全是一种标记符号（基于ECMAScript标准中所使用的），不可用于脚本中。
+// 本例中，someObject.[[Prototype]] 指定 someObject 的原型。
+// 这完全是一种标记符号（基于ECMAScript标准中所使用的），不可用于脚本中。
 
-    console.log(o.a);   // 1
-    // o 有一个自有属性 'a' 吗？是的，其值为 1
-     
-    console.log(o.b);   // 2
-    // o 有自有属性 'b' 吗？是的，其值为2 
-    // o 的原型也有一个属性 'b'，但是这里不会被访问。
-    // 这被称为“属性隐藏”（property shadowing）
+console.log(o.a);   // 1
+// o 有一个自有属性 'a' 吗？是的，其值为 1
+ 
+console.log(o.b);   // 2
+// o 有自有属性 'b' 吗？是的，其值为2 
+// o 的原型也有一个属性 'b'，但是这里不会被访问。
+// 这被称为“属性隐藏”（property shadowing）
 
-    console.log(o.c);   // 4
-    // o有自有属性'c'吗？没有，检查它的原型
-    // o.[[Prototype]]有自有属性'c'吗？是的，其值为4。
+console.log(o.c);   // 4
+// o有自有属性'c'吗？没有，检查它的原型
+// o.[[Prototype]]有自有属性'c'吗？是的，其值为4。
 
-    console.log(o.d);   // undefined
-    // o有自有属性'd'吗？没有，检查其原型
-    // o.[[Prototype]]有自有属性'd'吗？没有，检查其原型
-    // o.[[Prototype]].[[Prototype]]为 null，停止搜索，没有找到属性，返回undefined。
+console.log(o.d);   // undefined
+// o有自有属性'd'吗？没有，检查其原型
+// o.[[Prototype]]有自有属性'd'吗？没有，检查其原型
+// o.[[Prototype]].[[Prototype]]为 null，停止搜索，没有找到属性，返回undefined。
+```
 
 将一个属性分配给一个对象会创建一个自有属性。
 对于获取和设置属性的行为规则，唯一的例外是当一个继承而来的属性带有一个[属性值获取器或设置器](https://developer.mozilla.org/en/docs/JavaScript/Guide/Working_with_Objects?redirectlocale=en-US&redirectslug=Core_JavaScript_1.5_Guide%2FWorking_with_Objects#Defining_getters_and_setters)。
@@ -56,67 +58,73 @@ JavaScript 中，任何函数都可以作为一个属性被添加到一个对象
 
 当执行一个继承而来的函数时，[this](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/this)的值指向继承对象，而不是原型对象，该函数是原型对象的自有属性。
 
-    var o = {
-        a: 2,
-        m: function(b) {
-            return this.a + 1;
-        }
-    };
-     
-    console.log(o.m()); // 3
-    // 这里当调用o.m时，'this'引用o
+```javascript
+var o = {
+    a: 2,
+    m: function(b) {
+        return this.a + 1;
+    }
+};
+ 
+console.log(o.m()); // 3
+// 这里当调用o.m时，'this'引用o
 
-    var p = Object.create(o);
-    // p是一个继承自o的对象
-     
-    p.a = 12;   // 为p创建一个自有属性'a'
-    console.log(p.m()); // 13
-    // 这里调用p.m时，'this'引用p
-    // 因此，当p继承了o的函数m，'this.a'意味着p.a，p的自有属性'a'
+var p = Object.create(o);
+// p是一个继承自o的对象
+ 
+p.a = 12;   // 为p创建一个自有属性'a'
+console.log(p.m()); // 13
+// 这里调用p.m时，'this'引用p
+// 因此，当p继承了o的函数m，'this.a'意味着p.a，p的自有属性'a'
+```
 
 ## 2. 创建对象的不同方式，以及由此产生的原型链
 
 ### 2.1 以语法结构创建对象
 
-    var o = {a: 1};
+```javascript
+var o = {a: 1};
 
-    // 新创建的对象o有Object.prototype作为其[[Prototype]]
-    // o没有名为'hasOwnProperty'的自有属性
-    // hasOwnProperty是Object.prototype的自有属性。因此o从Object.prototype继承了hasOwnProperty
-    // Object.prototype以null为其prototype。
-    // o ---> Object.prototype ---> null
-     
-    var a = ["yo", "whadup", "?"];
+// 新创建的对象o有Object.prototype作为其[[Prototype]]
+// o没有名为'hasOwnProperty'的自有属性
+// hasOwnProperty是Object.prototype的自有属性。因此o从Object.prototype继承了hasOwnProperty
+// Object.prototype以null为其prototype。
+// o ---> Object.prototype ---> null
+ 
+var a = ["yo", "whadup", "?"];
 
-    // 数组继承自Array.prototype（它具有indexOf, forEach等方法）。
-    // 该原型链如下所示：
-    // a ---> Array.prototype ---> Object.prototype ---> null
+// 数组继承自Array.prototype（它具有indexOf, forEach等方法）。
+// 该原型链如下所示：
+// a ---> Array.prototype ---> Object.prototype ---> null
 
-    function f() {
-        return 2;
-    }
+function f() {
+    return 2;
+}
 
-    // 函数继承自Function.prototype（它具有call，bind等方法）：
-    // f ---> Function.prototype ---> Object.prototype ---> null
+// 函数继承自Function.prototype（它具有call，bind等方法）：
+// f ---> Function.prototype ---> Object.prototype ---> null
+```
 
 ### 2.2 使用构造器
 
 JavaScript 中，"构造器""就"是一个恰好以 [new 操作符](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/new)调用的函数。
 
-    function Graph() {
-        this.vertexes = [];
-        this.edges = [];
+```javascript
+function Graph() {
+    this.vertexes = [];
+    this.edges = [];
+}
+
+Graph.prototype = {
+    addVertex: function(v) {
+        this.vertexes.push(v);
     }
+};
 
-    Graph.prototype = {
-        addVertex: function(v) {
-            this.vertexes.push(v);
-        }
-    };
-
-    var g = new Graph();
-    // g是一个带有自有属性'vertexes'和'edges'的对象。
-    // 执行new Graph()后，g.[[Prototype]]是Graph.prototype的值。
+var g = new Graph();
+// g是一个带有自有属性'vertexes'和'edges'的对象。
+// 执行new Graph()后，g.[[Prototype]]是Graph.prototype的值。
+```
 
 ### 2.3 使用 Object.create
 
@@ -124,16 +132,18 @@ ECMAScript 5 引入了一个新方法：[Object.create](https://developer.mozill
 调用这个方法会创建一个新对象。
 这个对象的原型是该函数的第一个参数：
 
-    var a = {a: 1};
-    // a ---> Object.prototype ---> null
+```javascript
+var a = {a: 1};
+// a ---> Object.prototype ---> null
 
-    var b = Object.create(a);
-    // b ---> a ---> Object.prototype ---> null
-    console.log(b.a);   // 1 (继承而来)
+var b = Object.create(a);
+// b ---> a ---> Object.prototype ---> null
+console.log(b.a);   // 1 (继承而来)
 
-    var c = Object.create(b);
-    // c ---> b ---> a ---> Object.prototype ---> null
+var c = Object.create(b);
+// c ---> b ---> a ---> Object.prototype ---> null
 
-    var d = Object.create(null);
-    // d ---> null
-    console.log(d.hasOwnProperty);  // undefined，因为d并不继承自Object.prototype
+var d = Object.create(null);
+// d ---> null
+console.log(d.hasOwnProperty);  // undefined，因为d并不继承自Object.prototype
+```
