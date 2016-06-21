@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 微信公众号（justjavac）正式接受外部投稿，所有打赏金额归投稿者
+title: 我的公众号正式接受外部投稿，所有打赏金额归投稿者
 categories: [other]
 tags: [程序员, 公众号, 微信, 投稿]
 ---
