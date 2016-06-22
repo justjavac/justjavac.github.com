@@ -15,6 +15,7 @@ header : justjavac
 
 技能：PHP、javascript
 
+天津 GDG（谷歌开发者社区）特约讲师，稀土掘金联合编辑，D-Day 嘉宾讲师。曾翻译《JavaScript Quirks》，正在出版《[代码之谜](http://justjavac.com/codepuzzle.html)》。
 
 JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
@@ -74,3 +75,6 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 - APP接口开发（PHP）
 
+## 求职意向
+
+互联网公司，PHP 岗位
