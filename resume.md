@@ -17,7 +17,7 @@ header : justjavac
 
 曾翻译《JavaScript Quirks》，正在出版《[代码之谜](http://justjavac.com/codepuzzle.html)》。JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
-平时混迹于 GitHub，参与众多开源项目，Star 数位列全球前 100 名（https://github-ranking.com/users）。
+平时混迹于 GitHub，参与众多开源项目，Star 数位列全球前 100 名（数据来源：<https://github-ranking.com/users>）。
 
 更多关于我的介绍可以查看这篇文章：[SegmentFault 访谈，我的编程之路：“懒惰”是程序员最大的美德](http://justjavac.com/other/2016/03/07/the-way-of-programming.html)。
 
