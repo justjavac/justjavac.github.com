@@ -5,7 +5,7 @@ permalink: /:categories/:year/:month/:day/:title.html
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 paginate: 50
