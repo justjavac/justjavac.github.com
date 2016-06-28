@@ -7,7 +7,7 @@ header : justjavac
 
 ## 个人简介
 
-姓名：王松
+昵称：迷渡
 
 网络ID：[justjavac](https://www.google.com.hk/search?q=justjavac&oq=justjavac&aqs=chrome..69i57j69i60l3j69i65l2&sourceid=chrome&ie=UTF-8)
 
@@ -73,8 +73,8 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 天津千行时线科技有限公司（框架工程师）
 
-- APP接口开发（PHP）
+- APP 接口开发（PHP）
 
 ## 求职意向
 
-互联网公司，PHP 岗位
+创业型互联网公司，PHP 岗位
