@@ -9,7 +9,7 @@ header : justjavac
 
 昵称：迷渡
 
-网络ID：[justjavac](https://www.google.com.hk/search?q=justjavac&oq=justjavac&aqs=chrome..69i57j69i60l3j69i65l2&sourceid=chrome&ie=UTF-8)
+网络ID：[justjavac](https://www.google.com/#q=justjavac)
 
 出生年：1986年
 
@@ -41,7 +41,7 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 主要开发项目：
 
-- 食品安全APP（Java）<del>项目失败</del>
+- 食品安全APP（Java）
 - 天津海事局基站统计监测系统（C语言、PHP）
 - 天津市科技企业孵化器综合服务管理平台（Java、PHP）
 
@@ -63,7 +63,7 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 项目：
 
-- 超级菜单（微信公众平台、PHP）<del>融资失败，项目停止</del>
+- 超级菜单（微信公众平台、PHP）
 - 透视眼-人员信贷信息筛查系统（PHP）
 - 实名盾（Hybrid App）
 
