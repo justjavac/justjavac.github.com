@@ -63,6 +63,6 @@ Just enjoy it.
 - 京东：<http://item.jd.com/11946585.html>
 - 当当：<http://product.dangdang.com/24000878.html>
 
-或者关注微信公众号 Phodal 购买签名版
+按照 Phodal 一贯的风格，总是会：**一！言！不！合！就！送！书！**。关注微信公众号 Phodal 购买（或得到）签名版
 
 ![Phodal](/assets/images/weixin-phodal.jpg)
