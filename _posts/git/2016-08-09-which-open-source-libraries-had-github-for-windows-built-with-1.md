@@ -53,17 +53,15 @@ GitHub 作为全球最大的开源社区，GitHub for Windows 自然也是构建
 
     DotNetZip 是一款比 SharpZipLib 更好用（据说是，具体我也没用过）的开源 ZIP 库，使用它可以很容易地创建、解压以及更新 ZIP 文件。
 
-    ```csharp
-    using (ZipFile zip = new ZipFile())
-    {
-        // add this map file into the "images" directory in the zip archive
-        zip.AddFile("c:\\images\\personal\\7440-N49th.png", "images");
-        // add the report into a different directory in the archive
-        zip.AddFile("c:\\Reports\\2008-Regional-Sales-Report.pdf", "files");
-        zip.AddFile("ReadMe.txt");
-        zip.Save("MyZipFile.zip");
-    }
-    ```
+        using (ZipFile zip = new ZipFile())
+        {
+            // add this map file into the "images" directory in the zip archive
+            zip.AddFile("c:\\images\\personal\\7440-N49th.png", "images");
+            // add the report into a different directory in the archive
+            zip.AddFile("c:\\Reports\\2008-Regional-Sales-Report.pdf", "files");
+            zip.AddFile("ReadMe.txt");
+            zip.Save("MyZipFile.zip");
+        }
 
 7. Json.NET
 
