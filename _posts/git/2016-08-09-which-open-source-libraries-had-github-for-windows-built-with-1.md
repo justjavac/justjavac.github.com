@@ -11,6 +11,8 @@ GitHub 作为全球最大的开源社区，GitHub for Windows 自然也是构建
 
 1. Akavache
 
+    ![Akavache](/assets/images/akavache.png)
+
     <https://github.com/akavache/Akavache>
 
     Akavache 是一个 C# 的异步 Key-Value 存储系统，支持持久化。可以用来作为 NoSQL 数据库，甚至是缓存来使用。
