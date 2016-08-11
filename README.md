@@ -1,6 +1,6 @@
 ## justjavac
 
-[![](https://img.shields.io/github/issues/justjavac/justjavac.github.com.svg)](https://github.com/justjavac/justjavac.github.com/issues) [![Github All Releases](https://img.shields.io/github/downloads/justjavac/justjavac.github.com/total.svg)]()
+[![](https://img.shields.io/github/issues/justjavac/justjavac.github.com.svg)](https://github.com/justjavac/justjavac.github.com/issues)
 
 2005年的时候，写博客是一种流行；<br>
 2011年的时候，写博客是一种坚持。
