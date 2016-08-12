@@ -47,7 +47,7 @@ JavaScript 的 `+` 运算符有两个目的：
 
 ```javascript
 [1, 2].concat([3, 4]) // [1, 2, 3, 4]
- ```
+```
 
 ### javascript 中的 + 运算符概述
 
