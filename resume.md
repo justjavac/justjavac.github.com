@@ -23,6 +23,8 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 更多关于我的介绍可以查看 [SegmentFault 访谈：我的编程之路](http://justjavac.com/other/2016/03/07/the-way-of-programming.html)。
 
+![justjavac](/assets/images/xitu-juejin.jpg)
+
 ## 网络足迹
 
 - [博客](http://justjavac.com)
@@ -53,7 +55,7 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 项目：
 
-- 天津本地生活服务社区“金为网”（PHP）
+- 天津本地生活服务社区“金为网”（PHP、nodejs）
 
 ----------------
 
@@ -63,7 +65,7 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 项目：
 
-- 超级菜单（微信公众平台、PHP）
+- 超级菜单（微信公众平台、PHP、nodejs）
 - 透视眼-人员信贷信息筛查系统（PHP）
 - 实名盾（Hybrid App）
 
@@ -74,7 +76,3 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 天津千行时线科技有限公司（框架工程师）
 
 - APP 接口开发（PHP）
-
-## 求职意向
-
-创业型互联网公司，PHP 岗位
