@@ -23,8 +23,6 @@ JSON API 中文规范维护者，Flaurm 中文社区创始人。
 
 更多关于我的介绍可以查看 [SegmentFault 访谈：我的编程之路](http://justjavac.com/other/2016/03/07/the-way-of-programming.html)。
 
-![justjavac](/assets/images/xitu-juejin.jpg)
-
 ## 网络足迹
 
 - [博客](http://justjavac.com)
