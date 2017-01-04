@@ -7,6 +7,12 @@ tags : [web, 前端]
 type: porter
 ---
 
+文章来源知乎  
+原文链接：<https://www.zhihu.com/question/19809484/answer/13215239>  
+原文作者：[李路](https://www.zhihu.com/people/li-lu-69)
+
+--------------
+
 以我的经验，大部分技术，熟读下列四类书籍即可。 
 
 1. 入门，用**浅显**的语言和方式讲述**正确**的道理和方法，如head first系列
@@ -43,8 +49,6 @@ The Book of CSS3 推荐这本，一个技术人员写的组织清晰的css3模�
 * Secrets of Javascript Ninja （好像没有中文版）Jquery作者John Resig最新著作
 * Node: Up and Running 认识一下流行的no-block js server
 * Javascript Web Applications （《[基于MVC的JavaScript Web富应用开发][9]》）这本号称是对当下js landscape的总结
-
-原文链接：http://zhi.hu/Bgmh
 
 
   [1]: http://www.amazon.cn/gp/product/B00FF3P8FY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00FF3P8FY&linkCode=as2&tag=cfjh-23
