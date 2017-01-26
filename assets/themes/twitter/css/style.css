@@ -226,4 +226,5 @@ li {
   font-family: arial, sans-serif;
   line-height: 1.6em;
   color: #333333;
+  word-break: break-all;
 }
