@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 移动 Web 滚动性能优化: Passive Event Listeners
+title: 移动 Web 滚动性能优化：Passive Event Listeners
 keywords: javascript,性能优化
 category : javascript
 tags : [javascript, 性能优化]
