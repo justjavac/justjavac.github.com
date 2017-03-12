@@ -5,7 +5,7 @@ categories: [other]
 tags: [magnet, DHT, BitTorrent, torrent]
 ---
 
-上周开发了一个磁力链接和 BT 种子的搜索引擎 [{Magnet & Torrent}](http://magnet-torrent.com)，本文简单介绍一下主要的系统功能和用到的技术。
+上周开发了一个磁力链接和 BT 种子的搜索引擎 [{Magnet & Torrent}](http://mt.jjc.link)，本文简单介绍一下主要的系统功能和用到的技术。
 
 系统包括几个独立的部分：
 
@@ -23,9 +23,9 @@ tags: [magnet, DHT, BitTorrent, torrent]
 
     基于搜索关键词的新词发现机制。
   
-    目前词库方面还有一个很大的问题，比如最新的电影无法分词，例如[星际穿越](http://magnet-torrent.com/search/%E6%98%9F%E9%99%85%E7%A9%BF%E8%B6%8A) 会被分词为“星际”和“穿越”，因此“被偷走的那五年，**穿越**火线，极速蜗牛，了不起的盖茨比，摩登年代，**星际**迷航，乔布斯传。”也出现在了搜索结果中。
+    目前词库方面还有一个很大的问题，比如最新的电影无法分词，例如[星际穿越](http://mt.jjc.link/search/%E6%98%9F%E9%99%85%E7%A9%BF%E8%B6%8A) 会被分词为“星际”和“穿越”，因此“被偷走的那五年，**穿越**火线，极速蜗牛，了不起的盖茨比，摩登年代，**星际**迷航，乔布斯传。”也出现在了搜索结果中。
   
-    当然这也不算事大问题，但是[霍比特人](http://magnet-torrent.com/search/%E9%9C%8D%E6%AF%94%E7%89%B9%E4%BA%BA)却被分词为了“霍”、“比特”、“人”了，好在搜索结果里面没有啥东西乱入。这些属于过度分词，通过增加词库内容可以解决，因此准备些一个豆瓣爬虫，将豆瓣的所有电影都加入词库，用来辅助分词。
+    当然这也不算事大问题，但是[霍比特人](http://mt.jjc.link/search/%E9%9C%8D%E6%AF%94%E7%89%B9%E4%BA%BA)却被分词为了“霍”、“比特”、“人”了，好在搜索结果里面没有啥东西乱入。这些属于过度分词，通过增加词库内容可以解决，因此准备些一个豆瓣爬虫，将豆瓣的所有电影都加入词库，用来辅助分词。
 
 - 资源别名
 
@@ -37,7 +37,7 @@ tags: [magnet, DHT, BitTorrent, torrent]
 
     英文还需要分词？空格不就是词语边界吗？你有这样的译文很正常，我最初也是这么想的，因此英文只是简单的使用了 PHP 的 `explode(' ', $query)` 函数。
   
-    但是我刚才（2015-02-01 21:59:35）看搜索日志时发现了一些问题，今天 [xart](http://magnet-torrent.com/search/xart) 关键词被搜索了 169 次，而 [x-art](http://magnet-torrent.com/search/x-art) 关键词仅仅被搜索了 54 次，但是 x-art 才是它的官方名词啊（不要问我为什么知道的这么多）。因此我刚刚调整了一下代码，将 xart 和 x-art 统一定向到了 x-art。
+    但是我刚才（2015-02-01 21:59:35）看搜索日志时发现了一些问题，今天 [xart](http://mt.jjc.link/search/xart) 关键词被搜索了 169 次，而 [x-art](http://mt.jjc.link/search/x-art) 关键词仅仅被搜索了 54 次，但是 x-art 才是它的官方名词啊（不要问我为什么知道的这么多）。因此我刚刚调整了一下代码，将 xart 和 x-art 统一定向到了 x-art。
 
 - BitTorrent 低版本最初使用 Python 开发，而且是开源的，因此很多类库都是直接使用的 BitTorrent 的，也有一些类库和辅助函数直接移植到了 PHP 平台上；（Petru Paler 写的 [bencode](https://github.com/bittorrent/bencode) 太赞了，老婆问我：你为什么跪着写代码？）
 
