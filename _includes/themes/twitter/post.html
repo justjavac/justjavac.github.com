@@ -40,19 +40,6 @@
       </ul>
     </div>
     
-    <script type="text/javascript" id="wumiiRelatedItems"></script>
-    <script type="text/javascript">
-    var wumiiPermaLink = ""; //请用代码生成文章永久的链接
-    var wumiiTitle = {{ page.title | jsonify }}; //请用代码生成文章标题
-    var wumiiTags = {{ page.tags | join:"," | jsonify }}; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
-    var wumiiCategories = {{ page.categories | jsonify }};
-    var wumiiSitePrefix = "http://justjavac.com/";
-    var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
-</script>
-<script type="text/javascript" src="http://widget.wumii.com/ext/relatedItemsWidget"></script>
-<a rel="nofollow" href="http://www.wumii.com/widget/relatedItems" style="border:0;">
-    <img src="http://static.wumii.cn/images/pixel.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;" />
-</a>    
     <hr>
     <!-- Duoshuo Comment BEGIN -->
     <div id="comments" class="ds-thread" data-title="{{ page.title }}" data-url="{{ site.production_url }}{{ page.url }}" data-thread-key="{{ page.id }}"></div>
