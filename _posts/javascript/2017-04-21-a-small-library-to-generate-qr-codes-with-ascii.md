@@ -9,7 +9,7 @@ tags : [javascript, qr]
 <style>
 code, pre {
     font-size: 10px;
-    line-height: 1;
+    line-height: 1.2;
 }
 </style>
 
