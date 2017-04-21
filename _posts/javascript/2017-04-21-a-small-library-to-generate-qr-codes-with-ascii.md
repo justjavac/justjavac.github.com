@@ -19,8 +19,8 @@ code, pre {
 
 ```text
 
-
-
+// 使用微信扫码下面二维码
+// 会识别出 hello world
 
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MM              MM  MM  MM  MMMMMM  MM              MM
@@ -49,9 +49,6 @@ MM  MM      MM  MM    MM          MMMM    MM  MMMM  MM
 MM  MMMMMMMMMM  MMMM      MMMM    MM  MM    MMMMMM  MM
 MM              MMMMMMMM  MMMM  MM  MMMM  MMMM      MM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-
-
-
 
 ```
 
