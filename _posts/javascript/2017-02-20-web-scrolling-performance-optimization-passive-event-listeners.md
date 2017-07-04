@@ -6,6 +6,12 @@ category : javascript
 tags : [javascript, 性能优化]
 ---
 
+原文地址：http://justjavac.com/javascript/2017/02/20/web-scrolling-performance-optimization-passive-event-listeners.html
+
+备份地址：https://github.com/justjavac/the-front-end-knowledge-you-may-dont-know/issues/6
+
+--------
+
 今年的 Google I/O 已经过去一段时间了，大部分人都关注了一些新产品的发布，比如 Allo 和 Duo、Android N、Daydream、Android Studio、Firebase……还有 PWA。
 
 网上关于 PWA 相关的文章和技术讨论已经很多了，但是关注 Passive event listeners 的文章却很少。那么 Passive event listeners 到底有多神奇呢？
