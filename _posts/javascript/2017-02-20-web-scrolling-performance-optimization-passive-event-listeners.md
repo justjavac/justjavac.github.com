@@ -6,9 +6,9 @@ category : javascript
 tags : [javascript, 性能优化]
 ---
 
-原文地址：http://justjavac.com/javascript/2017/02/20/web-scrolling-performance-optimization-passive-event-listeners.html
+原文地址：<http://justjavac.com/javascript/2017/02/20/web-scrolling-performance-optimization-passive-event-listeners.html>
 
-备份地址：https://github.com/justjavac/the-front-end-knowledge-you-may-dont-know/issues/6
+备份地址：<https://github.com/justjavac/the-front-end-knowledge-you-may-dont-know/issues/6>
 
 --------
 
