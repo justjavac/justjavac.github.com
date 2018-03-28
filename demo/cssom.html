@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Typed OM </title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width"/>
+</head>
+
+<body>
+    <style>
+        #box {
+            padding: 8px;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-top: 10px;
+        }
+
+        #support {
+            display: none;
+            font-weight: bold;
+            font-size: 16px;
+            color: red;
+        }
+
+        #support.show {
+            display: inline-block;
+        }
+    </style>
+    </p>
+    <div id="support">Drats! Sorry, your browser doesn't support Typed OM.</div>
+
+    <div id="box"></div>
+
+    <script>
+        (function () {
+            if (!window.CSSTransformValue) {
+                document.querySelector('#box').remove();
+                document.querySelector('#support').classList.add('show');
+                return;
+            }
+
+            const transform = new CSSTransformValue([
+                new CSSRotate(0, 0, 1, CSS.deg(0)),
+                // new CSSScale(0.5, 0.5)
+                // new CSSTranslate(CSS.px(0), CSS.px(0))
+            ]);
+
+            const box = document.querySelector('#box');
+            box.attributeStyleMap.set('transform', transform);
+
+            let rafId;
+
+            function draw() {
+                rafId = requestAnimationFrame(draw);
+                transform[0].angle.value = (transform[0].angle.value + 5) % 360;
+                // const newScale = 1 / ((transform[0].angle.value % 2) + 1);
+                //transform[1] = new CSSScale(newScale, newScale);
+                // transform[1].x.value += 1;
+                box.attributeStyleMap.set('transform', transform); // commit it.
+            }
+            box.addEventListener('mouseenter', function (e) {
+                draw();
+            });
+
+            box.addEventListener('mouseleave', function (e) {
+                cancelAnimationFrame(rafId);
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
