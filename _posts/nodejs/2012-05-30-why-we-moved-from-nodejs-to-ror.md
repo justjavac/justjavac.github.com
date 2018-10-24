@@ -12,7 +12,7 @@ type: porter
 它描述的只是我们做决策过程中的一些思考、决策背后的原因。
 两种框架都非常优秀，都出色的完成了它们的设计初衷，这也是为什么我们部分的模块仍然运行在NodeJS上的原因。
 
-[1]: http://justjavac.com/nodejs/2012/04/03/node-beginner.html
+[1]: https://justjavac.com/nodejs/2012/04/03/node-beginner.html
 
 我是NodeJs的大粉丝，认为这是一项让人非常兴奋的技术，相信它会变的越来越流行。
 我对这项技术非常的欣赏——尽管我们最近把[Targeter App](http://targeterapp.com/)从NodeJS迁移到了Ruby on Rails。
@@ -26,7 +26,7 @@ type: porter
 
 NodeJS很适合做那些有大量**短生命期请求**的应用。
 对于传统的CRUD应用，它也很好，但不是非常的理想。
-在[PHP](http://justjavac.com/categories.html#php-ref)，Ruby，Python语言里都有很成熟、优化的很好的框架来处理这种应用。
+在[PHP](https://justjavac.com/categories.html#php-ref)，Ruby，Python语言里都有很成熟、优化的很好的框架来处理这种应用。
 NodeJS里的所有东西都异步执行的理念对于CRUD应用来说没有任何效果。
 其它语言里的流行的框架能提供非常好的缓存技术，你所有的需求都能满足，包括异步执行。
 

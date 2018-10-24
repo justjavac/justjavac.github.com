@@ -165,7 +165,7 @@ alert(typeof value);    //"number"
 3. [Javascript 作用域和变量提升][3]
 4. [Zakas 解答 Baranovskiy 的 JavaScript 小测试][4]
 
-[1]: http://justjavac.com/named-function-expressions-demystified.html
+[1]: https://justjavac.com/named-function-expressions-demystified.html
 [2]: http://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/
 [3]: http://justjavac.iteye.com/blog/1886140
 [4]: http://hikejun.com/blog/2010/01/27/zakas%E8%A7%A3%E7%AD%94baranovskiy%E7%9A%84javascript%E5%B0%8F%E6%B5%8B%E8%AF%95/

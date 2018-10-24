@@ -8,7 +8,7 @@ tags : [javascript]
 
 原文：[Shim sniffing](http://www.jspatterns.com/shim-sniffing/)
 
-译文：[JavaScript 当中的代码嗅探](http://justjavac.com/javascript/2013/04/05/shim-sniffing-in-javascript.html)
+译文：[JavaScript 当中的代码嗅探](https://justjavac.com/javascript/2013/04/05/shim-sniffing-in-javascript.html)
 
 译者：[yuezk](http://www.cnblogs.com/yuezk/)
 

@@ -9,13 +9,13 @@ uids: 2127182625
 
 原文：[JavaScript quirk 2: two “non-values” – undefined and null](http://www.2ality.com/2013/04/quirk-undefined.html)
 
-译文：[JavaScript 的怪癖 2：两个「空值」：undefined 和 null](http://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html)
+译文：[JavaScript 的怪癖 2：两个「空值」：undefined 和 null](https://justjavac.com/javascript/2013/04/14/javascript-quirk-2-two-non-values-undefined-and-null.html)
 
 译者：[SingleSeeker](http://weibo.com/singleseeker)
 
 ----------------------------------------------------
 
-此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第二篇。
+此文是 [javascript 的 12 个怪癖（quirks）](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第二篇。
 感谢 [@SingleSeeker](http://weibo.com/singleseeker) 对本文的翻译。
 
 本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
@@ -25,7 +25,7 @@ uids: 2127182625
 对于“空值”或“空引用”，大多数编程语言只有一个值。比如，在 Java 中用的是 `null`。
 但是在 Javascript 中却有两个特殊的值: `undefined` 和 `null`。
 他们基本上是相同，但用法上却略有些不同。
-在这个 [系列教程](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的最后，我会解释一下在 ECMAScript 6 中的一些变化。
+在这个 [系列教程](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的最后，我会解释一下在 ECMAScript 6 中的一些变化。
 
 `undefined` 是被语言本身所分配的。
 如果一个变量还没有被初始化，那么它的值就是 `undefined`:
@@ -51,7 +51,7 @@ uids: 2127182625
 校检：一个变量是否有值？
 
 如果你想知道变量 `v` 是否有值，正常情况下，你需要同时检验 `undefined` 与 `null`。
-幸运的是两个值都是 [false 型](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)。
+幸运的是两个值都是 [false 型](https://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)。
 因此，只用一个判断，就可以同时检验这两项是否为真:
 
 ```javascript
@@ -62,7 +62,7 @@ if (v) {
 }
 ```
 
-在本 [系列](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的第 5 部分——关于函数参数的处理——你将会看到更多的上面校检例子。
+在本 [系列](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html "javascript 的 12 个怪癖（quirks）") 的第 5 部分——关于函数参数的处理——你将会看到更多的上面校检例子。
 有一点要注意的是：这个检查也会把 `false`, `-0`, `+0`, `NaN` 与 '' 当成“空值”。
 如果这不是你想要的，那么就不能使用上面的校检方法了。
 

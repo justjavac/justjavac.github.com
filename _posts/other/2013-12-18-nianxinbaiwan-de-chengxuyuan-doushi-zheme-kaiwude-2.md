@@ -105,5 +105,5 @@ tags : [程序员, 读书]
 - [据说，年薪百万的程序员，都是这么开悟的（一）][1]
 - [据说，年薪百万的程序员，都是这么开悟的（二）][2]
 
-[1]: http://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-1.html
-[2]: http://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-2.html
+[1]: https://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-1.html
+[2]: https://justjavac.com/other/2013/12/18/nianxinbaiwan-de-chengxuyuan-doushi-zheme-kaiwude-2.html

@@ -53,12 +53,12 @@ The Book of CSS3 推荐这本，一个技术人员写的组织清晰的css3模�
 * Javascript Web Applications （《[基于MVC的JavaScript Web富应用开发][9]》）这本号称是对当下js landscape的总结
 
 
-  [1]: http://www.amazon.cn/gp/product/B00FF3P8FY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00FF3P8FY&linkCode=as2&tag=cfjh-23
-  [2]: http://www.amazon.cn/gp/product/B0011F5SIC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011F5SIC&linkCode=as2&tag=cfjh-23
-  [3]: http://www.amazon.cn/gp/product/B003IURKAM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003IURKAM&linkCode=as2&tag=cfjh-23
-  [4]: http://www.amazon.cn/gp/product/B008O70OKC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008O70OKC&linkCode=as2&tag=cfjh-23
-  [5]: http://www.amazon.cn/gp/product/B007VISQ1Y/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007VISQ1Y&linkCode=as2&tag=cfjh-23
-  [6]: http://www.amazon.cn/gp/product/B00EVO8PCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EVO8PCG&linkCode=as2&tag=cfjh-23
-  [7]: http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=cfjh-23
-  [8]: http://www.amazon.cn/gp/product/B008QTG1HS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008QTG1HS&linkCode=as2&tag=cfjh-23
-  [9]: http://www.amazon.cn/gp/product/B0082226FU/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0082226FU&linkCode=as2&tag=cfjh-23
+  [1]: https://www.amazon.cn/gp/product/B00FF3P8FY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00FF3P8FY&linkCode=as2&tag=cfjh-23
+  [2]: https://www.amazon.cn/gp/product/B0011F5SIC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011F5SIC&linkCode=as2&tag=cfjh-23
+  [3]: https://www.amazon.cn/gp/product/B003IURKAM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003IURKAM&linkCode=as2&tag=cfjh-23
+  [4]: https://www.amazon.cn/gp/product/B008O70OKC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008O70OKC&linkCode=as2&tag=cfjh-23
+  [5]: https://www.amazon.cn/gp/product/B007VISQ1Y/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007VISQ1Y&linkCode=as2&tag=cfjh-23
+  [6]: https://www.amazon.cn/gp/product/B00EVO8PCG/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EVO8PCG&linkCode=as2&tag=cfjh-23
+  [7]: https://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=cfjh-23
+  [8]: https://www.amazon.cn/gp/product/B008QTG1HS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008QTG1HS&linkCode=as2&tag=cfjh-23
+  [9]: https://www.amazon.cn/gp/product/B0082226FU/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0082226FU&linkCode=as2&tag=cfjh-23

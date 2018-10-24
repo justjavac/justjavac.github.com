@@ -9,7 +9,7 @@ tags : [javascript]
 
 原文：[What JavaScript would be like with significant newlines](http://www.2ality.com/2011/11/significant-newlines.html)
 
-译文：[JavaScript 中的显式换行](http://justjavac.com/javascript/2012/12/24/what-javascript-would-be-like-with-significant-newlines.html)
+译文：[JavaScript 中的显式换行](https://justjavac.com/javascript/2012/12/24/what-javascript-would-be-like-with-significant-newlines.html)
 
 译者：[未翻译]()
 

@@ -11,7 +11,7 @@ tags : [mvc, JavaScript]
 
 作者：[Alex@Net](http://www.alexatnet.com)
 
-译文：[JavaScript 的 MVC 模式](http://justjavac.com/javascript/2012/12/14/model-view-controller-mvc-javascript.html)
+译文：[JavaScript 的 MVC 模式](https://justjavac.com/javascript/2012/12/14/model-view-controller-mvc-javascript.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 

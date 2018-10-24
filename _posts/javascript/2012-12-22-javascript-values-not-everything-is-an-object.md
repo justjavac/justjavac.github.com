@@ -9,7 +9,7 @@ tags : [javascript, 对象]
 
 原文：[JavaScript values: not everything is an object](http://www.2ality.com/2011/03/javascript-values-not-everything-is.html)
 
-译文：[JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
+译文：[JavaScript 并非所有的东西都是对象](https://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
@@ -275,10 +275,10 @@ Constructor.prototype.isPrototypeOf(value)
 
 2. [An easy way to understand JavaScript’s prototypal inheritance](http://www.2ality.com/2010/12/javascripts-prototypal-inheritance.html)
 
-3. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+3. [JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
 4. [“null is not an object”](http://stackoverflow.com/questions/801032/null-object-in-javascript/7968470#7968470) - comment on Stack Overflow。
 
-5. [JavaScript 的 typeof 的用途](http://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html)
+5. [JavaScript 的 typeof 的用途](https://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html)
 
 6. [Improving the JavaScript typeof operator](http://www.2ality.com/2011/11/improving-typeof.html)

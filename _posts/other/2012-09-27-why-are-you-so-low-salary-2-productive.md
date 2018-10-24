@@ -6,7 +6,7 @@ category : other
 tags : [方法]
 ---
 
-在上一篇文章中提到，升薪的关键在于『[你可以做别人做不了的事](http://justjavac.com/other/2012/09/21/why-are-you-so-low-salary.html)』。
+在上一篇文章中提到，升薪的关键在于『[你可以做别人做不了的事](https://justjavac.com/other/2012/09/21/why-are-you-so-low-salary.html)』。
 
 程序员，就是整天与机器打交道的那群人。 
 在计算机并不普及的年代，这样的描述毫无疑问。
@@ -29,7 +29,7 @@ tags : [方法]
 可是如今呢？与常人无异的程序员（或者说，IT 技术人员），他们身上让人担心的“太大的”力量，
 到底是被淘汰了，还是没有发挥出来？ 
  
-对这个问题，不同的人或许有不同的看法。不过，读过 The Productive Programmer（中文版《[卓有成效的程序员](http://www.amazon.cn/gp/product/B001XCWFOI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001XCWFOI&linkCode=as2&tag=cfjh-23)》）的人，
+对这个问题，不同的人或许有不同的看法。不过，读过 The Productive Programmer（中文版《[卓有成效的程序员](https://www.amazon.cn/gp/product/B001XCWFOI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001XCWFOI&linkCode=as2&tag=cfjh-23)》）的人，
 多半会选择后一个答案——程序员的实力还没有发挥出来。 
  
 The Productive Programmer 是一本奇特的书，它的 Productive（也就是“生产力”），

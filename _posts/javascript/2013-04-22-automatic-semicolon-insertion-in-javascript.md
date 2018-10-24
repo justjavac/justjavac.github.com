@@ -9,7 +9,7 @@ uids: 1661854533
 
 原文：[Automatic semicolon insertion in JavaScript](http://www.2ality.com/2011/05/semicolon-insertion.html)
 
-译文：[JavaScript 中的自动分号插入（ASI）](http://justjavac.com/javascript/2013/04/22/automatic-semicolon-insertion-in-javascript.html)
+译文：[JavaScript 中的自动分号插入（ASI）](https://justjavac.com/javascript/2013/04/22/automatic-semicolon-insertion-in-javascript.html)
 
 译者：[@jackyqi](http://weibo.com/thankwsx)
 
@@ -120,7 +120,7 @@ a++;
 前面的两句没有任何效果。
 （译注：前面的两句指的是 `"hello world"` 和 `a + b`，这两个语句只产生临时结果，由于没与哦赋值，所以表达式的值会被丢弃。）
 
-参加我以前的博文： [代码之谜（二）- 语句与表达式](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)
+参加我以前的博文： [代码之谜（二）- 语句与表达式](https://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)
 
 ## 2. 自动插入分号机制(ASI)
 

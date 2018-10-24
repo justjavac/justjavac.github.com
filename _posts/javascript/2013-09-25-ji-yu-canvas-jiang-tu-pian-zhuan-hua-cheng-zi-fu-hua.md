@@ -52,7 +52,7 @@ javascript：请看注释和下面的解释。
 再考虑一下每个字符串的宽度是 `6px`，高度是 `12px`，所以我们不可能每个像素点都要对应一个字符，那样生成的图案将非常之大。
 我们只能根据图片宽高，来定义一个间隔，横向间隔 `6px`，纵向间隔 `12px` 取一次像素，这样可以保证生成的字符画大小和原图保持一致。
 
-最后请看 demo： <http://justjavac.com/img2txt/>
+最后请看 demo： <https://justjavac.com/img2txt/>
 
 原文链接： <http://www.cssha.com/img2txt-canvas>
 

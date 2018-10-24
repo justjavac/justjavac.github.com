@@ -10,7 +10,7 @@ type: porter
 
 ## 简介
 
-[Express](http://expressjs.com/) 是基于 [Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner/)，高性能、一流的web开发框架。
+[Express](http://expressjs.com/) 是基于 [Node.js](https://justjavac.com/nodejs/2012/04/03/node-beginner/)，高性能、一流的web开发框架。
 
 ## express 的安装
 
@@ -128,13 +128,13 @@ Express利用HTTP动作提供了有意义并富有表现力的URL映射API，
 
 通过Linux的curl命令来测试我们定义的路由：
 
-    $ curl http://justjavac.com:3000/user
+    $ curl https://justjavac.com:3000/user
     [null,null]
-    $ curl http://justjavac.com:3000/users
+    $ curl https://justjavac.com:3000/users
     [null,null]
-    $ curl http://justjavac.com:3000/users/1
+    $ curl https://justjavac.com:3000/users/1
     ["1",null]
-    $ curl http://justjavac.com:3000/users/1..15
+    $ curl https://justjavac.com:3000/users/1..15
     ["1","15"]
 
 下面是一些路由例子，以及与之相匹配的关联路径：

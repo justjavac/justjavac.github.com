@@ -88,5 +88,5 @@ type: porter
 1. 关于字体的默认大小和行高等信息，推荐博文：[默认 Web 字体样式][1]
 2. 关于字体的 fallback 等文本渲染信息，推荐博文：[浏览器如何渲染文本][2]
 
-[1]: http://justjavac.com/web/2012/04/13/default-web-font-style.html
-[2]: http://justjavac.com/web/2012/04/13/how-do-browsers-render-text.html
+[1]: https://justjavac.com/web/2012/04/13/default-web-font-style.html
+[2]: https://justjavac.com/web/2012/04/13/how-do-browsers-render-text.html

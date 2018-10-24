@@ -20,7 +20,7 @@ tags : [学习]
 比如说创建一个数据库连接，
 如何产生RSS源等，然后是关注于代码是如何实现的。
 **学习做事的正确方法远比死记硬背重要**。
-正所谓 [人有多大懒，才有多大闲](http://justjavac.com/other/2012/09/03/how-lazy-have-much-leisure.html)。
+正所谓 [人有多大懒，才有多大闲](https://justjavac.com/other/2012/09/03/how-lazy-have-much-leisure.html)。
 
 ## Tip 2 建立属于你自己的资源库 ##
 

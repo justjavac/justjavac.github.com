@@ -157,8 +157,8 @@ Redis是一个内存数据库，无论是RDB还是AOF，都只是其保证数据
 
 ## 扩展阅读
 
-* [Redis设计与实现](http://www.amazon.cn/gp/product/B00L4XHH0S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00L4XHH0S&linkCode=as2&tag=cfjh-23)
+* [Redis设计与实现](https://www.amazon.cn/gp/product/B00L4XHH0S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00L4XHH0S&linkCode=as2&tag=cfjh-23)
 
-* [NoSQL精粹](http://www.amazon.cn/gp/product/B00EEQ2GPS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EEQ2GPS&linkCode=as2&tag=cfjh-23)
+* [NoSQL精粹](https://www.amazon.cn/gp/product/B00EEQ2GPS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EEQ2GPS&linkCode=as2&tag=cfjh-23)
 
-* [七周七数据库](http://www.amazon.cn/gp/product/B00D5PQX6M/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00D5PQX6M&linkCode=as2&tag=cfjh-23)
+* [七周七数据库](https://www.amazon.cn/gp/product/B00D5PQX6M/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00D5PQX6M&linkCode=as2&tag=cfjh-23)

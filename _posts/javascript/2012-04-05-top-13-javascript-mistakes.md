@@ -9,7 +9,7 @@ tags : [javascript]
 
 原文：[Top 13 JavaScript Mistakes](http://corporate.tuenti.com/dev/blog/top-13-javascript-mistakes)
 
-译文：[开发者最容易犯的 13 个 JavaScript 错误](http://justjavac.com/javascript/2012/04/05/top-13-javascript-mistakes.html)
+译文：[开发者最容易犯的 13 个 JavaScript 错误](https://justjavac.com/javascript/2012/04/05/top-13-javascript-mistakes.html)
 
 译者：[@justjavac](http://weibo.com/justjavac)
 

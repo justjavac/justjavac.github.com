@@ -14,7 +14,7 @@ tags : [javascript, quirks]
 
 ----------------------------------------------------
 
-此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第四篇。
+此文是 [javascript 的 12 个怪癖（quirks）](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第四篇。
 
 Normally, JavaScript automatically creates a global variable if you use an unknown variable name:
 

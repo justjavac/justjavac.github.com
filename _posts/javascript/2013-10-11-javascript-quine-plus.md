@@ -15,7 +15,7 @@ Quine 以哲学家 Willard van Orman Quine (1908-2000) 而命名，在[维基百
 	!function $(){console.log('!'+$+'()')}()
 
 网上已经有很多黑客写出了各种各样的 quine 程序，因此我就不再班门弄斧了。
-但是，既然我博客的[关于页面](http://justjavac.com/about-v2.html)都已经折腾出升级版了，那么我们就再折腾一个 quine++ 出来。
+但是，既然我博客的[关于页面](https://justjavac.com/about-v2.html)都已经折腾出升级版了，那么我们就再折腾一个 quine++ 出来。
 
 quine 程序的升级版——动态的 quine。
 

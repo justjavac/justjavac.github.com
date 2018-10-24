@@ -69,7 +69,7 @@ tags: [程序员, 编程, 访谈]
 
 按时间顺序说说吧，ChromeSnifferPlus 是我维护了 5 年的一个项目，之前我也在 SF 上介绍过，一款 Chrome 浏览器的插件。当我们浏览一个非常炫酷的网页时，我们总想知道这个网站到底使用了什么技术，用到了哪些 javascript 库，这个插件就是干这个的。目前有全球的1万多用户，由于大陆墙的存在导致这个插件的国外用户偏多。
 
-Flarum 中文站：原文太长就不展开说了，可以看看原作者 Toby 的文章「The Flarum Story」，我翻译了中文版 [Flarum 的故事：我为什么开发 Flarum](http://justjavac.com/php/2015/09/28/read-the-flarum-story-why-im-building-flarum.html)
+Flarum 中文站：原文太长就不展开说了，可以看看原作者 Toby 的文章「The Flarum Story」，我翻译了中文版 [Flarum 的故事：我为什么开发 Flarum](https://justjavac.com/php/2015/09/28/read-the-flarum-story-why-im-building-flarum.html)
 
 ## 推荐一些书籍或者编程大杀器给大家呗
 

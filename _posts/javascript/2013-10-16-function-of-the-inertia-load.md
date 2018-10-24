@@ -94,16 +94,16 @@ var addEvent = (function () {
 
 ## 相关阅读
 
-1. [JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
+1. [JavaScript中,{}+{}等于多少?](https://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 
-2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+2. [JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
-3. [为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
+3. [为什么 ++[[]][+[]]+[+[]] = 10？](https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
 
 ## 相关书籍
 
-- <a href="http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=favbook-23" target="_blank">JavaScript语言精粹(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B0097CON2S" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=favbook-23" target="_blank">JavaScript语言精粹(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B0097CON2S" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-- <a href="http://www.amazon.cn/gp/product/B008D4S4TO/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008D4S4TO&linkCode=as2&tag=favbook-23">构建高性能Web站点(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B008D4S4TO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B008D4S4TO/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B008D4S4TO&linkCode=as2&tag=favbook-23">构建高性能Web站点(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B008D4S4TO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-- <a href="http://www.amazon.cn/gp/product/B003U8XUKQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003U8XUKQ&linkCode=as2&tag=favbook-23">编写高质量代码:Web前端开发修炼之道</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B003U8XUKQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B003U8XUKQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003U8XUKQ&linkCode=as2&tag=favbook-23">编写高质量代码:Web前端开发修炼之道</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B003U8XUKQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />

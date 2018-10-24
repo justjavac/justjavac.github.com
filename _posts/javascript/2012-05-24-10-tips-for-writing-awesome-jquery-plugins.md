@@ -199,5 +199,5 @@ if (typeof option === 'object') {
 英文原文：[10 Tips for Writing Awesome jQuery Plugins][3]
 
 [1]: http://www.websanova.com/plugins/websanova/tooltip
-[2]: http://justjavac.com/git/2012/04/13/git-quick-start.html
+[2]: https://justjavac.com/git/2012/04/13/git-quick-start.html
 [3]: http://www.queness.com/post/10828/10-tips-for-writing-awesome-jquery-plugins/

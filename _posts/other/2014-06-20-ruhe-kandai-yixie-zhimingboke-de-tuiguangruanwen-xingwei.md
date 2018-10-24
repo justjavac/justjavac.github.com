@@ -89,7 +89,7 @@ tags : [博客, 软文]
 如果您有知乎账号，不要吝啬你的「赞同」和「感谢」，知乎传送门 <http://www.zhihu.com/question/23431810/answer/24588621>。
 
 
-  [1]: http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html
+  [1]: https://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html
   [4]: http://www.360weboy.com/
   [5]: http://www.the5fire.com/
   [6]: https://github.com/justjavac/free-programming-books-zh_CN

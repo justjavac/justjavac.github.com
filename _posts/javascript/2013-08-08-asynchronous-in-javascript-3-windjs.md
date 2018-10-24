@@ -14,8 +14,8 @@ tags : [javascript, asynchronous]
 
 拖了几百年的三部曲终于迎来了第三篇，时过境迁，Jscex 已经更名为 wind.js 了，这里先给一下之前的链接
 
-1. [JavaScript中的异步梳理（1）——使用消息驱动](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
-2. [JavaScript中的异步梳理（2）——使用 Promises/A](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
+1. [JavaScript中的异步梳理（1）——使用消息驱动](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
+2. [JavaScript中的异步梳理（2）——使用 Promises/A](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
 
 在之前介绍的方法中，无论是消息驱动还是 Promise，都无法摆脱「回调」这个东西。
 
@@ -137,7 +137,7 @@ JavaScript 是一门非常开放的语言，由于本身的简洁和动态特性
 
 **相关阅读**：
 
-1. [JavaScript 中的异步梳理（0）](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
-2. [JavaScript 中的异步梳理（1）——使用消息驱动](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
-3. [JavaScript 中的异步梳理（2）——使用 Promises/A](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
-4. [JavaScript 中的异步梳理（3）——使用 Wind.js](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)
+1. [JavaScript 中的异步梳理（0）](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
+2. [JavaScript 中的异步梳理（1）——使用消息驱动](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
+3. [JavaScript 中的异步梳理（2）——使用 Promises/A](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
+4. [JavaScript 中的异步梳理（3）——使用 Wind.js](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)

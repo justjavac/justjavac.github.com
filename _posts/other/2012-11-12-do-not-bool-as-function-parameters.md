@@ -79,7 +79,7 @@ TNND，那个 false 是什么意思？不替换吗？还是别的什么意思？
 看完这篇文章，我希望你再也 **不要把bool为作为函数参数了**。除非两个原因：
 
 * 你 100% 确认不会带来阅读上的问题，比如 Java 的 `setVisible (bool)`. 
-* 你 100% 确认你想去 [写出迷一样的代码](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)。 
+* 你 100% 确认你想去 [写出迷一样的代码](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)。 
 
 如果你想设计一个好的 API，强烈推荐你读一下 Nokia 的 Qt 的《API Design Principles》，本文就是其中的 “Boolean Trap”。
 

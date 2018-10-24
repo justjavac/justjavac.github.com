@@ -9,7 +9,7 @@ tags : [javascript, 对象]
 
 原文：[What is {} + {} in JavaScript?](http://www.2ality.com/2012/01/object-plus-object.html)
 
-译文：[JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
+译文：[JavaScript中,{}+{}等于多少?](https://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
@@ -274,7 +274,7 @@ value1 + value2
 为什么第一个 `{}` 会被解析成代码块（code block）呢？ 
 因为整个输入被解析成了一个语句：如果左大括号出现在一条语句的开头，则这个左大括号会被解析成一个代码块的开始。
 所以，你也可以通过强制把输入解析成一个表达式来修复这样的计算结果:
-（译注：我们期待它是个表达式，结果却被解析成了语句，表达式和语句的区别可以查看我以前的『代码之谜』系列的 [语句与表达式](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)。
+（译注：我们期待它是个表达式，结果却被解析成了语句，表达式和语句的区别可以查看我以前的『代码之谜』系列的 [语句与表达式](https://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)。
 [@justjavac](http://weibo.com/justjavac)）
 
     > ({} + {})
@@ -310,7 +310,7 @@ value1 + value2
 ## 3. 这就是所有吗？
 
 在大多数情况下，想要弄明白 JavaScript 中的 `+` 号是如何工作的并不难：你只能将数字和数字相加或者字符串和字符串相加。
-对象值会被转换成原始值后再进行计算。如果将多个数组相加，可能会出现你意料之外的结果，相关文章请参考[在 javascript 中，为什么 [1,2] + [3,4] 不等于 [1,2,3,4]？](http://justjavac.com/javascript/2012/12/18/why-does-1-2-plus-3-4-equal-1-23-4-in-javascript.html) 和 [为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)。
+对象值会被转换成原始值后再进行计算。如果将多个数组相加，可能会出现你意料之外的结果，相关文章请参考[在 javascript 中，为什么 [1,2] + [3,4] 不等于 [1,2,3,4]？](https://justjavac.com/javascript/2012/12/18/why-does-1-2-plus-3-4-equal-1-23-4-in-javascript.html) 和 [为什么 ++[[]][+[]]+[+[]] = 10？](https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)。
 
 如果你想连接多个数组，需要使用数组的 concat 方法:
 
@@ -336,6 +336,6 @@ JavaScript 中没有内置的方法来“连接" (合并)多个对象。
 
 ## 参考
 
-1. [JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
+1. [JavaScript 并非所有的东西都是对象](https://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
 
-2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+2. [JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)

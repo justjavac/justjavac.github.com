@@ -19,11 +19,11 @@ tags: [程序员, 公众号, 微信, 投稿]
 
 可以参考我之前发布的几篇文章：
 
-- [提升影响力，打造程序员的个人品牌](http://justjavac.com/other/2016/04/14/personal-brand-of-programmers.html)
+- [提升影响力，打造程序员的个人品牌](https://justjavac.com/other/2016/04/14/personal-brand-of-programmers.html)
 
-- [为什么说任何基于比较的算法将5个元素排序都需要7次？](http://justjavac.com/other/2013/04/10/why-any-sort-algorithm-based-on-the-comparison-of-the-five-elements-are-needed-7-times.html)
+- [为什么说任何基于比较的算法将5个元素排序都需要7次？](https://justjavac.com/other/2013/04/10/why-any-sort-algorithm-based-on-the-comparison-of-the-five-elements-are-needed-7-times.html)
 
-- [我为什么“明目张胆”地和异乡好居撕逼？因为我是千千万万普通程序员的一名](http://justjavac.com/other/2016/05/16/fxxk-uhouzz.html)
+- [我为什么“明目张胆”地和异乡好居撕逼？因为我是千千万万普通程序员的一名](https://justjavac.com/other/2016/05/16/fxxk-uhouzz.html)
 
 ## 投稿要求
 

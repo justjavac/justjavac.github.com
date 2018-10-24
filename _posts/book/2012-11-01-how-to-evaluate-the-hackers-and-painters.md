@@ -6,7 +6,7 @@ category: book
 tags: [book]
 ---
 
-传送门：[黑客与画家:硅谷创业之父Paul Graham文集](http://www.amazon.cn/gp/product/B004WHZGZQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004WHZGZQ&linkCode=as2&tag=cfjh-23)
+传送门：[黑客与画家:硅谷创业之父Paul Graham文集](https://www.amazon.cn/gp/product/B004WHZGZQ/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004WHZGZQ&linkCode=as2&tag=cfjh-23)
 
 一本好的书，让我们收获的不单单是某种技巧，或者某种方法论， 
 **他教给我们的是一种严密的思维方式，是一种学会把自己的眼光放得更加长远的决策习惯，他促使我们养成独立思考的习惯。**
@@ -51,5 +51,5 @@ tags: [book]
 如果你想要进一步了解作者的话，下面这两个链接可以帮助你：
 
 * 作者博客主页： <http://www.paulgraham.com>
-* Wiki 百科上关于他的介绍： <http://en.wikipedia.org/wiki/Paul_Graham_(computer_programmer)>
+* Wiki 百科上关于他的介绍： <https://en.wikipedia.org/wiki/Paul_Graham_(computer_programmer)>
 

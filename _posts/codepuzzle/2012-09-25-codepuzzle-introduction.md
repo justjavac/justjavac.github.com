@@ -16,8 +16,8 @@ tags : [代码之谜]
 
 前几天QQ群里有人问道，遂打算写一个系列，用比较「贫」的语言把他们讲述出来。
 
-原文首发在我的博客:  <http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html>, 因为我也不能保证我的博客空间总是稳定的，所以，如果博客访问不了，
-可以到 [iteye](http://justjavac.iteye.com/blog/1685559) 或 [CSDN](http://blog.csdn.net/justjavac/article/details/8019644) 查看这篇文章，还可以顺便看看热心网友的评论。
+原文首发在我的博客:  <https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html>, 因为我也不能保证我的博客空间总是稳定的，所以，如果博客访问不了，
+可以到 [iteye](https://justjavac.iteye.com/blog/1685559) 或 [CSDN](https://blog.csdn.net/justjavac/article/details/8019644) 查看这篇文章，还可以顺便看看热心网友的评论。
 
 -------------------------------------
 
@@ -30,7 +30,7 @@ tags : [代码之谜]
 趁洗衣机正在转的功夫，打开 Evernote 找到了以前的几段 javascript 代码，本着人性本贱(咳，咳，该死的输入法，更正「人性本荐」)的精神，
 给大家共享一下，不定期更新，算是我「代码之谜」系列的开篇吧。
 
-我喜欢读一些让人震惊的书，比如『[哥德尔、艾舍尔、巴赫书：集异璧之大成](http://www.amazon.cn/gp/product/B0049MPCAS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0049MPCAS&linkCode=as2&tag=justjavac-23)』，比如『[从一到无穷大](http://www.amazon.cn/gp/product/B0011C3NU0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C3NU0&linkCode=as2&tag=justjavac-23)』，读完后张大嘴巴，「哇噻，太不可思议了，太令我震惊了」。
+我喜欢读一些让人震惊的书，比如『[哥德尔、艾舍尔、巴赫书：集异璧之大成](https://www.amazon.cn/gp/product/B0049MPCAS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0049MPCAS&linkCode=as2&tag=justjavac-23)』，比如『[从一到无穷大](https://www.amazon.cn/gp/product/B0011C3NU0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C3NU0&linkCode=as2&tag=justjavac-23)』，读完后张大嘴巴，「哇噻，太不可思议了，太令我震惊了」。
 本系列博客的目的之一就是让每个阅读过的人在思维方式上有所改变，变得更理性，更加会思考，会学习。
 
 本系列说来话长，从10年开始构思，当时写在 evernote 里面，名字叫『理性，像数学家一样思考』，废话少说，言归正传，贴代码吧
@@ -51,11 +51,11 @@ tags : [代码之谜]
 
     foo2(010);
     
-第三段代码: (注: 这不是 javascript 的问题，而且所有语言的问题，归根结底是 IEEE 标准中二进制浮点运算的问题，关于浮点数的详细问题请阅读 [代码之谜 - 浮点数](http://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html)，「<del>为什么没有链接呢，呵呵，因为我还没有写，正在整理中</del>」。)
+第三段代码: (注: 这不是 javascript 的问题，而且所有语言的问题，归根结底是 IEEE 标准中二进制浮点运算的问题，关于浮点数的详细问题请阅读 [代码之谜 - 浮点数](https://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html)，「<del>为什么没有链接呢，呵呵，因为我还没有写，正在整理中</del>」。)
     
     console.log(0.2 + 0.4);
     
-第四段代码就相对来说简单多了: 参考我一些发布的这篇<a href="http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html">为什么 ++[[]][+[]]+[+[]] = 10?</a>。
+第四段代码就相对来说简单多了: 参考我一些发布的这篇<a href="https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html">为什么 ++[[]][+[]]+[+[]] = 10?</a>。
 
     [4,[3,2]][1][0];     // 3
 

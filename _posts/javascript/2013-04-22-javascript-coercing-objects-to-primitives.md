@@ -8,7 +8,7 @@ tags : [javascript]
 
 原文：[Coercing objects to primitives](http://www.2ality.com/2012/11/coercing-objects.html)
 
-译文：[强制转换对象（objects）为原始值（primitives）](http://justjavac.com/javascript/2013/04/22/javascript-coercing-objects-to-primitives.html)
+译文：[强制转换对象（objects）为原始值（primitives）](https://justjavac.com/javascript/2013/04/22/javascript-coercing-objects-to-primitives.html)
 
 译者：[何欢 love HuangFeng]
 
@@ -151,6 +151,6 @@ var obj = {
 
 3. [JavaScript’s two zeros][3]
 
-[1]: http://justjavac.com/javascript/2012/12/20/object-plus-object.html
+[1]: https://justjavac.com/javascript/2012/12/20/object-plus-object.html
 [2]: http://www.2ality.com/2011/12/fake-operator-overloading.html
 [3]: http://www.2ality.com/2012/03/signedzero.html

@@ -8,7 +8,7 @@ tags : [javascript]
 
 原文：[Fake operator overloading in JavaScript](http://www.2ality.com/2011/12/fake-operator-overloading.html)
 
-译文：[Fake operator overloading in JavaScript](http://justjavac.com/javascript/2013/04/22/fake-operator-overloading-in-javascripts.html)
+译文：[Fake operator overloading in JavaScript](https://justjavac.com/javascript/2013/04/22/fake-operator-overloading-in-javascripts.html)
 
 译者：[未翻译]()
 
@@ -334,4 +334,4 @@ But at the very least, fake operator overloading allows you to impress your frie
 2. [JavaScript 并非所有的东西都是对象][2]
 
 [1]: http://www.ecma-international.org/publications/standards/Ecma-262.htm
-[2]: http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html
+[2]: https://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html

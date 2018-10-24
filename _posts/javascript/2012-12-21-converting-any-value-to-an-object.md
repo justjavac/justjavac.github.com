@@ -9,7 +9,7 @@ tags : [javascript, 对象]
 
 原文：[JavaScript: converting any value to an object](http://www.2ality.com/2011/04/javascript-converting-any-value-to.html)
 
-译文：[JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+译文：[JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
@@ -77,7 +77,7 @@ tags : [javascript, 对象]
 
 ## 参考
 
-1. [JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
+1. [JavaScript 并非所有的东西都是对象](https://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
     
 
 

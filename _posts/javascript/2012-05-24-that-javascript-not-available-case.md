@@ -7,7 +7,7 @@ category : javascript
 tags : [javascript]
 ---
 
-昨天在 Twitter 上的一些有趣的讨论中，我发现人们对于 [Web](http://justjavac.com/web/2012/04/13/the-growth-of-the-web-engineers-capability "web 前端研发工程师编程能力成长之路")应用和站点对 javascript 的依赖普遍存在一种疑惑。
+昨天在 Twitter 上的一些有趣的讨论中，我发现人们对于 [Web](https://justjavac.com/web/2012/04/13/the-growth-of-the-web-engineers-capability "web 前端研发工程师编程能力成长之路")应用和站点对 javascript 的依赖普遍存在一种疑惑。
 这种疑惑一直都存在，而对我而言，这个问题随着浏览技术的飞跃发展而集中爆发了。
 
 我第一次遇到这个问题还是在 DHTML 盛行的时代。
@@ -55,7 +55,7 @@ Java 当然是当前最大的安全漏洞, 但是通过 javascript 同样会对�
 ## 为什么是这样一个问题
 
 坦白说, 我也不太清楚. 
-或许是因为我太过时了, 或许是因为我已经一次有一次对[浏览器](http://justjavac.com/web/2012/04/13/how-do-browsers-render-text "浏览器如何渲染文本")和网络连接失望了, 或许是因为我只想更安全一些. 
+或许是因为我太过时了, 或许是因为我已经一次有一次对[浏览器](https://justjavac.com/web/2012/04/13/how-do-browsers-render-text "浏览器如何渲染文本")和网络连接失望了, 或许是因为我只想更安全一些. 
 我只是不明白为什么人们只想要 js 的解决方案呢, 而实际上, js 只是用来提供一些增强功能的. 
 
 ## 费解的应用边缘案例
@@ -65,7 +65,7 @@ Java 当然是当前最大的安全漏洞, 但是通过 javascript 同样会对�
 我只能想到的是浏览器中的 photoshop 或者其他的一些编辑器（比如视频、浏览器中的 IDE）才需要依赖于 javascript. 
 其他都可以通过重新加载和服务器端的一些部件解决. 
 
-让我们直面这样一个事实——在 [Node.js](http://justjavac.com/nodejs/2012/04/03/node-beginner.html "Node入门")的时代, 服务器端也可以用 javascript 来写. 
+让我们直面这样一个事实——在 [Node.js](https://justjavac.com/nodejs/2012/04/03/node-beginner.html "Node入门")的时代, 服务器端也可以用 javascript 来写. 
 Dav Glass of Yahoo 两年前显示如果一个工具库编写成余环境独立的, 那么你就可以同时在客户端和服务器端复用这些工具. 
 
 "应用需要 javascript" 的真正原因似乎是其他原因, 而非技术上的. 
@@ -91,7 +91,7 @@ Dav Glass of Yahoo 两年前显示如果一个工具库编写成余环境独立�
 通过展现给用户看他们能通过开启或者关闭浏览器中部件来解决问题同样是没有意义的. 
 当一个普通用户卡在你的应用中了, 这并不是一个告诉用户发生了什么的做法. 
 
-或许所有这些问题在 [node](http://justjavac.com/nodejs/2012/04/06/just-what-is-nodejs-a-ready-to-code-server.html "什么是Node.js") 变得成熟以及普及以后都不会再是问题. 
+或许所有这些问题在 [node](https://justjavac.com/nodejs/2012/04/06/just-what-is-nodejs-a-ready-to-code-server.html "什么是Node.js") 变得成熟以及普及以后都不会再是问题. 
 我将很乐意看到这点。
 
 原文链接：[That "javascript not available" case][1]

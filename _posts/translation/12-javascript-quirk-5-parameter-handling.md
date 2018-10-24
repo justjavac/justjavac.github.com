@@ -14,7 +14,7 @@ tags : [javascript, quirks]
 
 ----------------------------------------------------
 
-此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第五篇。
+此文是 [javascript 的 12 个怪癖（quirks）](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第五篇。
 
 The basics of parameter handling in JavaScript are simple, advanced tasks require manual work. 
 This blog post first looks at the basics and then covers advanced topics.
@@ -214,4 +214,4 @@ As a preview, the following function converts an array-like value to an array.
 1. [JavaScript quirk 1: implicit conversion of values][1en] （[中文][1zh]）
 
 [1en]: http://www.2ality.com/2013/04/quirk-implicit-conversion.html "JavaScript quirk 1: implicit conversion of values"
-[1zh]: http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html "JavaScript 的怪癖 1：隐式类型转换"
+[1zh]: https://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html "JavaScript 的怪癖 1：隐式类型转换"

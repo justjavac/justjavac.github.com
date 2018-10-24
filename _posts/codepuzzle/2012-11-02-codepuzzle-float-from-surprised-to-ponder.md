@@ -6,7 +6,7 @@ category : codepuzzle
 tags : [代码之谜, 浮点数]
 ---
 
-在『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列的前几篇文章中，很多次出现了浮点数。
+在『[代码之谜](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列的前几篇文章中，很多次出现了浮点数。
 浮点数在很多编程语言中被称为简单数据类型，其实，浮点数比起那些复杂数据类型（比如字符串）来说，
 一点都不简单。
 
@@ -20,7 +20,7 @@ tags : [代码之谜, 浮点数]
 我以前 **只是盲目接受知识，根本就没有自己思考过**，
 那次对话，比我大学四年学到的知识都多”。
 
-我看他简历上写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》才谈了很多关于二分法以及编码的话题，
+我看他简历上写到读过《[信息论](https://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》才谈了很多关于二分法以及编码的话题，
 整个过程大概3个小时——这是我面试时间最长的一次。
 
 因为时间久远，我把一些我能回忆起来的关于浮点数的内容整理在这篇博客中。
@@ -63,7 +63,7 @@ tags : [代码之谜, 浮点数]
 
 『他思索了片刻』“哦。我明白了， **2bit 可以表示 4 个数，不管是整数、小数或者字符**，就算是用 2bit 表示苹果，我们也只能表示 4 个，如果想要表示更多，就得用更多的 bit 位。”
 
-虽然他在简历中写到读过《[信息论](http://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》，他对 **N bit可以表示的信息量是 2^N** 
+虽然他在简历中写到读过《[信息论](https://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》，他对 **N bit可以表示的信息量是 2^N** 
 肯定没有完全理解，或者只是被动接受了这个定理。
 
 过了一会儿他又继续说：“按照这个逻辑，8bit 只能表示 256 个浮点数了，这也太少了。
@@ -71,7 +71,7 @@ tags : [代码之谜, 浮点数]
 
 ## 浮点数精度
 
-于是我在 firebug 里面写了几行代码（可以在本系列第一篇的 [序言](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html) 部分找到这些代码）。
+于是我在 firebug 里面写了几行代码（可以在本系列第一篇的 [序言](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html) 部分找到这些代码）。
 
     0.2 + 0.4
     
@@ -125,7 +125,7 @@ tags : [代码之谜, 浮点数]
 
 > 回到前面话题，如何精确的表示小数呢？其中一种方案就是定点数。
 拿 8bit 举例吧。我们可以把小数点定在中间，用 4bit 表示整数部分，4bit 表示小数部分。
-这样构造方式（专业点我们称他为数据结构，一般语言把整数和小数称为简单数据类型，其实他们一点都不简单，而且比那些成了复合数据类型的字符串都要复杂的多），<del>我们可以精确的表示64个小数</del>，我们可以精确的表示 2^8 = 256 个小数（谢谢 [mfkvfn](http://mfkvfn.iteye.com/) 在 iteye 上的指正）。
+这样构造方式（专业点我们称他为数据结构，一般语言把整数和小数称为简单数据类型，其实他们一点都不简单，而且比那些成了复合数据类型的字符串都要复杂的多），<del>我们可以精确的表示64个小数</del>，我们可以精确的表示 2^8 = 256 个小数（谢谢 [mfkvfn](https://mfkvfn.iteye.com/) 在 iteye 上的指正）。
 
 ------------------------------------
 

@@ -139,6 +139,6 @@ console.profileEnd("arr + arr")
 
 ## 相关阅读
 
-- [移动 Web 滚动性能优化：Passive Event Listeners](http://justjavac.com/javascript/2017/02/20/web-scrolling-performance-optimization-passive-event-listeners.html)
+- [移动 Web 滚动性能优化：Passive Event Listeners](https://justjavac.com/javascript/2017/02/20/web-scrolling-performance-optimization-passive-event-listeners.html)
 - [使用 D8 分析 javascript 如何被 V8 引擎优化的](https://zhuanlan.zhihu.com/p/25122691)
 - [开启 V8 对象属性的“fast”模式](https://zhuanlan.zhihu.com/p/25069272)

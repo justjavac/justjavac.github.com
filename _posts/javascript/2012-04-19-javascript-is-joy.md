@@ -11,8 +11,8 @@ tags : [javascript, web]
 
 javascript 代码可以 [非常的优雅][1]，也可以让人 [崩溃][2]。在很长一段时间内 js 在开发者社区中都是一个笑话。
 
-[1]: http://justjavac.com/javascript/2012/04/05/can-your-programming-language-do-this.html
-[2]: http://justjavac.com/javascript/2012/04/05/javascript-syntax-trap.html
+[1]: https://justjavac.com/javascript/2012/04/05/can-your-programming-language-do-this.html
+[2]: https://justjavac.com/javascript/2012/04/05/javascript-syntax-trap.html
 
 但是现在 js 是一门聚光灯下的明星语言，越来越多的开发者加入到这个阵营。
 

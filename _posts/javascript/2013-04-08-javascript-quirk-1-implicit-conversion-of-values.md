@@ -8,7 +8,7 @@ tags : [javascript, quirks]
 
 原文：[JavaScript quirk 1: implicit conversion of values](http://www.2ality.com/2013/04/quirk-implicit-conversion.html)
 
-译文：[JavaScript 的怪癖 1：隐式类型转换](http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)
+译文：[JavaScript 的怪癖 1：隐式类型转换](https://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
@@ -16,11 +16,11 @@ tags : [javascript, quirks]
 
 ## 零：提要
 
-[此贴子是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇。]
+[此贴子是 [javascript 的 12 个怪癖（quirks）](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第一篇。]
 
 本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
 
-JavaScript 是非常宽容的，「来者不拒」，不在乎什么[类型](http://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html "JavaScript 的 typeof 的用途")。
+JavaScript 是非常宽容的，「来者不拒」，不在乎什么[类型](https://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html "JavaScript 的 typeof 的用途")。
 例如，它如果想要接受数字，它并不拒绝其他类型的值，而是试图把它们转换成数字：
 
     > '5' - '2'
@@ -121,8 +121,8 @@ Boolean 将其参数转换为布尔值（boolean）：
 
 ## 四、相关阅读
 
-1. [JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
+1. [JavaScript中,{}+{}等于多少?](https://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 
-2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+2. [JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
-3. [为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
+3. [为什么 ++[[]][+[]]+[+[]] = 10？](https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)

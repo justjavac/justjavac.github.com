@@ -9,13 +9,13 @@ uids: 1564393001
 
 原文：[JavaScript quirk 3: normal equality (==)](http://www.2ality.com/2013/04/quirk-equality.html)
 
-译文：[JavaScript 的怪癖 3：标准的等号 (==)](http://justjavac.com/javascript/2013/04/26/12-javascript-quirk-3-normal-equality-vs-the-double-equals.html)
+译文：[JavaScript 的怪癖 3：标准的等号 (==)](https://justjavac.com/javascript/2013/04/26/12-javascript-quirk-3-normal-equality-vs-the-double-equals.html)
 
 译者：[iranw](http://www.phpno.com)
 
 ----------------------------------------------------
 
-此文是 [javascript 的 12 个怪癖（quirks）](http://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第三篇。
+此文是 [javascript 的 12 个怪癖（quirks）](https://justjavac.com/javascript/2013/04/08/12-javascript-quirks.html) 系列的第三篇。
 
 本系列文章托管在 github：<https://github.com/justjavac/12-javascript-quirks>，您可以通过 pull reqeust 的方式参与翻译。
 
@@ -28,7 +28,7 @@ uids: 1564393001
 这个“正常”的等号（`==`）有很多怪癖。
 虽然他很宽容（非严格比较），当与真值或者假值比较时，它会忽略类型（详见[怪癖1][quirk 1]）：
 
-[quirk 1]: http://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html "JavaScript 的怪癖 1：隐式类型转换"
+[quirk 1]: https://justjavac.com/javascript/2013/04/08/javascript-quirk-1-implicit-conversion-of-values.html "JavaScript 的怪癖 1：隐式类型转换"
 
     > 0 == false  // OK
     true

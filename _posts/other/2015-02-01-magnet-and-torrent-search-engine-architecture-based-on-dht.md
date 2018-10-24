@@ -43,7 +43,7 @@ tags: [magnet, DHT, BitTorrent, torrent]
 
 了解 P2P 原理的人都知道，BT 不需要中心服务器，因为每个节点既是客户端，同时也是服务器，因此基于 0x0d 大神的 [dhtfck](https://github.com/0x0d/dhtfck) 写了一个 DHT 爬虫，它伪装为 DHT 网络中的一个节点，这样当其他客户端想下载某个 torrent 时，就会在 DHT 网络发起广播，当它询问到我的节点时，我就知道了：哦，原来有人要下载这个种子啊，那么在 DHT 网络中肯定有这个种子。于是我把这个种子的信息保存到 MySQL 中。
 
-以上 DHT 的整个过程可以具体看看 [DHT 协议](http://justjavac.com/other/2015/02/01/bittorrent-dht-protocol.html)。
+以上 DHT 的整个过程可以具体看看 [DHT 协议](https://justjavac.com/other/2015/02/01/bittorrent-dht-protocol.html)。
 
 注意：我只是保存了 torrent 的 infohash 信息，用这个信息，可以构建一个磁力链接，但是却还没有得到种子文件，我们还得通过其它方式取得种子文件。
 

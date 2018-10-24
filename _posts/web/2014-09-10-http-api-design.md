@@ -314,16 +314,16 @@ type: translation
 
 
   [1]: https://github.com/interagent/http-api-design
-  [2]: http://my.oschina.net/xuleo
-  [3]: http://my.oschina.net/Garfielt
-  [4]: http://my.oschina.net/crooner
-  [5]: http://my.oschina.net/u/578360
+  [2]: https://my.oschina.net/xuleo
+  [3]: https://my.oschina.net/Garfielt
+  [4]: https://my.oschina.net/crooner
+  [5]: https://my.oschina.net/u/578360
   [6]: https://devcenter.heroku.com/articles/platform-api-reference
   [7]: https://github.com/interagent/http-api-design/blob/master/CONTRIBUTING.md
   [8]: https://github.com/interagent/http-api-design#paginate-with-ranges
-  [9]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+  [9]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
   [10]: https://devcenter.heroku.com/articles/platform-api-reference#ranges
-  [11]: http://en.wikipedia.org/wiki/Token_bucket
+  [11]: https://en.wikipedia.org/wiki/Token_bucket
   [12]: https://github.com/interagent/prmd
   [13]: https://devcenter.heroku.com/articles/api-compatibility-policy
   [14]: http://www.developertesting.com/archives/month200508/20050823-HeadlessHelloWorldInEclipse.html

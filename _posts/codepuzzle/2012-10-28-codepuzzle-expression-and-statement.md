@@ -9,7 +9,7 @@ tags : [代码之谜]
 ---
 
 虽然文章标题是『语句与表达式』，在这篇文章中，我将陈述一个观点 **每个表达式都有一个值**。
-在此之外，也会继续表述这个『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列的主题——数学与计算机之间被经常忽略的矛盾。
+在此之外，也会继续表述这个『[代码之谜](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』系列的主题——数学与计算机之间被经常忽略的矛盾。
 
 简单的讲
 

@@ -9,7 +9,7 @@ tags : [javascript, typeof]
 
 原文：[What is JavaScript’s typeof operator used for?](http://www.2ality.com/2012/01/typeof-use-cases.html)
 
-译文：[JavaScript 的 typeof 的用途](http://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html)
+译文：[JavaScript 的 typeof 的用途](https://justjavac.com/javascript/2012/12/23/what-is-javascripts-typeof-operator-used-for.html)
 
 译者：[紫云飞](http://www.cnblogs.com/ziyunfei)
 
@@ -270,7 +270,7 @@ typeof 可以用来检测一个值是否是函数。
 
 ## 参考文章
 
-1. [JavaScript 并非所有的东西都是对象](http://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
+1. [JavaScript 并非所有的东西都是对象](https://justjavac.com/javascript/2012/12/22/javascript-values-not-everything-is-an-object.html)
 
 2. [Improving the JavaScript typeof operator](http://www.2ality.com/2011/11/improving-typeof.html)
 

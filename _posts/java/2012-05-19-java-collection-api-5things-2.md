@@ -14,7 +14,7 @@ tags : [api, collections, 算法]
 -------------------
 
 java.util 中的 Collections 类旨在通过取代数组提高 Java 性能。
-如您在 [第 1 部分](http://justjavac.com/java/2012/05/18/java-collection-api-5things-1.html)中了解到的，它们也是多变的，能够以各种方式定制和扩展，帮助实现优质、简洁的代码。
+如您在 [第 1 部分](https://justjavac.com/java/2012/05/18/java-collection-api-5things-1.html)中了解到的，它们也是多变的，能够以各种方式定制和扩展，帮助实现优质、简洁的代码。
 
 Collections 非常强大，但是很多变：使用它们要小心，滥用它们会带来风险。
 
@@ -285,7 +285,7 @@ Concurrent Collections，它在 Java 5 中引入。
 
 [1]: http://java.sun.com/developer/onlineTraining/collections/Collection.html
 [2]: http://java.sun.com/j2se/1.4.2/docs/guide/collections/index.html
-[3]: http://justjavac.com/java/2012/05/18/java-collection-api-5things-2.html
+[3]: https://justjavac.com/java/2012/05/18/java-collection-api-5things-2.html
 
 ## 关于作者
 

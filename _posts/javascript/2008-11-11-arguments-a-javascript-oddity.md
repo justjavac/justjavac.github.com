@@ -8,7 +8,7 @@ tags : [javascript, arguments]
 
 原文：[arguments: A JavaScript Oddity](http://www.sitepoint.com/arguments-a-javascript-oddity/)
 
-译文：[javascript 一怪：arguments 对象](http://justjavac.com/javascript/2008/11/11/arguments-a-javascript-oddity.html)
+译文：[javascript 一怪：arguments 对象](https://justjavac.com/javascript/2008/11/11/arguments-a-javascript-oddity.html)
 
 ----------------------------------------------------
 

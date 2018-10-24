@@ -11,7 +11,7 @@ tags : [code, 提升]
 
 作者：[Andrew C. Oliver](http://podcasts.infoworld.com/author-bios/andrew-c-oliver)
 
-译文：[开发者如何提升和推销自己](http://justjavac.com/other/2013/03/21/10-steps-becoming-the-developer-everyone-wants.html)
+译文：[开发者如何提升和推销自己](https://justjavac.com/other/2013/03/21/10-steps-becoming-the-developer-everyone-wants.html)
 
 译者：[wangguo](http://wangguo.iteye.com/)
 
@@ -63,7 +63,7 @@ tags : [code, 提升]
 
 你应该知道一种以上的语言和知识，包括新的、热门的话题。
 永远不要说“我不会编程，除非使用 Erlang”类似的话。
-比如，你认为 [NoSQL](http://justjavac.com/nosql/2012/04/13/redis-persistence-demystified.html) 可能更适合你的小项目，但是你的公司不会在一个小型的、一次性的系统上使用它，这种情况下，关系型数据库会更适合。 
+比如，你认为 [NoSQL](https://justjavac.com/nosql/2012/04/13/redis-persistence-demystified.html) 可能更适合你的小项目，但是你的公司不会在一个小型的、一次性的系统上使用它，这种情况下，关系型数据库会更适合。 
 
 ## 9. 擅于使用工具解决疑难杂症 
 

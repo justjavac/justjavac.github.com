@@ -52,7 +52,7 @@ DOM 结构保存在同一个页面。
 
 在 **jekyll** 博客的根目录下的 `config.yml` 添加你的博客的全局基本地址。就一句话就 Ok 哈！
 
-    url: http://justjavac.com
+    url: https://justjavac.com
 
 ### 四、通过 Javascript 实现搜索功能
 

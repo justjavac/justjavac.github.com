@@ -119,19 +119,19 @@ variableThree = ‘string 3’;
 
 ## 相关阅读
 
-1. [JavaScript中,{}+{}等于多少?](http://justjavac.com/javascript/2012/12/20/object-plus-object.html)
+1. [JavaScript中,{}+{}等于多少?](https://justjavac.com/javascript/2012/12/20/object-plus-object.html)
 
-2. [JavaScript：将所有值都转换成对象](http://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
+2. [JavaScript：将所有值都转换成对象](https://justjavac.com/javascript/2012/12/21/converting-any-value-to-an-object.html)
 
-3. [为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
+3. [为什么 ++[[]][+[]]+[+[]] = 10？](https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
 
 ## 相关书籍
 
-- <a href="http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=favbook-23" target="_blank">JavaScript语言精粹(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B0097CON2S" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0097CON2S&linkCode=as2&tag=favbook-23" target="_blank">JavaScript语言精粹(修订版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B0097CON2S" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-- <a href="http://www.amazon.cn/gp/product/B004VJM5KE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004VJM5KE&linkCode=as2&tag=favbook-23" target="_blank">JavaScript DOM编程艺术(第2版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B004VJM5KE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B004VJM5KE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004VJM5KE&linkCode=as2&tag=favbook-23" target="_blank">JavaScript DOM编程艺术(第2版)</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B004VJM5KE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-- <a href="http://www.amazon.cn/gp/product/B00BQ7RMW0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00BQ7RMW0&linkCode=as2&tag=favbook-23" target="_blank">编写可维护的JavaScript</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B00BQ7RMW0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+- <a href="https://www.amazon.cn/gp/product/B00BQ7RMW0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00BQ7RMW0&linkCode=as2&tag=favbook-23" target="_blank">编写可维护的JavaScript</a><img src="http://ir-cn.amazon-adsystem.com/e/ir?t=favbook-23&l=as2&o=28&a=B00BQ7RMW0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 
   [1]: http://www.developerdrive.com/2011/08/top-10-must-follow-javascript-best-practices-2/

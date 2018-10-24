@@ -18,7 +18,7 @@ tags : [面试]
 我比较喜欢看应聘者**解决问题的能力**。
 
 原文太长，就不贴出来了。
-[一次关于浮点数的面试](http://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html)。
+[一次关于浮点数的面试](https://justjavac.com/codepuzzle/2012/11/02/codepuzzle-float-from-surprised-to-ponder.html)。
 
 **很多毕业生都把计算机学成了文科，他们不是在学习理论知识，而是被动接受/背诵记忆这些知识**。
 他们来公司，编程只是他们的工作而已，聘用他们的真正目的是**解决问题**，用程序解决很多人共性的问题。

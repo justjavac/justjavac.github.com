@@ -208,7 +208,7 @@ function join(a) {
 笨拙陈旧的FORTRAN语言甚至不允许你写函数。
 C语言里有函数指针，但实现的很丑陋，不能匿名，使用之前必须先进行声明实现。
 Java允许你使用功能点调用(functor)，但更加丑陋。
-就像Steve Yegge指出的，Java就是一个[名词的王国](http://justjavac.com/java/2012/07/23/execution-in-kingdom-of-nouns.html)。
+就像Steve Yegge指出的，Java就是一个[名词的王国](https://justjavac.com/java/2012/07/23/execution-in-kingdom-of-nouns.html)。
 
 纠正：我最后一次使用FORTRAN大概是27年前，很显然它现在有了函数了。
 我还当是GW-BASIC呢。

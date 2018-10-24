@@ -8,7 +8,7 @@ tags : [javascript]
 
 原文：[The multiple roles of JavaScript objects and arrays](http://www.2ality.com/2012/01/roles-objects-arrays.html)
 
-译文：[The multiple roles of JavaScript objects and arrays](http://justjavac.com/javascript/2013/04/22/the-multiple-roles-of-javascript-objects-and-arrays.html)
+译文：[The multiple roles of JavaScript objects and arrays](https://justjavac.com/javascript/2013/04/22/the-multiple-roles-of-javascript-objects-and-arrays.html)
 
 译者：[未翻译]()
 

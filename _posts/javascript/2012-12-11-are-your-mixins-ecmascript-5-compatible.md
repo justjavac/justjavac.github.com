@@ -11,7 +11,7 @@ tags : [ECMAScript 5, JavaScript, mixin]
 
 作者：Nicholas C. Zakas
 
-译文：[你的 mixin 兼容 ECMAScript 5 吗？](http://justjavac.com/javascript/2012/12/11/are-your-mixins-ecmascript-5-compatible.html)
+译文：[你的 mixin 兼容 ECMAScript 5 吗？](https://justjavac.com/javascript/2012/12/11/are-your-mixins-ecmascript-5-compatible.html)
 
 译者：[justjavac](http://weibo.com/justjavac)
 
@@ -20,7 +20,7 @@ tags : [ECMAScript 5, JavaScript, mixin]
 好久没更新博客了，今天在 nczonline 看到了这篇博客，于是第一时间把它翻译了过来。英语水平有限，大家忍者点看，以下是正文：
 
 我最近在与客户合作的项目中，需要充分利用的 ECMAScript 5，在此我遇到一个非常有趣的问题。
-该问题源于一个非常常见的模式： **mixin** （译注：很多文章翻译成「混入」，我觉得还是保留原文吧。如今 mixin 的流程程度不亚于 Closure，什么！你不知道？拜托，如果你是从火星来的，请自觉 Google 吧。[@justjavac](http://justjavac.com)），
+该问题源于一个非常常见的模式： **mixin** （译注：很多文章翻译成「混入」，我觉得还是保留原文吧。如今 mixin 的流程程度不亚于 Closure，什么！你不知道？拜托，如果你是从火星来的，请自觉 Google 吧。[@justjavac](https://justjavac.com)），
 也就是在 JavaScript 中把一个对象的属性或者方法 mixin 到另一个。
 
 大多数 mixin 的功能看起来像这样：
@@ -85,7 +85,7 @@ console.log(object.name);       // undefined
 我们仔细分析 `mixin()` 函数。
 事实上，在循环语句中，并没有把属性从一个对象重新赋值给到另一个对象。
 它实际上是创建一个同名的属性，并把 `supplier` 对象的存取器方法 getter 的返回值赋值给了它。
-（译注：目标对象得到的不是 getter 这个方法，而是得到了 getter 方法的返回值。[@justjavac](http://justjavac.com)）
+（译注：目标对象得到的不是 getter 这个方法，而是得到了 getter 方法的返回值。[@justjavac](https://justjavac.com)）
 
 在这个例子中，mixin() 的过程其实是这样的：
 
@@ -97,7 +97,7 @@ receiver.name = supplier.name;
 当然，`supplier.name` 有一个 getter 方法用来返回本地变量 name 的值。
 此时，`name` 的值为 `undefined`，所以 `receiver.name` 存储的是 **值**。
 并没有为 `receiver.name` 创建一个 getter 方法，因此它的值永远不会改变。
-（译注：变量和值的区别我会在『[代码之谜](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』中讲解。）
+（译注：变量和值的区别我会在『[代码之谜](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』中讲解。）
 
 要解决这个问题，你需要使用属性描述符(译注：descriptor)将属性从一个对象 mixin 到另一个对象。
 一个纯粹的 ECMAScript 5 版本的 `mixin()` 应该这样写：

@@ -38,7 +38,7 @@
 每晚抽出2个小时的时间用来阅读、进修、思考或参加有意的演讲、讨论，你会发现，
 你的人生正在发生改变，坚持数年之后，成功会向你招手。
 
-我曾整理了一篇『合格的程序员应该读过哪些书』（去[我的博客](http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html)查看，如果被墙，可以到[CSDN](http://blog.csdn.net/justjavac/article/details/7865418)，评论中也有很多人推荐其它好书），每天抽出半个小时来读一读。
+我曾整理了一篇『合格的程序员应该读过哪些书』（去[我的博客](https://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html)查看，如果被墙，可以到[CSDN](http://blog.csdn.net/justjavac/article/details/7865418)，评论中也有很多人推荐其它好书），每天抽出半个小时来读一读。
 
 时间管理可以帮助您把每一天、每一周甚至每个月的时间进行有效的合理安排。
 运用这些时间管理技巧帮您统筹时间，对于每个人来说都是非常重要的。
@@ -109,4 +109,4 @@ C. **学习Learn**
 
 还有一点也很重要: **分享与交流**。
 
-最后还是我在[博客](http://justjavac.com)中经常写道的那句话（不要嫌我罗嗦，再写一遍），**学历代表过去，能力代表现在，学习能力代表未来**。
+最后还是我在[博客](https://justjavac.com)中经常写道的那句话（不要嫌我罗嗦，再写一遍），**学历代表过去，能力代表现在，学习能力代表未来**。

@@ -58,27 +58,27 @@
     <div style="text-align: right;"> 发表时间：<span class="dtstart">2009年6月17日</span> 最近修改：<span class="dtstart">2009年10月9日</span> </div>
     <div style="text-align: right;"> 翻译时间：<span class="dtstart">2009年12月9日</span> 修订时间：<span class="dtstart">2009年12月22日</span> </div>
     <ol>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#introduction">前言</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#expr-vs-decl">函数表达式与函数声明</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#function-statements">函数语句</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#named-expr">命名函数表达式</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#names-in-debuggers">调试器中的函数名</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#jscript-bugs">JScript的bug</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#jscript-memory-management">JScript的内存管理</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#tests">测试</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#safari-bug">Safari中存在的bug</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#spidermonkey-peculiarity">SpiderMonkey的怪癖</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#solution">解决方案</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#alt-solution">替代方案</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#webkit-displayName">WebKit的displayName</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#future-considerations">对未来的思考</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#credits">致谢</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#introduction">前言</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#expr-vs-decl">函数表达式与函数声明</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#function-statements">函数语句</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#named-expr">命名函数表达式</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#names-in-debuggers">调试器中的函数名</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#jscript-bugs">JScript的bug</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#jscript-memory-management">JScript的内存管理</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#tests">测试</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#safari-bug">Safari中存在的bug</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#spidermonkey-peculiarity">SpiderMonkey的怪癖</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#solution">解决方案</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#alt-solution">替代方案</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#webkit-displayName">WebKit的displayName</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#future-considerations">对未来的思考</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#credits">致谢</a></li>
     </ol>
 
   <h2 id="introduction">前言</h2>
   <p>我觉得很奇怪，网上好像一直没有人认真地讨论过命名函数表达式（Named Function Expression，即“有名字函数表达式”，与“匿名函数”相对。——译者注）。而这也许正是各种各样的误解随处可见的一个原因。在这篇文章里，我打算从理论和实践两个方面出发，对这些令人惊叹的JavaScript结构的优缺点给出一个结论。</p>
   <p>简单来讲，命名函数表达式只有一个用处——在调试器或性能分析程序中描述函数的名称。没错，也可以使用函数名实现递归，但你很快就会知道，目前来看这通常是不切实际的。当然，如果你不关注调试，那就没什么可担心的。否则，就应该往下看一看，看看在跨浏览器开发中都会出现哪些小毛病（glitch），也看看应该怎样解决它们。</p>
-  <p>一开始呢，我会先介绍一下什么是函数表达式，以及现代调试器如何处理它们之类的内容。要是你比较心急，请直接跳到<a href="http://justjavac.com/named-function-expressions-demystified.html#solution">“最终方案”</a>部分，该部分详细说明了怎样才能安全地使用这些结构。</p>
+  <p>一开始呢，我会先介绍一下什么是函数表达式，以及现代调试器如何处理它们之类的内容。要是你比较心急，请直接跳到<a href="https://justjavac.com/named-function-expressions-demystified.html#solution">“最终方案”</a>部分，该部分详细说明了怎样才能安全地使用这些结构。</p>
 
   <h2 id="expr-vs-decl">函数表达式与函数声明</h2>
   <p>在ECMAScript中，有两个最常用的创建函数对象的方法，即使用<em>函数表达式</em>或者使用<em>函数声明</em>。这两种方法之间的区别可谓 <strong>相当地令人困惑</strong>；至少我是相当地困惑。对此，ECMA规范只明确了一点，即<em>函数声明</em> 必须始终带有一个<em>标识符（Identifier）</em>——也就是函数名呗，而<em>函数表达式</em> 则可省略这个标识符：</p>
@@ -885,21 +885,21 @@
     
 <div id="menu_fly">
     <ol>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#introduction">前言</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#expr-vs-decl">函数表达式与函数声明</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#function-statements">函数语句</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#named-expr">命名函数表达式</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#names-in-debuggers">调试器中的函数名</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#jscript-bugs">JScript的bug</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#jscript-memory-management">JScript的内存管理</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#tests">测试</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#safari-bug">Safari中存在的bug</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#spidermonkey-peculiarity">SpiderMonkey的怪癖</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#solution">解决方案</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#alt-solution">替代方案</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#webkit-displayName">WebKit的displayName</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#future-considerations">对未来的思考</a></li>
-      <li><a href="http://justjavac.com/named-function-expressions-demystified.html#credits">致谢</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#introduction">前言</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#expr-vs-decl">函数表达式与函数声明</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#function-statements">函数语句</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#named-expr">命名函数表达式</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#names-in-debuggers">调试器中的函数名</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#jscript-bugs">JScript的bug</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#jscript-memory-management">JScript的内存管理</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#tests">测试</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#safari-bug">Safari中存在的bug</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#spidermonkey-peculiarity">SpiderMonkey的怪癖</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#solution">解决方案</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#alt-solution">替代方案</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#webkit-displayName">WebKit的displayName</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#future-considerations">对未来的思考</a></li>
+      <li><a href="https://justjavac.com/named-function-expressions-demystified.html#credits">致谢</a></li>
     </ol>
 </div>
 

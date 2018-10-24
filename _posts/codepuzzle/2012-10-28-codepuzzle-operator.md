@@ -47,7 +47,7 @@ tags : [代码之谜]
 这里有一个副作用——我习惯称那些“计算机的运算过程与程序员的大脑思考过程不一样时，则称为副作用”（虽然书本里面没有这么写过，但我一向这么认为），
 **本来你以为会是这样，结果计算机偏偏就不是这样做的，我称他为副作用。**
 
-如果看过前面的『[语句与表达式](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)』，这可以这么理解：
+如果看过前面的『[语句与表达式](https://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)』，这可以这么理解：
 
 1 + 2 是一个表达式，它的返回值是 3。
 这个表达式的返回值再参加到另一个表达式中 3 + 3，最后得出结果6。
@@ -71,7 +71,7 @@ tags : [代码之谜]
 原因和上面的一样，大于号(>)是二元运算，它无法直接比较三个数，5 > 4 返回的结果是 true，
 当用 true 和 3 比较时，true 被转换称 1，也就是 `1 > 3`，最终的结果自然就是 false 了。
 
-总之，回归到了『[语句与表达式](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)』篇的那个观点：在编程语言中 **每个表达式都有一个值**。
+总之，回归到了『[语句与表达式](https://justjavac.com/codepuzzle/2012/10/28/codepuzzle-expression-and-statement.html)』篇的那个观点：在编程语言中 **每个表达式都有一个值**。
 
 编程语言中的运算符和数学中的运算器虽然一样，但是它们却并不等同。
 **当你写程序时，要写给人看； 当你调试程序时，要学会用计算机的方式思考代码的含义。**

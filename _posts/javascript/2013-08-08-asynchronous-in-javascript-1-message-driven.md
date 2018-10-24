@@ -12,7 +12,7 @@ tags : [javascript, asynchronous]
 
 ----------------------------------------------------
 
-继续[上一篇文章](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)，这篇探讨使用消息驱动来优化异步编程体验。
+继续[上一篇文章](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)，这篇探讨使用消息驱动来优化异步编程体验。
 
 先举一个例子，如果希望 ABCDE 这 5 个函数依次执行，我们可以写出如下代码。
 
@@ -195,7 +195,7 @@ $.getJSON(url2', function(data){
 
 **相关阅读**：
 
-1. [JavaScript 中的异步梳理（0）](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
-2. [JavaScript 中的异步梳理（1）——使用消息驱动](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
-3. [JavaScript 中的异步梳理（2）——使用 Promises/A](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
-4. [JavaScript 中的异步梳理（3）——使用 Wind.js](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)
+1. [JavaScript 中的异步梳理（0）](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
+2. [JavaScript 中的异步梳理（1）——使用消息驱动](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
+3. [JavaScript 中的异步梳理（2）——使用 Promises/A](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
+4. [JavaScript 中的异步梳理（3）——使用 Wind.js](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)

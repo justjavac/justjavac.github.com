@@ -65,7 +65,7 @@ Merkle 就是 MDx 中的 M，另一 D 是丹麦人 Ivan Damgård。（伊万？�
 
 欢迎关注我的公众号，关注前端文章：
 
-![justjavac微信公众号](http://justjavac.com/assets/images/weixin-justjavac.jpg)
+![justjavac微信公众号](https://justjavac.com/assets/images/weixin-justjavac.jpg)
 
   [1]: /assets/images/md5.gif
   [2]: https://news.ycombinator.com/item?id=13823704

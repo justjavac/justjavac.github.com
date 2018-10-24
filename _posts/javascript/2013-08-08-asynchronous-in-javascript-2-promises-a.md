@@ -12,7 +12,7 @@ tags : [javascript, asynchronous]
 
 ----------------------------------------------------
 
-接[上篇](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)，这篇探讨使用 CommonJS Promises/A 来管理异步操作。
+接[上篇](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)，这篇探讨使用 CommonJS Promises/A 来管理异步操作。
 
 写在前面：本人并没有系统深入研究过 Promises 模型，但以解决问题为目的进行了一些尝试，本文更多围绕自己的理解写，而非规范本身。
 
@@ -211,13 +211,13 @@ dojo.xhrGet({
 
 通过 Promises 模型，把异步操作都理解为异步「任务」，以任务为单位来组织调度异步操作，实际上已经有那么点函数式的味道了。
 
-[下一篇文章](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)，也是这个系列的最后一篇，将介绍另一种更加函数式的 JavaScript 异步操作组织方法。
+[下一篇文章](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)，也是这个系列的最后一篇，将介绍另一种更加函数式的 JavaScript 异步操作组织方法。
 
 ①事实上 Promises/A 的定义要复杂的多，包括失败 reject 等等，本文不细做阐述。
 
 **相关阅读**：
 
-1. [JavaScript 中的异步梳理（0）](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
-2. [JavaScript 中的异步梳理（1）——使用消息驱动](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
-3. [JavaScript 中的异步梳理（2）——使用 Promises/A](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
-4. [JavaScript 中的异步梳理（3）——使用 Wind.js](http://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)
+1. [JavaScript 中的异步梳理（0）](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-0.html)
+2. [JavaScript 中的异步梳理（1）——使用消息驱动](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-1-message-driven.html)
+3. [JavaScript 中的异步梳理（2）——使用 Promises/A](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-2-promises-a.html)
+4. [JavaScript 中的异步梳理（3）——使用 Wind.js](https://justjavac.com/javascript/2013/08/08/asynchronous-in-javascript-3-windjs.html)

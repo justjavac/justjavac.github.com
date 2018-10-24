@@ -12,7 +12,7 @@ tags : [代码之谜]
 
 开始本章之前我先提个问题：“如果一个整数的绝对值等于它自己，那么这个数是几？”如果你回答是 0 和 所有正数，那么请你耐心读完这篇文章吧。
 
-本章是我『代码之谜』系列的第二篇，前一篇『[代码之谜 - 开篇/前言/序](http://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』简单介绍了计算机与数学的不同。
+本章是我『代码之谜』系列的第二篇，前一篇『[代码之谜 - 开篇/前言/序](https://justjavac.com/codepuzzle/2012/09/25/codepuzzle-introduction.html)』简单介绍了计算机与数学的不同。
 
 数学中有许多复杂深刻的矛盾，数学家的工作就是解释或者反驳这些矛盾，
 例如有限与无限、连续与离散、存在与构造、逻辑与直观、具体与抽象、概念与计算等等。
@@ -27,7 +27,7 @@ tags : [代码之谜]
 ## 二、绝对值之谜
 
 终于到主题了，也许你很想知道“负数的绝对值可能等于自己吗？”，也就是 “如果x等于-x，那么x有几个解？”按照我一贯的作风，我是不会轻易告诉你答案的。
-《[编程珠玑](http://www.amazon.cn/gp/product/B001GNBZFE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001GNBZFE&linkCode=as2&tag=justjavac-23)》记载，作者告诉了他同事一个结果，而不是方法，最后追悔莫及。
+《[编程珠玑](https://www.amazon.cn/gp/product/B001GNBZFE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001GNBZFE&linkCode=as2&tag=justjavac-23)》记载，作者告诉了他同事一个结果，而不是方法，最后追悔莫及。
 所以，我在这里要**告诉你方法，而不是告诉你答案**。
 
 告诉你答案之前，首先得回答个问题：“整数(8bit)的表示范围是多少？”，（也许你已经把教科书的知识背下来了，是 -2^7 到 2^7 - 1，也就是 -128 到 +127，现在的计算机科学都快成为文科了 ^\_^ ）。

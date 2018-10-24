@@ -184,4 +184,4 @@ tags : [程序, 技巧]
 最好的方式是你先用jQuery写一些简单的例子，通过这种方式把你在应用里将要用到的知识都学会。
 需要AJAX？在你的项目之外做一些小例子，当完全弄懂了后，丢掉例子，应用到你的产品里。
 
-如果你非常关注编程技术，我强烈的推荐你阅读Steve McConnell写的 《[代码大全](http://www.amazon.cn/gp/product/B0061XKRXA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0061XKRXA&linkCode=as2&tag=cfjh-23)》 一书。它会永远的改变你对编程的认识。:)
+如果你非常关注编程技术，我强烈的推荐你阅读Steve McConnell写的 《[代码大全](https://www.amazon.cn/gp/product/B0061XKRXA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0061XKRXA&linkCode=as2&tag=cfjh-23)》 一书。它会永远的改变你对编程的认识。:)

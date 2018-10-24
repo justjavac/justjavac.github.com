@@ -12,7 +12,7 @@ tags : [github, api]
 1.所有的 API 链接采用 http 协议而且开始于下面的格式:
 
 
-    http://github.com/api/v2/:format
+    https://github.com/api/v2/:format
 
 注：":format" 是指 "json","xml" 或者 "yaml" 中的一个。但现在基本是 json。
 

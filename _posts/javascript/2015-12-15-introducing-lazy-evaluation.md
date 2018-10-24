@@ -10,8 +10,8 @@ tags : [javascript, Lo-Dash]
 原文：[How to Speed Up Lo-Dash ×100? Introducing Lazy Evaluation.](http://filimanjaro.com/blog/2014/introducing-lazy-evaluation/)  
 作者: [Filip Zawada](http://twitter.com/filip_zawada)
 
-译文：[如何百倍加速 Lo-Dash？引入惰性计算](http://justjavac.com/javascript/2015/12/15/introducing-lazy-evaluation.html)  
-译者：[justjavac](http://justjavac.com)
+译文：[如何百倍加速 Lo-Dash？引入惰性计算](https://justjavac.com/javascript/2015/12/15/introducing-lazy-evaluation.html)  
+译者：[justjavac](https://justjavac.com)
 
 --------------------
 

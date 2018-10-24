@@ -31,7 +31,7 @@ tags : [JavaScript]
 
 这是怎么回事呢？为什么 `[1,2] + [3,4]` **不等于** `[1,2,3,4]`？
 
-类似问题还有：[为什么 ++[[]][+[]]+[+[]] = 10？](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
+类似问题还有：[为什么 ++[[]][+[]]+[+[]] = 10？](https://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)
 
 ## 解答
 
@@ -51,7 +51,7 @@ JavaScript 的 `+` 运算符有两个目的：
 
 ### javascript 中的 + 运算符概述
 
-下面简单介绍一下 `+` 运算符，有兴趣的话可以看看我以前写的 [代码之谜（三）- 运算符](http://justjavac.com/codepuzzle/2012/10/28/codepuzzle-operator.html)。
+下面简单介绍一下 `+` 运算符，有兴趣的话可以看看我以前写的 [代码之谜（三）- 运算符](https://justjavac.com/codepuzzle/2012/10/28/codepuzzle-operator.html)。
 
 JavaScript 具有 6 种内置 [数据类型](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/typeof)：
 （译注：从给出的连接看，原作者的意思应该是 **原始类型系统** 的数据类型，JavaScript 事实上有两套类型系统。
@@ -116,4 +116,4 @@ var o = {
 
 计算 `o + 2` 将得到 6, 是一个数字 number；计算 `o + '2'` 得到 '42', 是一个字符串 string。
 
-继续阅读：[写了10年Javascript未必全了解的连续赋值运算](http://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html)
+继续阅读：[写了10年Javascript未必全了解的连续赋值运算](https://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html)
