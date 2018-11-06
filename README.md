@@ -14,17 +14,7 @@
 
 ## 最新动态
 
-目前正在编写『[代码之谜](https://justjavac.com/codepuzzle.html)』系列
-
-有很多人反映我的博客打不开，身为一名程序员，你懂滴。
-如果您觉得我的博文对您有帮助，可以点击下面按钮订阅到邮箱，本站所有文章均已全文输出。
-
-<!--以下是QQ邮件列表订阅嵌入代码-->
-<a rel="nofollow" target="_blank" href="http://list.qq.com/cgi-bin/qf_invite?id=9470cda4ab8e31116b60ca9011bc7991511661b78345faed">
-	<img border="0" alt="填写您的邮件地址，订阅我们的精彩内容：" src="http://rescdn.list.qq.com/zh_CN/htmledition/images/qunfa/manage/picMode_light_m.png" />
-</a>
-
-也可以关注我的微信公众帐号，每周推送两三篇原创文字。
+也可以关注我的微信公众帐号，每周推送原创文字。
 
 ![justjavac微信公众帐号](https://justjavac.com/assets/images/weixin-justjavac.jpg)
 
