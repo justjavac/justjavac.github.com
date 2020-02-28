@@ -20,7 +20,7 @@ tags : [代码之谜, 浮点数]
 我以前 **只是盲目接受知识，根本就没有自己思考过**，
 那次对话，比我大学四年学到的知识都多”。
 
-我看他简历上写到读过《[信息论](https://www.amazon.cn/gp/product/B0011C5QLE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C5QLE&linkCode=as2&tag=justjavac-23)》才谈了很多关于二分法以及编码的话题，
+我看他简历上写到读过《[信息论](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgdSH1IdBxI3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUCFQNcE14VMnR%2FUUw6S1xkZDxfLHB1TlszaSFme3ILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhNaFwEaBFErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlRS1xFBRZUUEhdEVYXAVQaCxMKFgNTHQlBARpTBktTQTIQBlQfUg%3D%3D)》才谈了很多关于二分法以及编码的话题，
 整个过程大概3个小时——这是我面试时间最长的一次。
 
 因为时间久远，我把一些我能回忆起来的关于浮点数的内容整理在这篇博客中。
