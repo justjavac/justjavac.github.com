@@ -30,7 +30,7 @@ tags : [代码之谜]
 趁洗衣机正在转的功夫，打开 Evernote 找到了以前的几段 javascript 代码，本着人性本贱(咳，咳，该死的输入法，更正「人性本荐」)的精神，
 给大家共享一下，不定期更新，算是我「代码之谜」系列的开篇吧。
 
-我喜欢读一些让人震惊的书，比如『[哥德尔、艾舍尔、巴赫书：集异璧之大成](https://www.amazon.cn/gp/product/B0049MPCAS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0049MPCAS&linkCode=as2&tag=justjavac-23)』，比如『[从一到无穷大](https://www.amazon.cn/gp/product/B0011C3NU0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C3NU0&linkCode=as2&tag=justjavac-23)』，读完后张大嘴巴，「哇噻，太不可思议了，太令我震惊了」。
+我喜欢读一些让人震惊的书，比如『[哥德尔、艾舍尔、巴赫书：集异璧之大成](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgdQE18QBRE3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUCFw9RHlwWMhZmE147aUpAZ1JbKFd0GkQITgdFWHILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJSHQcbBFErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGkGG1wQBUUAVBoLEgYXVwIcC0BVRQJTSA4QBRNXXEhbFTIQBlQfUg%3D%3D)』，比如『[从一到无穷大](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRRGF4RBBE3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFgRQH10WMlFEFGUfa19IZzZ9DF1YRGMsfSdzfUQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJTFQQRBlIrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlWHggUVxJTUBwOFAoXVVVIUh0LEgNdHQsVVkdUAB4MFjIQBlQfUg%3D%3D)』，读完后张大嘴巴，「哇噻，太不可思议了，太令我震惊了」。
 本系列博客的目的之一就是让每个阅读过的人在思维方式上有所改变，变得更理性，更加会思考，会学习。
 
 本系列说来话长，从10年开始构思，当时写在 evernote 里面，名字叫『理性，像数学家一样思考』，废话少说，言归正传，贴代码吧
