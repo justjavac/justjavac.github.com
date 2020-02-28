@@ -19,11 +19,11 @@ tags : [书籍, 程序]
 
 下面就按照各本书的推荐数排列。
 
-## 1、《[代码大全](https://www.amazon.cn/gp/product/B0061XKRXA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0061XKRXA&linkCode=as2&tag=justjavac-23)》 史蒂夫·迈克康奈尔
+## 1、《[代码大全](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZVHlgXBBI3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEgJWGV0VMk1BDWgOFnlXYh19MxNmd2YnUAdzfVQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUh1THQATB1UrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQHlMXVxABUR4PQAoXUl1OUxcEQAVdSQwVChJVVEsMEjIQBlQfUg%3D%3D)》 史蒂夫·迈克康奈尔
 
 推荐数：1684
 
->“优秀的编程实践的百科全书，《[代码大全](https://www.amazon.cn/gp/product/B0061XKRXA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0061XKRXA&linkCode=as2&tag=justjavac-23)》注重个人技术，其中所有东西加起来，
+>“优秀的编程实践的百科全书，《[代码大全](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZVHlgXBBI3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEgJWGV0VMk1BDWgOFnlXYh19MxNmd2YnUAdzfVQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUh1THQATB1UrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQHlMXVxABUR4PQAoXUl1OUxcEQAVdSQwVChJVVEsMEjIQBlQfUg%3D%3D)》注重个人技术，其中所有东西加起来，
 > 就是我们本能所说的“编写整洁的代码”。这本书有50页在谈论代码布局。” —— Joel Spolsky
 
 > 对于新手来说，这本书中的观念有点高阶了。到你准备阅读此书时，你应该已经知道并实践过书中99%的观念。– esac
@@ -39,9 +39,9 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 无论您的经验水平如何，也不管您在怎样的开发环境中工作，也无论项目是大是小，
 本书都将激发您的思维并帮助您构建高品质的代码。
 
-《[代码大全（第2版）]((https://www.amazon.cn/gp/product/B0061XKRXA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0061XKRXA&linkCode=as2&tag=justjavac-23))》做了全面的更新，增加了很多与时俱进的内容，包括对新语言、新的开发过程与方法论的讨论等等。
+《[代码大全（第2版）]((https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZVHlgXBBI3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEgJWGV0VMk1BDWgOFnlXYh19MxNmd2YnUAdzfVQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUh1THQATB1UrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQHlMXVxABUR4PQAoXUl1OUxcEQAVdSQwVChJVVEsMEjIQBlQfUg%3D%3D))》做了全面的更新，增加了很多与时俱进的内容，包括对新语言、新的开发过程与方法论的讨论等等。
 
-## 2、《[程序员修炼之道](https://www.amazon.cn/gp/product/B004GV08CY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004GV08CY&linkCode=as2&tag=justjavac-23)》
+## 2、《[程序员修炼之道](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRQGFwTARc3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwRSHVgQMhpFM08HclEIZz4cLH1WEWQsbjoWZXILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJaEgsUBFErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQGQ8UBRUHAhheQlYXAlUdUhcCGlIGHVkXVkEHU0tTQDIQBlQfUg%3D%3D)》
 
 推荐数：1504
 
@@ -58,7 +58,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 
 无论你是初学者，是有经验的程序员，还是软件项目经理，《程序员修炼之道:从小工到专家》都适合你阅读。
 
-## 3、《[计算机程序的构造和解释](https://www.amazon.cn/gp/product/B0011AP7RY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011AP7RY&linkCode=as2&tag=justjavac-23)》
+## 3、《[计算机程序的构造和解释](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRSH1kVBRU3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFQNXG1wSMmVZBmlYawsaZD5fHGNXGgUQeytnVFQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJZEAoQBlQrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGkGHQwcAxQBUh5SEgUXAFZJCEIEFAVVSw9CUBtXUB1bQDIQBlQfUg%3D%3D)》
 
 推荐数：916
 
@@ -82,7 +82,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 毕竟这本书是写给著名的6.001，是麻省理工学院的入门编程课程。
 此书或许需要多做努力（尤其你在做练习的时候，你也应当如此），但这个价是对得起这本书的。
 
-## 4、《[C程序设计语言](https://www.amazon.cn/gp/product/B0011425T8/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011425T8&linkCode=as2&tag=justjavac-23)》
+## 4、《[C程序设计语言](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRVEl0dCxs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBEg5TE1IcMkoGI1ILU2ZOZBR5BWcLR1xcGhBnWWILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJZEwAbA1ErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQTwxGAxsEUEwLEVYXUlxMUkJQRlBTSFIdUhBTARkPEzIQBlQfUg%3D%3D)》
 
 推荐数：774
 
@@ -99,7 +99,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 
 人们熟知的“hello,world”程序就是由本书首次引入的，现在，这一程序已经成为所有程序设计语言入门的第一课。
 
-## 5、《[算法导论](https://www.amazon.cn/gp/product/B0011BVTRK/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011BVTRK&linkCode=as2&tag=justjavac-23)》
+## 5、《[算法导论](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZUH10cABc3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEwNTElkQMk9SEl5ZaXd2YipDUk5FYH0zZzkQa1QLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJeFAAXA1UrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQH1gSUBEDBkhTEQQXVVYaCBUDF1JdSQwdC0JTUhpdHTIQBlQfUg%3D%3D)》
 
 推荐数：671
 
@@ -120,7 +120,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 <li>编写上采用了“五个一”，即一章介绍一个算法、一种设计技术、一个应用领域和一个相关话题。</li>
 </ul>
 
-## 6、《[重构：改善既有代码的设计](https://www.amazon.cn/gp/product/B003BY6PLK/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003BY6PLK&linkCode=as2&tag=justjavac-23)》
+## 6、《[重构：改善既有代码的设计](https://union-click.jd.com/jdc?e=&p=AyIGZRprFwMQD1wYWBUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRlaFwobBFYba0J%2BWX4TEyRHYE5THUhfb0ZRHRRPGEMOHjdUK1sUAxEFXBhdFQMiN1Uca15sEzdUK1sRCxEOUhJeFwIQBVErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGkCT1IVUEcAB0sLQgMXBAUdCBcKQAQBEgkRAhAOBkwLRTIQBlQfUg%3D%3D)》
 
 推荐数：617
 
@@ -138,7 +138,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 > 我必须承认，我最喜欢的编程语录是出自这本书：任何一个傻瓜都能写出计算机能理解的程序，
 > 而优秀的程序员却能写出别人能读得懂的程序。—— Martin Fowler
 
-## 7、《[设计模式](https://www.amazon.cn/gp/product/B001130JN8/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001130JN8&linkCode=as2&tag=justjavac-23)》
+## 7、《[设计模式](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRSGFkRCxs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFQRXH1IcMkJ3XWdcVQBNZ1dhM09Rd0xPayRhdkQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJeEQYaBVYrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlUGA9GAhRQBxIJEQUXVQdLCxdXGlJTTglCC0UEUR5YHDIQBlQfUg%3D%3D)》
 
 推荐数：617
 
@@ -150,7 +150,7 @@ McConnell汇集了来自研究机构、学术界以及业界日常实践的主�
 > 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术，
 > 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
 
-## 8、《[人月神话](https://www.amazon.cn/gp/product/B0011C2P7W/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C2P7W&linkCode=as2&tag=justjavac-23)》
+## 8、《[人月神话](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRQGlsTBxo3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwZVHV4dMhBXDR9dVGNZZCxhL05%2BF1cSayhAdVQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJeEwUXA1wrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlXElIUBBAABR1SHVYXBVxLUxNVFQIGEwsdAUYCB0hSEzIQBlQfUg%3D%3D)》
 
 推荐数：588
 
@@ -163,7 +163,7 @@ Brooks博士为人们管理复杂项目提供了最具洞察力的见解。
 该书英文原版一经面世，即引起业内人士的强烈反响，后又译为德、法、日、俄中等多种语言，全球销量数百万册。
 确立了其在行业内的经典地位。
 
-## 9、《[计算机程序设计艺术](https://www.amazon.cn/gp/product/B00478TO44/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00478TO44&linkCode=as2&tag=justjavac-23)》
+## 9、《[计算机程序设计艺术](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRSH1gQBBs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFQNWHl0cMlIEAkkaSgQWZSFHPUZVSlUpawNDfUQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJeHQURBV0rXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGkBHV5AAxVXUktdEAQXAQYeCBILR1cGT19ABRICBRJZQjIQBlQfUg%3D%3D)》
 
 推荐数：542
 
@@ -175,7 +175,7 @@ Brooks博士为人们管理复杂项目提供了最具洞察力的见解。
 
 > 这是高德纳倾注心血写的一本书。—— Peter Coulton
 
-## 10、《[编译原理](https://www.amazon.cn/gp/product/B001NGO85I/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001NGO85I&linkCode=as2&tag=justjavac-23)》（龙书）
+## 10、《[编译原理](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZUH1ITBBU3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEwNcHV0SMhtVHh4bdgsRZSFLUnVxbgAPchBXakQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJfFQsXAlwrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGldGAsRV0APXB0OFwsXAQETCEdXR1UCElNCC0JXVxldHDIQBlQfUg%3D%3D)》（龙书）
 
 推荐数：462
 
@@ -183,7 +183,7 @@ Brooks博士为人们管理复杂项目提供了最具洞察力的见解。
 我从没忘过此书的第一版封面。
 此书让我知道了编译器是多么地神奇绝妙。- DB
 
-## 11、《[深入浅出设计模式](https://www.amazon.cn/gp/product/B0011FBU34/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011FBU34&linkCode=as2&tag=justjavac-23)》
+## 11、《[深入浅出设计模式](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRRHF8cBxU3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFgBREl4SMgxjE1pZF0dnZwJHGBxRbk8BGwNtB1QLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJfFwQUA1ArXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlXHQgcUhZXU0kOQVEXBFEZU0cLGgIGT10dVUIPUB9cQTIQBlQfUg%3D%3D)》
 
 推荐数：445
 
@@ -212,7 +212,7 @@ Brooks博士为人们管理复杂项目提供了最具洞察力的见解。
 > 我知道四人帮的《设计模式》是一本标准书，但倒不如先看看这部大部头，此书更为简易。
 > 一旦你了解了解了基本原则，可以去看四人帮的那本圣经了。- Calanus
 
-## 12、《[哥德尔、艾舍尔、巴赫书：集异璧之大成](https://www.amazon.cn/gp/product/B0049MPCAS/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0049MPCAS&linkCode=as2&tag=justjavac-23)》
+## 12、《[哥德尔、艾舍尔、巴赫书：集异璧之大成](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgdQE18QBRE3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUCFw9RHlwWMnZ%2BL00yXntpYldPP0ZFdEwnS1IVREQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJfHQMVBV0rXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGkFHQkQVxYBU0gMRQMXA1EZCxZWEQBXGw8cVxpQXEhYRzIQBlQfUg%3D%3D)》
 
 推荐数：437
 
@@ -220,7 +220,7 @@ Brooks博士为人们管理复杂项目提供了最具洞察力的见解。
 他极为深入研究了程序员每日都要面对的问题：递归、验证、证明和布尔代数。
 这是一本很出色的读物，难度不大，偶尔有挑战，一旦你要鏖战到底，将是非常值得的。 – Jonik
 
-## 13、《[代码整洁之道](https://www.amazon.cn/gp/product/B0031M9GHC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0031M9GHC&linkCode=as2&tag=justjavac-23)》
+## 13、《[代码整洁之道](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZUHF4UAxU3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEwBQGloSMlZaDX8LUkZEYjQcLW9qakEBeQxgWXILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJcFAsVA1MrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlTGVoQVkECVxsPQAAXBFYaUkVRFQBcSF1CA0VUV09dRzIQBlQfUg%3D%3D)》
 
 推荐数：329
 
@@ -251,7 +251,7 @@ Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳�
 
 > 虽然《代码整洁之道》和《代码大全》有很多共同之处，但它有更为简洁更为实际的清晰例子。 – Craig P. Motlin
 
-## 14、《[Effective C++](https://www.amazon.cn/gp/product/B004G72P24/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004G72P24&linkCode=as2&tag=justjavac-23)》和《[More Effective C++](https://www.amazon.cn/gp/product/B004IP8BD6/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004IP8BD6&linkCode=as2&tag=justjavac-23)》
+## 14、《[Effective C++](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZXE1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEA9XGVscMhV6JRozD3pFZRRPXmMAUkICHBB0RVQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJcFgQUDlMrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQSV4VBhUHXBhTQgIXDlAcC0YGEwNdGVoTVhAPVR5aEDIQBlQfUg%3D%3D)》和《[More Effective C++](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZVEloVAxU3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEg5UG1oSMkQGLn8%2FXFpGYjx5CBVpEFgBb1gTQ3ILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJcEQEXAlErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQSV4VBhUHXBhTQgIXDlAcC0YGEwNdGVoTVhAPVR5aEDIQBlQfUg%3D%3D)》
 
 推荐数：297
 
@@ -260,7 +260,7 @@ Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳�
 
 去年对我影响最大的一本书是《大教堂与市集》，该书教会我很有关开源开发过程如何运作，和如何处理我代码中的Bug。 – John Channing
 
-## 15、《[编程珠玑](https://www.amazon.cn/gp/product/B001GNBZFE/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B001GNBZFE&linkCode=as2&tag=justjavac-23)》
+## 15、《[编程珠玑](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRTGF4QBhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFARQHl8cMkxDKFkiaWtQZ1FTBkMHRW8nYwJOVWILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJcHAAVBFUrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlcSwgdVhBSUkxbRQMXB1ZMUxMBE1cHHlwQBhtXBU9THDIQBlQfUg%3D%3D)》
 
 推荐数：282
 
@@ -274,7 +274,7 @@ Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳�
 
 > 尽管我不得不羞愧地承认，书中一半的东西我都没有理解，但我真的推荐《编程珠玑》，书中有些令人惊奇的东西。 – Matt Warren
 
-## 16、《[修改代码的艺术](https://www.amazon.cn/gp/product/B003BY6PLK/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003BY6PLK&linkCode=as2&tag=justjavac-23)》by Michael Feathers
+## 16、《[修改代码的艺术](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZVGVIVABI3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEgVcG1kVMm1FJUEdU2YMZR5TB1RXWWACeVJ2fGILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJdFAsTAVErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlXEwkdA0JSBU9TEgoXBFRJCxMKFVJVEgscABJTVEsPHTIQBlQfUg%3D%3D)》by Michael Feathers
 
 本书是继《重构》和《重构与模式》之后探讨修改代码技术的又一里程碑式的著作，
 而且从涵盖面和深度上都超过了前两部经典。
@@ -292,7 +292,7 @@ Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳�
 > 同意。很多开发人员讨论用干净的石板来编写软件。
 > 但我想几乎所有开发人员的某些时候是在吃其他开发人员的狗食。– Bernard Dy
 
-## 17、《[编码：隐匿在计算机软硬件背后的语言](https://www.amazon.cn/gp/product/B003INLVRM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B003INLVRM&linkCode=as2&tag=justjavac-23)》
+## 17、《[编码：隐匿在计算机软硬件背后的语言](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgZUHF0TBhY3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUDEwBTHV8RMhpSD2lTVGMaYg4YWEZ8RlsAbjBscEQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJdFwcUAVArXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlQG1ISBRNQXB5fQgMXUgESC0VQRlVdG1pAUhoDVxgMFDIQBlQfUg%3D%3D)》
 
 这是一本讲述计算机工作原理的书。
 
@@ -307,19 +307,19 @@ Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳�
 > 我推荐Charles Petzold的《编码》。
 > 在这个充满工具和IDE的年代，很多复杂度已经从程序员那“抽取”走了，这本书一本开眼之作。 – hemil
 
-## 18、《[禅与摩托车维修艺术 / Zen and the Art of Motorcycle Maintenance](https://www.amazon.cn/gp/product/B005O4PUFC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B005O4PUFC&linkCode=as2&tag=justjavac-23)》
+## 18、《[禅与摩托车维修艺术 / Zen and the Art of Motorcycle Maintenance](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgRQGloSBRA3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwZUHFwXMnNhEHBbSwYVYgxtPEd1QVQ%2BUy1NAmILWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJdEQoQAVQrXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlcHl8TCxsFUExcRVIXUgdIUxADRlUCH1kQAxNVXU8OHDIQBlQfUg%3D%3D)》
 
 > 对我影响最大的那本书是 Robert Pirsig 的《禅与摩托车维修艺术》。
 > 不管你做什么事，总是要力求完美，彻底了解你手中的工具和任务，更为重要的是，
 > 要有乐趣（因为如果你做事有乐趣，一切将自发引向更好的结果）。 – akr
 
-## 19、《[Peopleware / 人件集:人性化的软件开发](https://www.amazon.cn/gp/product/B005YWYHLW/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B005YWYHLW&linkCode=as2&tag=justjavac-23)》
+## 19、《[Peopleware / 人件集:人性化的软件开发](https://union-click.jd.com/jdc?e=&p=AyIGZRtSFAcRAVQZWBUyFQJUEl8dARQDUBxrUV1KWQorAlBHU0VeBUVNR0ZbSkdETlcNVQtHRVNSUVNLXANBRA1XB14DS10cQQVYD21XHgBQGlIRChEBUR5cJUtFWVxhIUpLclMnQiB1AUQDMnIScFQeC2UaaxUDEwRXElgTAhM3ZRtcJUN8B1QaWRMFFQFlGmsVBhsEXBxSEwoWDlIZaxICGzcOXxlQWUJABUlrJTIRN2UrWyUBIkU7E1ITVkcDVxJfFQtAAgUYC0UKEQcCGAwVVkBTUBxeEQoiBVQaXxw%3D)》
 
 > Demarco 和 Lister 表明，软件开发中的首要问题是人，并非技术。
 > 他们的答案并不简单，只是令人难以置信的成功。
 > 第二版新增加了八章内容。 – Eduardo Molteni
 
-## 20、《[Coders at Work / 编程人生](https://www.amazon.cn/gp/product/B004GCCAGK/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004GCCAGK&linkCode=as2&tag=justjavac-23)》
+## 20、《[Coders at Work / 编程人生](https://union-click.jd.com/jdc?e=&p=AyIGZRhaFgsaB1MfXRAyEgdREl4WBRA3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUCFg5QGFwXMmgFMEkZF0BlZwhhIh1fdk5PWlJ3AkQLWStaJQITBlYZUhYEEgZlK1sSMkBpja3tzaejG4Gx1MCKhTdUK1sRCxEOUhJSFQUaA1ErXBULIlwRWR5OUlVXBytrJQEiN2UbaxYyUGlUEgsUURQPVUtaFlAXBQYeUhJRR1BdHQ8cVkZXBUhcETIQBlQfUg%3D%3D)》
 
 这是一本访谈笔录，记录了当今最具个人魅力的15位软件先驱的编程生涯。
 包括DonaldKnuth、Jamie Zawinski、Joshua Bloch、Ken Thompson等在内的业界传奇人物，为我们讲述了
